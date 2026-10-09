@@ -25,7 +25,7 @@ from content_services import SERVICES  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
-BASE = os.environ.get("SITE_BASE", "https://infiante360techacademy.com/")
+BASE = os.environ.get("SITE_BASE", "https://infinate360businessconsulting-sketch.github.io/Infiante360/")
 TODAY = os.environ.get("SITE_LASTMOD", dt.date.today().isoformat())
 
 BRAND = "Infinite360"
