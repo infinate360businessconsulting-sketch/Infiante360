@@ -13,12 +13,19 @@ DEMO_AEP = "https://techacademy.infinate360.in/static/media/appx_dl.html?digest=
 DEMO_AI = "https://techacademy.infinate360.in/static/media/appx_dl.html?digest=eyJhY3RfY29kZSI6MSwiYWN0X2RhdGEiOjIxMTIwLCJleGFtX3VybCI6Ii90ZXN0cy8xNDc5L2FlcC1yZWFsd29ybGQtdXNlLWNhc2UtdGVzdC1zZXJpZXMifQ=="
 CASE_PACK = "https://drive.google.com/file/d/11hkOjfB7a8z7V8ZJJVOyX9mSSlUxvMxQ/view?usp=sharing"
 YOUTUBE = "https://www.youtube.com/@Infiante360TechAcademy"
+MTJ = {
+    "academy/programs/aep-ajo-cja-foundation-advanced.html": "https://martechjobs.io/courses/adobe-aep-ajo-cja/",
+    "academy/programs/executive-architecture-leadership.html": "https://martechjobs.io/courses/cxo-hive-executive-architecture/",
+    "academy/programs/live-customised-program.html": "https://martechjobs.io/courses/live-customised-martech-program/",
+}
 
 PROGRAMS = [
     # path (relative to site root), name, category, level, format, price label, price_inr, summary
     ("training/index.html", "Adobe MarTech + Agentic AI Career Accelerator", "Adobe Experience Cloud", "Beginner to intermediate", "Live online · 90 days", "₹60,000", 60000,
      "The flagship live program: AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI through labs, enterprise-style projects and interview preparation."),
-    ("academy/programs/executive-architecture-leadership.html", "Executive & Architecture Leadership Program", "MarTech leadership", "Leaders & architects", "Live · with post-program support", "₹1,00,000", 100000,
+    ("academy/programs/aep-ajo-cja-foundation-advanced.html", "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture", "Adobe Experience Cloud", "Intermediate", "Recorded · self-paced", "₹60,000", 60000,
+     "Learn AEP, AJO and CJA, then the MarTech and CDP architecture behind enterprise implementations."),
+    ("academy/programs/executive-architecture-leadership.html", "CXO Hive: Executive & Architecture Program", "MarTech leadership", "Leaders & architects", "Live · with post-program support", "₹1,00,000", 100000,
      "For CXOs, technology leaders and enterprise architects building MarTech and AI capability at scale."),
     ("academy/programs/live-customised-program.html", "Live Customised MarTech Program", "Any MarTech stack", "All levels", "Live · individuals or teams", "₹1,00,000", 100000,
      "A live program built around your role, business requirements and technology landscape."),
@@ -91,6 +98,7 @@ def program_page(path, name, title, desc, kicker, keywords, answer, level, fmt, 
 <div class="meta" style="margin-top:14px"><span>{level}</span><span>{fmt}</span></div>
 <p class="cta-row" style="margin-top:20px"><a class="btn btn-primary" href="#enquire">Request details</a> <a class="btn btn-ghost" href="{REG_FORM}" rel="noopener" target="_blank">Register</a></p></div>
 <ul class="checklist">{''.join(f'<li>{i}</li>' for i in includes)}</ul></div>
+{f'<p>This program is also listed on <a href="{MTJ[path]}" rel="noopener" target="_blank">MarTechJobs.io</a>.</p>' if path in MTJ else ''}
 <p class="small muted">No payment is taken on this site. Outcomes depend on participation and practice; no job, salary or certification outcome is guaranteed.</p>"""
     sections = [
         ("Program at a glance", price_block, "plain", "Fees &amp; format"),
@@ -132,7 +140,7 @@ ACADEMY = [
         kicker="Learn · Build · Transform · Lead",
         lede="Hands-on Adobe MarTech, customer data and Agentic AI programs taught by a working MarTech architect — built around the platforms enterprises use.",
         keywords=["infinite360 tech academy", "adobe martech courses", "aep course india", "martech training programs", "agentic ai course", "adobe experience cloud training"],
-        answer="Infinite360 Tech Academy offers live and customised programs in Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Programs range from the ₹60,000 career accelerator to leadership and customised team programs, plus single-tool courses, free demo sessions and resources.",
+        answer="Infinite360 Tech Academy offers live and customised programs in Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Programs range from the ₹60,000 live career accelerator and recorded Foundation + Advanced Architecture course to ₹1,00,000 leadership and customised programs, plus single-tool courses, free demo sessions and resources.",
         schema="CollectionPage",
         hero_cta=("Browse programs", "#programs"),
         sections=[
@@ -169,13 +177,32 @@ ACADEMY = [
         related=["training/index.html", "training/corporate-training.html", "academy/martech-roles.html"],
     ),
     program_page(
+        "academy/programs/aep-ajo-cja-foundation-advanced.html",
+        "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture",
+        "AEP, AJO & CJA Course: Foundation + Advanced Architecture",
+        "Recorded course: Adobe Experience Platform, Journey Optimizer and CJA, then enterprise MarTech and CDP architecture. ₹60,000 one-time.",
+        "Academy · Adobe Experience Cloud",
+        ["aep ajo cja course", "adobe experience platform recorded course", "aep architecture course", "cdp architecture training", "adobe journey optimizer course"],
+        "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture is a recorded, self-paced course. It teaches Adobe Experience Platform, Journey Optimizer and Customer Journey Analytics, then the MarTech and customer data platform architecture behind enterprise implementations. The fee is ₹60,000 one-time and includes recorded lessons, a test series, ERD resources and an e-library.",
+        "Intermediate", "Recorded · learn at your own pace", "₹60,000", 60000,
+        ["Recorded video lessons", "Test series", "ERD resources", "E-library", "Additional learning material"],
+        ["Adobe Experience Platform (AEP)", "Adobe Journey Optimizer (AJO)", "Customer Journey Analytics (CJA)", "Digital and MarTech architecture", "Enterprise implementation patterns", "Customer Data Platform architecture", "AI and data-driven customer experience"],
+        [("Foundation MarTech Series", ["Adobe Experience Platform (AEP)", "Adobe Journey Optimizer (AJO)", "Customer Journey Analytics (CJA)"]),
+         ("Advanced Digital Architecture Program", ["Digital and MarTech architecture", "Enterprise implementation patterns", "Customer Data Platform architecture", "AI and data-driven customer experience"])],
+        [("Aspiring Adobe practitioners", "People who want to work on AEP, Journey Optimizer or CJA projects."), ("Marketing ops &amp; MarTech engineers", "Professionals moving into the Adobe stack."), ("Self-paced learners", "Anyone who prefers recorded lessons over live batches.")],
+        [("Prefer live learning?", '<p>The <a href="../../training/">Career Accelerator</a> covers the same platforms live over 90 days with projects and interview preparation, also at ₹60,000.</p>', "alt", "Compare")],
+        [("Is this course live or recorded?", "Recorded and self-paced. For live sessions, choose the Career Accelerator or the Live Customised MarTech Program."),
+         ("Can I buy a single tool only?", "Yes. Choose 'A single tool at a lower price' in the form and tell us which tool, for example AEP only.")],
+        ["training/index.html", "academy/courses/aep-certification-prep.html", "adobe-experience-platform/index.html"],
+    ),
+    program_page(
         "academy/programs/executive-architecture-leadership.html",
-        "Executive & Architecture Leadership Program",
-        "Executive & Architecture Leadership Program | MarTech & AI CoE",
+        "CXO Hive: Executive & Architecture Program",
+        "CXO Hive: Executive & Architecture Program | MarTech & AI CoE",
         "Live program for CXOs, technology leaders and enterprise architects: MarTech and AI centres of excellence, CDP strategy and governance. ₹1,00,000.",
         "Academy · MarTech leadership",
         ["martech leadership program", "martech center of excellence", "cdp strategy course", "enterprise architecture martech", "agentic ai strategy for leaders"],
-        "The Executive & Architecture Leadership Program is a live program for CXOs, technology leaders and enterprise architects who are setting up MarTech and AI capability at scale. It covers centres of excellence, GCC-to-global capability models, agentic AI strategy, CDP strategy, enterprise architecture and governance. The fee is ₹1,00,000.",
+        "CXO Hive: Executive & Architecture Program is a live program for CXOs, technology leaders and enterprise architects who are setting up MarTech and AI capability at scale. It covers centres of excellence, GCC-to-global capability models, agentic AI strategy, CDP strategy, enterprise architecture and governance. The fee is ₹1,00,000.",
         "Leaders &amp; architects", "Live · post-program support", "₹1,00,000", 100000,
         ["Live sessions", "One month of post-program support", "Architecture and governance templates", "Capability-model workshop"],
         ["Set up a MarTech / AI Centre of Excellence", "GCC-to-global capability transformation", "AI and agentic AI strategy", "Customer Data Platform strategy", "Enterprise architecture and governance", "Reusable capabilities and global delivery models"],
