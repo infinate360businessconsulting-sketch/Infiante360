@@ -118,6 +118,14 @@ CORE = [
 <div class="card"><h3>Web SDK</h3><p>Data layers, datastreams, consent and the Edge Network.</p></div>
 <div class="card"><h3>Agentic AI &amp; MCP</h3><p>AI agents, governed tools and MarTech workflow automation.</p></div>
 </div>"""),
+            ("Program tracks", """
+<div class="grid-2">
+<div class="card"><h3>Adobe Experience &amp; MarTech</h3><p>Adobe Experience Platform, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Target, Experience Manager, Real-Time CDP and personalisation.</p></div>
+<div class="card"><h3>AI &amp; Agentic AI</h3><p>Generative AI and LLMs, AI agents, AI automation, AI for marketing and CX, enterprise AI solutions and AI transformation.</p></div>
+<div class="card"><h3>Data engineering &amp; analytics</h3><p>Python, SQL, PySpark, Databricks and big data, ETL/ELT pipelines, cloud data platforms, data modelling, warehousing and analytics engineering.</p></div>
+<div class="card"><h3>Corporate &amp; customised training</h3><p>Transformation programs, hands-on implementation, industry-specific solutions and expert-led workshops. See <a href="corporate-training.html">corporate training</a>.</p></div>
+</div>
+<p>Moving from another role? See <a href="career-transition.html">how your current experience maps to Adobe MarTech roles</a>.</p>"""),
             ("A 90-day roadmap in six phases", """
 <ol class="steps">
 <li><strong>AEP core</strong> &mdash; XDM, datasets, ingestion, Profile, Identity, Query Service.</li>
@@ -167,16 +175,28 @@ CORE = [
         sections=[
             ("Program formats", """
 <div class="grid-3">
-<div class="card"><h3>Foundation</h3><p>AEP concepts and data flow for mixed business and technical teams.</p></div>
-<div class="card"><h3>Practitioner</h3><p>Hands-on labs for implementation, data and marketing operations teams.</p></div>
-<div class="card"><h3>Architect</h3><p>Identity strategy, governance, integration and troubleshooting scenarios.</p></div>
+<div class="card"><h3>Foundation</h3><p>MarTech, analytics, data and customer experience fundamentals for mixed business and technical teams.</p></div>
+<div class="card"><h3>Practitioner</h3><p>Hands-on Adobe, AEP, analytics and journey implementation labs.</p></div>
+<div class="card"><h3>Advanced</h3><p>APIs, integrations, complex use cases, troubleshooting and governance.</p></div>
+<div class="card"><h3>Architect</h3><p>Enterprise architecture, operating model, solution design and transformation.</p></div>
+<div class="card"><h3>Capstone</h3><p>A use case relevant to your organisation, delivered as an architecture, design or implementation artefact.</p></div>
+<div class="card"><h3>Mentoring</h3><p>Senior practitioners guide teams from training into project execution.</p></div>
 </div>"""),
+            ("Training tracks", """
+<ul class="cols-2">
+<li><strong>Adobe Experience &amp; MarTech</strong> &mdash; AEP, AJO, CJA, Adobe Analytics, Target, AEM, Real-Time CDP and personalisation.</li>
+<li><strong>AI &amp; Agentic AI</strong> &mdash; generative AI and LLMs, AI agents, automation, AI for marketing and CX, enterprise AI solutions.</li>
+<li><strong>Data engineering &amp; analytics</strong> &mdash; Python, SQL, PySpark, Databricks, ETL/ELT pipelines, cloud data platforms, data modelling and warehousing.</li>
+<li><strong>Transformation programs</strong> &mdash; leadership and CTO transformation programs, digital transformation, industry-specific solutions and expert-led workshops.</li>
+</ul>"""),
             ("How programs are built", """
+<p>Every corporate program follows the same capability cycle: <strong>Assess &rarr; Train &rarr; Practice &rarr; Build &rarr; Review &rarr; Implement &rarr; Transfer &rarr; Scale</strong>.</p>
 <ol class="steps">
 <li>Skills assessment and goals with L&amp;D and delivery leaders.</li>
-<li>Curriculum tailored to your platforms and use cases.</li>
-<li>Live sessions, labs and project work.</li>
-<li>Assessments and a capstone presented to stakeholders.</li>
+<li>Role-based curriculum tailored to your platforms and use cases.</li>
+<li>Live sessions, hands-on labs and project work.</li>
+<li>Assessments, review and a capstone presented to stakeholders.</li>
+<li>Mentored transfer into real project delivery, with reusable standards.</li>
 </ol>"""),
             ("Who it is for", "<p>L&amp;D and capability leaders, consulting and SI delivery leaders, Centres of Excellence and enterprise transformation teams.</p>"),
         ],

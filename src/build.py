@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from content_aep import AEP_PAGES  # noqa: E402
 from content_core import CORE, BOOKING  # noqa: E402
 from content_services import SERVICES  # noqa: E402
+from content_more import MORE  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
@@ -40,7 +41,7 @@ YOUTUBE = "https://www.youtube.com/@Infiante360TechAcademy"
 PORTFOLIO = "https://www.martechconsultant.tech/Pavan.html"
 FORM_ACTION = f"https://formsubmit.co/{EMAIL}"
 
-PAGES = CORE[:1] + SERVICES + AEP_PAGES + CORE[1:]
+PAGES = CORE[:1] + SERVICES + AEP_PAGES + CORE[1:] + MORE
 BY_PATH = {p["path"]: p for p in PAGES}
 
 INTERESTS = [
@@ -52,6 +53,7 @@ INTERESTS = [
     ("data", "Data engineering & integration"),
     ("ai", "Agentic AI & MCP"),
     ("advisory", "MarTech strategy / architecture review"),
+    ("staff", "Staff augmentation (engineers / architects)"),
     ("corporate", "Corporate training"),
     ("course", "Career accelerator (individual course)"),
     ("other", "Something else"),
@@ -61,6 +63,7 @@ INTEREST_BY_PATH = {
     "services/adobe-journey-optimizer.html": "ajo", "services/customer-journey-analytics.html": "cja",
     "services/web-sdk-adobe-tags.html": "websdk", "services/data-engineering.html": "data",
     "services/agentic-ai-mcp.html": "ai", "services/martech-strategy-advisory.html": "advisory",
+    "services/engagement-model.html": "advisory", "services/staff-augmentation.html": "staff",
     "training/corporate-training.html": "corporate", "training/index.html": "course",
 }
 
@@ -70,14 +73,15 @@ NAV = [
     ("training/index.html", "Training"),
     ("industries.html", "Industries"),
     ("about-us.html", "About"),
-    ("faq.html", "FAQ"),
+    ("learn/index.html", "Learn"),
 ]
 
 SECTION_HUBS = {
     "services": ("services/index.html", "Services"),
     "adobe-experience-platform": ("adobe-experience-platform/index.html", "AEP Guides"),
     "training": ("training/index.html", "Training"),
-    "guides": (None, "Guides"),
+    "guides": ("learn/index.html", "Learn"),
+    "learn": ("learn/index.html", "Learn"),
 }
 
 LOGO_SVG = (
@@ -311,9 +315,9 @@ def footer(p):
     def col(title, paths):
         lis = "".join(f'<li><a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a></li>' for x in paths)
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
-    svc = [s["path"] for s in SERVICES]
+    svc = [s["path"] for s in SERVICES] + ["services/engagement-model.html", "services/staff-augmentation.html"]
     aep = [a["path"] for a in AEP_PAGES]
-    learn = ["training/index.html", "training/corporate-training.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
+    learn = ["learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
     company = ["about-us.html", "industries.html", "faq.html", "contact-us.html", "privacy-policy.html"]
     return f"""<footer class="site-footer"><div class="wrap">
 <div class="footer-grid">
