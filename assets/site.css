@@ -211,3 +211,85 @@ fieldset.field{border:0;padding:0;margin:0}
 @media(max-width:560px){.form .cta-row .btn{width:100%}}
 .btn svg{width:20px;height:20px;flex:none}
 .contact-grid>aside{align-self:start}
+
+/* ===== Corporate upgrade: hero visual, bands, rich components ===== */
+.hero{isolation:isolate}
+.hero-orbs{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.hero-orbs::before,.hero-orbs::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:drift 18s ease-in-out infinite alternate}
+.hero-orbs::before{width:520px;height:520px;right:-120px;top:-180px;background:radial-gradient(circle,#ff2b36 0%,rgba(255,43,54,0) 70%)}
+.hero-orbs::after{width:460px;height:460px;left:-160px;bottom:-220px;background:radial-gradient(circle,#2563eb 0%,rgba(37,99,235,0) 70%);animation-delay:-6s}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-40px,30px,0) scale(1.12)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:48px 48px;mask-image:radial-gradient(ellipse at 70% 30%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 70% 30%,#000 20%,transparent 75%)}
+.hero-grid{display:grid;gap:36px;align-items:center}
+@media(min-width:1024px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero-visual svg{width:100%;height:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.35))}
+@media(max-width:1023px){.hero-visual{max-width:560px}}
+.hero .lede{font-size:clamp(1.05rem,1.5vw,1.2rem)}
+.answer-wrap{margin-top:-36px;position:relative;z-index:2}
+.wrap.narrow{max-width:880px}
+
+.band{padding:clamp(48px,7vw,96px) 0}
+.band-alt{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.band-dark{background:radial-gradient(800px 360px at 90% 0%,rgba(215,20,30,.28),transparent 60%),linear-gradient(160deg,var(--navy),var(--navy-800));color:#c9d4e6}
+.band-dark h2,.band-dark h3{color:#fff}
+.band-dark .card{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12);box-shadow:none}
+.band-dark .card p,.band-dark li{color:#c9d4e6}
+.band-dark a{color:#ffb4b8}
+.band-dark .steps li::before{background:var(--red)}
+.band-red{background:linear-gradient(135deg,var(--red),#8f0b12);color:#ffe4e6}
+.band-red h2,.band-red h3{color:#fff}
+.band-head{max-width:760px;margin-bottom:28px}
+.band-head h2{font-size:clamp(1.7rem,3.2vw,2.5rem)}
+.eyebrow{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--red-700);margin-bottom:10px}
+.band-dark .eyebrow{color:#ff8a91}
+.lead{font-size:1.12rem;max-width:70ch}
+
+/* tech marquee band */
+.logo-band{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.logo-band span{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--line);border-radius:999px;background:var(--white);font-weight:700;color:var(--ink);font-size:.92rem}
+.logo-band span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--red)}
+
+/* tiers */
+.tiers{display:grid;gap:16px}
+@media(min-width:720px){.tiers{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.tiers{grid-template-columns:repeat(5,1fr)}}
+.tier{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.tier .verb{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red-700)}
+.tier h3{margin:6px 0 8px}
+.tier ul{list-style:none;padding:0;margin:12px 0 0;font-size:.92rem}
+.tier li{padding:6px 0;border-top:1px dashed var(--line)}
+.tier .more{margin-top:auto;padding-top:12px;font-weight:700}
+
+/* feature rows */
+.feature{display:grid;gap:28px;align-items:center;margin:0 0 48px}
+@media(min-width:960px){.feature{grid-template-columns:1fr 1fr}.feature.flip>:first-child{order:2}}
+.feature-art{background:linear-gradient(160deg,var(--navy),var(--navy-800));border-radius:24px;padding:26px;box-shadow:var(--shadow-lg)}
+.feature-art svg{width:100%;height:auto}
+
+/* platform tiles */
+.tiles{display:grid;gap:16px}
+@media(min-width:640px){.tiles{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.tiles{grid-template-columns:repeat(3,1fr)}}
+.tile{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow);border-top:4px solid var(--red)}
+.tile .abbr{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--red-50);color:var(--red-700);font-weight:800;margin-bottom:10px}
+
+/* price card */
+.price-card{display:grid;gap:24px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:clamp(22px,4vw,40px);box-shadow:var(--shadow-lg)}
+@media(min-width:900px){.price-card{grid-template-columns:1fr 1.2fr}}
+.price{font-size:clamp(2.6rem,6vw,3.6rem);font-weight:800;color:var(--ink);letter-spacing:-.03em;line-height:1}
+.price small{display:block;font-size:.95rem;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:8px}
+.price-card .checklist{margin:0}
+
+/* journey timeline */
+.timeline{display:grid;gap:14px;counter-reset:t}
+@media(min-width:900px){.timeline{grid-template-columns:repeat(4,1fr)}}
+.timeline .step{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:20px;position:relative}
+.timeline .step::before{counter-increment:t;content:"0" counter(t);display:block;font-weight:800;color:var(--red);font-size:1.4rem;margin-bottom:6px}
+.band-dark .timeline .step{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+
+/* split CTA */
+.split{display:grid;gap:24px}
+@media(min-width:900px){.split{grid-template-columns:1.2fr 1fr;align-items:center}}
+
+@media (prefers-reduced-motion:reduce){.hero-orbs::before,.hero-orbs::after{animation:none}}
+.site-nav a.btn-primary,.site-nav a.btn-primary:hover{color:#fff}

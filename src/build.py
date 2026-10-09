@@ -23,6 +23,8 @@ from content_aep import AEP_PAGES  # noqa: E402
 from content_core import CORE, BOOKING  # noqa: E402
 from content_services import SERVICES  # noqa: E402
 from content_more import MORE  # noqa: E402
+from content_home import HOME  # noqa: E402
+from content_corp import CORP  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
@@ -41,7 +43,7 @@ YOUTUBE = "https://www.youtube.com/@Infiante360TechAcademy"
 PORTFOLIO = "https://www.martechconsultant.tech/Pavan.html"
 FORM_ACTION = f"https://formsubmit.co/{EMAIL}"
 
-PAGES = CORE[:1] + SERVICES + AEP_PAGES + CORE[1:] + MORE
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP
 BY_PATH = {p["path"]: p for p in PAGES}
 
 INTERESTS = [
@@ -69,7 +71,7 @@ INTEREST_BY_PATH = {
 
 NAV = [
     ("services/index.html", "Services"),
-    ("adobe-experience-platform/index.html", "AEP Guides"),
+    ("solutions/index.html", "Solutions"),
     ("training/index.html", "Training"),
     ("industries.html", "Industries"),
     ("about-us.html", "About"),
@@ -82,6 +84,7 @@ SECTION_HUBS = {
     "training": ("training/index.html", "Training"),
     "guides": ("learn/index.html", "Learn"),
     "learn": ("learn/index.html", "Learn"),
+    "solutions": ("solutions/index.html", "Solutions"),
 }
 
 LOGO_SVG = (
@@ -189,12 +192,18 @@ def hero(p):
 <a class="btn btn-ghost" href="{rel('training/index.html', p['path'])}">View training</a></div>
 <ul class="chips" aria-label="Technologies">{''.join(f'<li>{t}</li>' for t in ['Adobe Experience Platform','Real-Time CDP','Journey Optimizer','Customer Journey Analytics','Web SDK','Agentic AI &amp; MCP'])}</ul>"""
     lede = p.get("lede") or p["desc"]
-    return f"""<div class="hero{' home' if home else ''}"><div class="wrap">
-{breadcrumb_html(p)}
+    if p.get("hero_cta"):
+        label, target = p["hero_cta"]
+        ctas += f'<div class="cta-row"><a class="btn btn-primary" href="{rel(target, p["path"]) if not target.startswith("http") else target}">{label}</a><a class="btn btn-ghost" href="{rel("contact-us.html", p["path"])}">Talk to us</a></div>'
+    visual = p.get("hero_visual", "")
+    copy = f"""{breadcrumb_html(p)}
 <span class="kicker">{p['kicker']}</span>
 <h1>{e(p['h1'])}</h1>
 <p class="lede">{e(lede)}</p>
-{ctas}
+{ctas}"""
+    inner = f'<div class="hero-grid"><div class="hero-copy">{copy}</div><div class="hero-visual" aria-hidden="true">{visual}</div></div>' if visual else copy
+    return f"""<div class="hero{' home' if home else ''}"><div class="hero-orbs" aria-hidden="true"></div><div class="wrap">
+{inner}
 </div></div>"""
 
 
@@ -315,10 +324,10 @@ def footer(p):
     def col(title, paths):
         lis = "".join(f'<li><a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a></li>' for x in paths)
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
-    svc = [s["path"] for s in SERVICES] + ["services/engagement-model.html", "services/staff-augmentation.html"]
+    svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
     learn = ["learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
-    company = ["about-us.html", "industries.html", "faq.html", "contact-us.html", "privacy-policy.html"]
+    company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "faq.html", "contact-us.html", "privacy-policy.html"]
     return f"""<footer class="site-footer"><div class="wrap">
 <div class="footer-grid">
 <div><a class="brand" href="{rel('index.html', p['path'])}">{LOGO_SVG}<span>{BRAND}<small>Consulting &middot; Academy</small></span></a>
@@ -341,7 +350,7 @@ def footer(p):
 # ------------------------------------------------------------------ Structured data
 ORG_ID = BASE + "#organization"
 SITE_ID = BASE + "#website"
-PERSON_ID = BASE + "about-us.html#pavan-babu-gandla"
+PERSON_ID = BASE + "pavan-babu-gandla.html#person"
 
 
 def org_node():
@@ -360,6 +369,10 @@ def jsonld(p):
     if p["path"] == "index.html":
         graph.append(org_node())
         graph.append({"@type": "WebSite", "@id": SITE_ID, "url": BASE, "name": BRAND, "publisher": {"@id": ORG_ID}, "inLanguage": "en"})
+    if p["path"] == "pavan-babu-gandla.html":
+        graph.append({"@type": "Person", "@id": PERSON_ID, "name": "Pavan Babu Gandla", "jobTitle": "Digital Transformation & MarTech Leader",
+                      "worksFor": {"@id": ORG_ID}, "url": url, "sameAs": [LINKEDIN_PERSON, PORTFOLIO],
+                      "knowsAbout": ["Adobe Experience Platform", "Real-Time CDP", "Adobe Journey Optimizer", "Customer Journey Analytics", "Enterprise architecture", "Agentic AI"]})
     if p["path"] == "about-us.html":
         graph.append(org_node())
         graph.append({"@type": "Person", "@id": PERSON_ID, "name": "Pavan Babu Gandla", "jobTitle": "Digital Transformation & MarTech Leader",
@@ -368,6 +381,8 @@ def jsonld(p):
     page = {"@type": page_type, "@id": url + "#webpage", "url": url, "name": p["title"], "description": p["desc"],
             "isPartOf": {"@id": SITE_ID}, "inLanguage": "en", "dateModified": TODAY,
             "breadcrumb": {"@id": url + "#breadcrumb"}, "publisher": {"@id": ORG_ID}}
+    if p["schema"] == "ProfilePage":
+        page["mainEntity"] = {"@id": PERSON_ID}
     if p["schema"] == "FAQPage":
         page["mainEntity"] = [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faqs"]]
     graph.append(page)
@@ -387,7 +402,8 @@ def jsonld(p):
         graph.append({"@type": "Course", "@id": url + "#course", "name": "Adobe MarTech + Agentic AI Career Accelerator",
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url, "inLanguage": "en",
                       "teaches": ["Adobe Experience Platform", "Real-Time CDP", "Adobe Journey Optimizer", "Customer Journey Analytics", "Adobe Web SDK", "Agentic AI and MCP"],
-                      "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": "P90D"}})
+                      "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": "P90D"},
+                      **({"offers": {"@type": "Offer", "price": str(p["price_inr"]), "priceCurrency": "INR", "category": "Paid", "availability": "https://schema.org/InStock", "url": url}} if p.get("price_inr") else {})})
     graph.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": label, "item": abs_url(path)} for i, (path, label) in enumerate(crumbs(p))]})
     return json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, separators=(",", ":"))
@@ -439,13 +455,14 @@ def body(p):
     sections = p.get("sections", [])
     toc = ""
     sec_html = []
-    for title, content in sections:
+    for sec in sections:
+        title, content = sec[0], sec[1]
         content = content.replace("@@SERVICE_CARDS@@", service_cards(p["path"])).replace("@@CONTACT_FORM@@", contact_block(p))
         sec_html.append(f'<section aria-labelledby="{slug(title)}"><h2 id="{slug(title)}">{e(title)}</h2>{content}</section>')
     if p.get("steps"):
         steps = "".join(f'<li id="step-{i+1}"><strong>{e(n)}</strong> &mdash; {e(t)}</li>' for i, (n, t) in enumerate(p["steps"]))
         sec_html.insert(0, f'<section aria-labelledby="steps"><h2 id="steps">Step-by-step implementation</h2><ol class="steps">{steps}</ol></section>')
-    titles = (["Step-by-step implementation"] if p.get("steps") else []) + [t for t, _ in sections]
+    titles = (["Step-by-step implementation"] if p.get("steps") else []) + [s[0] for s in sections]
     wide = p["path"] in ("index.html", "contact-us.html", "services/index.html")
     if len(titles) >= 3 and not wide:
         toc = '<aside class="toc" aria-label="On this page"><h2>On this page</h2><ol>' + "".join(
@@ -457,6 +474,33 @@ def body(p):
             f'<li><a href="{u}" rel="noopener" target="_blank">{e(t)}</a></li>' for t, u in p["sources"]) + "</ul></aside>"
     updated = f'<p class="updated">Last updated: <time datetime="{TODAY}">{dt.date.fromisoformat(TODAY).strftime("%-d %B %Y")}</time></p>' if p["schema"] in ("Article", "HowTo") else ""
     prose_cls = "" if wide else "prose"
+    if p.get("bands"):
+        bands = []
+        for sec in sections:
+            title, content = sec[0], sec[1]
+            style = sec[2] if len(sec) > 2 else "plain"
+            eyebrow = sec[3] if len(sec) > 3 else ""
+            content = content.replace("@@SERVICE_CARDS@@", service_cards(p["path"])).replace("@@CONTACT_FORM@@", contact_block(p))
+            eb = f'<span class="eyebrow">{eyebrow}</span>' if eyebrow else ""
+            bands.append(f'<section class="band band-{style}" aria-labelledby="{slug(title)}"><div class="wrap"><div class="band-head">{eb}<h2 id="{slug(title)}">{e(title)}</h2></div>{content}</div></section>')
+        faq = faq_html(p)
+        if faq:
+            bands.append(f'<section class="band band-plain"><div class="wrap narrow">{faq}</div></section>')
+        main_html = f"""<main id="main">
+{hero(p)}
+<div class="wrap answer-wrap"><div class="answer" role="note"><strong>Quick answer</strong><p>{e(p['answer'])}</p></div></div>
+{''.join(bands)}
+{related_html(p)}
+{cta_band(p)}
+</main>"""
+        return f"""<body>
+{header(p)}
+{normalise_links(main_html)}
+{footer(p)}
+<script src="{asset('site.js', p['path'])}" defer></script>
+</body>
+</html>
+"""
     main_html = f"""<main id="main">
 {hero(p)}
 <div class="section"><div class="wrap">

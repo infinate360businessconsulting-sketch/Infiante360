@@ -1,4 +1,5 @@
 """Home, about, training, guides, industries, FAQ, contact, privacy pages."""
+from visuals import journey_svg
 
 EL = "https://experienceleague.adobe.com/en/docs"
 REG_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLvHx50ES_KqrULMKromsE3mg/viewform?usp=header"
@@ -101,6 +102,9 @@ CORE = [
     dict(
         path="training/index.html",
         nav="Training",
+        hero_visual=journey_svg(),
+        hero_cta=("Register for ₹6,000", REG_FORM),
+        price_inr=6000,
         title="AEP Course: Adobe MarTech & Agentic AI Career Accelerator",
         desc="Live online Adobe Experience Platform course: AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI training with projects, labs and interview prep.",
         h1="Adobe MarTech + Agentic AI career accelerator",
@@ -150,13 +154,24 @@ CORE = [
 </ul>"""),
             ("Who it is for", """
 <p>Beginners and students with an analytics or technology background, career switchers, marketers, developers, data engineers, implementation specialists, consultants and aspiring architects. Sessions run live online in Indian Standard Time, so learners can join from Bangalore, Hyderabad, Chennai, Mumbai, Pune, Delhi NCR and elsewhere in India, or internationally where the timings suit.</p>"""),
-            ("Schedule, fees and registration", f"""
-<p>Batch dates, timings and fees change between cohorts. Register your interest and the team will share the current schedule.</p>
-<p class="cta-row"><a class="btn btn-primary" href="{REG_FORM}" rel="noopener" target="_blank">Register / request details</a> <a class="btn btn-ghost" href="{CAREER_FORM}" rel="noopener" target="_blank">Free career mapping</a></p>
+            ("Program fee and registration", f"""
+<div class="price-card">
+<div><div class="price">₹6,000<small>Adobe MarTech + Agentic AI Career Accelerator</small></div>
+<p class="cta-row" style="margin-top:20px"><a class="btn btn-primary" href="{REG_FORM}" rel="noopener" target="_blank">Register now</a> <a class="btn btn-ghost" href="{CAREER_FORM}" rel="noopener" target="_blank">Free career mapping</a></p></div>
+<ul class="checklist">
+<li>Live online sessions across six phases</li>
+<li>Hands-on labs and enterprise-style projects</li>
+<li>AEP, RTCDP, AJO, CJA, Web SDK, Agentic AI &amp; MCP</li>
+<li>Architect troubleshooting scenarios and interview preparation</li>
+<li>Career mapping, resume and LinkedIn positioning guidance</li>
+</ul>
+</div>
+<p>Batch dates and session timings are shared on registration. Corporate and team pricing is quoted separately &mdash; see <a href="corporate-training.html">corporate training</a>.</p>
 <p class="small muted">Training outcomes depend on individual participation and practice. No job, salary or certification outcome is guaranteed.</p>"""),
         ],
         faqs=[
             ("Is the AEP course online?", "Yes. Sessions are delivered live online with hands-on exercises."),
+            ("How much does the career accelerator cost?", "The program fee is ₹6,000 for the Adobe MarTech + Agentic AI Career Accelerator. Corporate and team pricing is quoted separately."),
             ("Does the course prepare me for Adobe certification?", "The program covers the concepts tested in Adobe certifications relevant to AEP, but it is independent of Adobe and does not guarantee a certification result."),
             ("Do I need prior Adobe experience?", "No. A basic understanding of data, marketing or web technology helps. Beginners start with the AEP data flow."),
         ],
@@ -339,6 +354,7 @@ CORE = [
             ("What is the difference between AEP and Real-Time CDP?", "AEP is the data foundation; Real-Time CDP is an application on AEP that adds activation to destinations."),
             ("What services does Infinite360 offer?", "Adobe MarTech consulting (AEP, RTCDP, AJO, CJA, Web SDK), data engineering, Agentic AI and MCP, strategy and advisory, corporate training and an individual career accelerator."),
             ("Is the training online?", "Yes. Training is delivered live online with hands-on labs and projects."),
+            ("What is the course fee?", "The Adobe MarTech + Agentic AI Career Accelerator fee is ₹6,000. Corporate programs are quoted per engagement."),
             ("Do you guarantee jobs or certification?", "No. Outcomes depend on participation and practice. We do not guarantee jobs, salaries or certification results."),
             ("Is Infinite360 affiliated with Adobe?", "No. Infinite360 is independent. Adobe product names are trademarks of Adobe."),
             ("How do I get started?", "Use the contact form to describe your goal, or message us on WhatsApp at +91 82968 93895."),
