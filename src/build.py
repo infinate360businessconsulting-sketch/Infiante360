@@ -25,6 +25,7 @@ from content_services import SERVICES  # noqa: E402
 from content_more import MORE  # noqa: E402
 from content_home import HOME  # noqa: E402
 from content_corp import CORP  # noqa: E402
+from content_academy import ACADEMY  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
@@ -43,7 +44,7 @@ YOUTUBE = "https://www.youtube.com/@Infiante360TechAcademy"
 PORTFOLIO = "https://www.martechconsultant.tech/Pavan.html"
 FORM_ACTION = f"https://formsubmit.co/{EMAIL}"
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY
 BY_PATH = {p["path"]: p for p in PAGES}
 
 INTERESTS = [
@@ -72,7 +73,7 @@ INTEREST_BY_PATH = {
 NAV = [
     ("services/index.html", "Services"),
     ("solutions/index.html", "Solutions"),
-    ("training/index.html", "Training"),
+    ("academy/index.html", "Academy"),
     ("industries.html", "Industries"),
     ("about-us.html", "About"),
     ("learn/index.html", "Learn"),
@@ -81,7 +82,8 @@ NAV = [
 SECTION_HUBS = {
     "services": ("services/index.html", "Services"),
     "adobe-experience-platform": ("adobe-experience-platform/index.html", "AEP Guides"),
-    "training": ("training/index.html", "Training"),
+    "training": ("academy/index.html", "Academy"),
+    "academy": ("academy/index.html", "Academy"),
     "guides": ("learn/index.html", "Learn"),
     "learn": ("learn/index.html", "Learn"),
     "solutions": ("solutions/index.html", "Solutions"),
@@ -194,7 +196,7 @@ def hero(p):
     lede = p.get("lede") or p["desc"]
     if p.get("hero_cta"):
         label, target = p["hero_cta"]
-        ctas += f'<div class="cta-row"><a class="btn btn-primary" href="{rel(target, p["path"]) if not target.startswith("http") else target}">{label}</a><a class="btn btn-ghost" href="{rel("contact-us.html", p["path"])}">Talk to us</a></div>'
+        ctas += f'<div class="cta-row"><a class="btn btn-primary" href="{target if target.startswith(("http", "#")) else rel(target, p["path"])}">{label}</a><a class="btn btn-ghost" href="{rel("contact-us.html", p["path"])}">Talk to us</a></div>'
     visual = p.get("hero_visual", "")
     copy = f"""{breadcrumb_html(p)}
 <span class="kicker">{p['kicker']}</span>
@@ -242,7 +244,19 @@ def form_html(p, compact=False):
                f'<label for="{fid}-consent" style="font-weight:500">I agree that {BRAND} may use these details to respond to my enquiry, as described in the <a href="{rel("privacy-policy.html", p["path"])}">privacy policy</a>.</label></div>'
                f'<span class="error" id="{fid}-consent-error" aria-live="polite"></span></div>')
 
-    if compact:
+    if compact and p.get("program"):
+        prog = (f'<input type="hidden" name="program" value="{e(p["h1"])}">'
+                '<fieldset class="field full"><legend>What are you interested in?</legend><div class="choice">'
+                + "".join(f'<label><input type="radio" name="interest" value="{v}"{" checked" if i == 0 else ""}> {v}</label>'
+                          for i, v in enumerate(["This program", "A single tool at a lower price", "A course on another platform"]))
+                + "</div></fieldset>")
+        rows = (field("name", "Your name", auto="name", extra=' data-msg-required="Please enter your name."')
+                + field("email", "Email", typ="email", auto="email", extra=' data-msg-required="Please enter your email."')
+                + field("phone", "Phone / WhatsApp", typ="tel", req=False, auto="tel", extra=' pattern="[+0-9 ()-]{7,20}" data-msg-pattern="Use digits, spaces and + only."')
+                + prog
+                + field("tool", "Which tool?", req=False, hint="Optional, e.g. AEP only, AJO, CJA")
+                + message + consent)
+    elif compact:
         rows = (field("name", "Full name", auto="name", extra=' data-msg-required="Please enter your name."')
                 + field("email", "Email", typ="email", auto="email", extra=' data-msg-required="Please enter your email."')
                 + interest + message + consent)
@@ -309,9 +323,9 @@ def related_html(p):
 def cta_band(p):
     if p["path"] in ("contact-us.html", "privacy-policy.html"):
         return ""
-    if p["path"] in INTEREST_BY_PATH:
+    if p["path"] in INTEREST_BY_PATH or p.get("program"):
         return f"""<section class="section" aria-labelledby="enquire"><div class="wrap"><div class="contact-grid">
-<div><h2 id="enquire">Talk to us about {e(short_name(p))}</h2><p>Share a few details and we will reply with practical next steps. No obligation.</p>
+<div><h2 id="enquire">{"Request details: " if p.get("program") else "Talk to us about "}{e(short_name(p))}</h2><p>{"Tell us you are interested and we will email the full syllabus, dates and next steps. Only need one tool? Choose a single tool at a lower price. No payment now." if p.get("program") else "Share a few details and we will reply with practical next steps. No obligation."}</p>
 <ul class="contact-list"><li><strong>WhatsApp</strong><a href="{WHATSAPP}" rel="noopener" target="_blank">{PHONE_DISPLAY}</a></li><li><strong>Book a call</strong><a href="{BOOKING}" rel="noopener" target="_blank">Choose a time</a></li></ul></div>
 <div class="form-card">{form_html(p, compact=True)}</div></div></div></section>"""
     return f"""<section class="section"><div class="wrap"><div class="cta-band">
@@ -326,7 +340,7 @@ def footer(p):
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
-    learn = ["learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
+    learn = ["academy/index.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
     company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "faq.html", "contact-us.html", "privacy-policy.html"]
     return f"""<footer class="site-footer"><div class="wrap">
 <div class="footer-grid">
@@ -399,7 +413,7 @@ def jsonld(p):
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url,
                       "areaServed": "Worldwide", "availableChannel": {"@type": "ServiceChannel", "serviceUrl": BASE + "contact-us.html"}})
     if p["schema"] == "Course":
-        graph.append({"@type": "Course", "@id": url + "#course", "name": "Adobe MarTech + Agentic AI Career Accelerator",
+        graph.append({"@type": "Course", "@id": url + "#course", "name": p.get("course_name", "Adobe MarTech + Agentic AI Career Accelerator"),
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url, "inLanguage": "en",
                       "teaches": ["Adobe Experience Platform", "Real-Time CDP", "Adobe Journey Optimizer", "Customer Journey Analytics", "Adobe Web SDK", "Agentic AI and MCP"],
                       "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": "P90D"},

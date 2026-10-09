@@ -1,8 +1,9 @@
 """Homepage (long-form corporate layout) and shared fee constant."""
 from visuals import architecture_svg
+from content_academy import program_cards, course_tiles
 
-COURSE_FEE_INR = 6000
-COURSE_FEE_LABEL = "₹6,000"
+COURSE_FEE_INR = 60000
+COURSE_FEE_LABEL = "₹60,000"
 REG_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLvHx50ES_KqrULMKromsE3mg/viewform?usp=header"
 
 TIERS = """
@@ -79,9 +80,10 @@ HOME = dict(
 <div class="split">
 <div><p class="lead">A live, online, hands-on career accelerator for Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI &mdash; built around projects, troubleshooting and interview preparation.</p>
 <ul class="checklist"><li>Six phases with enterprise-style projects</li><li>Architect-level troubleshooting scenarios</li><li>Career mapping and interview preparation</li></ul>
-<p class="cta-row"><a class="btn btn-light" href="training/index.html">View the program</a><a class="btn btn-ghost" style="color:#fff" href="{REG_FORM}" rel="noopener" target="_blank">Register</a></p></div>
+<p class="cta-row"><a class="btn btn-light" href="academy/index.html">View all programs</a><a class="btn btn-ghost" style="color:#fff" href="{REG_FORM}" rel="noopener" target="_blank">Register</a></p></div>
 <div class="price-card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);box-shadow:none"><div><div class="price" style="color:#fff">{COURSE_FEE_LABEL}<small style="color:#ffd5d8">Career accelerator program fee</small></div></div><p style="margin:0">Live online sessions, labs, projects and career support. Contact us for corporate pricing.</p></div>
 </div>""", "red", "Learn"),
+        ("Academy programs and fees", program_cards(0) + '<h3 style="margin-top:32px">Single-tool courses</h3>' + course_tiles(0) + '<p style="margin-top:16px"><a href="academy/index.html">Explore the academy &rarr;</a> &middot; <a href="academy/videos.html">Watch free demo sessions &rarr;</a></p>', "alt", "Course catalog"),
         ("Free guides and answers", """
 <div class="grid-3">
 <a class="card link-card" href="adobe-experience-platform/index.html"><h3>The AEP guide</h3><p>Schemas to activation, step by step.</p></a>
@@ -95,7 +97,7 @@ HOME = dict(
     ],
     faqs=[
         ("What does Infinite360 do?", "Infinite360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
-        ("How much does the career accelerator cost?", "The career accelerator program fee is ₹6,000. Corporate training is priced per engagement."),
+        ("How much does the career accelerator cost?", "The career accelerator program fee is ₹60,000. Corporate training is priced per engagement."),
         ("How do I contact Infinite360?", "Use the contact form, WhatsApp +91 82968 93895, or book a call from the contact page."),
     ],
     related=["services/index.html", "solutions/index.html", "pavan-babu-gandla.html"],

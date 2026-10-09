@@ -101,6 +101,18 @@
     }
   });
 
+  // Video facades: load the YouTube player only when the visitor presses play.
+  Array.prototype.forEach.call(document.querySelectorAll(".video-facade"), function (btn) {
+    btn.addEventListener("click", function () {
+      var iframe = document.createElement("iframe");
+      iframe.src = btn.getAttribute("data-embed") + "&autoplay=1";
+      iframe.title = btn.getAttribute("aria-label").replace("Play video: ", "");
+      iframe.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+      iframe.allowFullscreen = true;
+      btn.replaceWith(iframe);
+    });
+  });
+
   var y = document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
