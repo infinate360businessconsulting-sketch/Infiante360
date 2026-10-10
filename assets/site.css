@@ -317,3 +317,25 @@ fieldset.field{border:0;padding:0;margin:0}
 .video-card figcaption{padding:14px 16px 18px;display:grid;gap:6px}
 .video-card figcaption strong{color:var(--ink)}
 .video-card figcaption a{font-size:.9rem;font-weight:700}
+
+/* ===== Workshops & bootcamp ===== */
+.ticket{background:var(--white);color:var(--body);border-radius:22px;padding:26px;box-shadow:var(--shadow-lg);border-top:6px solid var(--red);position:relative}
+.ticket h3{color:var(--ink);font-size:1.3rem}
+.ticket-label{display:inline-block;font-size:.75rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red-700);margin-bottom:8px}
+.ticket dl{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.ticket dt{font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.ticket dd{margin:2px 0 0;font-weight:700;color:var(--ink)}
+.ticket-bonus{font-weight:800;color:var(--green);margin:0 0 10px}
+.countdown{font-weight:700;color:var(--ink);margin:0 0 14px;min-height:1.5em}
+.band-dark .ticket{background:var(--white);border-color:var(--red)}
+.band-dark .ticket p,.band-dark .ticket dd{color:var(--ink)}
+.bonus{position:relative;background:linear-gradient(135deg,#fff7ed,#fff);border:2px solid #f59e0b;border-radius:24px;padding:clamp(22px,4vw,36px);box-shadow:0 18px 40px rgba(245,158,11,.18)}
+.bonus h3{font-size:clamp(1.25rem,2.4vw,1.6rem)}
+.bonus-badge{display:inline-block;background:#f59e0b;color:#111;font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:12px}
+.agenda{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.agenda li{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:start;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:0}
+.agenda time{font-weight:800;color:var(--red-700)}
+.agenda strong{display:block;color:var(--ink)}
+.agenda span{color:var(--body);font-size:.95rem}
+@media(max-width:560px){.agenda li{grid-template-columns:1fr;gap:4px}}
+.workshop ul{margin:10px 0 0;padding-left:1.1em;font-size:.93rem}

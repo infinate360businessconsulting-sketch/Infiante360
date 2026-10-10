@@ -113,6 +113,19 @@
     });
   });
 
+  // Event countdowns (start time in ISO format with offset).
+  var cds = document.querySelectorAll("[data-countdown]");
+  function tick() {
+    Array.prototype.forEach.call(cds, function (el) {
+      var diff = new Date(el.getAttribute("data-countdown")).getTime() - Date.now();
+      if (isNaN(diff)) return;
+      if (diff <= 0) { el.textContent = "This session has started or ended — see upcoming dates below."; return; }
+      var d = Math.floor(diff / 86400000), h = Math.floor(diff % 86400000 / 3600000), m = Math.floor(diff % 3600000 / 60000);
+      el.textContent = "Starts in " + (d ? d + "d " : "") + h + "h " + m + "m";
+    });
+  }
+  if (cds.length) { tick(); setInterval(tick, 30000); }
+
   var y = document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();

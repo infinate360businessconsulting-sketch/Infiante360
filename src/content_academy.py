@@ -145,6 +145,7 @@ ACADEMY = [
         hero_cta=("Browse programs", "#programs"),
         sections=[
             ("Programs", program_cards(1), "plain", "Course catalog"),
+            ("Workshops and bootcamps", '<p class="lead">New to AEP? Start with a short, live, hands-on format.</p><div class="grid-3"><a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Sun 11 Oct · ₹3,000</span><h3>AEP Launchpad bootcamp</h3><p>3 hours, 6–9 PM IST, with a free ₹3,500 test series.</p></a><a class="card link-card" href="aep-foundations-batch.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">From 15 Oct · 8 AM IST</span><h3>Live Foundations batch</h3><p>Two weeks, Monday–Friday, beginner-friendly.</p></a><a class="card link-card" href="workshops.html"><span class="tag" style="background:var(--green-50);color:var(--green)">Every Friday</span><h3>Hands-on workshops</h3><p>One AEP skill per session.</p></a></div>', "dark", "Start here"),
             ("Single-tool courses", '<p class="lead">Only need one platform? Each course is a focused path you can take alone or as part of a program.</p>' + course_tiles(1), "alt", "Learn one tool"),
             ("Why learn with Infinite360", """<div class="grid-3">
 <div class="card"><h3>Practical learning</h3><p>Hands-on labs, enterprise-style projects and capstone implementations.</p></div>

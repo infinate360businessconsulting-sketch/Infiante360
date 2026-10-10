@@ -26,6 +26,7 @@ from content_more import MORE  # noqa: E402
 from content_home import HOME  # noqa: E402
 from content_corp import CORP  # noqa: E402
 from content_academy import ACADEMY  # noqa: E402
+from content_events import EVENTS  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
@@ -44,7 +45,7 @@ YOUTUBE = "https://www.youtube.com/@Infiante360TechAcademy"
 PORTFOLIO = "https://www.martechconsultant.tech/Pavan.html"
 FORM_ACTION = f"https://formsubmit.co/{EMAIL}"
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS
 BY_PATH = {p["path"]: p for p in PAGES}
 
 INTERESTS = [
@@ -248,7 +249,7 @@ def form_html(p, compact=False):
         prog = (f'<input type="hidden" name="program" value="{e(p["h1"])}">'
                 '<fieldset class="field full"><legend>What are you interested in?</legend><div class="choice">'
                 + "".join(f'<label><input type="radio" name="interest" value="{v}"{" checked" if i == 0 else ""}> {v}</label>'
-                          for i, v in enumerate(["This program", "A single tool at a lower price", "A course on another platform"]))
+                          for i, v in enumerate(p.get("interest_options") or ["This program", "A single tool at a lower price", "A course on another platform"]))
                 + "</div></fieldset>")
         rows = (field("name", "Your name", auto="name", extra=' data-msg-required="Please enter your name."')
                 + field("email", "Email", typ="email", auto="email", extra=' data-msg-required="Please enter your email."')
@@ -340,7 +341,7 @@ def footer(p):
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
-    learn = ["academy/index.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
+    learn = ["academy/index.html", "academy/workshops.html", "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
     company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "faq.html", "contact-us.html", "privacy-policy.html"]
     return f"""<footer class="site-footer"><div class="wrap">
 <div class="footer-grid">
@@ -412,6 +413,13 @@ def jsonld(p):
         graph.append({"@type": "Service", "@id": url + "#service", "name": p["h1"], "serviceType": p.get("service_type", p["h1"]),
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url,
                       "areaServed": "Worldwide", "availableChannel": {"@type": "ServiceChannel", "serviceUrl": BASE + "contact-us.html"}})
+    if p.get("event"):
+        ev = p["event"]
+        graph.append({"@type": "EducationEvent", "@id": url + "#event", "name": ev["name"], "description": p["answer"],
+                      "startDate": ev["start"], "endDate": ev["end"], "eventStatus": "https://schema.org/EventScheduled",
+                      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+                      "location": {"@type": "VirtualLocation", "url": url}, "organizer": {"@id": ORG_ID}, "url": url,
+                      **({"offers": {"@type": "Offer", "price": str(ev["price"]), "priceCurrency": "INR", "availability": "https://schema.org/InStock", "url": url, "validFrom": TODAY}} if ev.get("price") else {})})
     if p["schema"] == "Course":
         graph.append({"@type": "Course", "@id": url + "#course", "name": p.get("course_name", "Adobe MarTech + Agentic AI Career Accelerator"),
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url, "inLanguage": "en",
