@@ -462,6 +462,10 @@ def head(p, robots="index,follow,max-image-preview:large,max-snippet:-1", canoni
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
 <link rel="stylesheet" href="{a('site.css')}">
 <script type="application/ld+json">{jsonld(p) if canonical else '{}'}</script>
+<script>
+  window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>"""
 
 
