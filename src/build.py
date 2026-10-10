@@ -126,8 +126,21 @@ def rel(target, from_path):
     return os.path.relpath(tgt, from_dir)
 
 
+_VERSIONS = {}
+
+
+def asset_version(name):
+    """Short content hash so browsers fetch new CSS/JS after each deploy (assets are cached for a week)."""
+    if name not in _VERSIONS:
+        import hashlib
+        with open(os.path.join(ROOT, "assets", name), "rb") as fh:
+            _VERSIONS[name] = hashlib.sha1(fh.read()).hexdigest()[:10]
+    return _VERSIONS[name]
+
+
 def asset(name, from_path):
-    return os.path.relpath("assets/" + name, os.path.dirname(from_path) or ".")
+    url = os.path.relpath("assets/" + name, os.path.dirname(from_path) or ".")
+    return url + ("?v=" + asset_version(name) if name.endswith((".css", ".js")) else "")
 
 
 def normalise_links(body):
@@ -433,7 +446,7 @@ def jsonld(p):
 
 # ------------------------------------------------------------------ Page
 def head(p, robots="index,follow,max-image-preview:large,max-snippet:-1", canonical=True, asset_prefix=None):
-    a = (lambda n: asset_prefix + n) if asset_prefix else (lambda n: asset(n, p["path"]))
+    a = (lambda n: asset_prefix + n + ("?v=" + asset_version(n) if n.endswith((".css", ".js")) else "")) if asset_prefix else (lambda n: asset(n, p["path"]))
     url = abs_url(p["path"])
     kw = f'<meta name="keywords" content="{e(", ".join(p.get("keywords", [])))}">' if p.get("keywords") else ""
     can = f'<link rel="canonical" href="{url}">' if canonical else ""
@@ -565,7 +578,7 @@ def simple_page(path, title, h1, text, robots, links_html):
 <main id="main"><div class="hero"><div class="wrap"><span class="kicker">{BRAND}</span><h1>{e(h1)}</h1><p class="lede">{e(text)}</p>
 <div class="cta-row">{links_html}</div></div></div></main>
 {ftr}
-<script src="{BASE}assets/site.js" defer></script></body></html>
+<script src="{BASE}assets/site.js?v={asset_version('site.js')}" defer></script></body></html>
 """
 
 
@@ -611,7 +624,7 @@ def validate():
         for href in re.findall(r'href="([^"]+)"', doc):
             if href.startswith(("http:", "https:", "mailto:", "tel:", "#")):
                 continue
-            target = os.path.normpath(os.path.join(os.path.dirname(p["path"]), href.split("#")[0]))
+            target = os.path.normpath(os.path.join(os.path.dirname(p["path"]), href.split("#")[0].split("?")[0]))
             target = target.replace(os.sep, "/")
             if href.endswith("/") or href in ("./", "../"):
                 target = (target + "/index.html").lstrip("./") if target != "." else "index.html"
