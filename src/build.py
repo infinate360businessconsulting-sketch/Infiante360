@@ -543,6 +543,9 @@ def jsonld(p):
 
 
 # ------------------------------------------------------------------ Analytics (consent-first)
+GSV = re.sub(r"[^A-Za-z0-9_-]", "", str(_load("settings.json").get("google_site_verification", "")))
+
+
 def analytics_head():
     """Consent Mode v2 defaults to denied; the banner in site.js updates consent. Tags load only when IDs are configured."""
     if not (GA4_ID or GTM_ID):
@@ -582,6 +585,7 @@ def head(p, robots="index,follow,max-image-preview:large,max-snippet:-1", canoni
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+{('<meta name="google-site-verification" content="' + GSV + '">') if GSV else ""}
 <title>{e(p['title'])}</title>
 <meta name="description" content="{e(p['desc'])}">
 {kw}
