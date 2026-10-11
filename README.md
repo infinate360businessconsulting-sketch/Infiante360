@@ -39,3 +39,12 @@ Requires Settings → Pages → Source: **GitHub Actions**.
 
 ## Rollback
 `git revert <commit>` and push, or disable Pages in Settings → Pages.
+
+## Content admin, analytics and webhooks
+
+- **Admin panel:** `/admin/` (Decap CMS). Edits `content/settings.json` (GA4/GTM IDs, top-bar announcement), `content/overrides.json` (fix any page's title, description, H1, quick answer or notice) and `content/testimonials.json` (only entries marked verified + consent are published). Each save is a Git commit; Vercel rebuilds automatically.
+  - One-time setup: create a GitHub OAuth App (callback `https://<site>/api/callback`) and set `OAUTH_GITHUB_CLIENT_ID` and `OAUTH_GITHUB_CLIENT_SECRET` in Vercel environment variables. Never commit them.
+- **Dashboard:** `/admin/dashboard.html` - page inventory, title/description lengths, word counts, inbound links and flags (noindex, robots-disallowed).
+- **Analytics:** GA4 and GTM load only when IDs are set (admin settings or `GA4_ID` / `GTM_ID` env). Consent Mode v2 defaults to denied; a banner asks visitors.
+- **Lead webhook:** forms also post to `/api/lead`, which forwards to `LEAD_WEBHOOK_URL` (n8n, Make, Zapier or CRM) with optional `LEAD_WEBHOOK_SECRET` header. Without the env var nothing is forwarded.
+- **Feeds:** `rss.xml` plus `feeds/case-studies.xml`, `feeds/guides.xml`, `feeds/use-cases.xml`, `feeds/academy.xml`.

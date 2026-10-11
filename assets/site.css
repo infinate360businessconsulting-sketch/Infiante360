@@ -190,7 +190,7 @@ fieldset.field{border:0;padding:0;margin:0}
 .site-footer a:hover{color:#fff;text-decoration:underline}
 .footer-grid{display:grid;gap:28px}
 @media(min-width:720px){.footer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1024px){.footer-grid{grid-template-columns:1.3fr 1fr 1fr 1fr}}
+@media(min-width:1024px){.footer-grid{grid-template-columns:1.3fr 1fr 1fr 1fr 1fr}}
 .site-footer h2{color:#fff;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
 .site-footer ul{list-style:none;padding:0;margin:0}
 .site-footer li{margin:0 0 8px}
@@ -339,3 +339,46 @@ fieldset.field{border:0;padding:0;margin:0}
 .agenda span{color:var(--body);font-size:.95rem}
 @media(max-width:560px){.agenda li{grid-template-columns:1fr;gap:4px}}
 .workshop ul{margin:10px 0 0;padding-left:1.1em;font-size:.93rem}
+/* ---- Top bar, red CTA pills, case studies, diagrams, consent, dashboard ---- */
+.topbar{background:var(--navy,#0b1730);color:#fff;font-size:.85rem}
+.topbar-row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:6px 0}
+.topbar .announce{color:#fff;font-weight:700;text-decoration:none}
+.topbar a.announce:hover{text-decoration:underline}
+.toplinks{display:flex;flex-wrap:wrap;gap:6px}
+.toplinks a{background:#d7141e;color:#fff;font-weight:700;text-decoration:none;padding:4px 10px;border-radius:999px;line-height:1.4}
+.toplinks a:hover,.toplinks a:focus-visible{background:#a80f17;outline:2px solid #fff;outline-offset:1px}
+@media(max-width:700px){.topbar .announce{flex-basis:100%}.toplinks a{font-size:.78rem;padding:3px 8px}}
+.link-pills{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
+.link-pills a{display:inline-flex;align-items:center;background:#d7141e;color:#fff !important;font-weight:700;text-decoration:none;padding:10px 16px;border-radius:12px;box-shadow:0 8px 20px rgba(215,20,30,.22);transition:transform .15s,background .15s}
+.link-pills a::after{content:"\2192";margin-left:8px}
+.link-pills a:hover,.link-pills a:focus-visible{background:#a80f17;transform:translateY(-1px)}
+@media(prefers-reduced-motion:reduce){.link-pills a{transition:none}}
+.note{background:#fff7ed;border-left:4px solid #f59e0b;padding:12px 16px;border-radius:10px;font-size:.95rem;margin:12px 0}
+table.glance th{width:34%;text-align:left;background:#f4f6fb}
+figure.diagram{margin:18px 0;background:#fff;border:1px solid var(--line,#e2e6ef);border-radius:18px;padding:12px}
+figure.diagram svg{width:100%;height:auto;display:block}
+figure.diagram figcaption{font-size:.85rem;color:var(--muted,#5b6475);margin-top:8px}
+.case-card .tag,.card .tag{display:inline-block}
+.sim-card ul{margin:8px 0 16px}
+.chips-light{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}
+.chips-light li{background:#eef1f8;border-radius:999px;padding:6px 12px;font-weight:600;font-size:.9rem;margin:0}
+.quote blockquote{margin:0;font-size:1rem}
+.quote figcaption{margin-top:12px;font-size:.9rem;color:var(--muted,#5b6475)}
+.lp-grid{align-items:start}
+.sitemap-grid ul{columns:1;padding-left:1.1em}
+.legal-links{display:flex;flex-wrap:wrap;gap:16px;margin-top:18px;font-size:.9rem}
+.legal-links a{color:inherit}
+.consent-bar{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;background:#fff;color:#0b1730;border:1px solid #e2e6ef;border-radius:16px;box-shadow:0 18px 40px rgba(11,23,48,.2);padding:16px 18px;max-width:720px;margin:0 auto}
+.consent-bar p{margin:0 0 10px}
+.consent-bar .cta-row{margin:0}
+body.dash{background:#f4f6fb;padding:24px 0}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin:20px 0}
+.kpi{background:#fff;border:1px solid #e2e6ef;border-radius:14px;padding:14px}
+.kpi b{display:block;font-size:1.6rem;color:#d7141e}
+.kpi span{font-size:.85rem;color:#5b6475}
+.dash-table{font-size:.85rem}
+.dash-table td{word-break:break-word}
+.topic-chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:20px 0 4px;font-size:.9rem}
+.topic-chips span{font-weight:700;color:var(--muted,#5b6475)}
+.topic-chips a{border:1.5px solid #d7141e;color:#a80f17;border-radius:999px;padding:4px 12px;font-weight:700;text-decoration:none}
+.topic-chips a:hover,.topic-chips a:focus-visible{background:#d7141e;color:#fff}

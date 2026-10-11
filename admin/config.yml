@@ -1,0 +1,64 @@
+backend:
+  name: github
+  repo: infinate360businessconsulting-sketch/Infiante360
+  branch: main
+  base_url: https://infiante360-skbe.vercel.app
+  auth_endpoint: api/auth
+  commit_messages:
+    update: "Admin: update {{slug}}"
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+site_url: https://infiante360-skbe.vercel.app
+display_url: https://infiante360-skbe.vercel.app
+publish_mode: simple
+
+collections:
+  - name: site
+    label: Site
+    files:
+      - name: settings
+        label: Site settings (analytics & announcement)
+        file: content/settings.json
+        format: json
+        fields:
+          - {name: ga4_id, label: "GA4 measurement ID (G-XXXXXXX)", widget: string, required: false, pattern: ['^$|^G-[A-Z0-9]{4,12}$', "Must look like G-XXXXXXX"]}
+          - {name: gtm_id, label: "GTM container ID (GTM-XXXXXX)", widget: string, required: false, pattern: ['^$|^GTM-[A-Z0-9]{4,10}$', "Must look like GTM-XXXXXX"]}
+          - {name: announcement, label: "Top-bar announcement", widget: string, required: false}
+          - {name: announcement_link, label: "Announcement link (site path like academy/workshops.html, or https URL)", widget: string, required: false}
+      - name: overrides
+        label: Page corrections (title, description, H1, quick answer)
+        file: content/overrides.json
+        format: json
+        fields:
+          - name: items
+            label: Corrections
+            label_singular: Correction
+            widget: list
+            summary: "{{fields.path}}"
+            fields:
+              - {name: path, label: "Page path (e.g. services/aep-consulting.html — see /admin/dashboard.html)", widget: string}
+              - {name: title, label: "SEO title (max 65 characters)", widget: string, required: false}
+              - {name: desc, label: "Meta description (70–160 characters)", widget: text, required: false}
+              - {name: h1, label: "Main heading (H1)", widget: string, required: false}
+              - {name: lede, label: "Hero intro line", widget: text, required: false}
+              - {name: answer, label: "Quick answer (25–90 words)", widget: text, required: false}
+              - {name: notice, label: "Notice shown under the quick answer", widget: text, required: false}
+      - name: testimonials
+        label: Verified reviews
+        file: content/testimonials.json
+        format: json
+        fields:
+          - name: items
+            label: Reviews
+            label_singular: Review
+            widget: list
+            summary: "{{fields.name}} — {{fields.program}}"
+            fields:
+              - {name: name, label: Name, widget: string}
+              - {name: role, label: "Role and company", widget: string, required: false}
+              - {name: program, label: "Program or engagement", widget: string, required: false}
+              - {name: quote, label: Review, widget: text}
+              - {name: date, label: "Date received", widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false}
+              - {name: verified, label: "Participation verified", widget: boolean, default: false}
+              - {name: consent, label: "Written permission to publish received", widget: boolean, default: false}

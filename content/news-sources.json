@@ -1,0 +1,258 @@
+[
+ {
+  "source": "Adobe Developers Blog",
+  "category": "Adobe",
+  "subcategory": "Developer",
+  "rss_url": "https://blog.developer.adobe.com/en/feed.xml",
+  "website": "https://blog.developer.adobe.com/",
+  "priority": "P1"
+ },
+ {
+  "source": "Adobe Blog",
+  "category": "Adobe",
+  "subcategory": "Corporate",
+  "rss_url": "https://blog.adobe.com/en/publish/rss.xml",
+  "website": "https://blog.adobe.com/",
+  "priority": "P1"
+ },
+ {
+  "source": "MarTech",
+  "category": "MarTech",
+  "subcategory": "Marketing Technology",
+  "rss_url": "https://martech.org/feed/",
+  "website": "https://martech.org/",
+  "priority": "P1"
+ },
+ {
+  "source": "Chiefmartec",
+  "category": "MarTech",
+  "subcategory": "Marketing Technology",
+  "rss_url": "https://chiefmartec.com/feed/",
+  "website": "https://chiefmartec.com/",
+  "priority": "P1"
+ },
+ {
+  "source": "MarTech Series",
+  "category": "MarTech",
+  "subcategory": "Marketing Technology",
+  "rss_url": "https://www.martechseries.com/feed/",
+  "website": "https://www.martechseries.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Chief Marketer",
+  "category": "MarTech",
+  "subcategory": "Marketing Technology",
+  "rss_url": "https://www.chiefmarketer.com/feed/",
+  "website": "https://www.chiefmarketer.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "HubSpot Marketing Blog",
+  "category": "Marketing Automation",
+  "subcategory": "Marketing",
+  "rss_url": "https://blog.hubspot.com/marketing/rss.xml",
+  "website": "https://blog.hubspot.com/marketing/",
+  "priority": "P2"
+ },
+ {
+  "source": "GetResponse Blog",
+  "category": "Marketing Automation",
+  "subcategory": "Email",
+  "rss_url": "https://www.getresponse.com/blog/feed",
+  "website": "https://www.getresponse.com/blog",
+  "priority": "P2"
+ },
+ {
+  "source": "Buffer",
+  "category": "Marketing Automation",
+  "subcategory": "Social",
+  "rss_url": "https://buffer.com/resources/feed",
+  "website": "https://buffer.com/resources/",
+  "priority": "P3"
+ },
+ {
+  "source": "AWeber Blog",
+  "category": "Marketing Automation",
+  "subcategory": "Email",
+  "rss_url": "https://www.aweber.com/blog/feed",
+  "website": "https://www.aweber.com/blog/",
+  "priority": "P3"
+ },
+ {
+  "source": "Campaign Monitor",
+  "category": "Marketing Automation",
+  "subcategory": "Email",
+  "rss_url": "https://www.campaignmonitor.com/blog/feed/",
+  "website": "https://www.campaignmonitor.com/blog/",
+  "priority": "P2"
+ },
+ {
+  "source": "Act-On",
+  "category": "Marketing Automation",
+  "subcategory": "Automation",
+  "rss_url": "https://www.act-on.com/feed/",
+  "website": "https://www.act-on.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "WebEngage",
+  "category": "Marketing Automation",
+  "subcategory": "Engagement",
+  "rss_url": "https://webengage.com/blog/feed/",
+  "website": "https://webengage.com/blog/",
+  "priority": "P2"
+ },
+ {
+  "source": "Dotdigital",
+  "category": "Marketing Automation",
+  "subcategory": "Automation",
+  "rss_url": "https://www.dotdigital.com/feed/",
+  "website": "https://www.dotdigital.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Moz",
+  "category": "Digital Marketing",
+  "subcategory": "SEO",
+  "rss_url": "https://moz.com/blog/feed",
+  "website": "https://moz.com/blog",
+  "priority": "P2"
+ },
+ {
+  "source": "Search Engine Journal",
+  "category": "Digital Marketing",
+  "subcategory": "SEO",
+  "rss_url": "https://www.searchenginejournal.com/feed/",
+  "website": "https://www.searchenginejournal.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Search Engine Land",
+  "category": "Digital Marketing",
+  "subcategory": "SEO",
+  "rss_url": "https://searchengineland.com/feed",
+  "website": "https://searchengineland.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Social Media Examiner",
+  "category": "Digital Marketing",
+  "subcategory": "Social",
+  "rss_url": "https://www.socialmediaexaminer.com/feed/",
+  "website": "https://www.socialmediaexaminer.com/",
+  "priority": "P3"
+ },
+ {
+  "source": "Content Marketing Institute",
+  "category": "Digital Marketing",
+  "subcategory": "Content",
+  "rss_url": "https://contentmarketinginstitute.com/feed/",
+  "website": "https://contentmarketinginstitute.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Copyblogger",
+  "category": "Digital Marketing",
+  "subcategory": "Content",
+  "rss_url": "https://copyblogger.com/feed/",
+  "website": "https://copyblogger.com/",
+  "priority": "P3"
+ },
+ {
+  "source": "ClickZ",
+  "category": "Digital Marketing",
+  "subcategory": "Marketing",
+  "rss_url": "https://www.clickz.com/feed/",
+  "website": "https://www.clickz.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Digital Marketing Institute",
+  "category": "Digital Marketing",
+  "subcategory": "Education",
+  "rss_url": "https://digitalmarketinginstitute.com/blog/feed",
+  "website": "https://digitalmarketinginstitute.com/blog",
+  "priority": "P3"
+ },
+ {
+  "source": "Semrush",
+  "category": "Digital Marketing",
+  "subcategory": "SEO",
+  "rss_url": "https://www.semrush.com/blog/feed/",
+  "website": "https://www.semrush.com/blog/",
+  "priority": "P2"
+ },
+ {
+  "source": "Smart Insights",
+  "category": "Digital Marketing",
+  "subcategory": "Strategy",
+  "rss_url": "https://www.smartinsights.com/feed/",
+  "website": "https://www.smartinsights.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Neil Patel",
+  "category": "Digital Marketing",
+  "subcategory": "Growth",
+  "rss_url": "https://neilpatel.com/blog/feed/",
+  "website": "https://neilpatel.com/blog/",
+  "priority": "P3"
+ },
+ {
+  "source": "Adweek",
+  "category": "Marketing",
+  "subcategory": "Industry",
+  "rss_url": "https://www.adweek.com/feed/",
+  "website": "https://www.adweek.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Marketing Dive",
+  "category": "Marketing",
+  "subcategory": "Industry",
+  "rss_url": "https://www.marketingdive.com/feeds/news/",
+  "website": "https://www.marketingdive.com/",
+  "priority": "P2"
+ },
+ {
+  "source": "Forrester Blogs",
+  "category": "Research",
+  "subcategory": "MarTech",
+  "rss_url": "https://www.forrester.com/blogs/feed/",
+  "website": "https://www.forrester.com/blogs/",
+  "priority": "P1"
+ },
+ {
+  "source": "Gartner",
+  "category": "Research",
+  "subcategory": "Technology",
+  "rss_url": "https://www.gartner.com/en/blog",
+  "website": "https://www.gartner.com/en/blog",
+  "priority": "P1"
+ },
+ {
+  "source": "Marketing AI Institute",
+  "category": "AI",
+  "subcategory": "AI Marketing",
+  "rss_url": "https://www.marketingaiinstitute.com/blog/rss.xml",
+  "website": "https://www.marketingaiinstitute.com/blog",
+  "priority": "P2"
+ },
+ {
+  "source": "WordLift",
+  "category": "AI",
+  "subcategory": "AI Marketing",
+  "rss_url": "https://wordlift.io/blog/en/feed/",
+  "website": "https://wordlift.io/blog/en/",
+  "priority": "P3"
+ },
+ {
+  "source": "Single Grain AI",
+  "category": "AI",
+  "subcategory": "AI Marketing",
+  "rss_url": "https://www.singlegrain.com/feed/",
+  "website": "https://www.singlegrain.com/",
+  "priority": "P3"
+ }
+]

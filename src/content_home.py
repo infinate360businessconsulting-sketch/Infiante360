@@ -85,6 +85,22 @@ HOME = dict(
 </div>""", "red", "Learn"),
         ("Upcoming: AEP Launchpad bootcamp", '<div class="split"><div><p class="lead">Sunday, 11 October 2026 · 6:00 – 9:00 PM IST · live online · ₹3,000</p><p><strong>Free bonus:</strong> ₹3,500 Interview &amp; Certification Test Series for every attendee.</p><p class="cta-row"><a class="btn btn-light" href="academy/aep-launchpad-bootcamp.html">View the bootcamp</a><a class="btn btn-ghost" style="color:#fff" href="academy/workshops.html">Friday workshops</a></p></div><div><p>Next live Foundations batch starts <strong>15 October, 8:00 – 9:30 AM IST</strong>, Monday–Friday for two weeks.</p><p><a href="academy/aep-foundations-batch.html" style="color:#fff">See the batch plan &rarr;</a></p></div></div>', "red", "Workshops &amp; bootcamps"),
         ("Academy programs and fees", program_cards(0) + '<h3 style="margin-top:32px">Single-tool courses</h3>' + course_tiles(0) + '<p style="margin-top:16px"><a href="academy/index.html">Explore the academy &rarr;</a> &middot; <a href="academy/videos.html">Watch free demo sessions &rarr;</a></p>', "alt", "Course catalog"),
+        ("Case studies: what Infinite360 brings", """
+<div class="grid-3">
+<a class="card link-card" href="case-studies/banking-customer-360-cross-sell.html"><span class="tag">BFSI</span><h3>Banking Customer 360 &amp; cross-sell</h3><p>Governed identity, loan drop-off recovery and consent-aware journeys.</p></a>
+<a class="card link-card" href="case-studies/airline-mobile-journey-orchestration.html"><span class="tag">Travel</span><h3>Airline journey orchestration</h3><p>Mobile engagement, check-in and disruption notifications.</p></a>
+<a class="card link-card" href="case-studies/telecom-churn-prevention.html"><span class="tag">Telecom</span><h3>Telecom churn prevention</h3><p>Risk audiences, save journeys and holdout measurement.</p></a>
+<a class="card link-card" href="case-studies/insurance-policy-onboarding-renewal.html"><span class="tag">Insurance</span><h3>Policy onboarding &amp; renewals</h3><p>Claims updates and automated renewal reminders.</p></a>
+<a class="card link-card" href="case-studies/hospitality-loyalty-personalisation.html"><span class="tag">Hospitality</span><h3>Loyalty &amp; service journeys</h3><p>Offer attribution and operational analytics in CJA.</p></a>
+<a class="card link-card" href="case-studies/retail-omnichannel-identity-stitching.html"><span class="tag">Retail</span><h3>Omnichannel identity stitching</h3><p>Anonymous to known, and how to troubleshoot it.</p></a>
+</div>
+<p class="note">Implementation case studies are built on our simulation environments with synthetic data and show approach, not client results.</p>
+<div class="link-pills"><a href="case-studies/index.html">All case studies</a><a href="use-cases/index.html">Use cases</a><a href="academy/simulators.html">Simulators</a></div>""", "alt", "Proof of approach"),
+        ("Contract hiring: productive from day one", """
+<div class="split"><div><p class="lead">Need AEP, AJO, CJA or Web SDK capacity fast? Our contract talent has practised the same patterns end to end in simulator projects, and onboarding is prepared before day one.</p>
+<ul class="checklist"><li>Profiles matched on practised patterns</li><li>Scenario-based readiness interviews</li><li>Contract, contract-to-hire or managed pod</li></ul>
+<div class="link-pills"><a href="services/contract-hiring.html">How contract hiring works</a><a href="lp/hire-aep-contract-talent.html">Request talent</a></div></div>
+<div><div class="tiles"><a class="tile link-card" href="lp/aep-architecture-review.html"><span class="abbr">AR</span><h3>Architecture review</h3><p>Prioritised findings and a 30/60/90-day plan.</p></a><a class="tile link-card" href="lp/corporate-adobe-training.html"><span class="abbr">CT</span><h3>Corporate training</h3><p>Role-based tracks for your team.</p></a><a class="tile link-card" href="lp/agentic-ai-mcp-workshop.html"><span class="abbr">AI</span><h3>Agentic AI workshop</h3><p>Governed agents and MCP.</p></a></div></div></div>""", "dark", "Talent"),
         ("Free guides and answers", """
 <div class="grid-3">
 <a class="card link-card" href="adobe-experience-platform/index.html"><h3>The AEP guide</h3><p>Schemas to activation, step by step.</p></a>
@@ -94,7 +110,7 @@ HOME = dict(
 <a class="card link-card" href="guides/what-is-mcp.html"><h3>What is MCP?</h3><p>Safe agentic AI for enterprise MarTech.</p></a>
 <a class="card link-card" href="guides/marketo-engage-aep.html"><h3>Marketo Engage and AEP</h3><p>Lead lifecycle, scoring and integration.</p></a>
 </div>
-<p><a href="learn/index.html">All learning hubs &rarr;</a></p>""", "plain", "Insights"),
+<div class="link-pills"><a href="learn/index.html">All learning hubs</a><a href="learn/student-questions.html">Student questions answered</a><a href="guides/ajo-implementation-best-practices.html">AJO best practices</a><a href="feeds.html">RSS feeds</a></div>""", "plain", "Insights"),
     ],
     faqs=[
         ("What does Infinite360 do?", "Infinite360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),

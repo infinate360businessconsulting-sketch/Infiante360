@@ -87,6 +87,16 @@
         firstBad.focus();
         return;
       }
+      // Attribution + webhook relay (server-side function forwards to the configured CRM/n8n webhook).
+      try {
+        var data = {};
+        new FormData(form).forEach(function (v, k) { if (typeof v === "string") data[k] = v; });
+        var attr = JSON.parse(sessionStorage.getItem("i360_attr") || "{}");
+        Object.keys(attr).forEach(function (k) { if (!data[k]) data[k] = attr[k]; });
+        if (navigator.sendBeacon) navigator.sendBeacon("/api/lead", new Blob([JSON.stringify(data)], { type: "application/json" }));
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: data.form_type === "testimonial" ? "review_submit" : "generate_lead", form_interest: data.interest || data.program || "" });
+      } catch (err) { /* never block the form */ }
       var btn = form.querySelector('button[type="submit"]');
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
       if (status) { status.textContent = ""; status.className = "form-status"; }
@@ -125,6 +135,37 @@
     });
   }
   if (cds.length) { tick(); setInterval(tick, 30000); }
+
+  // Remember campaign attribution for the session (UTMs + referrer) so enquiries carry their source.
+  try {
+    var q = new URLSearchParams(window.location.search), attr = JSON.parse(sessionStorage.getItem("i360_attr") || "{}");
+    ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(function (k) { if (q.get(k)) attr[k] = q.get(k).slice(0, 200); });
+    if (!attr.referrer && document.referrer && document.referrer.indexOf(location.host) === -1) attr.referrer = document.referrer.slice(0, 300);
+    sessionStorage.setItem("i360_attr", JSON.stringify(attr));
+  } catch (err) { /* storage unavailable */ }
+
+  // Consent banner: shown only when analytics tags are configured (gtag defined in <head>).
+  if (typeof window.gtag === "function") {
+    var stored = null;
+    try { stored = localStorage.getItem("i360_consent"); } catch (err) { /* ignore */ }
+    if (!stored) {
+      var bar = document.createElement("div");
+      bar.className = "consent-bar";
+      bar.setAttribute("role", "region");
+      bar.setAttribute("aria-label", "Cookie consent");
+      bar.innerHTML = '<p>We use analytics cookies to understand which pages help visitors. They stay off unless you accept. <a href="' +
+        (document.querySelector('a[href$="privacy-policy.html"]') || { getAttribute: function () { return "/privacy-policy.html"; } }).getAttribute("href") +
+        '">Privacy policy</a></p><div class="cta-row"><button type="button" class="btn btn-primary" data-c="granted">Accept analytics</button><button type="button" class="btn btn-ghost" data-c="denied">Decline</button></div>';
+      document.body.appendChild(bar);
+      bar.addEventListener("click", function (ev) {
+        var c = ev.target.getAttribute && ev.target.getAttribute("data-c");
+        if (!c) return;
+        try { localStorage.setItem("i360_consent", c); } catch (err) { /* ignore */ }
+        window.gtag("consent", "update", { analytics_storage: c });
+        bar.remove();
+      });
+    }
+  }
 
   var y = document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
