@@ -1,0 +1,279 @@
+stem,aspect,modifier,intent_bucket,source_rows,recommended_action
+implementation guide,implementation,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation tutorial,implementation,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation course,implementation,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation training,implementation,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation certification,implementation,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation implementation,implementation,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation best practices,implementation,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation architecture,implementation,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation examples,implementation,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation use cases,implementation,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation framework,implementation,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation roadmap,implementation,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation checklist,implementation,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation template,implementation,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation strategy,implementation,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation services,implementation,services,Commercial (route to services/hiring),180,Cover on service page
+implementation consultant,implementation,consultant,Commercial (route to services/hiring),180,Cover on service page
+implementation specialist,implementation,specialist,Commercial (route to services/hiring),180,Cover on service page
+implementation developer,implementation,developer,Commercial (route to services/hiring),180,Cover on service page
+implementation engineer,implementation,engineer,Commercial (route to services/hiring),180,Cover on service page
+implementation architect,implementation,architect,Commercial (route to services/hiring),180,Cover on service page
+implementation interview questions,implementation,interview questions,Career (route to Academy/career hub),180,Single hub section
+implementation career path,implementation,career path,Career (route to Academy/career hub),180,Single hub section
+implementation skills,implementation,skills,Career (route to Academy/career hub),180,Single hub section
+implementation salary,implementation,salary,Career (route to Academy/career hub),180,Single hub section
+implementation jobs,implementation,jobs,Career (route to Academy/career hub),180,Single hub section
+implementation project,implementation,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation hands-on,implementation,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation beginner,implementation,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+implementation advanced,implementation,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation enterprise,implementation,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation real time,implementation,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation end to end,implementation,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+implementation step by step,implementation,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture guide,architecture,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture tutorial,architecture,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture course,architecture,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture training,architecture,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture certification,architecture,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture implementation,architecture,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture best practices,architecture,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture architecture,architecture,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture examples,architecture,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture use cases,architecture,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture framework,architecture,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture roadmap,architecture,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture checklist,architecture,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture template,architecture,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture strategy,architecture,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture services,architecture,services,Commercial (route to services/hiring),180,Cover on service page
+architecture consultant,architecture,consultant,Commercial (route to services/hiring),180,Cover on service page
+architecture specialist,architecture,specialist,Commercial (route to services/hiring),180,Cover on service page
+architecture developer,architecture,developer,Commercial (route to services/hiring),180,Cover on service page
+architecture engineer,architecture,engineer,Commercial (route to services/hiring),180,Cover on service page
+architecture architect,architecture,architect,Commercial (route to services/hiring),180,Cover on service page
+architecture interview questions,architecture,interview questions,Career (route to Academy/career hub),180,Single hub section
+architecture career path,architecture,career path,Career (route to Academy/career hub),180,Single hub section
+architecture skills,architecture,skills,Career (route to Academy/career hub),180,Single hub section
+architecture salary,architecture,salary,Career (route to Academy/career hub),180,Single hub section
+architecture jobs,architecture,jobs,Career (route to Academy/career hub),180,Single hub section
+architecture project,architecture,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture hands-on,architecture,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture beginner,architecture,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+architecture advanced,architecture,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture enterprise,architecture,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture real time,architecture,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture end to end,architecture,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+architecture step by step,architecture,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion guide,data ingestion,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion tutorial,data ingestion,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion course,data ingestion,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion training,data ingestion,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion certification,data ingestion,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion implementation,data ingestion,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion best practices,data ingestion,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion architecture,data ingestion,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion examples,data ingestion,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion use cases,data ingestion,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion framework,data ingestion,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion roadmap,data ingestion,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion checklist,data ingestion,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion template,data ingestion,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion strategy,data ingestion,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion services,data ingestion,services,Commercial (route to services/hiring),180,Cover on service page
+data ingestion consultant,data ingestion,consultant,Commercial (route to services/hiring),180,Cover on service page
+data ingestion specialist,data ingestion,specialist,Commercial (route to services/hiring),180,Cover on service page
+data ingestion developer,data ingestion,developer,Commercial (route to services/hiring),180,Cover on service page
+data ingestion engineer,data ingestion,engineer,Commercial (route to services/hiring),180,Cover on service page
+data ingestion architect,data ingestion,architect,Commercial (route to services/hiring),180,Cover on service page
+data ingestion interview questions,data ingestion,interview questions,Career (route to Academy/career hub),180,Single hub section
+data ingestion career path,data ingestion,career path,Career (route to Academy/career hub),180,Single hub section
+data ingestion skills,data ingestion,skills,Career (route to Academy/career hub),180,Single hub section
+data ingestion salary,data ingestion,salary,Career (route to Academy/career hub),180,Single hub section
+data ingestion jobs,data ingestion,jobs,Career (route to Academy/career hub),180,Single hub section
+data ingestion project,data ingestion,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion hands-on,data ingestion,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion beginner,data ingestion,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+data ingestion advanced,data ingestion,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion enterprise,data ingestion,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion real time,data ingestion,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion end to end,data ingestion,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+data ingestion step by step,data ingestion,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity guide,identity,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity tutorial,identity,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity course,identity,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity training,identity,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity certification,identity,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity implementation,identity,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity best practices,identity,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity architecture,identity,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity examples,identity,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity use cases,identity,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity framework,identity,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity roadmap,identity,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity checklist,identity,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity template,identity,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity strategy,identity,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity services,identity,services,Commercial (route to services/hiring),180,Cover on service page
+identity consultant,identity,consultant,Commercial (route to services/hiring),180,Cover on service page
+identity specialist,identity,specialist,Commercial (route to services/hiring),180,Cover on service page
+identity developer,identity,developer,Commercial (route to services/hiring),180,Cover on service page
+identity engineer,identity,engineer,Commercial (route to services/hiring),180,Cover on service page
+identity architect,identity,architect,Commercial (route to services/hiring),180,Cover on service page
+identity interview questions,identity,interview questions,Career (route to Academy/career hub),180,Single hub section
+identity career path,identity,career path,Career (route to Academy/career hub),180,Single hub section
+identity skills,identity,skills,Career (route to Academy/career hub),180,Single hub section
+identity salary,identity,salary,Career (route to Academy/career hub),180,Single hub section
+identity jobs,identity,jobs,Career (route to Academy/career hub),180,Single hub section
+identity project,identity,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity hands-on,identity,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity beginner,identity,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+identity advanced,identity,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity enterprise,identity,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity real time,identity,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity end to end,identity,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+identity step by step,identity,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets guide,datasets,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets tutorial,datasets,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets course,datasets,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets training,datasets,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets certification,datasets,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets implementation,datasets,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets best practices,datasets,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets architecture,datasets,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets examples,datasets,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets use cases,datasets,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets framework,datasets,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets roadmap,datasets,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets checklist,datasets,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets template,datasets,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets strategy,datasets,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets services,datasets,services,Commercial (route to services/hiring),180,Cover on service page
+datasets consultant,datasets,consultant,Commercial (route to services/hiring),180,Cover on service page
+datasets specialist,datasets,specialist,Commercial (route to services/hiring),180,Cover on service page
+datasets developer,datasets,developer,Commercial (route to services/hiring),180,Cover on service page
+datasets engineer,datasets,engineer,Commercial (route to services/hiring),180,Cover on service page
+datasets architect,datasets,architect,Commercial (route to services/hiring),180,Cover on service page
+datasets interview questions,datasets,interview questions,Career (route to Academy/career hub),180,Single hub section
+datasets career path,datasets,career path,Career (route to Academy/career hub),180,Single hub section
+datasets skills,datasets,skills,Career (route to Academy/career hub),180,Single hub section
+datasets salary,datasets,salary,Career (route to Academy/career hub),180,Single hub section
+datasets jobs,datasets,jobs,Career (route to Academy/career hub),180,Single hub section
+datasets project,datasets,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets hands-on,datasets,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets beginner,datasets,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+datasets advanced,datasets,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets enterprise,datasets,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets real time,datasets,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets end to end,datasets,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+datasets step by step,datasets,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas guide,schemas,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas tutorial,schemas,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas course,schemas,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas training,schemas,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas certification,schemas,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas implementation,schemas,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas best practices,schemas,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas architecture,schemas,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas examples,schemas,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas use cases,schemas,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas framework,schemas,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas roadmap,schemas,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas checklist,schemas,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas template,schemas,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas strategy,schemas,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas services,schemas,services,Commercial (route to services/hiring),180,Cover on service page
+schemas consultant,schemas,consultant,Commercial (route to services/hiring),180,Cover on service page
+schemas specialist,schemas,specialist,Commercial (route to services/hiring),180,Cover on service page
+schemas developer,schemas,developer,Commercial (route to services/hiring),180,Cover on service page
+schemas engineer,schemas,engineer,Commercial (route to services/hiring),180,Cover on service page
+schemas architect,schemas,architect,Commercial (route to services/hiring),180,Cover on service page
+schemas interview questions,schemas,interview questions,Career (route to Academy/career hub),180,Single hub section
+schemas career path,schemas,career path,Career (route to Academy/career hub),180,Single hub section
+schemas skills,schemas,skills,Career (route to Academy/career hub),180,Single hub section
+schemas salary,schemas,salary,Career (route to Academy/career hub),180,Single hub section
+schemas jobs,schemas,jobs,Career (route to Academy/career hub),180,Single hub section
+schemas project,schemas,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas hands-on,schemas,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas beginner,schemas,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+schemas advanced,schemas,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas enterprise,schemas,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas real time,schemas,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas end to end,schemas,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+schemas step by step,schemas,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles guide,profiles,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles tutorial,profiles,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles course,profiles,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles training,profiles,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles certification,profiles,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles implementation,profiles,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles best practices,profiles,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles architecture,profiles,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles examples,profiles,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles use cases,profiles,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles framework,profiles,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles roadmap,profiles,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles checklist,profiles,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles template,profiles,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles strategy,profiles,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles services,profiles,services,Commercial (route to services/hiring),180,Cover on service page
+profiles consultant,profiles,consultant,Commercial (route to services/hiring),180,Cover on service page
+profiles specialist,profiles,specialist,Commercial (route to services/hiring),180,Cover on service page
+profiles developer,profiles,developer,Commercial (route to services/hiring),180,Cover on service page
+profiles engineer,profiles,engineer,Commercial (route to services/hiring),180,Cover on service page
+profiles architect,profiles,architect,Commercial (route to services/hiring),180,Cover on service page
+profiles interview questions,profiles,interview questions,Career (route to Academy/career hub),180,Single hub section
+profiles career path,profiles,career path,Career (route to Academy/career hub),180,Single hub section
+profiles skills,profiles,skills,Career (route to Academy/career hub),180,Single hub section
+profiles salary,profiles,salary,Career (route to Academy/career hub),180,Single hub section
+profiles jobs,profiles,jobs,Career (route to Academy/career hub),180,Single hub section
+profiles project,profiles,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles hands-on,profiles,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles beginner,profiles,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+profiles advanced,profiles,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles enterprise,profiles,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles real time,profiles,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles end to end,profiles,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+profiles step by step,profiles,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments guide,segments,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments tutorial,segments,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments course,segments,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments training,segments,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments certification,segments,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments implementation,segments,implementation,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments best practices,segments,best practices,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments architecture,segments,architecture,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments examples,segments,examples,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments use cases,segments,use cases,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments framework,segments,framework,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments roadmap,segments,roadmap,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments checklist,segments,checklist,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments template,segments,template,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments strategy,segments,strategy,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments services,segments,services,Commercial (route to services/hiring),180,Cover on service page
+segments consultant,segments,consultant,Commercial (route to services/hiring),180,Cover on service page
+segments specialist,segments,specialist,Commercial (route to services/hiring),180,Cover on service page
+segments developer,segments,developer,Commercial (route to services/hiring),180,Cover on service page
+segments engineer,segments,engineer,Commercial (route to services/hiring),180,Cover on service page
+segments architect,segments,architect,Commercial (route to services/hiring),180,Cover on service page
+segments interview questions,segments,interview questions,Career (route to Academy/career hub),180,Single hub section
+segments career path,segments,career path,Career (route to Academy/career hub),180,Single hub section
+segments skills,segments,skills,Career (route to Academy/career hub),180,Single hub section
+segments salary,segments,salary,Career (route to Academy/career hub),180,Single hub section
+segments jobs,segments,jobs,Career (route to Academy/career hub),180,Single hub section
+segments project,segments,project,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments hands-on,segments,hands-on,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments beginner,segments,beginner,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+segments advanced,segments,advanced,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments enterprise,segments,enterprise,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments real time,segments,real time,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments end to end,segments,end to end,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+segments step by step,segments,step by step,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+activation guide,activation,guide,Informational (guide/AEO),180,Cover inside one aspect page; do not create URL
+activation tutorial,activation,tutorial,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+activation course,activation,course,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+activation training,activation,training,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+activation certification,activation,certification,Learn (route to Academy),180,Cover inside one aspect page; do not create URL
+activation implementation,activation,implementation,Informational (guide/AEO),140,Cover inside one aspect page; do not create URL
