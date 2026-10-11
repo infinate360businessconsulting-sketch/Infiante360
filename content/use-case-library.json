@@ -1,0 +1,452 @@
+[
+ {
+  "id": "UC-01",
+  "name": "Real-time product interest",
+  "industry": "Retail",
+  "trigger": "Product view without add-to-cart",
+  "flow": "Web SDK → AEP/XDM → RTCDP audience → AJO or approved channel",
+  "governance": "Check identity, consent, latency, and suppression",
+  "kpis": "Qualified audience; eligible delivery; incremental conversion"
+ },
+ {
+  "id": "UC-02",
+  "name": "Cart abandonment",
+  "industry": "E-commerce",
+  "trigger": "Cart created without purchase",
+  "flow": "Commerce events → profile/audience → AJO journey",
+  "governance": "Exclude completed orders; deduplicate cart events",
+  "kpis": "Recovery rate vs holdout"
+ },
+ {
+  "id": "UC-03",
+  "name": "Checkout friction",
+  "industry": "E-commerce",
+  "trigger": "Repeated checkout error or drop-off",
+  "flow": "Web/app events → CJA funnel → approved help content",
+  "governance": "Validate event taxonomy and error definitions",
+  "kpis": "Checkout completion; support contacts"
+ },
+ {
+  "id": "UC-04",
+  "name": "New customer onboarding",
+  "industry": "Banking",
+  "trigger": "Account opened but onboarding incomplete",
+  "flow": "CRM/core feed → AEP profile → AJO",
+  "governance": "Eligibility, consent, identity, regulatory review",
+  "kpis": "Completion rate; time to first value"
+ },
+ {
+  "id": "UC-05",
+  "name": "Card activation",
+  "industry": "Financial services",
+  "trigger": "New card issued but not activated",
+  "flow": "Approved status feed → audience → journey",
+  "governance": "Exclude blocked/fraud-flagged accounts",
+  "kpis": "Activation rate; time to activation"
+ },
+ {
+  "id": "UC-06",
+  "name": "Subscription renewal",
+  "industry": "SaaS",
+  "trigger": "Renewal window opens",
+  "flow": "Billing + product events → profile → journey",
+  "governance": "Validate billing state; suppress cancelled accounts",
+  "kpis": "Renewal rate; churn by cohort"
+ },
+ {
+  "id": "UC-07",
+  "name": "Churn risk",
+  "industry": "Telecommunications",
+  "trigger": "Usage decline plus service friction",
+  "flow": "Usage/CRM/service data → CJA + RTCDP",
+  "governance": "Use holdouts; correlation is not causation",
+  "kpis": "Retention vs holdout; complaint rate"
+ },
+ {
+  "id": "UC-08",
+  "name": "Service outage alert",
+  "industry": "Utilities",
+  "trigger": "Confirmed outage in customer region",
+  "flow": "Operations event → affected segment → notification",
+  "governance": "Authoritative status, regional relevance, deduplication",
+  "kpis": "Time to notify; repeat contacts"
+ },
+ {
+  "id": "UC-09",
+  "name": "Flight disruption",
+  "industry": "Travel",
+  "trigger": "Confirmed booking delay/cancellation",
+  "flow": "Booking status → profile → support journey",
+  "governance": "Fresh booking status and valid alternatives",
+  "kpis": "Notification latency; self-service resolution"
+ },
+ {
+  "id": "UC-10",
+  "name": "Pre-arrival journey",
+  "industry": "Hospitality",
+  "trigger": "Booking enters pre-arrival window",
+  "flow": "Reservation feed → profile → AJO",
+  "governance": "Timezone, language, consent, booking changes",
+  "kpis": "Check-in completion; add-on engagement"
+ },
+ {
+  "id": "UC-11",
+  "name": "Appointment reminder",
+  "industry": "Healthcare",
+  "trigger": "Appointment approaching or changed",
+  "flow": "Scheduling system → minimal approved data → reminder",
+  "governance": "Privacy review and minimum necessary data",
+  "kpis": "Delivery; no-show rate vs baseline"
+ },
+ {
+  "id": "UC-12",
+  "name": "Insurance document reminder",
+  "industry": "Insurance",
+  "trigger": "Required document missing",
+  "flow": "Policy workflow → segment → notification",
+  "governance": "Avoid sensitive details in message",
+  "kpis": "Completion rate; processing time"
+ },
+ {
+  "id": "UC-13",
+  "name": "B2B lead follow-up",
+  "industry": "B2B",
+  "trigger": "High-intent form and account-fit signal",
+  "flow": "Form + CRM → lead score → CRM task",
+  "governance": "Consent/contact policy; duplicate prevention",
+  "kpis": "Speed to lead; qualified meetings"
+ },
+ {
+  "id": "UC-14",
+  "name": "Buying committee insights",
+  "industry": "B2B technology",
+  "trigger": "Several contacts engage with a topic",
+  "flow": "CRM + consented events → account analytics",
+  "governance": "Validate identity/account matching",
+  "kpis": "Buying-group coverage"
+ },
+ {
+  "id": "UC-15",
+  "name": "Loyalty tier recognition",
+  "industry": "Retail",
+  "trigger": "Verified loyalty threshold crossed",
+  "flow": "Loyalty feed → profile → personalized experience",
+  "governance": "Validate points and effective date",
+  "kpis": "Repeat purchase; tier engagement"
+ },
+ {
+  "id": "UC-16",
+  "name": "Price-drop alert",
+  "industry": "Retail",
+  "trigger": "Watched item price changes",
+  "flow": "Price event → preference lookup → notification",
+  "governance": "Fresh price, stock, market availability",
+  "kpis": "Conversion; unsubscribe rate"
+ },
+ {
+  "id": "UC-17",
+  "name": "Back-in-stock alert",
+  "industry": "Retail",
+  "trigger": "Opted-in item returns to stock",
+  "flow": "Inventory event → preference → notification",
+  "governance": "Dedupe; stock race conditions",
+  "kpis": "Purchase after alert"
+ },
+ {
+  "id": "UC-18",
+  "name": "Content recommendation",
+  "industry": "Media",
+  "trigger": "Recent consumption and declared preferences",
+  "flow": "Content events → profile → recommendation surface",
+  "governance": "Avoid sensitive inferences",
+  "kpis": "Engagement; completion"
+ },
+ {
+  "id": "UC-19",
+  "name": "Cross-channel path analysis",
+  "industry": "Multi-industry",
+  "trigger": "Web/app/email/store transitions",
+  "flow": "AEP → CJA data view → journey analysis",
+  "governance": "Identity stitching and timezone checks",
+  "kpis": "Path completion; channel insights"
+ },
+ {
+  "id": "UC-20",
+  "name": "Consent withdrawal",
+  "industry": "Multi-industry",
+  "trigger": "Preference changes to opt-out",
+  "flow": "Preference center → consent event → suppression",
+  "governance": "End-to-end propagation and audit trail",
+  "kpis": "Suppression latency"
+ },
+ {
+  "id": "UC-21",
+  "name": "Identity collision detection",
+  "industry": "Multi-industry",
+  "trigger": "Unexpected profile merges",
+  "flow": "Identity diagnostics → data quality alert",
+  "governance": "PII controls and confidence thresholds",
+  "kpis": "False merge rate"
+ },
+ {
+  "id": "UC-22",
+  "name": "Schema drift monitoring",
+  "industry": "Data platform",
+  "trigger": "Unexpected event field/type change",
+  "flow": "Ingestion validation → alert → owner",
+  "governance": "Version schema; trace dropped fields",
+  "kpis": "Detection time; invalid-record rate"
+ },
+ {
+  "id": "UC-23",
+  "name": "Streaming ingestion lag",
+  "industry": "Data platform",
+  "trigger": "Event latency exceeds threshold",
+  "flow": "Pipeline telemetry → monitoring alert",
+  "governance": "Define SLA by source and event class",
+  "kpis": "P95 latency; recovery time"
+ },
+ {
+  "id": "UC-24",
+  "name": "Audience freshness",
+  "industry": "MarTech operations",
+  "trigger": "Audience refresh deviates from expected timing",
+  "flow": "Job metadata → anomaly rule → alert",
+  "governance": "Account for seasonality and campaign changes",
+  "kpis": "Freshness SLA; false alerts"
+ },
+ {
+  "id": "UC-25",
+  "name": "Journey entry deduplication",
+  "industry": "Marketing operations",
+  "trigger": "Repeated event tries duplicate entry",
+  "flow": "Event validation → entry policy → monitoring",
+  "governance": "Idempotency and re-entry rules",
+  "kpis": "Duplicate entries"
+ },
+ {
+  "id": "UC-26",
+  "name": "Frequency caps",
+  "industry": "Marketing operations",
+  "trigger": "Customer approaches contact limit",
+  "flow": "Contact history → eligibility/suppression",
+  "governance": "Consistent cross-channel contact policy",
+  "kpis": "Over-contact and opt-out rates"
+ },
+ {
+  "id": "UC-27",
+  "name": "Post-purchase suppression",
+  "industry": "Retail",
+  "trigger": "Purchase while promotion is pending",
+  "flow": "Purchase event → audience update → journey exit",
+  "governance": "Latency and retry testing",
+  "kpis": "Irrelevant sends; suppression latency"
+ },
+ {
+  "id": "UC-28",
+  "name": "Mobile-to-web identity",
+  "industry": "Digital product",
+  "trigger": "Authenticated user changes devices",
+  "flow": "ECID + authenticated identity → identity graph",
+  "governance": "Consent, logout, shared devices",
+  "kpis": "Journey completeness"
+ },
+ {
+  "id": "UC-29",
+  "name": "Anonymous-to-known merge",
+  "industry": "Digital product",
+  "trigger": "Visitor logs in or submits identifier",
+  "flow": "Web SDK identity event → merge policy",
+  "governance": "Test pre/post-login association",
+  "kpis": "Profile completeness"
+ },
+ {
+  "id": "UC-30",
+  "name": "Attribution reconciliation",
+  "industry": "Marketing analytics",
+  "trigger": "Ad and analytics conversions differ",
+  "flow": "AEP/CJA + CRM/ad data → reconciliation",
+  "governance": "Align windows, identity, definitions",
+  "kpis": "Variance explained"
+ },
+ {
+  "id": "UC-31",
+  "name": "A/B test audience",
+  "industry": "Digital optimization",
+  "trigger": "Eligible visitors enter experiment",
+  "flow": "RTCDP audience → test platform → CJA",
+  "governance": "Randomization, sample size, holdout",
+  "kpis": "Incremental lift with interval"
+ },
+ {
+  "id": "UC-32",
+  "name": "Service routing",
+  "industry": "Customer service",
+  "trigger": "Verified priority case appears",
+  "flow": "CRM/profile → routing rules",
+  "governance": "Fairness, explainability, access controls",
+  "kpis": "Resolution time; satisfaction"
+ },
+ {
+  "id": "UC-33",
+  "name": "Fraud-safe suppression",
+  "industry": "Financial services",
+  "trigger": "Approved risk flag blocks marketing",
+  "flow": "Risk status → suppression audience",
+  "governance": "Freshness and security boundary",
+  "kpis": "Suppression accuracy"
+ },
+ {
+  "id": "UC-34",
+  "name": "Branch appointment follow-up",
+  "industry": "Banking",
+  "trigger": "Appointment booked, changed, or missed",
+  "flow": "Appointment system → profile → reminder",
+  "governance": "Timezone and status synchronization",
+  "kpis": "Attendance; self-service rescheduling"
+ },
+ {
+  "id": "UC-35",
+  "name": "Warranty onboarding",
+  "industry": "Manufacturing",
+  "trigger": "Product registered with consent",
+  "flow": "Registration event → profile → onboarding",
+  "governance": "Validate product/customer linkage",
+  "kpis": "Registration completion"
+ },
+ {
+  "id": "UC-36",
+  "name": "Parts availability",
+  "industry": "Manufacturing",
+  "trigger": "Requested part becomes available",
+  "flow": "ERP/inventory → service case → notification",
+  "governance": "SKU/location accuracy",
+  "kpis": "Time to service completion"
+ },
+ {
+  "id": "UC-37",
+  "name": "Energy usage insight",
+  "industry": "Utilities",
+  "trigger": "Usage pattern reaches threshold",
+  "flow": "Meter feed → analytics → consented insight",
+  "governance": "Data quality and explainability",
+  "kpis": "Insight engagement"
+ },
+ {
+  "id": "UC-38",
+  "name": "Donation journey",
+  "industry": "Nonprofit",
+  "trigger": "Donation completes or recurring gift fails",
+  "flow": "Donation platform → profile → acknowledgement/recovery",
+  "governance": "Payment status and respectful frequency",
+  "kpis": "Gift recovery; donor retention"
+ },
+ {
+  "id": "UC-39",
+  "name": "Course progression",
+  "industry": "Education",
+  "trigger": "Learner completes module or stalls",
+  "flow": "LMS event → learning path → approved nudge",
+  "governance": "Student privacy and opt-in",
+  "kpis": "Completion; time to milestone"
+ },
+ {
+  "id": "UC-40",
+  "name": "Learner lab progress",
+  "industry": "Training",
+  "trigger": "Learner finishes AEP/AJO/CJA checkpoint",
+  "flow": "LMS/lab status → trainer dashboard",
+  "governance": "Use cohort records only with permission",
+  "kpis": "Lab completion; assessment change"
+ },
+ {
+  "id": "UC-41",
+  "name": "Trainer capacity",
+  "industry": "Academy operations",
+  "trigger": "Enrollment forecast exceeds mentor capacity",
+  "flow": "Enrollment + schedule → capacity dashboard",
+  "governance": "Forecast uncertainty; no placement promises",
+  "kpis": "Mentor coverage; wait time"
+ },
+ {
+  "id": "UC-42",
+  "name": "Campaign QA gate",
+  "industry": "MarTech operations",
+  "trigger": "Configuration changes before release",
+  "flow": "Checklist/config export → validation → approval",
+  "governance": "Human approval and rollback",
+  "kpis": "Pre-release defects"
+ },
+ {
+  "id": "UC-43",
+  "name": "Data quality remediation",
+  "industry": "Data platform",
+  "trigger": "Invalid records exceed threshold",
+  "flow": "Quality rules → quarantine/replay → owner alert",
+  "governance": "Preserve raw payload and traceability",
+  "kpis": "Invalid rate; remediation time"
+ },
+ {
+  "id": "UC-44",
+  "name": "Warehouse-CDP reconciliation",
+  "industry": "Data engineering",
+  "trigger": "Warehouse counts differ from profile dataset",
+  "flow": "SQL checks → discrepancy report → issue ticket",
+  "governance": "Compare grain, window, exclusions, late data",
+  "kpis": "Variance; time to explain"
+ },
+ {
+  "id": "UC-45",
+  "name": "Event taxonomy governance",
+  "industry": "MarTech architecture",
+  "trigger": "Team proposes new event",
+  "flow": "Schema review → approval → deployment",
+  "governance": "Naming, owner, version, privacy review",
+  "kpis": "Reuse; breaking changes avoided"
+ },
+ {
+  "id": "UC-46",
+  "name": "Personalized help",
+  "industry": "SaaS",
+  "trigger": "User repeatedly hits known error",
+  "flow": "Telemetry → approved segment → contextual help",
+  "governance": "Validate error code; avoid sensitive inference",
+  "kpis": "Self-service resolution"
+ },
+ {
+  "id": "UC-47",
+  "name": "Renewal risk dashboard",
+  "industry": "Subscription",
+  "trigger": "Renewal cohort enters risk window",
+  "flow": "Billing + usage + support → analytics dashboard",
+  "governance": "Transparent definitions and freshness",
+  "kpis": "Renewal visibility"
+ },
+ {
+  "id": "UC-48",
+  "name": "Campaign holdout",
+  "industry": "Marketing analytics",
+  "trigger": "Campaign launches with randomized holdout",
+  "flow": "Assignment → delivery logs → outcome analysis",
+  "governance": "Prevent contamination; document exclusions",
+  "kpis": "Incremental impact"
+ },
+ {
+  "id": "UC-49",
+  "name": "AI incident triage",
+  "industry": "MarTech operations",
+  "trigger": "Pipeline alert creates incident context",
+  "flow": "Monitoring → governed agent/MCP → human-approved ticket",
+  "governance": "Least privilege; no destructive autonomous action",
+  "kpis": "Triage time; routing accuracy"
+ },
+ {
+  "id": "UC-50",
+  "name": "Profile deletion workflow",
+  "industry": "Privacy operations",
+  "trigger": "Verified deletion request approved",
+  "flow": "Privacy workflow → system inventory → confirmation",
+  "governance": "Identity verification and retention exceptions",
+  "kpis": "Completion time; coverage"
+ }
+]

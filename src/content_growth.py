@@ -134,7 +134,7 @@ USE_HUB = dict(
     schema="CollectionPage", category="Use cases",
     sections=[("All use cases", '<div class="grid-2">' + "".join(
         f'<a class="card link-card" href="../{u["path"]}"><span class="tag">{u["kicker"].split("· ")[1]}</span><h3>{u["h1"]}</h3><p>{u["desc"]}</p></a>' for u in USE_CASES) + "</div>"),
-        ("Use cases vs solutions vs case studies", '<p><strong>Use cases</strong> are single outcomes you can build. <a href="../solutions/index.html">Solutions</a> combine several use cases into a program. <a href="../case-studies/index.html">Case studies</a> show them implemented end to end.</p>')],
+        ("Use cases vs solutions vs case studies", '<p>Browse the full <a href="real-time-use-case-library.html">library of 50 real-time use cases</a>.</p><p><strong>Use cases</strong> are single outcomes you can build. <a href="../solutions/index.html">Solutions</a> combine several use cases into a program. <a href="../case-studies/index.html">Case studies</a> show them implemented end to end.</p>')],
     faqs=[], related=["solutions/index.html", "case-studies/index.html", "services/adobe-journey-optimizer.html"],
 )
 
@@ -236,4 +236,29 @@ UTILITY = [
          sections=[("Infinite360 feeds", "@@FEEDS@@"), ("Trusted sources we follow", "@@SOURCES@@")], faqs=[], related=[]),
 ]
 
-GROWTH_PAGES = [USE_HUB] + USE_CASES + LANDINGS + LEGAL + UTILITY
+import html as _h, json as _j, os as _o
+_LIB = _j.load(open(_o.path.join(_o.path.dirname(_o.path.dirname(_o.path.abspath(__file__))), "content", "use-case-library.json"), encoding="utf-8"))
+_e = _h.escape
+LIBRARY = dict(
+    path="use-cases/real-time-use-case-library.html",
+    title="50 Real-Time MarTech Use Cases: Triggers, Flows & KPIs",
+    desc="A library of 50 illustrative real-time and near-real-time MarTech use cases with triggers, solution flows, governance checks and KPIs to measure.",
+    h1="50 real-time MarTech use cases: triggers, flows and KPIs",
+    nav="Use-case library",
+    kicker="Use-case library",
+    keywords=["real-time use cases martech", "rtcdp use cases", "ajo trigger examples", "real-time personalisation examples", "customer data platform use case list"],
+    answer="This library lists 50 real-time and near-real-time MarTech use cases across retail, banking, telecom, travel, healthcare, SaaS and more. For each it gives the trigger, an illustrative solution flow on Adobe Experience Platform, the governance checks to run and the KPIs to measure. They are design patterns for planning, not completed client engagements or results.",
+    schema="CollectionPage", category="Use cases",
+    sections=[
+        ("How to use this library", '<p class="note"><strong>Illustrative designs.</strong> Each entry is a planning pattern, not evidence of a delivered client project, and lists metrics to track, not results achieved. Validate identity, consent, latency and data quality against your own environment before building.</p><p>Pick a trigger, check the governance column, then define a baseline and holdout for the KPI before launch.</p>'),
+        ("Use cases by trigger", '<div class="field"><label for="lib-filter">Filter use cases</label><input id="lib-filter" type="search" data-filter-table="lib-table" placeholder="Type an industry, trigger or KPI"></div><div class="table-wrap"><table id="lib-table"><thead><tr><th>ID</th><th>Use case</th><th>Industry</th><th>Real-time trigger</th><th>Illustrative flow</th><th>Governance and validation</th><th>KPIs to measure</th></tr></thead><tbody>'
+         + "".join(f'<tr><td>{_e(x["id"])}</td><th scope="row">{_e(x["name"])}</th><td>{_e(x["industry"])}</td><td>{_e(x["trigger"])}</td><td>{_e(x["flow"])}</td><td>{_e(x["governance"])}</td><td>{_e(x["kpis"])}</td></tr>' for x in _LIB)
+         + '</tbody></table></div>'),
+        ("Build one of these", pills(("Request an architecture review", "../lp/aep-architecture-review.html"), ("See implemented patterns", "index.html"), ("Case studies", "../case-studies/index.html"))),
+    ],
+    faqs=[("Are these client results?", "No. They are illustrative design patterns for planning. We publish real client work only with written approval."),
+          ("Which platforms do the flows use?", "Mostly Web SDK, Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics, with approved delivery channels.")],
+    related=["use-cases/index.html", "solutions/index.html", "services/real-time-cdp.html"],
+)
+
+GROWTH_PAGES = [LIBRARY, USE_HUB] + USE_CASES + LANDINGS + LEGAL + UTILITY

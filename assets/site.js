@@ -167,6 +167,15 @@
     }
   }
 
+  // Table filter
+  Array.prototype.forEach.call(document.querySelectorAll("[data-filter-table]"), function (input) {
+    var rows = document.querySelectorAll("#" + input.getAttribute("data-filter-table") + " tbody tr");
+    input.addEventListener("input", function () {
+      var q = input.value.toLowerCase();
+      Array.prototype.forEach.call(rows, function (r) { r.hidden = q && r.textContent.toLowerCase().indexOf(q) === -1; });
+    });
+  });
+
   var y = document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
