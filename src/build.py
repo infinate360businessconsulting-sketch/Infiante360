@@ -427,6 +427,18 @@ def cta_band(p):
 </div></div></section>"""
 
 
+def floater(p):
+    """Floating proof widget: rotates verified reviews if any exist, otherwise invites a review. Hidden on landing, legal and admin pages."""
+    if p.get("landing") or p["path"] in LEGAL_PATHS or p["path"] == "academy/testimonials.html":
+        return ""
+    page = rel("academy/testimonials.html", p["path"])
+    cases = rel("case-studies/index.html", p["path"])
+    data = json.dumps([{"q": t["quote"][:220], "n": t["name"], "r": " · ".join(x for x in (t.get("role"), t.get("program")) if x)} for t in TESTIMONIALS], ensure_ascii=False)
+    return (f'<aside class="floater" id="floater" aria-label="Reviews and case studies" hidden data-reviews="{e(data)}" data-page="{page}">'
+            f'<button type="button" class="floater-x" aria-label="Dismiss">&times;</button>'
+            f'<p class="floater-text"></p><p class="floater-links"><a class="floater-main" href="{page}"></a> <a href="{cases}">Case studies</a></p></aside>')
+
+
 def footer(p):
     def col(title, paths):
         lis = "".join(f'<li><a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a></li>' for x in paths)
@@ -455,6 +467,7 @@ def footer(p):
 <p>Some content on this site is created or enhanced with AI assistance to support research and organisation, and is curated for accuracy and relevance. Always confirm product details against current Adobe documentation.</p>
 <p>Training outcomes depend on participation and practice; no job, salary or certification outcome is guaranteed.</p>
 </div></div></footer>
+{floater(p)}
 <a class="fab" href="{WHATSAPP}" rel="noopener" target="_blank" aria-label="Chat on WhatsApp">{WA_SVG}<span>WhatsApp</span></a>"""
 
 

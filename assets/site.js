@@ -167,6 +167,35 @@
     }
   }
 
+  // Floating proof widget (verified reviews only; falls back to a review invitation)
+  var fl = document.getElementById("floater");
+  if (fl) {
+    var dismissed = false;
+    try { dismissed = sessionStorage.getItem("i360_floater") === "1"; } catch (err) { /* ignore */ }
+    if (!dismissed) {
+      var reviews = [];
+      try { reviews = JSON.parse(fl.getAttribute("data-reviews") || "[]"); } catch (err) { reviews = []; }
+      var txt = fl.querySelector(".floater-text"), main = fl.querySelector(".floater-main"), idx = 0;
+      function show() {
+        if (reviews.length) {
+          var r = reviews[idx % reviews.length]; idx++;
+          txt.textContent = "\u201C" + r.q + "\u201D \u2014 " + r.n + (r.r ? ", " + r.r : "");
+          main.textContent = "Read all reviews";
+        } else {
+          txt.textContent = "Attended a program or worked with Infinite360? Share your experience. We publish only verified reviews, with your permission.";
+          main.textContent = "Add your review";
+        }
+      }
+      show();
+      setTimeout(function () { fl.hidden = false; }, 6000);
+      if (reviews.length > 1) setInterval(show, 9000);
+      fl.querySelector(".floater-x").addEventListener("click", function () {
+        fl.hidden = true;
+        try { sessionStorage.setItem("i360_floater", "1"); } catch (err) { /* ignore */ }
+      });
+    }
+  }
+
   // Table filter
   Array.prototype.forEach.call(document.querySelectorAll("[data-filter-table]"), function (input) {
     var rows = document.querySelectorAll("#" + input.getAttribute("data-filter-table") + " tbody tr");

@@ -382,3 +382,10 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .topic-chips span{font-weight:700;color:var(--muted,#5b6475)}
 .topic-chips a{border:1.5px solid #d7141e;color:#a80f17;border-radius:999px;padding:4px 12px;font-weight:700;text-decoration:none}
 .topic-chips a:hover,.topic-chips a:focus-visible{background:#d7141e;color:#fff}
+.floater{position:fixed;left:16px;bottom:120px;z-index:55;max-width:340px;background:#fff;color:#0b1730;border:1px solid #e2e6ef;border-left:5px solid #d7141e;border-radius:14px;box-shadow:0 14px 34px rgba(11,23,48,.22);padding:14px 36px 14px 16px;font-size:.9rem}
+.floater[hidden]{display:none}
+.floater p{margin:0 0 8px}
+.floater-links{display:flex;gap:12px;flex-wrap:wrap;margin:0 !important}
+.floater-links a{font-weight:700;color:#a80f17}
+.floater-x{position:absolute;top:4px;right:6px;border:0;background:none;font-size:1.4rem;line-height:1;cursor:pointer;color:#5b6475;min-width:32px;min-height:32px}
+@media(max-width:700px){.floater{left:8px;right:8px;bottom:190px;max-width:none}}
