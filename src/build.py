@@ -30,6 +30,7 @@ from content_events import EVENTS  # noqa: E402
 from content_cases import CASE_PAGES, SIMULATORS, REGISTER, WHATSAPP_MSG, LMS, BROCHURE, LI_GROUP  # noqa: E402
 from content_kb import KB_PAGES  # noqa: E402
 from content_growth import GROWTH_PAGES, LANDINGS, LEGAL  # noqa: E402
+from content_stacks import STACK_PAGES  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
@@ -62,7 +63,7 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + STACK_PAGES
 
 TOPICS = [
     ("adobe-experience-platform", "Adobe Experience Platform", "AEP", ["experience platform", "aep", "xdm", "schema", "dataset", "ingestion", "identity", "profile"]),
@@ -145,6 +146,7 @@ SECTION_HUBS = {
     "solutions": ("solutions/index.html", "Solutions"),
     "case-studies": ("case-studies/index.html", "Case studies"),
     "use-cases": ("use-cases/index.html", "Use cases"),
+    "stacks": ("stacks/index.html", "MarTech stacks"),
     "lp": (None, ""),
     "topics": ("sitemap.html", "Site map"),
 }
@@ -446,7 +448,7 @@ def footer(p):
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
     learn = ["academy/index.html", "academy/workshops.html", "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html"]
-    company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html"]
+    company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html", "stacks/index.html"] + [c["path"] for c in STACK_PAGES[1:]]
     more = ["academy/simulators.html", "academy/recording-platform.html", "academy/youtube-playlists.html", "academy/community.html", "academy/testimonials.html",
             "learn/student-questions.html", "guides/ajo-implementation-best-practices.html", "feeds.html", "sitemap.html"] + [l["path"] for l in LANDINGS]
     return f"""<footer class="site-footer"><div class="wrap">
@@ -671,7 +673,7 @@ def sitemap_html(p):
         groups.setdefault(seg, []).append(x)
     names = {"main": "Main pages", "services": "Services", "solutions": "Solutions", "case-studies": "Case studies", "use-cases": "Use cases",
              "adobe-experience-platform": "AEP guides", "guides": "Guides and answers", "learn": "Learning hubs", "academy": "Academy",
-             "training": "Training", "lp": "Get started", "topics": "Topics"}
+             "training": "Training", "stacks": "MarTech stacks", "lp": "Get started", "topics": "Topics"}
     out = []
     for seg, items in groups.items():
         lis = "".join(f'<li><a href="{rel(x["path"], p["path"])}">{e(x["h1"])}</a></li>' for x in items)
