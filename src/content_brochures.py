@@ -6,11 +6,11 @@ EL = "https://experienceleague.adobe.com/en/docs"
 EMAIL = "infinate360businessconsulting@gmail.com"
 BASE = "https://infiante360techacademy.com/"
 
-AUD = [("learners", "Learners and career switchers", "Programmes, timings, full table of contents and interview preparation.", "11 pages"),
-       ("corporate-training", "Corporate L&D and delivery leaders", "Team training, Live Customised programme, CoE and course contents.", "12 pages"),
-       ("enterprise-coe", "Enterprise leaders and architects", "Centre of Excellence set-up, CXO Hive and the C2C talent model.", "8 pages"),
+AUD = [("learners", "Learners and career switchers", "Programmes, timings, table of contents, projects, assignments and interview preparation.", "15 pages"),
+       ("corporate-training", "Corporate L&D and delivery leaders", "Team training, Live Customised programme, CoE and course contents.", "14 pages"),
+       ("enterprise-coe", "Enterprise leaders and architects", "Centre of Excellence set-up, CXO Hive and the C2C talent model.", "9 pages"),
        ("c2c-partners", "C2C consultants and client hiring teams", "How C2C works, skills covered and interview approach.", "7 pages"),
-       ("master", "Everything: the full 16-page brochure", "About Infinate360, all courses with TOC, interviews, C2C, CoE and contact.", "16 pages")]
+       ("master", "Everything: the full 22-page brochure", "About Infinate360, courses with TOC, projects, assignments, AI agent architecture, interviews, C2C, CoE and contact.", "22 pages")]
 
 def _cards():
     return '<div class="grid-2">' + "".join(f'<div class="card"><h3>{e(t)}</h3><p>{e(d)}</p><p class="muted small">PDF · {pg}</p></div>' for k, t, d, pg in AUD) + "</div>"
@@ -44,7 +44,7 @@ BROCHURE_PAGE = dict(
     h1="Free brochures for learners, teams and enterprises",
     kicker="Brochures", nav="Brochures", schema="WebPage", category="Academy", date="2026-10-12",
     keywords=["adobe experience platform course brochure", "aep training brochure", "martech center of excellence", "c2c hiring martech"],
-    answer="Infinate360 offers five free PDF brochures: for learners, corporate training teams, enterprise leaders, C2C partners, and one full 16-page edition. They cover what Infinate360 is, courses with fees, timings and tables of contents, interview preparation, how C2C engagement works and how a MarTech Centre of Excellence is set up. Share your name, email, phone and requirement to download.",
+    answer="Infinate360 offers five free PDF brochures: for learners, corporate training teams, enterprise leaders, C2C partners, and one full 22-page edition. They cover what Infinate360 is, courses with fees, timings and tables of contents, interview preparation, how C2C engagement works and how a MarTech Centre of Excellence is set up. Share your name, email, phone and requirement to download.",
     sections=[
         ("Choose your brochure", _cards()),
         ("Request your copy", FORM),
