@@ -445,6 +445,21 @@ def floater(p):
             f'<p class="floater-text"></p><p class="floater-links"><a class="floater-main" href="{page}"></a> <a href="{cases}">Case studies</a></p></aside>')
 
 
+ABOUT_FOOTER = """<section class="footer-about" aria-labelledby="fa-h"><h2 id="fa-h">About Infinite360 Business Consulting</h2>
+<div class="fa-cols"><div>
+<p>Infinite360 Business Consulting is a technology and digital transformation consulting firm helping organizations turn complex data, customer experience, and technology challenges into measurable business outcomes.</p>
+<p>We specialize in Adobe Experience Cloud, Customer Data Platforms, MarTech, Data Engineering, AI, Analytics, and Digital Transformation, helping enterprises build connected customer experiences and modern, scalable technology ecosystems.</p>
+<p>Our consulting approach combines strategy, architecture, implementation, optimization, and enablement. We work closely with business and technology teams to understand their objectives, identify opportunities, design the right solution, and accelerate execution.</p>
+<h3>Our approach</h3><p>We believe successful transformation is not just about implementing technology. It is about connecting people, data, processes, platforms, and business objectives. Our methodology: <strong>Discover &rarr; Design &rarr; Build &rarr; Integrate &rarr; Activate &rarr; Measure &rarr; Optimize</strong>. This helps organizations move from disconnected systems and fragmented customer data toward real-time, intelligent, personalized, and measurable customer experiences.</p>
+</div><div>
+<h3>What we do</h3><ul><li>Digital Transformation &amp; Technology Consulting</li><li>Adobe Experience Platform (AEP) &amp; Real-Time CDP</li><li>Adobe Journey Optimizer (AJO)</li><li>Customer Journey Analytics (CJA) &amp; Adobe Analytics</li><li>Customer 360 &amp; Data Strategy</li><li>MarTech &amp; Customer Experience Architecture</li><li>AI &amp; Agentic AI Solutions</li><li>Data Engineering, Cloud &amp; Analytics</li><li>Marketing Automation &amp; Personalization</li><li>Architecture Reviews, Assessments &amp; Optimization</li><li>Corporate Training &amp; Technology Enablement</li></ul>
+<h3>Why Infinite360</h3><p>We bring together technical expertise, enterprise consulting experience, and practical implementation knowledge to help clients reduce complexity, accelerate delivery, improve customer engagement, and create sustainable business value from their technology investments.</p>
+<p><strong>Vision:</strong> To help organizations build intelligent, connected, and future-ready digital businesses through technology, data, AI, and customer experience innovation.</p>
+<p><strong>Mission:</strong> Make enterprise technology simpler, smarter, and more valuable for the business.</p>
+</div></div></section>
+"""
+
+
 def footer(p):
     def col(title, paths):
         lis = "".join(f'<li><a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a></li>' for x in paths)
@@ -467,6 +482,7 @@ def footer(p):
 {col("Training &amp; guides", learn)}
 {col("Academy &amp; get started", more)}
 </div>
+{ABOUT_FOOTER}
 <nav class="legal-links" aria-label="Legal">{" ".join(f'<a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a>' for x in ["privacy-policy.html", "terms-and-conditions.html", "refund-policy.html", "disclaimer.html", "sitemap.html"])}</nav>
 <div class="footer-legal">
 <p>&copy; <span id="year">{TODAY[:4]}</span> {BRAND}. Adobe, Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics are trademarks of Adobe. {BRAND} is independent and not affiliated with or endorsed by Adobe.</p>
