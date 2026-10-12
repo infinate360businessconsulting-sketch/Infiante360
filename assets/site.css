@@ -391,3 +391,12 @@ body.dash{background:#f4f6fb;padding:24px 0}
 @media(max-width:700px){.floater{left:8px;right:8px;bottom:190px;max-width:none}}
 
 .footer-about{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:28px}.footer-about h2{margin-bottom:16px}.footer-about h3{color:#fff;font-size:.95rem;margin:16px 0 8px}.footer-about p{margin:0 0 12px;line-height:1.6}.fa-cols{display:grid;grid-template-columns:1fr 1fr;gap:32px}.footer-about li{margin:0 0 6px}@media(max-width:800px){.fa-cols{grid-template-columns:1fr}}
+
+.webinar-box{border-radius:18px;overflow:hidden;box-shadow:var(--shadow);background:#0b1730}
+.webinar-facade{position:relative;display:flex;align-items:flex-end;width:100%;aspect-ratio:16/9;border:0;padding:24px;cursor:pointer;text-align:left;color:#fff;background:linear-gradient(135deg,#0b1730,#1c2f66 60%,#a31c2e)}
+.webinar-facade .play{position:absolute;left:50%;top:42%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--red);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.webinar-facade .play::before{content:"";position:absolute;left:30px;top:23px;border-style:solid;border-width:15px 0 15px 24px;border-color:transparent transparent transparent #fff}
+.webinar-facade:hover .play,.webinar-facade:focus-visible .play{transform:scale(1.07)}
+.webinar-facade .wf-text{display:grid;gap:4px;position:relative}
+.webinar-facade small{opacity:.85}
+.webinar-frame{display:block;width:100%;aspect-ratio:16/9;min-height:360px;border:0}

@@ -123,6 +123,19 @@
     });
   });
 
+  // Webinar player (loads only on request).
+  Array.prototype.forEach.call(document.querySelectorAll(".webinar-facade"), function (btn) {
+    btn.addEventListener("click", function () {
+      var f = document.createElement("iframe");
+      f.src = btn.getAttribute("data-embed");
+      f.title = "Webinar player";
+      f.allow = "autoplay; fullscreen; picture-in-picture";
+      f.allowFullscreen = true;
+      f.className = "webinar-frame";
+      btn.replaceWith(f);
+    });
+  });
+
   // Event countdowns (start time in ISO format with offset).
   var cds = document.querySelectorAll("[data-countdown]");
   function tick() {
