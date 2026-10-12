@@ -952,10 +952,18 @@ def main():
     write("thank-you.html", simple_page("thank-you.html", f"Thank you | {BRAND}", "Thank you — we have your enquiry",
                                         "We will reply by your preferred contact method, usually within two business days.", "noindex,nofollow",
                                         f'<a class="btn btn-primary" href="{BASE}">Back to the homepage</a><a class="btn btn-ghost" href="{BASE}adobe-experience-platform/">Read the AEP guides</a>'))
-    urls = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc><lastmod>{TODAY}</lastmod></url>"
+    urls = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>"
                      for p in PAGES)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
-    write("robots.txt", f"User-agent: *\nAllow: /\nDisallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\n\nSitemap: {BASE}sitemap.xml\n")
+    _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\n"
+    _bots = [("Search engines", ["Googlebot", "Bingbot", "DuckDuckBot", "Applebot"]),
+             ("AI search and answer engines", ["OAI-SearchBot", "ChatGPT-User", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "DuckAssistBot"]),
+             ("AI training and model crawlers", ["GPTBot", "ClaudeBot", "Google-Extended", "Applebot-Extended", "Amazonbot", "Meta-ExternalAgent", "CCBot", "cohere-ai", "Bytespider"])]
+    _rb = "# Public pages are open to search engines and AI crawlers. Private paths stay disallowed.\n# robots.txt is not access control.\n\n"
+    for _lbl, _names in _bots:
+        _rb += f"# {_lbl}\n" + "".join(f"User-agent: {n}\n" for n in _names) + f"Allow: /\n{_dis}\n"
+    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\n"
+    write("robots.txt", _rb)
     write_feeds()
     if os.path.isdir(os.path.join(ROOT, "admin")):
         shutil.copytree(os.path.join(ROOT, "admin"), os.path.join(OUT, "admin"), dirs_exist_ok=True)
