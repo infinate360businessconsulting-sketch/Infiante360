@@ -247,7 +247,7 @@ def header(p):
         target = link if link.startswith("http") else rel(link, p["path"]) if link in BY_PATH else ""
         ann = f'<a class="announce" href="{target}">{e(SETTINGS["announcement"])} &rarr;</a>' if target else f'<span class="announce">{e(SETTINGS["announcement"])}</span>'
     top = f"""<div class="topbar"><div class="wrap topbar-row">{ann}
-<nav class="toplinks" aria-label="Quick links"><a href="{REGISTER}" rel="noopener" target="_blank">Register</a><a href="{WHATSAPP_MSG}" rel="noopener" target="_blank">WhatsApp</a><a href="{rel('academy/simulators.html', p['path'])}">Simulators</a><a href="{LMS}" rel="noopener" target="_blank">LMS</a><a href="{BROCHURE}" rel="noopener" target="_blank">Brochure</a><a href="{rel('sitemap.html', p['path'])}">Site map</a></nav></div></div>"""
+<nav class="toplinks" aria-label="Quick links"><a href="{REGISTER}" rel="noopener" target="_blank">Register</a><a href="{WHATSAPP_MSG}" rel="noopener" target="_blank">WhatsApp</a><a href="{rel('academy/simulators.html', p['path'])}">Simulators</a><a href="{LMS}" rel="noopener" target="_blank">LMS</a><a href="{BROCHURE}">Brochure</a><a href="{rel('sitemap.html', p['path'])}">Site map</a></nav></div></div>"""
     return f"""<a class="skip-link" href="#main">Skip to content</a>
 {gtm_noscript()}{top}
 <header class="site-header">
@@ -871,7 +871,8 @@ def validate():
         for href in re.findall(r'href="([^"]+)"', doc):
             if href.startswith(("http:", "https:", "mailto:", "tel:", "#")):
                 continue
-            target = os.path.normpath(os.path.join(os.path.dirname(p["path"]), href.split("#")[0].split("?")[0]))
+            _h = href.split("#")[0].split("?")[0]
+            target = os.path.normpath(_h.lstrip("/") if _h.startswith("/") else os.path.join(os.path.dirname(p["path"]), _h))
             target = target.replace(os.sep, "/")
             if href.endswith("/") or href in ("./", "../"):
                 target = (target + "/index.html").lstrip("./") if target != "." else "index.html"

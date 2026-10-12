@@ -10,7 +10,7 @@ from visuals import flow_svg, layers_svg, figure
 REGISTER = "https://techacademy.infinate360.in"
 WHATSAPP_MSG = "https://wa.me/message/CHZQWLVK32OTI1"
 LMS = "https://martechlms.infiante360techacademy.com"
-BROCHURE = "https://drive.google.com/file/d/1E1XDn68ZekgPZ8X7lamHHvgRtG7GVky2/view"
+BROCHURE = "/brochures.html"
 LI_GROUP = "https://www.linkedin.com/groups/13904850"
 LI_COMPANY = "https://www.linkedin.com/company/30928383"
 APPROACH_VIDEO = "https://youtu.be/myBbVjB9vXo"
@@ -43,7 +43,7 @@ SIM_NOTE = ('<p class="note"><strong>About this case study:</strong> this is an 
 LINK_PILLS = (f'<div class="link-pills">'
               f'<a href="{REGISTER}" rel="noopener" target="_blank">Register at the Tech Academy</a>'
               f'<a href="{WHATSAPP_MSG}" rel="noopener" target="_blank">Ask on WhatsApp</a>'
-              f'<a href="{BROCHURE}" rel="noopener" target="_blank">Download the program brochure</a>'
+              f'<a href="{BROCHURE}">Download the program brochure</a>'
               f'<a href="{LMS}" rel="noopener" target="_blank">Open the MarTech LMS</a>'
               f'<a href="{LI_GROUP}" rel="noopener" target="_blank">Join the LinkedIn group</a></div>')
 
