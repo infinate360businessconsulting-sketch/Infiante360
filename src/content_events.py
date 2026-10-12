@@ -7,28 +7,28 @@ import html
 REG_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLvHx50ES_KqrULMKromsE3mg/viewform?usp=header"
 WHATSAPP = "https://wa.me/918296893895"
 
-BOOTCAMP = dict(name="AEP Launchpad: Foundations Bootcamp", date="Sunday, 11 October 2026", time="6:00 PM – 9:00 PM IST",
+BOOTCAMP = dict(name="AEP Launchpad: Foundations Bootcamp", date="Sunday evening (date confirmed on registration)", time="6:00 PM – 9:00 PM IST",
                 start="2026-10-11T18:00:00+05:30", end="2026-10-11T21:00:00+05:30", price=3000, price_label="₹3,000")
-BATCH = dict(name="Live AEP Foundations Batch", date="Starts Thursday, 15 October 2026", time="8:00 AM – 9:30 AM IST",
+BATCH = dict(name="Live AEP Foundations Batch", date="Weekday mornings for two weeks (start confirmed on registration)", time="8:00 AM – 9:30 AM IST",
              start="2026-10-15T08:00:00+05:30", end="2026-10-28T09:30:00+05:30")
 
 WORKSHOPS = [
-    ("Fri 16 Oct", "Schema Sprint", "Design your first XDM model",
+    ("Workshop 1", "Schema Sprint", "Design your first XDM model",
      "Classes, field groups and identity fields — model a retail customer and purchase event.",
      ["Profile vs ExperienceEvent classes", "Choosing standard field groups", "Marking identity fields", "Review: common modelling mistakes"]),
-    ("Fri 23 Oct", "Data on the Move", "Ingestion basics lab",
+    ("Workshop 2", "Data on the Move", "Ingestion basics lab",
      "Create a dataset, map a sample file with Data Prep and read batch errors like a pro.",
      ["Datasets from schemas", "Batch upload and mapping", "Reading failed records", "Batch vs streaming at a glance"]),
-    ("Fri 30 Oct", "Who's Who", "Identity foundations lab",
+    ("Workshop 3", "Who's Who", "Identity foundations lab",
      "Namespaces, primary identity and how identity graphs link known and anonymous data.",
      ["Namespaces and ECID", "Primary identity", "Viewing an identity graph", "Spotting shared identifiers"]),
-    ("Fri 6 Nov", "One Customer View", "Real-Time Profile lab",
+    ("Workshop 4", "One Customer View", "Real-Time Profile lab",
      "Enable data for Profile, inspect merged profiles and understand merge policies.",
      ["Profile-enabled schemas and datasets", "Profile fragments", "Merge policies", "Validating a sample profile"]),
-    ("Fri 13 Nov", "Audience Studio", "Segmentation foundations",
+    ("Workshop 5", "Audience Studio", "Segmentation foundations",
      "Build and validate your first audiences with batch, streaming and edge evaluation.",
      ["Segment Builder basics", "Evaluation methods", "Estimating and validating size", "Naming and governance"]),
-    ("Fri 20 Nov", "Go Live", "Activation and destinations basics",
+    ("Workshop 6", "Go Live", "Activation and destinations basics",
      "Connect an audience to a destination and run the activation QA checklist.",
      ["How destinations work", "Mapping identities", "Consent and policy checks", "Reconciling counts"]),
 ]
@@ -80,16 +80,15 @@ EVENTS = [
         nav="AEP Launchpad Bootcamp",
         bands=True, program=True,
         title="AEP Launchpad Bootcamp: Adobe Experience Platform Foundations",
-        desc="Live 3-hour AEP foundations bootcamp, Sunday 11 Oct 2026, 6–9 PM IST. ₹3,000 with a free ₹3,500 interview & certification test series.",
+        desc="Live 3-hour AEP foundations bootcamp, Sunday evening, 6–9 PM IST. ₹3,000 with a free ₹3,500 interview & certification test series.",
         h1="Start your Adobe Experience Platform journey here",
         kicker="AEP Launchpad: Foundations Bootcamp",
         lede="Understand customer data, schemas, identity, profiles, segmentation and activation through guided demonstrations and practical exercises. Learn. Practice. Build. Get career-ready.",
         keywords=["aep bootcamp", "adobe experience platform bootcamp", "aep foundations workshop", "aep training online india", "aep certification practice test"],
-        answer="AEP Launchpad: Foundations is a live, three-hour online bootcamp on Sunday 11 October 2026 from 6:00 to 9:00 PM IST. It covers the Adobe Experience Platform foundations — XDM schemas, datasets, ingestion, identity, Real-Time Customer Profile, segmentation and activation — for ₹3,000, with a ₹3,500 interview and certification test series included free.",
+        answer="AEP Launchpad: Foundations is a live, three-hour online bootcamp on a Sunday evening from 6:00 to 9:00 PM IST. It covers the Adobe Experience Platform foundations — XDM schemas, datasets, ingestion, identity, Real-Time Customer Profile, segmentation and activation — for ₹3,000, with a ₹3,500 interview and certification test series included free.",
         schema="WebPage",
-        event=dict(name=BOOTCAMP["name"], start=BOOTCAMP["start"], end=BOOTCAMP["end"], price=BOOTCAMP["price"]),
         hero_visual=ticket(BOOTCAMP, "Next bootcamp", REG_FORM, "Register for ₹3,000", '<p class="ticket-bonus">+ ₹3,500 test series free</p>'),
-        interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch (from 15 Oct)", "Friday hands-on workshops"],
+        interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch ", "Friday hands-on workshops"],
         sections=[
             ("Your bootcamp package", BONUS + """<div class="grid-3" style="margin-top:22px">
 <div class="card"><h3>Live, instructor-led</h3><p>Three hours of live AEP foundations training taught by a working MarTech architect.</p></div>
@@ -113,7 +112,7 @@ EVENTS = [
 </div>""", "alt", "Audience"),
         ],
         faqs=[
-            ("When is the bootcamp?", "Sunday, 11 October 2026, 6:00 PM to 9:00 PM Indian Standard Time, live online."),
+            ("When is the bootcamp?", "A Sunday evening, 6:00 PM to 9:00 PM Indian Standard Time (the date is confirmed on registration), live online."),
             ("How much does it cost?", "₹3,000 per participant. The ₹3,500 interview and certification test series is included free."),
             ("Do I need Adobe experience?", "No. The bootcamp covers foundations only and is designed for beginners and career switchers."),
             ("Does the test series guarantee certification?", "No. It is practice material to support preparation. Official certification outcomes are not guaranteed."),
@@ -130,10 +129,10 @@ EVENTS = [
         kicker="Academy · Hands-on",
         lede="Short, practical sessions that build AEP foundations one skill at a time: a weekend bootcamp, a two-week foundations batch and hands-on workshops every Friday.",
         keywords=["aep workshop", "adobe experience platform workshop", "aep hands-on lab", "martech bootcamp", "aep webinar series"],
-        answer="Infinite360 Tech Academy runs three foundation formats: the AEP Launchpad bootcamp (Sunday 11 October 2026, 6–9 PM IST, ₹3,000 with a free ₹3,500 test series), a live two-week AEP Foundations batch starting 15 October at 8:00 AM IST, and hands-on workshops every Friday, each focused on one AEP skill.",
+        answer="Infinite360 Tech Academy runs three foundation formats: the AEP Launchpad bootcamp (Sunday evening, 6–9 PM IST, ₹3,000 with a free ₹3,500 test series), a live two-week AEP Foundations batch at 8:00 AM IST, and hands-on workshops every Friday, each focused on one AEP skill.",
         schema="CollectionPage",
         hero_visual=ticket(BOOTCAMP, "Next bootcamp", "aep-launchpad-bootcamp.html", "View the bootcamp", '<p class="ticket-bonus">+ ₹3,500 test series free</p>'),
-        interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch (from 15 Oct)", "Friday hands-on workshops"],
+        interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch ", "Friday hands-on workshops"],
         sections=[
             ("Choose your format", f"""<div class="grid-3">
 <a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Bootcamp · ₹3,000</span><h3>AEP Launchpad: Foundations</h3><p>{BOOTCAMP['date']}, {BOOTCAMP['time']}. Three hours, live, with a free ₹3,500 test series.</p><span class="more">View bootcamp &rarr;</span></a>
@@ -160,17 +159,16 @@ EVENTS = [
     dict(
         path="academy/aep-foundations-batch.html",
         bands=True, program=True,
-        title="Live AEP Foundations Batch: Starts 15 Oct, 8 AM IST",
-        desc="Two-week live Adobe Experience Platform foundations batch from 15 October 2026, 8:00–9:30 AM IST, Monday to Friday, with guided hands-on workshops.",
+        title="Live AEP Foundations Batch: 8 AM IST, Two Weeks",
+        desc="Two-week live Adobe Experience Platform foundations batch 8:00–9:30 AM IST, Monday to Friday, with guided hands-on workshops.",
         h1="Live AEP Foundations batch",
         kicker="Academy · Two-week batch",
         lede="A beginner-friendly, two-week live batch on Adobe Experience Platform foundations with guided hands-on workshops — early mornings, Monday to Friday.",
         keywords=["aep foundations course", "aep live batch", "adobe experience platform beginner course", "aep morning batch ist", "aep course for beginners"],
-        answer="The Live AEP Foundations batch starts on 15 October 2026 and runs for two weeks, Monday to Friday from 8:00 to 9:30 AM IST, subject to the published batch calendar. It is a beginner-friendly, live online program covering AEP foundations with guided hands-on workshops. The fee is shared on registration.",
+        answer="The Live AEP Foundations batch runs for two weeks, Monday to Friday from 8:00 to 9:30 AM IST, subject to the published batch calendar. It is a beginner-friendly, live online program covering AEP foundations with guided hands-on workshops. The fee is shared on registration.",
         schema="WebPage",
-        event=dict(name=BATCH["name"], start=BATCH["start"], end=BATCH["end"]),
         hero_visual=ticket(BATCH, "Next batch", REG_FORM, "Reserve your seat", '<p class="ticket-bonus">Two weeks · Monday–Friday</p>'),
-        interest_options=["Live Foundations batch (from 15 Oct)", "Sunday bootcamp (₹3,000)", "Friday hands-on workshops"],
+        interest_options=["Live Foundations batch ", "Sunday bootcamp (₹3,000)", "Friday hands-on workshops"],
         sections=[
             ("Ten-session plan", """<ol class="agenda">
 <li><time>Day 1</time><div><strong>AEP in one picture</strong><span>Platform architecture and the end-to-end data flow.</span></div></li>
