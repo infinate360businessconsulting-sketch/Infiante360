@@ -400,3 +400,25 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .webinar-facade .wf-text{display:grid;gap:4px;position:relative}
 .webinar-facade small{opacity:.85}
 .webinar-frame{display:block;width:100%;aspect-ratio:16/9;min-height:360px;border:0}
+
+/* Website assistant */
+.chat-fab{position:fixed;right:18px;bottom:86px;z-index:60;display:flex;align-items:center;gap:8px;padding:12px 18px;border:0;border-radius:999px;background:var(--red);color:#fff;font-weight:700;cursor:pointer;box-shadow:0 10px 30px rgba(11,23,48,.35)}
+.chat-fab:hover,.chat-fab:focus-visible{filter:brightness(1.08)}
+.chat-panel{position:fixed;right:18px;bottom:146px;z-index:61;width:min(380px,calc(100vw - 24px));max-height:min(560px,calc(100vh - 170px));display:flex;flex-direction:column;background:var(--white);border:1px solid var(--line);border-radius:18px;box-shadow:0 20px 60px rgba(11,23,48,.35);overflow:hidden}
+.chat-panel[hidden]{display:none}
+.chat-head{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#0b1730;color:#fff}
+.chat-close{border:0;background:transparent;color:#fff;font-size:1.6rem;line-height:1;cursor:pointer;padding:0 4px}
+.chat-log{flex:1;overflow:auto;padding:14px;display:grid;gap:10px;align-content:start}
+.chat-msg{max-width:92%;padding:10px 12px;border-radius:14px;font-size:.93rem;line-height:1.45}
+.chat-msg p{margin:0;white-space:pre-wrap}
+.chat-bot{background:#f1f4f9;color:var(--ink);justify-self:start}
+.chat-user{background:#0b1730;color:#fff;justify-self:end}
+.chat-src{margin:8px 0 0;padding-left:18px;font-size:.85rem}
+.chat-chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px}
+.chat-chips[hidden]{display:none}
+.chat-chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 10px;font-size:.82rem;cursor:pointer}
+.chat-form{display:flex;gap:8px;padding:10px 14px;border-top:1px solid var(--line)}
+.chat-form input{flex:1;min-width:0;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit}
+.chat-send{border:0;border-radius:10px;padding:0 14px;background:var(--red);color:#fff;font-weight:700;cursor:pointer}
+.chat-note{margin:0;padding:0 14px 10px;font-size:.72rem;color:#64748b}
+@media (max-width:520px){.chat-fab span{display:none}.chat-panel{right:12px;bottom:140px}}

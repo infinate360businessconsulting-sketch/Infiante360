@@ -962,6 +962,29 @@ def dashboard_html():
 <tbody>{"".join(rows)}</tbody></table></div></main></body></html>"""
 
 
+def chat_index():
+    """Compact retrieval index for the website assistant (public pages only)."""
+    out = []
+    for p in PAGES:
+        parts = []
+        for s in p.get("sections", []):
+            h = s[0] if isinstance(s, (list, tuple)) else ""
+            body = s[1] if isinstance(s, (list, tuple)) and len(s) > 1 else ""
+            txt = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", str(body))).strip()
+            parts.append(f"{h}: {txt[:260]}")
+        for q, a in p.get("faqs", []) or []:
+            parts.append(f"Q {q} A {a[:240]}")
+        out.append({"u": p["path"], "t": p["title"], "k": " ".join(p.get("keywords", []) or []), "a": p["answer"], "x": " | ".join(parts)[:1100]})
+    seen = set()
+    for p in PAGES:
+        for q, a in p.get("faqs", []) or []:
+            if q in seen:
+                continue
+            seen.add(q)
+            out.append({"u": p["path"], "t": q, "k": "", "a": re.sub(r"<[^>]+>", "", a)[:600], "x": "", "f": 1})
+    return out
+
+
 def main():
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
@@ -991,6 +1014,7 @@ def main():
     _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\n"
     write("robots.txt", _rb)
     write_feeds()
+    write("assets/chat-index.json", json.dumps(chat_index(), ensure_ascii=False, separators=(",", ":")))
     if os.path.isdir(os.path.join(ROOT, "admin")):
         shutil.copytree(os.path.join(ROOT, "admin"), os.path.join(OUT, "admin"), dirs_exist_ok=True)
     write("admin/dashboard.html", dashboard_html())

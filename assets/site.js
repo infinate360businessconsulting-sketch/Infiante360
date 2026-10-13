@@ -221,3 +221,11 @@
   var y = document.getElementById("year");
   if (y) y.textContent = String(new Date().getFullYear());
 })();
+
+// Website assistant: load after the page is idle.
+(function () {
+  var cs = document.currentScript || document.querySelector('script[src*="site.js"]');
+  var base = cs && cs.src ? cs.src.replace(/assets\/site\.js.*$/, "") : "/";
+  function load() { var s = document.createElement("script"); s.src = base + "assets/chat.js"; s.defer = true; document.body.appendChild(s); }
+  if ("requestIdleCallback" in window) requestIdleCallback(load, { timeout: 3000 }); else setTimeout(load, 1500);
+})();
