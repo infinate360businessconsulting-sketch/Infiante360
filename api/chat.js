@@ -99,7 +99,7 @@ module.exports = async (req, res) => {
   }
 
   if (!top.length || top[0].s < 4) {
-    res.status(200).json({ ok: true, mode: "search", reply: "I could not find that on the site. For a precise answer, message us on WhatsApp (+91 82968 93895) or request a brochure.", sources: [{ title: "WhatsApp +91 82968 93895", url: WHATSAPP }, { title: "Download brochures", url: ORIGIN + "/brochures.html" }] });
+    res.status(200).json({ ok: true, mode: "search", reply: "I could not find that on the site. For a precise answer, message us on WhatsApp (+91 82968 93895), type 'call me' for a call back, or request a brochure.", sources: [{ title: "WhatsApp +91 82968 93895", url: WHATSAPP }, { title: "Download brochures", url: ORIGIN + "/brochures.html" }] });
     return;
   }
   res.status(200).json({ ok: true, mode: "search", reply: top[0].d.a, sources });

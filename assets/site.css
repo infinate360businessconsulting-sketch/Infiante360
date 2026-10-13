@@ -422,3 +422,9 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .chat-send{border:0;border-radius:10px;padding:0 14px;background:var(--red);color:#fff;font-weight:700;cursor:pointer}
 .chat-note{margin:0;padding:0 14px 10px;font-size:.72rem;color:#64748b}
 @media (max-width:520px){.chat-fab span{display:none}.chat-panel{right:12px;bottom:140px}}
+
+.chat-head .chat-callbtn{margin-left:auto;margin-right:8px;border:1px solid rgba(255,255,255,.5);background:transparent;color:#fff;border-radius:999px;padding:4px 12px;font-size:.8rem;cursor:pointer}
+.chat-cb{display:grid;gap:8px;margin-top:10px}
+.chat-cb input[type=text],.chat-cb input[type=tel]{padding:9px 10px;border:1px solid var(--line);border-radius:10px;font:inherit}
+.chat-cb-consent{font-size:.78rem;color:#475569}
+.chat-tel{font-weight:700;text-align:center}

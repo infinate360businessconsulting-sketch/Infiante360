@@ -29,6 +29,9 @@
   var close = el("button", "chat-close", "×");
   close.type = "button";
   close.setAttribute("aria-label", "Close assistant");
+  var callBtn = el("button", "chat-callbtn", "Call me"); callBtn.type = "button"; callBtn.setAttribute("aria-label", "Request a call back");
+  callBtn.addEventListener("click", function () { chips.hidden = true; add("user", "Call me back"); callbackForm(); });
+  head.appendChild(callBtn);
   head.appendChild(close);
   var log = el("div", "chat-log");
   log.setAttribute("role", "log");
@@ -77,14 +80,48 @@
         if (s > 0) best.push({ d: o.d, s: s });
       });
       best.sort(function (a, b) { return b.s - a.s; });
-      if (!best.length || best[0].s < 4) return { reply: "I could not find that on the site. For a precise answer, message us on WhatsApp (+91 82968 93895) or request a brochure.", sources: [{ title: "WhatsApp +91 82968 93895", url: WA }, { title: "Download brochures", url: root + "brochures.html" }] };
+      if (!best.length || best[0].s < 4) return { reply: "I could not find that on the site. For a precise answer, message us on WhatsApp (+91 82968 93895), type 'call me' for a call back, or request a brochure.", sources: [{ title: "WhatsApp +91 82968 93895", url: WA }, { title: "Download brochures", url: root + "brochures.html" }] };
       return { reply: best[0].d.a, sources: best.slice(0, 3).map(function (o) { return { title: o.d.t, url: root + o.d.u }; }) };
     });
+  }
+
+  var MAIL = "infinate360businessconsulting@gmail.com";
+  function callbackForm() {
+    var m = el("div", "chat-msg chat-bot");
+    m.appendChild(el("p", "", "Happy to call you. Leave your name and phone number, or tap to call us now."));
+    var f = el("form", "chat-cb");
+    var n = el("input"); n.type = "text"; n.required = true; n.placeholder = "Your name"; n.autocomplete = "name"; n.setAttribute("aria-label", "Your name");
+    var ph = el("input"); ph.type = "tel"; ph.required = true; ph.placeholder = "Phone / WhatsApp (with country code)"; ph.autocomplete = "tel"; ph.pattern = "[+0-9 ()-]{7,20}"; ph.setAttribute("aria-label", "Phone number");
+    var c = el("label", "chat-cb-consent"); var cb = document.createElement("input"); cb.type = "checkbox"; cb.required = true;
+    c.appendChild(cb); c.appendChild(document.createTextNode(" I agree to be contacted about my enquiry."));
+    var go = el("button", "chat-send", "Request a call"); go.type = "submit";
+    var tel = el("a", "chat-tel", "Call +91 82968 93895"); tel.href = "tel:+918296893895";
+    f.appendChild(n); f.appendChild(ph); f.appendChild(c); f.appendChild(go); f.appendChild(tel);
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var lastQ = ""; history.forEach(function (h) { if (h.role === "user") lastQ = h.content; });
+      var data = { name: n.value.slice(0, 120), phone: ph.value.slice(0, 30), email: "", message: "Call-back request from website chat. Last question: " + lastQ.slice(0, 300), source_page: location.href, form_type: "chat_callback" };
+      go.disabled = true; go.textContent = "Sending\u2026";
+      var mail = fetch("https://formsubmit.co/ajax/" + MAIL, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ name: data.name, phone: data.phone, message: data.message, page: data.source_page, _subject: "Chat call-back request", _captcha: "false" }) }).then(function (r) { return r.ok; }).catch(function () { return false; });
+      try { navigator.sendBeacon && navigator.sendBeacon(root + "api/lead", new Blob([JSON.stringify(Object.assign({ email: "callback@invalid.local" }, data))], { type: "application/json" })); } catch (x) { /* ignore */ }
+      mail.then(function (ok) {
+        f.remove();
+        m.appendChild(el("p", "", ok ? "Thank you, " + data.name + ". We have your number and will call you back. You can also message us on WhatsApp." : "We could not send that. Please call or WhatsApp +91 82968 93895 directly."));
+        log.scrollTop = log.scrollHeight;
+      });
+    });
+    m.appendChild(f);
+    log.appendChild(m);
+    log.scrollTop = log.scrollHeight;
+    n.focus();
   }
 
   function ask(q) {
     q = q.trim();
     if (!q) return;
+    if (/\b(call me|call back|callback|ring me|phone me|talk to (a |some)?(one|human|person|someone)|speak to (a |some)?(one|human|person|someone)|contact me|counsel+or)\b/i.test(q)) {
+      add("user", q); callbackForm(); return;
+    }
     add("user", q);
     history.push({ role: "user", content: q });
     var wait = add("bot", "Thinking…");
@@ -100,9 +137,9 @@
       .catch(function () { localAnswer(q).then(done).catch(function () { done({ reply: "Sorry, I could not answer right now. Please message us on WhatsApp: +91 82968 93895.", sources: [{ title: "Open WhatsApp", url: WA }] }); }); });
   }
 
-  ["What does the Career Accelerator cost?", "Which course should I start with?", "Do you guarantee a job?", "How do I get the brochure?"].forEach(function (t) {
+  ["Call me back", "What does the Career Accelerator cost?", "Which course should I start with?", "Do you guarantee a job?", "How do I get the brochure?"].forEach(function (t) {
     var c = el("button", "chat-chip", t); c.type = "button";
-    c.addEventListener("click", function () { chips.hidden = true; ask(t); });
+    c.addEventListener("click", function () { chips.hidden = true; if (t === "Call me back") { add("user", t); callbackForm(); } else ask(t); });
     chips.appendChild(c);
   });
 
