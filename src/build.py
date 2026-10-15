@@ -1017,6 +1017,8 @@ def main():
     write("assets/chat-index.json", json.dumps(chat_index(), ensure_ascii=False, separators=(",", ":")))
     if os.path.isdir(os.path.join(ROOT, "admin")):
         shutil.copytree(os.path.join(ROOT, "admin"), os.path.join(OUT, "admin"), dirs_exist_ok=True)
+    if os.path.isdir(os.path.join(ROOT, "zohoverify")):
+        shutil.copytree(os.path.join(ROOT, "zohoverify"), os.path.join(OUT, "zohoverify"), dirs_exist_ok=True)
     write("admin/dashboard.html", dashboard_html())
     llms = [f"# {BRAND}", "", "> Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform (AEP), Real-Time CDP, Adobe Journey Optimizer, Customer Journey Analytics, Web SDK, data engineering and Agentic AI.", "",
             f"Contact: {EMAIL} | WhatsApp {PHONE_DISPLAY}", "", "## Pages", ""]
