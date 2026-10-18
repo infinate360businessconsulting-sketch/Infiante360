@@ -110,7 +110,7 @@ HOME = dict(
 <a class="card link-card" href="guides/what-is-mcp.html"><h3>What is MCP?</h3><p>Safe agentic AI for enterprise MarTech.</p></a>
 <a class="card link-card" href="guides/marketo-engage-aep.html"><h3>Marketo Engage and AEP</h3><p>Lead lifecycle, scoring and integration.</p></a>
 </div>
-<div class="link-pills"><a href="learn/index.html">All learning hubs</a><a href="learn/student-questions.html">Student questions answered</a><a href="guides/ajo-implementation-best-practices.html">AJO best practices</a><a href="feeds.html">RSS feeds</a></div>""", "plain", "Insights"),
+<div class="link-pills"><a href="learn/index.html">All learning hubs</a><a href="learn/student-questions.html">Student questions answered</a><a href="guides/ajo-implementation-best-practices.html">AJO best practices</a><a href="feeds.html">RSS feeds</a><a href="search-topics.html">Topic index</a></div>""", "plain", "Insights"),
     ],
     faqs=[
         ("What does Infinite360 do?", "Infinite360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
