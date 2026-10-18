@@ -6,7 +6,7 @@
   var root = (script && script.src ? script.src.replace(/assets\/chat\.js.*$/, "") : "/");
   var WA = "https://wa.me/918296893895";
   var STOP = "a an the and or of to in on for with is are was were be been it this that what how why when where who which do does can i you your we our my me about from at as by not no yes please tell give".split(" ");
-  var SYN = { cost: ["fee", "fees", "price", "pricing"], price: ["fee", "fees", "cost"], fees: ["fee", "price", "cost"], fee: ["fees", "price", "cost"], jobs: ["job", "placement"], job: ["jobs", "placement"], placement: ["job", "jobs"], course: ["program", "training"], courses: ["program", "training"], program: ["course", "training"], brochures: ["brochure"], download: ["brochure"] };
+  var SYN = { seo: ["search", "keyword", "topic"], backlink: ["seo", "topic"], backlinks: ["seo", "topic"], keyword: ["topic", "search"], traffic: ["seo", "search"], ranking: ["seo", "search"], social: ["share"], cost: ["fee", "fees", "price", "pricing"], price: ["fee", "fees", "cost"], fees: ["fee", "price", "cost"], fee: ["fees", "price", "cost"], jobs: ["job", "placement"], job: ["jobs", "placement"], placement: ["job", "jobs"], course: ["program", "training"], courses: ["program", "training"], program: ["course", "training"], brochures: ["brochure"], download: ["brochure"] };
   var history = [];
   var index = null;
   var open = false;
@@ -137,7 +137,7 @@
       .catch(function () { localAnswer(q).then(done).catch(function () { done({ reply: "Sorry, I could not answer right now. Please message us on WhatsApp: +91 82968 93895.", sources: [{ title: "Open WhatsApp", url: WA }] }); }); });
   }
 
-  ["Call me back", "What does the Career Accelerator cost?", "Which course should I start with?", "Do you guarantee a job?", "How do I get the brochure?"].forEach(function (t) {
+  ["Call me back", "Find a topic or guide", "What does the Career Accelerator cost?", "Which course should I start with?", "Do you guarantee a job?", "How do I get the brochure?"].forEach(function (t) {
     var c = el("button", "chat-chip", t); c.type = "button";
     c.addEventListener("click", function () { chips.hidden = true; if (t === "Call me back") { add("user", t); callbackForm(); } else ask(t); });
     chips.appendChild(c);
@@ -148,7 +148,7 @@
     panel.hidden = !open;
     btn.setAttribute("aria-expanded", String(open));
     if (open) {
-      if (!log.children.length) add("bot", "Hi! I can answer questions about Infinite360 Tech Academy and Adobe MarTech: programs, fees, timings, AEP, careers and corporate training.");
+      if (!log.children.length) add("bot", "Hi! I can answer questions about Infinite360 Tech Academy and Adobe MarTech: programs, fees, timings, AEP, careers and corporate training. Tell me a topic or keyword and I will point you to the right page.");
       setTimeout(function () { input.focus(); }, 30);
     } else btn.focus();
   }
