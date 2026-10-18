@@ -38,6 +38,19 @@ for k in KEYWORDS:
         if _re.search(rx, k.lower()):
             _groups[cid].append(k); break
 
+# Show a focused set per group (file order = priority) to avoid a stuffed keyword wall; the full list stays in content/search-keywords.txt.
+SHOW_TOTAL = 250
+_total = sum(len(v) for v in _groups.values()) or 1
+_shown = {}
+for _cid, _v in _groups.items():
+    _seen, _keep = set(), []
+    _stop = {"adobe", "for", "and", "the", "of", "in", "to", "with"}
+    for _k in _v:
+        _key = frozenset(w for w in _re.findall(r"[a-z0-9.]+", _k.lower()) if w not in _stop)
+        if _key in _seen: continue
+        _seen.add(_key); _keep.append(_k)
+    _shown[_cid] = _keep[:max(8, round(SHOW_TOTAL * len(_v) / _total))]
+
 def _share():
     url = lambda src: f"{HOST}{PATH}?utm_source={src}&utm_medium=social&utm_campaign=topic-index"
     t = "Adobe Experience Platform, Real-Time CDP, AJO, CJA and Agentic AI: topic index and free demo"
@@ -50,7 +63,7 @@ def _share():
     return '<div class="link-pills">' + "".join(f'<a href="{e(h)}" rel="noopener nofollow" target="_blank">Share on {n}</a>' for n, h in items) + '</div><p class="small muted">Each button opens that network with a tagged link so you can post it yourself. Nothing is posted automatically. Please follow each community&rsquo;s rules, and post in a subreddit only where self-promotion is allowed.</p>'
 
 def _cluster(cid, title, blurb, links):
-    ks = _groups[cid]
+    ks = _shown[cid]
     if not ks: return None
     pills = '<div class="link-pills">' + "".join(f'<a href="{h}">{e(l)}</a>' for l, h in links) + '</div>'
     return (f"{title} ({len(ks)})", f"<p>{e(blurb)}</p>{pills}<p class=\"small\">{' &middot; '.join(e(k) for k in ks)}</p>", "plain", "Topics")
