@@ -1012,12 +1012,14 @@ def main():
     _rb = "# Public pages are open to search engines and AI crawlers. Private paths stay disallowed.\n# robots.txt is not access control.\n\n"
     for _lbl, _names in _bots:
         _rb += f"# {_lbl}\n" + "".join(f"User-agent: {n}\n" for n in _names) + f"Allow: /\n{_dis}\n"
-    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\n"
+    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
     write("robots.txt", _rb)
     write_feeds()
     write("assets/chat-index.json", json.dumps(chat_index(), ensure_ascii=False, separators=(",", ":")))
     if os.path.isdir(os.path.join(ROOT, "admin")):
         shutil.copytree(os.path.join(ROOT, "admin"), os.path.join(OUT, "admin"), dirs_exist_ok=True)
+    if os.path.isdir(os.path.join(ROOT, "corporate")):
+        shutil.copytree(os.path.join(ROOT, "corporate"), os.path.join(OUT, "corporate"), dirs_exist_ok=True)
     if os.path.isdir(os.path.join(ROOT, "zohoverify")):
         shutil.copytree(os.path.join(ROOT, "zohoverify"), os.path.join(OUT, "zohoverify"), dirs_exist_ok=True)
     write("admin/dashboard.html", dashboard_html())
