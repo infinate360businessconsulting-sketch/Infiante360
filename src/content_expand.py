@@ -7,6 +7,21 @@ from content_programs import table, NOTE, FEE
 from content_growth import use_case
 from visuals import flow_svg, figure
 e = _h.escape
+
+import datetime as _dt
+def _next_mon_tue(today=None):
+    t = today or _dt.date.today()
+    d = ((1 - t.weekday() - 1) % 7) or 7  # python Monday=0; days until next Monday strictly after today
+    m = t + _dt.timedelta(days=((0 - t.weekday()) % 7) or 7)
+    return m, m + _dt.timedelta(days=1)
+def _fmt(d): return d.strftime("%a ") + str(d.day) + d.strftime(" %b %Y")
+def batch_block():
+    m, tu = _next_mon_tue()
+    return ('<p><strong>Next batch sessions: <span id="nb">' + _fmt(m) + " and " + _fmt(tu) + '</span></strong>. New batches run every Monday and Tuesday, and these dates roll forward automatically each week. Session time is confirmed on WhatsApp when you enrol.</p>'
+            '<script>(function(){try{var t=new Date();t.setHours(0,0,0,0);var a=((8-t.getDay())%7)||7;var m=new Date(t);m.setDate(t.getDate()+a);var u=new Date(m);u.setDate(m.getDate()+1);'
+            'var f=function(d){return d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"}).replace(",","")};'
+            'document.getElementById("nb").textContent=f(m)+" and "+f(u)}catch(e){}})();</script>')
+CXO_BLOCK = '<p><strong>CXO Hive batch:</strong> starts 2 November 2026, live sessions every Saturday and Sunday, with a 100% live, instructor-led approach.</p>'
 EL = "https://experienceleague.adobe.com/en/docs"
 WA = "https://wa.me/918296893895"
 
@@ -47,7 +62,7 @@ REGION = program_page(
  [("Why scaling AEP is hard", '<ul class="checklist"><li><strong>Data silos:</strong> fragmented data gives inconsistent customer views across brands and regions.</li><li><strong>Compliance complexity:</strong> regulations such as GDPR and CCPA, and data residency limits, shape what you can centralise.</li><li><strong>One scalable model:</strong> unified insight needs a governed, compliant architecture rather than separate stacks.</li></ul>', "plain", "The challenge"),
   ("Architecture topics covered", '<div class="grid-2"><div class="card"><h3>Regional considerations</h3><p>Data residency and privacy, localised data collection, multi-tenant isolation per region or brand, and processing near the user to reduce latency.</p></div><div class="card"><h3>Multi-brand design</h3><p>Brand-specific governance, role-based access control, cross-brand segmentation on unified profiles and aggregated reporting.</p></div><div class="card"><h3>Scalability components</h3><p>Data lake, Real-Time CDP, AI and ML, and Adobe Journey Optimizer for multi-channel orchestration.</p></div><div class="card"><h3>Emerging trends</h3><p>Generative AI for insights, agentic personalisation, cloud transformation, stronger privacy focus and ethical AI deployment.</p></div></div>', "alt", "Content"),
   ("Learning roadmap", table(["Stage", "Focus"], [("Week 1", "CDP basics, identity management and data governance"), ("Week 2", "Hands-on projects on Adobe Experience Platform and analytics tools"), ("Week 3", "Real-time profiles and universal identifiers"), ("Week 4", "Working with cross-functional teams"), ("Week 5", "Certification preparation and specialisation"), ("Ongoing", "Continuous improvement and mentorship")]) + '<p class="small muted">The roadmap is a guide; pace is agreed with your mentor.</p>', "plain", "Roadmap"),
-  ("Fees and enquiry", '<p><strong>Program fee: ₹60,000.</strong> Fees are confirmed in writing before payment, and enrolled learners receive a sandbox for labs and mentoring, as stated by the founder.</p>' + NOTE + f'<p><a class="btn btn-primary" href="{WA}">Enrol or ask on WhatsApp</a> <a class="btn btn-ghost" href="../../contact-us.html">Book a demo via the form</a></p>', "alt", "Fees")],
+  ("Fees and enquiry", batch_block() + '<p><strong>Program fee: ₹60,000.</strong> Fees are confirmed in writing before payment, and enrolled learners receive a sandbox for labs and mentoring, as stated by the founder.</p>' + NOTE + f'<p><a class="btn btn-primary" href="{WA}">Enrol or ask on WhatsApp</a> <a class="btn btn-ghost" href="../../contact-us.html">Book a demo via the form</a></p>', "alt", "Fees")],
  [("Is this for beginners?", "It assumes some familiarity with data platforms or marketing technology. Start with the AEP Launchpad Bootcamp if you are new."),
   ("Does it guarantee certification or a job?", "No. It prepares you for certification study and architecture work, but outcomes depend on you and on employers."),
   ("How is mentorship delivered?", "As 1-on-1 support on your own challenges and goals; the format is confirmed when you enquire.")],
@@ -89,7 +104,7 @@ BOOTCAMP = program_page(
   ("Bonus modules (self-paced)", ["Git, Linux, Docker deep dive, Playwright, OpenTelemetry", "Fine-tuning fundamentals, CrewAI, Google ADK, OpenAI Agents SDK", "AI product strategy, portfolio, resume and LinkedIn, technical interviews, freelancing"])],
  [("Developers", "Add AI engineering skills to your backend or full-stack work."), ("Data and automation professionals", "Move from scripts and dashboards to agents and RAG."), ("MarTech practitioners", "Connect AI agents to customer data and journeys, then see the Agentic AI + MCP track.")],
  [("Week-by-week plan", table(["Week", "Module", "Topics", "Projects"], BOOT), "plain", "Schedule"),
-  ("Fees and enquiry", '<p><strong>CXO and executive program fee: ₹1,00,000.</strong> Fees are confirmed in writing before payment. No job, salary or certification outcome is guaranteed.</p>' + NOTE + f'<p><a class="btn btn-primary" href="{WA}">Enrol or ask on WhatsApp</a> <a class="btn btn-ghost" href="../../contact-us.html">Book a demo via the form</a></p>', "alt", "Fees")],
+  ("Fees and enquiry", CXO_BLOCK + '<p><strong>CXO and executive program fee: ₹1,00,000.</strong> Fees are confirmed in writing before payment. No job, salary or certification outcome is guaranteed.</p>' + NOTE + f'<p><a class="btn btn-primary" href="{WA}">Enrol or ask on WhatsApp</a> <a class="btn btn-ghost" href="../../contact-us.html">Book a demo via the form</a></p>', "alt", "Fees")],
  [("Do I need to know Python first?", "No. Week 4 teaches the Python and API basics used in the rest of the bootcamp."),
   ("Is this about Adobe?", "No. This is general AI engineering. For Adobe-specific agentic work, see the Agentic AI and MCP track."),
   ("Do you guarantee a job?", "No. The bootcamp builds skills and a portfolio; hiring decisions rest with employers.")],
