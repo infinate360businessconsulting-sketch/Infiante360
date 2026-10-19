@@ -1036,7 +1036,7 @@ def main():
             if _rp.endswith(("404.html", "sitemap.html")): continue
             _h = open(_f, encoding="utf-8").read()
             _t = _re2.search(r"<title>(.*?)</title>", _h, _re2.S); _d = _re2.search(r'<meta name="description" content="(.*?)"', _h)
-            if _t: llms.append(f"- [{_t.group(1).strip()}]({abs_url(_rp.replace('index.html', ''))}): {(_d.group(1) if _d else '').strip()}")
+            if _t: llms.append(f"- [{html.unescape(_t.group(1).strip())}]({abs_url(_rp.replace('index.html', ''))}): {html.unescape((_d.group(1) if _d else '').strip())}")
         llms.append(f"- Corporate sitemap: {abs_url('corporate/sitemap.xml')}")
     write("llms.txt", "\n".join(llms) + "\n")
     write(".nojekyll", "")
