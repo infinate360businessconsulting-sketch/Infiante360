@@ -184,7 +184,7 @@ TRACK_INDEX = dict(
     sections=[
         ("Modules", '<div class="grid-3">' + "".join(f'<a class="card" href="{m[1]}.html"><h3>Module {m[0]}</h3><p><strong>{e(m[2])}</strong></p><p class="small muted">{e(m[3])}</p></a>' for m in MODS) + "</div>", "plain", "Track"),
         ("In preparation", "<ul class=\"checklist\">" + "".join(f"<li>Module {n}: {e(t)}</li>" for n, t in PENDING) + "</ul><p class=\"small muted\">These modules are taught in the live program and are not yet published as public pages.</p>", "alt", "Coming"),
-        ("Join the program", f'<p>Learn the full track with labs and mentoring in the <a href="../aep-launchpad-bootcamp.html">AEP Launchpad Bootcamp</a>, or ask about fees on <a href="{WA}">WhatsApp +91 82968 93895</a>. No job, salary or certification outcome is guaranteed.</p>', "plain", "Enrol"),
+        ("Join the program", batch_block() + f'<p>Learn the full track with labs and mentoring in the <a href="../aep-launchpad-bootcamp.html">AEP Launchpad Bootcamp</a>, or ask about fees on <a href="{WA}">WhatsApp +91 82968 93895</a>. No job, salary or certification outcome is guaranteed.</p>', "plain", "Enrol"),
     ],
     faqs=[("Do I need Adobe access?", "Hands-on labs use a sandbox provided to enrolled learners. The public pages explain concepts and checklists.")],
     related=["academy/aep-launchpad-bootcamp.html", "academy/promo-video.html", "learn/index.html"],
