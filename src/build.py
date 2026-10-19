@@ -12,7 +12,7 @@ link resolves to a generated page. The build fails on any error.
 import datetime as dt
 import html
 import json
-import os
+import glob, os
 import re
 import shutil
 import sys
@@ -1006,7 +1006,7 @@ def main():
     urls = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>"
                      for p in PAGES)
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
-    _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\n"
+    _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\nDisallow: /zohoverify/\nDisallow: /brochure-download.html\n"
     _bots = [("Search engines", ["Googlebot", "Bingbot", "DuckDuckBot", "Applebot"]),
              ("AI search and answer engines", ["OAI-SearchBot", "ChatGPT-User", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "DuckAssistBot"]),
              ("AI training and model crawlers", ["GPTBot", "ClaudeBot", "Google-Extended", "Applebot-Extended", "Amazonbot", "Meta-ExternalAgent", "CCBot", "cohere-ai", "Bytespider"])]
@@ -1027,6 +1027,17 @@ def main():
     llms = [f"# {BRAND}", "", "> Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform (AEP), Real-Time CDP, Adobe Journey Optimizer, Customer Journey Analytics, Web SDK, data engineering and Agentic AI.", "",
             f"Contact: {EMAIL} | WhatsApp {PHONE_DISPLAY}", "", "## Pages", ""]
     llms += [f"- [{p['title']}]({abs_url(p['path'])}): {p['answer']}" for p in PAGES if p["path"] != "privacy-policy.html"]
+    import re as _re2
+    _cdir = os.path.join(ROOT, "corporate")
+    if os.path.isdir(_cdir):
+        llms += ["", "## Infinate360 corporate consulting site (separate section)", ""]
+        for _f in sorted(glob.glob(os.path.join(_cdir, "**", "*.html"), recursive=True)):
+            _rp = os.path.relpath(_f, ROOT).replace(os.sep, "/")
+            if _rp.endswith(("404.html", "sitemap.html")): continue
+            _h = open(_f, encoding="utf-8").read()
+            _t = _re2.search(r"<title>(.*?)</title>", _h, _re2.S); _d = _re2.search(r'<meta name="description" content="(.*?)"', _h)
+            if _t: llms.append(f"- [{_t.group(1).strip()}]({abs_url(_rp.replace('index.html', ''))}): {(_d.group(1) if _d else '').strip()}")
+        llms.append(f"- Corporate sitemap: {abs_url('corporate/sitemap.xml')}")
     write("llms.txt", "\n".join(llms) + "\n")
     write(".nojekyll", "")
     errors = validate()
