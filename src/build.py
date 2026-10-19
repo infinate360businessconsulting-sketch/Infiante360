@@ -31,6 +31,7 @@ from content_cases import CASE_PAGES, SIMULATORS, REGISTER, WHATSAPP_MSG, LMS, B
 from content_kb import KB_PAGES  # noqa: E402
 from content_growth import GROWTH_PAGES, LANDINGS, LEGAL  # noqa: E402
 from content_topics import TOPIC_INDEX  # noqa: E402
+from content_qa import QA_PAGES, export as qa_export, TOTAL as QA_TOTAL  # noqa: E402
 from content_expand import EXPAND_PAGES  # noqa: E402
 from content_stacks import STACK_PAGES  # noqa: E402
 from content_industry import INDUSTRY_ALL  # noqa: E402
@@ -72,7 +73,7 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + QA_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
 
 TOPICS = [
     ("adobe-experience-platform", "Adobe Experience Platform", "AEP", ["experience platform", "aep", "xdm", "schema", "dataset", "ingestion", "identity", "profile"]),
@@ -472,7 +473,7 @@ def footer(p):
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
-    learn = ["academy/index.html", "academy/workshops.html", "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html"]
+    learn = ["academy/index.html", "academy/workshops.html", "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html", "answers/index.html"]
     company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html", "stacks/index.html"] + [c["path"] for c in STACK_PAGES[1:]]
     more = ["academy/simulators.html", "academy/recording-platform.html", "academy/youtube-playlists.html", "academy/community.html", "academy/testimonials.html",
             "learn/student-questions.html", "guides/ajo-implementation-best-practices.html", "feeds.html", "sitemap.html"] + [l["path"] for l in LANDINGS]
@@ -1038,7 +1039,11 @@ def main():
             _t = _re2.search(r"<title>(.*?)</title>", _h, _re2.S); _d = _re2.search(r'<meta name="description" content="(.*?)"', _h)
             if _t: llms.append(f"- [{html.unescape(_t.group(1).strip())}]({abs_url(_rp.replace('index.html', ''))}): {html.unescape((_d.group(1) if _d else '').strip())}")
         llms.append(f"- Corporate sitemap: {abs_url('corporate/sitemap.xml')}")
+    llms += ["", "## Machine-readable answers", "", f"- [answers.json]({abs_url('answers.json')}): {QA_TOTAL} sourced questions and answers", f"- [llms-full.txt]({abs_url('llms-full.txt')}): all answers in plain text with citations"]
     write("llms.txt", "\n".join(llms) + "\n")
+    _rows = qa_export()
+    write("answers.json", json.dumps(_rows, ensure_ascii=False, indent=1))
+    write("llms-full.txt", f"# {BRAND}: sourced answers\n\n" + "\n".join(f"## {r['question']}\n{r['answer']}\nPage: {abs_url(r['page'])}\nSources: " + "; ".join(x['url'] for x in r['sources']) + "\n" for r in _rows))
     write(".nojekyll", "")
     errors = validate()
     print(f"Built {len(PAGES)} pages + 404 + thank-you into {OUT}")
