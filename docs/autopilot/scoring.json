@@ -1,0 +1,19 @@
+{
+  "threshold_draft": 50,
+  "threshold_hot": 80,
+  "signals": {
+    "demo_or_webinar_registration": 40,
+    "attended_session": 30,
+    "fee_or_brochure_page_view": 20,
+    "program_page_view": 10,
+    "whatsapp_or_form_enquiry": 45,
+    "replied_to_email": 50,
+    "hiring_signal_aep_role": 25,
+    "icp_title_match": 15,
+    "personal_email_domain": -20
+  },
+  "exclude_if": ["unsubscribed", "do_not_contact", "no_consent_and_cold_region_blocked", "existing_client_or_active_deal"],
+  "max_new_drafts_per_day": 25,
+  "max_touches_per_lead": 3,
+  "min_days_between_touches": 4
+}
