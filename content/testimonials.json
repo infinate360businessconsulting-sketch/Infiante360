@@ -1,3 +1,14 @@
 {
-  "items": []
+  "items": [
+    {
+      "name": "Samanth",
+      "role": "Martech lead",
+      "program": "Career Accelerator Test Series",
+      "quote": "The Career Accelerator Test Series at Infinite360 Tech Academy has been a valuable learning experience. It helped me evaluate my understanding of Adobe Experience Platform (AEP) and gain a clearer perspective on how MarTech concepts are applied in real-world projects. The assessments helped me validate my understanding of AEP fundamentals, data ingestion, XDM schemas, identity resolution, segmentation, and Customer 360 concepts. The scenario-based questions encouraged me to think beyond theory and approach practical implementation challenges from a developer and solution architect perspective. The tests helped me recognise topics that needed further revision, particularly data modelling, merge policies, identity graphs, and enterprise architecture. I appreciate Infinite360 Tech Academy for providing these learning resources and making the test series freely accessible to students. I would recommend these tests to aspiring AEP developers, MarTech professionals, and solution architects who want to assess their knowledge and continue improving.",
+      "verified": true,
+      "consent": true,
+      "received": "2026-10-23",
+      "source": "website review form (publish_permission: yes)"
+    }
+  ]
 }
