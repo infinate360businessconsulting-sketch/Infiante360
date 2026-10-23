@@ -47,6 +47,7 @@ HOME = dict(
 <a class="card link-card accent-blue" href="training/corporate-training.html"><span class="tag">Capability building</span><h3>Corporate training</h3><p>For L&amp;D, CoE and delivery leaders: role-based, project-based enablement with assessments.</p><span class="more">Corporate training &rarr;</span></a>
 <a class="card link-card accent-green" href="training/index.html"><span class="tag">Tech Academy</span><h3>Career accelerator</h3><p>For professionals and career switchers: live online Adobe MarTech and Agentic AI training.</p><span class="more">View the program &rarr;</span></a>
 </div>""", "alt", "Who we help"),
+        ("What learners say", "@@REVIEW_STRIP@@", "plain", "Reviews"),
         ("Engage the way you need", TIERS, "plain", "Engagement options"),
         ("The Adobe Experience Cloud, connected", PLATFORMS, "alt", "Platforms"),
         ("From audit to scale", """

@@ -653,6 +653,8 @@ def fill(content, p):
         content = content.replace("@@LP_FORM@@", form_html(p))
     if "@@TESTIMONIALS@@" in content:
         content = content.replace("@@TESTIMONIALS@@", testimonials_html())
+    if "@@REVIEW_STRIP@@" in content:
+        content = content.replace("@@REVIEW_STRIP@@", review_strip(p))
     if "@@TESTIMONIAL_FORM@@" in content:
         content = content.replace("@@TESTIMONIAL_FORM@@", testimonial_form(p))
     if "@@SITEMAP@@" in content:
@@ -666,14 +668,40 @@ def fill(content, p):
     return content
 
 
+def _excerpt(t, n=240):
+    q = t["quote"].strip()
+    if len(q) <= n: return q
+    cut = q[:n]
+    i = max(cut.rfind(". "), cut.rfind("! "))
+    return (cut[:i + 1] if i > 80 else cut.rsplit(" ", 1)[0] + "...")
+
+
+def _byline(t):
+    return f'<strong>{e(t["name"])}</strong>' + (f' &middot; {e(t["role"])}' if t.get("role") else "") + (f' &middot; {e(t["program"])}' if t.get("program") else "")
+
+
 def testimonials_html():
     if not TESTIMONIALS:
         return ('<div class="card"><p><strong>We are collecting verified reviews.</strong> We publish a review only after confirming the person attended a program or worked with us, and with their written permission. '
                 'Until then this section stays empty rather than showing anything we cannot verify. Learners and clients can add a review using the form below.</p></div>')
-    cards = "".join(
-        f'<figure class="card quote"><blockquote><p>{e(t["quote"])}</p></blockquote><figcaption><strong>{e(t["name"])}</strong>'
-        f'{" &middot; " + e(t["role"]) if t.get("role") else ""}{" &middot; " + e(t["program"]) if t.get("program") else ""}</figcaption></figure>' for t in TESTIMONIALS)
-    return f'<div class="grid-3">{cards}</div>'
+    out = []
+    for t in TESTIMONIALS:
+        ex, full = _excerpt(t), t["quote"].strip()
+        more = ""
+        if ex != full:
+            paras = "".join(f"<p>{e(x)}</p>" for x in full.split("\n") if x.strip()) or f"<p>{e(full)}</p>"
+            more = f'<details class="review-more"><summary>Read the full review</summary>{paras}</details>'
+        out.append(f'<figure class="review-card"><div class="review-mark" aria-hidden="true">&ldquo;</div><blockquote><p class="review-lead">{e(ex)}</p>{more}</blockquote>'
+                   f'<figcaption>{_byline(t)}</figcaption></figure>')
+    return '<div class="review-list">' + "".join(out) + "</div>"
+
+
+def review_strip(p):
+    link = rel("academy/testimonials.html", p["path"])
+    if not TESTIMONIALS:
+        return f'<p>We publish only verified, consented reviews. <a class="btn btn-ghost" href="{link}">Share your experience</a></p>'
+    cards = "".join(f'<figure class="review-card"><div class="review-mark" aria-hidden="true">&ldquo;</div><blockquote><p class="review-lead">{e(_excerpt(t, 200))}</p></blockquote><figcaption>{_byline(t)}</figcaption></figure>' for t in TESTIMONIALS[:3])
+    return f'<div class="review-list">{cards}</div><p class="cta-row"><a class="btn btn-primary" href="{link}">Read all reviews</a> <a class="btn btn-ghost" href="{link}#share-your-review">Share your review</a></p>'
 
 
 def testimonial_form(p):

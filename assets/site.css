@@ -428,3 +428,14 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .chat-cb input[type=text],.chat-cb input[type=tel]{padding:9px 10px;border:1px solid var(--line);border-radius:10px;font:inherit}
 .chat-cb-consent{font-size:.78rem;color:#475569}
 .chat-tel{font-weight:700;text-align:center}
+
+/* reviews */
+.review-list{display:grid;gap:18px;margin:8px 0 18px;max-width:860px}
+.review-card{position:relative;margin:0;padding:28px 30px 22px 30px;background:#fff;border:1px solid var(--border,#e2e8f0);border-left:5px solid #c8221c;border-radius:14px;box-shadow:0 6px 22px rgba(15,23,42,.07)}
+.review-mark{position:absolute;top:6px;right:22px;font-size:4.2rem;line-height:1;color:#c8221c;opacity:.18;font-family:Georgia,serif}
+.review-card blockquote{margin:0}
+.review-lead{font-size:1.12rem;line-height:1.65;margin:0 0 10px;color:var(--text,#0f172a)}
+.review-card figcaption{margin-top:14px;font-size:.95rem;color:var(--muted,#5b6475);border-top:1px solid var(--border,#e2e8f0);padding-top:12px}
+.review-more summary{cursor:pointer;color:#c8221c;font-weight:600;margin:6px 0}
+.review-more p{margin:10px 0;line-height:1.65}
+@media(min-width:900px){.review-list{grid-template-columns:1fr}}
