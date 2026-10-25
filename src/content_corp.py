@@ -150,14 +150,14 @@ CORP = [
 <a class="tile link-card" href="web-sdk-adobe-tags.html"><span class="abbr">SDK</span><h3>Web SDK &amp; Tags</h3><p>Modern data collection through the Edge Network.</p></a></div>""", "plain", "Collect and unify"),
             ("Engagement and orchestration", """<div class="tiles">
 <a class="tile link-card" href="adobe-journey-optimizer.html"><span class="abbr">AJO</span><h3>Journey Optimizer</h3><p>Real-time journeys, decisioning and cross-channel messaging.</p></a>
-<div class="tile"><span class="abbr">AC</span><h3>Adobe Campaign</h3><p>Campaign orchestration for scheduled, multi-step marketing programs.</p></div>
-<a class="tile link-card" href="../guides/marketo-engage-aep.html"><span class="abbr">MKT</span><h3>Marketo Engage</h3><p>B2B lead management, scoring and CRM alignment.</p></a></div>""", "alt", "Engage"),
+<a class="tile link-card" href="adobe-campaign-marketo.html"><span class="abbr">AC</span><h3>Adobe Campaign &amp; Marketo</h3><p>Campaign orchestration for scheduled, multi-step marketing programs.</p></a>
+<a class="tile link-card" href="adobe-campaign-marketo.html"><span class="abbr">MKT</span><h3>Marketo Engage</h3><p>B2B lead management, scoring and CRM alignment.</p></a></div>""", "alt", "Engage"),
             ("Experience and commerce", """<div class="tiles">
-<div class="tile"><span class="abbr">TGT</span><h3>Adobe Target</h3><p>A/B testing, experience targeting and on-site personalisation.</p></div>
-<div class="tile"><span class="abbr">AEM</span><h3>Experience Manager</h3><p>Content and digital asset management feeding personalised experiences.</p></div>
+<a class="tile link-card" href="adobe-target-personalization.html"><span class="abbr">TGT</span><h3>Adobe Target</h3><p>A/B testing, experience targeting and on-site personalisation.</p></a>
+<a class="tile link-card" href="aem-consulting.html"><span class="abbr">AEM</span><h3>Experience Manager</h3><p>Content and digital asset management feeding personalised experiences.</p></a>
 <div class="tile"><span class="abbr">COM</span><h3>Adobe Commerce</h3><p>Commerce data and events connected to profiles and journeys.</p></div></div>""", "plain", "Experience"),
             ("Insight and measurement", """<div class="tiles">
-<div class="tile"><span class="abbr">AA</span><h3>Adobe Analytics</h3><p>Digital analytics implementation, tracking and reporting.</p></div>
+<a class="tile link-card" href="adobe-analytics.html"><span class="abbr">AA</span><h3>Adobe Analytics</h3><p>Digital analytics implementation, tracking and reporting.</p></a>
 <a class="tile link-card" href="customer-journey-analytics.html"><span class="abbr">CJA</span><h3>Customer Journey Analytics</h3><p>Cross-channel analysis and attribution on AEP data.</p></a>
 <a class="tile link-card" href="agentic-ai-mcp.html"><span class="abbr">AI</span><h3>Agentic AI &amp; MCP</h3><p>Governed AI assistants on top of approved data and tools.</p></a></div>""", "alt", "Measure"),
             ("What we do across the stack", """<ul class="checklist cols-2">

@@ -22,6 +22,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from content_aep import AEP_PAGES  # noqa: E402
 from content_core import CORE, BOOKING  # noqa: E402
 from content_services import SERVICES  # noqa: E402
+from content_services2 import SERVICES2  # noqa: E402
+SERVICES = SERVICES + SERVICES2
 from content_more import MORE  # noqa: E402
 from content_home import HOME  # noqa: E402
 from content_corp import CORP  # noqa: E402
