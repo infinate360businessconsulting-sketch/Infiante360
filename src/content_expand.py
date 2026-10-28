@@ -21,7 +21,7 @@ def batch_block():
             '<script>(function(){try{var t=new Date();t.setHours(0,0,0,0);var a=((8-t.getDay())%7)||7;var m=new Date(t);m.setDate(t.getDate()+a);var u=new Date(m);u.setDate(m.getDate()+1);'
             'var f=function(d){return d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"}).replace(",","")};'
             'document.getElementById("nb").textContent=f(m)+" and "+f(u)}catch(e){}})();</script>')
-CXO_BLOCK = '<p><strong>CXO Hive batch:</strong> starts 2 November 2026, live sessions every Saturday and Sunday, with a 100% live, instructor-led approach.</p>'
+CXO_BLOCK = '<p><strong>CXO Hive batch:</strong> starts 2 November 2026, live sessions every Saturday and Sunday, with a 100% live, instructor-led approach. Fee ₹1,30,000, C-level only.</p>'
 EL = "https://experienceleague.adobe.com/en/docs"
 WA = "https://wa.me/918296893895"
 
@@ -104,7 +104,7 @@ BOOTCAMP = program_page(
   ("Bonus modules (self-paced)", ["Git, Linux, Docker deep dive, Playwright, OpenTelemetry", "Fine-tuning fundamentals, CrewAI, Google ADK, OpenAI Agents SDK", "AI product strategy, portfolio, resume and LinkedIn, technical interviews, freelancing"])],
  [("Developers", "Add AI engineering skills to your backend or full-stack work."), ("Data and automation professionals", "Move from scripts and dashboards to agents and RAG."), ("MarTech practitioners", "Connect AI agents to customer data and journeys, then see the Agentic AI + MCP track.")],
  [("Week-by-week plan", table(["Week", "Module", "Topics", "Projects"], BOOT), "plain", "Schedule"),
-  ("Fees and enquiry", CXO_BLOCK + '<p><strong>CXO and executive program fee: ₹1,00,000.</strong> Fees are confirmed in writing before payment. No job, salary or certification outcome is guaranteed.</p>' + NOTE + f'<p><a class="btn btn-primary" href="{WA}">Enrol or ask on WhatsApp</a> <a class="btn btn-ghost" href="../../contact-us.html">Book a demo via the form</a></p>', "alt", "Fees")],
+  ("Fees and enquiry", CXO_BLOCK + '<p><strong>CXO Hive (C-level program) fee: ₹1,30,000.</strong> Fees are confirmed in writing before payment. No job, salary or certification outcome is guaranteed.</p>' + NOTE + f'<p><a class="btn btn-primary" href="{WA}">Enrol or ask on WhatsApp</a> <a class="btn btn-ghost" href="../../contact-us.html">Book a demo via the form</a></p>', "alt", "Fees")],
  [("Do I need to know Python first?", "No. Week 4 teaches the Python and API basics used in the rest of the bootcamp."),
   ("Is this about Adobe?", "No. This is general AI engineering. For Adobe-specific agentic work, see the Agentic AI and MCP track."),
   ("Do you guarantee a job?", "No. The bootcamp builds skills and a portfolio; hiring decisions rest with employers.")],

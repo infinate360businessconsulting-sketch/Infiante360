@@ -1,0 +1,17 @@
+{
+  "name": "CXO Hive: Executive MarTech & AI Leadership Program",
+  "fee_inr": 130000,
+  "fee_label": "₹1,30,000",
+  "fee_note": "GST treatment and payment terms are confirmed in writing before any payment.",
+  "weeks": 10,
+  "format": "100% live, instructor-led, every Saturday and Sunday",
+  "hours_per_weekend_day": 4,
+  "midweek_checkpoints_per_week": 2,
+  "session_time_note": "Session times are agreed with the cohort at enrolment and confirmed on WhatsApp.",
+  "audience": "C-level executives only",
+  "cohorts": [
+    {"id": "cohort-1", "label": "Cohort 1", "kickoff": "2026-11-02", "first_weekend": "2026-11-07", "status": "open"}
+  ],
+  "whatsapp": "https://wa.me/918296893895",
+  "enquiry_email": "infinate360businessconsulting@gmail.com"
+}

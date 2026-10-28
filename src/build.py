@@ -34,6 +34,7 @@ from content_kb import KB_PAGES  # noqa: E402
 from content_growth import GROWTH_PAGES, LANDINGS, LEGAL  # noqa: E402
 from content_topics import TOPIC_INDEX  # noqa: E402
 from content_insights import INSIGHTS_PAGES  # noqa: E402
+from content_cxo import PAGES_CXO, MAIN as CXO_MAIN  # noqa: E402
 from content_press import PRESS_PAGES  # noqa: E402
 from content_qa import QA_PAGES, export as qa_export, TOTAL as QA_TOTAL  # noqa: E402
 from content_expand import EXPAND_PAGES  # noqa: E402
@@ -77,7 +78,8 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
+PAGES = [q for q in PAGES if not (q['path'] == CXO_MAIN and q.get('course_name') != 'CXO Hive: Executive MarTech & AI Leadership Program')]
 
 TOPICS = [
     ("adobe-experience-platform", "Adobe Experience Platform", "AEP", ["experience platform", "aep", "xdm", "schema", "dataset", "ingestion", "identity", "profile"]),
@@ -119,6 +121,7 @@ LEGAL_PATHS = {l["path"] for l in LEGAL}
 SOURCES_FILE = os.path.join(ROOT, "content", "news-sources.json")
 
 INTERESTS = [
+    ("cxo", "CXO Hive: C-level program"),
     ("aep", "Adobe Experience Platform (AEP) consulting"),
     ("rtcdp", "Real-Time CDP"),
     ("ajo", "Adobe Journey Optimizer (AJO)"),
@@ -566,8 +569,8 @@ def jsonld(p):
     if p["schema"] == "Course":
         graph.append({"@type": "Course", "@id": url + "#course", "name": p.get("course_name", "Adobe MarTech + Agentic AI Career Accelerator"),
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url, "inLanguage": "en",
-                      "teaches": ["Adobe Experience Platform", "Real-Time CDP", "Adobe Journey Optimizer", "Customer Journey Analytics", "Adobe Web SDK", "Agentic AI and MCP"],
-                      "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": "P90D"},
+                      "teaches": p.get("teaches", ["Adobe Experience Platform", "Real-Time CDP", "Adobe Journey Optimizer", "Customer Journey Analytics", "Adobe Web SDK", "Agentic AI and MCP"]),
+                      "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "courseWorkload": p.get("course_workload", "P90D")},
                       **({"offers": {"@type": "Offer", "price": str(p["price_inr"]), "priceCurrency": "INR", "category": "Paid", "availability": "https://schema.org/InStock", "url": url}} if p.get("price_inr") else {})})
     graph.append({"@type": "BreadcrumbList", "@id": url + "#breadcrumb", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": label, "item": abs_url(path)} for i, (path, label) in enumerate(crumbs(p))]})
