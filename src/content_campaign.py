@@ -14,6 +14,9 @@ SEGS = [
     ("training", "L&amp;D and capability leaders", "Corporate training", "Corporate training",
      "<h3>Role-based Adobe MarTech training for your team</h3><p>Tracks for engineers, analysts, architects and managers, with hands-on labs, assessments and progress reporting.</p>"
      "<ul class=\"checklist\"><li>Skills baseline for your team</li><li>Labs built on your use cases</li><li>Live, recorded or blended delivery</li></ul><p><a href=\"corporate-adobe-training.html\">Request a proposal</a></p>"),
+    ("career", "Career switchers", "Career accelerator (individual course)", "Career accelerator",
+     "<h3>Adobe MarTech and Agentic AI Career Accelerator</h3><p>Live online training in six phases across AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI, with simulators, an enterprise-style project and interview preparation. Fee \u20b960,000.</p>"
+     "<ul class=\"checklist\"><li>Live classes with recordings and mentor doubt resolution</li><li>Interview preparation; no job, salary or certification guarantee</li></ul><p><a href=\"career-accelerator-admission.html\">Admission details</a></p>"),
     ("capacity", "SI and delivery leaders", "Staff augmentation (engineers / architects)", "Specialist capacity",
      "<h3>Specialist Adobe capacity for your delivery team</h3><p>Architects, engineers and consultants for AEP, RTCDP, AJO, CJA and Web SDK work, scoped per project.</p>"
      "<ul class=\"checklist\"><li>Contract, contract-to-hire or managed pod</li><li>Scenario-based readiness checks</li><li>Onboarding prepared before day one</li></ul>"),

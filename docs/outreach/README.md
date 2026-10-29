@@ -25,4 +25,5 @@ The screenshot you shared belongs to another tool's campaign; its people and ema
 - Generate: `python3 scripts/build_emails.py` -> `docs/outreach/email-html/{enterprise,cxo,training,capacity}.html` + `.txt` + `preview.html`. Fee and cohort come from `content/cxo-hive.json`.
 - Merge tags: `{{first}} {{company}} {{signal}} {{postal_address}}`. Fill `{{postal_address}}` (required) and one sourced `{{signal}}` per prospect before sending.
 - Each CTA links to `lp/adobe-martech-conversation.html?utm_content=<segment>`: the page preselects the form interest, and UTMs are saved with the enquiry (same form as the rest of the site).
+- Segments: enterprise, cxo, training, capacity (cold B2B) and career (opted-in or enquiring learners only). See deliverability.md before the first send.
 - Send flow: paste into the Gmail DRAFT step of the autopilot, approve, send. Start at 20 a day; SPF, DKIM, DMARC first. Pause a segment under 1% reply after 200 sends.

@@ -35,6 +35,12 @@ SEGS = {
    lead="I noticed {{signal}}. Infinate360 provides specialist Adobe architects and engineers to delivery teams, scoped per project rather than a long commitment.",
    bullets=["AEP, Real-Time CDP, Journey Optimizer, CJA and Web SDK skills", "Contract, contract-to-hire or managed pod", "Scenario-based readiness check and onboarding prepared before day one"],
    cta="Tell us about the gap", utm="capacity", ps="If useful, I can outline the roles we cover and how engagements are structured."),
+
+ "career": dict(subject="Move into Adobe MarTech: live career accelerator, six phases", pre="Live online training in AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI, with projects and interview preparation. Fee ₹60,000.",
+   kicker="CAREER ACCELERATOR", head="Don't restart your career. Redirect it into Adobe MarTech.",
+   lead="You asked about, or showed interest in, Adobe MarTech learning, so I am sharing how the Infinite360 Tech Academy career accelerator works. It builds on your current engineering, data, analytics, cloud or consulting experience.",
+   bullets=["Live online classes with recordings, in six phases across AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI", "Simulators, an enterprise-style project, troubleshooting scenarios and interview preparation", "Program fee ₹60,000. Training outcomes depend on your participation; no job, salary or certification is guaranteed"],
+   cta="See the program and apply", utm="career", ps="Not ready to commit? Ask about the free guides and demo sessions first.", warm=True),
 }
 INK, MUT, IND, VIO = "#0F172A", "#64748B", "#4F46E5", "#7C3AED"
 
@@ -45,6 +51,7 @@ def link(seg):
 
 def build(key, s):
     e = html.escape
+    reason = 'You are receiving this because you enquired about or showed interest in Infinite360 programs.' if s.get('warm') else 'You are receiving this one-to-one business email because of your role at {{company}}.'
     lis = "".join(f'<tr><td valign="top" style="padding:0 10px 10px 0;color:{IND};font-size:16px;line-height:22px">&#10003;</td><td style="padding:0 0 10px 0;font:15px/22px Arial,Helvetica,sans-serif;color:{INK}">{e(b)}</td></tr>' for b in s["bullets"])
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light only"><meta name="x-apple-disable-message-reformatting">
@@ -69,7 +76,7 @@ def build(key, s):
 <p style="margin:0">Regards,<br><strong>Pavan Babu Gandla</strong><br><span style="color:{MUT};font-size:13px">Founder, Infinate360 &middot; Adobe MarTech, customer data and agentic AI</span></p></td></tr>
 <tr><td style="padding:18px 30px 24px 30px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #E2E8F0;padding-top:14px;font:11px/17px Arial,Helvetica,sans-serif;color:{MUT}">
 Infinate360 is independent and not affiliated with or endorsed by Adobe. Training and advisory outcomes depend on participation and execution; no job, salary, certification or business result is guaranteed.<br>
-You are receiving this one-to-one business email because of your role at {{{{company}}}}. If this is not relevant, reply STOP or <a href="mailto:{EMAIL}?subject=STOP" style="color:{MUT}">click here</a> and I will not contact you again.<br>{{{{postal_address}}}}</td></tr></table></td></tr>
+{e(reason)} If this is not relevant, reply STOP or <a href="mailto:{EMAIL}?subject=STOP" style="color:{MUT}">click here</a> and I will not contact you again.<br>{{{{postal_address}}}}</td></tr></table></td></tr>
 </table></td></tr></table></body></html>
 """
 
