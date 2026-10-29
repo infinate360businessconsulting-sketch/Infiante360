@@ -35,6 +35,7 @@ from content_growth import GROWTH_PAGES, LANDINGS, LEGAL  # noqa: E402
 from content_topics import TOPIC_INDEX  # noqa: E402
 from content_insights import INSIGHTS_PAGES  # noqa: E402
 from content_cxo import PAGES_CXO, MAIN as CXO_MAIN  # noqa: E402
+from content_campaign import PAGES_CAMPAIGN  # noqa: E402
 from content_press import PRESS_PAGES  # noqa: E402
 from content_qa import QA_PAGES, export as qa_export, TOTAL as QA_TOTAL  # noqa: E402
 from content_expand import EXPAND_PAGES  # noqa: E402
@@ -78,7 +79,7 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
 PAGES = [q for q in PAGES if not (q['path'] == CXO_MAIN and q.get('course_name') != 'CXO Hive: Executive MarTech & AI Leadership Program')]
 
 TOPICS = [
@@ -853,7 +854,7 @@ def body(p):
 
 
 def render(p):
-    return head(p) + "\n" + body(p)
+    return (head(p, robots=p["robots"]) if p.get("robots") else head(p)) + "\n" + body(p)
 
 
 def simple_page(path, title, h1, text, robots, links_html):
@@ -925,7 +926,7 @@ def validate():
             elif target in inbound and target != p["path"]:
                 inbound[target] += 1
     for path, n in inbound.items():
-        if n == 0 and path != "index.html":
+        if n == 0 and path != "index.html" and not str(BY_PATH.get(path, {}).get("robots", "")).startswith("noindex"):
             errors.append(f"orphan page: {path}")
     return errors
 
@@ -1041,7 +1042,7 @@ def main():
     write("brochure-download.html", simple_page("brochure-download.html", f"Download your brochure | {BRAND}", "Thank you: download your brochure",
                                                 "Choose the brochure that matches your need. We will follow up on your requirement using the details you shared.", "noindex,nofollow", _bl))
     urls = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>"
-                     for p in PAGES)
+                     for p in PAGES if not str(p.get('robots', '')).startswith('noindex'))
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
     _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\nDisallow: /zohoverify/\nDisallow: /brochure-download.html\n"
     _bots = [("Search engines", ["Googlebot", "Bingbot", "DuckDuckBot", "Applebot"]),
@@ -1083,7 +1084,7 @@ def main():
     write(".nojekyll", "")
     errors = validate()
     print(f"Built {len(PAGES)} pages + 404 + thank-you into {OUT}")
-    print(f"Sitemap URLs: {len(PAGES)}")
+    print(f"Sitemap URLs: {sum(1 for p in PAGES if not str(p.get('robots', '')).startswith('noindex'))}")
     if errors:
         print("VALIDATION ERRORS:")
         for err in errors:

@@ -1,0 +1,22 @@
+Subject: {{company}} and customer data: a 30-minute architecture check
+
+Hi {{first}},
+
+I noticed {{signal}}. Most MarTech programs do not stall on tools; they stall on identity, data quality and decision rights. I advise enterprise teams on Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics.
+
+- Schemas, identity and Profile configuration reviewed against your use cases
+- Ingestion, consent and governance gaps surfaced early
+- Prioritised findings and a 30/60/90-day plan you can act on
+
+Book a 30-minute review call: https://infiante360techacademy.com/lp/adobe-martech-conversation.html?utm_source=cold-email&utm_medium=email&utm_campaign=martech-outreach&utm_content=enterprise
+Calendar: https://calendar.app.google/5CHbD1hmQBHxcJyy5
+WhatsApp: https://wa.me/918296893895
+
+P.S. If an independent one-page checklist is more useful than a call, reply 'checklist' and I will send it.
+
+Regards,
+Pavan Babu Gandla
+Founder, Infinate360
+
+Independent; not affiliated with Adobe. No job, salary, certification or business result is guaranteed.
+If this is not relevant, reply STOP and I will not contact you again. {{postal_address}}

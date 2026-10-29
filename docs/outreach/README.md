@@ -20,3 +20,9 @@
 Sent, delivered, bounced (target under 2%), replies, positive replies, meetings booked, meetings held, proposals, enrolments, STOP requests.
 ## Sample data
 The screenshot you shared belongs to another tool's campaign; its people and emails are not used here.
+
+## HTML email templates (cold, one-to-one B2B)
+- Generate: `python3 scripts/build_emails.py` -> `docs/outreach/email-html/{enterprise,cxo,training,capacity}.html` + `.txt` + `preview.html`. Fee and cohort come from `content/cxo-hive.json`.
+- Merge tags: `{{first}} {{company}} {{signal}} {{postal_address}}`. Fill `{{postal_address}}` (required) and one sourced `{{signal}}` per prospect before sending.
+- Each CTA links to `lp/adobe-martech-conversation.html?utm_content=<segment>`: the page preselects the form interest, and UTMs are saved with the enquiry (same form as the rest of the site).
+- Send flow: paste into the Gmail DRAFT step of the autopilot, approve, send. Start at 20 a day; SPF, DKIM, DMARC first. Pause a segment under 1% reply after 200 sends.
