@@ -19,12 +19,17 @@ MTJ = {
     "academy/programs/live-customised-program.html": "https://martechjobs.io/courses/live-customised-martech-program/",
 }
 
+import json as _json, os as _os
+BRONZE = _json.load(open(_os.path.join(_os.path.dirname(_os.path.dirname(_os.path.abspath(__file__))), "content", "bronze.json"), encoding="utf-8"))
+
 PROGRAMS = [
     # path (relative to site root), name, category, level, format, price label, price_inr, summary
     ("training/index.html", "Adobe MarTech + Agentic AI Career Accelerator", "Adobe Experience Cloud", "Beginner to intermediate", "Live online · 90 days", "₹60,000", 60000,
      "The flagship live program: AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI through labs, enterprise-style projects and interview preparation."),
     ("academy/programs/aep-ajo-cja-foundation-advanced.html", "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture", "Adobe Experience Cloud", "Intermediate", "Recorded · self-paced", "₹60,000", 60000,
      "Learn AEP, AJO and CJA, then the MarTech and CDP architecture behind enterprise implementations."),
+    (BRONZE["path"], BRONZE["name"], "Adobe Experience Cloud", "All levels", "Recorded · self-paced", BRONZE["fee_label"], BRONZE["fee_inr"],
+     "All recorded video courses, a 3,500-question practice bank and hands-on sandbox access in one membership."),
     ("academy/programs/executive-architecture-leadership.html", "CXO Hive: Executive MarTech & AI Leadership Program", "MarTech leadership", "C-level executives", "Live · 10 weekends", "₹1,30,000", 130000,
      "A 10-week live program for C-level executives: architecture, AI governance, operating model and an investment case."),
     ("academy/programs/live-customised-program.html", "Live Customised MarTech Program", "Any MarTech stack", "All levels", "Live · individuals or teams", "₹1,00,000", 100000,
@@ -419,3 +424,29 @@ ACADEMY = [
         related=["training/career-transition.html", "adobe-experience-platform/career-path.html", "academy/index.html"],
     ),
 ]
+
+
+_Q = f'{BRONZE["question_count"]:,}'
+ACADEMY.append(program_page(
+    BRONZE["path"], BRONZE["name"],
+    f"Bronze Membership: Recorded Videos, {_Q} Questions, Sandbox",
+    f"Bronze Membership gives you all recorded video courses, a {_Q}-question practice bank and hands-on sandbox access for {BRONZE['fee_label']}.",
+    "Academy · Membership",
+    ["adobe martech recorded course", "aep question bank", "adobe experience platform practice questions", "aep sandbox practice", "adobe martech membership"],
+    f"Bronze Membership is a self-paced Infinite360 Tech Academy membership at {BRONZE['fee_label']}. It includes all recorded video courses, a {_Q}-question practice bank and hands-on sandbox access for practising Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI. It has no live classes and guarantees no job or certification.",
+    "All levels", "Recorded · self-paced", BRONZE["fee_label"], BRONZE["fee_inr"],
+    ["All recorded video courses", f"{_Q}-question practice bank", "Hands-on practice sandbox (Infinite360 simulation environment)", "Learn at your own pace, on any device you own", BRONZE["access_note"]],
+    ["Adobe Experience Platform, XDM and identity resolution", "Real-Time CDP audiences and activation", "Journey Optimizer and Customer Journey Analytics", "Web SDK, data layers and Adobe Analytics", "Agentic AI and MCP concepts", f"Self-testing with {_Q} practice questions", "Practising configuration safely in a sandbox", "Interview and certification-style revision"],
+    [("Video courses", ["Adobe Experience Platform (AEP)", "XDM and data modeling", "Identity resolution and Customer 360", "Real-Time CDP (RTCDP)", "Adobe Journey Optimizer (AJO)", "Customer Journey Analytics (CJA)", "Adobe Analytics", "Adobe Web SDK", "Agentic AI and MCP"]),
+     ("Practice bank", [f"{_Q} practice questions with answers for self-assessment", "Use after each video course to find weak areas", "Revise before interviews or certification attempts"]),
+     ("Sandbox practice", ["Hands-on practice in the Infinite360 simulation environment with synthetic data", "Rebuild schemas, audiences, journeys and reports from the lessons", "Safe place to make mistakes before using a client environment"])],
+    [("Self-paced learners", "Professionals who prefer recorded lessons and practice at their own time."), ("Career switchers on a budget", "A lower-cost way to start before deciding on a live program."), ("Practitioners revising", "Analysts and engineers who want a large practice bank and a sandbox.")],
+    [("Bronze or live?", '<p>Bronze has no live classes, mentor sessions or enterprise project review. For live teaching, projects and interview preparation choose the <a href="../../training/">Career Accelerator (₹60,000)</a>; for leaders see <a href="executive-architecture-leadership.html">CXO Hive</a>. Ask us how a Bronze purchase can relate to an upgrade; terms are confirmed in writing.</p>', "alt", "Compare"),
+     ("Notes", f'<p class="small muted">The sandbox is an Infinite360 simulation environment with synthetic data. It is not an Adobe-provided production or licensed environment. Built around Adobe Experience Cloud technologies and Experience League learning resources; Infinite360 is independent and not affiliated with Adobe. {BRONZE["access_note"]}</p>', "plain", "Good to know")],
+    [("Are the courses live?", "No. Bronze is recorded and self-paced. Live options are the Career Accelerator and CXO Hive."),
+     ("What is in the question bank?", f"{_Q} practice questions for self-assessment across the video-course topics. Exact topic split is shared at enrolment."),
+     ("Is the sandbox a real Adobe environment?", "No. It is Infinite360's simulation environment with synthetic data, for safe practice."),
+     ("Will Bronze get me a job or certification?", "No. Outcomes depend on your practice; no job, salary or certification is guaranteed."),
+     ("How long do I get access?", BRONZE["access_note"])],
+    ["training/index.html", "academy/programs/aep-ajo-cja-foundation-advanced.html", "academy/free-resources.html"],
+))

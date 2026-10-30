@@ -142,7 +142,7 @@ INTEREST_BY_PATH = {
     "services/web-sdk-adobe-tags.html": "websdk", "services/data-engineering.html": "data",
     "services/agentic-ai-mcp.html": "ai", "services/martech-strategy-advisory.html": "advisory",
     "services/engagement-model.html": "advisory", "services/staff-augmentation.html": "staff",
-    "training/corporate-training.html": "corporate", "training/index.html": "course",
+    "training/corporate-training.html": "corporate", "training/index.html": "course", "academy/programs/bronze-membership.html": "course",
 }
 
 NAV = [
