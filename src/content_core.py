@@ -391,7 +391,7 @@ CORE = [
             ("Website assistant", "<p>The chat assistant sends the questions you type to our server. If AI answers are enabled, the question and relevant site excerpts are sent to Anthropic's API to generate a reply. We do not store chat transcripts on our server; your recent messages stay in your browser tab until you close it. Please do not enter passwords, payment details or ID numbers.</p>"),
             ("How we use it", "<p>To respond to your enquiry, deliver programs you enrol in, verify and publish reviews you permit, and improve the site. We do not sell your information.</p>"),
             ("Retention", "<p>We keep enquiry details only as long as needed to respond and follow up, or as required for accounting and legal purposes.</p>"),
-            ("Your choices", "<p>To access, correct or delete your information, or withdraw a published review, email <a href=\"mailto:infinate360businessconsulting@gmail.com\">infinate360businessconsulting@gmail.com</a>.</p>"),
+            ("Your choices", "<p>To access, correct or delete your information, or withdraw a published review, email <a href=\"mailto:infiante360businessconsulting@gmail.com\">infiante360businessconsulting@gmail.com</a>.</p>"),
         ],
         faqs=[],
         related=["contact-us.html"],

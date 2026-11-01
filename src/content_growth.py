@@ -205,14 +205,14 @@ LEGAL = [
                    ("Schedules and changes", "<p>We may reschedule sessions or update curricula to reflect platform changes, and will tell enrolled learners in advance where possible.</p>"),
                    ("No guarantees", "<p>We do not guarantee employment, salary, certification or business outcomes. See the <a href=\"disclaimer.html\">disclaimer</a>.</p>"),
                    ("Liability", "<p>To the extent permitted by law, our liability for any claim relating to a program is limited to the fees you paid for that program.</p>"),
-                   ("Contact", "<p>Questions about these terms: <a href=\"mailto:infinate360businessconsulting@gmail.com\">infinate360businessconsulting@gmail.com</a>.</p>")],
+                   ("Contact", "<p>Questions about these terms: <a href=\"mailto:infiante360businessconsulting@gmail.com\">infiante360businessconsulting@gmail.com</a>.</p>")],
          faqs=[], related=[]),
     dict(path="refund-policy.html", title="Refund Policy | Infinite360 Tech Academy", nav="Refund policy",
          desc="How refund and transfer requests for Infinite360 Tech Academy programs and bootcamps are made, reviewed and answered.",
          h1="Refund policy", kicker="Legal", keywords=[], schema="WebPage",
          answer="Refund and batch-transfer eligibility depends on the program and is confirmed in writing before you pay. To request a refund or transfer, email us with your name, program, batch and payment reference. We acknowledge requests within two business days and explain the outcome and any timeline in writing.",
          sections=[("Before you pay", "<p>Ask for the program's refund and transfer terms. We confirm them in writing with the fee and schedule, and those written terms apply to your enrolment.</p>"),
-                   ("How to request a refund or transfer", '<ol class="steps"><li>Email <a href="mailto:infinate360businessconsulting@gmail.com">infinate360businessconsulting@gmail.com</a> from the address you enrolled with.</li><li>Include your name, program, batch and payment reference.</li><li>Tell us whether you want a refund or a move to a later batch, and why.</li></ol>'),
+                   ("How to request a refund or transfer", '<ol class="steps"><li>Email <a href="mailto:infiante360businessconsulting@gmail.com">infiante360businessconsulting@gmail.com</a> from the address you enrolled with.</li><li>Include your name, program, batch and payment reference.</li><li>Tell us whether you want a refund or a move to a later batch, and why.</li></ol>'),
                    ("How requests are handled", "<p>We acknowledge within two business days, review against the written terms for your program and reply with the outcome. Approved refunds are returned to the original payment method.</p>"),
                    ("If we cancel", "<p>If we cancel a session or batch, we will offer a transfer to another batch or a refund for the cancelled part.</p>")],
          faqs=[], related=[]),
@@ -257,3 +257,7 @@ LIBRARY = dict(
 )
 
 GROWTH_PAGES = [LIBRARY, USE_HUB] + USE_CASES + LANDINGS + LEGAL + UTILITY
+
+
+for _l in LEGAL:
+    _l["sections"] = list(_l["sections"]) + [("Who operates this website", "<p>This website and the Infinite360 programs and services are operated by <strong>Infiante 360 Global Services PVT LTD</strong>, trading as Infinite360. Contact: infiante360businessconsulting@gmail.com.</p>")]

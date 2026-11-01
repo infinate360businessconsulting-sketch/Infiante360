@@ -8,7 +8,7 @@ CFG = json.load(open(os.path.join(R, "content", "cxo-hive.json"), encoding="utf-
 BASE = "https://infiante360techacademy.com/"
 LP = BASE + "lp/adobe-martech-conversation.html"
 CAL = "https://calendar.app.google/5CHbD1hmQBHxcJyy5"
-EMAIL = "infinate360businessconsulting@gmail.com"
+EMAIL = "infiante360businessconsulting@gmail.com"
 OUT = os.path.join(R, "docs", "outreach", "email-html")
 os.makedirs(OUT, exist_ok=True)
 c = next((x for x in CFG["cohorts"] if x["status"] == "open"), None)
@@ -75,7 +75,7 @@ def build(key, s):
 <tr><td class="p" style="padding:18px 30px 6px 30px;font:15px/24px Arial,Helvetica,sans-serif;color:{INK}"><p style="margin:0 0 14px 0;color:{MUT}">P.S. {e(s['ps'])}</p>
 <p style="margin:0">Regards,<br><strong>Pavan Babu Gandla</strong><br><span style="color:{MUT};font-size:13px">Founder, Infinate360 &middot; Adobe MarTech, customer data and agentic AI</span></p></td></tr>
 <tr><td style="padding:18px 30px 24px 30px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #E2E8F0;padding-top:14px;font:11px/17px Arial,Helvetica,sans-serif;color:{MUT}">
-Infinate360 is independent and not affiliated with or endorsed by Adobe. Training and advisory outcomes depend on participation and execution; no job, salary, certification or business result is guaranteed.<br>
+Sent by Infiante 360 Global Services PVT LTD (Infinite360). Independent and not affiliated with or endorsed by Adobe. Training and advisory outcomes depend on participation and execution; no job, salary, certification or business result is guaranteed.<br>
 {e(reason)} If this is not relevant, reply STOP or <a href="mailto:{EMAIL}?subject=STOP" style="color:{MUT}">click here</a> and I will not contact you again.<br>{{{{postal_address}}}}</td></tr></table></td></tr>
 </table></td></tr></table></body></html>
 """

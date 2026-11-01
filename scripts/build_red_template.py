@@ -8,7 +8,7 @@ ACAD = "https://techacademy.infinate360.in/"
 DRIVE = "https://drive.google.com/file/d/11hkOjfB7a8z7V8ZJJVOyX9mSSlUxvMxQ/view?usp=sharing"
 IMG = "https://appbox12.mail250.com/uploadimages/infinate360businessconsulting/image/"
 LOGO, HERO, CARD = IMG + "81349-Infinite360-Tech-Academy-Logo_youtube-.png", IMG + "88154-Adobe-Resized.png", IMG + "71991-Adobe-Infinite360-Business-Card-Mockup.png"
-WA, MAIL = "https://wa.me/918296893895", "infinate360businessconsulting@gmail.com"
+WA, MAIL = "https://wa.me/918296893895", "infiante360businessconsulting@gmail.com"
 RED, DRED, DEEP, TINT, INK, MUT = "#D91E36", "#B3122A", "#1A0A0F", "#FFF1F2", "#1F1315", "#5B4A4D"
 e = html.escape
 def u(url, c):  # UTM-tag every link
@@ -66,7 +66,7 @@ H = f"""<!doctype html>
 <a href="{u(ACAD, 'card')}" target="_blank"><img src="{CARD}" alt="Infinite360 contact card" width="560" style="width:100%;max-width:560px;margin:20px auto 0;border-radius:10px"></a></td></tr>
 <tr><td align="center" bgcolor="{DEEP}" style="padding:26px 30px;font:13px/20px Arial,Helvetica,sans-serif;color:#E8C4C9;border-top:4px solid {RED}"><img src="{LOGO}" alt="Infinite360 Tech Academy" width="180" style="margin:0 auto 14px"><strong style="color:#fff;font-size:14px">Infinite360 Tech Academy</strong><br>Practical Adobe MarTech &bull; Customer Data &bull; Analytics &bull; Agentic AI &bull; Enterprise Transformation<br>
 <a href="{e(WA)}" style="color:#FF8A98;text-decoration:none">+91 82968 93895</a> &nbsp;|&nbsp; <a href="mailto:{MAIL}" style="color:#FF8A98;text-decoration:none">{MAIL}</a>
-<p style="margin:14px 0 0;font-size:11px;line-height:17px;color:#B79DA1">Training outcomes depend on participation and practice; no job, salary, certification or business outcome is guaranteed. Infinite360 is independent and not affiliated with or endorsed by Adobe. Adobe product names are trademarks of Adobe.<br>
+<p style="margin:14px 0 0;font-size:11px;line-height:17px;color:#B79DA1">Training outcomes depend on participation and practice; no job, salary, certification or business outcome is guaranteed. Sent by Infiante 360 Global Services PVT LTD (Infinite360). Independent and not affiliated with or endorsed by Adobe. Adobe product names are trademarks of Adobe.<br>
 You are receiving this because you requested or are being contacted about Infinite360 MarTech learning resources. <a href="{{{{UnsubscribeURL}}}}" style="color:#D9B8BD;text-decoration:underline">Unsubscribe</a> or reply STOP.<br>{{{{postal_address}}}}</p></td></tr>
 </table></td></tr></table></body></html>
 """

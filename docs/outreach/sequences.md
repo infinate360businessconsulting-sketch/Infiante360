@@ -1,7 +1,7 @@
 # Email sequences (draft templates; send only after human review)
 Rules: use only facts you can support; personalise with ONE real, sourced fact per prospect (merge field {{signal}}); no claims about results, clients or certifications; every email carries the opt-out line. Space sends 3-5 days; maximum 3 emails per contact.
 Footer for every email:
-> Pavan Babu Gandla, Infinite360 | infinate360businessconsulting@gmail.com | +91 9490164044
+> Pavan Babu Gandla, Infinite360 | infiante360businessconsulting@gmail.com | +91 82968 93895
 > If this is not relevant, reply STOP and I will not contact you again. {{postal_address}}
 
 ## A. Enterprise Adobe teams (CDO, CTO, VP MarTech, Architect)

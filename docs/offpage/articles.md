@@ -17,7 +17,7 @@ More: [Agentic AI and MCP answers](https://infiante360techacademy.com/answers/ai
 
 # Press release draft (publish only after you confirm the facts)
 **Infinite360 Tech Academy publishes a sourced answers hub for Adobe Experience Platform practitioners**
-Bengaluru, India, [date]. Infinite360 Tech Academy has published an open library of 191 short answers on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, the Web SDK and Agentic AI. Each answer links to the official Adobe documentation it is based on. "[quote from Pavan Babu Gandla: to be written and approved by him]". The library is at https://infiante360techacademy.com/answers/index.html. Media kit: https://infiante360techacademy.com/press.html. Contact: infinate360businessconsulting@gmail.com, WhatsApp +91 82968 93895.
+Bengaluru, India, [date]. Infinite360 Tech Academy has published an open library of 191 short answers on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, the Web SDK and Agentic AI. Each answer links to the official Adobe documentation it is based on. "[quote from Pavan Babu Gandla: to be written and approved by him]". The library is at https://infiante360techacademy.com/answers/index.html. Media kit: https://infiante360techacademy.com/press.html. Contact: infiante360businessconsulting@gmail.com, WhatsApp +91 82968 93895.
 About: see the approved boilerplate on the press page.
 
 # Social post draft: new learner review (post manually after you confirm the reviewer is a real learner)

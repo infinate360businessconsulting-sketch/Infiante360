@@ -55,7 +55,8 @@ BASE = os.environ.get("SITE_BASE") or (f"https://{_VERCEL}/" if _VERCEL else "ht
 TODAY = os.environ.get("SITE_LASTMOD", dt.date.today().isoformat())
 
 BRAND = "Infinite360"
-EMAIL = "infinate360businessconsulting@gmail.com"
+LEGAL_NAME = "Infiante 360 Global Services PVT LTD"
+EMAIL = "infiante360businessconsulting@gmail.com"
 PHONE_E164 = "+918296893895"
 PHONE_DISPLAY = "+91 82968 93895"
 WHATSAPP = "https://wa.me/918296893895"
@@ -117,6 +118,9 @@ for _o in _load("overrides.json").get("items", []):
             for _k in ("title", "desc", "h1", "lede", "answer", "notice"):
                 if _o.get(_k):
                     _p[_k] = _o[_k]
+for _q in PAGES:
+    if _q["path"] == "privacy-policy.html" and not any("Who operates" in x[0] for x in _q["sections"]):
+        _q["sections"] = list(_q["sections"]) + [("Who operates this website", f"<p>This website is operated by <strong>{LEGAL_NAME}</strong>, trading as {BRAND}. Contact: {EMAIL}.</p>")]
 BY_PATH = {p["path"]: p for p in PAGES}
 LEGAL_PATHS = {l["path"] for l in LEGAL}
 SOURCES_FILE = os.path.join(ROOT, "content", "news-sources.json")
@@ -501,7 +505,7 @@ def footer(p):
 {ABOUT_FOOTER}
 <nav class="legal-links" aria-label="Legal">{" ".join(f'<a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a>' for x in ["privacy-policy.html", "terms-and-conditions.html", "refund-policy.html", "disclaimer.html", "sitemap.html"])}</nav>
 <div class="footer-legal">
-<p>&copy; <span id="year">{TODAY[:4]}</span> {BRAND}. Adobe, Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics are trademarks of Adobe. {BRAND} is independent and not affiliated with or endorsed by Adobe.</p>
+<p>&copy; <span id="year">{TODAY[:4]}</span> {LEGAL_NAME}. {BRAND} is the trading brand of {LEGAL_NAME}. Adobe, Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics are trademarks of Adobe. {BRAND} is independent and not affiliated with or endorsed by Adobe.</p>
 <p>Some content on this site is created or enhanced with AI assistance to support research and organisation, and is curated for accuracy and relevance. Always confirm product details against current Adobe documentation.</p>
 <p>Training outcomes depend on participation and practice; no job, salary or certification outcome is guaranteed.</p>
 </div></div></footer>
@@ -516,7 +520,7 @@ PERSON_ID = BASE + "pavan-babu-gandla.html#person"
 
 
 def org_node():
-    return {"@type": "Organization", "@id": ORG_ID, "name": BRAND, "url": BASE,
+    return {"@type": "Organization", "@id": ORG_ID, "name": BRAND, "legalName": LEGAL_NAME, "url": BASE,
             "logo": BASE + "assets/logo-512.png", "email": EMAIL, "telephone": PHONE_E164,
             "sameAs": [LINKEDIN_COMPANY, YOUTUBE],
             "founder": {"@id": PERSON_ID},
