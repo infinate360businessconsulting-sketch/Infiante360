@@ -85,7 +85,7 @@
     });
   }
 
-  var MAIL = "infiante360businessconsulting@gmail.com";
+  var MAIL = "infinate360businessconsulting@gmail.com";
   function callbackForm() {
     var m = el("div", "chat-msg chat-bot");
     m.appendChild(el("p", "", "Happy to call you. Leave your name and phone number, or tap to call us now."));

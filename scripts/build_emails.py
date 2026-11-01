@@ -8,7 +8,7 @@ CFG = json.load(open(os.path.join(R, "content", "cxo-hive.json"), encoding="utf-
 BASE = "https://infiante360techacademy.com/"
 LP = BASE + "lp/adobe-martech-conversation.html"
 CAL = "https://calendar.app.google/5CHbD1hmQBHxcJyy5"
-EMAIL = "infiante360businessconsulting@gmail.com"
+EMAIL = "infinate360businessconsulting@gmail.com"
 OUT = os.path.join(R, "docs", "outreach", "email-html")
 os.makedirs(OUT, exist_ok=True)
 c = next((x for x in CFG["cohorts"] if x["status"] == "open"), None)

@@ -3,7 +3,7 @@ import html as _h
 from content_cases import pills, WHATSAPP_MSG, REGISTER
 e = _h.escape
 EL = "https://experienceleague.adobe.com/en/docs"
-EMAIL = "infiante360businessconsulting@gmail.com"
+EMAIL = "infinate360businessconsulting@gmail.com"
 
 T = {  # section -> rows (title, keyword, format, audience, leads_to)
 "AEP data, schemas and identity": [

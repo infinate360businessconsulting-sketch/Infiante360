@@ -8,7 +8,7 @@ ACAD = "https://techacademy.infinate360.in/"
 DRIVE = "https://drive.google.com/file/d/11hkOjfB7a8z7V8ZJJVOyX9mSSlUxvMxQ/view?usp=sharing"
 IMG = "https://appbox12.mail250.com/uploadimages/infinate360businessconsulting/image/"
 LOGO, HERO, CARD = IMG + "81349-Infinite360-Tech-Academy-Logo_youtube-.png", IMG + "88154-Adobe-Resized.png", IMG + "71991-Adobe-Infinite360-Business-Card-Mockup.png"
-WA, MAIL = "https://wa.me/918296893895", "infiante360businessconsulting@gmail.com"
+WA, MAIL = "https://wa.me/918296893895", "infinate360businessconsulting@gmail.com"
 RED, DRED, DEEP, TINT, INK, MUT = "#D91E36", "#B3122A", "#1A0A0F", "#FFF1F2", "#1F1315", "#5B4A4D"
 e = html.escape
 def u(url, c):  # UTM-tag every link

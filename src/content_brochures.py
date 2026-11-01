@@ -3,7 +3,7 @@ import html as _h
 from content_cases import pills, WHATSAPP_MSG, REGISTER
 e = _h.escape
 EL = "https://experienceleague.adobe.com/en/docs"
-EMAIL = "infiante360businessconsulting@gmail.com"
+EMAIL = "infinate360businessconsulting@gmail.com"
 BASE = "https://infiante360techacademy.com/"
 
 AUD = [("learners", "Learners and career switchers", "Programmes, timings, table of contents, projects, assignments and interview preparation.", "15 pages"),

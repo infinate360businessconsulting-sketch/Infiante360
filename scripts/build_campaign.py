@@ -9,7 +9,7 @@ LP = B + "lp/adobe-martech-conversation.html?utm_source=email&utm_medium=campaig
 DRIVE = "https://drive.google.com/file/d/11hkOjfB7a8z7V8ZJJVOyX9mSSlUxvMxQ/view?usp=sharing&utm_source=email&utm_medium=campaign&utm_campaign=career_library"
 LOGO = "https://appbox12.mail250.com/uploadimages/infinate360businessconsulting/image/81349-Infinite360-Tech-Academy-Logo_youtube-.png"
 HERO = "https://appbox12.mail250.com/uploadimages/infinate360businessconsulting/image/88154-Adobe-Resized.png"
-WA = "https://wa.me/918296893895"; MAIL = "infiante360businessconsulting@gmail.com"
+WA = "https://wa.me/918296893895"; MAIL = "infinate360businessconsulting@gmail.com"
 NAVY, CY, INK, MUT = "#06132f", "#00a8e8", "#071a36", "#526274"
 e = html.escape
 

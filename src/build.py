@@ -56,7 +56,7 @@ TODAY = os.environ.get("SITE_LASTMOD", dt.date.today().isoformat())
 
 BRAND = "Infinite360"
 LEGAL_NAME = "Infiante 360 Global Services PVT LTD"
-EMAIL = "infiante360businessconsulting@gmail.com"
+EMAIL = "infinate360businessconsulting@gmail.com"
 PHONE_E164 = "+918296893895"
 PHONE_DISPLAY = "+91 82968 93895"
 WHATSAPP = "https://wa.me/918296893895"

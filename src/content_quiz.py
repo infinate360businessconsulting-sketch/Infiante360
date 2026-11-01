@@ -3,7 +3,7 @@ import html as _h, json
 from content_cases import pills, WHATSAPP_MSG, REGISTER
 e = _h.escape
 EL = "https://experienceleague.adobe.com/en/docs"
-EMAIL = "infiante360businessconsulting@gmail.com"
+EMAIL = "infinate360businessconsulting@gmail.com"
 BASE = "https://infiante360techacademy.com/"
 PASS = 14
 

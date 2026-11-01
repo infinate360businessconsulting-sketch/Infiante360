@@ -29,7 +29,7 @@ a title exceeds 65 chars, JSON-LD is invalid, an internal link is broken, or a p
   modifiers map to the career, interview, training and consulting pages. No location doorway pages.
 
 ## Forms
-Contact and enquiry forms post to FormSubmit (formsubmit.co) → `infiante360businessconsulting@gmail.com`,
+Contact and enquiry forms post to FormSubmit (formsubmit.co) → `infinate360businessconsulting@gmail.com`,
 with a honeypot, client-side validation, and a WhatsApp alternative. **The first submission triggers a
 FormSubmit activation email that must be confirmed before messages are delivered.**
 
