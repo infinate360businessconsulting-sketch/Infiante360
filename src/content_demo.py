@@ -30,6 +30,21 @@ msg=(now>=s[cur][0]&&now<=s[cur][1])?"Day "+(cur+1)+" is live now.":"The demo is
 else{msg="This demo has ended. Send the enquiry form below to join the next run.";if(pay){pay.removeAttribute("href");pay.textContent="Registration closed";pay.setAttribute("aria-disabled","true");pay.style.opacity=".55"}}
 box.textContent=msg}catch(x){}})();</script>"""
 
+def ics():
+    """Public calendar file with the three sessions. Joining link is included only when join_url is set in the config."""
+    join = D.get("join_url", "").strip()
+    desc = "Infinite360 live demo. " + (f"Join: {join}" if join else "Joining details are shared by email or WhatsApp after registration.") + " Questions: +91 82968 93895."
+    out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infinite360//Demo Bootcamp//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Adobe MarTech 3-Day Demo Bootcamp"]
+    for x in D["days"]:
+        st = datetime.datetime.fromisoformat(f'{x["date"]}T{D["start_hour"]}:00+05:30').astimezone(datetime.timezone.utc)
+        en = datetime.datetime.fromisoformat(f'{x["date"]}T{D["end_hour"]}:00+05:30').astimezone(datetime.timezone.utc)
+        z = lambda t: t.strftime("%Y%m%dT%H%M%SZ")
+        out += ["BEGIN:VEVENT", f'UID:demo-bootcamp-day{x["n"]}-{x["date"]}@infiante360techacademy.com', "DTSTAMP:20261102T000000Z", f"DTSTART:{z(st)}", f"DTEND:{z(en)}",
+                f'SUMMARY:{D["name"]}: Day {x["n"]} - {x["title"]}', f"DESCRIPTION:{desc}", "LOCATION:" + (join if join else "Online (link shared after registration)"),
+                "BEGIN:VALARM", "TRIGGER:-PT30M", "ACTION:DISPLAY", "DESCRIPTION:Demo starts in 30 minutes", "END:VALARM", "END:VEVENT"]
+    return "\r\n".join(out + ["END:VCALENDAR", ""])
+
+
 PAGES_DEMO = [dict(
     path=PATH, nav="3-day MarTech demo bootcamp",
     title=f"3-Day Adobe MarTech Demo Bootcamp: {span}, 10 PM IST, {FEE}",
@@ -43,7 +58,7 @@ PAGES_DEMO = [dict(
         ("Reserve your seat", f'''<div class="price-card"><div><div class="price">{FEE}<small>for the 3-day demo</small></div>
 <div class="meta" style="margin-top:14px"><span>3 nights</span><span>{e(D["time_label"])}</span><span>Live online</span></div>
 <p id="demo-status" role="status" aria-live="polite" class="small" style="margin-top:12px;font-weight:600" data-days="{days_json}">Seats are confirmed after payment.</p>
-<p class="cta-row" style="margin-top:18px">{pay_btn} <a class="btn btn-ghost" href="#enquire-form">Ask a question first</a></p>
+<p class="cta-row" style="margin-top:18px">{pay_btn} <a class="btn btn-ghost" href="#enquire-form">Ask a question first</a> <a class="btn btn-ghost" href="../assets/demo-bootcamp.ics" download>Add to calendar (.ics)</a></p>
 <p class="small muted">Payment is made on a secure Cashfree form (opens in a new tab). Joining details are shared after registration.</p></div>
 <ul class="checklist"><li>Three live evening sessions, one hour each</li><li>Hands-on walkthroughs in the Infinite360 practice environment</li><li>Open Q&amp;A with the instructor</li><li>A clear view of where to start in Adobe MarTech</li></ul></div>
 <p class="small muted">A demo shows what the work looks like and how we teach. It is not a certification and guarantees no job, salary or certification outcome. Infinite360 is independent and not affiliated with Adobe.</p>''', "plain", "Fee and seats"),

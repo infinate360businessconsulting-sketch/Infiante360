@@ -5,9 +5,39 @@
   "payment_url": "https://payments.cashfree.com/forms/MartechDemo",
   "time_label": "10:00 PM – 11:00 PM IST",
   "days": [
-    {"n": 1, "date": "2026-11-06", "title": "Customer data foundations", "points": ["What MarTech and a customer data platform do", "How Adobe Experience Platform fits together", "XDM schemas, datasets and identity, shown live"]},
-    {"n": 2, "date": "2026-11-07", "title": "Audiences and journeys", "points": ["Real-Time CDP audiences and activation", "Journey Optimizer: triggers, conditions and messages", "Build a simple audience and journey flow live"]},
-    {"n": 3, "date": "2026-11-08", "title": "Analytics, Agentic AI and your path", "points": ["Customer Journey Analytics: reading the journey", "Agentic AI and MCP for MarTech, and where it is going", "Map your background to MarTech roles; open Q&A"]}
+    {
+      "n": 1,
+      "date": "2026-11-06",
+      "title": "Customer data foundations",
+      "points": [
+        "What MarTech and a customer data platform do",
+        "How Adobe Experience Platform fits together",
+        "XDM schemas, datasets and identity, shown live"
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2026-11-07",
+      "title": "Audiences and journeys",
+      "points": [
+        "Real-Time CDP audiences and activation",
+        "Journey Optimizer: triggers, conditions and messages",
+        "Build a simple audience and journey flow live"
+      ]
+    },
+    {
+      "n": 3,
+      "date": "2026-11-08",
+      "title": "Analytics, Agentic AI and your path",
+      "points": [
+        "Customer Journey Analytics: reading the journey",
+        "Agentic AI and MCP for MarTech, and where it is going",
+        "Map your background to MarTech roles; open Q&A"
+      ]
+    }
   ],
-  "start_hour": "22:00", "end_hour": "23:00"
+  "start_hour": "22:00",
+  "end_hour": "23:00",
+  "join_url": "",
+  "join_method": ""
 }

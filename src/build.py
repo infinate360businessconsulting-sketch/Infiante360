@@ -36,7 +36,7 @@ from content_topics import TOPIC_INDEX  # noqa: E402
 from content_insights import INSIGHTS_PAGES  # noqa: E402
 from content_cxo import PAGES_CXO, MAIN as CXO_MAIN  # noqa: E402
 from content_campaign import PAGES_CAMPAIGN  # noqa: E402
-from content_demo import PAGES_DEMO, PATH as DEMO_PATH  # noqa: E402
+from content_demo import PAGES_DEMO, PATH as DEMO_PATH, ics as demo_ics  # noqa: E402
 from content_press import PRESS_PAGES  # noqa: E402
 from content_qa import QA_PAGES, export as qa_export, TOTAL as QA_TOTAL  # noqa: E402
 from content_expand import EXPAND_PAGES  # noqa: E402
@@ -1049,6 +1049,7 @@ def main():
                                                 "Choose the brochure that matches your need. We will follow up on your requirement using the details you shared.", "noindex,nofollow", _bl))
     urls = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>"
                      for p in PAGES if not str(p.get('robots', '')).startswith('noindex'))
+    write("assets/demo-bootcamp.ics", demo_ics())
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
     _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\nDisallow: /zohoverify/\nDisallow: /brochure-download.html\n"
     _bots = [("Search engines", ["Googlebot", "Bingbot", "DuckDuckBot", "Applebot"]),
