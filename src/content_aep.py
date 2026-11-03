@@ -62,10 +62,40 @@ AEP_PAGES = [
 <li><a href="../services/customer-journey-analytics.html">Customer Journey Analytics (CJA)</a> reports on AEP datasets across channels.</li>
 </ul>
 <p>Read the full comparison in <a href="../guides/aep-vs-real-time-cdp.html">AEP vs Real-Time CDP</a>.</p>"""),
+            ("Capabilities shared across Adobe applications", f"""
+<p>Because applications sit on one platform, several capabilities are set up once and reused. Product names and licensing change, so confirm what your contract includes in the <a href="{EL}">Adobe documentation</a>.</p>
+<div class="grid-3">
+<div class="card"><h3>One data model</h3><p>XDM schemas give every team the same field definitions, so a profile attribute or event means the same thing in each application.</p></div>
+<div class="card"><h3>One profile and identity graph</h3><p>Identities are linked once and the resulting profile is reused for audiences, journeys and reporting.</p></div>
+<div class="card"><h3>Governance and consent</h3><p>Data usage labels and consent signals are applied at the platform level, which helps keep activation within policy.</p></div>
+<div class="card"><h3>Reusable audiences</h3><p>An audience built once can be evaluated in batch, streaming or at the edge and then shared with several destinations.</p></div>
+<div class="card"><h3>Open interfaces</h3><p>APIs, source connectors and <a href="{EL}/web-sdk/home">Web SDK</a> support let engineers connect systems without custom point-to-point pipes.</p></div>
+<div class="card"><h3>SQL access</h3><p>Query Service lets analysts and data engineers explore datasets with SQL for validation and modelling.</p></div>
+</div>"""),
+            ("Why teams adopt AEP", """
+<p>Teams usually move to AEP to solve a specific problem rather than to buy a platform. Common drivers, based on typical enterprise programs rather than guaranteed results:</p>
+<ul>
+<li><strong>Fragmented customer data.</strong> Web, app, CRM, commerce and service data sit in separate tools and cannot be joined at the person level.</li>
+<li><strong>Slow audience changes.</strong> Marketing waits on batch jobs; streaming and edge evaluation shorten the loop for time-sensitive use cases.</li>
+<li><strong>Inconsistent measurement.</strong> Each channel reports its own numbers; shared datasets let <a href="../services/customer-journey-analytics.html">Customer Journey Analytics</a> report across channels.</li>
+<li><strong>Consent and governance risk.</strong> Central policy enforcement is easier to audit than rules scattered across tools.</li>
+</ul>
+<p>AEP is not always the right answer. If your use case is a single channel with simple data, a lighter tool may cost less. A short <a href="../services/aep-consulting.html">architecture review</a> can test fit before you commit.</p>"""),
+            ("Connecting AEP to your existing stack", f"""
+<p>Most organisations keep their current CRM, warehouse and channel tools. Typical integration patterns:</p>
+<ul>
+<li><strong>Inbound:</strong> use <a href="{EL}/sources/home">source connectors</a> for cloud storage, CRM and marketing tools, streaming ingestion for events, and Web SDK for browser and app data. See <a href="data-ingestion.html">data ingestion</a>.</li>
+<li><strong>Warehouse:</strong> exchange data with platforms such as Snowflake, BigQuery or Databricks where a connector or export path exists for your licence; check availability first.</li>
+<li><strong>Outbound:</strong> send audiences through <a href="{EL}/destinations/home">destinations</a> to advertising, email, personalization and cloud storage targets. See <a href="activation-destinations.html">activation</a>.</li>
+<li><strong>Governance:</strong> map consent and data usage labels before any new feed goes live.</li>
+</ul>
+<p>Plan identity and consent first; connectors are the easy part.</p>"""),
             ("Who this hub is for", AUDIENCE_NOTE),
         ],
         faqs=[
-            ("Is Adobe Experience Platform a CDP?", "AEP is the underlying data platform. The customer data platform capability is Real-Time CDP, an application built on AEP that adds audience activation to destinations."),
+            ("Do I have to replace my current tools to use AEP?", "No. AEP is normally added alongside your CRM, warehouse and channel tools, which feed it data and receive audiences from it. What changes is where identity, consent and audiences are managed."),
+            ("Which AEP capabilities are shared by Adobe applications?", "The data model, identity graph, unified profile, governance controls and audiences are platform capabilities. Applications such as Real-Time CDP, Journey Optimizer and Customer Journey Analytics reuse them. Entitlements differ by contract."),
+              ("Is Adobe Experience Platform a CDP?", "AEP is the underlying data platform. The customer data platform capability is Real-Time CDP, an application built on AEP that adds audience activation to destinations."),
             ("How long does it take to learn AEP?", "With hands-on practice, most professionals can understand the core flow (schemas, datasets, ingestion, identity, profile, segments, activation) in a few weeks. Production-level architecture skills come from working through real use cases and troubleshooting."),
             ("Do I need coding skills for AEP?", "Not for the basics, which are UI-driven. Developers and data engineers benefit from JSON, REST APIs, SQL (for Query Service) and JavaScript (for Web SDK)."),
         ],

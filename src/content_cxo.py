@@ -78,7 +78,7 @@ READINESS = r'''
 <div class="form-card" id="cxo-check"><h3>Executive fit check</h3>
 <p class="muted small">Eight questions, answered in your browser. Nothing is stored or sent.</p>
 <form id="cxo-form" onsubmit="return false">
-<div class="field"><label for="q1">Your role</label><select id="q1"><option value="">Select</option><option value="c">CEO, founder or managing director</option><option value="c">CIO or CTO</option><option value="c">CMO, CDO or Chief Product Officer</option><option value="c">COO or CFO</option><option value="c">Chief AI, Data or Digital Officer</option><option value="n">VP or director</option><option value="n">Other</option></select></div>
+<div class="field"><label for="q1">Your role</label><select id="q1"><option value="">Select</option><option value="c">CEO, founder or managing director</option><option value="c">CIO or CTO</option><option value="c">CMO, CDO or Chief Product Officer</option><option value="c">COO or CFO</option><option value="c">Chief AI, Data or Digital Officer</option><option value="c">VP, SVP or EVP</option><option value="c">Director or head of function</option><option value="n">Other</option></select></div>
 <div class="field"><label for="q2">Your involvement in MarTech, data or AI transformation</label><select id="q2"><option value="">Select</option><option value="3">I own it</option><option value="2">I sponsor it</option><option value="1">I influence decisions</option><option value="0">Not involved</option></select></div>
 <div class="field"><label for="q3">Organisation size</label><select id="q3"><option value="">Select</option><option value="1">Under 250 people</option><option value="2">250 to 999</option><option value="3">1,000 or more</option></select></div>
 <div class="field"><label for="q4">Adobe Experience Cloud in your stack</label><select id="q4"><option value="">Select</option><option value="3">Core platform</option><option value="2">Partly in use</option><option value="1">Evaluating</option><option value="0">No</option></select></div>
@@ -93,7 +93,7 @@ READINESS = r'''
 var v=function(i){return document.getElementById(i).value},out=document.getElementById("cxo-result"),ids=["q1","q2","q3","q4","q5","q6","q7","q8"];
 for(var i=0;i<ids.length;i++){if(!v(ids[i])){out.hidden=false;out.textContent="Please answer all eight questions.";return}}
 var tx={case:"the executive investment case (week 9)",ops:"the operating model and governance weeks (weeks 8)",ai:"AI strategy and agentic AI governance (weeks 6 and 7)",arch:"reference architecture and data readiness (weeks 3 and 4)",team:"capability and adoption planning (weeks 1, 8 and 10)"};
-if(v("q1")!=="c"){out.hidden=false;out.textContent="CXO Hive is for C-level executives only. For your role, the Career Accelerator or the Live Customised MarTech Program is a better fit (see the links below the form).";return}
+if(v("q1")!=="c"){out.hidden=false;out.textContent="CXO Hive is for C-level executives and senior leaders. For your role, the Career Accelerator or the Live Customised MarTech Program is a better fit (see the links below the form).";return}
 var s=+v("q2")*2+ +v("q3")+ +v("q4")+ +v("q6")*2+ +v("q7")+ +v("q8");
 var fit=s>=11?"strong":(s>=7?"good":"early");
 var msg="Indicative fit: "+fit+". Your focus areas would be "+tx[v("q5")]+".";
@@ -106,7 +106,7 @@ out.hidden=false;out.innerHTML=msg})})();</script>
 
 def readiness(depth_prefix):
     return READINESS.replace("@@APPLY@@", depth_prefix + APPLY) + (
-        '<p class="small muted">Not C-level? See the <a href="' + depth_prefix + 'training/">Career Accelerator</a> or the <a href="' + depth_prefix + 'academy/programs/live-customised-program.html">Live Customised MarTech Program</a>.</p>')
+        '<p class="small muted">Not a C-level or senior leader? See the <a href="' + depth_prefix + 'training/">Career Accelerator</a> or the <a href="' + depth_prefix + 'academy/programs/live-customised-program.html">Live Customised MarTech Program</a>.</p>')
 
 
 PAGES_CXO = []
@@ -114,10 +114,10 @@ PAGES_CXO = []
 PAGES_CXO.append(dict(
     path=MAIN, nav="CXO Hive",
     title="CXO Hive: Executive MarTech & AI Leadership Program",
-    desc=f"CXO Hive is a 10-week live program for C-level executives on MarTech, data and AI leadership: architecture, governance, investment case. {FEE}.",
-    h1=NAME, kicker="Academy · C-level program",
+    desc=f"CXO Hive is a 10-week live program for C-level and senior leaders on MarTech, data and AI: architecture, governance, investment case. {FEE}.",
+    h1=NAME, kicker="Academy · C-level and senior-leader program",
     keywords=["cxo program martech", "executive ai leadership program", "cio cmo alignment training", "martech leadership program india", "agentic ai strategy for executives"],
-    answer=(f"CXO Hive is a {CFG['weeks']}-week, live, instructor-led program for C-level executives who sponsor MarTech, customer data and AI transformation. "
+    answer=(f"CXO Hive is a {CFG['weeks']}-week, live, instructor-led program for C-level executives and senior leaders who sponsor MarTech, customer data and AI transformation. "
             f"It runs every Saturday and Sunday with two short midweek checkpoints and ends with an executive investment case, a target architecture, an operating model and a 90-day plan. The fee is {FEE}."),
     schema="Course", course_name=NAME, price_inr=CFG["fee_inr"], course_workload="P10W",
     teaches=["MarTech architecture", "Customer data strategy", "AI and agentic AI governance", "Executive operating model", "Investment case"],
@@ -125,12 +125,12 @@ PAGES_CXO.append(dict(
     interest_options=["Apply for the next cohort", "Request the program brief", "A private in-house executive cohort"],
     sections=[
         ("Program at a glance", f'''<div class="price-card"><div><div class="price">{FEE}<small>one-time program fee</small></div>
-<div class="meta" style="margin-top:14px"><span>C-level only</span><span>{CFG["weeks"]} weeks</span><span>100% live</span></div>
+<div class="meta" style="margin-top:14px"><span>C-level and senior leaders</span><span>{CFG["weeks"]} weeks</span><span>100% live</span></div>
 {cohort_block()}
 <p class="cta-row" style="margin-top:20px"><a class="btn btn-primary" href="../../{APPLY}">Apply for CXO Hive</a> <a class="btn btn-ghost" href="#enquire">Request the brief</a> <a class="btn btn-ghost" href="{CFG["whatsapp"]}" rel="noopener" target="_blank">Ask on WhatsApp</a></p></div>
-<ul class="checklist"><li>Live sessions every Saturday and Sunday, {CFG["hours_per_weekend_day"]} hours each day</li><li>Two midweek checkpoints of 30 to 45 minutes</li><li>Work on your own organisation, not generic case studies</li><li>Six executive artifacts, ready to take to your board or committee</li><li>Architecture, governance and AI risk templates</li><li>Peer cohort of C-level leaders</li></ul></div>
+<ul class="checklist"><li>Live sessions every Saturday and Sunday, {CFG["hours_per_weekend_day"]} hours each day</li><li>Two midweek checkpoints of 30 to 45 minutes</li><li>Work on your own organisation, not generic case studies</li><li>Six executive artifacts, ready to take to your board or committee</li><li>Architecture, governance and AI risk templates</li><li>Peer cohort of C-level and senior leaders</li></ul></div>
 {disclaimer()}''', "plain", "Fees &amp; cohort"),
-        ("Why C-level leaders join", '''<div class="grid-3"><div class="card"><h3>Shared CIO-CMO agenda</h3><p>Technology and marketing leaders agree priorities, decision rights and success measures before more tools are bought.</p></div>
+        ("Why C-level and senior leaders join", '''<div class="grid-3"><div class="card"><h3>Shared CIO-CMO agenda</h3><p>Technology and marketing leaders agree priorities, decision rights and success measures before more tools are bought.</p></div>
 <div class="card"><h3>AI with accountability</h3><p>Move from scattered pilots to governed use cases with owners, evaluation and human approval points.</p></div>
 <div class="card"><h3>Data you can trust</h3><p>Understand identity, consent and data quality well enough to challenge a roadmap and fund the right fixes.</p></div></div>''', "alt", "Why"),
         ("What you leave with", '''<div class="grid-2"><div class="card"><h3>1. Executive investment case</h3><p>One page and five slides: options, cost, risk, owner, baseline and target, with assumptions labelled.</p></div>
@@ -151,7 +151,7 @@ PAGES_CXO.append(dict(
         ("Fee and enrolment", f'''<p><strong>Program fee: {FEE}.</strong> {e(CFG["fee_note"])}</p><ol class="steps"><li><strong>Apply</strong> &mdash; share your role and goals.</li><li><strong>Conversation</strong> &mdash; a short call to confirm fit and answer questions.</li><li><strong>Written confirmation</strong> &mdash; fee, schedule and terms in writing.</li><li><strong>Pay and onboard</strong> &mdash; baseline assessment and kick-off.</li></ol>
 <p><a class="btn btn-primary" href="../../{APPLY}">Apply for CXO Hive</a> <a class="btn btn-ghost" href="{CFG["whatsapp"]}" rel="noopener" target="_blank">Ask on WhatsApp</a></p>''', "alt", "Fees"),
     ],
-    faqs=[("Who can join CXO Hive?", "C-level executives only. Applications from other roles are redirected to the Career Accelerator or the Live Customised MarTech Program."),
+    faqs=[("Who can join CXO Hive?", "C-level executives and senior leaders. Applications from other roles are redirected to the Career Accelerator or the Live Customised MarTech Program."),
           ("Is it technical?", "It is strategy- and architecture-led. You learn enough about data, identity, journeys and AI to decide and challenge, not to write code."),
           ("What outcome can I expect?", "Six executive artifacts built on your own organisation: an investment case, target architecture, operating model, AI backlog, 90-day roadmap and board briefing. Business results are not guaranteed."),
           ("Do you promise certification or business results?", "No. The program builds judgement and deliverables. Results depend on your organisation and execution."),
@@ -164,7 +164,7 @@ PAGES_CXO.append(dict(
     path="academy/programs/cxo-hive-curriculum.html", nav="CXO Hive curriculum",
     title="CXO Hive Curriculum: 10 Weeks of MarTech & AI for Executives",
     desc="Week-by-week curriculum for CXO Hive: executive thesis, customer data, architecture, AI and agentic governance, operating model, business case and capstone.",
-    h1="CXO Hive curriculum: ten weeks, week by week", kicker="Academy · C-level program", schema="Article", category="Academy", date="2026-10-28",
+    h1="CXO Hive curriculum: ten weeks, week by week", kicker="Academy · C-level and senior-leader program", schema="Article", category="Academy", date="2026-10-28",
     keywords=["cxo program curriculum", "executive martech curriculum", "ai leadership syllabus"],
     answer="The CXO Hive curriculum runs ten weeks. Each weekend has a four-hour Saturday and a four-hour Sunday session, and every week ends with an executive artifact built on the participant's own organisation. Topics move from strategy and customer data to architecture, AI and agentic governance, operating model and the business case.",
     sections=[
@@ -182,7 +182,7 @@ PAGES_CXO.append(dict(
     path="academy/programs/cxo-hive-outcomes.html", nav="CXO Hive outcomes",
     title="CXO Hive Outcomes: Six Executive Deliverables You Build",
     desc="What CXO Hive participants produce: investment case, target architecture, operating model, AI backlog, 90-day roadmap and board briefing. No guaranteed results.",
-    h1="CXO Hive outcomes and capstone", kicker="Academy · C-level program", schema="Article", category="Academy", date="2026-10-28",
+    h1="CXO Hive outcomes and capstone", kicker="Academy · C-level and senior-leader program", schema="Article", category="Academy", date="2026-10-28",
     keywords=["executive program outcomes", "ai investment case", "martech roadmap deliverables"],
     answer="CXO Hive outcomes are six executive deliverables built on your own organisation: an investment case, a target-state architecture, an operating model with decision rights, a scored AI use-case backlog, a 90-day roadmap with baselines and targets, and a board-ready briefing. They are decisions and documents, not promised business results.",
     sections=[
@@ -206,8 +206,8 @@ PAGES_CXO.append(dict(
 PAGES_CXO.append(dict(
     path="academy/programs/cxo-hive-operating-model.html", nav="CIO-CMO operating model",
     title="CIO-CMO Alignment: Operating Model for AI-Era MarTech",
-    desc="A practical guide for C-level leaders: joint decision forums, a RACI for MarTech and AI, and a release checklist for governed agentic workflows.",
-    h1="CIO-CMO alignment: an operating model for AI-era MarTech", kicker="Academy · C-level program", schema="Article", category="Academy", date="2026-10-28",
+    desc="A practical guide for C-level and senior leaders: joint decision forums, a RACI for MarTech and AI, and a release checklist for governed agentic workflows.",
+    h1="CIO-CMO alignment: an operating model for AI-era MarTech", kicker="Academy · C-level and senior-leader program", schema="Article", category="Academy", date="2026-10-28",
     keywords=["cio cmo alignment", "martech operating model", "ai governance raci", "agentic ai release checklist"],
     answer="Aligning the CIO and CMO means agreeing outcomes, decision rights and risk limits before scaling AI in MarTech. A monthly steering committee, a biweekly delivery review, weekly use-case squads and a pre-release control gate give each decision an owner and a cadence. A RACI and a release checklist keep agentic workflows accountable.",
     sections=[
@@ -226,13 +226,13 @@ PAGES_CXO.append(dict(
 PAGES_CXO.append(dict(
     path=APPLY, nav="Apply for CXO Hive",
     title="Apply for CXO Hive: C-Level MarTech & AI Program",
-    desc=f"Apply for CXO Hive, a 10-week live program for C-level executives on MarTech, data and AI leadership. Fee {FEE}. Check your fit and apply.",
-    h1="Apply for CXO Hive", kicker="C-level only",
+    desc=f"Apply for CXO Hive, a 10-week live program for C-level and senior leaders on MarTech, data and AI. Fee {FEE}. Check your fit and apply.",
+    h1="Apply for CXO Hive", kicker="C-level and senior leaders",
     keywords=["cxo hive apply", "executive ai program admission", "c-level martech program"],
-    answer=(f"CXO Hive is a {CFG['weeks']}-week live program for C-level executives, run every Saturday and Sunday, with a fee of {FEE}. Apply with your role and goals; we confirm fit in a short call and share fee, schedule and terms in writing before any payment."),
+    answer=(f"CXO Hive is a {CFG['weeks']}-week live program for C-level executives and senior leaders, run every Saturday and Sunday, with a fee of {FEE}. Apply with your role and goals; we confirm fit in a short call and share fee, schedule and terms in writing before any payment."),
     schema="WebPage", interest="cxo", landing=True, hero_cta=("Apply now", "#enquire-form"), bands=True,
     sections=[
-        ("Program summary", f'''<div class="contact-grid lp-grid"><div>{cohort_block()}<ul class="checklist"><li>{FEE} one-time program fee</li><li>100% live, Saturdays and Sundays, {CFG["weeks"]} weeks</li><li>Six executive deliverables on your own organisation</li><li>C-level executives only</li></ul>
+        ("Program summary", f'''<div class="contact-grid lp-grid"><div>{cohort_block()}<ul class="checklist"><li>{FEE} one-time program fee</li><li>100% live, Saturdays and Sundays, {CFG["weeks"]} weeks</li><li>Six executive deliverables on your own organisation</li><li>C-level executives and senior leaders</li></ul>
 <p><a href="../academy/programs/executive-architecture-leadership.html">Full program details</a> &middot; <a href="../academy/programs/cxo-hive-curriculum.html">Curriculum</a> &middot; <a href="../academy/programs/cxo-hive-outcomes.html">Outcomes</a></p>{disclaimer()}</div>
 <div class="form-card" id="enquire-form">@@LP_FORM@@</div></div>''', "plain", "Apply"),
         ("Check your fit first", readiness("../"), "alt", "Optional"),

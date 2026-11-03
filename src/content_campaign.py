@@ -7,9 +7,9 @@ SEGS = [
      "<h3>Independent architecture review</h3><p>For CDOs, CTOs, VPs of MarTech and architects running or planning Adobe Experience Platform, Real-Time CDP, Journey Optimizer or Customer Journey Analytics.</p>"
      "<ul class=\"checklist\"><li>Schemas, datasets, identity and Profile configuration reviewed</li><li>Ingestion, governance and consent checked</li><li>Audiences, journeys and destinations assessed</li><li>Prioritised findings and a 30/60/90-day plan</li></ul>"
      "<p><a href=\"aep-architecture-review.html\">See how the review works</a></p>"),
-    ("cxo", "C-level leaders", "CXO Hive: C-level program", "CXO Hive",
-     f"<h3>CXO Hive: a 10-week live program for C-level executives</h3><p>Architecture, AI governance, an operating model and an executive investment case, built on your own organisation. Fee {FEE}.</p>{cohort_block()}"
-     "<ul class=\"checklist\"><li>Live every Saturday and Sunday plus two short midweek checkpoints</li><li>Six executive deliverables you keep</li><li>C-level only; no job, salary or certification guarantee</li></ul>"
+    ("cxo", "C-level and senior leaders", "CXO Hive: C-level and senior-leader program", "CXO Hive",
+     f"<h3>CXO Hive: a 10-week live program for C-level executives and senior leaders</h3><p>Architecture, AI governance, an operating model and an executive investment case, built on your own organisation. Fee {FEE}.</p>{cohort_block()}"
+     "<ul class=\"checklist\"><li>Live every Saturday and Sunday plus two short midweek checkpoints</li><li>Six executive deliverables you keep</li><li>C-level and senior leaders; no job, salary or certification guarantee</li></ul>"
      f"<p><a href=\"../{CXO_MAIN}\">Full program details</a> &middot; <a href=\"cxo-hive-apply.html\">Apply directly</a></p>"),
     ("training", "L&amp;D and capability leaders", "Corporate training", "Corporate training",
      "<h3>Role-based Adobe MarTech training for your team</h3><p>Tracks for engineers, analysts, architects and managers, with hands-on labs, assessments and progress reporting.</p>"

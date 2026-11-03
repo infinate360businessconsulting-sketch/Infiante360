@@ -128,7 +128,7 @@ SOURCES_FILE = os.path.join(ROOT, "content", "news-sources.json")
 
 INTERESTS = [
     ("demo", "3-day MarTech demo bootcamp"),
-    ("cxo", "CXO Hive: C-level program"),
+    ("cxo", "CXO Hive: C-level and senior-leader program"),
     ("aep", "Adobe Experience Platform (AEP) consulting"),
     ("rtcdp", "Real-Time CDP"),
     ("ajo", "Adobe Journey Optimizer (AJO)"),
