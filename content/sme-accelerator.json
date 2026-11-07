@@ -1,0 +1,30 @@
+{
+  "name": "MarTech SME Accelerator: 6-Day Live Demo Series",
+  "time_label": "10:00 PM – 11:00 PM IST",
+  "start_hour": "22:00",
+  "end_hour": "23:00",
+  "register_url": "https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLvHx50ES_KqrULMKromsE3mg/viewform?usp=header",
+  "platform_url": "https://techacademy.infinate360.in/",
+  "classroom_url": "https://techacademy.infinate360.in/static/media/appx_dl.html?digest=eyJhY3RfY29kZSI6MSwiYWN0X2RhdGEiOjIxOTE1LCJleGFtX3VybCI6Ii90ZXN0cy8xNDc5L2FlcC1yZWFsd29ybGQtdXNlLWNhc2UtdGVzdC1zZXJpZXMifQ==",
+  "community_url": "https://chat.whatsapp.com/DpanEQahOTb2rijHvmEeRv?mode=gi_t",
+  "cxo_community_url": "https://chat.whatsapp.com/DmhexomXaR8GV1yHgPXXYS",
+  "linkedin_url": "https://www.linkedin.com/company/30928383/",
+  "youtube_url": "https://www.youtube.com/@Infiante360TechAcademy",
+  "days": [
+    {"n": 1, "date": "2026-11-10", "title": "MarTech Architecture & SME Career Roadmap"},
+    {"n": 2, "date": "2026-11-11", "title": "AEP XDM Schema Design & Data Modelling"},
+    {"n": 3, "date": "2026-11-12", "title": "Data Ingestion, Identity Resolution & Real-Time Profiles"},
+    {"n": 4, "date": "2026-11-13", "title": "Real-Time CDP, Segmentation & Audience Activation"},
+    {"n": 5, "date": "2026-11-14", "title": "AJO, CJA & Customer Experience"},
+    {"n": 6, "date": "2026-11-15", "title": "Enterprise MarTech Architecture, Integration Challenges & Agentic AI"}
+  ],
+  "groups": [
+    ["📢", "Infinite360: Official Announcements", "Admin only. Official updates, the six-day calendar, class links, recordings and notices."],
+    ["🚀", "AEP & Real-Time CDP Learning Hub", "AEP fundamentals, XDM schemas, datasets, ingestion, identity resolution, profiles, segmentation, destinations and activation."],
+    ["🧩", "Data Engineering & MarTech Architecture", "Enterprise architecture, pipelines, APIs, Web SDK, streaming, batch ingestion, integrations and governance."],
+    ["🎯", "AJO, CJA & Customer Experience", "Journey orchestration, personalization, campaign activation, Customer Journey Analytics, data views and measurement."],
+    ["🤖", "Agentic AI, MCP & MarTech Innovation", "AI agents, MCP servers, LLMs, workflow automation and enterprise MarTech use cases."],
+    ["🧪", "Hands-on Labs, Projects & Test Series", "Practical assignments, BFSI and enterprise use cases, quizzes, test series and project discussions."],
+    ["💼", "MarTech SME Careers & Opportunities", "Interview preparation, career roadmaps, resume guidance, networking and relevant opportunities."]
+  ]
+}

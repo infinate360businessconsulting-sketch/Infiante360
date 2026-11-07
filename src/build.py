@@ -36,6 +36,7 @@ from content_topics import TOPIC_INDEX  # noqa: E402
 from content_insights import INSIGHTS_PAGES  # noqa: E402
 from content_cxo import PAGES_CXO, MAIN as CXO_MAIN  # noqa: E402
 from content_campaign import PAGES_CAMPAIGN  # noqa: E402
+from content_sme import PAGES_SME, PATH as SME_PATH, COMM_PATH, ics as sme_ics  # noqa: E402
 from content_demo import PAGES_DEMO, PATH as DEMO_PATH, ics as demo_ics  # noqa: E402
 from content_press import PRESS_PAGES  # noqa: E402
 from content_qa import QA_PAGES, export as qa_export, TOTAL as QA_TOTAL  # noqa: E402
@@ -81,7 +82,7 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + PAGES_DEMO + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + PAGES_DEMO + PAGES_SME + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
 PAGES = [q for q in PAGES if not (q['path'] == CXO_MAIN and q.get('course_name') != 'CXO Hive: Executive MarTech & AI Leadership Program')]
 
 TOPICS = [
@@ -127,6 +128,7 @@ LEGAL_PATHS = {l["path"] for l in LEGAL}
 SOURCES_FILE = os.path.join(ROOT, "content", "news-sources.json")
 
 INTERESTS = [
+    ("sme", "6-day MarTech SME Accelerator demo"),
     ("demo", "3-day MarTech demo bootcamp"),
     ("cxo", "CXO Hive: C-level and senior-leader program"),
     ("aep", "Adobe Experience Platform (AEP) consulting"),
@@ -182,6 +184,10 @@ LOGO_SVG = (
     'stroke-linecap="round"/><path d="M25.4 13.6C22.9 10.9 20.3 9 17 9c-4.4 0-7.5 3-7.5 8s3.1 8 7.5 8M47 4c8.3 0 14 5.9 14 13s-5.7 13-14 '
     '13c-6.5 0-10.6-4.6-15-10.1" fill="none" stroke="#0b1730" stroke-width="5.5" stroke-linecap="round"/></svg>'
 )
+def logo_img(p):
+    return f'<img class="brand-mark" src="{asset("logo-mark.png", p["path"])}" width="40" height="40" alt="" decoding="async">'
+
+
 WA_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5 0a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.6-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>'
 MENU_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" stroke="#0b1730" stroke-width="2" stroke-linecap="round"/></svg>'
 
@@ -273,7 +279,7 @@ def header(p):
 {gtm_noscript()}{top}
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="{rel('index.html', p['path'])}" aria-label="{BRAND} home">{LOGO_SVG}<span>{BRAND}<small>Consulting &middot; Academy</small></span></a>
+    <a class="brand" href="{rel('index.html', p['path'])}" aria-label="{BRAND} home">{logo_img(p)}<span>{BRAND}<small>Consulting &middot; Academy</small></span></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">{MENU_SVG}</button>
     <nav id="site-nav" class="site-nav" aria-label="Main"><ul>{''.join(links)}</ul></nav>
   </div>
@@ -488,13 +494,13 @@ def footer(p):
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
-    learn = ["academy/index.html", "academy/workshops.html", DEMO_PATH, "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html", "answers/index.html", "insights/index.html", "press.html"]
+    learn = ["academy/index.html", "academy/workshops.html", SME_PATH, COMM_PATH, DEMO_PATH, "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html", "answers/index.html", "insights/index.html", "press.html"]
     company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html", "stacks/index.html"] + [c["path"] for c in STACK_PAGES[1:]]
     more = ["academy/simulators.html", "academy/recording-platform.html", "academy/youtube-playlists.html", "academy/community.html", "academy/testimonials.html",
             "learn/student-questions.html", "guides/ajo-implementation-best-practices.html", "feeds.html", "sitemap.html"] + [l["path"] for l in LANDINGS]
     return f"""<footer class="site-footer"><div class="wrap">
 <div class="footer-grid">
-<div><a class="brand" href="{rel('index.html', p['path'])}">{LOGO_SVG}<span>{BRAND}<small>Consulting &middot; Academy</small></span></a>
+<div><a class="brand" href="{rel('index.html', p['path'])}">{logo_img(p)}<span>{BRAND}<small>Consulting &middot; Academy</small></span></a>
 <p style="margin-top:14px">Adobe MarTech consulting, corporate training and a practical Tech Academy for AEP, RTCDP, AJO, CJA and Agentic AI.</p>
 <ul><li><a href="{WHATSAPP}" rel="noopener" target="_blank">WhatsApp {PHONE_DISPLAY}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
 <li><a href="{LINKEDIN_PERSON}" rel="noopener" target="_blank">LinkedIn</a> &middot; <a href="{YOUTUBE}" rel="noopener" target="_blank">YouTube</a></li></ul>
@@ -648,7 +654,7 @@ def head(p, robots="index,follow,max-image-preview:large,max-snippet:-1", canoni
 <meta name="twitter:title" content="{e(p['title'])}">
 <meta name="twitter:description" content="{e(p['desc'])}">
 <meta name="twitter:image" content="{BASE}assets/og-image.png">
-<link rel="icon" href="{a('favicon.svg')}" type="image/svg+xml">
+<link rel="icon" href="{a('favicon-64.png')}" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="{a('logo-512.png')}">
 <link rel="sitemap" type="application/xml" href="{BASE}sitemap.xml">
 <link rel="alternate" type="application/rss+xml" title="{BRAND} - guides and case studies" href="{BASE}rss.xml">
@@ -1050,6 +1056,7 @@ def main():
     urls = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>"
                      for p in PAGES if not str(p.get('robots', '')).startswith('noindex'))
     write("assets/demo-bootcamp.ics", demo_ics())
+    write("assets/sme-accelerator.ics", sme_ics())
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
     _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\nDisallow: /zohoverify/\nDisallow: /brochure-download.html\n"
     _bots = [("Search engines", ["Googlebot", "Bingbot", "DuckDuckBot", "Applebot"]),
