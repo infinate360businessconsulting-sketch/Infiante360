@@ -360,6 +360,58 @@ def form_html(p, compact=False):
                f'<label for="{fid}-consent" style="font-weight:500">I agree that {BRAND} may use these details to respond to my enquiry, as described in the <a href="{rel("privacy-policy.html", p["path"])}">privacy policy</a>.</label></div>'
                f'<span class="error" id="{fid}-consent-error" aria-live="polite"></span></div>')
 
+    if p.get("form_kind") == "enterprise":
+        def sel(name, label, options, req=True, hint=""):
+            o = '<option value="">Select</option>' + "".join(f'<option value="{e(v)}">{e(v)}</option>' for v in options)
+            r = ' required aria-required="true"' if req else ""
+            star = ' <span class="req" aria-hidden="true">*</span>' if req else ' <span class="muted small">(optional)</span>'
+            h = f'<span class="hint">{hint}</span>' if hint else ""
+            return (f'<div class="field"><label for="{fid}-{name}">{label}{star}</label><select id="{fid}-{name}" name="{name}"{r} data-msg-required="Please choose an option.">{o}</select>{h}'
+                    f'<span class="error" id="{fid}-{name}-error" aria-live="polite"></span></div>')
+
+        def checks(name, legend, options, hint=""):
+            h = f'<span class="hint">{hint}</span>' if hint else ""
+            return (f'<fieldset class="field full"><legend>{legend}</legend><div class="choice">'
+                    + "".join(f'<label><input type="checkbox" name="{name}" value="{e(v)}"> {e(v)}</label>' for v in options) + f"</div>{h}</fieldset>")
+        countries = ["India", "United States", "United Kingdom", "Germany", "Netherlands", "Switzerland", "United Arab Emirates", "Singapore", "Australia", "Japan", "Other"]
+        industries = ["Banking and financial services", "Insurance", "Retail and e-commerce", "Telecommunications", "Healthcare and life sciences", "Manufacturing", "Travel and hospitality", "Media and entertainment", "Technology and SaaS", "Systems integrator or consulting", "Other"]
+        sizes = ["1 to 249 employees", "250 to 999 employees", "1,000 to 9,999 employees", "10,000 or more employees"]
+        initiatives = ["AEP implementation", "Real-Time CDP or Customer 360", "Journey Optimizer rollout", "Customer Journey Analytics or measurement", "Adobe migration or upgrade", "Agentic AI or MCP pilot", "Data and identity architecture", "Evaluating options", "No active initiative"]
+        topics = ["Enterprise MarTech architecture", "Adobe Experience Platform", "Customer 360 and Real-Time CDP", "Journey Optimizer and CJA", "Agentic AI and MCP", "Delivery partnership (systems integrators)"]
+        times = ["Weekday morning (IST)", "Weekday evening (IST)", "10 PM IST live session", "Weekend", "Other, I will mention it in the challenge"]
+        products = ["Adobe Experience Platform", "Real-Time CDP", "Journey Optimizer", "Customer Journey Analytics", "Adobe Analytics", "Adobe Target", "Adobe Experience Manager", "Marketo Engage", "Adobe Campaign", "None yet"]
+        rows = ('<fieldset class="field full"><legend>About you</legend></fieldset>'
+                + field("name", "Full name", auto="name", extra=' data-msg-required="Please enter your name."')
+                + field("email", "Business email", typ="email", auto="email", hint="Please use your work email.", extra=' data-msg-required="Please enter your work email."')
+                + field("phone", "Phone / WhatsApp", typ="tel", req=False, auto="tel", hint="Include country code, e.g. +91.", extra=' pattern="[+0-9 ()-]{7,20}" data-msg-pattern="Use digits, spaces and + only."')
+                + field("job_title", "Job title", auto="organization-title", extra=' data-msg-required="Please enter your job title."')
+                + '<fieldset class="field full"><legend>Your organisation</legend></fieldset>'
+                + field("company", "Company name", auto="organization", extra=' data-msg-required="Please enter your company."')
+                + sel("country", "Country", countries) + sel("industry", "Industry", industries) + sel("company_size", "Company size", sizes)
+                + checks("adobe_products", "Adobe products currently used", products, "Select all that apply.")
+                + '<fieldset class="field full"><legend>Your priorities</legend></fieldset>'
+                + sel("initiative", "Current transformation initiative", initiatives)
+                + sel("demo_topic", "Preferred demo topic", topics) + sel("meeting_time", "Preferred meeting time", times)
+                + f'<div class="field full"><label for="{fid}-challenge">Primary business challenge <span class="req" aria-hidden="true">*</span></label><textarea id="{fid}-challenge" name="message" required aria-required="true" minlength="10" data-msg-required="Please describe your main challenge briefly."></textarea><span class="hint">Please do not include passwords, customer data or confidential information.</span><span class="error" id="{fid}-challenge-error" aria-live="polite"></span></div>'
+                + '<fieldset class="field full"><legend>Follow-up consent (optional)</legend><div class="choice">'
+                + "".join(f'<label><input type="checkbox" name="consent_{k}" value="yes"> {t}</label>' for k, t in [("email", "You may email me about this demo and related Infinite360 programs"), ("phone", "You may phone me about my enquiry"), ("whatsapp", "You may message me on WhatsApp about my enquiry")])
+                + '</div><span class="hint">You can withdraw consent at any time by replying STOP or emailing us.</span></fieldset>'
+                + consent)
+        return f"""<form class="form js-validate" action="{FORM_ACTION}" method="POST" aria-describedby="{fid}-form-note">
+<input type="hidden" name="_subject" value="New enterprise demo registration - {BRAND}">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="{BASE}thank-you.html">
+<input type="hidden" name="interest" value="Enterprise MarTech live demo">
+<input type="hidden" name="source_page" value="{abs_url(p['path'])}">
+<div class="hp" aria-hidden="true"><label for="{fid}-honey">Leave this field empty</label><input id="{fid}-honey" type="text" name="_honey" tabindex="-1" autocomplete="off"></div>
+<div class="form-grid">{rows}</div>
+<div class="cta-row"><button class="btn btn-primary" type="submit">Register for the live demo</button>
+<button class="btn btn-wa js-whatsapp" type="button">{WA_SVG} Send via WhatsApp instead</button></div>
+<p class="form-status" role="status" aria-live="polite"></p>
+<p class="small muted" id="{fid}-form-note">Fields marked <span class="req">*</span> are required. We reply within two business days.</p>
+</form>"""
+
     if compact and p.get("program"):
         prog = (f'<input type="hidden" name="program" value="{e(p["h1"])}">'
                 '<fieldset class="field full"><legend>What are you interested in?</legend><div class="choice">'
