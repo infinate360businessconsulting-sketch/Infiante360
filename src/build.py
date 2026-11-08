@@ -37,6 +37,7 @@ from content_insights import INSIGHTS_PAGES  # noqa: E402
 from content_cxo import PAGES_CXO, MAIN as CXO_MAIN  # noqa: E402
 from content_campaign import PAGES_CAMPAIGN  # noqa: E402
 from content_sme import PAGES_SME, PATH as SME_PATH, COMM_PATH, ics as sme_ics  # noqa: E402
+from content_entdemo import PAGES_ENTDEMO, PATH as ENT_PATH  # noqa: E402
 from content_demo import PAGES_DEMO, PATH as DEMO_PATH, ics as demo_ics  # noqa: E402
 from content_press import PRESS_PAGES  # noqa: E402
 from content_qa import QA_PAGES, export as qa_export, TOTAL as QA_TOTAL  # noqa: E402
@@ -82,7 +83,7 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + PAGES_DEMO + PAGES_SME + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + PAGES_DEMO + PAGES_SME + PAGES_ENTDEMO + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL
 PAGES = [q for q in PAGES if not (q['path'] == CXO_MAIN and q.get('course_name') != 'CXO Hive: Executive MarTech & AI Leadership Program')]
 
 TOPICS = [
@@ -128,6 +129,7 @@ LEGAL_PATHS = {l["path"] for l in LEGAL}
 SOURCES_FILE = os.path.join(ROOT, "content", "news-sources.json")
 
 INTERESTS = [
+    ("entdemo", "Enterprise MarTech live demo"),
     ("sme", "6-day MarTech SME Accelerator demo"),
     ("demo", "3-day MarTech demo bootcamp"),
     ("cxo", "CXO Hive: C-level and senior-leader program"),
@@ -494,7 +496,7 @@ def footer(p):
         return f"<div><h2>{title}</h2><ul>{lis}</ul></div>"
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
-    learn = ["academy/index.html", "academy/workshops.html", SME_PATH, COMM_PATH, DEMO_PATH, "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html", "answers/index.html", "insights/index.html", "press.html"]
+    learn = ["academy/index.html", "academy/workshops.html", SME_PATH, ENT_PATH, COMM_PATH, DEMO_PATH, "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html", "answers/index.html", "insights/index.html", "press.html"]
     company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html", "stacks/index.html"] + [c["path"] for c in STACK_PAGES[1:]]
     more = ["academy/simulators.html", "academy/recording-platform.html", "academy/youtube-playlists.html", "academy/community.html", "academy/testimonials.html",
             "learn/student-questions.html", "guides/ajo-implementation-best-practices.html", "feeds.html", "sitemap.html"] + [l["path"] for l in LANDINGS]
