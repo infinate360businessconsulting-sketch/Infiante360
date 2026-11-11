@@ -1,4 +1,5 @@
-// Webinar.gg adapter. Endpoints follow the vendor documentation supplied by the owner; confirm with the vendor before production.
+// Webinar.gg adapter. Authentication (Bearer account token, premium plan required, join tokens mandatory for iframe embeds) matches https://webinar.gg/docs/authentication (updated 2026-11-06).
+// Other endpoint details follow the docs supplied by the owner; confirm with the vendor before production.
 export type CreateWebinarInput = { title: string; date: string; time: string; meridiem: "AM" | "PM"; durationMinutes: number };
 export type Fetcher = typeof fetch;
 
@@ -6,6 +7,8 @@ export class WebinarGg {
   constructor(private base: string, private token: string, private f: Fetcher = fetch) {}
   private async call(path: string, body: unknown) {
     const res = await this.f(`${this.base}${path}`, { method: "POST", headers: { Authorization: `Bearer ${this.token}`, "Content-Type": "application/json" }, body: JSON.stringify(body) });
+    if (res.status === 401) throw new Error("Webinar.gg rejected the token (missing, malformed or revoked)");
+    if (res.status === 403) throw new Error("Webinar.gg refused the call: the account needs an active premium plan, or the resource belongs to another account");
     if (!res.ok) throw new Error(`Webinar.gg ${path} failed with ${res.status}`);
     return (await res.json()) as Record<string, unknown>;
   }

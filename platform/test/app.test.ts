@@ -74,3 +74,9 @@ test("tokens expire and tampering fails; retrieval ranks relevant chunk", () => 
   assert.equal(verify(t + "x", "s".repeat(30), 5000), null);
   assert.ok(retrieve(loadKnowledge(new URL("../knowledge", import.meta.url).pathname), "identity graph namespaces")[0].text.includes("Identity"));
 });
+
+test("webinar adapter explains 401 and 403", async () => {
+  const mk = (status: number): any => async () => ({ ok: false, status, json: async () => ({}) });
+  await assert.rejects(new WebinarGg("https://w.test", "t", mk(401)).createJoinToken("1", { firstName: "a", lastName: "b", email: "a@b.co" }), /rejected the token/);
+  await assert.rejects(new WebinarGg("https://w.test", "t", mk(403)).createWebinar({ title: "x", date: "2026-11-20", time: "09:00", meridiem: "AM", durationMinutes: 60 }), /premium plan/);
+});

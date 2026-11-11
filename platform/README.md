@@ -18,6 +18,9 @@ Status: built and tested locally (typecheck + 5 tests with mocked Webinar.gg and
 2. `docker compose up -d` (Postgres + API) behind Nginx/Caddy with HTTPS, e.g. `api.infinate360.com`.
 3. Set `PUBLIC_ORIGIN` to the site that calls the API (CORS).
 
+## Webinar.gg authentication (verified against vendor docs, 2026-11-06)
+Long-lived account token sent as `Authorization: Bearer`; server-side only. The API needs an active premium plan (otherwise 403). Join tokens are mandatory for iframe embeds. Rotate by creating the new token, deploying it, then revoking the old one (both work in parallel). Tokens pasted in chat must be revoked.
+
 ## Open items before production
 - Confirm Webinar.gg endpoints, plan limits and, critically, whether recordings can be exported (adapter `UnconfirmedRecordingProvider` returns nothing until confirmed).
 - Rate limiting is in-memory: use Redis for more than one instance.
