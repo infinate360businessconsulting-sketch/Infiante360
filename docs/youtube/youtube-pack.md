@@ -86,12 +86,39 @@ Registration for the live sessions is mandatory: {form link}. Join the community
 ## 9. End screen, cards and CTA
 Last 20 seconds: end screen with next video (same playlist) + subscribe. Card at the first mention of registration linking the series page. Spoken CTA: "Register with the link in the description, join the community, and watch the next session."
 
-## 10. Channel description (About tab)
-Infinite360 Tech Academy teaches hands-on Adobe MarTech, customer data and Agentic AI. Live demos and tutorials on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and enterprise architecture, taught by a working MarTech architect.
-Programs, test series and community: https://infiante360techacademy.com/
-Business enquiries: infinate360businessconsulting@gmail.com | +91 82968 93895
+## 10. Channel description (About tab, under 1,000 characters)
+Infinite360 Tech Academy teaches hands-on Adobe MarTech, customer data and Agentic AI: live demos and tutorials on Adobe Experience Platform (AEP), Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and MarTech architecture, taught by a working MarTech architect.
+
+Start here:
+AEP guides: https://infiante360techacademy.com/adobe-experience-platform/
+Learning suite: https://infiante360techacademy.com/lms.html
+6-day SME Accelerator: https://infiante360techacademy.com/lp/martech-sme-accelerator.html
+Free demo sessions: https://infiante360techacademy.com/academy/videos.html
+Consulting and governance: https://infiante360techacademy.com/services/consent-governance-privacy.html
+
+Business: infinate360businessconsulting@gmail.com | +91 82968 93895
 Independent of Adobe. No job, salary or certification is guaranteed.
-Channel keywords: adobe experience platform, real-time CDP, adobe journey optimizer, customer journey analytics, adobe martech, agentic AI, martech training, Infinite360.
+
+Channel keywords: adobe experience platform, real-time CDP, adobe journey optimizer, customer journey analytics, adobe martech, agentic AI, martech training, adobe test series, Infinite360
+
+### 10b. "More" links block (append to video descriptions; no length issue)
+More from Infinite360:
+Customer 360 and identity: https://infiante360techacademy.com/services/customer-360-identity-resolution.html
+Cloud data platforms: https://infiante360techacademy.com/services/cloud-data-platforms.html
+AI search (GEO and AEO): https://infiante360techacademy.com/services/ai-search-visibility-geo-aeo.html
+Adobe Experience Cloud consulting: https://infiante360techacademy.com/services/adobe-experience-cloud.html
+Engagement model: https://infiante360techacademy.com/services/engagement-model.html
+Staff augmentation: https://infiante360techacademy.com/services/staff-augmentation.html
+AEP schemas: https://infiante360techacademy.com/adobe-experience-platform/xdm-schemas.html
+AEP identity: https://infiante360techacademy.com/adobe-experience-platform/identity-service.html
+AEP architecture: https://infiante360techacademy.com/adobe-experience-platform/architecture.html
+AEP interview questions: https://infiante360techacademy.com/adobe-experience-platform/interview-questions.html
+AEP vs Real-Time CDP: https://infiante360techacademy.com/guides/aep-vs-real-time-cdp.html
+CJA vs Adobe Analytics: https://infiante360techacademy.com/guides/cja-vs-adobe-analytics.html
+What is MCP: https://infiante360techacademy.com/guides/what-is-mcp.html
+Workshops and bootcamps: https://infiante360techacademy.com/academy/workshops.html
+Enterprise MarTech demo: https://infiante360techacademy.com/lp/enterprise-martech-demo.html
+Learning communities: https://infiante360techacademy.com/academy/community.html
 
 ## 11. Shorts and community posts
 Short (under 60s): hook "Your AEP profile has duplicates? Check this first." > one identity-resolution tip > "Full demo in the playlist". Reuse hashtags #Shorts #AdobeExperiencePlatform.
