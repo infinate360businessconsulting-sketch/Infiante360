@@ -20,6 +20,8 @@ jobs:
           python-version: "3.12"
       - name: Build and validate (fails on broken links, duplicate titles, invalid JSON-LD)
         run: python3 src/build.py _site
+      - name: Add the separate LMS site (static, built from lms-site/) at /lms-hub/
+        run: mkdir -p _site/lms-hub && cp -r lms-site/*.html lms-site/assets _site/lms-hub/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
