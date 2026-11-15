@@ -33,8 +33,8 @@ box.textContent=msg}catch(x){}})();</script>"""
 def ics():
     """Public calendar file with the three sessions. Joining link is included only when join_url is set in the config."""
     join = D.get("join_url", "").strip()
-    desc = "Infinite360 live demo. " + (f"Join: {join}" if join else "Joining details are shared by email or WhatsApp after registration.") + " Questions: +91 82968 93895."
-    out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infinite360//Demo Bootcamp//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Adobe MarTech 3-Day Demo Bootcamp"]
+    desc = "Infiante360 live demo. " + (f"Join: {join}" if join else "Joining details are shared by email or WhatsApp after registration.") + " Questions: +91 82968 93895."
+    out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infiante360//Demo Bootcamp//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Adobe MarTech 3-Day Demo Bootcamp"]
     for x in D["days"]:
         st = datetime.datetime.fromisoformat(f'{x["date"]}T{D["start_hour"]}:00+05:30').astimezone(datetime.timezone.utc)
         en = datetime.datetime.fromisoformat(f'{x["date"]}T{D["end_hour"]}:00+05:30').astimezone(datetime.timezone.utc)
@@ -60,8 +60,8 @@ PAGES_DEMO = [dict(
 <p id="demo-status" role="status" aria-live="polite" class="small" style="margin-top:12px;font-weight:600" data-days="{days_json}">Seats are confirmed after payment.</p>
 <p class="cta-row" style="margin-top:18px">{pay_btn} <a class="btn btn-ghost" href="#enquire-form">Ask a question first</a> <a class="btn btn-ghost" href="../assets/demo-bootcamp.ics" download>Add to calendar (.ics)</a></p>
 <p class="small muted">Payment is made on a secure Cashfree form (opens in a new tab). Joining details are shared after registration.</p></div>
-<ul class="checklist"><li>Three live evening sessions, one hour each</li><li>Hands-on walkthroughs in the Infinite360 practice environment</li><li>Open Q&amp;A with the instructor</li><li>A clear view of where to start in Adobe MarTech</li></ul></div>
-<p class="small muted">A demo shows what the work looks like and how we teach. It is not a certification and guarantees no job, salary or certification outcome. Infinite360 is independent and not affiliated with Adobe.</p>''', "plain", "Fee and seats"),
+<ul class="checklist"><li>Three live evening sessions, one hour each</li><li>Hands-on walkthroughs in the Infiante360 practice environment</li><li>Open Q&amp;A with the instructor</li><li>A clear view of where to start in Adobe MarTech</li></ul></div>
+<p class="small muted">A demo shows what the work looks like and how we teach. It is not a certification and guarantees no job, salary or certification outcome. Infiante360 is independent and not affiliated with Adobe.</p>''', "plain", "Fee and seats"),
         ("What happens each night", '<div class="grid-3">' + "".join(
             f'<div class="card"><span class="tag">Day {x["n"]} · {e(fmt(x))}</span><h3>{e(x["title"])}</h3><ul class="checklist">' + "".join(f"<li>{e(p)}</li>" for p in x["points"]) + "</ul></div>" for x in D["days"]) + "</div>", "alt", "Agenda"),
         ("Who should join", '<div class="grid-3"><div class="card"><h3>Career switchers</h3><p>Developers, data engineers, analysts and marketers curious about MarTech.</p></div><div class="card"><h3>Working practitioners</h3><p>Anyone who wants a clear mental model of AEP, journeys and CJA.</p></div><div class="card"><h3>Team leads</h3><p>Leaders deciding what skills their team needs next.</p></div></div>', "plain", "Audience"),

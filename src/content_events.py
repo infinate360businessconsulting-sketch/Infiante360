@@ -36,7 +36,7 @@ WORKSHOPS = [
 BONUS = """<div class="bonus">
 <span class="bonus-badge">Free bonus</span>
 <h3>₹3,500 Interview &amp; Certification Test Series &mdash; free with your ₹3,000 bootcamp</h3>
-<p>Every bootcamp attendee gets access to the Infinite360 interview preparation and certification practice question series, built to reinforce Adobe Experience Platform concepts and build interview and exam confidence.</p>
+<p>Every bootcamp attendee gets access to the Infiante360 interview preparation and certification practice question series, built to reinforce Adobe Experience Platform concepts and build interview and exam confidence.</p>
 <ul class="checklist cols-2"><li>Scenario-based practice questions</li><li>Interview-style AEP questions</li><li>Covers schemas, identity, profiles and segmentation</li><li>Use alongside Adobe's official exam guide</li></ul>
 <p class="small">Practice materials support preparation; they do not guarantee interview or official certification results.</p>
 </div>"""
@@ -123,13 +123,13 @@ EVENTS = [
     dict(
         path="academy/workshops.html",
         bands=True, program=True,
-        title="AEP Workshops & Bootcamps: Hands-on Every Friday | Infinite360",
-        desc="Hands-on Adobe Experience Platform workshops every Friday, the AEP Launchpad bootcamp and live foundations batches from Infinite360 Tech Academy.",
+        title="AEP Workshops & Bootcamps: Hands-on Every Friday | Infiante360",
+        desc="Hands-on Adobe Experience Platform workshops every Friday, the AEP Launchpad bootcamp and live foundations batches from Infiante360 Tech Academy.",
         h1="Workshops and bootcamps",
         kicker="Academy · Hands-on",
         lede="Short, practical sessions that build AEP foundations one skill at a time: a weekend bootcamp, a two-week foundations batch and hands-on workshops every Friday.",
         keywords=["aep workshop", "adobe experience platform workshop", "aep hands-on lab", "martech bootcamp", "aep webinar series"],
-        answer="Infinite360 Tech Academy runs three foundation formats: the AEP Launchpad bootcamp (Sunday evening, 6–9 PM IST, ₹3,000 with a free ₹3,500 test series), a live two-week AEP Foundations batch at 8:00 AM IST, and hands-on workshops every Friday, each focused on one AEP skill.",
+        answer="Infiante360 Tech Academy runs three foundation formats: the AEP Launchpad bootcamp (Sunday evening, 6–9 PM IST, ₹3,000 with a free ₹3,500 test series), a live two-week AEP Foundations batch at 8:00 AM IST, and hands-on workshops every Friday, each focused on one AEP skill.",
         schema="CollectionPage",
         hero_visual=ticket(BOOTCAMP, "Next bootcamp", "aep-launchpad-bootcamp.html", "View the bootcamp", '<p class="ticket-bonus">+ ₹3,500 test series free</p>'),
         interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch ", "Friday hands-on workshops"],

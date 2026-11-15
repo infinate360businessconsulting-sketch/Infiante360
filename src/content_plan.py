@@ -88,7 +88,7 @@ TOPIC_PAGE = dict(
     h1="50 Adobe MarTech lesson and webinar topics",
     kicker="Academy topics", nav="Lesson topics", schema="Article", category="Academy", date="2026-10-12",
     keywords=["adobe experience platform tutorial", "aep webinar topics", "xdm schema explained", "aep identity graph", "cja vs adobe analytics", "what is mcp"],
-    answer="This is the planned topic list for Infinite360 Tech Academy lessons: 50 topics across AEP, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK, governance, Agentic AI, career pathways and architecture, in 3-minute, 45-minute and 90-minute formats. Topics are planned, not all published yet. Titles describe teaching, never guaranteed jobs or results.",
+    answer="This is the planned topic list for Infiante360 Tech Academy lessons: 50 topics across AEP, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK, governance, Agentic AI, career pathways and architecture, in 3-minute, 45-minute and 90-minute formats. Topics are planned, not all published yet. Titles describe teaching, never guaranteed jobs or results.",
     sections=[("Read this first", '<p>These are <strong>planned</strong> sessions. Published recordings are on the <a href="videos.html">videos page</a> and the <a href="youtube-playlists.html">YouTube playlists</a>. Live dates are on the <a href="workshops.html">workshops page</a>.</p>')] + _secs + [
         ("Join a session", pills(("Friday workshops", "workshops.html"), ("Free resources", "free-resources.html"), ("Register", REGISTER), ("Chat on WhatsApp", WHATSAPP_MSG))),
     ],
@@ -100,15 +100,15 @@ TOPIC_PAGE = dict(
 
 PRESS_PAGE = dict(
     path="press.html",
-    title="Press & Media: Infinite360 Tech Academy Founder & Facts",
-    desc="Press contact, founder profile and programme facts for Infinite360 Tech Academy, plus story angles on Adobe MarTech skills, Agentic AI and hands-on training.",
+    title="Press & Media: Infiante360 Tech Academy Founder & Facts",
+    desc="Press contact, founder profile and programme facts for Infiante360 Tech Academy, plus story angles on Adobe MarTech skills, Agentic AI and hands-on training.",
     h1="Press and media",
     kicker="Press", nav="Press", schema="WebPage", category="Company", date="2026-10-12",
-    keywords=["infinite360 tech academy press", "adobe martech training news", "pavan babu gandla"],
-    answer="Infinite360 Tech Academy is an online academy for Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics and Agentic AI skills, founded by Pavan Babu Gandla in Bengaluru, India. Journalists and podcast hosts can contact the team by email or WhatsApp for interviews, commentary and event information.",
+    keywords=["infiante360 tech academy press", "adobe martech training news", "pavan babu gandla"],
+    answer="Infiante360 Tech Academy is an online academy for Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics and Agentic AI skills, founded by Pavan Babu Gandla in Bengaluru, India. Journalists and podcast hosts can contact the team by email or WhatsApp for interviews, commentary and event information.",
     sections=[
         ("Contact", f'<p>Email: <a href="mailto:{EMAIL}">{EMAIL}</a></p>' + pills(("WhatsApp", WHATSAPP_MSG), ("LinkedIn company page", "https://www.linkedin.com/company/30928383"), ("Founder on LinkedIn", "https://linkedin.com/in/pavanbabu1"))),
-        ("Founder", "<p>Pavan Babu Gandla founded Infinite360 Business Consulting and Infinite360 Tech Academy. He works as a fractional chief data architect on Adobe Experience Cloud, Agentic AI and enterprise data architecture, and is based in Bengaluru. Experience figures are as stated by the founder.</p>"),
+        ("Founder", "<p>Pavan Babu Gandla founded Infiante360 Business Consulting and Infiante360 Tech Academy. He works as a fractional chief data architect on Adobe Experience Cloud, Agentic AI and enterprise data architecture, and is based in Bengaluru. Experience figures are as stated by the founder.</p>"),
         ("Programme facts", '<ul class="checklist"><li>Live and recorded programmes on AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI</li><li>Hands-on Friday workshops</li><li>Live Foundations batch</li><li>Career outcomes are described as target pathways; no job, salary or certification is guaranteed</li></ul><p>See the <a href="academy/index.html">Academy</a> and <a href="academy/workshops.html">workshops</a> pages for current dates and fees.</p>'),
         ("Story angles", '<ul class="checklist"><li>Why AEP, AJO and CJA skills are scarce, with cited job-market data</li><li>Moving from a developer, data engineer, analyst or QA role into Adobe MarTech</li><li>Agentic AI and MCP in enterprise MarTech: safe patterns and limits</li><li>Free weekly hands-on AEP workshops</li></ul>'),
         ("Media kit", "<p>Logos, a founder photo and a short biography are available on request by email. We do not claim any Adobe partnership or certified-partner status on this page.</p>"),

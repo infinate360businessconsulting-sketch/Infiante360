@@ -1,7 +1,7 @@
 # Email sequences (draft templates; send only after human review)
 Rules: use only facts you can support; personalise with ONE real, sourced fact per prospect (merge field {{signal}}); no claims about results, clients or certifications; every email carries the opt-out line. Space sends 3-5 days; maximum 3 emails per contact.
 Footer for every email:
-> Pavan Babu Gandla, Infinite360 | infinate360businessconsulting@gmail.com | +91 82968 93895
+> Pavan Babu Gandla, Infiante360 | infinate360businessconsulting@gmail.com | +91 82968 93895
 > If this is not relevant, reply STOP and I will not contact you again. {{postal_address}}
 
 ## A. Enterprise Adobe teams (CDO, CTO, VP MarTech, Architect)
@@ -17,7 +17,7 @@ Hi {{first}}, last note from me. If the timing is not right, no problem. Happy t
 
 ## B. SI and consulting firms (Delivery, Practice Head)
 **Subject:** "Specialist Adobe capacity"
-**Email 1** Hi {{first}}, I saw {{signal}}. Infinite360 provides specialist Adobe architects and consultants for delivery teams, scoped per project. If you have a gap on AEP, RTCDP, AJO or CJA work, can I send a short capability note?
+**Email 1** Hi {{first}}, I saw {{signal}}. Infiante360 provides specialist Adobe architects and consultants for delivery teams, scoped per project. If you have a gap on AEP, RTCDP, AJO or CJA work, can I send a short capability note?
 **Email 2 (day 4)** Hi {{first}}, following up on specialist capacity. If useful I can share the roles we typically cover and how engagements are structured. Open to a short call?
 **Email 3 (day 10)** Hi {{first}}, closing the loop. If a project opens up later, I am happy to help.
 
@@ -29,13 +29,13 @@ Hi {{first}}, last note from me. If the timing is not right, no problem. Happy t
 
 ## D. Hiring-signal accounts (Hiring manager, TA lead)
 **Subject:** "Your {{role}} opening"
-**Email 1** Hi {{first}}, I saw {{company}} is hiring for {{role}}. Infinite360 provides contract specialists in Adobe Experience Platform and related areas, which can start faster than a full hire. Is capacity a concern for this role?
+**Email 1** Hi {{first}}, I saw {{company}} is hiring for {{role}}. Infiante360 provides contract specialists in Adobe Experience Platform and related areas, which can start faster than a full hire. Is capacity a concern for this role?
 **Email 2 (day 4)** Hi {{first}}, if it helps, I can outline how contract engagements work and typical scope. Want a short summary?
 **Email 3 (day 10)** Hi {{first}}, I will stop here. If the role stays open and you want a stopgap, reply any time.
 
 ## E. Colleges and training institutes (Head T&P, Dean) - DRAFT, confirm the offer first
 **Subject:** "Skill workshop for your students"
-**Email 1** Hi {{first}}, I noticed {{signal}}. I run Infinite360 Tech Academy, which teaches data, Adobe MarTech and AI engineering. We could explore a workshop for your students or faculty. Could we speak for 15 minutes about what your learners need?
+**Email 1** Hi {{first}}, I noticed {{signal}}. I run Infiante360 Tech Academy, which teaches data, Adobe MarTech and AI engineering. We could explore a workshop for your students or faculty. Could we speak for 15 minutes about what your learners need?
 **Email 2 (day 4)** Hi {{first}}, I can send an outline of the topics and format. Would that be useful?
 **Email 3 (day 10)** Hi {{first}}, last note. Happy to reconnect when your next term plans are set.
 Note: do not state fees, placement or certification outcomes until you confirm the offer.

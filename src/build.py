@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static site generator for the Infinite360 GitHub Pages site.
+"""Static site generator for the Infiante360 GitHub Pages site.
 
 Usage:  python3 src/build.py [out_dir]          (default out_dir: _site)
 Env:    SITE_BASE  absolute base URL with trailing slash.
@@ -58,7 +58,7 @@ _VERCEL = os.environ.get("VERCEL_PROJECT_PRODUCTION_URL")  # set by Vercel durin
 BASE = os.environ.get("SITE_BASE") or (f"https://{_VERCEL}/" if _VERCEL else "https://infinate360businessconsulting-sketch.github.io/Infiante360/")
 TODAY = os.environ.get("SITE_LASTMOD", dt.date.today().isoformat())
 
-BRAND = "Infinite360"
+BRAND = "Infiante360"
 LEGAL_NAME = "Infiante 360 Global Services PVT LTD"
 EMAIL = "infinate360businessconsulting@gmail.com"
 PHONE_E164 = "+918296893895"
@@ -104,10 +104,10 @@ def _topic_pages():
     for slug_, name, short, terms in TOPICS:
         pages.append(dict(
             path=f"topics/{slug_}.html", nav=short, title=(f"{name}: Guides, Case Studies & Services" if len(name) < 28 else f"{short}: Guides, Case Studies & Services"),
-            desc=f"Every Infinite360 page on {name}: services, case studies, use cases, student questions, guides and training.",
+            desc=f"Every Infiante360 page on {name}: services, case studies, use cases, student questions, guides and training.",
             h1=f"{name}: everything in one place", kicker="Topic", schema="CollectionPage", topic_terms=terms,
             keywords=[f"{name.lower()} guides", f"{short.lower()} case study", f"{short.lower()} training", f"{short.lower()} consulting"],
-            answer=f"This topic page collects every Infinite360 page related to {name} - consulting services, implementation case studies, use cases, student questions, guides and training programs - so you can explore the subject in depth and move between related pages easily.",
+            answer=f"This topic page collects every Infiante360 page related to {name} - consulting services, implementation case studies, use cases, student questions, guides and training programs - so you can explore the subject in depth and move between related pages easily.",
             sections=[("Pages on this topic", "@@TOPIC_LIST@@")], faqs=[], related=[]))
     return pages
 
@@ -396,7 +396,7 @@ def form_html(p, compact=False):
                 + sel("demo_topic", "Preferred demo topic", topics) + sel("meeting_time", "Preferred meeting time", times)
                 + f'<div class="field full"><label for="{fid}-challenge">Primary business challenge <span class="req" aria-hidden="true">*</span></label><textarea id="{fid}-challenge" name="message" required aria-required="true" minlength="10" data-msg-required="Please describe your main challenge briefly."></textarea><span class="hint">Please do not include passwords, customer data or confidential information.</span><span class="error" id="{fid}-challenge-error" aria-live="polite"></span></div>'
                 + '<fieldset class="field full"><legend>Follow-up consent (optional)</legend><div class="choice">'
-                + "".join(f'<label><input type="checkbox" name="consent_{k}" value="yes"> {t}</label>' for k, t in [("email", "You may email me about this demo and related Infinite360 programs"), ("phone", "You may phone me about my enquiry"), ("whatsapp", "You may message me on WhatsApp about my enquiry")])
+                + "".join(f'<label><input type="checkbox" name="consent_{k}" value="yes"> {t}</label>' for k, t in [("email", "You may email me about this demo and related Infiante360 programs"), ("phone", "You may phone me about my enquiry"), ("whatsapp", "You may message me on WhatsApp about my enquiry")])
                 + '</div><span class="hint">You can withdraw consent at any time by replying STOP or emailing us.</span></fieldset>'
                 + consent)
         return f"""<form class="form js-validate" action="{FORM_ACTION}" method="POST" aria-describedby="{fid}-form-note">
@@ -528,16 +528,16 @@ def floater(p):
             f'<p class="floater-text"></p><p class="floater-links"><a class="floater-main" href="{page}"></a> <a href="{cases}">Case studies</a></p></aside>')
 
 
-ABOUT_FOOTER = """<section class="footer-about" aria-labelledby="fa-h"><h2 id="fa-h">About Infinite360 Business Consulting</h2>
+ABOUT_FOOTER = """<section class="footer-about" aria-labelledby="fa-h"><h2 id="fa-h">About Infiante360 Business Consulting</h2>
 <div class="fa-cols"><div>
-<p>Infinite360 Business Consulting is a technology and digital transformation consulting firm helping organizations turn complex data, customer experience, and technology challenges into measurable business outcomes.</p>
+<p>Infiante360 Business Consulting is a technology and digital transformation consulting firm helping organizations turn complex data, customer experience, and technology challenges into measurable business outcomes.</p>
 <p>We specialize in Adobe Experience Cloud, Customer Data Platforms, MarTech, Data Engineering, AI, Analytics, and Digital Transformation, helping enterprises build connected customer experiences and modern, scalable technology ecosystems.</p>
 <p>Our consulting approach combines strategy, architecture, implementation, optimization, and enablement. We work closely with business and technology teams to understand their objectives, identify opportunities, design the right solution, and accelerate execution.</p>
 <h3>Our approach</h3><p>We believe successful transformation is not just about implementing technology. It is about connecting people, data, processes, platforms, and business objectives. Our methodology: <strong>Discover &rarr; Design &rarr; Build &rarr; Integrate &rarr; Activate &rarr; Measure &rarr; Optimize</strong>. This helps organizations move from disconnected systems and fragmented customer data toward real-time, intelligent, personalized, and measurable customer experiences.</p>
 </div><div>
 <h3>What we do</h3><ul><li>Digital Transformation &amp; Technology Consulting</li><li>Adobe Experience Platform (AEP) &amp; Real-Time CDP</li><li>Adobe Journey Optimizer (AJO)</li><li>Customer Journey Analytics (CJA) &amp; Adobe Analytics</li><li>Customer 360 &amp; Data Strategy</li><li>MarTech &amp; Customer Experience Architecture</li><li>AI &amp; Agentic AI Solutions</li><li>Data Engineering, Cloud &amp; Analytics</li><li>Marketing Automation &amp; Personalization</li><li>Architecture Reviews, Assessments &amp; Optimization</li><li>Corporate Training &amp; Technology Enablement</li></ul>
 <h3>Founder track record</h3><p>As stated by our founder, Pavan Babu Gandla: <strong>15+ years of experience</strong> and <strong>37+ projects delivered</strong>, with work across BFSI, Retail &amp; E-commerce, Healthcare, Travel &amp; Hospitality, Manufacturing, Education, and Media &amp; Entertainment. These figures are the founder&rsquo;s own and are not independently verified. No client is named or implied to endorse us.</p>
-<h3>Why Infinite360</h3><p>We bring together technical expertise, enterprise consulting experience, and practical implementation knowledge to help clients reduce complexity, accelerate delivery, improve customer engagement, and create sustainable business value from their technology investments.</p>
+<h3>Why Infiante360</h3><p>We bring together technical expertise, enterprise consulting experience, and practical implementation knowledge to help clients reduce complexity, accelerate delivery, improve customer engagement, and create sustainable business value from their technology investments.</p>
 <p><strong>Vision:</strong> To help organizations build intelligent, connected, and future-ready digital businesses through technology, data, AI, and customer experience innovation.</p>
 <p><strong>Mission:</strong> Make enterprise technology simpler, smarter, and more valuable for the business.</p>
 </div></div></section>

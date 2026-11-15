@@ -1,7 +1,7 @@
 """MarTech stack coverage: hub plus category pages (distinct content, no job counts or partnership claims)."""
 from content_cases import pills, WHATSAPP_MSG
 
-STACK_NOTE = ('<p class="note"><strong>How to read this page.</strong> Adobe Experience Cloud is Infinite360\'s deepest area. '
+STACK_NOTE = ('<p class="note"><strong>How to read this page.</strong> Adobe Experience Cloud is Infiante360\'s deepest area. '
               'For other tools we assess, integrate and train around them in the context of your architecture. Product names belong to their owners; '
               'listing a tool here is not a claim of partnership, certification or endorsement.</p>')
 
@@ -55,10 +55,10 @@ def cat_page(c):
     slug, name, short, tools, intro, work, related = c
     return dict(
         path=f"stacks/{slug}.html",
-        title=f"{name}: Consulting & Training", desc=f"How Infinite360 approaches {short.lower()} tooling: tools covered, architecture questions, delivery focus and related training.",
+        title=f"{name}: Consulting & Training", desc=f"How Infiante360 approaches {short.lower()} tooling: tools covered, architecture questions, delivery focus and related training.",
         h1=f"{name}: consulting and training", kicker="MarTech stacks", nav=short, schema="Article", category="Stacks", date="2026-10-11",
         keywords=[f"{name.lower()} consultant", f"{short.lower()} martech", f"{name.lower()} training", "martech stack consulting", f"{short.lower()} integration"],
-        answer=f"{intro} Infinite360 supports teams working with {', '.join(tools[:4])} and related tools, remotely for clients in any country. Engagements start with an architecture review and can include corporate training.",
+        answer=f"{intro} Infiante360 supports teams working with {', '.join(tools[:4])} and related tools, remotely for clients in any country. Engagements start with an architecture review and can include corporate training.",
         sections=[
             ("Notice", STACK_NOTE),
             ("Tools in this category", '<ul class="chips chips-light">' + "".join(f"<li>{t}</li>" for t in tools) + "</ul>"),
@@ -73,15 +73,15 @@ def cat_page(c):
 HUB = dict(
     path="stacks/index.html",
     title="MarTech Stacks We Support: Adobe, CRM, Cloud & AI",
-    desc="Infinite360 supports Adobe-centred and multi-vendor MarTech stacks: CRM, data warehouse, analytics, CDP, personalisation and AI tools, for teams in any country.",
+    desc="Infiante360 supports Adobe-centred and multi-vendor MarTech stacks: CRM, data warehouse, analytics, CDP, personalisation and AI tools, for teams in any country.",
     h1="MarTech stacks we support",
     kicker="MarTech stacks", nav="MarTech stacks", schema="CollectionPage", category="Stacks",
     keywords=["martech stack consulting", "martech consultant", "martech training", "adobe and salesforce integration", "martech tools consulting"],
-    answer="Infinite360 is stack-aware rather than single-vendor. Adobe Experience Cloud is the deepest specialism; around it we assess and integrate CRM, marketing automation, data warehouse, analytics, CDP, personalisation and AI tools. Work is delivered remotely for teams in any country, and stack decisions follow your architecture, not a product preference.",
+    answer="Infiante360 is stack-aware rather than single-vendor. Adobe Experience Cloud is the deepest specialism; around it we assess and integrate CRM, marketing automation, data warehouse, analytics, CDP, personalisation and AI tools. Work is delivered remotely for teams in any country, and stack decisions follow your architecture, not a product preference.",
     sections=[
         ("Notice", STACK_NOTE),
         ("Stack categories", '<div class="grid-2">' + "".join(f'<a class="card link-card" href="{c[0]}.html"><span class="tag">{c[2]}</span><h3>{c[1]}</h3><p>{", ".join(c[3][:5])} and more.</p></a>' for c in CATS) + "</div>"),
-        ("Where we work", "<p>Infinite360 serves teams remotely, including in " + ", ".join(REGIONS) + ". This describes where clients can be served, not physical offices.</p>"),
+        ("Where we work", "<p>Infiante360 serves teams remotely, including in " + ", ".join(REGIONS) + ". This describes where clients can be served, not physical offices.</p>"),
         ("Start", pills(("Request an architecture review", "../lp/aep-architecture-review.html"), ("Chat on WhatsApp", WHATSAPP_MSG))),
     ],
     faqs=[("Do you support every MarTech tool?", "We cover the categories above and assess other tools case by case. We say plainly when a tool needs a specialist partner."),

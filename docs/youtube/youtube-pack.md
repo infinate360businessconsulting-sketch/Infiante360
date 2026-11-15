@@ -1,17 +1,17 @@
-# YouTube pack: Infinite360 Tech Academy (@Infiante360TechAcademy)
+# YouTube pack: Infiante360 Tech Academy (@Infiante360TechAcademy)
 
 Covers: channel description, the 6-day MarTech SME Accelerator demo video, keywords, tags, hashtags, chapters, pinned comment, thumbnail text, playlists, end screen and a reusable template. No guarantees or invented results. Replace {placeholders} before upload. Limits: title up to 100 characters (aim under 70), description up to 5,000, tags up to 500 characters in total.
 
 ## 1. Titles (pick one; lead with the topic people search)
 1. Adobe Experience Platform Live Demo: XDM, Identity, Real-Time CDP, AJO and CJA
-2. Adobe MarTech Demo for AEP, RTCDP, AJO, CJA and Agentic AI | Infinite360
+2. Adobe MarTech Demo for AEP, RTCDP, AJO, CJA and Agentic AI | Infiante360
 3. Adobe Experience Platform Tutorial: Architecture, XDM Schema and Identity Resolution
 4. Enterprise MarTech Architecture Explained: AEP, Real-Time CDP and Agentic AI
-5. Day {n}: {topic} | MarTech SME Accelerator (Infinite360)
+5. Day {n}: {topic} | MarTech SME Accelerator (Infiante360)
 
 ## 2. Description (paste as is; first two lines show in search, so they carry the keywords)
 Adobe Experience Platform (AEP) live demo covering XDM schemas, identity resolution, Real-Time CDP, Adobe Journey Optimizer (AJO), Customer Journey Analytics (CJA) and Agentic AI, taught by a working MarTech architect.
-Part of the Infinite360 MarTech SME Accelerator, six live evenings, 10:00 to 11:00 PM IST.
+Part of the Infiante360 MarTech SME Accelerator, six live evenings, 10:00 to 11:00 PM IST.
 
 In this video:
 - How an enterprise AEP architecture fits together
@@ -45,7 +45,7 @@ WhatsApp / call: +91 82968 93895 | Email: infinate360businessconsulting@gmail.co
 
 Official Adobe documentation: https://experienceleague.adobe.com/
 
-Infinite360 is independent and is not affiliated with or endorsed by Adobe. Adobe product names are trademarks of their owners. This video is for education; jobs, salaries and certifications are not guaranteed and outcomes depend on individual effort.
+Infiante360 is independent and is not affiliated with or endorsed by Adobe. Adobe product names are trademarks of their owners. This video is for education; jobs, salaries and certifications are not guaranteed and outcomes depend on individual effort.
 
 #AdobeExperiencePlatform #RealTimeCDP #MarTech
 
@@ -58,7 +58,7 @@ Local/audience: adobe martech course India, martech training India, adobe experi
 Say the primary terms aloud in the first 30 seconds; YouTube uses captions and speech.
 
 ## 4. Tags (paste comma-separated; about 480 characters)
-adobe experience platform, AEP tutorial, real time CDP, adobe journey optimizer, customer journey analytics, adobe martech, XDM schema, identity resolution, customer 360, AEP architecture, enterprise martech, adobe web sdk, adobe analytics, AEP training, AJO tutorial, CJA, agentic AI, MCP, martech architect, martech training India, Infinite360, Infinite360 Tech Academy, adobe experience cloud
+adobe experience platform, AEP tutorial, real time CDP, adobe journey optimizer, customer journey analytics, adobe martech, XDM schema, identity resolution, customer 360, AEP architecture, enterprise martech, adobe web sdk, adobe analytics, AEP training, AJO tutorial, CJA, agentic AI, MCP, martech architect, martech training India, Infiante360, Infiante360 Tech Academy, adobe experience cloud
 Rule: only tags that describe the video. Do not add competitor names or unrelated trending tags.
 
 ## 5. Hashtags
@@ -87,7 +87,7 @@ Registration for the live sessions is mandatory: {form link}. Join the community
 Last 20 seconds: end screen with next video (same playlist) + subscribe. Card at the first mention of registration linking the series page. Spoken CTA: "Register with the link in the description, join the community, and watch the next session."
 
 ## 10. Channel description (About tab, under 1,000 characters)
-Infinite360 Tech Academy teaches hands-on Adobe MarTech, customer data and Agentic AI: live demos and tutorials on Adobe Experience Platform (AEP), Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and MarTech architecture, taught by a working MarTech architect.
+Infiante360 Tech Academy teaches hands-on Adobe MarTech, customer data and Agentic AI: live demos and tutorials on Adobe Experience Platform (AEP), Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and MarTech architecture, taught by a working MarTech architect.
 
 Start here:
 AEP guides: https://infiante360techacademy.com/adobe-experience-platform/
@@ -99,10 +99,10 @@ Consulting and governance: https://infiante360techacademy.com/services/consent-g
 Business: infinate360businessconsulting@gmail.com | +91 82968 93895
 Independent of Adobe. No job, salary or certification is guaranteed.
 
-Channel keywords: adobe experience platform, real-time CDP, adobe journey optimizer, customer journey analytics, adobe martech, agentic AI, martech training, adobe test series, Infinite360
+Channel keywords: adobe experience platform, real-time CDP, adobe journey optimizer, customer journey analytics, adobe martech, agentic AI, martech training, adobe test series, Infiante360
 
 ### 10b. "More" links block (append to video descriptions; no length issue)
-More from Infinite360:
+More from Infiante360:
 Customer 360 and identity: https://infiante360techacademy.com/services/customer-360-identity-resolution.html
 Cloud data platforms: https://infiante360techacademy.com/services/cloud-data-platforms.html
 AI search (GEO and AEO): https://infiante360techacademy.com/services/ai-search-visibility-geo-aeo.html
@@ -128,6 +128,6 @@ Community post: "Live tonight 10 PM IST: {topic}. Register: {link}. What should 
 Audience: not made for kids. Category: Education. Captions: upload corrected English captions (SRT). Language: English. Add a custom thumbnail, chapters, playlist, end screen, cards. Altered/synthetic content disclosure: tick only if you used realistic AI-generated visuals or voice. Paid promotion: tick only if sponsored. Verify the channel for custom thumbnails and long uploads.
 
 ## 13. Reusable template for other videos
-Title: {Topic} in Adobe Experience Platform: {Benefit} | Infinite360
+Title: {Topic} in Adobe Experience Platform: {Benefit} | Infiante360
 Line 1-2: {Topic} explained with a live demo for AEP, RTCDP, AJO and CJA.
 Bullets: 3 to 6 things shown. Chapters. Links block (as above). Disclaimer block (as above). 3 hashtags.

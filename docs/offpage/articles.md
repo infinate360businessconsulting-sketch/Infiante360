@@ -1,5 +1,5 @@
 # Off-page article drafts (AI-assisted; review before publishing)
-Byline: Pavan Babu Gandla, founder, Infinite360 Tech Academy. Disclose affiliation. Cite Adobe docs for product facts. Link only where relevant, with descriptive anchors.
+Byline: Pavan Babu Gandla, founder, Infiante360 Tech Academy. Disclose affiliation. Cite Adobe docs for product facts. Link only where relevant, with descriptive anchors.
 Canonical hub: https://infiante360techacademy.com/answers/index.html
 
 ## Article A: Why a streamed event doesn't always update the Real-Time Profile at once
@@ -16,8 +16,8 @@ Agents help with drafting queries, summarising monitoring output and documentati
 More: [Agentic AI and MCP answers](https://infiante360techacademy.com/answers/ai-agentic-mcp.html).
 
 # Press release draft (publish only after you confirm the facts)
-**Infinite360 Tech Academy publishes a sourced answers hub for Adobe Experience Platform practitioners**
-Bengaluru, India, [date]. Infinite360 Tech Academy has published an open library of 191 short answers on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, the Web SDK and Agentic AI. Each answer links to the official Adobe documentation it is based on. "[quote from Pavan Babu Gandla: to be written and approved by him]". The library is at https://infiante360techacademy.com/answers/index.html. Media kit: https://infiante360techacademy.com/press.html. Contact: infinate360businessconsulting@gmail.com, WhatsApp +91 82968 93895.
+**Infiante360 Tech Academy publishes a sourced answers hub for Adobe Experience Platform practitioners**
+Bengaluru, India, [date]. Infiante360 Tech Academy has published an open library of 191 short answers on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, the Web SDK and Agentic AI. Each answer links to the official Adobe documentation it is based on. "[quote from Pavan Babu Gandla: to be written and approved by him]". The library is at https://infiante360techacademy.com/answers/index.html. Media kit: https://infiante360techacademy.com/press.html. Contact: infinate360businessconsulting@gmail.com, WhatsApp +91 82968 93895.
 About: see the approved boilerplate on the press page.
 
 # Social post draft: new learner review (post manually after you confirm the reviewer is a real learner)

@@ -28,11 +28,11 @@ WA = "https://wa.me/918296893895"
 # ---------- Promo video ----------
 PROMO = dict(
     path="academy/promo-video.html", nav="Promo video",
-    title="Infinite360 Tech Academy Promo Video | Adobe MarTech & AI",
-    desc="Watch the 10-second Infinite360 Tech Academy promo video, then explore Adobe MarTech programs, free demo sessions and AI engineering tracks.",
-    h1="Infinite360 Tech Academy promo video", kicker="Academy · Video",
-    keywords=["infinite360 tech academy video", "adobe martech academy promo", "aep training video"],
-    answer="This is the 10-second promo for Infinite360 Tech Academy, which teaches Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Agentic AI and AI engineering. Watch it, then open the free demo sessions, the program pages or ask on WhatsApp.",
+    title="Infiante360 Tech Academy Promo Video | Adobe MarTech & AI",
+    desc="Watch the 10-second Infiante360 Tech Academy promo video, then explore Adobe MarTech programs, free demo sessions and AI engineering tracks.",
+    h1="Infiante360 Tech Academy promo video", kicker="Academy · Video",
+    keywords=["infiante360 tech academy video", "adobe martech academy promo", "aep training video"],
+    answer="This is the 10-second promo for Infiante360 Tech Academy, which teaches Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Agentic AI and AI engineering. Watch it, then open the free demo sessions, the program pages or ask on WhatsApp.",
     schema="WebPage",
     sections=[
         ("Watch the promo", '<figure class="promo-fig"><video controls preload="none" playsinline width="1280" height="720" poster="../assets/media/infinate360-promo-poster.jpg" style="width:100%;height:auto;border-radius:16px;background:#0e1d3b">'
@@ -175,8 +175,8 @@ def module_page(i):
 
 TRACK_INDEX = dict(
     path=f"{TRACK}/index.html", nav="AEP track",
-    title="AEP MarTech Implementation Track: Module Guide | Infinite360",
-    desc="Module guide for the Infinite360 AEP implementation track: Web SDK, Profile, Intelligent Services, Real-Time CDP segments and Journey Optimizer, step by step.",
+    title="AEP MarTech Implementation Track: Module Guide | Infiante360",
+    desc="Module guide for the Infiante360 AEP implementation track: Web SDK, Profile, Intelligent Services, Real-Time CDP segments and Journey Optimizer, step by step.",
     h1="AEP MarTech implementation track: module guide", kicker="Academy · Learning track",
     keywords=["aep implementation track", "aep training modules", "aep web sdk module", "ajo journey module"],
     answer="The AEP MarTech Implementation Track walks from data collection with the Web SDK through Real-Time Customer Profile, Intelligent Services, Real-Time CDP segments and Adobe Journey Optimizer orchestration, external data, offer decisioning and event-based journeys. Each module lists objectives, topics, prerequisites and common mistakes.",

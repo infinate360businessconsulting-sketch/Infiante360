@@ -1,4 +1,4 @@
-# Infinite360 Meta Ads: Enterprise MarTech Demo (campaign pack)
+# Infiante360 Meta Ads: Enterprise MarTech Demo (campaign pack)
 
 Landing page: https://infiante360techacademy.com/lp/enterprise-martech-demo.html
 Registration form: https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLvHx50ES_KqrULMKromsE3mg/viewform?usp=header
@@ -56,7 +56,7 @@ Common: CTA "Register" (primary) or "Learn More"; landing = enterprise demo page
 6. **E / CTO / Technology** Text: Agentic AI in MarTech needs guardrails. See MCP tools and governed agent workflows with approval points. Headline: Agentic AI, with governance. Visual: agent loop with human-approval node. Hypothesis: "governed" lowers risk objection.
 7. **A / VP MarTech / Healthcare** Text: Responsible personalization needs governed data. See consent-aware profiles and journeys. Headline: Personalization with consent built in. Visual: consent toggle on profile card.
 8. **F / CIO / Insurance** Text: Planning an Adobe migration or transformation? Book an architecture discussion before you commit budget. Headline: De-risk your roadmap. CTA: Book an architecture discussion. Visual: roadmap with risk markers.
-9. **G / SI Delivery Director** Text: Need specialist Adobe MarTech capability for delivery? Talk partnership with Infinite360. Headline: Specialist capability for SI teams. CTA: Learn More. Visual: delivery pod diagram.
+9. **G / SI Delivery Director** Text: Need specialist Adobe MarTech capability for delivery? Talk partnership with Infiante360. Headline: Specialist capability for SI teams. CTA: Learn More. Visual: delivery pod diagram.
 10. **Retarget / Landing visitors** Text: You looked at the enterprise MarTech demo. Reserve your place before sessions fill. Headline: Your demo seat is waiting. Visual: calendar tile. Hypothesis: low-cost reminder converts warm traffic.
 
 Video skeleton (15s): 0-3s hook question; 3-10s one screen of the demo; 10-15s CTA and date. 30s: hook; problem; demo clip; architecture takeaway; CTA with registration URL. Use real screen recordings of your own work; no client data.

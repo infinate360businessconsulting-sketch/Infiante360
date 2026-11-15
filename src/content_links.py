@@ -15,16 +15,16 @@ def _group(items):
 
 LINKS_PAGE = dict(
     path="links.html", nav="All links",
-    title="Infinite360 Tech Academy Links: Services, Courses, Guides",
-    desc="Every key Infinite360 Tech Academy link in one place: services, training programs, AEP guides, free resources, community, partnerships and contact.",
-    h1="Infinite360 Tech Academy links hub", kicker="Start here",
-    keywords=["infinite360 tech academy links", "adobe martech training links", "aep guides", "martech services", "academy resources"],
+    title="Infiante360 Tech Academy Links: Services, Courses, Guides",
+    desc="Every key Infiante360 Tech Academy link in one place: services, training programs, AEP guides, free resources, community, partnerships and contact.",
+    h1="Infiante360 Tech Academy links hub", kicker="Start here",
+    keywords=["infiante360 tech academy links", "adobe martech training links", "aep guides", "martech services", "academy resources"],
     schema="WebPage", category="Academy",
-    answer="This hub lists the main Infinite360 Tech Academy pages: five service models, enterprise services, training and career programs, Adobe Experience Platform guides, technical guides, free resources and community, enterprise partnerships and contact details. Infinite360 is independent and not affiliated with Adobe. Training does not guarantee employment, salary or certification.",
+    answer="This hub lists the main Infiante360 Tech Academy pages: five service models, enterprise services, training and career programs, Adobe Experience Platform guides, technical guides, free resources and community, enterprise partnerships and contact details. Infiante360 is independent and not affiliated with Adobe. Training does not guarantee employment, salary or certification.",
     sections=[(t, _group(items)) for t, items in GROUPS] + [
         ("Download the brochures", '<p>Get programme details, fees, timings and tables of contents: <a href="brochures.html">download the brochures</a> (name, email and phone required).</p>'),
     ],
-    faqs=[("What is Infinite360 Tech Academy?", "A training and consulting brand for Adobe Experience Cloud, MarTech, customer data and Agentic AI, with live programs, free resources and corporate training."),
+    faqs=[("What is Infiante360 Tech Academy?", "A training and consulting brand for Adobe Experience Cloud, MarTech, customer data and Agentic AI, with live programs, free resources and corporate training."),
           ("Is it affiliated with Adobe?", "No. It is independent. Adobe product names belong to Adobe.")],
     related=["academy/index.html", "services/index.html", "brochures.html"],
 )

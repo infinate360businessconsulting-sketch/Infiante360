@@ -1,4 +1,4 @@
-"""Infinite360 Tech Academy: hub, program catalog, single-tool courses, videos, resources, roles guide.
+"""Infiante360 Tech Academy: hub, program catalog, single-tool courses, videos, resources, roles guide.
 
 Prices: ₹60,000 career accelerator (stated by owner). Leadership and customised programs ₹1,00,000
 (from the owner-supplied reference catalog) — flagged for confirmation in the hand-off.
@@ -139,13 +139,13 @@ ACADEMY = [
         path="academy/index.html",
         nav="Academy",
         bands=True,
-        title="Infinite360 Tech Academy: Adobe MarTech & AI Programs",
-        desc="Infinite360 Tech Academy: Adobe MarTech career accelerator, leadership, customised and Agentic AI programs, single-tool courses, demos and free resources.",
-        h1="Infinite360 Tech Academy",
+        title="Infiante360 Tech Academy: Adobe MarTech & AI Programs",
+        desc="Infiante360 Tech Academy: Adobe MarTech career accelerator, leadership, customised and Agentic AI programs, single-tool courses, demos and free resources.",
+        h1="Infiante360 Tech Academy",
         kicker="Learn · Build · Transform · Lead",
         lede="Hands-on Adobe MarTech, customer data and Agentic AI programs taught by a working MarTech architect — built around the platforms enterprises use.",
-        keywords=["infinite360 tech academy", "adobe martech courses", "aep course india", "martech training programs", "agentic ai course", "adobe experience cloud training"],
-        answer="Infinite360 Tech Academy offers live and customised programs in Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Programs range from the ₹60,000 live career accelerator and recorded Foundation + Advanced Architecture course to ₹1,00,000 leadership and customised programs, plus single-tool courses, free demo sessions and resources.",
+        keywords=["infiante360 tech academy", "adobe martech courses", "aep course india", "martech training programs", "agentic ai course", "adobe experience cloud training"],
+        answer="Infiante360 Tech Academy offers live and customised programs in Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Programs range from the ₹60,000 live career accelerator and recorded Foundation + Advanced Architecture course to ₹1,00,000 leadership and customised programs, plus single-tool courses, free demo sessions and resources.",
         schema="CollectionPage",
         hero_cta=("Browse programs", "#programs"),
         sections=[
@@ -153,7 +153,7 @@ ACADEMY = [
             ("What learners say", "@@REVIEW_STRIP@@", "alt", "Reviews"),
             ("Workshops and bootcamps", '<p class="lead">New to AEP? Start with a short, live, hands-on format.</p><div class="grid-3"><a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Bootcamp · ₹3,000</span><h3>AEP Launchpad bootcamp</h3><p>3 hours, 6–9 PM IST, with a free ₹3,500 test series.</p></a><a class="card link-card" href="aep-foundations-batch.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Batch · 8 AM IST</span><h3>Live Foundations batch</h3><p>Two weeks, Monday–Friday, beginner-friendly.</p></a><a class="card link-card" href="martech-bootcamp-webinar.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Prerecorded webinar</span><h3>MarTech bootcamp webinar</h3><p>What is MarTech and how AEP works.</p></a><a class="card link-card" href="workshops.html"><span class="tag" style="background:var(--green-50);color:var(--green)">Every Friday</span><h3>Hands-on workshops</h3><p>One AEP skill per session.</p></a></div>', "dark", "Start here"),
             ("Single-tool courses", '<p class="lead">Only need one platform? Each course is a focused path you can take alone or as part of a program.</p>' + course_tiles(1), "alt", "Learn one tool"),
-            ("Why learn with Infinite360", """<div class="grid-3">
+            ("Why learn with Infiante360", """<div class="grid-3">
 <div class="card"><h3>Practical learning</h3><p>Hands-on labs, enterprise-style projects and capstone implementations.</p></div>
 <div class="card"><h3>Architect-led teaching</h3><p>Taught from enterprise delivery experience: why designs work, not just where to click.</p></div>
 <div class="card"><h3>Troubleshooting first</h3><p>Identity failures, streaming delays and audience mismatches &mdash; the problems real projects hit.</p></div>
@@ -168,7 +168,7 @@ ACADEMY = [
 <div class="step"><h3>Deploy</h3><p>Capstone, portfolio and interview preparation.</p></div>
 </div>
 <p style="margin-top:18px">Moving from another role? See <a href="../training/career-transition.html">career transition paths</a> and <a href="martech-roles.html">MarTech roles explained</a>.</p>""", "plain", "How it works"),
-            ("Watch before you decide", f'<p class="lead">Free sessions from the Infinite360 Tech Academy channel.</p><p><a class="btn btn-primary" href="videos.html">Watch demo sessions</a> <a class="btn btn-ghost" href="{YOUTUBE}" rel="noopener" target="_blank">YouTube channel</a></p>', "alt", "Demo sessions"),
+            ("Watch before you decide", f'<p class="lead">Free sessions from the Infiante360 Tech Academy channel.</p><p><a class="btn btn-primary" href="videos.html">Watch demo sessions</a> <a class="btn btn-ghost" href="{YOUTUBE}" rel="noopener" target="_blank">YouTube channel</a></p>', "alt", "Demo sessions"),
             ("Free resources", f"""<div class="grid-3">
 <a class="card link-card" href="{SIGNUP}" rel="noopener" target="_blank"><h3>Free signup + challenge</h3><p>Join the academy platform and try the challenge.</p></a>
 <a class="card link-card" href="{CHALLENGE}" rel="noopener" target="_blank"><h3>AEP Architect Challenge</h3><p>Test your architecture thinking with scenario questions.</p></a>
@@ -355,12 +355,12 @@ ACADEMY = [
     dict(
         path="academy/videos.html",
         bands=True,
-        title="Free Adobe MarTech Demo Sessions & Videos | Infinite360",
-        desc="Watch free Infinite360 Tech Academy sessions: career accelerator overview, AEP, RTCDP, AJO and CJA, implementation, onboarding and expert insights.",
+        title="Free Adobe MarTech Demo Sessions & Videos | Infiante360",
+        desc="Watch free Infiante360 Tech Academy sessions: career accelerator overview, AEP, RTCDP, AJO and CJA, implementation, onboarding and expert insights.",
         h1="Free demo sessions",
         kicker="Academy · Watch",
-        keywords=["aep training video", "adobe martech demo session", "free aep class", "infinite360 youtube", "adobe experience platform tutorial video"],
-        answer="These free sessions from the Infinite360 Tech Academy YouTube channel show the teaching approach and implementation depth: a career accelerator overview, AEP, RTCDP, AJO and CJA sessions, enterprise implementation, onboarding, a demo class and expert insights. Videos load only when you press play.",
+        keywords=["aep training video", "adobe martech demo session", "free aep class", "infiante360 youtube", "adobe experience platform tutorial video"],
+        answer="These free sessions from the Infiante360 Tech Academy YouTube channel show the teaching approach and implementation depth: a career accelerator overview, AEP, RTCDP, AJO and CJA sessions, enterprise implementation, onboarding, a demo class and expert insights. Videos load only when you press play.",
         schema="CollectionPage",
         hero_cta=("Visit the YouTube channel", YOUTUBE),
         sections=[("Sessions", video_grid(), "plain", "Watch"),
@@ -371,12 +371,12 @@ ACADEMY = [
     dict(
         path="academy/free-resources.html",
         bands=True,
-        title="Free Adobe MarTech Learning Resources | Infinite360 Academy",
-        desc="Free Infinite360 Tech Academy resources: signup and challenge, AEP Architect Challenge, demo classes, case study pack, career mapping and AEP guides.",
+        title="Free Adobe MarTech Learning Resources | Infiante360 Academy",
+        desc="Free Infiante360 Tech Academy resources: signup and challenge, AEP Architect Challenge, demo classes, case study pack, career mapping and AEP guides.",
         h1="Free learning resources",
         kicker="Academy · Start free",
         keywords=["free aep resources", "aep architect challenge", "free martech course", "aep case study pack", "free career mapping martech"],
-        answer="Start free with the academy signup and challenge, the AEP Architect Challenge, AEP, AJO and CJA master-class demos, the Agentic AI demo class, the architecture case study pack, free career mapping, and the Infinite360 AEP guides.",
+        answer="Start free with the academy signup and challenge, the AEP Architect Challenge, AEP, AJO and CJA master-class demos, the Agentic AI demo class, the architecture case study pack, free career mapping, and the Infiante360 AEP guides.",
         schema="CollectionPage",
         sections=[("Try it free", f"""<div class="grid-3">
 <a class="card link-card" href="{SIGNUP}" rel="noopener" target="_blank"><h3>Free signup + challenge</h3><p>Create an academy account and start the challenge.</p><span class="more">Sign up &rarr;</span></a>
@@ -433,19 +433,19 @@ ACADEMY.append(program_page(
     f"Bronze Membership gives you all recorded video courses, a {_Q}-question practice bank and hands-on sandbox access for {BRONZE['fee_label']}.",
     "Academy · Membership",
     ["adobe martech recorded course", "aep question bank", "adobe experience platform practice questions", "aep sandbox practice", "adobe martech membership"],
-    f"Bronze Membership is a self-paced Infinite360 Tech Academy membership at {BRONZE['fee_label']}. It includes all recorded video courses, a {_Q}-question practice bank and hands-on sandbox access for practising Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI. It has no live classes and guarantees no job or certification.",
+    f"Bronze Membership is a self-paced Infiante360 Tech Academy membership at {BRONZE['fee_label']}. It includes all recorded video courses, a {_Q}-question practice bank and hands-on sandbox access for practising Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI. It has no live classes and guarantees no job or certification.",
     "All levels", "Recorded · self-paced", BRONZE["fee_label"], BRONZE["fee_inr"],
-    ["All recorded video courses", f"{_Q}-question practice bank", "Hands-on practice sandbox (Infinite360 simulation environment)", "Learn at your own pace, on any device you own", BRONZE["access_note"]],
+    ["All recorded video courses", f"{_Q}-question practice bank", "Hands-on practice sandbox (Infiante360 simulation environment)", "Learn at your own pace, on any device you own", BRONZE["access_note"]],
     ["Adobe Experience Platform, XDM and identity resolution", "Real-Time CDP audiences and activation", "Journey Optimizer and Customer Journey Analytics", "Web SDK, data layers and Adobe Analytics", "Agentic AI and MCP concepts", f"Self-testing with {_Q} practice questions", "Practising configuration safely in a sandbox", "Interview and certification-style revision"],
     [("Video courses", ["Adobe Experience Platform (AEP)", "XDM and data modeling", "Identity resolution and Customer 360", "Real-Time CDP (RTCDP)", "Adobe Journey Optimizer (AJO)", "Customer Journey Analytics (CJA)", "Adobe Analytics", "Adobe Web SDK", "Agentic AI and MCP"]),
      ("Practice bank", [f"{_Q} practice questions with answers for self-assessment", "Use after each video course to find weak areas", "Revise before interviews or certification attempts"]),
-     ("Sandbox practice", ["Hands-on practice in the Infinite360 simulation environment with synthetic data", "Rebuild schemas, audiences, journeys and reports from the lessons", "Safe place to make mistakes before using a client environment"])],
+     ("Sandbox practice", ["Hands-on practice in the Infiante360 simulation environment with synthetic data", "Rebuild schemas, audiences, journeys and reports from the lessons", "Safe place to make mistakes before using a client environment"])],
     [("Self-paced learners", "Professionals who prefer recorded lessons and practice at their own time."), ("Career switchers on a budget", "A lower-cost way to start before deciding on a live program."), ("Practitioners revising", "Analysts and engineers who want a large practice bank and a sandbox.")],
     [("Bronze or live?", '<p>Bronze has no live classes, mentor sessions or enterprise project review. For live teaching, projects and interview preparation choose the <a href="../../training/">Career Accelerator (₹60,000)</a>; for leaders see <a href="executive-architecture-leadership.html">CXO Hive</a>. Ask us how a Bronze purchase can relate to an upgrade; terms are confirmed in writing.</p>', "alt", "Compare"),
-     ("Notes", f'<p class="small muted">The sandbox is an Infinite360 simulation environment with synthetic data. It is not an Adobe-provided production or licensed environment. Built around Adobe Experience Cloud technologies and Experience League learning resources; Infinite360 is independent and not affiliated with Adobe. {BRONZE["access_note"]}</p>', "plain", "Good to know")],
+     ("Notes", f'<p class="small muted">The sandbox is an Infiante360 simulation environment with synthetic data. It is not an Adobe-provided production or licensed environment. Built around Adobe Experience Cloud technologies and Experience League learning resources; Infiante360 is independent and not affiliated with Adobe. {BRONZE["access_note"]}</p>', "plain", "Good to know")],
     [("Are the courses live?", "No. Bronze is recorded and self-paced. Live options are the Career Accelerator and CXO Hive."),
      ("What is in the question bank?", f"{_Q} practice questions for self-assessment across the video-course topics. Exact topic split is shared at enrolment."),
-     ("Is the sandbox a real Adobe environment?", "No. It is Infinite360's simulation environment with synthetic data, for safe practice."),
+     ("Is the sandbox a real Adobe environment?", "No. It is Infiante360's simulation environment with synthetic data, for safe practice."),
      ("Will Bronze get me a job or certification?", "No. Outcomes depend on your practice; no job, salary or certification is guaranteed."),
      ("How long do I get access?", BRONZE["access_note"])],
     ["training/index.html", "academy/programs/aep-ajo-cja-foundation-advanced.html", "academy/free-resources.html"],

@@ -151,13 +151,13 @@ _cards = "".join(
 INDEX = dict(
     path="insights/index.html", nav="Insights",
     title="Insights: MarTech, Data, AI & Customer Experience Topics",
-    desc="Practical Infinite360 insights on MarTech leadership, digital transformation, responsible AI, data privacy, governance, cloud and customer experience.",
+    desc="Practical Infiante360 insights on MarTech leadership, digital transformation, responsible AI, data privacy, governance, cloud and customer experience.",
     h1="Insights for MarTech, data and AI leaders", kicker="Insights",
     keywords=["martech insights", "digital transformation martech", "responsible ai martech", "data governance martech"],
-    answer="Infinite360 Insights collects practical guidance for leaders and practitioners across MarTech leadership, digital transformation, responsible and agentic AI, automation, data privacy, governance, cloud and customer experience. Pages are practitioner guidance, not client case studies, and are not legal advice.",
+    answer="Infiante360 Insights collects practical guidance for leaders and practitioners across MarTech leadership, digital transformation, responsible and agentic AI, automation, data privacy, governance, cloud and customer experience. Pages are practitioner guidance, not client case studies, and are not legal advice.",
     schema="CollectionPage", category="Insights", date="2026-10-25",
     sections=[("Topics", f'<div class="grid-2">{_cards}</div>'),
-              ("About these pages", "<p>Some content on Infinite360 is created or enhanced using artificial intelligence to support research, organisation and content production, and is curated by the Infinite360 team. See our <a href=\"../press.html\">press page</a> for how to cite us.</p>")],
+              ("About these pages", "<p>Some content on Infiante360 is created or enhanced using artificial intelligence to support research, organisation and content production, and is curated by the Infiante360 team. See our <a href=\"../press.html\">press page</a> for how to cite us.</p>")],
     faqs=[("Are these client case studies?", "No. They are general guidance. Real client work is covered only where permission exists.")],
     related=["services/index.html", "learn/index.html", "answers/index.html"],
 )

@@ -19,7 +19,7 @@ T("platform-basics", "AEP Basics: Platform, RTCDP, AJO & CJA Answers",
    ("What are Profile guardrails?", "Guardrails are Adobe's documented limits and recommended practices for Real-Time Customer Profile data and segmentation, such as sizes, counts and performance recommendations. Check them before modelling data or enabling datasets for Profile.", ["guardrails"]),
    ("What is the Data Landing Zone?", "The Data Landing Zone is Adobe-provided cloud storage (Azure Blob) in each organisation where you can drop files for ingestion or receive exports, avoiding the need to set up your own storage for simple batch flows.", ["dlz"]),
    ("How should AEP be designed for several regions and brands?", "Separate brands and regions with sandboxes and role-based access, share one XDM model where it fits, plan identity namespaces and consent per region, apply data usage labels and policies, and check residency requirements with current Adobe documentation and your legal team.", ["blueprint", "rdc", "labels"]),
-   ("Where can I learn AEP hands-on for free?", "Adobe publishes tutorials on Experience League, including the data architect and data engineer path and the Luma demo site. For guided labs and mentoring, see the Infinite360 Tech Academy programs.", ["learn-arch", "luma"]),
+   ("Where can I learn AEP hands-on for free?", "Adobe publishes tutorials on Experience League, including the data architect and data engineer path and the Luma demo site. For guided labs and mentoring, see the Infiante360 Tech Academy programs.", ["learn-arch", "luma"]),
   ])
 
 T("xdm-schemas-datasets", "XDM Schemas & Datasets: Questions and Answers",

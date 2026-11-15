@@ -53,7 +53,7 @@ WEBINAR_PAGE = dict(
     keywords=["what is martech", "adobe experience platform foundations", "martech bootcamp webinar", "aep demo for beginners", "martech webinar"],
     schema="WebPage", category="Academy", bands=True,
     hero_cta=("Register for the webinar", REGISTER_URL),
-    answer="This prerecorded webinar explains what MarTech is and how Adobe Experience Platform (AEP) works, then walks through a retail example from schema and ingestion to profile, audience and activation. It is a beginner-friendly introduction to the Infinite360 MarTech bootcamp. Register through the webinar platform; training outcomes such as jobs or certification are not guaranteed.",
+    answer="This prerecorded webinar explains what MarTech is and how Adobe Experience Platform (AEP) works, then walks through a retail example from schema and ingestion to profile, audience and activation. It is a beginner-friendly introduction to the Infiante360 MarTech bootcamp. Register through the webinar platform; training outcomes such as jobs or certification are not guaranteed.",
     sections=[
         ("Watch the webinar", PLAYER, "plain", "Prerecorded"),
         ("What is covered", tl(AGENDA), "alt", "Agenda"),
@@ -64,7 +64,7 @@ WEBINAR_PAGE = dict(
         ("How the Adobe ecosystem fits", '<ul class="checklist"><li><strong>Real-Time CDP:</strong> audience building and activation.</li><li><strong>Journey Optimizer:</strong> journey orchestration and personalised engagement.</li><li><strong>Customer Journey Analytics:</strong> analysis of journeys across configured data sources.</li><li><strong>Adobe Analytics:</strong> digital analytics and behavioural reporting.</li><li><strong>Experience Manager:</strong> content and experience management.</li></ul>', "alt", "Ecosystem"),
         ("Your next step: the bootcamp", '<p>The bootcamp learning path covers the MarTech ecosystem, AEP and XDM design, ingestion, identity and profile, audiences and activation, RTCDP, AJO and CJA foundations, and practical troubleshooting scenarios.</p>'
          '<p class="cta-row"><a class="btn btn-primary" href="programs/weekday-morning-batch.html">Weekday morning batch</a><a class="btn btn-ghost" href="aep-launchpad-bootcamp.html">AEP Launchpad bootcamp</a><a class="btn btn-ghost" href="../training/">Career Accelerator · ₹60,000</a><a class="btn btn-ghost" href="../brochures.html">Download brochures</a><a class="btn btn-ghost" href="free-resources.html">Free resources</a></p>'
-         '<p class="small muted">Some content is created or enhanced using AI and reviewed. Infinite360 is independent and not affiliated with Adobe. Training does not guarantee employment, salary or certification.</p>', "dark", "Continue"),
+         '<p class="small muted">Some content is created or enhanced using AI and reviewed. Infiante360 is independent and not affiliated with Adobe. Training does not guarantee employment, salary or certification.</p>', "dark", "Continue"),
     ],
     faqs=[("Who is this webinar for?", "Beginners, working professionals, data engineers, analysts, digital marketers and career switchers who want a foundation in MarTech and AEP."),
           ("Is it live?", "No. It is a prerecorded webinar, shown in a live-style format by the webinar platform."),

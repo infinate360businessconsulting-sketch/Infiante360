@@ -28,14 +28,14 @@ def wrap(pre, kicker, h1, body):
 <body style="margin:0;padding:0;background:#eef3f8"><div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#eef3f8">{e(pre)}&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;</div>
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#eef3f8"><tr><td align="center" style="padding:24px 10px">
 <table role="presentation" class="w" width="680" cellpadding="0" cellspacing="0" border="0" style="width:680px;max-width:100%;background:#fff;border-radius:18px;overflow:hidden">
-<tr><td align="center" bgcolor="{NAVY}" style="padding:22px 28px"><a href="{B}"><img src="{LOGO}" alt="Infinite360 Tech Academy" width="230" style="display:block;border:0;max-width:100%"></a></td></tr>
-<tr><td bgcolor="#071a36"><img src="{HERO}" alt="Infinite360 Adobe MarTech and Agentic AI Career Accelerator" width="680" style="display:block;width:100%;max-width:680px;border:0"></td></tr>
+<tr><td align="center" bgcolor="{NAVY}" style="padding:22px 28px"><a href="{B}"><img src="{LOGO}" alt="Infiante360 Tech Academy" width="230" style="display:block;border:0;max-width:100%"></a></td></tr>
+<tr><td bgcolor="#071a36"><img src="{HERO}" alt="Infiante360 Adobe MarTech and Agentic AI Career Accelerator" width="680" style="display:block;width:100%;max-width:680px;border:0"></td></tr>
 <tr><td class="p" style="padding:34px 38px 8px"><p style="margin:0 0 8px;font:bold 13px/18px Arial;letter-spacing:1.5px;color:#009fe3">{kicker}</p>
 <h1 class="h" style="margin:0 0 16px;font:800 32px/37px Arial,Helvetica,sans-serif;color:{INK}">{e(h1)}</h1>{body}
-<tr><td align="center" bgcolor="{NAVY}" style="padding:26px 30px;font:13px/20px Arial,Helvetica,sans-serif;color:#cbd5e1"><strong style="color:#fff;font-size:14px">Infinite360 Tech Academy</strong><br>Practical Adobe MarTech &bull; Customer Data &bull; Analytics &bull; Agentic AI<br>
+<tr><td align="center" bgcolor="{NAVY}" style="padding:26px 30px;font:13px/20px Arial,Helvetica,sans-serif;color:#cbd5e1"><strong style="color:#fff;font-size:14px">Infiante360 Tech Academy</strong><br>Practical Adobe MarTech &bull; Customer Data &bull; Analytics &bull; Agentic AI<br>
 WhatsApp <a href="{WA}" style="color:#22d3ee;text-decoration:none">+91 82968 93895</a> | <a href="mailto:{MAIL}" style="color:#22d3ee;text-decoration:none">{MAIL}</a>
-<p style="margin:12px 0 0;font-size:11px;line-height:17px;color:#94a3b8">Training outcomes depend on participation and practice; no job, salary, certification or business outcome is guaranteed. Sent by Infiante 360 Global Services PVT LTD (Infinite360). Independent and not affiliated with or endorsed by Adobe.<br>
-You are receiving this because you enquired about or showed interest in Infinite360 MarTech learning. <a href="{{{{UnsubscribeURL}}}}" style="color:#94a3b8">Unsubscribe</a> or reply STOP.<br>{{{{postal_address}}}}</p></td></tr>
+<p style="margin:12px 0 0;font-size:11px;line-height:17px;color:#94a3b8">Training outcomes depend on participation and practice; no job, salary, certification or business outcome is guaranteed. Sent by Infiante 360 Global Services PVT LTD (Infiante360). Independent and not affiliated with or endorsed by Adobe.<br>
+You are receiving this because you enquired about or showed interest in Infiante360 MarTech learning. <a href="{{{{UnsubscribeURL}}}}" style="color:#94a3b8">Unsubscribe</a> or reply STOP.<br>{{{{postal_address}}}}</p></td></tr>
 </table></td></tr></table></body></html>"""
 
 
@@ -53,7 +53,7 @@ PROJ = [("Customer 360", "sources, XDM, identity, profile, audiences, activation
 PATHS = "AEP Developer, AEP Data Engineer, Customer Data Engineer, CJA Analyst, MarTech Integration Engineer, AEP Architect, MarTech Architect, Adobe MarTech Consultant, MarTech Business Analyst, MarTech Program Manager"
 
 E = []
-E.append(("1-resources", "Your complete Adobe MarTech learning path, in one place", "Course resources for AEP, XDM, identity, RTCDP, AJO, CJA, Web SDK and Agentic AI.", "INFINITE360 TECH ACADEMY", "Your complete Adobe MarTech learning path starts here.", 0,
+E.append(("1-resources", "Your complete Adobe MarTech learning path, in one place", "Course resources for AEP, XDM, identity, RTCDP, AJO, CJA, Web SDK and Agentic AI.", "INFIANTE360 TECH ACADEMY", "Your complete Adobe MarTech learning path starts here.", 0,
  f'<p style="margin:0 0 18px;font:17px/27px Arial,Helvetica,sans-serif;color:#40516a">Hi {{{{FirstName}}}},<br><br>If you want to strengthen your Adobe MarTech skills, or move from a technology, data, analytics, cloud or consulting background into enterprise MarTech, we have put the learning path in one place.</p></td></tr>'
  + block(btn("Open the course resources", DRIVE), "#fff")
  + block(f'<h2 style="margin:0 0 6px;font:800 22px/28px Arial;color:{INK}">What the library covers</h2><table role="presentation" width="100%" cellpadding="0" cellspacing="0">{rows(LIB)}</table>', "#f8fafc")

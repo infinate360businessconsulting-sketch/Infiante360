@@ -10,12 +10,12 @@ CORE = [
     dict(
         path="index.html",
         nav="Home",
-        title="Infinite360 | Adobe MarTech Consulting, AEP Training & AI",
+        title="Infiante360 | Adobe MarTech Consulting, AEP Training & AI",
         desc="Adobe MarTech consulting and training for AEP, Real-Time CDP, Journey Optimizer, CJA and Agentic AI — for enterprise teams and professionals.",
         h1="Turn customer data into intelligent experiences",
         kicker="Adobe MarTech · Customer Data · Agentic AI",
         keywords=["adobe martech consulting", "adobe experience platform training", "aep consultant india", "martech consultant", "agentic ai martech", "adobe experience cloud consultant"],
-        answer="Infinite360 is an Adobe MarTech consulting and learning brand. We help enterprises design and implement Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics, and help professionals build practical AEP and Agentic AI skills through hands-on training and free guides.",
+        answer="Infiante360 is an Adobe MarTech consulting and learning brand. We help enterprises design and implement Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics, and help professionals build practical AEP and Agentic AI skills through hands-on training and free guides.",
         schema="WebPage",
         hero_ctas=True,
         sections=[
@@ -53,24 +53,24 @@ CORE = [
 </div>"""),
         ],
         faqs=[
-            ("What does Infinite360 do?", "Infinite360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
-            ("How do I contact Infinite360?", "Use the contact form, WhatsApp +91 82968 93895, or book a call from the contact page."),
+            ("What does Infiante360 do?", "Infiante360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
+            ("How do I contact Infiante360?", "Use the contact form, WhatsApp +91 82968 93895, or book a call from the contact page."),
         ],
         related=["services/index.html", "training/index.html", "adobe-experience-platform/index.html"],
     ),
     dict(
         path="about-us.html",
         nav="About",
-        title="About Infinite360 | Adobe MarTech Consulting & Tech Academy",
-        desc="About Infinite360: Adobe MarTech consulting and learning focused on AEP, customer data, analytics, data engineering and Agentic AI.",
-        h1="About Infinite360",
+        title="About Infiante360 | Adobe MarTech Consulting & Tech Academy",
+        desc="About Infiante360: Adobe MarTech consulting and learning focused on AEP, customer data, analytics, data engineering and Agentic AI.",
+        h1="About Infiante360",
         kicker="Learn · Build · Transform · Lead",
-        keywords=["about infinite360", "infinite360 tech academy", "pavan babu gandla", "adobe martech consultant", "martech academy india"],
-        answer="Infinite360 is a practical learning and enterprise enablement brand focused on Adobe MarTech, customer data, analytics, data engineering, Agentic AI and digital transformation. It combines consulting for enterprises with hands-on training for teams and individual professionals.",
+        keywords=["about infiante360", "infiante360 tech academy", "pavan babu gandla", "adobe martech consultant", "martech academy india"],
+        answer="Infiante360 is a practical learning and enterprise enablement brand focused on Adobe MarTech, customer data, analytics, data engineering, Agentic AI and digital transformation. It combines consulting for enterprises with hands-on training for teams and individual professionals.",
         schema="AboutPage",
         sections=[
             ("Who we are", """
-<p>Infinite360 is built around a simple idea: professionals learn faster, and platforms deliver more, when concepts are connected to architecture, implementation, troubleshooting and business context.</p>
+<p>Infiante360 is built around a simple idea: professionals learn faster, and platforms deliver more, when concepts are connected to architecture, implementation, troubleshooting and business context.</p>
 <p>Our work spans <a href="adobe-experience-platform/index.html">Adobe Experience Platform</a>, XDM, identity, <a href="services/real-time-cdp.html">Real-Time CDP</a>, <a href="services/adobe-journey-optimizer.html">Journey Optimizer</a>, <a href="services/customer-journey-analytics.html">Customer Journey Analytics</a>, Adobe Analytics, <a href="services/web-sdk-adobe-tags.html">Web SDK</a>, APIs, <a href="services/agentic-ai-mcp.html">Agentic AI and MCP</a>, <a href="services/data-engineering.html">data engineering</a> and enterprise architecture.</p>"""),
             ("Leadership", """
 <div class="card person">
@@ -95,7 +95,7 @@ CORE = [
 </ul>"""),
         ],
         faqs=[
-            ("Is Infinite360 an Adobe partner?", "Infinite360 is an independent consulting and training brand. Adobe product names are trademarks of Adobe; their use here describes the technologies we work with and does not imply endorsement."),
+            ("Is Infiante360 an Adobe partner?", "Infiante360 is an independent consulting and training brand. Adobe product names are trademarks of Adobe; their use here describes the technologies we work with and does not imply endorsement."),
         ],
         related=["services/index.html", "training/index.html", "contact-us.html"],
     ),
@@ -108,9 +108,9 @@ CORE = [
         title="AEP Course: Adobe MarTech & Agentic AI Career Accelerator",
         desc="Live online Adobe Experience Platform course: AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI training with projects, labs and interview prep.",
         h1="Adobe MarTech + Agentic AI career accelerator",
-        kicker="Infinite360 Tech Academy",
+        kicker="Infiante360 Tech Academy",
         keywords=["adobe experience platform course", "aep training", "aep course online", "aep certification training", "rtcdp training", "ajo training", "cja training", "adobe martech training india"],
-        answer="The Infinite360 career accelerator is a live, online, hands-on Adobe Experience Platform course for professionals moving into Adobe MarTech roles. It covers AEP, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI through labs, enterprise-style projects, troubleshooting scenarios and interview preparation.",
+        answer="The Infiante360 career accelerator is a live, online, hands-on Adobe Experience Platform course for professionals moving into Adobe MarTech roles. It covers AEP, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI through labs, enterprise-style projects, troubleshooting scenarios and interview preparation.",
         schema="Course",
         sections=[
             ("What you will learn", """
@@ -184,7 +184,7 @@ CORE = [
         h1="Corporate Adobe MarTech training",
         kicker="Capability building",
         keywords=["corporate aep training", "adobe experience platform training for enterprise teams", "martech team upskilling", "rtcdp corporate training", "agentic ai corporate training"],
-        answer="Corporate training from Infinite360 upskills enterprise MarTech, data and consulting teams through tailored, project-based programs on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI, with labs, assessments and capstones aligned to your use cases.",
+        answer="Corporate training from Infiante360 upskills enterprise MarTech, data and consulting teams through tailored, project-based programs on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI, with labs, assessments and capstones aligned to your use cases.",
         schema="Service",
         service_type="Corporate MarTech training",
         sections=[
@@ -325,7 +325,7 @@ CORE = [
         h1="Industries we focus on",
         kicker="Industries",
         keywords=["adobe experience platform banking", "cdp for retail", "telecom churn adobe", "hospitality personalization", "bfsi martech consulting"],
-        answer="Infinite360 focuses on industries with rich customer data and real-time engagement needs: banking, financial services and insurance (BFSI), retail and e-commerce, telecom, and travel and hospitality. The same AEP foundation applies, but identity, consent and use cases differ by industry.",
+        answer="Infiante360 focuses on industries with rich customer data and real-time engagement needs: banking, financial services and insurance (BFSI), retail and e-commerce, telecom, and travel and hospitality. The same AEP foundation applies, but identity, consent and use cases differ by industry.",
         schema="WebPage",
         sections=[
             ("Banking, financial services and insurance", "<p>Strict identity around customer IDs, sensitive-data governance, consent, onboarding and cross-sell journeys, and service personalisation. See <a href=\"adobe-experience-platform/architecture.html\">AEP architecture</a> for governance patterns.</p>"),
@@ -341,22 +341,22 @@ CORE = [
     dict(
         path="faq.html",
         nav="FAQ",
-        title="FAQ: Adobe MarTech Consulting, AEP Training & Infinite360",
-        desc="Answers to common questions about Infinite360 consulting and training, Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA and Agentic AI.",
+        title="FAQ: Adobe MarTech Consulting, AEP Training & Infiante360",
+        desc="Answers to common questions about Infiante360 consulting and training, Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA and Agentic AI.",
         h1="Frequently asked questions",
         kicker="FAQ",
-        keywords=["infinite360 faq", "aep training faq", "adobe experience platform faq", "martech consulting faq"],
-        answer="Quick answers about Infinite360's consulting and training, and about Adobe Experience Platform concepts. For anything not covered here, contact us through the form or WhatsApp.",
+        keywords=["infiante360 faq", "aep training faq", "adobe experience platform faq", "martech consulting faq"],
+        answer="Quick answers about Infiante360's consulting and training, and about Adobe Experience Platform concepts. For anything not covered here, contact us through the form or WhatsApp.",
         schema="FAQPage",
         sections=[],
         faqs=[
             ("What is Adobe Experience Platform (AEP)?", "AEP is Adobe's real-time customer data foundation that standardises data with XDM, ingests it, resolves identities, builds profiles, evaluates audiences and powers applications such as Real-Time CDP, Journey Optimizer and CJA."),
             ("What is the difference between AEP and Real-Time CDP?", "AEP is the data foundation; Real-Time CDP is an application on AEP that adds activation to destinations."),
-            ("What services does Infinite360 offer?", "Adobe MarTech consulting (AEP, RTCDP, AJO, CJA, Web SDK), data engineering, Agentic AI and MCP, strategy and advisory, corporate training and an individual career accelerator."),
+            ("What services does Infiante360 offer?", "Adobe MarTech consulting (AEP, RTCDP, AJO, CJA, Web SDK), data engineering, Agentic AI and MCP, strategy and advisory, corporate training and an individual career accelerator."),
             ("Is the training online?", "Yes. Training is delivered live online with hands-on labs and projects."),
             ("What is the course fee?", "The Adobe MarTech + Agentic AI Career Accelerator fee is ₹60,000. Corporate programs are quoted per engagement."),
             ("Do you guarantee jobs or certification?", "No. Outcomes depend on participation and practice. We do not guarantee jobs, salaries or certification results."),
-            ("Is Infinite360 affiliated with Adobe?", "No. Infinite360 is independent. Adobe product names are trademarks of Adobe."),
+            ("Is Infiante360 affiliated with Adobe?", "No. Infiante360 is independent. Adobe product names are trademarks of Adobe."),
             ("How do I get started?", "Use the contact form to describe your goal, or message us on WhatsApp at +91 82968 93895."),
         ],
         related=["contact-us.html", "training/index.html", "services/index.html"],
@@ -364,11 +364,11 @@ CORE = [
     dict(
         path="contact-us.html",
         nav="Contact",
-        title="Contact Infinite360 | AEP Consulting & Training Enquiries",
-        desc="Contact Infinite360 about AEP consulting, RTCDP, AJO, CJA, Agentic AI, corporate training or the career accelerator. Form, WhatsApp or call.",
-        h1="Contact Infinite360",
+        title="Contact Infiante360 | AEP Consulting & Training Enquiries",
+        desc="Contact Infiante360 about AEP consulting, RTCDP, AJO, CJA, Agentic AI, corporate training or the career accelerator. Form, WhatsApp or call.",
+        h1="Contact Infiante360",
         kicker="Let's talk",
-        keywords=["contact infinite360", "aep consultant contact", "adobe martech consulting enquiry", "aep training enquiry"],
+        keywords=["contact infiante360", "aep consultant contact", "adobe martech consulting enquiry", "aep training enquiry"],
         answer="Tell us what you need and we will reply by your preferred contact method. Use the form below for consulting, corporate training or course enquiries, or reach us directly on WhatsApp or by email.",
         schema="ContactPage",
         sections=[("Send an enquiry", "@@CONTACT_FORM@@")],
@@ -377,12 +377,12 @@ CORE = [
     ),
     dict(
         path="privacy-policy.html",
-        title="Privacy Policy | Infinite360",
-        desc="How Infinite360 handles form submissions, consent-based analytics cookies and lead workflows, and how to request access, correction or deletion.",
+        title="Privacy Policy | Infiante360",
+        desc="How Infiante360 handles form submissions, consent-based analytics cookies and lead workflows, and how to request access, correction or deletion.",
         h1="Privacy policy",
         kicker="Legal",
         keywords=[],
-        answer="We collect only what you enter in our forms and, if you accept analytics cookies, anonymous usage data. Form details are emailed to Infinite360 and may be passed to our lead-management workflow so we can respond. We do not sell personal information, and you can ask us to access, correct or delete it at any time.",
+        answer="We collect only what you enter in our forms and, if you accept analytics cookies, anonymous usage data. Form details are emailed to Infiante360 and may be passed to our lead-management workflow so we can respond. We do not sell personal information, and you can ask us to access, correct or delete it at any time.",
         schema="WebPage",
         sections=[
             ("What we collect", "<p>Information you choose to enter in a form &mdash; for example name, email, phone, company, role, country, area of interest, message and, for reviews, your review and publishing permission &mdash; plus the page you submitted from and campaign source parameters (such as utm_source) if present.</p>"),

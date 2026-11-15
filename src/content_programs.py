@@ -203,7 +203,7 @@ P.append(program_page(
  ["academy/free-resources.html", "training/index.html", "academy/community.html"]))
 
 PATHS_PAGE = dict(
- path="academy/career-paths-by-background.html", title="Adobe MarTech Career Paths by Background | Infinite360",
+ path="academy/career-paths-by-background.html", title="Adobe MarTech Career Paths by Background | Infiante360",
  desc="Move into Adobe MarTech and Agentic AI from developer, data, cloud, analytics, QA, consulting, management or fresher backgrounds: roles and skills to build.",
  h1="Adobe MarTech career paths by background", kicker="Academy · Career transition",
  keywords=["career change to adobe martech", "aep developer career", "cja analyst career", "martech architect path", "adobe martech roles for freshers"],

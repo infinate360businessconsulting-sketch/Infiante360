@@ -26,7 +26,7 @@ def topic_page(t):
     for n, (q, a, ids) in enumerate(t["items"]):
         for i in ids:
             if i not in used: used.append(i)
-        src = f'<p class="small muted">Sources: {cites(ids)}</p>' if ids else '<p class="small muted">Source: Infinite360 Tech Academy programme information.</p>'
+        src = f'<p class="small muted">Sources: {cites(ids)}</p>' if ids else '<p class="small muted">Source: Infiante360 Tech Academy programme information.</p>'
         secs.append((q, f"<p>{e(a)}</p>{src}", "alt" if n % 2 else "plain", f"Q{n+1}"))
     secs.append(("Ask a question or join a demo", cta("../") + f'<p class="small muted">{e(DISCLOSE)}</p>', "plain", "Contact"))
     others = [o for o in TOPICS if o["slug"] != t["slug"]][:4]
@@ -53,7 +53,7 @@ USE = _all_ids()
 
 INDEX = dict(
     path="answers/index.html", nav="Answers",
-    title="Adobe AEP, AJO & CJA Answers Hub: Sourced Q&A | Infinite360"[:65],
+    title="Adobe AEP, AJO & CJA Answers Hub: Sourced Q&A | Infiante360"[:65],
     desc=f"{TOTAL} short answers on Adobe Experience Platform, Real-Time CDP, AJO, CJA, Web SDK and Agentic AI, each cited to official documentation."[:160],
     h1="Adobe Experience Platform answers hub", kicker="Answers · Sourced Q&A",
     keywords=["aep questions and answers", "adobe experience platform faq", "aep interview questions", "aep citations"],
@@ -69,7 +69,7 @@ INDEX = dict(
 
 SOURCES = dict(
     path="answers/sources.html", nav="Sources",
-    title="Citations: Adobe Documentation Used in Our Answers | Infinite360"[:65],
+    title="Citations: Adobe Documentation Used in Our Answers | Infiante360"[:65],
     desc=f"The {len(USE)} official Adobe documentation pages cited across our {TOTAL} AEP, AJO, CJA and Web SDK answers, with the number of answers using each."[:160],
     h1="Cited Adobe documentation", kicker="Answers · Citations",
     keywords=["adobe experience platform documentation", "aep citations", "experience league links"],

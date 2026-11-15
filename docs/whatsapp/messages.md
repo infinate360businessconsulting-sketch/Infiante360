@@ -3,7 +3,7 @@
 Facts used: dates 10-15 Nov 2026, 10-11 PM IST, links from the owner. Not included: the "₹90 lakh CTC" story. Add it only with evidence and the person's written permission, worded as an individual outcome, never as a program result.
 
 ## 1. Community welcome (pin in Group 1)
-🚀 WELCOME TO THE INFINITE360 MARTECH SME ACCELERATOR COMMUNITY
+🚀 WELCOME TO THE INFIANTE360 MARTECH SME ACCELERATOR COMMUNITY
 
 A professional learning and networking community for Adobe MarTech, customer data, data engineering and Agentic AI practitioners.
 
@@ -26,7 +26,7 @@ Day 6 (15 Nov): Enterprise MarTech Architecture, Integration Challenges & Agenti
 ℹ️ Details: https://infiante360techacademy.com/lp/martech-sme-accelerator.html
 
 Our seven groups:
-📢 Infinite360: Official Announcements
+📢 Infiante360: Official Announcements
 🚀 AEP & Real-Time CDP Learning Hub
 🧩 Data Engineering & MarTech Architecture
 🎯 AJO, CJA & Customer Experience
@@ -34,7 +34,7 @@ Our seven groups:
 🧪 Hands-on Labs, Projects & Test Series
 💼 MarTech SME Careers & Opportunities
 
-Infinite360 Tech Academy | Learn · Build · Transform · Lead
+Infiante360 Tech Academy | Learn · Build · Transform · Lead
 Independent of Adobe. No job, salary or certification is guaranteed.
 
 ## 2. Follow-up after a call (individual)
@@ -47,15 +47,15 @@ Registration is mandatory:
 4) Calendar: https://infiante360techacademy.com/assets/sme-accelerator.ics
 
 Would you prefer a short call first? Reply CALL with a convenient time.
-Infinite360 Tech Academy
+Infiante360 Tech Academy
 
 ## 3. Missed-call message
-Hi [Name], I called about the Infinite360 MarTech SME Accelerator and could not reach you. Six live demo evenings, 10-15 Nov, 10-11 PM IST: AEP, RTCDP, AJO, CJA, architecture and Agentic AI. If it fits your role or career plan, reply CALL with a time and I will explain the program in a few minutes.
+Hi [Name], I called about the Infiante360 MarTech SME Accelerator and could not reach you. Six live demo evenings, 10-15 Nov, 10-11 PM IST: AEP, RTCDP, AJO, CJA, architecture and Agentic AI. If it fits your role or career plan, reply CALL with a time and I will explain the program in a few minutes.
 Details and registration: https://infiante360techacademy.com/lp/martech-sme-accelerator.html
-Pavan Babu Gandla | Infinite360 Business Consulting | Infinite360 Tech Academy
+Pavan Babu Gandla | Infiante360 Business Consulting | Infiante360 Tech Academy
 
 ## 4. Combined broadcast (SME + CXO Hive)
-🚀 INFINITE360 | CONSULTING · ACADEMY
+🚀 INFIANTE360 | CONSULTING · ACADEMY
 Learn · Build · Transform · Lead
 
 PROGRAM 1: MARTECH SME ACCELERATOR (6-day live demo)
@@ -83,4 +83,4 @@ Independent of Adobe. Outcomes depend on individual effort; no job or salary gua
 ## 5. CXO Hive personal outreach
 Hello [Name], I tried reaching you. We run CXO Hive, a 10-week live program for C-level and senior leaders on enterprise MarTech, customer data, AI governance and the business case. It is separate from the SME demo series. Program: https://infiante360techacademy.com/academy/programs/executive-architecture-leadership.html | Community: https://chat.whatsapp.com/DmhexomXaR8GV1yHgPXXYS
 Happy to discuss fit on a short call: +91 82968 93895.
-Pavan Babu Gandla | Infinite360
+Pavan Babu Gandla | Infiante360

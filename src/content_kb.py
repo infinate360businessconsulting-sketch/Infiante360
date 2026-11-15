@@ -293,12 +293,12 @@ KB_ALL = KB + [AJO_BP, ADV]
 STUDENT_HUB = dict(
     path="learn/student-questions.html",
     title="AEP Student Questions: Answers from Live Batches",
-    desc="Answers to real questions from Infinite360 learners on AEP schemas, identity, ingestion, Web SDK, AJO, CJA and consent, with Adobe references.",
+    desc="Answers to real questions from Infiante360 learners on AEP schemas, identity, ingestion, Web SDK, AJO, CJA and consent, with Adobe references.",
     h1="AEP student questions, answered",
     nav="Student questions",
     kicker="Knowledge base",
     keywords=["aep questions and answers", "aep doubts", "adobe experience platform faq", "aep interview questions answers", "aep troubleshooting questions"],
-    answer="These guides answer questions learners asked during live Infinite360 batches - about schemas, classes, identities, hashed email, ingestion, eVars and props, backfill, merge policies, Web SDK, data elements, journeys and consent. Each answer is written in plain language, anonymised and linked to Adobe Experience League for verification.",
+    answer="These guides answer questions learners asked during live Infiante360 batches - about schemas, classes, identities, hashed email, ingestion, eVars and props, backfill, merge policies, Web SDK, data elements, journeys and consent. Each answer is written in plain language, anonymised and linked to Adobe Experience League for verification.",
     schema="CollectionPage", category="Guides",
     sections=[(t, '<div class="grid-2">' + "".join(
         f'<a class="card link-card" href="../{g["path"]}"><span class="tag">{g["kicker"].split("· ")[1]}</span><h3>{g["h1"]}</h3><p>{g["desc"]}</p></a>' for g in grp) + "</div>")

@@ -34,7 +34,7 @@ CORP = [
         h1="Solutions built on a governed customer data foundation",
         kicker="Solutions",
         keywords=["martech solutions", "customer 360 solution", "real-time personalization adobe", "churn prevention martech", "b2b lead to revenue"],
-        answer="Infinite360 delivers four core solution patterns on Adobe Experience Cloud: Customer 360 and identity resolution, real-time personalisation, retention and churn prevention, and B2B lead-to-revenue alignment. Each starts from a business outcome and is built on the same governed AEP data foundation.",
+        answer="Infiante360 delivers four core solution patterns on Adobe Experience Cloud: Customer 360 and identity resolution, real-time personalisation, retention and churn prevention, and B2B lead-to-revenue alignment. Each starts from a business outcome and is built on the same governed AEP data foundation.",
         schema="CollectionPage",
         hero_cta=("Talk about your use case", "contact-us.html"),
         sections=[
@@ -139,7 +139,7 @@ CORP = [
         h1="Adobe Experience Cloud consulting",
         kicker="Platforms",
         keywords=["adobe experience cloud consulting", "adobe analytics consultant", "adobe target consultant", "aem consulting", "adobe campaign consultant", "marketo consultant"],
-        answer="Infinite360 consults across the Adobe Experience Cloud: the data foundation (AEP, Real-Time CDP), engagement (Journey Optimizer, Campaign, Marketo Engage), experience (Target, Experience Manager, Commerce) and insight (Adobe Analytics, Customer Journey Analytics). We focus on how these products connect through shared data, identity and governance.",
+        answer="Infiante360 consults across the Adobe Experience Cloud: the data foundation (AEP, Real-Time CDP), engagement (Journey Optimizer, Campaign, Marketo Engage), experience (Target, Experience Manager, Commerce) and insight (Adobe Analytics, Customer Journey Analytics). We focus on how these products connect through shared data, identity and governance.",
         schema="Service",
         service_type="Adobe Experience Cloud consulting",
         hero_cta=("Discuss your Adobe stack", "contact-us.html"),
@@ -164,7 +164,7 @@ CORP = [
 <li>Platform audits and readiness assessments</li><li>Architecture and integration design</li>
 <li>Implementation and migration support</li><li>Data collection and governance</li>
 <li>Team enablement and runbooks</li><li>Optimisation roadmaps</li></ul>
-<p class="small muted">Infinite360 is independent and not an Adobe partner; product availability depends on your Adobe licences.</p>""", "dark", "Capabilities"),
+<p class="small muted">Infiante360 is independent and not an Adobe partner; product availability depends on your Adobe licences.</p>""", "dark", "Capabilities"),
         ],
         faqs=[("Which Adobe products do you implement hands-on?", "Our deepest hands-on focus is AEP, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics and Web SDK. For other products we advise on architecture and integration and scope delivery per engagement.")],
         sources=[("Adobe Experience League", "https://experienceleague.adobe.com/")],
@@ -174,12 +174,12 @@ CORP = [
         path="pavan-babu-gandla.html",
         bands=True,
         title="Pavan Babu Gandla | Digital Transformation & MarTech Leader",
-        desc="Pavan Babu Gandla, founder of Infinite360: Digital Transformation and MarTech leader focused on Adobe Experience Cloud, customer data and Agentic AI.",
+        desc="Pavan Babu Gandla, founder of Infiante360: Digital Transformation and MarTech leader focused on Adobe Experience Cloud, customer data and Agentic AI.",
         h1="Pavan Babu Gandla",
         kicker="Founder · Digital Transformation & MarTech Leader",
         lede="Adobe Experience Cloud SME and Agentic AI architect helping enterprises turn customer data into revenue, retention and real-time intelligence.",
         keywords=["pavan babu gandla", "adobe experience cloud sme", "martech consultant india", "agentic ai architect", "fractional cdo martech"],
-        answer="Pavan Babu Gandla is the founder of Infinite360 and a Digital Transformation and MarTech leader. He focuses on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, enterprise architecture and Agentic AI, advising CDOs, CTOs and CMOs on customer data and AI transformation.",
+        answer="Pavan Babu Gandla is the founder of Infiante360 and a Digital Transformation and MarTech leader. He focuses on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, enterprise architecture and Agentic AI, advising CDOs, CTOs and CMOs on customer data and AI transformation.",
         schema="ProfilePage",
         hero_cta=("Book a discovery call", "https://calendar.app.google/5CHbD1hmQBHxcJyy5"),
         sections=[
@@ -194,7 +194,7 @@ CORP = [
             ("Expertise", """<div class="logo-band" style="justify-content:flex-start"><span>Adobe Experience Platform</span><span>Real-Time CDP</span><span>Journey Optimizer</span><span>Customer Journey Analytics</span><span>Web SDK</span><span>Identity resolution</span><span>Data governance</span><span>Enterprise architecture</span><span>Agentic AI &amp; MCP</span><span>Google Cloud</span><span>Azure</span><span>Kafka</span><span>Spark</span><span>LangChain</span><span>Adobe I/O</span></div>
 <p style="margin-top:20px">Industries: BFSI, retail, telecom, hospitality, healthcare and enterprise technology. Engagements are delivered remotely for organisations across EMEA, APAC and North America.</p>""", "alt", "Focus areas"),
             ("Consulting portfolio", f'<p class="lead">Case studies, insights and certifications are published on the personal consulting portfolio.</p><p class="cta-row"><a class="btn btn-primary" href="{PORTFOLIO}" rel="noopener" target="_blank">Visit martechconsultant.tech</a><a class="btn btn-ghost" href="https://linkedin.com/in/pavanbabu1" rel="noopener" target="_blank">LinkedIn</a></p>', "plain", "More"),
-            ("Learn with Pavan", '<p>Pavan leads the Infinite360 Tech Academy career accelerator and corporate programs.</p><p class="cta-row"><a class="btn btn-light" href="training/index.html">Career accelerator</a><a class="btn btn-ghost" style="color:#fff" href="training/corporate-training.html">Corporate training</a></p>', "dark", "Academy"),
+            ("Learn with Pavan", '<p>Pavan leads the Infiante360 Tech Academy career accelerator and corporate programs.</p><p class="cta-row"><a class="btn btn-light" href="training/index.html">Career accelerator</a><a class="btn btn-ghost" style="color:#fff" href="training/corporate-training.html">Corporate training</a></p>', "dark", "Academy"),
         ],
         faqs=[("How do I engage Pavan for consulting?", "Book a discovery call or use the contact form, describing your Adobe stack, the business problem and your timeline.")],
         related=["about-us.html", "services/martech-strategy-advisory.html", "training/index.html"],

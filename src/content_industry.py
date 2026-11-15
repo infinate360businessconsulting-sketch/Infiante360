@@ -141,7 +141,7 @@ PROJECT_PAGE = dict(
     h1="Hands-on Adobe MarTech projects and capstone portfolio",
     kicker="Academy projects", nav="Projects", schema="Article", category="Academy", date="2026-10-12",
     keywords=["aep projects for portfolio", "adobe experience platform hands-on project", "customer 360 project", "ajo journey project", "cja dashboard project"],
-    answer="Infinite360 Tech Academy learners build six enterprise-style projects on practice environments: Customer 360, a real-time transaction journey, RTCDP activation, a CJA executive dashboard, Web SDK modernisation and an Agentic AI marketing assistant. They give you evidence of practical skill for interviews. They do not guarantee a job.",
+    answer="Infiante360 Tech Academy learners build six enterprise-style projects on practice environments: Customer 360, a real-time transaction journey, RTCDP activation, a CJA executive dashboard, Web SDK modernisation and an Agentic AI marketing assistant. They give you evidence of practical skill for interviews. They do not guarantee a job.",
     sections=[
         ("The six projects", '<ol class="steps">' + "".join(f"<li><strong>{n}.</strong> {e(t)}</li>" for n, t in PROJECTS) + "</ol>"),
         ("How the projects work", '<ul class="checklist"><li>Built on simulation or sandbox environments with synthetic data</li><li>Each ends with documentation you can show in an interview</li><li>Reviewed against a checklist for schema, identity, consent and measurement</li><li>Part of the Career Accelerator and the recorded Foundation + Advanced course</li></ul>'),

@@ -13,7 +13,7 @@ SERVICES = [
         h1="Adobe MarTech consulting services",
         kicker="Consulting & advisory",
         keywords=["adobe martech consulting", "adobe experience cloud consultant", "martech consulting india", "aep consulting services", "enterprise martech consulting"],
-        answer="Infinite360 provides Adobe MarTech consulting across strategy, architecture, implementation and enablement: Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Tags, data engineering, and governed Agentic AI. Engagements range from architecture reviews to hands-on implementation support and team upskilling.",
+        answer="Infiante360 provides Adobe MarTech consulting across strategy, architecture, implementation and enablement: Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Tags, data engineering, and governed Agentic AI. Engagements range from architecture reviews to hands-on implementation support and team upskilling.",
         schema="CollectionPage",
         sections=[
             ("Services", "@@SERVICE_CARDS@@"),

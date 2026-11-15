@@ -1,7 +1,7 @@
 """Additional consulting service pages (original copy; no client names, metrics or guarantees)."""
 
 X = "https://experienceleague.adobe.com/en/docs"
-NOTE = "<p class=\"small muted\">Scope, delivery model and pricing are agreed per engagement. Product availability depends on your Adobe licences. Infinite360 is independent and not an Adobe partner.</p>"
+NOTE = "<p class=\"small muted\">Scope, delivery model and pricing are agreed per engagement. Product availability depends on your Adobe licences. Infiante360 is independent and not an Adobe partner.</p>"
 
 
 def _s(path, nav, title, desc, h1, kicker, kw, answer, stype, caps, steps, faqs, src, related):

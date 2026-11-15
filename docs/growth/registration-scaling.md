@@ -1,4 +1,4 @@
-# Registration scaling plan: Infinite360 Tech Academy
+# Registration scaling plan: Infiante360 Tech Academy
 
 Scope: the next MarTech SME Accelerator cohort (the 10-15 Nov run ends today) and every program after it.
 Rule: every number below is a target or a formula. Replace the "Actual" column with your own counts before deciding anything. No benchmark is claimed as fact.

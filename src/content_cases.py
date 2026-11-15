@@ -1,7 +1,7 @@
 """Case studies (simulation-based implementation projects and training delivery models),
 contract hiring, simulators and the learner recording platform.
 
-Integrity rule: implementation case studies are built on Infinite360 Tech Academy simulation
+Integrity rule: implementation case studies are built on Infiante360 Tech Academy simulation
 environments with synthetic data. They describe scope, architecture and approach only - no client
 names, endorsements or invented results.
 """
@@ -36,7 +36,7 @@ SIMULATORS = [
 ]
 SIM_URL = {s[2]: s[1] for s in SIMULATORS}
 
-SIM_NOTE = ('<p class="note"><strong>About this case study:</strong> this is an Infinite360 Tech Academy project case study delivered on a '
+SIM_NOTE = ('<p class="note"><strong>About this case study:</strong> this is an Infiante360 Tech Academy project case study delivered on a '
             'simulation environment with synthetic data. It shows the scope, architecture and approach our consultants and learners practise. '
             'It is not a client engagement and implies no affiliation with, or endorsement by, any company or brand.</p>')
 
@@ -88,7 +88,7 @@ def case_study(path, title, desc, h1, keywords, answer, industry, sim_key, platf
              + '<ol class="steps">' + "".join(f"<li><strong>{a}</strong> &mdash; {b}</li>" for a, b in flow) + "</ol>"),
             ("Use cases implemented", '<ul class="checklist cols-2">' + "".join(f"<li>{u}</li>" for u in use_cases) + "</ul>"),
             ("Validation and governance checks", '<ul class="checklist">' + "".join(f"<li>{v}</li>" for v in validation) + "</ul>"),
-            ("What Infinite360 brings", _cards(BRINGS)),
+            ("What Infiante360 brings", _cards(BRINGS)),
             ("From case study to contract delivery", f'<p>The roles that practise this case study &mdash; {roles} &mdash; are the same profiles we place through <a href="../services/contract-hiring.html">contract hiring</a> and <a href="../services/staff-augmentation.html">staff augmentation</a>. Because they have already built this pattern end to end, onboarding focuses on your systems and standards rather than on learning the platform.</p>'
              + pills(("Explore the simulator", sim), ("Hire contract talent", "../lp/hire-aep-contract-talent.html"), ("Request an architecture review", "../lp/aep-architecture-review.html"), ("Register for training", REGISTER))),
         ],
@@ -105,7 +105,7 @@ CASES = [
         "Banking case study on Adobe Experience Platform: Customer 360, loan-application journeys, cross-sell audiences and governed real-time personalisation.",
         "Banking Customer 360 and cross-sell on Adobe Experience Platform",
         ["banking customer 360 aep", "bfsi adobe experience platform case study", "loan application journey ajo", "bank cross-sell personalisation", "rtcdp banking"],
-        "This banking case study builds a governed Customer 360 on Adobe Experience Platform from core banking, CRM, web and app data, then uses Real-Time CDP audiences and Journey Optimizer to recover abandoned loan applications and run consent-aware cross-sell journeys. It is delivered on the Infinite360 banking simulator with synthetic data.",
+        "This banking case study builds a governed Customer 360 on Adobe Experience Platform from core banking, CRM, web and app data, then uses Real-Time CDP audiences and Journey Optimizer to recover abandoned loan applications and run consent-aware cross-sell journeys. It is delivered on the Infiante360 banking simulator with synthetic data.",
         "BFSI", "BFSI", "AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK", "AEP data engineer, identity architect, AJO developer, CJA analyst",
         "<p>A retail bank holds customer data in core banking, CRM, card and digital channels, each with its own identifier. Marketing cannot see a single customer, loan applications that stall are not followed up in time, and cross-sell offers ignore products the customer already holds. Strict regulation means consent and sensitive-data handling must be provable.</p>",
         [("Sources", ["Core banking", "CRM", "Cards", "Web &amp; app"]), ("Collect", ["Batch files", "Streaming", "Web SDK"]),
@@ -126,7 +126,7 @@ CASES = [
         "Airline case study: mobile app engagement, booking-to-boarding lifecycle and event-based personalisation with AEP and Adobe Journey Optimizer.",
         "Airline mobile engagement and journey orchestration",
         ["airline customer journey ajo", "travel mobile personalisation aep", "flight disruption notification journey", "airline cdp case study", "mobile sdk aep airline"],
-        "This airline case study connects mobile app events, bookings and loyalty data in Adobe Experience Platform, then orchestrates booking-to-boarding journeys and disruption notifications in Journey Optimizer with event-based personalisation. It runs on the Infinite360 airline simulator using synthetic passenger and flight data.",
+        "This airline case study connects mobile app events, bookings and loyalty data in Adobe Experience Platform, then orchestrates booking-to-boarding journeys and disruption notifications in Journey Optimizer with event-based personalisation. It runs on the Infiante360 airline simulator using synthetic passenger and flight data.",
         "Travel &amp; airlines", "Travel", "AEP, Mobile SDK, Journey Optimizer, Real-Time CDP, CJA", "Mobile SDK engineer, AJO journey designer, data engineer",
         "<p>An airline's app, booking engine, loyalty program and operations systems all hold part of the passenger story. Messages about check-in, upgrades and disruptions are sent from separate tools, so passengers receive duplicate or late communication and the airline cannot measure which messages change behaviour.</p>",
         [("Sources", ["Booking engine", "Loyalty", "Ops events", "Mobile app"]), ("Collect", ["Mobile SDK", "Streaming API"]),
@@ -147,7 +147,7 @@ CASES = [
         "Hospitality and services case study: loyalty profiles, customer service journeys, offer attribution and operational analytics on AEP, AJO and CJA.",
         "Hospitality loyalty, service journeys and operational analytics",
         ["hospitality cdp case study", "loyalty personalisation aep", "customer service journey ajo", "hospitality analytics cja", "offer attribution aep"],
-        "This hospitality and services case study builds loyalty-aware customer profiles in Adobe Experience Platform, runs service and loyalty journeys in Journey Optimizer, attributes offers to outcomes and reports operational performance in Customer Journey Analytics. It runs on the Infinite360 hospitality simulator with synthetic guest and service data.",
+        "This hospitality and services case study builds loyalty-aware customer profiles in Adobe Experience Platform, runs service and loyalty journeys in Journey Optimizer, attributes offers to outcomes and reports operational performance in Customer Journey Analytics. It runs on the Infiante360 hospitality simulator with synthetic guest and service data.",
         "Hospitality &amp; services", "Hospitality", "AEP, Journey Optimizer, CJA, Web SDK", "XDM modeller, AJO developer, CJA analyst, QA specialist",
         "<p>A hospitality and services business runs loyalty, service requests, product views and offers across many locations. Offer performance cannot be attributed, service follow-ups are manual and analytics teams spend days reconciling data before they can answer simple questions.</p>",
         [("Sources", ["Loyalty", "Service desk", "Web", "Offers"]), ("Collect", ["Web SDK", "Batch workflows"]),
@@ -169,7 +169,7 @@ CASES = [
         "Insurance case study on AEP and Journey Optimizer: policy onboarding journeys, claims updates, retention programs and automated renewal campaigns.",
         "Insurance policy onboarding, claims and renewal automation",
         ["insurance customer journey aep", "policy renewal campaign ajo", "insurance claims notification journey", "insurance cdp case study", "policyholder retention martech"],
-        "This insurance case study unifies policy, claims and digital data in Adobe Experience Platform and uses Journey Optimizer to onboard new policyholders, keep them informed during claims and automate renewal reminders with retention offers. It runs on the Infinite360 insurance simulator using synthetic policyholder data.",
+        "This insurance case study unifies policy, claims and digital data in Adobe Experience Platform and uses Journey Optimizer to onboard new policyholders, keep them informed during claims and automate renewal reminders with retention offers. It runs on the Infiante360 insurance simulator using synthetic policyholder data.",
         "Insurance", "Insurance", "AEP, Journey Optimizer, Real-Time CDP, CJA", "Data engineer, AJO developer, governance specialist",
         "<p>An insurer's policy administration, claims and digital systems are disconnected. New policyholders receive generic welcome packs, claimants chase updates by phone and renewal reminders go out on a fixed calendar regardless of risk or engagement.</p>",
         [("Sources", ["Policy admin", "Claims", "Agents/CRM", "Web"]), ("Collect", ["Batch", "Streaming", "Web SDK"]),
@@ -190,7 +190,7 @@ CASES = [
         "Telecom case study: subscriber acquisition, churn-risk audiences, network-event personalisation and lifecycle journeys with AEP, RTCDP and AJO.",
         "Telecom churn prevention and subscriber lifecycle journeys",
         ["telecom churn prevention aep", "subscriber lifecycle journey ajo", "network event personalisation", "telecom cdp case study", "churn risk audience rtcdp"],
-        "This telecom case study brings subscriber, usage, network-event and digital data into Adobe Experience Platform, builds churn-risk and upgrade audiences in Real-Time CDP and orchestrates save, upgrade and network-event journeys in Journey Optimizer. It runs on the Infinite360 telecom simulator using synthetic subscriber data.",
+        "This telecom case study brings subscriber, usage, network-event and digital data into Adobe Experience Platform, builds churn-risk and upgrade audiences in Real-Time CDP and orchestrates save, upgrade and network-event journeys in Journey Optimizer. It runs on the Infiante360 telecom simulator using synthetic subscriber data.",
         "Telecom", "Telecom", "AEP, Real-Time CDP, Journey Optimizer, CJA, Query Service", "Data engineer, data scientist, AJO developer, CJA analyst",
         "<p>A telecom operator sees churn only after a subscriber ports out. Usage drops, repeated network issues and contract end dates live in separate systems, so retention teams cannot intervene early and offers are not matched to the reason a subscriber is at risk.</p>",
         [("Sources", ["Billing", "Usage", "Network events", "App &amp; web"]), ("Collect", ["Batch", "Streaming"]),
@@ -211,7 +211,7 @@ CASES = [
         "End-to-end Adobe Experience Platform case study: schema design, identity, ingestion, Query Service, segmentation and activation in one project.",
         "End-to-end AEP implementation: schema to activation",
         ["aep implementation case study", "adobe experience platform end to end project", "aep schema to activation", "aep project for beginners", "aep hands on project"],
-        "This case study walks through a complete Adobe Experience Platform implementation: XDM schema design, identity namespaces, batch and streaming ingestion, Query Service validation, segmentation and activation to destinations. It is the core project in the Infinite360 AEP Simulator and the foundation for every industry case study.",
+        "This case study walks through a complete Adobe Experience Platform implementation: XDM schema design, identity namespaces, batch and streaming ingestion, Query Service validation, segmentation and activation to destinations. It is the core project in the Infiante360 AEP Simulator and the foundation for every industry case study.",
         "Cross-industry", "Platform", "AEP, Query Service, Real-Time CDP, Web SDK", "AEP developer, data engineer, solution architect",
         "<p>Teams new to Adobe Experience Platform often configure features in isolation and discover late that schemas, identities and datasets do not fit together. This project builds the platform in the right order so each step can be validated before the next.</p>",
         [("Sources", ["CSV/JSON files", "Web SDK", "Cloud storage"]), ("Model", ["Classes", "Field groups", "Data types"]),
@@ -254,7 +254,7 @@ CASES = [
         "Retail case study: stitching anonymous web, app, CRM and in-store purchases into one AEP profile, with a troubleshooting walkthrough for unstitched profiles.",
         "Retail omnichannel identity stitching and troubleshooting",
         ["aep identity stitching retail", "anonymous to known profile aep", "profile not merging aep", "omnichannel customer profile", "web sdk identitymap login"],
-        "This retail case study stitches anonymous browsing, app activity, CRM records and in-store purchases into one Real-Time Customer Profile, then walks through how to troubleshoot a profile that still shows as anonymous after login. It is a scenario used in Infinite360 architect-level troubleshooting sessions with synthetic data.",
+        "This retail case study stitches anonymous browsing, app activity, CRM records and in-store purchases into one Real-Time Customer Profile, then walks through how to troubleshoot a profile that still shows as anonymous after login. It is a scenario used in Infiante360 architect-level troubleshooting sessions with synthetic data.",
         "Retail", "Platform", "AEP, Web SDK, Mobile SDK, Real-Time CDP", "Web SDK engineer, identity architect, QA specialist",
         "<p>A retailer has a website on Web SDK, a mobile app on Mobile SDK, CRM batch files and a streaming point-of-sale feed. A shopper browses anonymously, views products, adds items to the cart, logs in and later buys in store &mdash; yet the profile still looks anonymous. The team needs a repeatable way to find the break.</p>",
         [("Channels", ["Web SDK", "Mobile SDK", "POS stream", "CRM batch"]), ("Identity", ["ECID", "Email", "CRM ID"]),
@@ -281,7 +281,7 @@ def training_case(path, title, desc, h1, keywords, answer, who, model, flow, com
             ("Delivery model", figure(flow_svg(h1, flow), "Learner journey through the program.") + '<ol class="steps">' + "".join(f"<li><strong>{a}</strong> &mdash; {b}</li>" for a, b in flow) + "</ol>"),
             ("What the program includes", '<ul class="checklist cols-2">' + "".join(f"<li>{c}</li>" for c in components) + "</ul>"),
             ("How progress is checked", '<ul class="checklist">' + "".join(f"<li>{m}</li>" for m in measures) + '</ul><p class="note">We report participation and assessment progress honestly. No job, salary or certification outcome is guaranteed.</p>'),
-            ("What Infinite360 brings", _cards(BRINGS[:3] + [BRINGS[4], ("Live mentor access", "Doubts are answered in class, in the community and in written follow-ups with references to Adobe documentation."), ("Simulators and sandboxes", "Industry simulators and practice environments so learners build, break and fix real configurations.")])),
+            ("What Infiante360 brings", _cards(BRINGS[:3] + [BRINGS[4], ("Live mentor access", "Doubts are answered in class, in the community and in written follow-ups with references to Adobe documentation."), ("Simulators and sandboxes", "Industry simulators and practice environments so learners build, break and fix real configurations.")])),
             ("Next steps", LINK_PILLS),
         ],
         faqs=[], related=related,
@@ -292,10 +292,10 @@ TRAINING_CASES = [
     training_case(
         "case-studies/career-accelerator-delivery-model.html",
         "Training Case Study: How the AEP Career Accelerator Runs",
-        "How the Infinite360 career accelerator is delivered: live classes, recordings, simulators, projects, doubt resolution and interview preparation.",
+        "How the Infiante360 career accelerator is delivered: live classes, recordings, simulators, projects, doubt resolution and interview preparation.",
         "How the AEP career accelerator is delivered",
         ["aep career accelerator", "adobe experience platform training program", "aep course with projects", "martech career training india", "aep interview preparation"],
-        "The Infinite360 career accelerator combines live online classes, recorded lessons on the learner platform, industry simulators, enterprise-style projects, mentor-led doubt resolution and interview preparation. Learners move from AEP foundations through RTCDP, AJO, CJA, Web SDK and Agentic AI, practising each skill on a project before moving on.",
+        "The Infiante360 career accelerator combines live online classes, recorded lessons on the learner platform, industry simulators, enterprise-style projects, mentor-led doubt resolution and interview preparation. Learners move from AEP foundations through RTCDP, AJO, CJA, Web SDK and Agentic AI, practising each skill on a project before moving on.",
         "<p>Working professionals and career switchers &mdash; developers, data engineers, analysts, testers, consultants and freshers &mdash; who want practical Adobe MarTech skills rather than slideware. See <a href=\"../training/career-transition.html\">career transition paths</a>.</p>",
         None,
         [("Career mapping", "background → target role"), ("Live classes", "concepts + demos"), ("Recordings", "learner platform"),
@@ -308,7 +308,7 @@ TRAINING_CASES = [
     training_case(
         "case-studies/corporate-team-enablement-model.html",
         "Training Case Study: Corporate Adobe Team Enablement Model",
-        "How Infinite360 enables corporate Adobe teams: skills baseline, role-based tracks, project labs, assessments and knowledge transfer into delivery.",
+        "How Infiante360 enables corporate Adobe teams: skills baseline, role-based tracks, project labs, assessments and knowledge transfer into delivery.",
         "Corporate Adobe team enablement model",
         ["corporate adobe training", "aep team enablement", "adobe experience platform corporate training", "martech capability building", "role based adobe training"],
         "Corporate enablement starts with a skills baseline, then runs role-based tracks for engineers, analysts, architects and managers, built around labs on your use cases. Assessments track progress, and knowledge transfer connects training to live delivery so teams apply what they learn on current projects.",
@@ -348,7 +348,7 @@ CONTRACT = [
         nav="Contract hiring",
         kicker="Contract hiring",
         keywords=["aep contract hiring", "adobe martech contract engineers", "hire aep developer contract", "contract to hire adobe consultant", "rtcdp ajo cja contract talent"],
-        answer="Infinite360 contract hiring provides Adobe MarTech engineers, analysts and architects who have built the same patterns end to end in simulator projects before they join you. Our aim is for each person to contribute from the first day: readiness is checked against your stack, and onboarding focuses on your systems, standards and backlog rather than on learning the platform.",
+        answer="Infiante360 contract hiring provides Adobe MarTech engineers, analysts and architects who have built the same patterns end to end in simulator projects before they join you. Our aim is for each person to contribute from the first day: readiness is checked against your stack, and onboarding focuses on your systems, standards and backlog rather than on learning the platform.",
         schema="Service", service_type="Contract hiring for Adobe MarTech talent", interest="staff",
         hero_cta=("Request contract talent", "lp/hire-aep-contract-talent.html"),
         sections=[
@@ -391,12 +391,12 @@ ACADEMY_EXTRA = [
     dict(
         path="academy/simulators.html",
         title="Adobe MarTech Simulators: AEP, Banking, Airline & Telecom",
-        desc="Hands-on simulation environments for AEP, BFSI, airline, hospitality, insurance and telecom scenarios used in Infinite360 bootcamps and projects.",
+        desc="Hands-on simulation environments for AEP, BFSI, airline, hospitality, insurance and telecom scenarios used in Infiante360 bootcamps and projects.",
         h1="Practical simulation environments for Adobe MarTech",
         nav="Simulators",
         kicker="Learning environments",
         keywords=["aep simulator", "adobe experience platform practice environment", "martech simulator", "banking aep simulation", "aep hands on practice"],
-        answer="Infinite360 Tech Academy provides simulation environments that replicate enterprise business scenarios: an Adobe MarTech consultant portal, an AEP simulator and industry simulators for banking, airlines, hospitality, insurance and telecom. Learners use them throughout bootcamps for schema design, identity, ingestion, journeys, analytics and Agentic AI use cases.",
+        answer="Infiante360 Tech Academy provides simulation environments that replicate enterprise business scenarios: an Adobe MarTech consultant portal, an AEP simulator and industry simulators for banking, airlines, hospitality, insurance and telecom. Learners use them throughout bootcamps for schema design, identity, ingestion, journeys, analytics and Agentic AI use cases.",
         schema="CollectionPage", category="Academy",
         sections=[
             ("Simulation environments", '<div class="grid-2">' + "".join(
@@ -414,12 +414,12 @@ ACADEMY_EXTRA = [
     dict(
         path="academy/recording-platform.html",
         title="Learner Recording Platform: Video Library & Onboarding",
-        desc="How Infinite360 Tech Academy learners access recorded batches: folder-based video library, naming standard, learning sequence and onboarding flow.",
+        desc="How Infiante360 Tech Academy learners access recorded batches: folder-based video library, naming standard, learning sequence and onboarding flow.",
         h1="The learner recording platform and video library",
         nav="Recording platform",
         kicker="Learner platform",
         keywords=["aep recorded course", "adobe training recordings", "tech academy video library", "recorded aep batch", "learn aep at your own pace"],
-        answer="Recorded batches are delivered through the Infinite360 Tech Academy learner app. Lessons are organised in a fixed sequence of folders - pre-recordings, walkthroughs, MarTech videos, interview accelerator, Adobe Experience content and Agentic AI pre-recordings - so learners sign in once, follow the same order and complete activities before moving on.",
+        answer="Recorded batches are delivered through the Infiante360 Tech Academy learner app. Lessons are organised in a fixed sequence of folders - pre-recordings, walkthroughs, MarTech videos, interview accelerator, Adobe Experience content and Agentic AI pre-recordings - so learners sign in once, follow the same order and complete activities before moving on.",
         schema="WebPage", category="Academy",
         hero_cta=("Open the learner platform", REGISTER),
         sections=[
@@ -453,17 +453,17 @@ PLAYLISTS = [
 
 ACADEMY_EXTRA.append(dict(
     path="academy/youtube-playlists.html",
-    title="Free AEP, AJO & CJA YouTube Playlists | Infinite360",
-    desc="Free Infinite360 Tech Academy YouTube playlists on Adobe Experience Platform, Journey Optimizer, CJA, Web SDK and Agentic AI.",
+    title="Free AEP, AJO & CJA YouTube Playlists | Infiante360",
+    desc="Free Infiante360 Tech Academy YouTube playlists on Adobe Experience Platform, Journey Optimizer, CJA, Web SDK and Agentic AI.",
     h1="Free Adobe MarTech YouTube playlists",
     nav="YouTube playlists",
     kicker="Free learning",
     keywords=["aep youtube playlist", "adobe experience platform free videos", "ajo tutorial videos", "cja tutorial youtube", "adobe martech free training"],
-    answer="Infinite360 Tech Academy publishes free YouTube playlists that cover Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Use them to preview the teaching style, revise concepts between classes or start learning before you enrol.",
+    answer="Infiante360 Tech Academy publishes free YouTube playlists that cover Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Use them to preview the teaching style, revise concepts between classes or start learning before you enrol.",
     schema="CollectionPage", category="Academy",
     sections=[
         ("Playlists", '<div class="grid-3">' + "".join(
-            f'<a class="card link-card" href="https://www.youtube.com/playlist?list={pid}" rel="noopener" target="_blank"><span class="tag">YouTube</span><h3>Infinite360 Tech Academy &middot; {n}</h3><p>Open the playlist on YouTube.</p><span class="more">Watch &rarr;</span></a>'
+            f'<a class="card link-card" href="https://www.youtube.com/playlist?list={pid}" rel="noopener" target="_blank"><span class="tag">YouTube</span><h3>Infiante360 Tech Academy &middot; {n}</h3><p>Open the playlist on YouTube.</p><span class="more">Watch &rarr;</span></a>'
             for pid, n in PLAYLISTS) + "</div>"),
         ("Watch our approach", pills(("Our training approach (video)", APPROACH_VIDEO), ("Featured videos", "videos.html"), ("Subscribe on YouTube", "https://www.youtube.com/@Infiante360TechAcademy"))),
         ("Go further", "<p>Videos explain concepts; projects build skill. When you are ready, move to the <a href=\"simulators.html\">simulators</a> and a <a href=\"index.html\">structured program</a>.</p>" + LINK_PILLS),
@@ -473,19 +473,19 @@ ACADEMY_EXTRA.append(dict(
 
 ACADEMY_EXTRA.append(dict(
     path="academy/community.html",
-    title="Infinite360 Community: LinkedIn Group, WhatsApp & Links",
-    desc="Join the Infinite360 Tech Academy community on LinkedIn and WhatsApp, and find every official academy link: LMS, simulators, brochure and focus areas.",
-    h1="Join the Infinite360 community",
+    title="Infiante360 Community: LinkedIn Group, WhatsApp & Links",
+    desc="Join the Infiante360 Tech Academy community on LinkedIn and WhatsApp, and find every official academy link: LMS, simulators, brochure and focus areas.",
+    h1="Join the Infiante360 community",
     nav="Community",
     kicker="Community",
-    keywords=["adobe martech community", "aep linkedin group", "infinite360 tech academy links", "martech whatsapp community", "aep learners community"],
-    answer="The Infinite360 community connects learners, alumni and practitioners through a LinkedIn group, the company LinkedIn page, WhatsApp and YouTube. This page lists every official academy link in one place - registration, learner LMS, simulators, program brochure, focus areas and the Agentic AI skills site - so you always use the right address.",
+    keywords=["adobe martech community", "aep linkedin group", "infiante360 tech academy links", "martech whatsapp community", "aep learners community"],
+    answer="The Infiante360 community connects learners, alumni and practitioners through a LinkedIn group, the company LinkedIn page, WhatsApp and YouTube. This page lists every official academy link in one place - registration, learner LMS, simulators, program brochure, focus areas and the Agentic AI skills site - so you always use the right address.",
     schema="WebPage", category="Academy",
     sections=[
         ("Official links", pills(("Register: techacademy.infinate360.in", REGISTER), ("WhatsApp", WHATSAPP_MSG), ("LinkedIn company page", LI_COMPANY), ("LinkedIn group", LI_GROUP),
                                  ("MarTech LMS", LMS), ("AEP Simulator", "https://aepsimualtor.infiante360techacademy.com/"), ("Program brochure", BROCHURE),
                                  ("Our approach (video)", APPROACH_VIDEO), ("Our focus", FOCUS), ("Agentic AI skills", AGENTIC), ("MarTech program page", MARTECH_PAGE))),
-        ("Hashtags we use", '<ul class="chips chips-light">' + "".join(f"<li>#{h}</li>" for h in ["AdobeConsultant", "MarTechTraining", "AdobeExperiencePlatform", "AEP", "RTCDP", "AdobeJourneyOptimizer", "CustomerJourneyAnalytics", "AgenticAI", "MarTechCareers", "Infinite360TechAcademy"]) + "</ul>"),
+        ("Hashtags we use", '<ul class="chips chips-light">' + "".join(f"<li>#{h}</li>" for h in ["AdobeConsultant", "MarTechTraining", "AdobeExperiencePlatform", "AEP", "RTCDP", "AdobeJourneyOptimizer", "CustomerJourneyAnalytics", "AgenticAI", "MarTechCareers", "Infiante360TechAcademy"]) + "</ul>"),
         ("Community guidelines", '<ul class="checklist"><li>Ask questions with context: what you tried, what you expected, what happened.</li><li>Never post passwords, API keys or customer data.</li><li>Share answers back so the next learner benefits.</li></ul>'),
     ],
     faqs=[], related=["academy/testimonials.html", "academy/youtube-playlists.html", "contact-us.html"],
@@ -493,12 +493,12 @@ ACADEMY_EXTRA.append(dict(
 
 ACADEMY_EXTRA.append(dict(
     path="academy/testimonials.html",
-    title="Learner & Client Reviews: Share Your Infinite360 Experience",
-    desc="Read verified reviews from Infinite360 learners and clients, and share your own. We publish only reviews with permission and confirmed participation.",
+    title="Learner & Client Reviews: Share Your Infiante360 Experience",
+    desc="Read verified reviews from Infiante360 learners and clients, and share your own. We publish only reviews with permission and confirmed participation.",
     h1="Reviews from learners and clients",
     nav="Reviews",
     kicker="Reviews",
-    keywords=["infinite360 reviews", "infinite360 tech academy reviews", "aep training reviews", "adobe martech training feedback", "infinite360 testimonials"],
+    keywords=["infiante360 reviews", "infiante360 tech academy reviews", "aep training reviews", "adobe martech training feedback", "infiante360 testimonials"],
     answer="This page shows reviews only from people we can verify attended a program or worked with us, published with their written permission. If you are a learner or client, you can submit your review below; we confirm participation before it appears and you can ask us to remove it at any time.",
     schema="WebPage", category="Academy",
     sections=[
@@ -517,7 +517,7 @@ HUB = dict(
     nav="Case studies",
     kicker="Case studies",
     keywords=["aep case studies", "adobe experience platform case study", "rtcdp ajo case study", "martech implementation case study", "adobe training case study"],
-    answer="Infinite360 case studies show how we approach Adobe MarTech work: industry implementation projects built on our simulation environments, training delivery models for individuals and corporate teams, and the contract-hiring process that prepares people to contribute from day one. Each one lists scope, architecture, approach and validation - without invented client names or results.",
+    answer="Infiante360 case studies show how we approach Adobe MarTech work: industry implementation projects built on our simulation environments, training delivery models for individuals and corporate teams, and the contract-hiring process that prepares people to contribute from day one. Each one lists scope, architecture, approach and validation - without invented client names or results.",
     schema="CollectionPage", category="Case studies",
     sections=[
         ("Implementation case studies", '<div class="grid-2">' + "".join(

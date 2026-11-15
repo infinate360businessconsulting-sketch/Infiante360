@@ -31,13 +31,13 @@ HOME = dict(
     bands=True,
     hero_ctas=True,
     hero_visual=architecture_svg(),
-    title="Infinite360 | Adobe MarTech Consulting, AEP Training & AI",
+    title="Infiante360 | Adobe MarTech Consulting, AEP Training & AI",
     desc="Adobe MarTech consulting and training for AEP, Real-Time CDP, Journey Optimizer, CJA and Agentic AI — for enterprise teams and professionals.",
     lede="Enterprise MarTech, customer data and AI transformation. We help organisations design, implement and scale Adobe Experience Cloud — and build the teams that run it.",
     h1="Turn customer data into intelligent experiences",
     kicker="Adobe MarTech · Customer Data · Agentic AI",
     keywords=["adobe martech consulting", "adobe experience platform training", "aep consultant india", "martech consultant", "agentic ai martech", "adobe experience cloud consultant"],
-    answer="Infinite360 is an Adobe MarTech consulting and learning brand. We help enterprises design and implement Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics, and help professionals build practical AEP and Agentic AI skills through hands-on training and free guides.",
+    answer="Infiante360 is an Adobe MarTech consulting and learning brand. We help enterprises design and implement Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics, and help professionals build practical AEP and Agentic AI skills through hands-on training and free guides.",
     schema="WebPage",
     sections=[
         ("Technologies we work with", '<div class="logo-band"><span>Adobe Experience Platform</span><span>Real-Time CDP</span><span>Journey Optimizer</span><span>Customer Journey Analytics</span><span>Adobe Analytics</span><span>Web SDK &amp; Tags</span><span>Target</span><span>AEM</span><span>Marketo Engage</span><span>Snowflake</span><span>BigQuery</span><span>Databricks</span><span>Kafka</span><span>Agentic AI &amp; MCP</span></div>', "plain", "Platform expertise"),
@@ -77,7 +77,7 @@ HOME = dict(
 <div class="card"><h3>Enterprise technology</h3><p>B2B lead management, account data and product-led journeys.</p></div>
 </div>
 <p><a href="industries.html">Explore industries &rarr;</a></p>""", "alt", "Where we focus"),
-        ("Infinite360 Tech Academy", f"""
+        ("Infiante360 Tech Academy", f"""
 <div class="split">
 <div><p class="lead">A live, online, hands-on career accelerator for Adobe Experience Platform, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI &mdash; built around projects, troubleshooting and interview preparation.</p>
 <ul class="checklist"><li>Six phases with enterprise-style projects</li><li>Architect-level troubleshooting scenarios</li><li>Career mapping and interview preparation</li></ul>
@@ -86,7 +86,7 @@ HOME = dict(
 </div>""", "red", "Learn"),
         ("Upcoming: AEP Launchpad bootcamp", '<div class="split"><div><p class="lead">Sunday evening · 6:00 – 9:00 PM IST · live online · ₹3,000</p><p><strong>Free bonus:</strong> ₹3,500 Interview &amp; Certification Test Series for every attendee.</p><p class="cta-row"><a class="btn btn-light" href="academy/aep-launchpad-bootcamp.html">View the bootcamp</a><a class="btn btn-ghost" style="color:#fff" href="academy/workshops.html">Friday workshops</a></p></div><div><p>Next live Foundations batch runs <strong>8:00 – 9:30 AM IST</strong>, Monday–Friday for two weeks.</p><p><a href="academy/aep-foundations-batch.html" style="color:#fff">See the batch plan &rarr;</a></p></div></div>', "red", "Workshops &amp; bootcamps"),
         ("Academy programs and fees", program_cards(0) + '<h3 style="margin-top:32px">Single-tool courses</h3>' + course_tiles(0) + '<p style="margin-top:16px"><a href="academy/index.html">Explore the academy &rarr;</a> &middot; <a href="academy/videos.html">Watch free demo sessions &rarr;</a></p>', "alt", "Course catalog"),
-        ("Case studies: what Infinite360 brings", """
+        ("Case studies: what Infiante360 brings", """
 <div class="grid-3">
 <a class="card link-card" href="case-studies/banking-customer-360-cross-sell.html"><span class="tag">BFSI</span><h3>Banking Customer 360 &amp; cross-sell</h3><p>Governed identity, loan drop-off recovery and consent-aware journeys.</p></a>
 <a class="card link-card" href="case-studies/airline-mobile-journey-orchestration.html"><span class="tag">Travel</span><h3>Airline journey orchestration</h3><p>Mobile engagement, check-in and disruption notifications.</p></a>
@@ -114,9 +114,9 @@ HOME = dict(
 <div class="link-pills"><a href="learn/index.html">All learning hubs</a><a href="learn/student-questions.html">Student questions answered</a><a href="guides/ajo-implementation-best-practices.html">AJO best practices</a><a href="feeds.html">RSS feeds</a><a href="search-topics.html">Topic index</a></div>""", "plain", "Insights"),
     ],
     faqs=[
-        ("What does Infinite360 do?", "Infinite360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
+        ("What does Infiante360 do?", "Infiante360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
         ("How much does the career accelerator cost?", "The career accelerator program fee is ₹60,000. Corporate training is priced per engagement."),
-        ("How do I contact Infinite360?", "Use the contact form, WhatsApp +91 82968 93895, or book a call from the contact page."),
+        ("How do I contact Infiante360?", "Use the contact form, WhatsApp +91 82968 93895, or book a call from the contact page."),
     ],
     related=["services/index.html", "solutions/index.html", "pavan-babu-gandla.html"],
 )

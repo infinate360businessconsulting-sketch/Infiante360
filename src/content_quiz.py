@@ -86,7 +86,7 @@ FORM = f'''<div id="quiz-gate"><form class="form js-validate" action="https://fo
 <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 {_field("name", "Your name", auto="name")}{_field("email", "Email", "email", "email")}{_field("phone", "Phone / WhatsApp", "tel", "tel")}
 <div class="field full"><div class="consent"><input id="z-consent" name="consent" type="checkbox" value="yes" required aria-required="true" aria-describedby="z-consent-error" data-msg-required="Please confirm to continue.">
-<label for="z-consent" style="font-weight:500">I agree that Infinite360 Tech Academy may contact me about this quiz, the handout and its programmes, as described in the <a href="../privacy-policy.html">privacy policy</a>. I can unsubscribe at any time.</label></div><span class="error" id="z-consent-error" aria-live="polite"></span></div>
+<label for="z-consent" style="font-weight:500">I agree that Infiante360 Tech Academy may contact me about this quiz, the handout and its programmes, as described in the <a href="../privacy-policy.html">privacy policy</a>. I can unsubscribe at any time.</label></div><span class="error" id="z-consent-error" aria-live="polite"></span></div>
 <div class="field full"><button class="btn btn-primary" type="submit">Start the free quiz</button><p class="hint" id="z-note">Free. 20 questions, about 15 minutes. Score {PASS} or more to get the AJO handout link.</p><p class="form-status" role="status" aria-live="polite"></p></div>
 </form></div>'''
 
@@ -145,13 +145,13 @@ HANDOUT_PAGE = dict(
     h1="Adobe Journey Optimizer technical best-practices handout",
     kicker="Free handout", nav="AJO handout", schema="Article", category="Academy", date="2026-10-12",
     keywords=["ajo implementation best practices", "adobe journey optimizer tutorial", "ajo event trigger", "ajo consent frequency capping"],
-    answer="A good Adobe Journey Optimizer (AJO) implementation starts with a clear event design, then controls re-entry, consent, frequency, audience refresh, testing, environments, data governance and measurement. This free 10-point checklist from Infinite360 Tech Academy turns those into steps you can review before any journey goes live. Check each point against Adobe's current documentation.",
+    answer="A good Adobe Journey Optimizer (AJO) implementation starts with a clear event design, then controls re-entry, consent, frequency, audience refresh, testing, environments, data governance and measurement. This free 10-point checklist from Infiante360 Tech Academy turns those into steps you can review before any journey goes live. Check each point against Adobe's current documentation.",
     sections=[
         ("The 10 checks", '<ol class="steps">' + "".join(f"<li><strong>{e(t)}.</strong> {e(d)}</li>" for t, d in PRACTICES) + "</ol>"),
         ("Before you launch", '<p>Print this page or save it as a PDF from your browser. It is general guidance, not a substitute for Adobe documentation or your own compliance review. Product features change, so confirm details in the sources below.</p>'),
         ("Practise and go deeper", pills(("Take the free AEP quiz", "aep-bfsi-quiz.html"), ("AJO training", "courses/ajo-training.html"), ("Friday workshops", "workshops.html"), ("Chat on WhatsApp", WHATSAPP_MSG))),
     ],
-    faqs=[("Is this handout free?", "Yes. It is a free checklist from Infinite360 Tech Academy."),
+    faqs=[("Is this handout free?", "Yes. It is a free checklist from Infiante360 Tech Academy."),
           ("Is it official Adobe guidance?", "No. It is our own summary. Use Adobe Experience League for official product guidance.")],
     related=["academy/index.html", "academy/aep-bfsi-quiz.html", "academy/courses/ajo-training.html", "academy/free-resources.html"],
     sources=[("Adobe Journey Optimizer documentation", f"{EL}/journey-optimizer"), ("Adobe Experience Platform documentation", f"{EL}/experience-platform")],

@@ -19,7 +19,7 @@
     {"n": 6, "date": "2026-11-15", "title": "Enterprise MarTech Architecture, Integration Challenges & Agentic AI"}
   ],
   "groups": [
-    ["📢", "Infinite360: Official Announcements", "Admin only. Official updates, the six-day calendar, class links, recordings and notices."],
+    ["📢", "Infiante360: Official Announcements", "Admin only. Official updates, the six-day calendar, class links, recordings and notices."],
     ["🚀", "AEP & Real-Time CDP Learning Hub", "AEP fundamentals, XDM schemas, datasets, ingestion, identity resolution, profiles, segmentation, destinations and activation."],
     ["🧩", "Data Engineering & MarTech Architecture", "Enterprise architecture, pipelines, APIs, Web SDK, streaming, batch ingestion, integrations and governance."],
     ["🎯", "AJO, CJA & Customer Experience", "Journey orchestration, personalization, campaign activation, Customer Journey Analytics, data views and measurement."],

@@ -71,17 +71,17 @@ def _cluster(cid, title, blurb, links):
 PAGE = dict(
     path=PATH,
     title="Adobe MarTech Topic Index: AEP, CDP, AJO, CJA & AI Searches",
-    desc="Find the Infinite360 page for any Adobe MarTech search: AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK, data engineering, Agentic AI, training and careers.",
+    desc="Find the Infiante360 page for any Adobe MarTech search: AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK, data engineering, Agentic AI, training and careers.",
     h1="Adobe MarTech topic index: find the page for what you are searching",
     nav="Topic index", kicker="Find your topic",
     keywords=["adobe experience platform topics", "adobe martech topics", "aep real-time cdp ajo cja", "martech search topics", "adobe martech learning"],
-    answer="This index groups the Adobe MarTech topics people search for, from Adobe Experience Platform and Real-Time CDP to Journey Optimizer, Customer Journey Analytics, Web SDK, data engineering, Agentic AI, training and careers. Each group links to the Infinite360 page that covers it, so you can go straight to the guide, service or free demo you need.",
+    answer="This index groups the Adobe MarTech topics people search for, from Adobe Experience Platform and Real-Time CDP to Journey Optimizer, Customer Journey Analytics, Web SDK, data engineering, Agentic AI, training and careers. Each group links to the Infiante360 page that covers it, so you can go straight to the guide, service or free demo you need.",
     schema="CollectionPage",
     sections=[("Start here", '<p>Pick the group closest to your search, then open the linked guide or service. New to Adobe MarTech? Start with the free demo sessions or the AEP guides. For a conversation, call or WhatsApp <a href="https://wa.me/918296893895">+91 82968 93895</a>.</p><div class="link-pills"><a href="academy/videos.html">Free demo sessions</a><a href="adobe-experience-platform/">AEP guides</a><a href="academy/">Academy</a><a href="services/">Services</a></div>', "plain", "Orientation"),
               ("Share this index", _share(), "alt", "Share")]
              + [s for s in (_cluster(c[0], c[1], c[3], c[4]) for c in CLUSTERS) if s],
     faqs=[("Is this a list of services?", "No. It is a topic index. Each group links to the guide or service page that covers those searches."),
-          ("Do you guarantee jobs or certification?", "No. Training outcomes depend on the learner. We do not guarantee jobs, interviews or certification, and Infinite360 is independent of Adobe.")],
+          ("Do you guarantee jobs or certification?", "No. Training outcomes depend on the learner. We do not guarantee jobs, interviews or certification, and Infiante360 is independent of Adobe.")],
     related=["learn/index.html", "adobe-experience-platform/index.html", "academy/index.html", "services/index.html"],
 )
 TOPIC_INDEX = [PAGE]
