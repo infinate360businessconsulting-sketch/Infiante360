@@ -9,8 +9,8 @@ import content_group as G  # noqa: E402
 
 class Products(unittest.TestCase):
     def test_counts_and_flag(self):
-        self.assertEqual(len(P.PRODUCT_PAGES), 7)
-        self.assertEqual(len(P.EVENT_PAGES), 9)
+        self.assertEqual(len(P.PRODUCT_PAGES), 8)
+        self.assertEqual(len(P.EVENT_PAGES), 11)
         self.assertTrue(all(p["sitemap4"] for p in P.PRODUCT_ALL))
 
     def test_metadata_unique_and_within_limits(self):

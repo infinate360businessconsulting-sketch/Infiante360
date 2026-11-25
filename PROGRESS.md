@@ -89,3 +89,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Updated: content_group.py (hub rows, inbound links), content_kb.py, build.py (footer links to products/ and events/)
 - Events: all "date to be announced", no fees, speakers, counts. Startup events: no funding/investor promise.
 - Not built/claimed: live jobs feed (needs owner-named sources with checked terms), resume upload/scanner, employer portal, salary data, CXO fees (Rs 1,00,000 vs 1,50,000 conflict unresolved), Salesforce/Braze courses.
+
+## 2026-11-25 jobs, event categories, 180-day plan, marketing OS
+- Owner prompts: remove "being confirmed" from marketing pages (done in content_group.py/content_products.py; no legal-entity claims made); job portal only via permitted sources; events platform; master execution.
+- Created: jobs/index.html (7 official portal links, no scraped listings), events/categories.html (20 categories), events/180-day-calendar.html (relative months, no dates), docs/MARKETING_OS.md; 3 keyword rows.
+- Not done: 300 articles/30 pillars (backlog, distinct angles only), live job feed, event registration/payment/attendance (needs backend), SkillSurf domain, legal pages' entity details, analytics access.

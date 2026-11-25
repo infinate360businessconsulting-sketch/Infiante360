@@ -158,7 +158,7 @@ SKILLSURF = dict(
     desc="SkillSurf is a multi-vendor enterprise technology training brand in the Infinate360 portfolio. See its 30 planned domains; courses open only when confirmed.",
     h1="SkillSurf: ride the wave of enterprise technology", kicker="Ecosystem · SkillSurf", nav="SkillSurf", schema="WebPage", category="Ecosystem", date=DATE,
     keywords=["skillsurf", "skillsurf training", "enterprise technology training india", "sap guidewire salesforce training", "corporate it training", "multi vendor technology courses"],
-    answer="SkillSurf is a broad enterprise technology training brand in the Infinate360 portfolio, covering 30 planned domains from SAP, Guidewire and Salesforce to cybersecurity, data engineering and AI. Infiante360 Tech Academy stays the specialist route for Adobe MarTech and Agentic AI. Courses, dates and fees are shown only once confirmed. The legal entity and official site are being confirmed.",
+    answer="SkillSurf is a broad enterprise technology training brand in the Infinate360 portfolio, covering 30 planned domains from SAP, Guidewire and Salesforce to cybersecurity, data engineering and AI. Infiante360 Tech Academy stays the specialist route for Adobe MarTech and Agentic AI. Courses, dates and fees are shown only once confirmed.",
     sections=[
         ("Where SkillSurf fits", _row_links(["Brand", "Focus", "Audience"], [("SkillSurf", "Multi-vendor enterprise technology training", "IT professionals, learners and corporate teams"),
                                                                              ("Infiante360 Tech Academy", "Architecture-led Adobe MarTech, customer data and Agentic AI", "MarTech specialists, engineers and architects")])),
@@ -231,7 +231,7 @@ HUB_ECO = dict(
     desc="How Infinate360 brands fit together: Tech Academy, consulting, research, CXO Hive, SkillSurf, Explorer and Startup Studio, with the status of each.",
     h1="The Infinate360 ecosystem", kicker="Ecosystem", nav="Ecosystem", schema="WebPage", category="Ecosystem", date=DATE,
     keywords=["infinate360", "infiante360 tech academy", "infinate360 ecosystem", "infinate360 consulting", "martech education and consulting brands", "adobe martech academy and research"],
-    answer="Infinate360 groups education, consulting, research, executive and career brands. Infiante360 Tech Academy and the consulting services are live on this site, with a research hub and a CXO Hive programme page. SkillSurf, Infinate360Explorer and Startup Studio have brand pages, and anything not yet open is marked as proposed. Legal entities and official domains for each brand are being confirmed.",
+    answer="Infinate360 groups education, consulting, research, executive and career brands. Infiante360 Tech Academy and the consulting services are live on this site, with a research hub and a CXO Hive programme page. SkillSurf, Infinate360Explorer and Startup Studio have brand pages, and anything not yet open is marked as proposed. Events and jobs have their own pages.",
     list_items=[("Infiante360 Tech Academy", "academy/index.html"), ("Consulting", "services/index.html"), ("Research and Intelligence", "research/index.html"), ("CXO Hive", "ecosystem/cxo-hive.html"),
                 ("SkillSurf", "ecosystem/skillsurf.html"), ("Infinate360Explorer", "ecosystem/infinate360-explorer.html"), ("Startup Studio", "ecosystem/startup-studio.html"),
                 ("Products", "products/index.html"), ("Events", "events/index.html")],
@@ -241,13 +241,13 @@ HUB_ECO = dict(
             ("Business consulting", "Enterprise MarTech, architecture, data and AI delivery", "Live on this site", "@Services|../services/index.html"),
             ("Research and Intelligence", "Technical research and architecture insight", "Live: research hub", "@Research|../research/index.html"),
             ("CXO Hive", "Executive MarTech and AI leadership", "Programme page live", "@CXO Hive|cxo-hive.html"),
-            ("SkillSurf", "Multi-vendor enterprise technology training", "Brand page; catalogue being confirmed", "@SkillSurf|skillsurf.html"),
+            ("SkillSurf", "Multi-vendor enterprise technology training", "Brand page; courses listed when open", "@SkillSurf|skillsurf.html"),
             ("Infinate360Explorer", "Career intelligence, assessments and mentoring", "Brand page; tools listed when live", "@Explorer|infinate360-explorer.html"),
             ("Startup Studio", "Founder education", "Proposed", "@Startup Studio|startup-studio.html"),
             ("Events and community", "Webinars, workshops and topic communities", "Proposed calendar", "@Events|../events/index.html")])),
         ("Products", '<p>Side-by-side status of the four products is on the <a href="../products/index.html">products page</a>.</p>'),
         ("Where we deliver", '<p>Delivery is online. See <a href="../locations/index.html">locations</a> for 17 countries and Bengaluru, each with the privacy framework that matters for customer data work.</p>'),
-        ("What this page does not claim", '<p class="note">It does not state a corporate structure, ownership or official domains for any brand. Those are being confirmed. Courses, events and programmes open only on pages that show confirmed dates, fees and delivery details.</p>'
+        ("What this page does not claim", '<p class="note">It describes how the brands relate in focus and audience, and does not state a corporate structure or registered entity for any of them. Courses, events and programmes open only on pages that show confirmed dates, fees and delivery details.</p>'
          + pills(("Contact us", "../contact-us.html"), ("WhatsApp " + PHONE, WHATSAPP_MSG), ("Community", "../academy/community-tracks.html"))),
     ],
     faqs=[("Are all these brands one company?", "This page makes no claim about legal structure. It describes how the brands relate in focus and audience."),

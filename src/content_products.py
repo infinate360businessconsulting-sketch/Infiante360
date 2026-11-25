@@ -242,19 +242,93 @@ HUB_EV = dict(
     list_items=[("Resume keyword clinic", "events/resume-keyword-clinic.html"), ("Career roadmap and skill-gap session", "events/career-roadmap-skill-gap-session.html"),
                 ("MarTech and AI centre of excellence roundtable", "events/martech-ai-coe-roundtable.html"), ("GCC-to-global transformation forum", "events/gcc-global-transformation-forum.html"),
                 ("Choose your enterprise technology path", "events/choose-your-enterprise-technology-path.html"), ("Corporate team enablement briefing", "events/corporate-team-enablement-briefing.html"),
-                ("Idea validation sprint", "events/idea-validation-sprint.html"), ("Pitch deck clinic", "events/pitch-deck-clinic.html")],
+                ("Idea validation sprint", "events/idea-validation-sprint.html"), ("Pitch deck clinic", "events/pitch-deck-clinic.html"),
+                ("Event categories", "events/categories.html"), ("180-day event plan", "events/180-day-calendar.html")],
     sections=[
         ("Eight proposed sessions", _row_links(["Session", "Product", "Status"], [
             ("@Resume keyword clinic|resume-keyword-clinic.html", "Explorer", "Date to be announced"), ("@Career roadmap and skill-gap session|career-roadmap-skill-gap-session.html", "Explorer", "Date to be announced"),
             ("@MarTech and AI CoE roundtable|martech-ai-coe-roundtable.html", "CXO Hive", "Date to be announced"), ("@GCC-to-global forum|gcc-global-transformation-forum.html", "CXO Hive", "Date to be announced"),
             ("@Choose your technology path|choose-your-enterprise-technology-path.html", "SkillSurf", "Date to be announced"), ("@Corporate enablement briefing|corporate-team-enablement-briefing.html", "SkillSurf", "Date to be announced"),
             ("@Idea validation sprint|idea-validation-sprint.html", "Startup Studio", "Date to be announced"), ("@Pitch deck clinic|pitch-deck-clinic.html", "Startup Studio", "Date to be announced")])),
-        ("When a session is confirmed", '<ul class="checklist"><li>Date, time and time zone</li><li>Named speaker and a short biography</li><li>Fee, or free, stated up front</li><li>Registration with marketing consent kept separate</li></ul><p>Weekly Adobe MarTech slots are on the <a href="../academy/event-calendar.html">academy event calendar</a>.</p>'
+        ("When a session is confirmed", '<ul class="checklist"><li>Date, time and time zone</li><li>Named speaker and a short biography</li><li>Fee, or free, stated up front</li><li>Registration with marketing consent kept separate</li></ul><p>Browse the 20 <a href="categories.html">event categories</a> and the <a href="180-day-calendar.html">180-day plan</a>. Weekly Adobe MarTech slots are on the <a href="../academy/event-calendar.html">academy event calendar</a>.</p>'
          + pills(REG, WA, ("Products", "../products/index.html"))),
     ],
     faqs=[("Why are there no dates?", "Dates are set only after speakers and venues or platforms are confirmed. We would rather publish nothing than a date we cannot keep."),
           ("Can I request a private session for my team?", "Yes. Use corporate training and describe the topic and team size.")],
     related=["academy/event-calendar.html", "products/index.html", "ecosystem/index.html", "academy/community-tracks.html"], sources=[], sitemap4=True)
+
+
+# ---------------------------------------------------------------- Jobs (links to official portals only; no scraping, no listings)
+PORTALS = [("LinkedIn Jobs", "https://www.linkedin.com/jobs/", "Broad professional search with alerts"), ("Indeed India", "https://in.indeed.com/", "General search across employers"),
+           ("Naukri", "https://www.naukri.com/", "India-focused listings"), ("Foundit", "https://www.foundit.in/", "India-focused listings"),
+           ("Glassdoor", "https://www.glassdoor.co.in/Job/", "Listings with company information"), ("Wellfound", "https://wellfound.com/jobs", "Startup roles"),
+           ("Adobe Careers", "https://careers.adobe.com/", "Roles at Adobe itself, from its own site")]
+SEARCH = [("Adobe MarTech", "Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Web SDK"), ("AI", "Agentic AI, MCP, LLM engineer, AI solutions architect"),
+          ("Data", "Data engineer, Snowflake, Databricks, Kafka, customer 360"), ("Enterprise platforms", "SAP, Guidewire, Microsoft Dynamics, IBM, SailPoint, CyberArk")]
+JOBS = dict(
+    path="jobs/index.html", title="MarTech, AI and Enterprise Tech Jobs: Where to Search",
+    desc="Direct links to seven official job portals and search phrases for Adobe MarTech, AI, data and enterprise platform roles. No scraped or invented listings.",
+    h1="Find MarTech, AI and enterprise technology jobs", kicker="Jobs", nav="Jobs", schema="WebPage", category="Ecosystem", date=DATE,
+    keywords=["adobe martech jobs", "adobe experience platform jobs", "agentic ai jobs india", "guidewire sap jobs", "martech job search", "where to find aep developer jobs"],
+    answer="This page links straight to seven official job portals, from LinkedIn Jobs and Naukri to Adobe Careers, and lists search phrases for Adobe MarTech, AI, data and enterprise platform roles. We do not copy, scrape or invent listings, and no vacancy counts are shown. A live feed will be added only from sources whose terms or APIs permit it.",
+    sections=[
+        ("Official job portals", _row_links(["Portal", "Good for", "Open"], [(n, d, f"@Open|{u}") for n, u, d in PORTALS]) + '<p class="note">External sites with their own terms. Infiante360 is not affiliated with them and does not guarantee any role.</p>'),
+        ("Search phrases by area", _row_links(["Area", "Phrases to try"], SEARCH)),
+        ("Employers", '<p>If you are hiring, send the role and original application link through <a href="../services/contract-hiring.html">contract hiring</a> or the <a href="../contact-us.html">contact page</a>. Direct submissions are checked before they are shown anywhere.</p>'),
+        ("Prepare before you apply", '<p>Use the <a href="../academy/career-accelerator-roadmap.html">90-day roadmap</a>, the <a href="../academy/portfolio-projects-and-interview-scenarios.html">portfolio projects</a>, and the Explorer <a href="explorer-jobs-by-role.html">role map</a>.</p>'
+         + pills(REG, WA, ("All products", "index.html"))),
+    ],
+    faqs=[("Do you list vacancies yourselves?", "Not yet. We link to official portals and add a feed only from sources that permit it."),
+          ("Do you guarantee placement?", "No. No job, interview or placement is promised.")],
+    related=["products/index.html", "products/explorer-jobs-by-role.html", "academy/career-accelerator-roadmap.html", "services/contract-hiring.html"], sources=[], sitemap4=True)
+
+# ---------------------------------------------------------------- Event categories and 180-day proposed calendar
+CATS = [("Adobe Experience Platform", "Architecture masterclass", "academy/workshops.html"), ("Real-Time CDP", "Implementation workshop", "academy/workshops.html"),
+        ("Adobe Journey Optimizer", "Live design lab", "academy/workshops.html"), ("Customer Journey Analytics", "Measurement masterclass", "academy/workshops.html"),
+        ("Adobe Analytics", "Measurement workshop", "academy/workshops.html"), ("Adobe Web SDK", "Implementation and validation challenge", "academy/hands-on-projects.html"),
+        ("Adobe CX Enterprise", "Readiness discussion", "services/index.html"), ("Agentic AI and MCP", "Agent-building workshop", "services/agentic-ai-mcp.html"),
+        ("Enterprise AI coworkers", "Design session", "guides/what-is-mcp.html"), ("Data engineering and Snowflake", "Hands-on lab", "ecosystem/skillsurf.html"),
+        ("SAP", "Learning session", "ecosystem/skillsurf.html"), ("Guidewire", "Implementation discussion", "ecosystem/skillsurf.html"),
+        ("Microsoft", "Practical lab", "ecosystem/skillsurf.html"), ("IBM", "Technical discussion", "ecosystem/skillsurf.html"),
+        ("SailPoint", "Identity learning session", "ecosystem/skillsurf.html"), ("CyberArk", "Identity learning session", "ecosystem/skillsurf.html"),
+        ("Career mentoring", "Roadmap and mentoring clinic", "academy/career-accelerator-roadmap.html"), ("Certification preparation", "Study-plan workshop", "academy/career-accelerator-roadmap.html"),
+        ("Corporate training", "Team enablement briefing", "training/corporate-training.html"), ("CXO leadership roundtables", "Closed roundtable", "ecosystem/cxo-hive.html")]
+EV_CATS = dict(
+    path="events/categories.html", title="Event Categories: 20 Technology and Career Topics",
+    desc="Twenty proposed event categories, from AEP, Journey Optimizer and MCP to SAP, Guidewire, career mentoring and CXO roundtables. No dates or fees confirmed yet.",
+    h1="Event categories across Adobe, AI, enterprise platforms and careers", kicker="Events", nav="Event categories", schema="WebPage", category="Events", date=DATE,
+    keywords=["adobe aep webinar", "agentic ai mcp workshop", "sap guidewire learning session", "sailpoint cyberark session", "career mentoring webinar", "certification preparation workshop"],
+    answer="Twenty proposed event categories cover Adobe Experience Platform, Real-Time CDP, Journey Optimizer, analytics, Web SDK, Agentic AI and MCP, data engineering, SAP, Guidewire, Microsoft, IBM, SailPoint, CyberArk, career mentoring, certification preparation, corporate training and CXO roundtables. Each has a proposed format. No category has a confirmed date, speaker or fee, and SkillSurf topics open only after a trainer is confirmed.",
+    sections=[
+        ("Twenty categories and proposed formats", _row_links(["Category", "Proposed format", "Related page"], [(c, f, f"@Open|../{u}") for c, f, u in CATS])),
+        ("Formats we plan to support", '<ul class="checklist"><li>Free webinars and community discussions</li><li>Paid workshops, masterclasses and bootcamps</li><li>Corporate events and technical hackathons</li></ul><p class="note">Proposed only. A category becomes an event page when the date, speaker and fee are approved. Pavan Babu Gandla is a proposed speaker for relevant Adobe MarTech and Agentic AI sessions, subject to availability. Vendor names belong to their owners and imply no partnership.</p>'
+         + pills(REG, WA, ("Events", "index.html"), ("180-day plan", "180-day-calendar.html"))),
+    ],
+    faqs=[("Is a category the same as an event?", "No. A category is a topic area. An event page exists only once a session is planned."),
+          ("Can I suggest a category?", "Yes. Message us with the topic and who it is for.")],
+    related=["events/index.html", "events/180-day-calendar.html", "academy/community-tracks.html", "ecosystem/skillsurf.html"], sources=[], sitemap4=True)
+
+WEEK = [("Tuesday", "Adobe MarTech masterclass", "AEP, RTCDP, AJO, CJA, Analytics, Web SDK"), ("Wednesday", "Agentic AI and MCP workshop", "Agents, MCP, enterprise AI coworkers"),
+        ("Thursday", "Corporate and consulting briefing", "Training planning, architecture and delivery topics"), ("Saturday", "Technical workshop and community session", "Rotating SkillSurf and Adobe topics"),
+        ("Sunday", "Executive and research roundtable", "CXO Hive themes and research discussion")]
+MONTHS = [("Month 1", "Launch the Adobe MarTech and Agentic AI series; start the community sessions"), ("Month 2", "Add data engineering and Snowflake labs; first corporate briefing"),
+          ("Month 3", "Add the first SkillSurf topic session where a trainer is confirmed; CXO roundtable"), ("Month 4", "Career mentoring and certification preparation series"),
+          ("Month 5", "Technical hackathon, if participants and judges are confirmed"), ("Month 6", "Review attendance and feedback; keep what worked, drop what did not")]
+EV_CAL = dict(
+    path="events/180-day-calendar.html", title="Proposed 180-Day Event Plan: Weekly and Monthly Programmes",
+    desc="A proposed six-month event plan: five weekly slots and six monthly themes across Adobe MarTech, AI, SkillSurf and CXO Hive. Start dates are not set.",
+    h1="Proposed 180-day event plan", kicker="Events", nav="180-day plan", schema="WebPage", category="Events", date=DATE,
+    keywords=["martech webinar series", "adobe agentic ai event calendar", "weekly technology workshop india", "cxo roundtable series", "six month event plan", "technology community sessions"],
+    answer="This proposed 180-day plan has five weekly slots, on Tuesday, Wednesday, Thursday, Saturday and Sunday, and six monthly themes that build from the Adobe MarTech and Agentic AI series to mentoring, a hackathon and a review. Months are counted from launch, so no calendar dates are set. A session is published only when its date, speaker and fee are approved.",
+    sections=[
+        ("Five weekly slots", _row_links(["Day", "Programme", "Topics"], WEEK)),
+        ("Six monthly themes, counted from launch", _row_links(["Month", "Focus"], MONTHS)),
+        ("Rules for the plan", '<ul class="checklist"><li>Publish a session only when date, time zone, speaker and fee are approved</li><li>Unconfirmed items show as register your interest</li><li>Reminders by email or WhatsApp only with consent</li><li>Review attendance and feedback monthly, and drop slots that do not earn their place</li></ul>'
+         + pills(REG, WA, ("Categories", "categories.html"), ("Events", "index.html"))),
+    ],
+    faqs=[("When does the plan start?", "No start date is set. It starts when the first sessions are confirmed."),
+          ("Will every slot run every week?", "Not necessarily. Slots run when a speaker and audience are confirmed.")],
+    related=["events/index.html", "events/categories.html", "academy/event-calendar.html", "academy/community-tracks.html"], sources=[], sitemap4=True)
 
 # ---------------------------------------------------------------- Products hub
 HUB_PROD = dict(
@@ -266,7 +340,7 @@ HUB_PROD = dict(
     list_items=[("SkillSurf", "ecosystem/skillsurf.html"), ("Infinate360Explorer", "ecosystem/infinate360-explorer.html"), ("Startup Studio", "ecosystem/startup-studio.html"), ("CXO Hive", "ecosystem/cxo-hive.html"),
                 ("Explorer: jobs by technology", "products/explorer-jobs-by-technology.html"), ("Explorer: jobs by role", "products/explorer-jobs-by-role.html"),
                 ("Explorer: resume scanner", "products/explorer-resume-scanner.html"), ("Explorer: for employers", "products/explorer-for-employers.html"),
-                ("Explorer: course-to-role map", "products/explorer-course-job-map.html"), ("CXO Hive programme", "products/cxo-hive-programme.html"), ("Events", "events/index.html")],
+                ("Explorer: course-to-role map", "products/explorer-course-job-map.html"), ("CXO Hive programme", "products/cxo-hive-programme.html"), ("Events", "events/index.html"), ("Jobs", "jobs/index.html")],
     sections=[
         ("The four products", _row_links(["Product", "For", "What is live", "Pages"], [
             ("SkillSurf", "IT professionals and corporate teams", "Brand page with 30 planned domains; no catalogue", "@SkillSurf|../ecosystem/skillsurf.html"),
@@ -274,13 +348,13 @@ HUB_PROD = dict(
             ("Startup Studio", "Founders and students", "Fifteen proposed programmes; none open", "@Startup Studio|../ecosystem/startup-studio.html"),
             ("CXO Hive", "Executives and architects", "Programme page; fees on request", "@CXO Hive|cxo-hive-programme.html")])),
         ("Explorer plan pages", '<ul class="checklist"><li><a href="explorer-jobs-by-technology.html">Jobs by technology</a>: twelve families</li><li><a href="explorer-jobs-by-role.html">Jobs by role</a>: thirty roles</li><li><a href="explorer-resume-scanner.html">Resume scanner</a>: method and limits</li><li><a href="explorer-for-employers.html">For employers</a>: planned features and protections</li><li><a href="explorer-course-job-map.html">Course-to-role map</a></li></ul>'),
-        ("Events and corporate use", '<p>See <a href="../events/index.html">eight proposed events</a>, or ask about <a href="../training/corporate-training.html">corporate training</a>. Brand relationships are on the <a href="../ecosystem/index.html">ecosystem page</a>. Legal entities and official domains are being confirmed.</p>'
+        ("Events and corporate use", '<p>See <a href="../events/index.html">eight proposed events</a>, or ask about <a href="../training/corporate-training.html">corporate training</a>. Brand relationships are on the <a href="../ecosystem/index.html">ecosystem page</a>. Jobs are on the <a href="../jobs/index.html">job search page</a>.</p>'
          + pills(REG, WA, ("Contact us", "../contact-us.html"))),
     ],
     faqs=[("Which product should I start with?", "Start with Infiante360 Tech Academy for Adobe MarTech and AI, or ask us about the product closest to your goal."),
           ("Are these separate companies?", "This page makes no claim about legal structure. They are separate products with different audiences.")],
     related=["ecosystem/index.html", "events/index.html", "academy/index.html", "training/corporate-training.html"], sources=[], sitemap4=True)
 
-PRODUCT_PAGES = [HUB_PROD, EX_TECH, EX_ROLE, EX_SCAN, EX_EMP, EX_MAP, CXO_PROG]
-EVENT_PAGES = [HUB_EV] + EVENTS
+PRODUCT_PAGES = [HUB_PROD, EX_TECH, EX_ROLE, EX_SCAN, EX_EMP, EX_MAP, CXO_PROG, JOBS]
+EVENT_PAGES = [HUB_EV] + EVENTS + [EV_CATS, EV_CAL]
 PRODUCT_ALL = PRODUCT_PAGES + EVENT_PAGES
