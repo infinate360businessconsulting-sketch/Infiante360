@@ -310,3 +310,8 @@ STUDENT_HUB = dict(
 )
 
 KB_PAGES = [STUDENT_HUB] + KB_ALL
+
+# Article batches 1-2 (2026-11-25)
+from content_articles import A as _ART1  # noqa: E402
+from content_articles2 import B as _ART2  # noqa: E402
+KB_PAGES += _ART1 + _ART2

@@ -1097,6 +1097,36 @@ def chat_index():
     return out
 
 
+_SM_RULES = [("services/", "services"), ("solutions/", "solutions"), ("use-cases/industries/", "industries"), ("industries.html", "industries"),
+             ("case-studies/", "case-studies"), ("use-cases/", "use-cases"), ("guides/", "articles"), ("insights/", "articles"),
+             ("answers/", "articles"), ("learn/", "articles"), ("adobe-experience-platform/", "aep-guides"), ("academy/", "training"),
+             ("training/", "training"), ("lp/", "training"), ("events/", "training")]
+
+
+def write_child_sitemaps():
+    """Category sitemaps + index for segmented Search Console reporting. sitemap.xml stays the complete list."""
+    ns = 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+    groups = {}
+    for p in PAGES:
+        if str(p.get("robots", "")).startswith("noindex"):
+            continue
+        cat = next((c for pre, c in _SM_RULES if p["path"].startswith(pre)), "pages")
+        groups.setdefault(cat, []).append(p)
+    index = []
+    for cat in sorted(groups):
+        body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in groups[cat])
+        write(f"sitemaps/{cat}.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
+        index.append(f"sitemaps/{cat}.xml")
+    imgs = [p for p in PAGES if p.get("og_image") and not str(p.get("robots", "")).startswith("noindex")]
+    if imgs:
+        body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc><image:image><image:loc>{e(BASE + 'assets/' + p['og_image'])}</image:loc></image:image></url>" for p in imgs)
+        write("sitemaps/images.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns} xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n{body}\n</urlset>\n')
+        index.append("sitemaps/images.xml")
+    items = "\n".join(f"  <sitemap><loc>{e(BASE + f)}</loc></sitemap>" for f in index)
+    write("sitemap-index.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex {ns}>\n{items}\n</sitemapindex>\n')
+    print("Child sitemaps:", ", ".join(f"{c}={len(v)}" for c, v in sorted(groups.items())), f"images={len(imgs)}")
+
+
 def main():
     if os.path.exists(OUT):
         shutil.rmtree(OUT)
@@ -1118,6 +1148,7 @@ def main():
     write("assets/demo-bootcamp.ics", demo_ics())
     write("assets/sme-accelerator.ics", sme_ics())
     write("sitemap.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}\n</urlset>\n')
+    write_child_sitemaps()
     _dis = "Disallow: /thank-you.html\nDisallow: /admin/\nDisallow: /api/\nDisallow: /zohoverify/\nDisallow: /brochure-download.html\n"
     _bots = [("Search engines", ["Googlebot", "Bingbot", "DuckDuckBot", "Applebot"]),
              ("AI search and answer engines", ["OAI-SearchBot", "ChatGPT-User", "Claude-SearchBot", "Claude-User", "PerplexityBot", "Perplexity-User", "DuckAssistBot"]),
@@ -1125,7 +1156,7 @@ def main():
     _rb = "# Public pages are open to search engines and AI crawlers. Private paths stay disallowed.\n# robots.txt is not access control.\n\n"
     for _lbl, _names in _bots:
         _rb += f"# {_lbl}\n" + "".join(f"User-agent: {n}\n" for n in _names) + f"Allow: /\n{_dis}\n"
-    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
+    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-index.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
     write("robots.txt", _rb)
     write_feeds()
     write("assets/chat-index.json", json.dumps(chat_index(), ensure_ascii=False, separators=(",", ":")))

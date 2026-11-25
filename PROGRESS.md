@@ -29,3 +29,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Done: five consulting pages (Snowflake, BigQuery, Databricks, Kafka, enterprise architecture) with per-page og:image and Service schema; queue PG-001..005 marked generated. Adobe Commerce stays pending_confirmation (data/seo/service_registry.json).
 - Drafted, not sent/submitted: RSS submission kit (data/distribution/), press release draft (docs/PRESS_RELEASE_DRAFT.md), white-label footer link fixes (docs/WHITE_LABEL_FOOTER_LINKS.md).
 - Remaining: 365 articles / 50 pillars / 30 landing intentions / 26 use cases in controlled batches; child sitemaps; 100 AI-discovery questions; AI-visibility registry (Not tested); 90-day social queue; admin dashboard; more agents; replace entdemo placeholder visuals; owner items (partner documentation, dates, fees, legal address, SPF/DKIM/DMARC).
+
+## 2026-11-25 article batch 1
+- 20 articles (A-001..A-020) from the 365-idea plan (ids 351-365, 21, 22, 235, 246, 243): src/content_articles.py, content_articles2.py, queue in data/seo/article_queue.json (345 still queued, none generated).
+- Child sitemaps (sitemaps/<category>.xml, images.xml) and sitemap-index.xml added; sitemap.xml remains the complete list. robots.txt lists the index. Submission to Search Console is the owner's step.
+- Article hero images not yet generated (pipeline supports it; next batch).
