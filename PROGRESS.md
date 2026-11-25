@@ -51,3 +51,4 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Created: assets/media/infinate360-demo.mp4 (+poster), src/banners.py, content/banners.json (empty), assets/banners/, tests/test_banners.py
 - Updated: src/content_home.py (Watch the demo section; slider only if approved banners), assets/site.css, assets/site.js
 - Banners NOT published: supplied banners carry unverified claims (Adobe Solution Partner badge, learner counts, placement, salary, lifetime access). Add with approved=true after owner review.
+- 8 banners published in slider (content/banners.json). Held back: CJA (invented dashboard figures), Agentic dark (third-party logos), 'certification'/'Get Certified'/'Industry Certification' banners, 'Download Syllabus/Curriculum' banners, 'Career/Interview/Talent support' banners, duplicates.

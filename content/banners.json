@@ -1,4 +1,77 @@
 {
   "_help": "Add one object per banner. Put the image in assets/banners/ and set approved=true only after the owner has checked every claim on it (partner badges, learner counts, placement, salary, 'lifetime', dates). Unapproved or missing banners are never shown. Slider is hidden while the list is empty.",
-  "banners": []
+  "banners": [
+    {
+      "image": "martech-sme-live-program.webp",
+      "alt": "MarTech SME 6-day live programme: how AEP, Real-Time CDP, AJO, CJA and Agentic AI work together",
+      "link": "lp/martech-sme-accelerator.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "f1caac50-image.png"
+    },
+    {
+      "image": "aep-raw-data-to-experiences.webp",
+      "alt": "Learn Adobe Experience Platform: schemas, ingestion, identity, profiles, segmentation and activation",
+      "link": "training/index.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "71f5895e-image.png"
+    },
+    {
+      "image": "real-time-cdp-course.webp",
+      "alt": "Learn Real-Time CDP: identity resolution, audience strategy, destinations and activation",
+      "link": "training/index.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "c544f16a-image.png"
+    },
+    {
+      "image": "ajo-learn-journey-optimizer.webp",
+      "alt": "Learn Adobe Journey Optimizer: journey engineering, campaigns, personalization and decisioning",
+      "link": "training/index.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "5844e061-image.png"
+    },
+    {
+      "image": "agentic-ai-mcp-program.webp",
+      "alt": "Agentic AI and MCP programme: AI agents, MCP integrations and enterprise MarTech workflows",
+      "link": "services/agentic-ai-mcp.html",
+      "width": 1600,
+      "height": 800,
+      "approved": true,
+      "source": "70fdac49-image.png"
+    },
+    {
+      "image": "corporate-training-capability.webp",
+      "alt": "Corporate training: role-based Adobe, MarTech and AI enablement for teams",
+      "link": "training/corporate-training.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "a1234a06-image.png"
+    },
+    {
+      "image": "cxo-hive-leadership.webp",
+      "alt": "CXO Hive: executive MarTech and AI leadership programme, 10 weeks",
+      "link": "academy/programs/executive-architecture-leadership.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "424cb5a3-image.png"
+    },
+    {
+      "image": "business-consulting-architecture.webp",
+      "alt": "Infiante360 Business Consulting: enterprise MarTech architecture review and implementation strategy",
+      "link": "contact-us.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "6d8bc4d3-image.png"
+    }
+  ]
 }

@@ -453,3 +453,4 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .banner-slider .dot[aria-current=true]{background:#fff}
 .banner-slider button:focus-visible{outline:3px solid #ff2b36;outline-offset:2px}
 .demo-fig{max-width:960px;margin:0 auto}
+.banner-slider .slide img{aspect-ratio:16/9;object-fit:contain;background:#0e1d3b}
