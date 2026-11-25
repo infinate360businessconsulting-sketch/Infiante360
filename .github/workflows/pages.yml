@@ -19,6 +19,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: Build and validate (fails on broken links, duplicate titles, invalid JSON-LD)
+        env:
+          SITE_BASE: https://infiante360techacademy.com/
         run: python3 src/build.py _site
       - name: SEO inventory and health checks (read-only, computed from built files)
         run: |
