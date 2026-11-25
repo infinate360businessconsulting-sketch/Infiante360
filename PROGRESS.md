@@ -75,3 +75,10 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Created: academy/community-tracks.html (10 Adobe/MarTech/AI topic tracks), academy/event-calendar.html (3 proposed weekly slots, 10 event concepts, none scheduled); both in sitemap3.xml, in content_extra.py
 - Updated: content_cases.py (inbound links from academy/community.html), extra_pages_register.json, tests
 - Not published: SkillSurf 500-course catalog, Startup Studio, Explorer, other-brand communities/events, LinkedIn member counts (unverified, overlapping). Needs owner: legal entity/domain per brand.
+
+## 2026-11-25 ecosystem + locations (sitemap4.xml)
+- Owner said "yes add more pages as my company names ... localities ... sitemap4.xml". Legal entities/domains still unconfirmed, so brand pages claim no structure, offices, counts, dates or fees.
+- Created: src/content_group.py (24 pages: ecosystem hub, SkillSurf, Infinate360Explorer, Startup Studio, CXO Hive; locations hub, 17 countries, Bengaluru), data/seo/sitemap4_keyword_map.csv (page -> keywords), tests/test_group_pages.py
+- Updated: build.py (sitemap4.xml in index + robots; footer links to ecosystem/ and locations/), content_kb.py, extra_pages_register.json
+- Country pages: real law + regulator + channel rule + design note per country, guidance not legal advice, no local office claimed. Sources are regulator home pages (not link-checked from CI).
+- Deferred: jobs RSS/newsroom/PR engines (need sources/approvals), city pages (thin duplicates).

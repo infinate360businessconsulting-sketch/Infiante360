@@ -21,6 +21,11 @@
       "url": "/academy/event-calendar.html",
       "source": "Expansion strategy doc (3 weekly slots, 10 Infiante360 event concepts, all proposed)",
       "sitemap": "sitemap3.xml"
+    },
+    {
+      "url": "/ecosystem/ (5 pages) and /locations/ (19 pages)",
+      "source": "Owner go-ahead 2026-11-25 to publish pages under company names + world locations; docs: expansion strategy, community, PR",
+      "sitemap": "sitemap4.xml"
     }
   ],
   "not_published": [
@@ -59,6 +64,10 @@
     {
       "file": "Expansion strategy 2027 and Community growth docs (other brands)",
       "reason": "SkillSurf 500-course catalog, Startup Studio, Explorer, CXO Hive network, 90 non-Adobe communities and 90 other event concepts belong to other brands; legal entity and domain relationships are unconfirmed in the docs. LinkedIn member counts are unverified and are not published. Kept as owner planning material."
+    },
+    {
+      "file": "Jobs RSS engine, newsroom/PR, media registry (3 strategy docs)",
+      "reason": "Need working ingestion, verified sources and approvals; no live vacancies or media coverage exist. Fake feeds or press pages would break the no-fabrication rule. City pages for 'all localities' withheld: near-duplicates; country pages carry distinct privacy-law context."
     }
   ]
 }

@@ -552,7 +552,7 @@ def footer(p):
     svc = [s["path"] for s in SERVICES] + ["services/adobe-experience-cloud.html", "services/engagement-model.html", "services/staff-augmentation.html", "solutions/index.html"]
     aep = [a["path"] for a in AEP_PAGES]
     learn = ["academy/index.html", "academy/workshops.html", LMS_PATH, SME_PATH, ENT_PATH, COMM_PATH, DEMO_PATH, "academy/aep-launchpad-bootcamp.html", "academy/videos.html", "academy/free-resources.html", "academy/martech-roles.html", "learn/index.html", "training/index.html", "training/career-transition.html", "training/corporate-training.html", "guides/marketo-engage-aep.html", "guides/aep-vs-real-time-cdp.html", "guides/cja-vs-adobe-analytics.html", "guides/what-is-mcp.html", "academy/promo-video.html", "academy/programs/ai-engineering-bootcamp.html", "academy/programs/aep-multi-region-multi-brand-architecture.html", "academy/aep-implementation-track/index.html", "guides/agentic-customer-engagement-architecture.html", "use-cases/abandoned-cart-sports-entertainment.html", "answers/index.html", "insights/index.html", "press.html"]
-    company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html", "stacks/index.html"] + [c["path"] for c in STACK_PAGES[1:]]
+    company = ["about-us.html", "pavan-babu-gandla.html", "industries.html", "case-studies/index.html", "use-cases/index.html", "services/contract-hiring.html", "faq.html", "contact-us.html", "stacks/index.html", "ecosystem/index.html", "locations/index.html"] + [c["path"] for c in STACK_PAGES[1:]]
     more = ["academy/simulators.html", "academy/recording-platform.html", "academy/youtube-playlists.html", "academy/community.html", "academy/testimonials.html",
             "learn/student-questions.html", "guides/ajo-implementation-best-practices.html", "feeds.html", "sitemap.html"] + [l["path"] for l in LANDINGS]
     return f"""<footer class="site-footer"><div class="wrap">
@@ -1139,7 +1139,12 @@ def write_child_sitemaps():
         body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in ex)
         write("sitemap3.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
         index.append("sitemap3.xml")
-    items = "\n".join(f"  <sitemap><loc>{e(BASE + f)}</loc></sitemap>" for f in index)
+    g4 = [p for p in PAGES if p.get("sitemap4") and not str(p.get("robots", "")).startswith("noindex")]
+    if g4:
+        body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in g4)
+        write("sitemap4.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
+        index.append("sitemap4.xml")
+    items ="\n".join(f"  <sitemap><loc>{e(BASE + f)}</loc></sitemap>" for f in index)
     write("sitemap-index.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex {ns}>\n{items}\n</sitemapindex>\n')
     print("Child sitemaps:", ", ".join(f"{c}={len(v)}" for c, v in sorted(groups.items())), f"images={len(imgs)}")
 
@@ -1173,7 +1178,7 @@ def main():
     _rb = "# Public pages are open to search engines and AI crawlers. Private paths stay disallowed.\n# robots.txt is not access control.\n\n"
     for _lbl, _names in _bots:
         _rb += f"# {_lbl}\n" + "".join(f"User-agent: {n}\n" for n in _names) + f"Allow: /\n{_dis}\n"
-    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-index.xml\nSitemap: {BASE}sitemap2.xml\nSitemap: {BASE}sitemap3.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
+    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-index.xml\nSitemap: {BASE}sitemap2.xml\nSitemap: {BASE}sitemap3.xml\nSitemap: {BASE}sitemap4.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
     write("robots.txt", _rb)
     write_feeds()
     write("assets/chat-index.json", json.dumps(chat_index(), ensure_ascii=False, separators=(",", ":")))

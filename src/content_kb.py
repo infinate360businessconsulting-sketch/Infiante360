@@ -324,3 +324,6 @@ KB_PAGES += _UCL
 
 from content_extra import EXTRA_PAGES as _EXTRA  # noqa: E402
 KB_PAGES += _EXTRA
+
+from content_group import GROUP_PAGES as _GROUP  # noqa: E402
+KB_PAGES += _GROUP
