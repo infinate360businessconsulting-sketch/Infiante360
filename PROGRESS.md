@@ -109,3 +109,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Blocked: voiceover (Piper installs but voice models cannot be downloaded: huggingface/github blocked from this workspace; no TTS engine present) => no narrated videos, no video-sitemap entries; admin dashboard (not started; admin/ is the CMS config); Search Console/Bing need owner accounts.
 - Remaining article programme: 290 articles + 30 pillars + ~695 images, in batches of 25 (this batch: 10).
 - Fix: live domain is served by Vercel (vercel.json, build output only), not GitHub Pages; key file copy moved into build.py so both hosts serve it. IndexNow submit step runs after the GitHub Pages deploy only, so confirm the key URL serves before relying on it. An admin/dashboard.html already exists in build.py (dashboard_html()).
+
+## Identity update (legal name)
+- Legal name PAVAN BABU GANDLA; brand "Infiante360 Business Consulting & Tech Academy"; email + phone (+91 82968 93895) shown in footer (mailto/tel links), privacy, about, contact, FAQ, corporate training, services and legal pages; corporate/, lms-site/ and email templates updated.
+- Second number +91 9490164044 only in Organization JSON-LD (not visible). Structured data normally should match visible content - review.
+- Open: payment/billing and refund terms not supplied (no policy invented); no checkout pages exist; SEO section of the brief not received.

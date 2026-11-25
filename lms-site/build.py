@@ -122,7 +122,7 @@ def page(fn, title, desc, body, noindex=False):
 <header class="top"><a class="brand" href="index.html"><img src="assets/logo-mark.png" width="40" height="40" alt=""><span>{E(C["short"])}<small>{E(C["brand"])}</small></span></a>
 <nav class="main" aria-label="Main">{nav(fn)}</nav></header>
 <main id="main">{body}</main>
-<footer><p>{E(C["brand"])} LMS. Operated by Infiante 360 Global Services PVT LTD. Independent of Adobe; Adobe product names are trademarks of Adobe. No job, salary or certification outcome is guaranteed.</p>
+<footer><p>{E(C["brand"])} LMS. Operated by PAVAN BABU GANDLA (legal name), trading as Infiante360 Business Consulting &amp; Tech Academy. Email: <a href="mailto:infinate360businessconsulting@gmail.com">infinate360businessconsulting@gmail.com</a>. Phone: <a href="tel:+918296893895">+91 82968 93895</a>. Independent of Adobe; Adobe product names are trademarks of Adobe. No job, salary or certification outcome is guaranteed.</p>
 <p><a href="{C["main_site"]}">Main website</a> &middot; <a href="{C["main_site"]}privacy-policy.html">Privacy policy</a> &middot; <a href="{C["youtube"]}">YouTube</a> &middot; <a href="{WA}">WhatsApp</a></p></footer>
 <script>window.__WA={json.dumps(WA)};</script><script src="assets/site.js" defer></script><script src="assets/assistant.js" defer></script></body></html>"""
 

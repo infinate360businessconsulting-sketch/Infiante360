@@ -6,5 +6,5 @@ Your seat for the Infiante360 Adobe MarTech 3-day demo is confirmed.
 - Join: {{join_link}}   (same link all three nights)
 - Add to your calendar: https://infiante360techacademy.com/assets/demo-bootcamp.ics
 Please join 5 minutes early. Questions: reply here or WhatsApp +91 82968 93895.
-Pavan Babu Gandla, Infiante360 (Infiante 360 Global Services PVT LTD)
+Pavan Babu Gandla, Infiante360 (legal name: PAVAN BABU GANDLA)
 Reminders: 24 hours before Day 1, and 1 hour before each night.

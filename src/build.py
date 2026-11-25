@@ -60,7 +60,9 @@ BASE = os.environ.get("SITE_BASE") or (f"https://{_VERCEL}/" if _VERCEL else "ht
 TODAY = os.environ.get("SITE_LASTMOD", dt.date.today().isoformat())
 
 BRAND = "Infiante360"
-LEGAL_NAME = "Infiante 360 Global Services PVT LTD"
+LEGAL_NAME = "PAVAN BABU GANDLA"
+BRAND_FULL = "Infiante360 Business Consulting &amp; Tech Academy"
+PHONE_ALT_E164 = "+919490164044"  # structured data only; not displayed on pages
 EMAIL = "infinate360businessconsulting@gmail.com"
 PHONE_E164 = "+918296893895"
 PHONE_DISPLAY = "+91 82968 93895"
@@ -124,8 +126,8 @@ for _o in _load("overrides.json").get("items", []):
                 if _o.get(_k):
                     _p[_k] = _o[_k]
 for _q in PAGES:
-    if _q["path"] == "privacy-policy.html" and not any("Who operates" in x[0] for x in _q["sections"]):
-        _q["sections"] = list(_q["sections"]) + [("Who operates this website", f"<p>This website is operated by <strong>{LEGAL_NAME}</strong>, trading as {BRAND}. Contact: {EMAIL}.</p>")]
+    if _q["path"] in ("privacy-policy.html", "about-us.html", "contact-us.html", "faq.html", "training/corporate-training.html", "services/index.html") and not any("Who operates" in x[0] for x in _q["sections"]):
+        _q["sections"] = list(_q["sections"]) + [("Who operates this website", f"<p>This website is operated by <strong>{LEGAL_NAME}</strong> (legal name), trading as {BRAND_FULL}. Email: <a href=\"mailto:{EMAIL}\">{EMAIL}</a>. Phone: <a href=\"tel:{PHONE_E164}\">{PHONE_DISPLAY}</a>.</p>")]
 BY_PATH = {p["path"]: p for p in PAGES}
 LEGAL_PATHS = {l["path"] for l in LEGAL}
 SOURCES_FILE = os.path.join(ROOT, "content", "news-sources.json")
@@ -559,7 +561,8 @@ def footer(p):
 <div class="footer-grid">
 <div><a class="brand" href="{rel('index.html', p['path'])}">{logo_img(p)}<span>{BRAND}<small>Consulting &middot; Academy</small></span></a>
 <p style="margin-top:14px">Adobe MarTech consulting, corporate training and a practical Tech Academy for AEP, RTCDP, AJO, CJA and Agentic AI.</p>
-<ul><li><a href="{WHATSAPP}" rel="noopener" target="_blank">WhatsApp {PHONE_DISPLAY}</a></li><li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
+<address class="footer-identity" style="font-style:normal;margin-top:14px"><strong>{BRAND_FULL}</strong><br>Legal Name: {LEGAL_NAME}<br>Email: <a href="mailto:{EMAIL}">{EMAIL}</a><br>Phone: <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a></address>
+<ul><li><a href="{WHATSAPP}" rel="noopener" target="_blank">WhatsApp {PHONE_DISPLAY}</a></li>
 <li><a href="{LINKEDIN_PERSON}" rel="noopener" target="_blank">LinkedIn</a> &middot; <a href="{YOUTUBE}" rel="noopener" target="_blank">YouTube</a></li></ul>
 {col("Company", company).replace('<div><h2>', '<div style="margin-top:18px"><h2>')}</div>
 {col("Services", svc)}
@@ -570,7 +573,7 @@ def footer(p):
 {ABOUT_FOOTER}
 <nav class="legal-links" aria-label="Legal">{" ".join(f'<a href="{rel(x, p["path"])}">{e(short_name(BY_PATH[x]))}</a>' for x in ["privacy-policy.html", "terms-and-conditions.html", "refund-policy.html", "disclaimer.html", "sitemap.html"])}</nav>
 <div class="footer-legal">
-<p>&copy; <span id="year">{TODAY[:4]}</span> {LEGAL_NAME}. {BRAND} is the trading brand of {LEGAL_NAME}. Adobe, Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics are trademarks of Adobe. {BRAND} is independent and not affiliated with or endorsed by Adobe.</p>
+<p>&copy; <span id="year">{TODAY[:4]}</span> {BRAND_FULL}. Legal name: {LEGAL_NAME}. Adobe, Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics are trademarks of Adobe. {BRAND} is independent and not affiliated with or endorsed by Adobe.</p>
 <p>Some content on this site is created or enhanced with AI assistance to support research and organisation, and is curated for accuracy and relevance. Always confirm product details against current Adobe documentation.</p>
 <p>Training outcomes depend on participation and practice; no job, salary or certification outcome is guaranteed.</p>
 </div></div></footer>
@@ -589,7 +592,8 @@ def org_node():
             "logo": BASE + "assets/logo-512.png", "email": EMAIL, "telephone": PHONE_E164,
             "sameAs": [LINKEDIN_COMPANY, YOUTUBE],
             "founder": {"@id": PERSON_ID},
-            "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "telephone": PHONE_E164, "email": EMAIL, "availableLanguage": ["en"]},
+            "contactPoint": [{"@type": "ContactPoint", "contactType": "sales", "telephone": PHONE_E164, "email": EMAIL, "availableLanguage": ["en"]},
+                             {"@type": "ContactPoint", "contactType": "customer support", "telephone": PHONE_ALT_E164, "email": EMAIL, "availableLanguage": ["en"]}],
             "knowsAbout": ["Adobe Experience Platform", "Real-Time CDP", "Adobe Journey Optimizer", "Customer Journey Analytics",
                            "Adobe Web SDK", "Customer data platforms", "Data engineering", "Agentic AI", "Model Context Protocol"]}
 

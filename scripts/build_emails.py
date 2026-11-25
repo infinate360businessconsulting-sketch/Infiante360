@@ -75,7 +75,7 @@ def build(key, s):
 <tr><td class="p" style="padding:18px 30px 6px 30px;font:15px/24px Arial,Helvetica,sans-serif;color:{INK}"><p style="margin:0 0 14px 0;color:{MUT}">P.S. {e(s['ps'])}</p>
 <p style="margin:0">Regards,<br><strong>Pavan Babu Gandla</strong><br><span style="color:{MUT};font-size:13px">Founder, Infinate360 &middot; Adobe MarTech, customer data and agentic AI</span></p></td></tr>
 <tr><td style="padding:18px 30px 24px 30px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid #E2E8F0;padding-top:14px;font:11px/17px Arial,Helvetica,sans-serif;color:{MUT}">
-Sent by Infiante 360 Global Services PVT LTD (Infiante360). Independent and not affiliated with or endorsed by Adobe. Training and advisory outcomes depend on participation and execution; no job, salary, certification or business result is guaranteed.<br>
+Sent by PAVAN BABU GANDLA, trading as Infiante360 Business Consulting & Tech Academy. Independent and not affiliated with or endorsed by Adobe. Training and advisory outcomes depend on participation and execution; no job, salary, certification or business result is guaranteed.<br>
 {e(reason)} If this is not relevant, reply STOP or <a href="mailto:{EMAIL}?subject=STOP" style="color:{MUT}">click here</a> and I will not contact you again.<br>{{{{postal_address}}}}</td></tr></table></td></tr>
 </table></td></tr></table></body></html>
 """
