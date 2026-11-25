@@ -275,8 +275,8 @@ JOBS = dict(
         ("Official job portals", _row_links(["Portal", "Good for", "Open"], [(n, d, f"@Open|{u}") for n, u, d in PORTALS]) + '<p class="note">External sites with their own terms. Infiante360 is not affiliated with them and does not guarantee any role.</p>'),
         ("Search phrases by area", _row_links(["Area", "Phrases to try"], SEARCH)),
         ("Employers", '<p>If you are hiring, send the role and original application link through <a href="../services/contract-hiring.html">contract hiring</a> or the <a href="../contact-us.html">contact page</a>. Direct submissions are checked before they are shown anywhere.</p>'),
-        ("Prepare before you apply", '<p>Use the <a href="../academy/career-accelerator-roadmap.html">90-day roadmap</a>, the <a href="../academy/portfolio-projects-and-interview-scenarios.html">portfolio projects</a>, and the Explorer <a href="explorer-jobs-by-role.html">role map</a>.</p>'
-         + pills(REG, WA, ("All products", "index.html"))),
+        ("Prepare before you apply", '<p>Use the <a href="../academy/career-accelerator-roadmap.html">90-day roadmap</a>, the <a href="../academy/portfolio-projects-and-interview-scenarios.html">portfolio projects</a>, and the Explorer <a href="../products/explorer-jobs-by-role.html">role map</a>.</p>'
+         + pills(REG, WA, ("All products", "../products/index.html"))),
     ],
     faqs=[("Do you list vacancies yourselves?", "Not yet. We link to official portals and add a feed only from sources that permit it."),
           ("Do you guarantee placement?", "No. No job, interview or placement is promised.")],
