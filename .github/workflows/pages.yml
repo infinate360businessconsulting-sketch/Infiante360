@@ -26,6 +26,7 @@ jobs:
         run: |
           python3 scripts/seo_inventory.py _site seo-report https://infiante360techacademy.com
           cat seo-report/seo-health.md >> "$GITHUB_STEP_SUMMARY"
+          python3 scripts/seo_report_print.py seo-report
       - uses: actions/upload-artifact@v4
         with:
           name: seo-report
