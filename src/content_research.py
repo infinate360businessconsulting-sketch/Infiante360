@@ -43,6 +43,8 @@ def _hub():
              ("Testing an agentic AI implementation", "../guides/test-agentic-ai-implementation.html"),
              ("MarTech Center of Excellence: operating model and RACI", "../guides/martech-coe-operating-model-raci.html"),
              ("Snowflake, BigQuery, Databricks and Kafka consulting", "../services/snowflake-martech-integration.html")]
+    from content_batch1 import BATCH1
+    links += [(g["h1"][0].upper() + g["h1"][1:], "../" + g["path"]) for g in BATCH1]
     body = '<ul class="checklist">' + "".join(f'<li><a href="{u}">{t}</a></li>' for t, u in links) + "</ul>"
     return dict(path="research/index.html", nav="Research", title="Research and Intelligence: Adobe MarTech, AI and Data",
                 desc="Original research and architecture guidance on Adobe MarTech, customer data, Agentic AI and MCP, with primary sources and clearly labelled examples.",
