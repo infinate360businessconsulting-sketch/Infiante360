@@ -94,3 +94,9 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Owner prompts: remove "being confirmed" from marketing pages (done in content_group.py/content_products.py; no legal-entity claims made); job portal only via permitted sources; events platform; master execution.
 - Created: jobs/index.html (7 official portal links, no scraped listings), events/categories.html (20 categories), events/180-day-calendar.html (relative months, no dates), docs/MARKETING_OS.md; 3 keyword rows.
 - Not done: 300 articles/30 pillars (backlog, distinct angles only), live job feed, event registration/payment/attendance (needs backend), SkillSurf domain, legal pages' entity details, analytics access.
+
+## 2026-11-25 SEO/AEO/GEO + video-sitemap brief
+- Already in place (reused, not regenerated): robots.txt with AI search bots separated from AI training bots, llms.txt + llms-full.txt + answers.json, sitemap-index + category sitemaps (events/ in sitemaps/training.xml) + images.xml, RSS feeds, JSON-LD validation in CI.
+- Created: src/videos.py (video sitemap + VideoObject generator from content/videos.json), content/videos.json (empty), tests/test_videos.py. build.py writes sitemaps/videos.xml only when a video is approved + transcribed.
+- Not registered: infinate360-demo.mp4 / promo.mp4 (10 s, silent, same footage, garbled on-screen text, no transcript): decorative, not educational; fake video watch pages would be thin.
+- Not done: 300 articles/30 pillars/705 images/one-minute videos (backlog), IndexNow key + submissions and Search Console/Bing submission (owner accounts), AI-citation benchmark of 100 questions (needs permitted sampling, owner go-ahead), admin dashboard, feed.json.
