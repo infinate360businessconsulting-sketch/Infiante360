@@ -22,3 +22,10 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Open gaps in `docs/KEYWORD_COVERAGE_REPORT.md`; programme fees, schedules and durations (approved catalogue).
 - Whether Adobe Commerce delivery is a real offering.
 - Adobe partner-badge authorization: the supplied banners show partner wording; none is used until documented.
+
+## 2026-11-25 batch (CI run for af98f2b: success; 231 pages built, 230 sitemap URLs, 0 orphans, 24 tests)
+- Done: evergreen cohort config (CI-verified); Google verification tags served (served, NOT verified until Search Console confirms).
+- Done: image engine (scripts/visual_engine.py, scripts/image_pipeline.py): deterministic SVG + Pillow, approved logo composited, WebP/PNG, manifests in data/seo/image_*.json. No generative model available here (no GPU, model hosts unreachable); vendor logos not embedded (no official files or permission on record).
+- Done: five consulting pages (Snowflake, BigQuery, Databricks, Kafka, enterprise architecture) with per-page og:image and Service schema; queue PG-001..005 marked generated. Adobe Commerce stays pending_confirmation (data/seo/service_registry.json).
+- Drafted, not sent/submitted: RSS submission kit (data/distribution/), press release draft (docs/PRESS_RELEASE_DRAFT.md), white-label footer link fixes (docs/WHITE_LABEL_FOOTER_LINKS.md).
+- Remaining: 365 articles / 50 pillars / 30 landing intentions / 26 use cases in controlled batches; child sitemaps; 100 AI-discovery questions; AI-visibility registry (Not tested); 90-day social queue; admin dashboard; more agents; replace entdemo placeholder visuals; owner items (partner documentation, dates, fees, legal address, SPF/DKIM/DMARC).

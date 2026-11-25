@@ -1,0 +1,11 @@
+directory,type,how_to_submit,requires_account,status,submitted_on,confirmation_ref,notes
+Feedly,reader/aggregator,Add the feed URL inside Feedly (follow a source); no formal directory submission,yes,not_submitted,,,Verify current process in Feedly help before use
+Inoreader,reader/aggregator,Add the feed URL inside Inoreader,yes,not_submitted,,,Verify current process
+NewsBlur,reader/aggregator,Add the feed URL inside NewsBlur,yes,not_submitted,,,Verify current process
+Feedspot,reader + directory,Use Feedspot's own submission or claim flow for blogs,yes,not_submitted,,,Directory listings may be editorial and are not guaranteed
+Flipboard,curation platform,Create a magazine or connect the RSS feed under a publisher account,yes,not_submitted,,,Review current Flipboard publisher requirements
+Google Search Console,search engine,Submit https://infiante360techacademy.com/rss.xml in Sitemaps (RSS 2.0 is accepted as a sitemap format) after ownership is verified,yes,not_submitted,,,Needs the owner to confirm verification first; a submission is not indexing
+Bing Webmaster Tools,search engine,Submit the feed URL in Sitemaps after ownership is verified,yes,not_submitted,,,Same caveat; confirm via the report not the submission
+Yandex Webmaster,search engine,Add the site then submit the sitemap or feed,yes,not_submitted,,,Optional; only if the owner wants Yandex coverage
+IndexNow,ping protocol,Generate a key file and ping URLs on change,no,not_configured,,,Needs a key file on the domain; do not publish the key in docs
+LinkedIn (company page),social,Share new posts manually or via an approved scheduler,yes,not_submitted,,,No auto-posting without the owner's go-ahead

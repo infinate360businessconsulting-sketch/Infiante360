@@ -1,0 +1,3 @@
+item,channel,audience,status,approved_by_owner,sent_on,response,notes
+Press release draft,wire or direct outreach,trade and education media,draft,no,,,docs/PRESS_RELEASE_DRAFT.md
+RSS feed set,aggregators and search consoles,readers and crawlers,not_submitted,no,,,data/distribution/rss_directories.csv
