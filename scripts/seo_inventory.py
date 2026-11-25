@@ -19,10 +19,12 @@ class P(HTMLParser):
         self.h1 = []; self.in_h1 = False
         self.meta = {}; self.canon = None; self.links = []; self.jsonld = []; self.in_ld = False
         self.words = 0; self.skip = 0; self.forms = 0; self.imgs_no_alt = 0
+        self.svg = 0; self.title_done = False
 
     def handle_starttag(self, tag, a):
         a = dict(a)
-        if tag == "title": self.in_title = True
+        if tag == "svg": self.svg += 1
+        if tag == "title" and not self.svg and not self.title_done: self.in_title = True
         elif tag == "h1": self.in_h1 = True; self.h1.append("")
         elif tag == "meta" and a.get("name"): self.meta[a["name"].lower()] = a.get("content", "")
         elif tag == "meta" and a.get("property"): self.meta[a["property"].lower()] = a.get("content", "")
@@ -34,7 +36,8 @@ class P(HTMLParser):
         elif tag == "img" and a.get("alt") is None: self.imgs_no_alt += 1
 
     def handle_endtag(self, tag):
-        if tag == "title": self.in_title = False
+        if tag == "svg" and self.svg: self.svg -= 1
+        if tag == "title" and self.in_title: self.in_title = False; self.title_done = True
         elif tag == "h1": self.in_h1 = False
         elif tag == "script":
             if self.in_ld: self.in_ld = False
@@ -119,19 +122,24 @@ def main(built, out, base=None):
     if os.path.exists(smp):
         x = open(smp, encoding="utf-8").read()
         sm_urls = re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", x)
+    csm = os.path.join(built, "corporate", "sitemap.xml")  # corporate section ships its own sitemap, referenced from robots.txt
+    if os.path.exists(csm):
+        sm_urls += re.findall(r"<loc>\s*([^<\s]+)\s*</loc>", open(csm, encoding="utf-8").read())
     def sm_route(u):
         p = urlparse(u).path or "/"
         return p if not p.endswith("/") else p + "index.html"
     sm_set = {sm_route(u) for u in sm_urls}
-    indexable = [s for s, p in pages.items() if not p["noindex"] and s not in ("/404.html",)]
+    UTILITY = ("verifyfor", "zohoverify")  # third-party site-verification files: must stay byte-exact, not content pages
+    utility = sorted(s for s in pages if any(u in s for u in UTILITY))
+    indexable = [s for s, p in pages.items() if not p["noindex"] and s not in ("/404.html",) and s not in utility]
     health = {
-        "pages_total": len(pages), "pages_indexable": len(indexable), "pages_noindex": sum(1 for p in pages.values() if p["noindex"]),
+        "pages_total": len(pages), "utility_pages_excluded": utility, "pages_indexable": len(indexable), "pages_noindex": sum(1 for p in pages.values() if p["noindex"]),
         "broken_internal_links": broken[:500], "broken_internal_links_count": len(broken),
         "orphans_indexable": sorted(s for s in indexable if not pages[s]["inbound_links"] and s != "/index.html"),
         "duplicate_titles": dups("title"), "duplicate_descriptions": dups("description"), "duplicate_h1": dups("h1"),
         "title_over_65": sorted(s for s, p in pages.items() if p["title_len"] > 65), "desc_over_160": sorted(s for s, p in pages.items() if p["desc_len"] > 160),
-        "missing_title": sorted(s for s, p in pages.items() if not p["title"]), "missing_description": sorted(s for s, p in pages.items() if not p["description"] and not p["noindex"]),
-        "missing_h1": sorted(s for s, p in pages.items() if not p["h1"] and not p["noindex"]), "multiple_h1": sorted(s for s, p in pages.items() if len(p["h1"]) > 1),
+        "missing_title": sorted(s for s, p in pages.items() if not p["title"]), "missing_description": sorted(s for s, p in pages.items() if not p["description"] and not p["noindex"] and s not in utility),
+        "missing_h1": sorted(s for s, p in pages.items() if not p["h1"] and not p["noindex"] and s not in utility), "multiple_h1": sorted(s for s, p in pages.items() if len(p["h1"]) > 1),
         "missing_canonical": sorted(s for s in indexable if not pages[s]["canonical"]),
         "invalid_jsonld_pages": sorted(s for s, p in pages.items() if p["jsonld_invalid_blocks"]),
         "pages_without_jsonld": sorted(s for s in indexable if not pages[s]["jsonld_types"]),
