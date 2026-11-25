@@ -1,0 +1,10 @@
+{
+ "utm_source": "linkedin",
+ "utm_medium": "organic_social",
+ "utm_campaign": "{campaign-slug}",
+ "utm_content": "{creative-id}",
+ "rules": [
+  "UTMs only on shared links, never on canonical or sitemap URLs",
+  "No personal or candidate data in URLs or events"
+ ]
+}

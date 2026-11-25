@@ -1100,7 +1100,7 @@ def chat_index():
 _SM_RULES = [("services/", "services"), ("solutions/", "solutions"), ("use-cases/industries/", "industries"), ("industries.html", "industries"),
              ("case-studies/", "case-studies"), ("use-cases/", "use-cases"), ("guides/", "articles"), ("insights/", "articles"),
              ("answers/", "articles"), ("learn/", "articles"), ("adobe-experience-platform/", "aep-guides"), ("academy/", "training"),
-             ("training/", "training"), ("lp/", "training"), ("events/", "training")]
+             ("training/", "training"), ("lp/", "training"), ("events/", "training"), ("research/", "research")]
 
 
 def write_child_sitemaps():

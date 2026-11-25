@@ -39,3 +39,10 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Article diagrams: 20 specs (scripts/make_article_specs.py) -> SVG/WebP/OG via visual_engine + image_pipeline (25 images total, quality gate 0 failures); each article now has its own og:image and an inline diagram.
 - data/seo/pillar_decisions.json: all 50 pillars map to an existing hub (no new pillar pages; decision per pillar recorded).
 - data/seo/ai_visibility_registry.json/.csv: 100 neutral queries mapped to target URLs, every result "Not tested" (no fabricated results).
+
+## 2026-11-25 research engine (phase 1)
+- data/research/topic_registry.json: 50 topics checked against existing pages (26 exist, 21 new candidates, 2 blocked on data, 1 needs sources).
+- /research/ hub + first research article (MCP and CDPs) with diagram; scripts/validate_research.py + tests (33 pass).
+- docs/adr/ADR-001 (approval-gated pipeline; proposed), RESEARCH_OPERATIONS, EDITORIAL_STANDARDS, SOURCE_VERIFICATION.
+- marketing/config/* and one LinkedIn draft set (pending_review; auto-publish/comment/connect/message all false, tested).
+- NOT built: 25 research agents (only deterministic checks exist), source registry, research RSS, whitepapers, dashboard, scheduled runs, daily LinkedIn routines. Need owner decisions in ADR-001.

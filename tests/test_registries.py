@@ -28,3 +28,15 @@ class Registries(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Research(unittest.TestCase):
+    def test_validate_research_clean(self):
+        import subprocess, sys
+        r = subprocess.run([sys.executable, "-I", os.path.join(ROOT, "scripts", "validate_research.py")], capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0, r.stdout)
+
+    def test_publishing_permissions_locked(self):
+        p = json.load(open(os.path.join(ROOT, "marketing", "config", "publishing_permissions.json")))
+        for k in ("auto_publish", "auto_comment", "auto_connect", "auto_message", "scraping"):
+            self.assertFalse(p[k], k)

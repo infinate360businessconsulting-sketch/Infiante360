@@ -1,0 +1,48 @@
+{
+ "id": "IMG-RES-MCPCDP",
+ "slug": "mcp-customer-data-platforms",
+ "page": "research/mcp-customer-data-platforms.html",
+ "title": "MCP and customer data platforms",
+ "subtitle": "A policy layer between agents and customer data",
+ "keyword": "mcp customer data platform",
+ "kind": "layers",
+ "accent": "cyan",
+ "kicker": "Infiante360 research",
+ "layers": [
+  {
+   "title": "Agent host",
+   "items": [
+    "MCP client",
+    "User identity"
+   ]
+  },
+  {
+   "title": "MCP server",
+   "items": [
+    "Allowed tools only",
+    "Resource limits"
+   ]
+  },
+  {
+   "title": "Policy layer",
+   "items": [
+    "Consent",
+    "Roles",
+    "Field filter",
+    "Logging"
+   ]
+  },
+  {
+   "title": "CDP APIs",
+   "items": [
+    "Profiles",
+    "Audiences",
+    "Activation"
+   ]
+  }
+ ],
+ "band": "Consent and access control live in the server, never in the prompt.",
+ "note": "Illustrative reference pattern, not a client deployment.",
+ "alt": "Layered diagram: agent host, MCP server, policy layer and customer data platform APIs",
+ "caption": "MCP server as a policy layer in front of a CDP."
+}

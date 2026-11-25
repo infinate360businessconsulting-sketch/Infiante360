@@ -1,0 +1,29 @@
+{
+ "segments": [
+  {
+   "id": "learners-0-5",
+   "promote": "AEP Foundations, MarTech SME programs"
+  },
+  {
+   "id": "professionals-5-10",
+   "promote": "Advanced MarTech, CDP, Agentic AI"
+  },
+  {
+   "id": "architects",
+   "promote": "Architecture mentoring"
+  },
+  {
+   "id": "cxo",
+   "promote": "CXO Hive"
+  },
+  {
+   "id": "ld-hr",
+   "promote": "Corporate training"
+  },
+  {
+   "id": "enterprise",
+   "promote": "Consulting and contract specialists"
+  }
+ ],
+ "note": "Offers are promoted only if live on the website."
+}

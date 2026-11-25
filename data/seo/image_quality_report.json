@@ -315,6 +315,27 @@
   }
  },
  {
+  "image_id": "IMG-RES-MCPCDP",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 34.3
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 13.5
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 122.5
+   }
+  }
+ },
+ {
   "image_id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
   "issues": [],
   "files": {

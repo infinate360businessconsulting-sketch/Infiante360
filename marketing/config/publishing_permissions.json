@@ -1,0 +1,19 @@
+{
+ "updated": "2026-11-25",
+ "auto_publish": false,
+ "auto_comment": false,
+ "auto_connect": false,
+ "auto_message": false,
+ "scraping": false,
+ "allowed": [
+  "Draft posts and creative briefs as files",
+  "Owner posts manually or uses LinkedIn's own scheduler"
+ ],
+ "required_status_flow": [
+  "draft",
+  "pending_review",
+  "approved",
+  "published"
+ ],
+ "note": "No session cookies, browser automation or unofficial tools. A person approves every post."
+}

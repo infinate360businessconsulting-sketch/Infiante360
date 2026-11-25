@@ -375,6 +375,31 @@
   "publication_status": "pending_page_integration"
  },
  {
+  "image_id": "IMG-RES-MCPCDP",
+  "page": "research/mcp-customer-data-platforms.html",
+  "title": "MCP and customer data platforms",
+  "keyword": "mcp customer data platform",
+  "description": "MCP server as a policy layer in front of a CDP.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/mcp-customer-data-platforms",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 34.3,
+   "hero-800.webp": 13.5,
+   "og.png": 122.5
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Layered diagram: agent host, MCP server, policy layer and customer data platform APIs",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
   "image_id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
   "page": "guides/renewal-journey-holdout-design.html",
   "title": "Renewal holdout design",

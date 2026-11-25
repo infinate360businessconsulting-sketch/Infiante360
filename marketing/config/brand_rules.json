@@ -1,0 +1,22 @@
+{
+ "logo": "assets/logo-mark.png (approved asset only, composited by code)",
+ "colors": [
+  "deep navy",
+  "red",
+  "cyan",
+  "neutral"
+ ],
+ "formats": {
+  "square": "1200x1200",
+  "landscape": "1200x627",
+  "portrait": "1080x1350",
+  "vertical_video": "1080x1920"
+ },
+ "forbidden": [
+  "Adobe partner or certified-partner wording without documentation",
+  "Invented learner counts, placements, testimonials, employer logos",
+  "Unlabelled hypothetical examples",
+  "Confidential employer or client details"
+ ],
+ "tone": "Plain, practical, technical. No engagement bait."
+}

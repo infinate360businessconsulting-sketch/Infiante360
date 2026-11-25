@@ -135,6 +135,15 @@
   ]
  },
  {
+  "image_id": "IMG-RES-MCPCDP",
+  "page": "research/mcp-customer-data-platforms.html",
+  "roles": [
+   "hero",
+   "og",
+   "diagram"
+  ]
+ },
+ {
   "image_id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
   "page": "guides/renewal-journey-holdout-design.html",
   "roles": [
