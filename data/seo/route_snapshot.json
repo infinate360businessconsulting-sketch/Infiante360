@@ -1,0 +1,2247 @@
+{
+ "source": "CI run 45557767016 (seo_report_print.py output)",
+ "count": 249,
+ "routes": [
+  {
+   "route": "/",
+   "title_len": 57,
+   "words": 2355,
+   "inbound": 246,
+   "indexable": true,
+   "title": "Infiante360 ",
+   "h1": " Adobe MarTech Consulting, AEP Training & AI|Turn customer data into intelligent experiences"
+  },
+  {
+   "route": "/404.html",
+   "title_len": 28,
+   "words": 805,
+   "inbound": 0,
+   "indexable": false,
+   "title": "Page not found ",
+   "h1": " Infiante360|Page not found"
+  },
+  {
+   "route": "/about-us.html",
+   "title_len": 59,
+   "words": 1172,
+   "inbound": 227,
+   "indexable": true,
+   "title": "About Infiante360 ",
+   "h1": " Adobe MarTech Consulting & Tech Academy|About Infiante360"
+  },
+  {
+   "route": "/academy/",
+   "title_len": 53,
+   "words": 1684,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Infiante360 Tech Academy: Adobe MarTech & AI Programs",
+   "h1": "Infiante360 Tech Academy"
+  },
+  {
+   "route": "/academy/aep-bfsi-quiz.html",
+   "title_len": 56,
+   "words": 1240,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Free AEP Quiz for BFSI: 20 Segmentation & Data Scenarios",
+   "h1": "Free AEP quiz: 20 banking and financial-services scenarios"
+  },
+  {
+   "route": "/academy/aep-foundations-batch.html",
+   "title_len": 47,
+   "words": 1345,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Live AEP Foundations Batch: 8 AM IST, Two Weeks",
+   "h1": "Live AEP Foundations batch"
+  },
+  {
+   "route": "/academy/aep-implementation-track/",
+   "title_len": 60,
+   "words": 1172,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP MarTech Implementation Track: Module Guide ",
+   "h1": " Infiante360|AEP MarTech implementation track: module guide"
+  },
+  {
+   "route": "/academy/aep-implementation-track/ajo-event-journeys.html",
+   "title_len": 42,
+   "words": 1105,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Module 10: AJO: Event-Based Journeys ",
+   "h1": " AEP|Module 10: AJO: Event-Based Journeys"
+  },
+  {
+   "route": "/academy/aep-implementation-track/ajo-external-data.html",
+   "title_len": 53,
+   "words": 1136,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Module 08: AJO External Data and Custom Actions ",
+   "h1": " AEP|Module 08: AJO External Data and Custom Actions"
+  },
+  {
+   "route": "/academy/aep-implementation-track/ajo-offer-decisioning.html",
+   "title_len": 39,
+   "words": 1119,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Module 09: AJO: Offer Decisioning ",
+   "h1": " AEP|Module 09: AJO: Offer Decisioning"
+  },
+  {
+   "route": "/academy/aep-implementation-track/ajo-orchestration.html",
+   "title_len": 55,
+   "words": 1132,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Module 07: Adobe Journey Optimizer: Orchestration ",
+   "h1": " AEP|Module 07: Adobe Journey Optimizer: Orchestration"
+  },
+  {
+   "route": "/academy/aep-implementation-track/intelligent-services.html",
+   "title_len": 37,
+   "words": 1129,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Module 05: Intelligent Services ",
+   "h1": " AEP|Module 05: Intelligent Services"
+  },
+  {
+   "route": "/academy/aep-implementation-track/rtcdp-segment.html",
+   "title_len": 47,
+   "words": 1139,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Module 06: Real-Time CDP: Build a Segment ",
+   "h1": " AEP|Module 06: Real-Time CDP: Build a Segment"
+  },
+  {
+   "route": "/academy/aep-implementation-track/rtcp.html",
+   "title_len": 43,
+   "words": 1141,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Module 03: Real-Time Customer Profile ",
+   "h1": " AEP|Module 03: Real-Time Customer Profile"
+  },
+  {
+   "route": "/academy/aep-implementation-track/web-sdk.html",
+   "title_len": 48,
+   "words": 1171,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Module 01: AEP Data Collection and Web SDK ",
+   "h1": " AEP|Module 01: AEP Data Collection and Web SDK"
+  },
+  {
+   "route": "/academy/aep-launchpad-bootcamp.html",
+   "title_len": 61,
+   "words": 1647,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Launchpad Bootcamp: Adobe Experience Platform Foundations",
+   "h1": "Start your Adobe Experience Platform journey here"
+  },
+  {
+   "route": "/academy/ajo-best-practices-handout.html",
+   "title_len": 56,
+   "words": 1364,
+   "inbound": 7,
+   "indexable": true,
+   "title": "AJO Technical Best Practices Handout: 10-Point Checklist",
+   "h1": "Adobe Journey Optimizer technical best-practices handout"
+  },
+  {
+   "route": "/academy/career-paths-by-background.html",
+   "title_len": 54,
+   "words": 1453,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Adobe MarTech Career Paths by Background ",
+   "h1": " Infiante360|Adobe MarTech career paths by background"
+  },
+  {
+   "route": "/academy/community.html",
+   "title_len": 58,
+   "words": 1413,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Infiante360 Learning Communities: MarTech SME and CXO Hive",
+   "h1": "Infiante360 learning communities"
+  },
+  {
+   "route": "/academy/courses/adobe-analytics-training.html",
+   "title_len": 62,
+   "words": 1294,
+   "inbound": 13,
+   "indexable": true,
+   "title": "Adobe Analytics Training: Implementation, Tracking & Reporting",
+   "h1": "Adobe Analytics training"
+  },
+  {
+   "route": "/academy/courses/aep-certification-prep.html",
+   "title_len": 62,
+   "words": 1282,
+   "inbound": 15,
+   "indexable": true,
+   "title": "AEP Certification Preparation: Study Plan & Practice Scenarios",
+   "h1": "AEP certification preparation training"
+  },
+  {
+   "route": "/academy/courses/agentic-ai-training.html",
+   "title_len": 59,
+   "words": 1310,
+   "inbound": 13,
+   "indexable": true,
+   "title": "Agentic AI Training for MarTech: Agents, Tools & Governance",
+   "h1": "Agentic AI for MarTech training"
+  },
+  {
+   "route": "/academy/courses/ajo-training.html",
+   "title_len": 62,
+   "words": 1299,
+   "inbound": 15,
+   "indexable": true,
+   "title": "Adobe Journey Optimizer (AJO) Training: Journeys & Decisioning",
+   "h1": "Journey Optimizer training"
+  },
+  {
+   "route": "/academy/courses/cja-training.html",
+   "title_len": 65,
+   "words": 1292,
+   "inbound": 13,
+   "indexable": true,
+   "title": "CJA Training: Customer Journey Analytics Connections & Data Views",
+   "h1": "Customer Journey Analytics training"
+  },
+  {
+   "route": "/academy/courses/rtcdp-training.html",
+   "title_len": 60,
+   "words": 1320,
+   "inbound": 13,
+   "indexable": true,
+   "title": "Real-Time CDP Training: Audiences, Activation & Customer 360",
+   "h1": "Real-Time CDP training"
+  },
+  {
+   "route": "/academy/courses/web-sdk-training.html",
+   "title_len": 62,
+   "words": 1316,
+   "inbound": 13,
+   "indexable": true,
+   "title": "Adobe Web SDK Training: Data Layer, Datastreams & Edge Network",
+   "h1": "Web SDK & Tags training"
+  },
+  {
+   "route": "/academy/free-resources.html",
+   "title_len": 59,
+   "words": 1055,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Free Adobe MarTech Learning Resources ",
+   "h1": " Infiante360 Academy|Free learning resources"
+  },
+  {
+   "route": "/academy/hands-on-projects.html",
+   "title_len": 52,
+   "words": 1146,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Hands-On Adobe MarTech Projects & Capstone Portfolio",
+   "h1": "Hands-on Adobe MarTech projects and capstone portfolio"
+  },
+  {
+   "route": "/academy/lesson-topics.html",
+   "title_len": 56,
+   "words": 2061,
+   "inbound": 11,
+   "indexable": true,
+   "title": "50 Adobe MarTech Lesson & Webinar Topics ",
+   "h1": " AEP, AJO, CJA|50 Adobe MarTech lesson and webinar topics"
+  },
+  {
+   "route": "/academy/martech-bootcamp-webinar.html",
+   "title_len": 48,
+   "words": 1652,
+   "inbound": 6,
+   "indexable": true,
+   "title": "MarTech Bootcamp Webinar: What Is MarTech & AEP?",
+   "h1": "MarTech Bootcamp webinar: what is MarTech and how AEP works"
+  },
+  {
+   "route": "/academy/martech-roles.html",
+   "title_len": 64,
+   "words": 1168,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Roles Explained: Ops, RevOps, Engineering & Architecture",
+   "h1": "MarTech roles explained"
+  },
+  {
+   "route": "/academy/programs/adobe-cx-enterprise-agentic-ai-bootcamp.html",
+   "title_len": 48,
+   "words": 1788,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Adobe CX Enterprise Agentic AI Bootcamp: 4 Weeks",
+   "h1": "Adobe CX Enterprise Agentic AI Bootcamp"
+  },
+  {
+   "route": "/academy/programs/aep-ajo-cja-foundation-advanced.html",
+   "title_len": 57,
+   "words": 1544,
+   "inbound": 19,
+   "indexable": true,
+   "title": "AEP, AJO & CJA Course: Foundation + Advanced Architecture",
+   "h1": "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture"
+  },
+  {
+   "route": "/academy/programs/aep-multi-region-multi-brand-architecture.html",
+   "title_len": 62,
+   "words": 2133,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Architecting Adobe Experience Platform Across Regions & Brands",
+   "h1": "Architecting AEP for Scale Across Regions and Brands"
+  },
+  {
+   "route": "/academy/programs/agentic-ai-advanced-30-hour.html",
+   "title_len": 45,
+   "words": 2203,
+   "inbound": 12,
+   "indexable": true,
+   "title": "Advanced Agentic AI + AEP: 30-Hour Lab Series",
+   "h1": "Advanced Agentic AI + AEP: 30-Hour Lab Series"
+  },
+  {
+   "route": "/academy/programs/agentic-ai-cdp-weekend-batch.html",
+   "title_len": 49,
+   "words": 2024,
+   "inbound": 14,
+   "indexable": true,
+   "title": "Agentic AI + Adobe CDP Weekend Batch: 16 Sessions",
+   "h1": "Agentic AI + Adobe CDP Weekend Batch"
+  },
+  {
+   "route": "/academy/programs/agentic-ai-mcp-track.html",
+   "title_len": 48,
+   "words": 1539,
+   "inbound": 20,
+   "indexable": true,
+   "title": "Agentic AI & MCP for MarTech: Live Weekend Track",
+   "h1": "Agentic AI & MCP for MarTech"
+  },
+  {
+   "route": "/academy/programs/ai-engineering-bootcamp.html",
+   "title_len": 52,
+   "words": 2357,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AI Engineering Bootcamp 2026: 16 Weeks, 40+ Projects",
+   "h1": "The Complete AI Engineering Bootcamp (2026)"
+  },
+  {
+   "route": "/academy/programs/ajo-live-learning.html",
+   "title_len": 52,
+   "words": 1589,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Adobe Journey Optimizer Live Learning: Morning Batch",
+   "h1": "Adobe Journey Optimizer Live Learning"
+  },
+  {
+   "route": "/academy/programs/bronze-membership.html",
+   "title_len": 60,
+   "words": 1761,
+   "inbound": 19,
+   "indexable": true,
+   "title": "Bronze Membership: Recorded Videos, 3,500 Questions, Sandbox",
+   "h1": "Bronze Membership: Recorded Videos, 3,500 Questions & Sandbox"
+  },
+  {
+   "route": "/academy/programs/cxo-hive-curriculum.html",
+   "title_len": 60,
+   "words": 1500,
+   "inbound": 7,
+   "indexable": true,
+   "title": "CXO Hive Curriculum: 10 Weeks of MarTech & AI for Executives",
+   "h1": "CXO Hive curriculum: ten weeks, week by week"
+  },
+  {
+   "route": "/academy/programs/cxo-hive-operating-model.html",
+   "title_len": 53,
+   "words": 1405,
+   "inbound": 5,
+   "indexable": true,
+   "title": "CIO-CMO Alignment: Operating Model for AI-Era MarTech",
+   "h1": "CIO-CMO alignment: an operating model for AI-era MarTech"
+  },
+  {
+   "route": "/academy/programs/cxo-hive-outcomes.html",
+   "title_len": 55,
+   "words": 1334,
+   "inbound": 7,
+   "indexable": true,
+   "title": "CXO Hive Outcomes: Six Executive Deliverables You Build",
+   "h1": "CXO Hive outcomes and capstone"
+  },
+  {
+   "route": "/academy/programs/executive-architecture-leadership.html",
+   "title_len": 51,
+   "words": 1989,
+   "inbound": 27,
+   "indexable": true,
+   "title": "CXO Hive: Executive MarTech & AI Leadership Program",
+   "h1": "CXO Hive: Executive MarTech & AI Leadership Program"
+  },
+  {
+   "route": "/academy/programs/live-customised-program.html",
+   "title_len": 55,
+   "words": 1490,
+   "inbound": 27,
+   "indexable": true,
+   "title": "Live Customised MarTech Program for Individuals & Teams",
+   "h1": "Live Customised MarTech Program"
+  },
+  {
+   "route": "/academy/programs/martech-sme-batch.html",
+   "title_len": 45,
+   "words": 1642,
+   "inbound": 11,
+   "indexable": true,
+   "title": "Adobe MarTech SME Batch: AEP, RTCDP, AJO, CJA",
+   "h1": "Adobe MarTech SME Batch"
+  },
+  {
+   "route": "/academy/programs/weekday-morning-batch.html",
+   "title_len": 49,
+   "words": 1688,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Weekday Morning Batch: Adobe MarTech + Agentic AI",
+   "h1": "Weekday Morning Live Batch"
+  },
+  {
+   "route": "/academy/promo-video.html",
+   "title_len": 57,
+   "words": 1042,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Infiante360 Tech Academy Promo Video ",
+   "h1": " Adobe MarTech & AI|Infiante360 Tech Academy promo video"
+  },
+  {
+   "route": "/academy/recording-platform.html",
+   "title_len": 54,
+   "words": 1291,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Learner Recording Platform: Video Library & Onboarding",
+   "h1": "The learner recording platform and video library"
+  },
+  {
+   "route": "/academy/simulators.html",
+   "title_len": 57,
+   "words": 1303,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe MarTech Simulators: AEP, Banking, Airline & Telecom",
+   "h1": "Practical simulation environments for Adobe MarTech"
+  },
+  {
+   "route": "/academy/testimonials.html",
+   "title_len": 59,
+   "words": 1246,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Learner & Client Reviews: Share Your Infiante360 Experience",
+   "h1": "Reviews from learners and clients"
+  },
+  {
+   "route": "/academy/videos.html",
+   "title_len": 55,
+   "words": 1035,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Free Adobe MarTech Demo Sessions & Videos ",
+   "h1": " Infiante360|Free demo sessions"
+  },
+  {
+   "route": "/academy/workshops.html",
+   "title_len": 62,
+   "words": 1564,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Workshops & Bootcamps: Hands-on Every Friday ",
+   "h1": " Infiante360|Workshops and bootcamps"
+  },
+  {
+   "route": "/academy/youtube-playlists.html",
+   "title_len": 51,
+   "words": 1145,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Free AEP, AJO & CJA YouTube Playlists ",
+   "h1": " Infiante360|Free Adobe MarTech YouTube playlists"
+  },
+  {
+   "route": "/admin/",
+   "title_len": 27,
+   "words": 4,
+   "inbound": 1,
+   "indexable": false,
+   "title": "Content admin ",
+   "h1": " Infinite360|"
+  },
+  {
+   "route": "/admin/dashboard.html",
+   "title_len": 28,
+   "words": 1913,
+   "inbound": 0,
+   "indexable": false,
+   "title": "Site dashboard ",
+   "h1": " Infiante360|Site dashboard"
+  },
+  {
+   "route": "/adobe-experience-platform/",
+   "title_len": 60,
+   "words": 1912,
+   "inbound": 228,
+   "indexable": true,
+   "title": "AEP Guide: Adobe Experience Platform Architecture & Training",
+   "h1": "Adobe Experience Platform (AEP): the complete practical guide"
+  },
+  {
+   "route": "/adobe-experience-platform/activation-destinations.html",
+   "title_len": 57,
+   "words": 1136,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Activation & Destinations: Send Audiences to Channels",
+   "h1": "AEP activation: sending audiences to destinations"
+  },
+  {
+   "route": "/adobe-experience-platform/architecture.html",
+   "title_len": 55,
+   "words": 1210,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Architecture Best Practices: Sandboxes & Governance",
+   "h1": "AEP architecture: an enterprise reference model"
+  },
+  {
+   "route": "/adobe-experience-platform/career-path.html",
+   "title_len": 60,
+   "words": 1262,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Career Path: Roles, Skills, Jobs, Certification & Salary",
+   "h1": "AEP career path: roles, skills and roadmap"
+  },
+  {
+   "route": "/adobe-experience-platform/data-ingestion.html",
+   "title_len": 56,
+   "words": 1251,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Data Ingestion: Batch, Streaming & Source Connectors",
+   "h1": "AEP data ingestion: batch, streaming and sources"
+  },
+  {
+   "route": "/adobe-experience-platform/datasets.html",
+   "title_len": 56,
+   "words": 1234,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Datasets: Setup, Profile Enablement & Best Practices",
+   "h1": "AEP datasets: setup, enablement and troubleshooting"
+  },
+  {
+   "route": "/adobe-experience-platform/identity-service.html",
+   "title_len": 60,
+   "words": 1273,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Identity Resolution: Namespaces, Graphs & Best Practices",
+   "h1": "AEP identity: how identity resolution works"
+  },
+  {
+   "route": "/adobe-experience-platform/implementation-guide.html",
+   "title_len": 54,
+   "words": 1263,
+   "inbound": 228,
+   "indexable": true,
+   "title": "AEP Implementation Guide: End-to-End Steps & Checklist",
+   "h1": "AEP implementation: an end-to-end guide"
+  },
+  {
+   "route": "/adobe-experience-platform/interview-questions.html",
+   "title_len": 61,
+   "words": 1330,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Interview Questions & Answers for Developers & Architects",
+   "h1": "AEP interview questions and answers"
+  },
+  {
+   "route": "/adobe-experience-platform/real-time-customer-profile.html",
+   "title_len": 57,
+   "words": 1215,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Real-Time Customer Profile & Merge Policies Explained",
+   "h1": "AEP profiles: Real-Time Customer Profile explained"
+  },
+  {
+   "route": "/adobe-experience-platform/segmentation-audiences.html",
+   "title_len": 55,
+   "words": 1189,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Segments & Audiences: Batch, Streaming & Edge Guide",
+   "h1": "AEP segments and audiences: a practical guide"
+  },
+  {
+   "route": "/adobe-experience-platform/xdm-schemas.html",
+   "title_len": 58,
+   "words": 1420,
+   "inbound": 228,
+   "indexable": true,
+   "title": "AEP Schemas (XDM): Design Guide, Examples & Best Practices",
+   "h1": "AEP schemas: designing XDM schemas step by step"
+  },
+  {
+   "route": "/answers/",
+   "title_len": 59,
+   "words": 1392,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe AEP, AJO & CJA Answers Hub: Sourced Q&A ",
+   "h1": " Infiante360|Adobe Experience Platform answers hub"
+  },
+  {
+   "route": "/answers/ai-agentic-mcp.html",
+   "title_len": 37,
+   "words": 1443,
+   "inbound": 10,
+   "indexable": true,
+   "title": "Agentic AI & MCP for MarTech: Answers",
+   "h1": "Agentic AI & MCP for MarTech: Answers"
+  },
+  {
+   "route": "/answers/ajo-journeys.html",
+   "title_len": 38,
+   "words": 1705,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Adobe Journey Optimizer (AJO): Answers",
+   "h1": "Adobe Journey Optimizer (AJO): Answers"
+  },
+  {
+   "route": "/answers/career-training.html",
+   "title_len": 41,
+   "words": 1477,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Adobe MarTech Careers & Training: Answers",
+   "h1": "Adobe MarTech Careers & Training: Answers"
+  },
+  {
+   "route": "/answers/cja-analytics.html",
+   "title_len": 41,
+   "words": 1644,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Customer Journey Analytics (CJA): Answers",
+   "h1": "Customer Journey Analytics (CJA): Answers"
+  },
+  {
+   "route": "/answers/destinations-activation.html",
+   "title_len": 38,
+   "words": 1664,
+   "inbound": 5,
+   "indexable": true,
+   "title": "AEP Destinations & Activation: Answers",
+   "h1": "AEP Destinations & Activation: Answers"
+  },
+  {
+   "route": "/answers/governance-privacy-consent.html",
+   "title_len": 42,
+   "words": 1733,
+   "inbound": 7,
+   "indexable": true,
+   "title": "AEP Governance, Privacy & Consent: Answers",
+   "h1": "AEP Governance, Privacy & Consent: Answers"
+  },
+  {
+   "route": "/answers/identity-profile.html",
+   "title_len": 41,
+   "words": 1866,
+   "inbound": 17,
+   "indexable": true,
+   "title": "AEP Identity & Real-Time Profile: Answers",
+   "h1": "AEP Identity & Real-Time Profile: Answers"
+  },
+  {
+   "route": "/answers/ingestion-streaming-vs-batch.html",
+   "title_len": 44,
+   "words": 3630,
+   "inbound": 16,
+   "indexable": true,
+   "title": "AEP Streaming vs Batch Ingestion: 42 Answers",
+   "h1": "AEP Streaming vs Batch Ingestion: 42 Answers"
+  },
+  {
+   "route": "/answers/platform-basics.html",
+   "title_len": 46,
+   "words": 1961,
+   "inbound": 21,
+   "indexable": true,
+   "title": "AEP Basics: Platform, RTCDP, AJO & CJA Answers",
+   "h1": "AEP Basics: Platform, RTCDP, AJO & CJA Answers"
+  },
+  {
+   "route": "/answers/query-service-monitoring.html",
+   "title_len": 56,
+   "words": 1624,
+   "inbound": 4,
+   "indexable": true,
+   "title": "AEP Query Service, Monitoring & Troubleshooting: Answers",
+   "h1": "AEP Query Service, Monitoring & Troubleshooting: Answers"
+  },
+  {
+   "route": "/answers/segmentation-audiences.html",
+   "title_len": 37,
+   "words": 1869,
+   "inbound": 9,
+   "indexable": true,
+   "title": "AEP Segmentation & Audiences: Answers",
+   "h1": "AEP Segmentation & Audiences: Answers"
+  },
+  {
+   "route": "/answers/sources.html",
+   "title_len": 64,
+   "words": 1373,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Citations: Adobe Documentation Used in Our Answers ",
+   "h1": " Infiante360|Cited Adobe documentation"
+  },
+  {
+   "route": "/answers/web-sdk-data-collection.html",
+   "title_len": 40,
+   "words": 1700,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Adobe Web SDK & Data Collection: Answers",
+   "h1": "Adobe Web SDK & Data Collection: Answers"
+  },
+  {
+   "route": "/answers/xdm-schemas-datasets.html",
+   "title_len": 45,
+   "words": 1908,
+   "inbound": 16,
+   "indexable": true,
+   "title": "XDM Schemas & Datasets: Questions and Answers",
+   "h1": "XDM Schemas & Datasets: Questions and Answers"
+  },
+  {
+   "route": "/brochure-download.html",
+   "title_len": 36,
+   "words": 829,
+   "inbound": 0,
+   "indexable": false,
+   "title": "Download your brochure ",
+   "h1": " Infiante360|Thank you: download your brochure"
+  },
+  {
+   "route": "/brochures.html",
+   "title_len": 61,
+   "words": 1297,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Free Brochures: Courses, TOC, C2C & MarTech CoE ",
+   "h1": " Infinate360|Free brochures for learners, teams and enterprises"
+  },
+  {
+   "route": "/c2c-hiring.html",
+   "title_len": 52,
+   "words": 1326,
+   "inbound": 6,
+   "indexable": true,
+   "title": "C2C Hiring for Adobe MarTech: How Corp-to-Corp Works",
+   "h1": "How C2C (corp-to-corp) hiring works for Adobe MarTech"
+  },
+  {
+   "route": "/case-studies/",
+   "title_len": 58,
+   "words": 1487,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Case Studies: Adobe AEP Implementation & Training Projects",
+   "h1": "Case studies: implementation, training and talent"
+  },
+  {
+   "route": "/case-studies/aep-end-to-end-implementation.html",
+   "title_len": 63,
+   "words": 1592,
+   "inbound": 11,
+   "indexable": true,
+   "title": "AEP Case Study: End-to-End Implementation, Schema to Activation",
+   "h1": "End-to-end AEP implementation: schema to activation"
+  },
+  {
+   "route": "/case-studies/airline-mobile-journey-orchestration.html",
+   "title_len": 61,
+   "words": 1618,
+   "inbound": 11,
+   "indexable": true,
+   "title": "Airline Case Study: Mobile Engagement & Journey Orchestration",
+   "h1": "Airline mobile engagement and journey orchestration"
+  },
+  {
+   "route": "/case-studies/banking-customer-360-cross-sell.html",
+   "title_len": 57,
+   "words": 1642,
+   "inbound": 12,
+   "indexable": true,
+   "title": "BFSI Case Study: Banking Customer 360 & Cross-Sell on AEP",
+   "h1": "Banking Customer 360 and cross-sell on Adobe Experience Platform"
+  },
+  {
+   "route": "/case-studies/career-accelerator-delivery-model.html",
+   "title_len": 56,
+   "words": 1315,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Training Case Study: How the AEP Career Accelerator Runs",
+   "h1": "How the AEP career accelerator is delivered"
+  },
+  {
+   "route": "/case-studies/corporate-team-enablement-model.html",
+   "title_len": 58,
+   "words": 1308,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Training Case Study: Corporate Adobe Team Enablement Model",
+   "h1": "Corporate Adobe team enablement model"
+  },
+  {
+   "route": "/case-studies/hospitality-loyalty-personalisation.html",
+   "title_len": 61,
+   "words": 1624,
+   "inbound": 11,
+   "indexable": true,
+   "title": "Hospitality Case Study: Loyalty, Service Journeys & Analytics",
+   "h1": "Hospitality loyalty, service journeys and operational analytics"
+  },
+  {
+   "route": "/case-studies/insurance-policy-onboarding-renewal.html",
+   "title_len": 58,
+   "words": 1577,
+   "inbound": 11,
+   "indexable": true,
+   "title": "Insurance Case Study: Policy Onboarding, Claims & Renewals",
+   "h1": "Insurance policy onboarding, claims and renewal automation"
+  },
+  {
+   "route": "/case-studies/martech-consulting-engagement-simulation.html",
+   "title_len": 58,
+   "words": 1538,
+   "inbound": 10,
+   "indexable": true,
+   "title": "Consulting Case Study: Running an Adobe MarTech Engagement",
+   "h1": "Running an Adobe MarTech consulting engagement"
+  },
+  {
+   "route": "/case-studies/mentor-led-doubt-resolution.html",
+   "title_len": 56,
+   "words": 1326,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Training Case Study: Mentor-Led Doubt Resolution for AEP",
+   "h1": "Mentor-led doubt resolution and the learner knowledge base"
+  },
+  {
+   "route": "/case-studies/retail-omnichannel-identity-stitching.html",
+   "title_len": 56,
+   "words": 1640,
+   "inbound": 14,
+   "indexable": true,
+   "title": "Retail Case Study: Omnichannel Identity Stitching in AEP",
+   "h1": "Retail omnichannel identity stitching and troubleshooting"
+  },
+  {
+   "route": "/case-studies/telecom-churn-prevention.html",
+   "title_len": 57,
+   "words": 1599,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Telecom Case Study: Churn Prevention & Lifecycle Journeys",
+   "h1": "Telecom churn prevention and subscriber lifecycle journeys"
+  },
+  {
+   "route": "/contact-us.html",
+   "title_len": 57,
+   "words": 1125,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Contact Infiante360 ",
+   "h1": " AEP Consulting & Training Enquiries|Contact Infiante360"
+  },
+  {
+   "route": "/corporate/",
+   "title_len": 53,
+   "words": 441,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Infinate360: Enterprise MarTech, Data & AI Consulting",
+   "h1": "Transform your business for the AI era"
+  },
+  {
+   "route": "/corporate/404.html",
+   "title_len": 28,
+   "words": 150,
+   "inbound": 0,
+   "indexable": false,
+   "title": "Page not found ",
+   "h1": " Infinate360|Page not found"
+  },
+  {
+   "route": "/corporate/about.html",
+   "title_len": 54,
+   "words": 302,
+   "inbound": 18,
+   "indexable": true,
+   "title": "About Infinate360: Independent MarTech & AI Consulting",
+   "h1": "About Infinate360"
+  },
+  {
+   "route": "/corporate/contact.html",
+   "title_len": 44,
+   "words": 207,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Contact Infinate360: Schedule a Consultation",
+   "h1": "Contact us"
+  },
+  {
+   "route": "/corporate/insights.html",
+   "title_len": 59,
+   "words": 278,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Insights: Adobe Experience Platform, CDP & AI ",
+   "h1": " Infinate360|Insights"
+  },
+  {
+   "route": "/corporate/privacy-policy.html",
+   "title_len": 28,
+   "words": 262,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Privacy Policy ",
+   "h1": " Infinate360|Infinate360 consulting privacy policy"
+  },
+  {
+   "route": "/corporate/services/",
+   "title_len": 57,
+   "words": 295,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Digital Transformation, AI, Cloud & MarTech ",
+   "h1": " Infinate360|Services"
+  },
+  {
+   "route": "/corporate/services/cdp.html",
+   "title_len": 43,
+   "words": 358,
+   "inbound": 18,
+   "indexable": true,
+   "title": "CDP Implementation Consulting ",
+   "h1": " Infinate360|CDP Implementation"
+  },
+  {
+   "route": "/corporate/services/cloud-services.html",
+   "title_len": 51,
+   "words": 354,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Cloud Services & Migration Consulting ",
+   "h1": " Infinate360|Cloud Services & Migration"
+  },
+  {
+   "route": "/corporate/services/data-engineering.html",
+   "title_len": 53,
+   "words": 344,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Data Engineering & Analytics Consulting ",
+   "h1": " Infinate360|Data Engineering & Analytics"
+  },
+  {
+   "route": "/corporate/services/digital-transformation.html",
+   "title_len": 47,
+   "words": 359,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Digital Transformation Consulting ",
+   "h1": " Infinate360|Digital Transformation"
+  },
+  {
+   "route": "/corporate/services/generative-ai.html",
+   "title_len": 51,
+   "words": 380,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Generative AI & Agentic AI Consulting ",
+   "h1": " Infinate360|Generative AI & Agentic AI"
+  },
+  {
+   "route": "/corporate/services/martech.html",
+   "title_len": 45,
+   "words": 345,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Marketing Technology Consulting ",
+   "h1": " Infinate360|Marketing Technology"
+  },
+  {
+   "route": "/corporate/sitemap.html",
+   "title_len": 22,
+   "words": 187,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Site Map ",
+   "h1": " Infinate360|Infinate360 consulting site map"
+  },
+  {
+   "route": "/corporate/training/",
+   "title_len": 64,
+   "words": 274,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Corporate Training in AI, Cloud & Data Engineering ",
+   "h1": " Infinate360|Corporate training"
+  },
+  {
+   "route": "/corporate/training/ai-ml.html",
+   "title_len": 44,
+   "words": 284,
+   "inbound": 18,
+   "indexable": true,
+   "title": "AI & Machine Learning Training ",
+   "h1": " Infinate360|AI & Machine Learning training"
+  },
+  {
+   "route": "/corporate/training/architecture.html",
+   "title_len": 43,
+   "words": 265,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Digital Architecture Training ",
+   "h1": " Infinate360|Digital Architecture training"
+  },
+  {
+   "route": "/corporate/training/cloud.html",
+   "title_len": 43,
+   "words": 277,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Cloud Certifications Training ",
+   "h1": " Infinate360|Cloud Certifications training"
+  },
+  {
+   "route": "/corporate/training/data-engineering.html",
+   "title_len": 39,
+   "words": 263,
+   "inbound": 18,
+   "indexable": true,
+   "title": "Data Engineering Training ",
+   "h1": " Infinate360|Data Engineering training"
+  },
+  {
+   "route": "/disclaimer.html",
+   "title_len": 37,
+   "words": 1702,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Disclaimer and About Us ",
+   "h1": " Infiante360|Disclaimer and About Us"
+  },
+  {
+   "route": "/faq.html",
+   "title_len": 57,
+   "words": 1125,
+   "inbound": 227,
+   "indexable": true,
+   "title": "FAQ: Adobe MarTech Consulting, AEP Training & Infiante360",
+   "h1": "Frequently asked questions"
+  },
+  {
+   "route": "/feeds.html",
+   "title_len": 46,
+   "words": 1066,
+   "inbound": 227,
+   "indexable": true,
+   "title": "RSS Feeds & MarTech News Sources ",
+   "h1": " Infiante360|RSS feeds and trusted MarTech sources"
+  },
+  {
+   "route": "/guides/adobe-analytics-source-connector-aep.html",
+   "title_len": 58,
+   "words": 1182,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Adobe Analytics Source Connector: Getting AA Data into AEP",
+   "h1": "Using the Adobe Analytics source connector in AEP"
+  },
+  {
+   "route": "/guides/advertising-analytics-faq.html",
+   "title_len": 55,
+   "words": 1301,
+   "inbound": 4,
+   "indexable": true,
+   "title": "Adobe Advertising Analytics FAQ: Setup, Cost & Tracking",
+   "h1": "Adobe Advertising Analytics: frequently asked questions"
+  },
+  {
+   "route": "/guides/aep-ingestion-methods-batch-streaming.html",
+   "title_len": 59,
+   "words": 1135,
+   "inbound": 6,
+   "indexable": true,
+   "title": "AEP Ingestion Methods: Connections, Workflows & Datastreams",
+   "h1": "AEP ingestion methods: batch vs streaming"
+  },
+  {
+   "route": "/guides/aep-vs-real-time-cdp.html",
+   "title_len": 45,
+   "words": 1097,
+   "inbound": 228,
+   "indexable": true,
+   "title": "AEP vs Real-Time CDP: What Is the Difference?",
+   "h1": "AEP vs Real-Time CDP: what is the difference?"
+  },
+  {
+   "route": "/guides/agentic-customer-engagement-architecture.html",
+   "title_len": 50,
+   "words": 1618,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Agentic AI Customer Engagement Architecture on AEP",
+   "h1": "Customer engagement architecture: AEP plus agentic AI"
+  },
+  {
+   "route": "/guides/ajo-campaigns-vs-journeys.html",
+   "title_len": 43,
+   "words": 1137,
+   "inbound": 6,
+   "indexable": true,
+   "title": "AJO Campaigns vs Journeys: When to Use Each",
+   "h1": "Adobe Journey Optimizer: campaigns vs journeys"
+  },
+  {
+   "route": "/guides/ajo-implementation-best-practices.html",
+   "title_len": 53,
+   "words": 1376,
+   "inbound": 228,
+   "indexable": true,
+   "title": "Adobe Journey Optimizer Implementation Best Practices",
+   "h1": "Adobe Journey Optimizer: enterprise implementation best practices"
+  },
+  {
+   "route": "/guides/backfill-months-aep-cja.html",
+   "title_len": 51,
+   "words": 1122,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Backfill Months in AEP & CJA: What the Setting Does",
+   "h1": "What backfill months means in AEP and CJA"
+  },
+  {
+   "route": "/guides/cja-vs-adobe-analytics.html",
+   "title_len": 61,
+   "words": 1081,
+   "inbound": 228,
+   "indexable": true,
+   "title": "CJA vs Adobe Analytics: Use Cases, Differences and Trade-offs",
+   "h1": "CJA vs Adobe Analytics: use cases and trade-offs"
+  },
+  {
+   "route": "/guides/data-elements-best-practices.html",
+   "title_len": 51,
+   "words": 1273,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Adobe Tags Data Elements: Enterprise Best Practices",
+   "h1": "Adobe Tags data elements: enterprise best practices"
+  },
+  {
+   "route": "/guides/ecid-data-element-adobe-tags.html",
+   "title_len": 52,
+   "words": 1139,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Capture ECID in an Adobe Tags Data Element (Web SDK)",
+   "h1": "How to capture ECID in an Adobe Tags data element"
+  },
+  {
+   "route": "/guides/evars-vs-props-adobe-analytics.html",
+   "title_len": 51,
+   "words": 1106,
+   "inbound": 6,
+   "indexable": true,
+   "title": "eVars vs Props in Adobe Analytics: When to Use Each",
+   "h1": "eVars vs props in Adobe Analytics"
+  },
+  {
+   "route": "/guides/hashed-email-identity-aep.html",
+   "title_len": 60,
+   "words": 1208,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Hashed Email Identity in AEP: Stitching with Email_LC_SHA256",
+   "h1": "Hashed email identity and profile stitching in AEP"
+  },
+  {
+   "route": "/guides/marketo-engage-aep.html",
+   "title_len": 61,
+   "words": 1251,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Marketo Engage and AEP: Lead Lifecycle, Scoring & Integration",
+   "h1": "Marketo Engage and Adobe Experience Platform"
+  },
+  {
+   "route": "/guides/martech-implementation-backlog.html",
+   "title_len": 54,
+   "words": 1325,
+   "inbound": 6,
+   "indexable": true,
+   "title": "MarTech Implementation Backlog: AEP Dependency Tracker",
+   "h1": "The MarTech implementation backlog and dependency tracker"
+  },
+  {
+   "route": "/guides/onetrust-consent-aep.html",
+   "title_len": 55,
+   "words": 1254,
+   "inbound": 6,
+   "indexable": true,
+   "title": "OneTrust Consent in AEP: Integration Steps & Governance",
+   "h1": "How to integrate OneTrust consent with Adobe Experience Platform"
+  },
+  {
+   "route": "/guides/profile-merge-policies-unification.html",
+   "title_len": 56,
+   "words": 1210,
+   "inbound": 6,
+   "indexable": true,
+   "title": "AEP Profile Unification & Merge Policies: Best Practices",
+   "h1": "Profile unification strategy and merge policies in AEP"
+  },
+  {
+   "route": "/guides/record-vs-xdm-individual-profile.html",
+   "title_len": 58,
+   "words": 1220,
+   "inbound": 4,
+   "indexable": true,
+   "title": "Record Schema vs XDM Individual Profile: Classes Explained",
+   "h1": "Record schemas vs the XDM Individual Profile class"
+  },
+  {
+   "route": "/guides/validate-large-batch-ingestion.html",
+   "title_len": 58,
+   "words": 1189,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Validate Large AEP Ingestion: Counts, Duplicates & Quality",
+   "h1": "How to validate large batch ingestion in AEP"
+  },
+  {
+   "route": "/guides/web-sdk-troubleshooting.html",
+   "title_len": 48,
+   "words": 1258,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Web SDK Troubleshooting: Events Not Reaching AEP",
+   "h1": "Web SDK troubleshooting: events not reaching AEP"
+  },
+  {
+   "route": "/guides/what-is-mcp.html",
+   "title_len": 58,
+   "words": 1144,
+   "inbound": 228,
+   "indexable": true,
+   "title": "What Is MCP? Model Context Protocol for Enterprise MarTech",
+   "h1": "What is MCP, and how can it be used safely with enterprise MarTech?"
+  },
+  {
+   "route": "/industries.html",
+   "title_len": 53,
+   "words": 1072,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe MarTech for BFSI, Retail, Telecom & Hospitality",
+   "h1": "Industries we focus on"
+  },
+  {
+   "route": "/insights/",
+   "title_len": 56,
+   "words": 1264,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Insights: MarTech, Data, AI & Customer Experience Topics",
+   "h1": "Insights for MarTech, data and AI leaders"
+  },
+  {
+   "route": "/insights/agentic-ai-in-practice.html",
+   "title_len": 56,
+   "words": 1127,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Agentic AI in Practice: Safe Use with Enterprise MarTech",
+   "h1": "Agentic AI in practice for MarTech teams"
+  },
+  {
+   "route": "/insights/cloud-for-customer-data.html",
+   "title_len": 57,
+   "words": 1092,
+   "inbound": 3,
+   "indexable": true,
+   "title": "Cloud Computing for Customer Data: Warehouses & Streaming",
+   "h1": "Cloud computing for customer data platforms"
+  },
+  {
+   "route": "/insights/customer-experience.html",
+   "title_len": 58,
+   "words": 1056,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Customer Experience & Engagement: Data-Led Personalisation",
+   "h1": "Customer experience and engagement with customer data"
+  },
+  {
+   "route": "/insights/data-governance.html",
+   "title_len": 57,
+   "words": 1085,
+   "inbound": 4,
+   "indexable": true,
+   "title": "Data Governance for MarTech: Ownership, Quality & Lineage",
+   "h1": "Data governance for customer data and MarTech"
+  },
+  {
+   "route": "/insights/data-privacy.html",
+   "title_len": 59,
+   "words": 1097,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Data Privacy in Customer Data Platforms: Practical Controls",
+   "h1": "Data privacy for customer data platforms"
+  },
+  {
+   "route": "/insights/digital-transformation.html",
+   "title_len": 54,
+   "words": 1100,
+   "inbound": 4,
+   "indexable": true,
+   "title": "Digital Transformation in MarTech: A Practical Roadmap",
+   "h1": "Digital transformation for customer data and MarTech"
+  },
+  {
+   "route": "/insights/martech-careers.html",
+   "title_len": 57,
+   "words": 1084,
+   "inbound": 5,
+   "indexable": true,
+   "title": "MarTech Careers & Talent: Skills, Roles and Team Building",
+   "h1": "MarTech careers and talent: skills, roles and capability"
+  },
+  {
+   "route": "/insights/martech-leadership.html",
+   "title_len": 53,
+   "words": 1187,
+   "inbound": 4,
+   "indexable": true,
+   "title": "MarTech Leadership: Owning Data, Platforms & Outcomes",
+   "h1": "MarTech leadership: who owns customer data and outcomes"
+  },
+  {
+   "route": "/insights/martech-strategy.html",
+   "title_len": 57,
+   "words": 1122,
+   "inbound": 4,
+   "indexable": true,
+   "title": "MarTech Strategy: Roadmaps, Architecture & Prioritisation",
+   "h1": "MarTech strategy: from assessment to roadmap"
+  },
+  {
+   "route": "/insights/responsible-ai.html",
+   "title_len": 57,
+   "words": 1149,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Responsible AI for MarTech: Controls, Risk & Human Review",
+   "h1": "Responsible AI in enterprise MarTech"
+  },
+  {
+   "route": "/insights/workflow-automation.html",
+   "title_len": 54,
+   "words": 1086,
+   "inbound": 3,
+   "indexable": true,
+   "title": "Marketing & Data Workflow Automation: What to Automate",
+   "h1": "Workflow automation for marketing and data operations"
+  },
+  {
+   "route": "/learn/",
+   "title_len": 58,
+   "words": 1152,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Infiante360 Learning Hubs: AEP, Marketo, Agentic AI & More",
+   "h1": "Learning hubs"
+  },
+  {
+   "route": "/learn/student-questions.html",
+   "title_len": 48,
+   "words": 1517,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Student Questions: Answers from Live Batches",
+   "h1": "AEP student questions, answered"
+  },
+  {
+   "route": "/links.html",
+   "title_len": 57,
+   "words": 1358,
+   "inbound": 4,
+   "indexable": true,
+   "title": "Infiante360 Tech Academy Links: Services, Courses, Guides",
+   "h1": "Infiante360 Tech Academy links hub"
+  },
+  {
+   "route": "/lms.html",
+   "title_len": 63,
+   "words": 1828,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Infiante360 Learning Suite: Login, Live Classes and Test Series",
+   "h1": "Infiante360 learning suite"
+  },
+  {
+   "route": "/lp/adobe-martech-conversation.html",
+   "title_len": 48,
+   "words": 1358,
+   "inbound": 2,
+   "indexable": false,
+   "title": "Book an Adobe MarTech Conversation ",
+   "h1": " Infinate360|Let's talk about your Adobe MarTech priorities"
+  },
+  {
+   "route": "/lp/aep-architecture-review.html",
+   "title_len": 50,
+   "words": 1129,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Architecture Review: Book an Expert Assessment",
+   "h1": "Book an AEP architecture review"
+  },
+  {
+   "route": "/lp/agentic-ai-mcp-workshop.html",
+   "title_len": 45,
+   "words": 1135,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Agentic AI & MCP for MarTech: Book a Workshop",
+   "h1": "Book an Agentic AI and MCP workshop"
+  },
+  {
+   "route": "/lp/career-accelerator-admission.html",
+   "title_len": 43,
+   "words": 1131,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Career Accelerator Admission: Apply Now",
+   "h1": "Apply for the AEP career accelerator"
+  },
+  {
+   "route": "/lp/corporate-adobe-training.html",
+   "title_len": 48,
+   "words": 1131,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Corporate Adobe AEP Training: Request a Proposal",
+   "h1": "Request a corporate Adobe training proposal"
+  },
+  {
+   "route": "/lp/cxo-hive-apply.html",
+   "title_len": 48,
+   "words": 1383,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Apply for CXO Hive: C-Level MarTech & AI Program",
+   "h1": "Apply for CXO Hive"
+  },
+  {
+   "route": "/lp/enterprise-martech-demo.html",
+   "title_len": 65,
+   "words": 1929,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Exclusive Live Enterprise MarTech & Agentic AI Demo ",
+   "h1": " Infiante360|See the Future of Enterprise MarTech and Agentic AI"
+  },
+  {
+   "route": "/lp/hire-aep-contract-talent.html",
+   "title_len": 57,
+   "words": 1130,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Hire AEP Contract Talent: Engineers, Analysts, Architects",
+   "h1": "Hire day-one-ready AEP contract talent"
+  },
+  {
+   "route": "/lp/martech-demo-bootcamp.html",
+   "title_len": 64,
+   "words": 1487,
+   "inbound": 227,
+   "indexable": true,
+   "title": "3-Day Adobe MarTech Demo Bootcamp: 6\u20138 November, 10 PM IST, \u20b9500",
+   "h1": "3-day Adobe MarTech demo bootcamp"
+  },
+  {
+   "route": "/lp/martech-sme-accelerator.html",
+   "title_len": 60,
+   "words": 1704,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech SME Accelerator: 6-Day Live Demo, 10\u201315 November Nov",
+   "h1": "MarTech SME Accelerator: 6-day live demo series"
+  },
+  {
+   "route": "/martech-center-of-excellence.html",
+   "title_len": 58,
+   "words": 1239,
+   "inbound": 6,
+   "indexable": true,
+   "title": "MarTech Centre of Excellence Set-Up: Assess, Design, Build",
+   "h1": "How to set up a MarTech Centre of Excellence"
+  },
+  {
+   "route": "/pavan-babu-gandla.html",
+   "title_len": 59,
+   "words": 1158,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Pavan Babu Gandla ",
+   "h1": " Digital Transformation & MarTech Leader|Pavan Babu Gandla"
+  },
+  {
+   "route": "/press.html",
+   "title_len": 55,
+   "words": 1198,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Press & Media: Infiante360 Tech Academy Founder & Facts",
+   "h1": "Press and media"
+  },
+  {
+   "route": "/privacy-policy.html",
+   "title_len": 28,
+   "words": 1225,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Privacy Policy ",
+   "h1": " Infiante360|Privacy policy"
+  },
+  {
+   "route": "/refund-policy.html",
+   "title_len": 40,
+   "words": 1029,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Refund Policy ",
+   "h1": " Infiante360 Tech Academy|Refund policy"
+  },
+  {
+   "route": "/search-topics.html",
+   "title_len": 59,
+   "words": 2322,
+   "inbound": 11,
+   "indexable": true,
+   "title": "Adobe MarTech Topic Index: AEP, CDP, AJO, CJA & AI Searches",
+   "h1": "Adobe MarTech topic index: find the page for what you are searching"
+  },
+  {
+   "route": "/services/",
+   "title_len": 55,
+   "words": 1457,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe MarTech Consulting Services: AEP, RTCDP, AJO, CJA",
+   "h1": "Adobe MarTech consulting services"
+  },
+  {
+   "route": "/services/adobe-analytics.html",
+   "title_len": 54,
+   "words": 1127,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Analytics Consulting: Implementation & Reporting",
+   "h1": "Adobe Analytics consulting"
+  },
+  {
+   "route": "/services/adobe-campaign-marketo.html",
+   "title_len": 60,
+   "words": 1100,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Campaign & Marketo Engage Consulting: Lifecycle Design",
+   "h1": "Adobe Campaign and Marketo Engage consulting"
+  },
+  {
+   "route": "/services/adobe-experience-cloud.html",
+   "title_len": 64,
+   "words": 1196,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Experience Cloud Consulting: Analytics, Target, AEM & More",
+   "h1": "Adobe Experience Cloud consulting"
+  },
+  {
+   "route": "/services/adobe-journey-optimizer.html",
+   "title_len": 57,
+   "words": 1201,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Journey Optimizer (AJO) Consulting & Journey Design",
+   "h1": "Adobe Journey Optimizer (AJO) consulting"
+  },
+  {
+   "route": "/services/adobe-target-personalization.html",
+   "title_len": 59,
+   "words": 1106,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Target & Personalisation Consulting: Testing Strategy",
+   "h1": "Adobe Target and personalisation consulting"
+  },
+  {
+   "route": "/services/aem-consulting.html",
+   "title_len": 63,
+   "words": 1117,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Experience Manager Consulting: Architecture & Integration",
+   "h1": "Adobe Experience Manager consulting"
+  },
+  {
+   "route": "/services/aep-consulting.html",
+   "title_len": 59,
+   "words": 1248,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Experience Platform (AEP) Consulting & Implementation",
+   "h1": "Adobe Experience Platform (AEP) consulting"
+  },
+  {
+   "route": "/services/agentic-ai-mcp.html",
+   "title_len": 50,
+   "words": 1261,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Agentic AI & MCP Consulting for Enterprise MarTech",
+   "h1": "Agentic AI and MCP for enterprise MarTech"
+  },
+  {
+   "route": "/services/ai-search-visibility-geo-aeo.html",
+   "title_len": 48,
+   "words": 1117,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AI Search Visibility: GEO & AEO Content Advisory",
+   "h1": "AI search visibility: GEO and AEO advisory"
+  },
+  {
+   "route": "/services/cloud-data-platforms.html",
+   "title_len": 65,
+   "words": 1096,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Cloud Data Platforms for MarTech: Snowflake, BigQuery, Databricks",
+   "h1": "Cloud data platforms for MarTech"
+  },
+  {
+   "route": "/services/consent-governance-privacy.html",
+   "title_len": 52,
+   "words": 1120,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Consent, Data Governance & Privacy for Adobe MarTech",
+   "h1": "Consent, governance and privacy for MarTech"
+  },
+  {
+   "route": "/services/contract-hiring.html",
+   "title_len": 57,
+   "words": 1589,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Contract Hiring: Day-One-Ready AEP & Adobe MarTech Talent",
+   "h1": "Contract hiring for day-one-ready Adobe MarTech talent"
+  },
+  {
+   "route": "/services/customer-360-identity-resolution.html",
+   "title_len": 53,
+   "words": 1098,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Customer 360 & Identity Resolution Consulting for AEP",
+   "h1": "Identity resolution and profile design consulting"
+  },
+  {
+   "route": "/services/customer-journey-analytics.html",
+   "title_len": 55,
+   "words": 1192,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Customer Journey Analytics (CJA) Consulting & Migration",
+   "h1": "Customer Journey Analytics (CJA) consulting"
+  },
+  {
+   "route": "/services/data-engineering.html",
+   "title_len": 61,
+   "words": 1200,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Customer Data Engineering: ETL, Streaming & Pipelines for AEP",
+   "h1": "Data engineering for customer data platforms"
+  },
+  {
+   "route": "/services/engagement-model.html",
+   "title_len": 47,
+   "words": 1382,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Audit & Transformation Engagement Model",
+   "h1": "Our engagement model: from audit to scale"
+  },
+  {
+   "route": "/services/martech-strategy-advisory.html",
+   "title_len": 58,
+   "words": 1193,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Strategy & Fractional Advisory: Reviews & Roadmaps",
+   "h1": "MarTech strategy and fractional advisory"
+  },
+  {
+   "route": "/services/real-time-cdp.html",
+   "title_len": 54,
+   "words": 1193,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Real-Time CDP Consulting: Audiences & Activation",
+   "h1": "Adobe Real-Time CDP (RTCDP) consulting"
+  },
+  {
+   "route": "/services/staff-augmentation.html",
+   "title_len": 54,
+   "words": 1201,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Staff Augmentation: AEP Engineers & Architects",
+   "h1": "MarTech staff augmentation"
+  },
+  {
+   "route": "/services/web-sdk-adobe-tags.html",
+   "title_len": 61,
+   "words": 1236,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Web SDK & Tags Implementation: Datastreams & Validation",
+   "h1": "Adobe Web SDK and Adobe Tags implementation"
+  },
+  {
+   "route": "/sitemap.html",
+   "title_len": 31,
+   "words": 2299,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Site Map: All Infiante360 Pages",
+   "h1": "Site map"
+  },
+  {
+   "route": "/solutions/",
+   "title_len": 60,
+   "words": 1108,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Solutions: Customer 360, Personalisation & Retention",
+   "h1": "Solutions built on a governed customer data foundation"
+  },
+  {
+   "route": "/solutions/b2b-lead-to-revenue.html",
+   "title_len": 49,
+   "words": 1193,
+   "inbound": 6,
+   "indexable": true,
+   "title": "B2B Lead-to-Revenue: Marketo, CRM & AEP Alignment",
+   "h1": "B2B lead-to-revenue alignment"
+  },
+  {
+   "route": "/solutions/churn-prevention.html",
+   "title_len": 56,
+   "words": 1194,
+   "inbound": 10,
+   "indexable": true,
+   "title": "Customer Retention & Churn Prevention with Adobe MarTech",
+   "h1": "Retention and churn prevention"
+  },
+  {
+   "route": "/solutions/customer-360.html",
+   "title_len": 63,
+   "words": 1241,
+   "inbound": 11,
+   "indexable": true,
+   "title": "Customer 360 & Identity Resolution on Adobe Experience Platform",
+   "h1": "Customer 360 and identity resolution"
+  },
+  {
+   "route": "/solutions/real-time-personalization.html",
+   "title_len": 55,
+   "words": 1199,
+   "inbound": 12,
+   "indexable": true,
+   "title": "Real-Time Personalisation with AEP, RTCDP, AJO & Target",
+   "h1": "Real-time personalisation across channels"
+  },
+  {
+   "route": "/stacks/",
+   "title_len": 49,
+   "words": 1246,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Stacks We Support: Adobe, CRM, Cloud & AI",
+   "h1": "MarTech stacks we support"
+  },
+  {
+   "route": "/stacks/abm-advertising.html",
+   "title_len": 54,
+   "words": 1114,
+   "inbound": 227,
+   "indexable": true,
+   "title": "ABM, advertising and engagement: Consulting & Training",
+   "h1": "ABM, advertising and engagement: consulting and training"
+  },
+  {
+   "route": "/stacks/adobe-experience-cloud.html",
+   "title_len": 45,
+   "words": 1143,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe Experience Cloud: Consulting & Training",
+   "h1": "Adobe Experience Cloud: consulting and training"
+  },
+  {
+   "route": "/stacks/ai-automation.html",
+   "title_len": 59,
+   "words": 1131,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AI, agentic workflows and automation: Consulting & Training",
+   "h1": "AI, agentic workflows and automation: consulting and training"
+  },
+  {
+   "route": "/stacks/analytics-bi.html",
+   "title_len": 39,
+   "words": 1096,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Analytics and BI: Consulting & Training",
+   "h1": "Analytics and BI: consulting and training"
+  },
+  {
+   "route": "/stacks/cdp-tag-management.html",
+   "title_len": 58,
+   "words": 1103,
+   "inbound": 227,
+   "indexable": true,
+   "title": "CDP, tag management and integration: Consulting & Training",
+   "h1": "CDP, tag management and integration: consulting and training"
+  },
+  {
+   "route": "/stacks/crm-marketing-automation.html",
+   "title_len": 51,
+   "words": 1123,
+   "inbound": 227,
+   "indexable": true,
+   "title": "CRM and marketing automation: Consulting & Training",
+   "h1": "CRM and marketing automation: consulting and training"
+  },
+  {
+   "route": "/stacks/data-warehouse-cloud.html",
+   "title_len": 47,
+   "words": 1099,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Data warehouse and cloud: Consulting & Training",
+   "h1": "Data warehouse and cloud: consulting and training"
+  },
+  {
+   "route": "/stacks/personalization-experimentation.html",
+   "title_len": 58,
+   "words": 1109,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Personalisation and experimentation: Consulting & Training",
+   "h1": "Personalisation and experimentation: consulting and training"
+  },
+  {
+   "route": "/terms-and-conditions.html",
+   "title_len": 34,
+   "words": 1090,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Terms and Conditions ",
+   "h1": " Infiante360|Terms and conditions"
+  },
+  {
+   "route": "/thank-you.html",
+   "title_len": 23,
+   "words": 810,
+   "inbound": 0,
+   "indexable": false,
+   "title": "Thank you ",
+   "h1": " Infiante360|Thank you \u2014 we have your enquiry"
+  },
+  {
+   "route": "/topics/adobe-experience-platform.html",
+   "title_len": 58,
+   "words": 5054,
+   "inbound": 155,
+   "indexable": true,
+   "title": "Adobe Experience Platform: Guides, Case Studies & Services",
+   "h1": "Adobe Experience Platform: everything in one place"
+  },
+  {
+   "route": "/topics/agentic-ai-mcp.html",
+   "title_len": 51,
+   "words": 2094,
+   "inbound": 45,
+   "indexable": true,
+   "title": "Agentic AI and MCP: Guides, Case Studies & Services",
+   "h1": "Agentic AI and MCP: everything in one place"
+  },
+  {
+   "route": "/topics/analytics-cja.html",
+   "title_len": 36,
+   "words": 1987,
+   "inbound": 43,
+   "indexable": true,
+   "title": "CJA: Guides, Case Studies & Services",
+   "h1": "Customer Journey Analytics and Adobe Analytics: everything in one place"
+  },
+  {
+   "route": "/topics/careers-training.html",
+   "title_len": 53,
+   "words": 3312,
+   "inbound": 91,
+   "indexable": true,
+   "title": "Careers and training: Guides, Case Studies & Services",
+   "h1": "Careers and training: everything in one place"
+  },
+  {
+   "route": "/topics/industries.html",
+   "title_len": 51,
+   "words": 1593,
+   "inbound": 28,
+   "indexable": true,
+   "title": "Industry solutions: Guides, Case Studies & Services",
+   "h1": "Industry solutions: everything in one place"
+  },
+  {
+   "route": "/topics/journey-optimizer.html",
+   "title_len": 56,
+   "words": 3106,
+   "inbound": 84,
+   "indexable": true,
+   "title": "Adobe Journey Optimizer: Guides, Case Studies & Services",
+   "h1": "Adobe Journey Optimizer: everything in one place"
+  },
+  {
+   "route": "/topics/real-time-cdp.html",
+   "title_len": 46,
+   "words": 3071,
+   "inbound": 85,
+   "indexable": true,
+   "title": "Real-Time CDP: Guides, Case Studies & Services",
+   "h1": "Real-Time CDP: everything in one place"
+  },
+  {
+   "route": "/topics/web-sdk-tags.html",
+   "title_len": 55,
+   "words": 2290,
+   "inbound": 52,
+   "indexable": true,
+   "title": "Web SDK and Adobe Tags: Guides, Case Studies & Services",
+   "h1": "Web SDK and Adobe Tags: everything in one place"
+  },
+  {
+   "route": "/training/",
+   "title_len": 57,
+   "words": 1704,
+   "inbound": 227,
+   "indexable": true,
+   "title": "AEP Course: Adobe MarTech & Agentic AI Career Accelerator",
+   "h1": "Adobe MarTech + Agentic AI career accelerator"
+  },
+  {
+   "route": "/training/career-transition.html",
+   "title_len": 52,
+   "words": 1522,
+   "inbound": 227,
+   "indexable": true,
+   "title": "MarTech Career Transition: Move Into Adobe AEP Roles",
+   "h1": "Turn your current experience into an Adobe MarTech career"
+  },
+  {
+   "route": "/training/corporate-training.html",
+   "title_len": 53,
+   "words": 1389,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Corporate AEP Training: Adobe MarTech Team Upskilling",
+   "h1": "Corporate Adobe MarTech training"
+  },
+  {
+   "route": "/use-cases/",
+   "title_len": 55,
+   "words": 1199,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Adobe MarTech Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Adobe MarTech use cases you can implement"
+  },
+  {
+   "route": "/use-cases/abandoned-cart-recovery.html",
+   "title_len": 52,
+   "words": 1183,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Abandoned Cart Recovery with AEP & Journey Optimizer",
+   "h1": "Abandoned cart recovery"
+  },
+  {
+   "route": "/use-cases/abandoned-cart-sports-entertainment.html",
+   "title_len": 63,
+   "words": 1276,
+   "inbound": 227,
+   "indexable": true,
+   "title": "Abandoned Cart Re-engagement for Sports and Entertainment ",
+   "h1": " AJO|Abandoned cart re-engagement for sports and entertainment"
+  },
+  {
+   "route": "/use-cases/consent-aware-personalisation.html",
+   "title_len": 48,
+   "words": 1179,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Consent-Aware Personalisation with AEP & Web SDK",
+   "h1": "Consent-aware personalisation"
+  },
+  {
+   "route": "/use-cases/flight-disruption-notifications.html",
+   "title_len": 54,
+   "words": 1163,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Flight Disruption Notifications with Journey Optimizer",
+   "h1": "Flight disruption notifications"
+  },
+  {
+   "route": "/use-cases/industries/",
+   "title_len": 58,
+   "words": 1266,
+   "inbound": 19,
+   "indexable": true,
+   "title": "Industry MarTech Use Cases: Banking, Retail, Travel & More",
+   "h1": "MarTech use cases by industry"
+  },
+  {
+   "route": "/use-cases/industries/banking.html",
+   "title_len": 49,
+   "words": 1380,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Banking Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Banking MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/education.html",
+   "title_len": 58,
+   "words": 1366,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Higher education Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Higher education MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/healthcare.html",
+   "title_len": 62,
+   "words": 1355,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Healthcare providers Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Healthcare providers MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/hospitality.html",
+   "title_len": 53,
+   "words": 1369,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Hospitality Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Hospitality MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/insurance.html",
+   "title_len": 51,
+   "words": 1366,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Insurance Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Insurance MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/manufacturing.html",
+   "title_len": 55,
+   "words": 1376,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Manufacturing Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Manufacturing MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/media.html",
+   "title_len": 61,
+   "words": 1388,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Media and streaming Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Media and streaming MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/public-sector.html",
+   "title_len": 55,
+   "words": 1381,
+   "inbound": 6,
+   "indexable": true,
+   "title": "Public sector Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Public sector MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/retail.html",
+   "title_len": 48,
+   "words": 1374,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Retail Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Retail MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/saas.html",
+   "title_len": 46,
+   "words": 1379,
+   "inbound": 6,
+   "indexable": true,
+   "title": "SaaS Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "SaaS MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/telecom.html",
+   "title_len": 49,
+   "words": 1379,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Telecom Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Telecom MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/industries/travel.html",
+   "title_len": 48,
+   "words": 1366,
+   "inbound": 7,
+   "indexable": true,
+   "title": "Travel Use Cases: AEP, RTCDP & Journey Optimizer",
+   "h1": "Travel MarTech use cases on Adobe Experience Platform"
+  },
+  {
+   "route": "/use-cases/loan-application-drop-off.html",
+   "title_len": 44,
+   "words": 1167,
+   "inbound": 9,
+   "indexable": true,
+   "title": "Loan Application Drop-Off Recovery for Banks",
+   "h1": "Loan application drop-off recovery"
+  },
+  {
+   "route": "/use-cases/loyalty-tier-upgrade.html",
+   "title_len": 51,
+   "words": 1166,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Loyalty Tier Upgrade Journey for Hospitality Brands",
+   "h1": "Loyalty tier upgrade journey"
+  },
+  {
+   "route": "/use-cases/new-customer-onboarding.html",
+   "title_len": 58,
+   "words": 1169,
+   "inbound": 7,
+   "indexable": true,
+   "title": "New Customer Onboarding Journey in Adobe Journey Optimizer",
+   "h1": "New customer onboarding journey"
+  },
+  {
+   "route": "/use-cases/paid-media-suppression.html",
+   "title_len": 51,
+   "words": 1168,
+   "inbound": 5,
+   "indexable": true,
+   "title": "Paid Media Suppression Audiences with Real-Time CDP",
+   "h1": "Paid media suppression audiences"
+  },
+  {
+   "route": "/use-cases/policy-renewal-reminders.html",
+   "title_len": 53,
+   "words": 1175,
+   "inbound": 8,
+   "indexable": true,
+   "title": "Insurance Policy Renewal Reminders & Retention Offers",
+   "h1": "Insurance policy renewal reminders"
+  },
+  {
+   "route": "/use-cases/real-time-use-case-library.html",
+   "title_len": 54,
+   "words": 2342,
+   "inbound": 19,
+   "indexable": true,
+   "title": "50 Real-Time MarTech Use Cases: Triggers, Flows & KPIs",
+   "h1": "50 real-time MarTech use cases: triggers, flows and KPIs"
+  },
+  {
+   "route": "/zohoverify/verifyforzoho.html",
+   "title_len": 0,
+   "words": 1,
+   "inbound": 0,
+   "indexable": true,
+   "title": "",
+   "h1": ""
+  }
+ ]
+}

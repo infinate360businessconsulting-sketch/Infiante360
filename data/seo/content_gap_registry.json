@@ -1,0 +1,131 @@
+{
+ "gaps": [
+  {
+   "cluster": "AEP interview preparation",
+   "family": "training",
+   "gap": "Dedicated interview-preparation program page not present; guide page only",
+   "existing_page": "/adobe-experience-platform/interview-questions.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "MarTech architecture",
+   "family": "training",
+   "gap": "No MarTech architecture training program page",
+   "existing_page": "/adobe-experience-platform/architecture.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "Adobe Marketo Engage",
+   "family": "consulting",
+   "gap": "Marketo Engage shares one page with Adobe Campaign; separate page only if distinct delivery experience is confirmed",
+   "existing_page": "/services/adobe-campaign-marketo.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "Adobe Campaign",
+   "family": "consulting",
+   "gap": "Shares one page with Marketo Engage",
+   "existing_page": "/services/adobe-campaign-marketo.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "Adobe Commerce",
+   "family": "consulting",
+   "gap": "No Adobe Commerce service page; owner must confirm delivery experience before a page is created",
+   "existing_page": "/services/adobe-experience-cloud.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "IT strategy and advisory",
+   "family": "consulting",
+   "gap": "General IT strategy is broader than MarTech advisory; confirm scope",
+   "existing_page": "/services/martech-strategy-advisory.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "Enterprise architecture",
+   "family": "consulting",
+   "gap": "No commercial enterprise-architecture consulting page",
+   "existing_page": "/adobe-experience-platform/architecture.html",
+   "keywords": 20,
+   "planned_new_url": "/services/enterprise-architecture-consulting.html",
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "Enterprise MCP integration",
+   "family": "consulting",
+   "gap": "Shares a page with Agentic AI implementation; an enterprise MCP security guide is a distinct intent",
+   "existing_page": "/services/agentic-ai-mcp.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "Snowflake for MarTech",
+   "family": "consulting",
+   "gap": "No Snowflake-specific page",
+   "existing_page": "/services/cloud-data-platforms.html",
+   "keywords": 20,
+   "planned_new_url": "/services/snowflake-martech-integration.html",
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "BigQuery for MarTech",
+   "family": "consulting",
+   "gap": "No BigQuery-specific page",
+   "existing_page": "/services/cloud-data-platforms.html",
+   "keywords": 20,
+   "planned_new_url": "/services/bigquery-martech-integration.html",
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "Databricks for MarTech",
+   "family": "consulting",
+   "gap": "No Databricks-specific page",
+   "existing_page": "/services/cloud-data-platforms.html",
+   "keywords": 20,
+   "planned_new_url": "/services/databricks-martech-integration.html",
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "Kafka streaming for customer data",
+   "family": "consulting",
+   "gap": "No Kafka-specific page",
+   "existing_page": "/services/data-engineering.html",
+   "keywords": 20,
+   "planned_new_url": "/services/kafka-streaming-customer-data.html",
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "BFSI customer experience transformation",
+   "family": "consulting",
+   "gap": "Insurance and wider BFSI covered on separate industry pages",
+   "existing_page": "/use-cases/industries/banking.html",
+   "keywords": 20,
+   "planned_new_url": null,
+   "needs_owner_input": false
+  },
+  {
+   "cluster": "ALL training",
+   "gap": "Programme fees, schedules and durations must be reconciled against the approved catalogue before any are published",
+   "needs_owner_input": true
+  },
+  {
+   "cluster": "ALL",
+   "gap": "Search volume, difficulty, SERP and competitor data are unmeasured; validate in Search Console / Keyword Planner",
+   "needs_owner_input": false
+  }
+ ]
+}

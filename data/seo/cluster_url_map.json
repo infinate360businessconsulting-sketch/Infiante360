@@ -1,0 +1,224 @@
+{
+ "_note": "Owner-reviewable cluster -> canonical URL decisions. Targets are validated against data/seo/route_snapshot.json by scripts/seo_keyword_map.py. 'gap' marks where an existing page only partly covers the cluster.",
+ "clusters": {
+  "Adobe Experience Platform": {
+   "f": "training",
+   "primary": "/training/",
+   "info": "/adobe-experience-platform/career-path.html"
+  },
+  "Adobe Real-Time CDP": {
+   "f": "training",
+   "primary": "/academy/courses/rtcdp-training.html"
+  },
+  "Adobe Journey Optimizer": {
+   "f": "training",
+   "primary": "/academy/courses/ajo-training.html"
+  },
+  "Customer Journey Analytics": {
+   "f": "training",
+   "primary": "/academy/courses/cja-training.html"
+  },
+  "Adobe Analytics": {
+   "f": "training",
+   "primary": "/academy/courses/adobe-analytics-training.html"
+  },
+  "Adobe Web SDK and Tags": {
+   "f": "training",
+   "primary": "/academy/courses/web-sdk-training.html"
+  },
+  "Adobe Experience Cloud": {
+   "f": "training",
+   "primary": "/stacks/adobe-experience-cloud.html"
+  },
+  "Agentic AI for MarTech": {
+   "f": "training",
+   "primary": "/academy/courses/agentic-ai-training.html"
+  },
+  "Model Context Protocol": {
+   "f": "training",
+   "primary": "/academy/programs/agentic-ai-mcp-track.html"
+  },
+  "AEP certification preparation": {
+   "f": "training",
+   "primary": "/academy/courses/aep-certification-prep.html"
+  },
+  "AEP interview preparation": {
+   "f": "training",
+   "primary": "/adobe-experience-platform/interview-questions.html",
+   "gap": "Dedicated interview-preparation program page not present; guide page only"
+  },
+  "MarTech architecture": {
+   "f": "training",
+   "primary": "/adobe-experience-platform/architecture.html",
+   "gap": "No MarTech architecture training program page"
+  },
+  "Adobe MarTech career accelerator": {
+   "f": "training",
+   "primary": "/training/"
+  },
+  "AEP foundations": {
+   "f": "training",
+   "primary": "/academy/aep-foundations-batch.html"
+  },
+  "Adobe sandbox labs": {
+   "f": "training",
+   "primary": "/academy/simulators.html"
+  },
+  "Adobe MarTech corporate enablement": {
+   "f": "training",
+   "primary": "/training/corporate-training.html"
+  },
+  "Executive MarTech and AI leadership": {
+   "f": "training",
+   "primary": "/academy/programs/executive-architecture-leadership.html"
+  },
+  "AI engineering": {
+   "f": "training",
+   "primary": "/academy/programs/ai-engineering-bootcamp.html"
+  },
+  "Adobe Experience Platform implementation": {
+   "f": "consulting",
+   "primary": "/services/aep-consulting.html",
+   "info": "/adobe-experience-platform/implementation-guide.html"
+  },
+  "Real-Time CDP implementation": {
+   "f": "consulting",
+   "primary": "/services/real-time-cdp.html"
+  },
+  "Adobe Journey Optimizer implementation": {
+   "f": "consulting",
+   "primary": "/services/adobe-journey-optimizer.html",
+   "info": "/academy/ajo-best-practices-handout.html"
+  },
+  "Customer Journey Analytics implementation": {
+   "f": "consulting",
+   "primary": "/services/customer-journey-analytics.html"
+  },
+  "Adobe Web SDK implementation": {
+   "f": "consulting",
+   "primary": "/services/web-sdk-adobe-tags.html"
+  },
+  "Adobe Analytics implementation": {
+   "f": "consulting",
+   "primary": "/services/adobe-analytics.html"
+  },
+  "Adobe Target personalization": {
+   "f": "consulting",
+   "primary": "/services/adobe-target-personalization.html"
+  },
+  "Adobe Experience Manager": {
+   "f": "consulting",
+   "primary": "/services/aem-consulting.html"
+  },
+  "Adobe Marketo Engage": {
+   "f": "consulting",
+   "primary": "/services/adobe-campaign-marketo.html",
+   "gap": "Marketo Engage shares one page with Adobe Campaign; separate page only if distinct delivery experience is confirmed"
+  },
+  "Adobe Campaign": {
+   "f": "consulting",
+   "primary": "/services/adobe-campaign-marketo.html",
+   "gap": "Shares one page with Marketo Engage"
+  },
+  "Adobe Commerce": {
+   "f": "consulting",
+   "primary": "/services/adobe-experience-cloud.html",
+   "gap": "No Adobe Commerce service page; owner must confirm delivery experience before a page is created",
+   "research": true
+  },
+  "IT strategy and advisory": {
+   "f": "consulting",
+   "primary": "/services/martech-strategy-advisory.html",
+   "gap": "General IT strategy is broader than MarTech advisory; confirm scope"
+  },
+  "Digital transformation": {
+   "f": "consulting",
+   "primary": "/corporate/services/digital-transformation.html",
+   "info": "/insights/digital-transformation.html"
+  },
+  "Enterprise architecture": {
+   "f": "consulting",
+   "primary": "/adobe-experience-platform/architecture.html",
+   "gap": "No commercial enterprise-architecture consulting page"
+  },
+  "MarTech stack audit": {
+   "f": "consulting",
+   "primary": "/lp/aep-architecture-review.html"
+  },
+  "Fractional MarTech advisory": {
+   "f": "consulting",
+   "primary": "/services/martech-strategy-advisory.html"
+  },
+  "Agentic AI implementation": {
+   "f": "consulting",
+   "primary": "/services/agentic-ai-mcp.html"
+  },
+  "Enterprise MCP integration": {
+   "f": "consulting",
+   "primary": "/services/agentic-ai-mcp.html",
+   "gap": "Shares a page with Agentic AI implementation; an enterprise MCP security guide is a distinct intent"
+  },
+  "Customer data engineering": {
+   "f": "consulting",
+   "primary": "/services/data-engineering.html"
+  },
+  "Snowflake for MarTech": {
+   "f": "consulting",
+   "primary": "/services/cloud-data-platforms.html",
+   "gap": "No Snowflake-specific page"
+  },
+  "BigQuery for MarTech": {
+   "f": "consulting",
+   "primary": "/services/cloud-data-platforms.html",
+   "gap": "No BigQuery-specific page"
+  },
+  "Databricks for MarTech": {
+   "f": "consulting",
+   "primary": "/services/cloud-data-platforms.html",
+   "gap": "No Databricks-specific page"
+  },
+  "Kafka streaming for customer data": {
+   "f": "consulting",
+   "primary": "/services/data-engineering.html",
+   "gap": "No Kafka-specific page"
+  },
+  "Customer 360 and identity resolution": {
+   "f": "consulting",
+   "primary": "/services/customer-360-identity-resolution.html",
+   "info": "/adobe-experience-platform/identity-service.html"
+  },
+  "Real-time personalization": {
+   "f": "consulting",
+   "primary": "/solutions/real-time-personalization.html"
+  },
+  "Retention and churn prevention": {
+   "f": "consulting",
+   "primary": "/solutions/churn-prevention.html"
+  },
+  "B2B lead-to-revenue": {
+   "f": "consulting",
+   "primary": "/solutions/b2b-lead-to-revenue.html"
+  },
+  "MarTech consent and governance": {
+   "f": "consulting",
+   "primary": "/services/consent-governance-privacy.html"
+  },
+  "Adobe MarTech staff augmentation": {
+   "f": "consulting",
+   "primary": "/services/staff-augmentation.html"
+  },
+  "BFSI customer experience transformation": {
+   "f": "consulting",
+   "primary": "/use-cases/industries/banking.html",
+   "gap": "Insurance and wider BFSI covered on separate industry pages"
+  },
+  "Retail omnichannel customer experience": {
+   "f": "consulting",
+   "primary": "/use-cases/industries/retail.html"
+  },
+  "AI search visibility GEO and AEO": {
+   "f": "consulting",
+   "primary": "/services/ai-search-visibility-geo-aeo.html"
+  }
+ }
+}

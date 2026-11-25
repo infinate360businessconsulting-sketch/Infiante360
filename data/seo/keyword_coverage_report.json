@@ -1,0 +1,81 @@
+{
+ "keywords_total": 1000,
+ "keywords_mapped": 1000,
+ "keywords_unmapped": 0,
+ "clusters": 50,
+ "by_action": {
+  "OPTIMIZE_EXISTING_PAGE": 484,
+  "ENHANCE_EXISTING_FAQ": 396,
+  "RESEARCH_REQUIRED": 20,
+  "CREATE_COMMERCIAL_LANDING_PAGE": 55,
+  "CREATE_TECHNICAL_ARTICLE": 45
+ },
+ "by_family": {
+  "training": 360,
+  "consulting": 640
+ },
+ "by_status": {
+  "MAPPED_NOT_IMPLEMENTED": 880,
+  "BLOCKED_OWNER_CONFIRMATION": 20,
+  "QUEUED_AWAITING_OWNER_APPROVAL": 100
+ },
+ "by_intent": {
+  "Commercial": 550,
+  "Informational": 450
+ },
+ "distinct_canonical_targets": 51,
+ "existing_pages_targeted": 46,
+ "planned_new_pages": 5,
+ "top_targets": [
+  [
+   "/training/corporate-training.html",
+   70
+  ],
+  [
+   "/services/adobe-campaign-marketo.html",
+   40
+  ],
+  [
+   "/services/martech-strategy-advisory.html",
+   40
+  ],
+  [
+   "/services/agentic-ai-mcp.html",
+   40
+  ],
+  [
+   "/training/",
+   32
+  ],
+  [
+   "/services/real-time-cdp.html",
+   20
+  ],
+  [
+   "/services/customer-journey-analytics.html",
+   20
+  ],
+  [
+   "/services/web-sdk-adobe-tags.html",
+   20
+  ],
+  [
+   "/services/adobe-analytics.html",
+   20
+  ],
+  [
+   "/services/adobe-target-personalization.html",
+   20
+  ],
+  [
+   "/services/aem-consulting.html",
+   20
+  ],
+  [
+   "/services/adobe-experience-cloud.html",
+   20
+  ]
+ ],
+ "metrics_measured": false,
+ "route_snapshot_source": "CI run 45557767016 (seo_report_print.py output)"
+}

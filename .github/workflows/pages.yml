@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: SEO dataset tests (counts, mapping integrity, no invented metrics, secret patterns)
+        run: python3 -m unittest discover -s tests -v
       - name: Build and validate (fails on broken links, duplicate titles, invalid JSON-LD)
         env:
           SITE_BASE: https://infiante360techacademy.com/
