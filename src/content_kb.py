@@ -321,3 +321,6 @@ KB_PAGES += _RES
 
 from content_usecase_library import LIBRARY_PAGES as _UCL  # noqa: E402
 KB_PAGES += _UCL
+
+from content_extra import EXTRA_PAGES as _EXTRA  # noqa: E402
+KB_PAGES += _EXTRA

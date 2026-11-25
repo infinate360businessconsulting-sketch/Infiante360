@@ -1131,6 +1131,11 @@ def write_child_sitemaps():
     body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in uc)
     write("sitemap2.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
     index.append("sitemap2.xml")
+    ex = [p for p in PAGES if p.get("sitemap3") and not str(p.get("robots", "")).startswith("noindex")]
+    if ex:
+        body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in ex)
+        write("sitemap3.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
+        index.append("sitemap3.xml")
     items = "\n".join(f"  <sitemap><loc>{e(BASE + f)}</loc></sitemap>" for f in index)
     write("sitemap-index.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex {ns}>\n{items}\n</sitemapindex>\n')
     print("Child sitemaps:", ", ".join(f"{c}={len(v)}" for c, v in sorted(groups.items())), f"images={len(imgs)}")
@@ -1165,7 +1170,7 @@ def main():
     _rb = "# Public pages are open to search engines and AI crawlers. Private paths stay disallowed.\n# robots.txt is not access control.\n\n"
     for _lbl, _names in _bots:
         _rb += f"# {_lbl}\n" + "".join(f"User-agent: {n}\n" for n in _names) + f"Allow: /\n{_dis}\n"
-    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-index.xml\nSitemap: {BASE}sitemap2.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
+    _rb += f"# Everyone else\nUser-agent: *\nAllow: /\n{_dis}\nSitemap: {BASE}sitemap.xml\nSitemap: {BASE}sitemap-index.xml\nSitemap: {BASE}sitemap2.xml\nSitemap: {BASE}sitemap3.xml\nSitemap: {BASE}corporate/sitemap.xml\n"
     write("robots.txt", _rb)
     write_feeds()
     write("assets/chat-index.json", json.dumps(chat_index(), ensure_ascii=False, separators=(",", ":")))

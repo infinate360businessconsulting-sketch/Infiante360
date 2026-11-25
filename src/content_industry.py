@@ -148,7 +148,7 @@ PROJECT_PAGE = dict(
         ("Join", pills(("Career Accelerator", "../training/index.html"), ("Register", REGISTER), ("Chat on WhatsApp", WHATSAPP_MSG))),
     ],
     faqs=[("Do the projects guarantee a job?", "No. They give you practical evidence of your skills. Hiring depends on your experience and the market.")],
-    related=["academy/index.html", "academy/simulators.html", "training/index.html"],
+    related=["academy/index.html", "academy/simulators.html", "training/index.html", "academy/career-accelerator-roadmap.html", "academy/portfolio-projects-and-interview-scenarios.html"],
     sources=[("Adobe Experience Platform documentation", f"{EL}/experience-platform")],
 )
 

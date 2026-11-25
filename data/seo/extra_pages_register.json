@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "note": "Disposition of every file in the owner-supplied packages. 'published' = rewritten to the site pattern and listed in sitemap3.xml. Nothing executed.",
+  "published": [
+    {"url": "/academy/career-accelerator-roadmap.html", "source": "Career Accelerator HTML (phases, 14-day plan, skill-gap table)", "sitemap": "sitemap3.xml"},
+    {"url": "/academy/portfolio-projects-and-interview-scenarios.html", "source": "Career Accelerator HTML (ten projects, interview scenarios)", "sitemap": "sitemap3.xml"}
+  ],
+  "not_published": [
+    {"file": "about-us.html (about_us_complete_site zip)", "reason": "Site already has /about-us.html. Page repeats unverified figures ($75M+ revenue impact, 50+ clients, 37+ projects) as headline stats."},
+    {"file": "contact-us.html (two contact zips)", "reason": "Site already has /contact-us.html. Visiting-card images and .vcf not added; confirm phone number and card designs first."},
+    {"file": "index.html (martech_website_package zip, Career Accelerator HTML)", "reason": "Standalone dark-theme site, not the site pattern. Contains another company's Trustpilot reviews (OAD Solutions), Unsplash stock images, '100% Practical', '10K+ professionals', '60+ hours' and a past batch date. Useful content extracted into the two pages above."},
+    {"file": "seo-keywords-50000.json / .csv / seo-keyword-sitemap-50000.csv", "reason": "Would create mass keyword pages. Project rule: one page per distinct intent."},
+    {"file": "rss-master-520.json / infinite360_520_rss_master.csv", "reason": "Feed candidates only; 32 high-confidence, the rest unvalidated. Stored as data/distribution/rss_source_candidates.csv for later validation; not published."},
+    {"file": "Digital_Academy_RSS_Engine (3 zips, identical)", "reason": "FastAPI app needs a server (site is static). pages/*.md are ~250-byte stubs. Not run, not published."},
+    {"file": "AgentXpostman starter and PHASES-1-8, GTM_Implementation_Agent", "reason": "Application code, not website pages. Not run. Review separately before any use; GTM agent .env.example and docx not opened."},
+    {"file": "assets/*.png banners (30 MB)", "reason": "AI-generated campaign images with unverified claims and mixed logos; add via content/banners.json after review."}
+  ]
+}

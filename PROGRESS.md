@@ -58,3 +58,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Updated: banners slider prefix, content_growth.py hub link, content_kb.py, build.py (sitemap2.xml = all use-cases/ URLs; in sitemap-index + robots)
 - Decision: 4000 rows published as 40 industry pages x 100 patterns, NOT 4000 pages (rows repeat across industries: 1686 distinct patterns; per-row pages would be near-duplicates, CLAUDE.md rule).
 - Not used: 50,000-keyword sitemap/CSV in the website zips (mass keyword pages); Trustpilot quotes about another company (OAD Solutions) in career-accelerator HTML; Unsplash stock images.
+
+## 2026-11-25 extra pages (sitemap3)
+- Created: src/content_extra.py (2 academy pages, flagged sitemap3), data/seo/extra_pages_register.json (disposition of every supplied file), data/distribution/rss_source_candidates.csv (unvalidated), tests/test_extra_pages.py
+- Updated: build.py (sitemap3.xml + robots), content_kb.py, content_industry.py (inbound links)
+- Not published: duplicate about/contact pages, standalone package site, other company's Trustpilot reviews, 50k keyword files, apps/agents (not run). See register.
