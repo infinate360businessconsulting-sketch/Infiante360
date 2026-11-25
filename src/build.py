@@ -1193,6 +1193,9 @@ def main():
         shutil.copytree(os.path.join(ROOT, "corporate"), os.path.join(OUT, "corporate"), dirs_exist_ok=True)
     if os.path.isdir(os.path.join(ROOT, "zohoverify")):
         shutil.copytree(os.path.join(ROOT, "zohoverify"), os.path.join(OUT, "zohoverify"), dirs_exist_ok=True)
+    import glob as _glob  # IndexNow verification key: public token served at the site root (Vercel serves build output only)
+    for _k in _glob.glob(os.path.join(ROOT, "indexnow", "*.txt")):
+        shutil.copy(_k, os.path.join(OUT, os.path.basename(_k)))
     write("admin/dashboard.html", dashboard_html())
     llms = [f"# {BRAND}", "", "> Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform (AEP), Real-Time CDP, Adobe Journey Optimizer, Customer Journey Analytics, Web SDK, data engineering and Agentic AI.", "",
             f"Contact: {EMAIL} | WhatsApp {PHONE_DISPLAY}", "", "## Pages", ""]

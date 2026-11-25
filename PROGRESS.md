@@ -108,3 +108,4 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
   - AI citation benchmark: 100 questions in data/seo/ai_citation_benchmark.csv (results EMPTY), docs/AI_CITATION_BENCHMARK.md manual workflow.
 - Blocked: voiceover (Piper installs but voice models cannot be downloaded: huggingface/github blocked from this workspace; no TTS engine present) => no narrated videos, no video-sitemap entries; admin dashboard (not started; admin/ is the CMS config); Search Console/Bing need owner accounts.
 - Remaining article programme: 290 articles + 30 pillars + ~695 images, in batches of 25 (this batch: 10).
+- Fix: live domain is served by Vercel (vercel.json, build output only), not GitHub Pages; key file copy moved into build.py so both hosts serve it. IndexNow submit step runs after the GitHub Pages deploy only, so confirm the key URL serves before relying on it. An admin/dashboard.html already exists in build.py (dashboard_html()).
