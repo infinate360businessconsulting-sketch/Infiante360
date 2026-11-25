@@ -52,3 +52,9 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Updated: src/content_home.py (Watch the demo section; slider only if approved banners), assets/site.css, assets/site.js
 - Banners NOT published: supplied banners carry unverified claims (Adobe Solution Partner badge, learner counts, placement, salary, lifetime access). Add with approved=true after owner review.
 - 8 banners published in slider (content/banners.json). Held back: CJA (invented dashboard figures), Agentic dark (third-party logos), 'certification'/'Get Certified'/'Industry Certification' banners, 'Download Syllabus/Curriculum' banners, 'Career/Interview/Talent support' banners, duplicates.
+
+## 2026-11-25 use-case library
+- Created: data/usecases/martech_use_cases.csv (4000 rows, owner-supplied, all 'Illustrative design pattern'), src/content_usecase_library.py (hub + 40 industry pages at use-cases/library/), tests/test_usecase_library.py
+- Updated: banners slider prefix, content_growth.py hub link, content_kb.py, build.py (sitemap2.xml = all use-cases/ URLs; in sitemap-index + robots)
+- Decision: 4000 rows published as 40 industry pages x 100 patterns, NOT 4000 pages (rows repeat across industries: 1686 distinct patterns; per-row pages would be near-duplicates, CLAUDE.md rule).
+- Not used: 50,000-keyword sitemap/CSV in the website zips (mass keyword pages); Trustpilot quotes about another company (OAD Solutions) in career-accelerator HTML; Unsplash stock images.

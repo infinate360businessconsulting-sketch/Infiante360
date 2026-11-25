@@ -318,3 +318,6 @@ KB_PAGES += _ART1 + _ART2
 
 from content_research import RESEARCH_PAGES as _RES  # noqa: E402
 KB_PAGES += _RES
+
+from content_usecase_library import LIBRARY_PAGES as _UCL  # noqa: E402
+KB_PAGES += _UCL

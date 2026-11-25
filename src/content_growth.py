@@ -134,7 +134,7 @@ USE_HUB = dict(
     schema="CollectionPage", category="Use cases",
     sections=[("All use cases", '<div class="grid-2">' + "".join(
         f'<a class="card link-card" href="../{u["path"]}"><span class="tag">{u["kicker"].split("· ")[1]}</span><h3>{u["h1"]}</h3><p>{u["desc"]}</p></a>' for u in USE_CASES) + "</div>"),
-        ("Use cases vs solutions vs case studies", '<p>Browse the full <a href="real-time-use-case-library.html">library of 50 real-time use cases</a>.</p><p><strong>Use cases</strong> are single outcomes you can build. <a href="../solutions/index.html">Solutions</a> combine several use cases into a program. <a href="../case-studies/index.html">Case studies</a> show them implemented end to end.</p>')],
+        ("Use cases vs solutions vs case studies", '<p>Browse the full <a href="real-time-use-case-library.html">library of 50 real-time use cases</a> or the <a href="library/index.html">4,000-pattern library by industry</a>.</p><p><strong>Use cases</strong> are single outcomes you can build. <a href="../solutions/index.html">Solutions</a> combine several use cases into a program. <a href="../case-studies/index.html">Case studies</a> show them implemented end to end.</p>')],
     faqs=[], related=["solutions/index.html", "case-studies/index.html", "use-cases/industries/index.html", "services/adobe-journey-optimizer.html"],
 )
 
