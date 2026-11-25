@@ -229,3 +229,21 @@
   function load() { var s = document.createElement("script"); s.src = base + "assets/chat.js"; s.defer = true; document.body.appendChild(s); }
   if ("requestIdleCallback" in window) requestIdleCallback(load, { timeout: 3000 }); else setTimeout(load, 1500);
 })();
+
+/* banner slider: manual controls, auto-advance only without reduced-motion, paused on hover/focus */
+(function () {
+  document.querySelectorAll("[data-slider]").forEach(function (root) {
+    var s = root.querySelectorAll(".slide"), d = root.querySelectorAll(".dot"), i = 0, t;
+    if (s.length < 2) return;
+    function go(n) { i = (n + s.length) % s.length; s.forEach(function (x, k) { x.hidden = k !== i; }); d.forEach(function (x, k) { if (k === i) x.setAttribute("aria-current", "true"); else x.removeAttribute("aria-current"); }); }
+    root.querySelector(".prev").addEventListener("click", function () { go(i - 1); });
+    root.querySelector(".next").addEventListener("click", function () { go(i + 1); });
+    d.forEach(function (x, k) { x.addEventListener("click", function () { go(k); }); });
+    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    function start() { stop(); t = setInterval(function () { go(i + 1); }, 6000); }
+    function stop() { if (t) clearInterval(t); t = null; }
+    root.addEventListener("mouseenter", stop); root.addEventListener("mouseleave", start);
+    root.addEventListener("focusin", stop); root.addEventListener("focusout", start);
+    start();
+  });
+})();

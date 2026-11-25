@@ -440,3 +440,16 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .review-more summary{cursor:pointer;color:#c8221c;font-weight:600;margin:6px 0}
 .review-more p{margin:10px 0;line-height:1.65}
 @media(min-width:900px){.review-list{grid-template-columns:1fr}}
+
+/* banner slider + demo video */
+.banner-slider{position:relative;max-width:1100px;margin:0 auto;border-radius:16px;overflow:hidden;background:#0e1d3b}
+.banner-slider .slides{list-style:none;margin:0;padding:0}
+.banner-slider .slide[hidden]{display:none}
+.banner-slider img{display:block;width:100%;height:auto}
+.banner-slider .prev,.banner-slider .next{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(14,29,59,.7);color:#fff;font-size:28px;line-height:1;cursor:pointer}
+.banner-slider .prev{left:10px}.banner-slider .next{right:10px}
+.banner-slider .dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:8px}
+.banner-slider .dot{width:12px;height:12px;padding:0;border:2px solid #fff;border-radius:50%;background:transparent;cursor:pointer}
+.banner-slider .dot[aria-current=true]{background:#fff}
+.banner-slider button:focus-visible{outline:3px solid #ff2b36;outline-offset:2px}
+.demo-fig{max-width:960px;margin:0 auto}

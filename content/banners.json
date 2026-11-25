@@ -1,0 +1,4 @@
+{
+  "_help": "Add one object per banner. Put the image in assets/banners/ and set approved=true only after the owner has checked every claim on it (partner badges, learner counts, placement, salary, 'lifetime', dates). Unapproved or missing banners are never shown. Slider is hidden while the list is empty.",
+  "banners": []
+}

@@ -46,3 +46,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - docs/adr/ADR-001 (approval-gated pipeline; proposed), RESEARCH_OPERATIONS, EDITORIAL_STANDARDS, SOURCE_VERIFICATION.
 - marketing/config/* and one LinkedIn draft set (pending_review; auto-publish/comment/connect/message all false, tested).
 - NOT built: 25 research agents (only deterministic checks exist), source registry, research RSS, whitepapers, dashboard, scheduled runs, daily LinkedIn routines. Need owner decisions in ADR-001.
+
+## 2026-11-25 demo video + banner slider
+- Created: assets/media/infinate360-demo.mp4 (+poster), src/banners.py, content/banners.json (empty), assets/banners/, tests/test_banners.py
+- Updated: src/content_home.py (Watch the demo section; slider only if approved banners), assets/site.css, assets/site.js
+- Banners NOT published: supplied banners carry unverified claims (Adobe Solution Partner badge, learner counts, placement, salary, lifetime access). Add with approved=true after owner review.
