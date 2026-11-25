@@ -1,0 +1,46 @@
+{
+ "id": "IMG-DBX-001",
+ "slug": "databricks-lakehouse-customer-data-architecture",
+ "page": "services/databricks-martech-integration.html",
+ "title": "Databricks lakehouse for customer data",
+ "subtitle": "Bronze, silver and gold layers with governed access",
+ "keyword": "databricks consulting",
+ "kind": "flow",
+ "accent": "red",
+ "lanes": [
+  {
+   "title": "Ingest",
+   "items": [
+    "Batch files",
+    "Streaming events",
+    "CDC from operational systems"
+   ]
+  },
+  {
+   "title": "Bronze",
+   "items": [
+    "Raw, append-only tables",
+    "Schema capture"
+   ]
+  },
+  {
+   "title": "Silver",
+   "items": [
+    "Cleansed and deduplicated",
+    "Identity keys resolved"
+   ]
+  },
+  {
+   "title": "Gold",
+   "items": [
+    "Customer 360 features",
+    "Audience and metric tables",
+    "ML-ready datasets"
+   ]
+  }
+ ],
+ "band": "Governance spans every layer: catalog, lineage, access control and audit.",
+ "note": "Illustrative reference pattern, not a client deployment.",
+ "alt": "Flow diagram from ingestion through bronze, silver and gold lakehouse layers for customer data",
+ "caption": "Medallion architecture for customer data on Databricks."
+}

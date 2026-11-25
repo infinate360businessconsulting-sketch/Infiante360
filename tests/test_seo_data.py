@@ -41,9 +41,18 @@ class Mapping(unittest.TestCase):
     def test_no_page_per_keyword(self):
         self.assertLessEqual(len({r["planned_new_url"] for r in self.m if r["planned_new_url"]}), 10)
 
-    def test_queue_not_generated(self):
+    def test_queue_generated_only_when_approved(self):
         for q in J("page_generation_queue.json")["queue"]:
-            self.assertFalse(q["generated"])
+            if q["generated"]:
+                self.assertTrue(q["status"].startswith("GENERATED_OWNER_APPROVED"), q["queue_id"])
+            else:
+                self.assertTrue(q["status"].startswith(("QUEUED", "RESEARCH", "BLOCKED")), q["queue_id"])
+
+    def test_generated_pages_exist_in_source(self):
+        src = open(os.path.join(D, "..", "..", "src", "content_platforms.py"), encoding="utf-8").read()
+        for q in J("page_generation_queue.json")["queue"]:
+            if q["generated"]:
+                self.assertIn(q["planned_url"].lstrip("/"), src, q["queue_id"])
 
 
 class Secrets(unittest.TestCase):

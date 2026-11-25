@@ -28,7 +28,7 @@
     "K38-20"
    ],
    "interim_url": "/services/cloud-data-platforms.html",
-   "status": "QUEUED_AWAITING_OWNER_APPROVAL",
+   "status": "GENERATED_OWNER_APPROVED_2026-11-25",
    "requirements": [
     "Confirm genuine delivery experience for this platform",
     "Original architecture diagram (SVG)",
@@ -36,7 +36,7 @@
     "No client names, results or partnership claims without evidence",
     "Distinct intent from /services/cloud-data-platforms.html and /services/data-engineering.html"
    ],
-   "generated": false
+   "generated": true
   },
   {
    "queue_id": "PG-002",
@@ -66,7 +66,7 @@
     "K39-20"
    ],
    "interim_url": "/services/cloud-data-platforms.html",
-   "status": "QUEUED_AWAITING_OWNER_APPROVAL",
+   "status": "GENERATED_OWNER_APPROVED_2026-11-25",
    "requirements": [
     "Confirm genuine delivery experience for this platform",
     "Original architecture diagram (SVG)",
@@ -74,7 +74,7 @@
     "No client names, results or partnership claims without evidence",
     "Distinct intent from /services/cloud-data-platforms.html and /services/data-engineering.html"
    ],
-   "generated": false
+   "generated": true
   },
   {
    "queue_id": "PG-003",
@@ -104,7 +104,7 @@
     "K40-20"
    ],
    "interim_url": "/services/cloud-data-platforms.html",
-   "status": "QUEUED_AWAITING_OWNER_APPROVAL",
+   "status": "GENERATED_OWNER_APPROVED_2026-11-25",
    "requirements": [
     "Confirm genuine delivery experience for this platform",
     "Original architecture diagram (SVG)",
@@ -112,7 +112,7 @@
     "No client names, results or partnership claims without evidence",
     "Distinct intent from /services/cloud-data-platforms.html and /services/data-engineering.html"
    ],
-   "generated": false
+   "generated": true
   },
   {
    "queue_id": "PG-004",
@@ -142,7 +142,7 @@
     "K41-20"
    ],
    "interim_url": "/services/data-engineering.html",
-   "status": "QUEUED_AWAITING_OWNER_APPROVAL",
+   "status": "GENERATED_OWNER_APPROVED_2026-11-25",
    "requirements": [
     "Confirm genuine delivery experience for this platform",
     "Original architecture diagram (SVG)",
@@ -150,7 +150,7 @@
     "No client names, results or partnership claims without evidence",
     "Distinct intent from /services/cloud-data-platforms.html and /services/data-engineering.html"
    ],
-   "generated": false
+   "generated": true
   },
   {
    "queue_id": "PG-005",
@@ -180,7 +180,7 @@
     "K32-20"
    ],
    "interim_url": "/adobe-experience-platform/architecture.html",
-   "status": "QUEUED_AWAITING_OWNER_APPROVAL",
+   "status": "GENERATED_OWNER_APPROVED_2026-11-25",
    "requirements": [
     "Confirm genuine delivery experience for this platform",
     "Original architecture diagram (SVG)",
@@ -188,7 +188,7 @@
     "No client names, results or partnership claims without evidence",
     "Distinct intent from /services/cloud-data-platforms.html and /services/data-engineering.html"
    ],
-   "generated": false
+   "generated": true
   },
   {
    "queue_id": "PG-006",

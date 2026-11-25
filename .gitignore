@@ -4,3 +4,4 @@ public/
 
 # agent runtime state (local ledger, locks, outputs)
 data/agents/
+assets/visuals/*/base/

@@ -619,7 +619,7 @@ def jsonld(p):
     if p["schema"] in ("Article", "HowTo"):
         art = {"@type": "Article", "@id": url + "#article", "headline": p["h1"][:110], "description": p["desc"], "mainEntityOfPage": {"@id": url + "#webpage"},
                "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "dateModified": TODAY, "datePublished": p.get("date", TODAY), "inLanguage": "en",
-               "image": BASE + "assets/og-image.png", "keywords": ", ".join(p.get("keywords", []))}
+               "image": BASE + "assets/" + (p.get("og_image") or "og-image.png"), "keywords": ", ".join(p.get("keywords", []))}
         graph.append(art)
     if p["schema"] == "HowTo" and p.get("steps"):
         graph.append({"@type": "HowTo", "@id": url + "#howto", "name": p["h1"], "description": p["answer"],
@@ -627,7 +627,8 @@ def jsonld(p):
     if p["schema"] == "Service":
         graph.append({"@type": "Service", "@id": url + "#service", "name": p["h1"], "serviceType": p.get("service_type", p["h1"]),
                       "description": p["answer"], "provider": {"@id": ORG_ID}, "url": url,
-                      "areaServed": "Worldwide", "availableChannel": {"@type": "ServiceChannel", "serviceUrl": BASE + "contact-us.html"}})
+                      "areaServed": "Worldwide", "availableChannel": {"@type": "ServiceChannel", "serviceUrl": BASE + "contact-us.html"},
+                      **({"image": BASE + "assets/" + p["og_image"]} if p.get("og_image") else {})})
     if p.get("event"):
         ev = p["event"]
         graph.append({"@type": "EducationEvent", "@id": url + "#event", "name": ev["name"], "description": p["answer"],
@@ -705,9 +706,9 @@ def head(p, robots="index,follow,max-image-preview:large,max-snippet:-1", canoni
 <meta property="og:title" content="{e(p['title'])}">
 <meta property="og:description" content="{e(p['desc'])}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{BASE}assets/og-image.png">
+<meta property="og:image" content="{BASE}assets/{p.get('og_image') or 'og-image.png'}">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="{BRAND} — Adobe MarTech consulting and training">
+<meta property="og:image:alt" content="{e(p.get('og_alt') or (BRAND + ' — Adobe MarTech consulting and training'))}">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{e(p['title'])}">

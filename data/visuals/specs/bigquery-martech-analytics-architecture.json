@@ -1,0 +1,48 @@
+{
+ "id": "IMG-BQ-001",
+ "slug": "bigquery-martech-analytics-architecture",
+ "page": "services/bigquery-martech-integration.html",
+ "title": "BigQuery MarTech analytics architecture",
+ "subtitle": "Event data, modelling and activation on Google Cloud",
+ "keyword": "bigquery consulting",
+ "kind": "layers",
+ "accent": "cyan",
+ "layers": [
+  {
+   "title": "Collection",
+   "items": [
+    "Web SDK events",
+    "Server-side tagging",
+    "Batch exports"
+   ]
+  },
+  {
+   "title": "Storage and modelling",
+   "items": [
+    "Raw event tables",
+    "Partitioned fact tables",
+    "dbt or SQL models"
+   ]
+  },
+  {
+   "title": "Governance",
+   "items": [
+    "IAM and column policies",
+    "Data quality tests",
+    "Cost controls"
+   ]
+  },
+  {
+   "title": "Consumption",
+   "items": [
+    "BI dashboards",
+    "Audience tables",
+    "ML features"
+   ]
+  }
+ ],
+ "band": "Partitioning and clustering choices decide both query speed and cost.",
+ "note": "Illustrative reference pattern, not a client deployment.",
+ "alt": "Layered diagram of a BigQuery analytics architecture from collection through modelling and governance to consumption",
+ "caption": "Layered BigQuery architecture for marketing analytics."
+}

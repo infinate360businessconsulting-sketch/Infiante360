@@ -1,0 +1,48 @@
+{
+ "id": "IMG-SNOW-001",
+ "slug": "snowflake-aep-integration-architecture",
+ "page": "services/snowflake-martech-integration.html",
+ "title": "Snowflake and Adobe Experience Platform integration architecture",
+ "subtitle": "Governed customer data from warehouse to activation",
+ "keyword": "snowflake consulting",
+ "kind": "flow",
+ "accent": "cyan",
+ "lanes": [
+  {
+   "title": "Sources",
+   "items": [
+    "CRM and commerce",
+    "Web and app events",
+    "Consent records"
+   ]
+  },
+  {
+   "title": "Snowflake",
+   "items": [
+    "Raw and curated schemas",
+    "Role-based access policies",
+    "Secure data sharing"
+   ]
+  },
+  {
+   "title": "Adobe Experience Platform",
+   "items": [
+    "XDM datasets",
+    "Identity graph",
+    "Real-Time Customer Profile"
+   ]
+  },
+  {
+   "title": "Activation",
+   "items": [
+    "Audiences and journeys",
+    "Analytics and reporting",
+    "Feedback to warehouse"
+   ]
+  }
+ ],
+ "band": "Design question: which system is the source of truth for each attribute, and who owns its quality?",
+ "note": "Illustrative reference pattern, not a client deployment. Connector options depend on product edition; verify against Adobe and Snowflake documentation.",
+ "alt": "Diagram showing data moving from source systems into Snowflake, then into Adobe Experience Platform datasets, profiles and activation channels",
+ "caption": "Reference architecture for Snowflake and Adobe Experience Platform."
+}

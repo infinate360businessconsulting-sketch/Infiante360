@@ -1,0 +1,37 @@
+{
+ "updated": "2026-11-25",
+ "note": "Service registry. Status 'pending_confirmation' means no commercial offering is published.",
+ "services": [
+  {
+   "id": "snowflake-aep-integration-architecture",
+   "url": "/services/snowflake-martech-integration.html",
+   "status": "published"
+  },
+  {
+   "id": "bigquery-martech-analytics-architecture",
+   "url": "/services/bigquery-martech-integration.html",
+   "status": "published"
+  },
+  {
+   "id": "databricks-lakehouse-customer-data-architecture",
+   "url": "/services/databricks-martech-integration.html",
+   "status": "published"
+  },
+  {
+   "id": "kafka-real-time-streaming-architecture",
+   "url": "/services/kafka-streaming-customer-data.html",
+   "status": "published"
+  },
+  {
+   "id": "enterprise-architecture-digital-transformation-roadmap",
+   "url": "/services/enterprise-architecture-consulting.html",
+   "status": "published"
+  },
+  {
+   "id": "adobe-commerce",
+   "url": null,
+   "status": "pending_confirmation",
+   "note": "Educational/integration content only until the owner confirms delivery capability. No commercial service page."
+  }
+ ]
+}

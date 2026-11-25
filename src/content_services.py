@@ -259,3 +259,7 @@ SERVICES = [
         related=["services/aep-consulting.html", "adobe-experience-platform/architecture.html", "contact-us.html"],
     ),
 ]
+
+# Approved platform pages (2026-11-25): Snowflake, BigQuery, Databricks, Kafka, enterprise architecture
+from content_platforms import PLATFORM_PAGES  # noqa: E402
+SERVICES += PLATFORM_PAGES

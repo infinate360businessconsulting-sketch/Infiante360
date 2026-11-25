@@ -1,0 +1,127 @@
+[
+ {
+  "image_id": "IMG-BQ-001",
+  "page": "services/bigquery-martech-integration.html",
+  "title": "BigQuery MarTech analytics architecture",
+  "keyword": "bigquery consulting",
+  "description": "Layered BigQuery architecture for marketing analytics.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/bigquery-martech-analytics-architecture",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 42.9,
+   "hero-800.webp": 16.7,
+   "og.png": 141.3
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Layered diagram of a BigQuery analytics architecture from collection through modelling and governance to consumption",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
+  "image_id": "IMG-DBX-001",
+  "page": "services/databricks-martech-integration.html",
+  "title": "Databricks lakehouse for customer data",
+  "keyword": "databricks consulting",
+  "description": "Medallion architecture for customer data on Databricks.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/databricks-lakehouse-customer-data-architecture",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 41.1,
+   "hero-800.webp": 15.9,
+   "og.png": 139.9
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Flow diagram from ingestion through bronze, silver and gold lakehouse layers for customer data",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
+  "image_id": "IMG-EA-001",
+  "page": "services/enterprise-architecture-consulting.html",
+  "title": "Enterprise architecture and digital transformation roadmap",
+  "keyword": "enterprise architecture consulting",
+  "description": "A phased enterprise architecture roadmap.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/enterprise-architecture-digital-transformation-roadmap",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 41.9,
+   "hero-800.webp": 16.7,
+   "og.png": 136.9
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Four-phase roadmap: assess, design, plan and deliver for enterprise architecture and digital transformation",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
+  "image_id": "IMG-KAFKA-001",
+  "page": "services/kafka-streaming-customer-data.html",
+  "title": "Kafka real-time streaming architecture",
+  "keyword": "kafka consulting",
+  "description": "Event streaming reference architecture.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/kafka-real-time-streaming-architecture",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 44.9,
+   "hero-800.webp": 17.4,
+   "og.png": 141.9
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Flow diagram of event producers, a Kafka platform, stream processing and downstream consumers",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
+  "image_id": "IMG-SNOW-001",
+  "page": "services/snowflake-martech-integration.html",
+  "title": "Snowflake and Adobe Experience Platform integration architecture",
+  "keyword": "snowflake consulting",
+  "description": "Reference architecture for Snowflake and Adobe Experience Platform.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/snowflake-aep-integration-architecture",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 52.2,
+   "hero-800.webp": 20.5,
+   "og.png": 154.7
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Diagram showing data moving from source systems into Snowflake, then into Adobe Experience Platform datasets, profiles and activation channels",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ }
+]

@@ -1,0 +1,48 @@
+{
+ "id": "IMG-EA-001",
+ "slug": "enterprise-architecture-digital-transformation-roadmap",
+ "page": "services/enterprise-architecture-consulting.html",
+ "title": "Enterprise architecture and digital transformation roadmap",
+ "subtitle": "From current state to a governed target state",
+ "keyword": "enterprise architecture consulting",
+ "kind": "phases",
+ "accent": "violet",
+ "phases": [
+  {
+   "title": "Assess",
+   "items": [
+    "Current-state review",
+    "Capability and data map",
+    "Risks and constraints"
+   ]
+  },
+  {
+   "title": "Design",
+   "items": [
+    "Target architecture",
+    "Integration patterns",
+    "Governance model"
+   ]
+  },
+  {
+   "title": "Plan",
+   "items": [
+    "Prioritised roadmap",
+    "Business case inputs",
+    "Delivery model"
+   ]
+  },
+  {
+   "title": "Deliver",
+   "items": [
+    "Incremental releases",
+    "Quality gates",
+    "Handover and enablement"
+   ]
+  }
+ ],
+ "band": "Each phase ends with a decision the sponsor can approve, change or stop.",
+ "note": "Illustrative approach, not a client engagement.",
+ "alt": "Four-phase roadmap: assess, design, plan and deliver for enterprise architecture and digital transformation",
+ "caption": "A phased enterprise architecture roadmap."
+}

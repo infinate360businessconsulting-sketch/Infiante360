@@ -1,0 +1,47 @@
+[
+ {
+  "image_id": "IMG-BQ-001",
+  "page": "services/bigquery-martech-integration.html",
+  "roles": [
+   "hero",
+   "og",
+   "diagram"
+  ]
+ },
+ {
+  "image_id": "IMG-DBX-001",
+  "page": "services/databricks-martech-integration.html",
+  "roles": [
+   "hero",
+   "og",
+   "diagram"
+  ]
+ },
+ {
+  "image_id": "IMG-EA-001",
+  "page": "services/enterprise-architecture-consulting.html",
+  "roles": [
+   "hero",
+   "og",
+   "diagram"
+  ]
+ },
+ {
+  "image_id": "IMG-KAFKA-001",
+  "page": "services/kafka-streaming-customer-data.html",
+  "roles": [
+   "hero",
+   "og",
+   "diagram"
+  ]
+ },
+ {
+  "image_id": "IMG-SNOW-001",
+  "page": "services/snowflake-martech-integration.html",
+  "roles": [
+   "hero",
+   "og",
+   "diagram"
+  ]
+ }
+]

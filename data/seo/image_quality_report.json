@@ -1,0 +1,107 @@
+[
+ {
+  "image_id": "IMG-BQ-001",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 42.9
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 16.7
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 141.3
+   }
+  }
+ },
+ {
+  "image_id": "IMG-DBX-001",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 41.1
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 15.9
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 139.9
+   }
+  }
+ },
+ {
+  "image_id": "IMG-EA-001",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 41.9
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 16.7
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 136.9
+   }
+  }
+ },
+ {
+  "image_id": "IMG-KAFKA-001",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 44.9
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 17.4
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 141.9
+   }
+  }
+ },
+ {
+  "image_id": "IMG-SNOW-001",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 52.2
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 20.5
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 154.7
+   }
+  }
+ }
+]

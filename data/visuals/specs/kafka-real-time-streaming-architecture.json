@@ -1,0 +1,48 @@
+{
+ "id": "IMG-KAFKA-001",
+ "slug": "kafka-real-time-streaming-architecture",
+ "page": "services/kafka-streaming-customer-data.html",
+ "title": "Kafka real-time streaming architecture",
+ "subtitle": "Event backbone for personalization and analytics",
+ "keyword": "kafka consulting",
+ "kind": "flow",
+ "accent": "orange",
+ "lanes": [
+  {
+   "title": "Producers",
+   "items": [
+    "Applications",
+    "Web and mobile events",
+    "Database change capture"
+   ]
+  },
+  {
+   "title": "Kafka platform",
+   "items": [
+    "Topics and partitions",
+    "Schema registry",
+    "Retention and replay"
+   ]
+  },
+  {
+   "title": "Processing",
+   "items": [
+    "Stream processing",
+    "Validation and enrichment",
+    "Dead-letter handling"
+   ]
+  },
+  {
+   "title": "Consumers",
+   "items": [
+    "Customer data platform",
+    "Warehouse and lake",
+    "Alerting and monitoring"
+   ]
+  }
+ ],
+ "band": "Delivery guarantees, ordering and schema evolution must be designed, not assumed.",
+ "note": "Illustrative reference pattern, not a client deployment.",
+ "alt": "Flow diagram of event producers, a Kafka platform, stream processing and downstream consumers",
+ "caption": "Event streaming reference architecture."
+}
