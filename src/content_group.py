@@ -169,7 +169,7 @@ SKILLSURF = dict(
     ],
     faqs=[("Can I enrol in SkillSurf courses from this page?", "No. This page describes the brand and planned domains. Enrolment opens only on a confirmed course page."),
           ("Is SkillSurf an official partner of SAP, Oracle or other vendors?", "No partnership or accreditation is claimed here.")],
-    related=["ecosystem/index.html", "training/corporate-training.html", "training/index.html", "locations/index.html"], sources=[], sitemap4=True)
+    related=["products/index.html", "events/choose-your-enterprise-technology-path.html", "training/corporate-training.html", "locations/index.html"], sources=[], sitemap4=True)
 
 PROGRAMS = [("Startup Founder Launchpad", "7 days", "Idea validation and founder roadmap"), ("AI Startup Accelerator", "30 days", "AI product prototype"), ("SaaS Startup Bootcamp", "30 days", "MVP and SaaS business model"),
             ("Zero-to-One Founder Program", "8 weeks", "Startup execution plan"), ("Agentic AI Startup Lab", "6 weeks", "Agent-based product prototype"), ("No-Code Startup Studio", "4 weeks", "Working no-code application"),
@@ -190,7 +190,7 @@ STARTUP = dict(
     ],
     faqs=[("Is this an incubator or accelerator that invests in startups?", "No. These are proposed education programmes. No investment or funding is offered."),
           ("When do programmes start?", "No dates are set. Interest registrations are used to decide what to schedule first.")],
-    related=["ecosystem/index.html", "academy/event-calendar.html", "ecosystem/skillsurf.html", "academy/community-tracks.html"], sources=[], sitemap4=True)
+    related=["products/index.html", "events/idea-validation-sprint.html", "events/pitch-deck-clinic.html", "academy/community-tracks.html"], sources=[], sitemap4=True)
 
 EXPLORER = dict(
     path="ecosystem/infinate360-explorer.html", title="Infinate360Explorer: Career Intelligence Brand",
@@ -207,7 +207,7 @@ EXPLORER = dict(
     ],
     faqs=[("Is there a live job board?", "Not on this site yet. A jobs feed would be added only with verified, permitted sources."),
           ("Do you guarantee jobs?", "No. Outcomes depend on your background, practice and the market.")],
-    related=["ecosystem/index.html", "academy/career-accelerator-roadmap.html", "academy/portfolio-projects-and-interview-scenarios.html", "training/career-transition.html"], sources=[], sitemap4=True)
+    related=["products/index.html", "products/explorer-jobs-by-technology.html", "products/explorer-resume-scanner.html", "academy/career-accelerator-roadmap.html"], sources=[], sitemap4=True)
 
 CXO = dict(
     path="ecosystem/cxo-hive.html", title="CXO Hive: Executive MarTech and AI Leadership Brand",
@@ -224,7 +224,7 @@ CXO = dict(
     ],
     faqs=[("Is CXO Hive a membership network today?", "Not yet. The programme page is the current offer; forums are proposals."),
           ("Can my leadership team get a private session?", "Yes, ask through corporate training or consulting and share your goals.")],
-    related=["ecosystem/index.html", "academy/programs/executive-architecture-leadership.html", "training/corporate-training.html", "services/index.html"], sources=[], sitemap4=True)
+    related=["products/cxo-hive-programme.html", "products/index.html", "academy/programs/executive-architecture-leadership.html", "events/martech-ai-coe-roundtable.html"], sources=[], sitemap4=True)
 
 HUB_ECO = dict(
     path="ecosystem/index.html", title="Infinate360 Ecosystem: Brands, Academy and Consulting",
@@ -233,7 +233,8 @@ HUB_ECO = dict(
     keywords=["infinate360", "infiante360 tech academy", "infinate360 ecosystem", "infinate360 consulting", "martech education and consulting brands", "adobe martech academy and research"],
     answer="Infinate360 groups education, consulting, research, executive and career brands. Infiante360 Tech Academy and the consulting services are live on this site, with a research hub and a CXO Hive programme page. SkillSurf, Infinate360Explorer and Startup Studio have brand pages, and anything not yet open is marked as proposed. Legal entities and official domains for each brand are being confirmed.",
     list_items=[("Infiante360 Tech Academy", "academy/index.html"), ("Consulting", "services/index.html"), ("Research and Intelligence", "research/index.html"), ("CXO Hive", "ecosystem/cxo-hive.html"),
-                ("SkillSurf", "ecosystem/skillsurf.html"), ("Infinate360Explorer", "ecosystem/infinate360-explorer.html"), ("Startup Studio", "ecosystem/startup-studio.html")],
+                ("SkillSurf", "ecosystem/skillsurf.html"), ("Infinate360Explorer", "ecosystem/infinate360-explorer.html"), ("Startup Studio", "ecosystem/startup-studio.html"),
+                ("Products", "products/index.html"), ("Events", "events/index.html")],
     sections=[
         ("Brands and status", _row_links(["Brand", "Focus", "Status", "Page"], [
             ("Infiante360 Tech Academy", "Architecture-led Adobe MarTech, customer data and Agentic AI education", "Live on this site", "@Academy|../academy/index.html"),
@@ -243,7 +244,8 @@ HUB_ECO = dict(
             ("SkillSurf", "Multi-vendor enterprise technology training", "Brand page; catalogue being confirmed", "@SkillSurf|skillsurf.html"),
             ("Infinate360Explorer", "Career intelligence, assessments and mentoring", "Brand page; tools listed when live", "@Explorer|infinate360-explorer.html"),
             ("Startup Studio", "Founder education", "Proposed", "@Startup Studio|startup-studio.html"),
-            ("Events and community", "Webinars, workshops and topic communities", "Proposed calendar", "@Events|../academy/event-calendar.html")])),
+            ("Events and community", "Webinars, workshops and topic communities", "Proposed calendar", "@Events|../events/index.html")])),
+        ("Products", '<p>Side-by-side status of the four products is on the <a href="../products/index.html">products page</a>.</p>'),
         ("Where we deliver", '<p>Delivery is online. See <a href="../locations/index.html">locations</a> for 17 countries and Bengaluru, each with the privacy framework that matters for customer data work.</p>'),
         ("What this page does not claim", '<p class="note">It does not state a corporate structure, ownership or official domains for any brand. Those are being confirmed. Courses, events and programmes open only on pages that show confirmed dates, fees and delivery details.</p>'
          + pills(("Contact us", "../contact-us.html"), ("WhatsApp " + PHONE, WHATSAPP_MSG), ("Community", "../academy/community-tracks.html"))),

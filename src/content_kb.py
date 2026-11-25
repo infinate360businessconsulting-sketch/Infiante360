@@ -327,3 +327,5 @@ KB_PAGES += _EXTRA
 
 from content_group import GROUP_PAGES as _GROUP  # noqa: E402
 KB_PAGES += _GROUP
+from content_products import PRODUCT_ALL as _PROD  # noqa: E402
+KB_PAGES += _PROD

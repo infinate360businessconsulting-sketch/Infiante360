@@ -82,3 +82,10 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Updated: build.py (sitemap4.xml in index + robots; footer links to ecosystem/ and locations/), content_kb.py, extra_pages_register.json
 - Country pages: real law + regulator + channel rule + design note per country, guidance not legal advice, no local office claimed. Sources are regulator home pages (not link-checked from CI).
 - Deferred: jobs RSS/newsroom/PR engines (need sources/approvals), city pages (thin duplicates).
+
+## 2026-11-25 products + events (sitemap4.xml)
+- Owner: "create my company website as separate products ... go-ahead ... build it, make it live, create multiple events" (+ MarTechJobs-style Explorer spec). Legal entity/domain per brand still unconfirmed, so "being confirmed" wording stays.
+- Created: src/content_products.py (16 pages: products hub; Explorer jobs-by-technology, jobs-by-role, resume scanner, employers, course-to-role map; CXO Hive programme; events hub + 8 proposed events across the 4 products), tests/test_product_pages.py; 16 rows in data/seo/sitemap4_keyword_map.csv
+- Updated: content_group.py (hub rows, inbound links), content_kb.py, build.py (footer links to products/ and events/)
+- Events: all "date to be announced", no fees, speakers, counts. Startup events: no funding/investor promise.
+- Not built/claimed: live jobs feed (needs owner-named sources with checked terms), resume upload/scanner, employer portal, salary data, CXO fees (Rs 1,00,000 vs 1,50,000 conflict unresolved), Salesforce/Braze courses.
