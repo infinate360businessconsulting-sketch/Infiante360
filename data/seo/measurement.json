@@ -1,0 +1,82 @@
+[
+ {
+  "metric": "Nonbrand clicks",
+  "source": "GSC",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "Set relative target after baseline",
+  "cadence": "Weekly",
+  "_source_row": 2,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "Top 3 / top 10 keywords",
+  "source": "GSC / rank tracker",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "Track agreed 100-query set by country",
+  "cadence": "Monthly",
+  "_source_row": 3,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "Qualified training leads",
+  "source": "CRM / GA4",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "Set volume and qualification definition",
+  "cadence": "Weekly",
+  "_source_row": 4,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "Qualified consulting leads",
+  "source": "CRM / GA4",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "Track booked discovery and opportunity value",
+  "cadence": "Weekly",
+  "_source_row": 5,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "AI citations",
+  "source": "Manual neutral tests",
+  "baseline": "Not tested",
+  "90_day_target_acceptance": "Run 100-query baseline then monthly sample",
+  "cadence": "Monthly",
+  "_source_row": 6,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "Published reviewed articles",
+  "source": "CMS",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "12–20 per month subject to capacity",
+  "cadence": "Weekly",
+  "_source_row": 7,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "Indexed priority URLs",
+  "source": "GSC",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "Investigate exclusions and inspect priority pages",
+  "cadence": "Weekly",
+  "_source_row": 8,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "metric": "Revenue by channel",
+  "source": "CRM",
+  "baseline": "Not available",
+  "90_day_target_acceptance": "Attribute enrollments and signed contracts",
+  "cadence": "Monthly",
+  "_source_row": 9,
+  "source_sheet": "Measurement",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ }
+]

@@ -1,0 +1,9 @@
+metric,source,baseline,90_day_target_acceptance,cadence,_source_row,source_sheet,source_file
+Nonbrand clicks,GSC,Not available,Set relative target after baseline,Weekly,2,Measurement,Infiante360_Growth_Execution_2027.xlsx
+Top 3 / top 10 keywords,GSC / rank tracker,Not available,Track agreed 100-query set by country,Monthly,3,Measurement,Infiante360_Growth_Execution_2027.xlsx
+Qualified training leads,CRM / GA4,Not available,Set volume and qualification definition,Weekly,4,Measurement,Infiante360_Growth_Execution_2027.xlsx
+Qualified consulting leads,CRM / GA4,Not available,Track booked discovery and opportunity value,Weekly,5,Measurement,Infiante360_Growth_Execution_2027.xlsx
+AI citations,Manual neutral tests,Not tested,Run 100-query baseline then monthly sample,Monthly,6,Measurement,Infiante360_Growth_Execution_2027.xlsx
+Published reviewed articles,CMS,Not available,12–20 per month subject to capacity,Weekly,7,Measurement,Infiante360_Growth_Execution_2027.xlsx
+Indexed priority URLs,GSC,Not available,Investigate exclusions and inspect priority pages,Weekly,8,Measurement,Infiante360_Growth_Execution_2027.xlsx
+Revenue by channel,CRM,Not available,Attribute enrollments and signed contracts,Monthly,9,Measurement,Infiante360_Growth_Execution_2027.xlsx

@@ -20,6 +20,14 @@ jobs:
           python-version: "3.12"
       - name: Build and validate (fails on broken links, duplicate titles, invalid JSON-LD)
         run: python3 src/build.py _site
+      - name: SEO inventory and health checks (read-only, computed from built files)
+        run: |
+          python3 scripts/seo_inventory.py _site seo-report https://infiante360techacademy.com
+          cat seo-report/seo-health.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: seo-report
+          path: seo-report
       - name: Add the separate LMS site (static, built from lms-site/) at /lms-hub/
         run: mkdir -p _site/lms-hub && cp -r lms-site/*.html lms-site/assets _site/lms-hub/
       - uses: actions/configure-pages@v5

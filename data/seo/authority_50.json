@@ -1,0 +1,502 @@
+[
+ {
+  "id": 1,
+  "organization": "Adobe Experience League community",
+  "public_url": "https://experienceleaguecommunities.adobe.com/",
+  "contribution_idea": "Answer practitioner questions",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 2,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 2,
+  "organization": "Adobe Champions",
+  "public_url": "https://experienceleague.adobe.com/en/champions",
+  "contribution_idea": "Build eligibility through contributions",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 3,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 3,
+  "organization": "Adobe Experience League",
+  "public_url": "https://experienceleague.adobe.com/",
+  "contribution_idea": "Propose practitioner learning content",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 4,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 4,
+  "organization": "Adobe partner directory",
+  "public_url": "https://partners.adobe.com/s/directory",
+  "contribution_idea": "Assess program eligibility; no affiliation claim",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 5,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 5,
+  "organization": "GitHub",
+  "public_url": "https://github.com/",
+  "contribution_idea": "Publish synthetic data labs and test fixtures",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 6,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 6,
+  "organization": "GitLab",
+  "public_url": "https://gitlab.com/",
+  "contribution_idea": "Publish reproducible CI validation example",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 7,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 7,
+  "organization": "Stack Overflow",
+  "public_url": "https://stackoverflow.com/",
+  "contribution_idea": "Answer relevant technical questions without promotion",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 8,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 8,
+  "organization": "Data Engineering Stack Exchange",
+  "public_url": "https://dba.stackexchange.com/",
+  "contribution_idea": "Contribute database and ingestion answers",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 9,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 9,
+  "organization": "DEV Community",
+  "public_url": "https://dev.to/",
+  "contribution_idea": "Submit original engineering walkthrough",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 10,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 10,
+  "organization": "Hashnode",
+  "public_url": "https://hashnode.com/",
+  "contribution_idea": "Publish developer tutorial",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 11,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 11,
+  "organization": "Medium",
+  "public_url": "https://medium.com/",
+  "contribution_idea": "Publish original executive essay",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 12,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 12,
+  "organization": "Substack",
+  "public_url": "https://substack.com/",
+  "contribution_idea": "Build opt-in technical newsletter",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 13,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 13,
+  "organization": "LinkedIn",
+  "public_url": "https://www.linkedin.com/",
+  "contribution_idea": "Publish founder research and expert articles",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 14,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 14,
+  "organization": "YouTube",
+  "public_url": "https://www.youtube.com/",
+  "contribution_idea": "Publish searchable architecture demos",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 15,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 15,
+  "organization": "Quora",
+  "public_url": "https://www.quora.com/",
+  "contribution_idea": "Answer course selection questions transparently",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 16,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 16,
+  "organization": "Reddit dataengineering",
+  "public_url": "https://www.reddit.com/r/dataengineering/",
+  "contribution_idea": "Discuss data patterns under community rules",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 17,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 17,
+  "organization": "Reddit analytics",
+  "public_url": "https://www.reddit.com/r/analytics/",
+  "contribution_idea": "Share analytics lessons under rules",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 18,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 18,
+  "organization": "Reddit marketing",
+  "public_url": "https://www.reddit.com/r/marketing/",
+  "contribution_idea": "Discuss customer data outcomes without link spam",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 19,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 19,
+  "organization": "Meetup",
+  "public_url": "https://www.meetup.com/",
+  "contribution_idea": "Host or propose a local technical talk",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 20,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 20,
+  "organization": "Sessionize",
+  "public_url": "https://sessionize.com/",
+  "contribution_idea": "Identify relevant open calls for speakers",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 21,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 21,
+  "organization": "CNCF",
+  "public_url": "https://www.cncf.io/",
+  "contribution_idea": "Explore community events for governed cloud architecture",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 22,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 22,
+  "organization": "Apache Kafka",
+  "public_url": "https://kafka.apache.org/",
+  "contribution_idea": "Contribute documentation or examples",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 23,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 23,
+  "organization": "Apache Airflow",
+  "public_url": "https://airflow.apache.org/",
+  "contribution_idea": "Contribute orchestration examples",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 24,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 24,
+  "organization": "Apache Spark",
+  "public_url": "https://spark.apache.org/",
+  "contribution_idea": "Contribute reproducible data processing examples",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 25,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 25,
+  "organization": "dbt Community",
+  "public_url": "https://www.getdbt.com/community",
+  "contribution_idea": "Share transformation pattern",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 26,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 26,
+  "organization": "Snowflake Community",
+  "public_url": "https://community.snowflake.com/",
+  "contribution_idea": "Share CDP ingestion example",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 27,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 27,
+  "organization": "Databricks Community",
+  "public_url": "https://community.databricks.com/",
+  "contribution_idea": "Discuss governed customer data pipelines",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 28,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 28,
+  "organization": "Google Cloud Community",
+  "public_url": "https://www.googlecloudcommunity.com/",
+  "contribution_idea": "Share BigQuery reference pattern",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 29,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 29,
+  "organization": "AWS re:Post",
+  "public_url": "https://repost.aws/",
+  "contribution_idea": "Answer relevant architecture questions",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 30,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 30,
+  "organization": "Microsoft Learn Community",
+  "public_url": "https://learn.microsoft.com/",
+  "contribution_idea": "Contribute where public participation is allowed",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 31,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 31,
+  "organization": "MCP project",
+  "public_url": "https://modelcontextprotocol.io/",
+  "contribution_idea": "Contribute security or interoperability examples",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 32,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 32,
+  "organization": "Hugging Face",
+  "public_url": "https://huggingface.co/",
+  "contribution_idea": "Publish non-sensitive sample agent assets",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 33,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 33,
+  "organization": "Kaggle",
+  "public_url": "https://www.kaggle.com/",
+  "contribution_idea": "Publish synthetic customer analytics notebook",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 34,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 34,
+  "organization": "Open Data Institute",
+  "public_url": "https://theodi.org/",
+  "contribution_idea": "Explore data governance community engagement",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 35,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 35,
+  "organization": "IAPP",
+  "public_url": "https://iapp.org/",
+  "contribution_idea": "Explore privacy and governance event contributions",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 36,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 36,
+  "organization": "ISACA",
+  "public_url": "https://www.isaca.org/",
+  "contribution_idea": "Explore governance speaking opportunities",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 37,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 37,
+  "organization": "ACM",
+  "public_url": "https://www.acm.org/",
+  "contribution_idea": "Explore practitioner events and chapters",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 38,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 38,
+  "organization": "IEEE",
+  "public_url": "https://www.ieee.org/",
+  "contribution_idea": "Explore architecture events and technical contributions",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 39,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 39,
+  "organization": "NASSCOM",
+  "public_url": "https://nasscom.in/",
+  "contribution_idea": "Explore relevant member and industry initiatives",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 40,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 40,
+  "organization": "TiE",
+  "public_url": "https://tie.org/",
+  "contribution_idea": "Propose startup technology workshop",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 41,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 41,
+  "organization": "ProductTank",
+  "public_url": "https://www.mindtheproduct.com/producttank/",
+  "contribution_idea": "Propose product analytics talk",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 42,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 42,
+  "organization": "Mind the Product",
+  "public_url": "https://www.mindtheproduct.com/",
+  "contribution_idea": "Pitch product-led customer data article",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 43,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 43,
+  "organization": "MarTech",
+  "public_url": "https://martech.org/",
+  "contribution_idea": "Pitch evidence-backed MarTech insight",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 44,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 44,
+  "organization": "CMSWire",
+  "public_url": "https://www.cmswire.com/",
+  "contribution_idea": "Explore contributor guidelines",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 45,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 45,
+  "organization": "The New Stack",
+  "public_url": "https://thenewstack.io/",
+  "contribution_idea": "Pitch technical architecture article",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 46,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 46,
+  "organization": "InfoQ",
+  "public_url": "https://www.infoq.com/",
+  "contribution_idea": "Pitch enterprise engineering case study",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 47,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 47,
+  "organization": "DZone",
+  "public_url": "https://dzone.com/",
+  "contribution_idea": "Submit original engineering article",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 48,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 48,
+  "organization": "TechTarget",
+  "public_url": "https://www.techtarget.com/",
+  "contribution_idea": "Explore editorial expert sourcing",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 49,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 49,
+  "organization": "Clutch",
+  "public_url": "https://clutch.co/",
+  "contribution_idea": "Assess legitimate company listing and verified reviews",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 50,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ },
+ {
+  "id": 50,
+  "organization": "GoodFirms",
+  "public_url": "https://www.goodfirms.co/",
+  "contribution_idea": "Assess listing eligibility and accurate business profile",
+  "status": "Prospect only; validate current rules and fit; no guaranteed backlink",
+  "_source_row": 51,
+  "source_sheet": "Authority 50",
+  "source_file": "Infiante360_Growth_Execution_2027.xlsx"
+ }
+]

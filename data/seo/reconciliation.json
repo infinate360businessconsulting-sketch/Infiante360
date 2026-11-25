@@ -1,0 +1,168 @@
+{
+ "source_file": "Infiante360_Growth_Execution_2027.xlsx",
+ "datasets": {
+  "keywords": {
+   "sheet": "Keywords",
+   "expected": 1000,
+   "imported": 1000,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "commercial_100": {
+   "sheet": "Commercial 100",
+   "expected": 100,
+   "imported": 100,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {},
+   "not_in_master_keywords": []
+  },
+  "longtail_100": {
+   "sheet": "Long tail 100",
+   "expected": 100,
+   "imported": 100,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {},
+   "not_in_master_keywords": []
+  },
+  "pillars": {
+   "sheet": "Pillars",
+   "expected": 50,
+   "imported": 50,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "articles": {
+   "sheet": "Articles",
+   "expected": 365,
+   "imported": 365,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "ai_discovery": {
+   "sheet": "AI discovery",
+   "expected": 100,
+   "imported": 100,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "landing_pages": {
+   "sheet": "Landing pages",
+   "expected": 30,
+   "imported": 30,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "roadmap_90": {
+   "sheet": "90 day execution",
+   "expected": 90,
+   "imported": 90,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "social_90": {
+   "sheet": "90 day social",
+   "expected": 90,
+   "imported": 90,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "authority_50": {
+   "sheet": "Authority 50",
+   "expected": 50,
+   "imported": 50,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "measurement": {
+   "sheet": "Measurement",
+   "expected": 8,
+   "imported": 8,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  },
+  "audit_evidence": {
+   "sheet": "Audit evidence",
+   "expected": 10,
+   "imported": 10,
+   "match": true,
+   "duplicate_ids": [],
+   "missing_values_by_column": {}
+  }
+ },
+ "problems": [],
+ "keyword_text_duplicates": [],
+ "keyword_invalid": [],
+ "clusters": {
+  "Adobe Experience Platform": 20,
+  "Adobe Real-Time CDP": 20,
+  "Adobe Journey Optimizer": 20,
+  "Customer Journey Analytics": 20,
+  "Adobe Analytics": 20,
+  "Adobe Web SDK and Tags": 20,
+  "Adobe Experience Cloud": 20,
+  "Agentic AI for MarTech": 20,
+  "Model Context Protocol": 20,
+  "AEP certification preparation": 20,
+  "AEP interview preparation": 20,
+  "MarTech architecture": 20,
+  "Adobe MarTech career accelerator": 20,
+  "AEP foundations": 20,
+  "Adobe sandbox labs": 20,
+  "Adobe MarTech corporate enablement": 20,
+  "Executive MarTech and AI leadership": 20,
+  "AI engineering": 20,
+  "Adobe Experience Platform implementation": 20,
+  "Real-Time CDP implementation": 20,
+  "Adobe Journey Optimizer implementation": 20,
+  "Customer Journey Analytics implementation": 20,
+  "Adobe Web SDK implementation": 20,
+  "Adobe Analytics implementation": 20,
+  "Adobe Target personalization": 20,
+  "Adobe Experience Manager": 20,
+  "Adobe Marketo Engage": 20,
+  "Adobe Campaign": 20,
+  "Adobe Commerce": 20,
+  "IT strategy and advisory": 20,
+  "Digital transformation": 20,
+  "Enterprise architecture": 20,
+  "MarTech stack audit": 20,
+  "Fractional MarTech advisory": 20,
+  "Agentic AI implementation": 20,
+  "Enterprise MCP integration": 20,
+  "Customer data engineering": 20,
+  "Snowflake for MarTech": 20,
+  "BigQuery for MarTech": 20,
+  "Databricks for MarTech": 20,
+  "Kafka streaming for customer data": 20,
+  "Customer 360 and identity resolution": 20,
+  "Real-time personalization": 20,
+  "Retention and churn prevention": 20,
+  "B2B lead-to-revenue": 20,
+  "MarTech consent and governance": 20,
+  "Adobe MarTech staff augmentation": 20,
+  "BFSI customer experience transformation": 20,
+  "Retail omnichannel customer experience": 20,
+  "AI search visibility GEO and AEO": 20
+ },
+ "intent_split": {
+  "Commercial": 550,
+  "Informational": 450
+ },
+ "priority_split": {
+  "P1": 100,
+  "P2": 250,
+  "P3": 650
+ },
+ "all_counts_reconciled": true
+}

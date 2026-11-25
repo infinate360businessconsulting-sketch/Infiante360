@@ -1,0 +1,11 @@
+area,finding,source,status,_source_row,source_sheet,source_file
+Homepage,Expired Nov 10–15 promotion,https://infiante360techacademy.com/,Verified,2,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Academy,Older public price snapshot differs from homepage,https://infiante360techacademy.com/academy/,Verify current price,3,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+HTML sitemap,Grouped public page inventory,https://infiante360techacademy.com/sitemap.html,Retrieved; not all linked URLs crawled,4,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Services,Existing service hub,https://infiante360techacademy.com/services/,Retrieved,5,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Solutions,Existing solution hub,https://infiante360techacademy.com/solutions/,Retrieved,6,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Learning,Existing learning hub,https://infiante360techacademy.com/learn/,Retrieved,7,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Corporate,Existing corporate training landing,https://infiante360techacademy.com/training/corporate-training.html,Retrieved,8,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+XML / robots,Not parsed / not retrieved,https://infiante360techacademy.com/sitemap.xml,Blocked; verify manually,9,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Google AI guidance,People-first crawlable content,https://developers.google.com/search/docs/fundamentals/ai-optimization-guide,Reference,10,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
+Competitor benchmark,Adobe partner directory,https://partners.adobe.com/s/directory,Reference,11,Audit evidence,Infiante360_Growth_Execution_2027.xlsx
