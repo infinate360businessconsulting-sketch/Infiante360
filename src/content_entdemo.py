@@ -1,5 +1,8 @@
 """Enterprise MarTech demo registration landing page (Meta ads destination). Links come from content/sme-accelerator.json."""
 import json, os, html
+import cohorts
+EV = cohorts.evergreen("martech-sme-accelerator")  # the live series shown here is the SME Accelerator cohort
+CM = cohorts.M
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 S = json.load(open(os.path.join(_ROOT, "content", "sme-accelerator.json"), encoding="utf-8"))
 e = html.escape
@@ -32,6 +35,12 @@ IMG = lambda n, alt, w, h: f'<img src="../assets/placeholders/{n}" alt="{e(alt)}
 video_html = '<div class="grid-3">' + "".join(f'<div class="card"><div style="position:relative;aspect-ratio:16/9"><iframe src="https://www.youtube-nocookie.com/embed/{v}" title="{e(t)}" loading="lazy" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:10px"></iframe></div><h3 style="margin-top:10px">{e(t)}</h3></div>' for v, t in VIDEOS) + f'</div><p><a href="{e(YT)}" {LNK}>More demo sessions on the Infiante360 Tech Academy YouTube channel</a></p>'
 promo = '<video controls preload="none" poster="../assets/media/infinate360-promo-poster.jpg" style="width:100%;border-radius:12px"><source src="../assets/media/infinate360-promo.mp4" type="video/mp4"></video>'
 
+CTA_LIVE = f'''<p class="cta-row"><a class="btn btn-primary" href="{e(REG)}" {LNK}>Register for the exclusive live demo &rarr;</a><a class="btn btn-ghost" href="#enquire-form">Book an enterprise architecture discussion</a><a class="btn btn-ghost" href="../assets/sme-accelerator.ics" download>Add sessions to calendar (.ics)</a></p>
+<p class="small muted">Live sessions run 10:00 to 11:00 PM IST. The current live series is {cohorts.PROGRAMS["martech-sme-accelerator"]["start_date"]} to {cohorts.PROGRAMS["martech-sme-accelerator"]["end_date"]}; see the <a href="martech-sme-accelerator.html">six-day schedule</a>. Join details are confirmed after registration.</p>'''
+EV_CTA = f'''<p><strong>{e(CM["badge"])}.</strong> {e(CM["dates_note"])}</p>
+<p class="cta-row"><a class="btn btn-primary" href="#enquire-form">{e(CM["interest_cta"])} &rarr;</a><a class="btn btn-ghost" href="#enquire-form">{e(CM["schedule_cta"])}</a><a class="btn btn-ghost" href="#enquire-form">Book an enterprise architecture discussion</a></p>
+<p class="small muted">Sessions are live and online in the evening (IST). Join details are confirmed after registration. See the <a href="martech-sme-accelerator.html">SME Accelerator series</a> for the programme outline.</p>'''
+
 PAGES_ENTDEMO = [dict(
  path=PATH, nav="Enterprise MarTech demo",
  title="Exclusive Live Enterprise MarTech & Agentic AI Demo | Infiante360",
@@ -40,11 +49,10 @@ PAGES_ENTDEMO = [dict(
  kicker="Exclusive live demo · Infiante360 Business Consulting",
  keywords=["enterprise martech demo", "adobe experience platform demo", "real-time cdp demo", "agentic ai martech", "adobe experience cloud consulting"],
  answer="Join Infiante360 for an exclusive live demonstration of Adobe Experience Cloud, customer data platforms and Agentic AI architecture, presented by Pavan Babu Gandla. The session covers AEP, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, identity resolution and governed AI workflows. Register to reserve your place.",
- schema="WebPage", landing=True, interest="entdemo", form_kind="enterprise", bands=True, hero_cta=("Register for the exclusive live demo", REG),
+ schema="WebPage", landing=True, interest="entdemo", form_kind="enterprise", bands=True, hero_cta=((CM["interest_cta"], "#enquire-form") if EV else ("Register for the exclusive live demo", REG)),
  sections=[
   ("Reserve your demo session", f'''<p>Are you transforming your enterprise customer-data and MarTech ecosystem? Explore enterprise architecture, identity resolution, personalization, customer journeys and intelligent AI-driven marketing workflows, and see practical approaches to common enterprise MarTech challenges.</p>
-<p class="cta-row"><a class="btn btn-primary" href="{e(REG)}" {LNK}>Register for the exclusive live demo &rarr;</a><a class="btn btn-ghost" href="#enquire-form">Book an enterprise architecture discussion</a><a class="btn btn-ghost" href="../assets/sme-accelerator.ics" download>Add sessions to calendar (.ics)</a></p>
-<p class="small muted">Live sessions run 10:00 to 11:00 PM IST. The current live series is 10 to 15 November 2026; see the <a href="martech-sme-accelerator.html">six-day schedule</a>. Join details are confirmed after registration.</p>''', "plain", "Register"),
+{EV_CTA if EV else CTA_LIVE}''', "plain", "Register"),
   ("Watch before you register", '<p>Recordings of earlier Infiante360 sessions. They show how we teach and demonstrate; the live enterprise demo covers more architecture and governance depth.</p>' + video_html + '<div style="margin-top:14px">' + promo + '</div>', "plain", "Videos"),
   ("A look at the demo", '<div class="grid-3"><figure>' + IMG("architecture-1200x675.svg", "Reference architecture diagram (placeholder)", 1200, 675) + '<figcaption class="small muted">Reference architecture</figcaption></figure><figure>' + IMG("demo-screen-1200x675.svg", "Demo environment screenshot (placeholder)", 1200, 675) + '<figcaption class="small muted">Demo environment</figcaption></figure><figure>' + IMG("hero-1200x630.svg", "Session overview (placeholder)", 1200, 630) + '<figcaption class="small muted">Session overview</figcaption></figure></div>', "alt", "Images"),
   ("What the demo covers", '<div class="grid-3">' + "".join(f'<div class="card"><h3>{e(a)}</h3><p>{e(b)}</p></div>' for a, b in topics) + '</div>', "alt", "Topics"),
@@ -53,7 +61,7 @@ PAGES_ENTDEMO = [dict(
   ("Your presenter", f'''<div class="card"><div style="max-width:220px;margin-bottom:12px">{IMG("presenter-600x600.svg", "Pavan Babu Gandla (photo placeholder)", 600, 600)}</div><h3>Pavan Babu Gandla</h3><p>Digital transformation and enterprise MarTech leader with 15+ years of experience, specialising in Adobe Experience Cloud, customer data platforms, analytics, architecture and Agentic AI. Founder of Infiante360, an architecture-led consulting and capability-building firm.</p>
 <p><a href="https://www.martechconsultant.tech/Pavan.html" {LNK}>Portfolio</a> · <a href="https://linkedin.com/in/pavanbabu1" {LNK}>LinkedIn</a></p></div>
 <p class="small muted">Infiante360 is independent and not affiliated with or endorsed by Adobe. No results or outcomes are guaranteed.</p>''', "plain", "Presenter"),
-  ("Join the community and next steps", f'<ol class="steps"><li><a href="{e(REG)}" {LNK}>Complete the registration form</a> (mandatory).</li><li><a href="{e(S["platform_url"])}" {LNK}>Register on the learning platform</a>.</li><li><a href="{e(S["community_url"])}" {LNK}>Join the WhatsApp community</a>.</li><li>Add the sessions to your calendar.</li></ol><p>Senior leaders can also explore <a href="../academy/programs/executive-architecture-leadership.html">CXO Hive</a>. Delivery partners and systems integrators can use the form below to start a partnership conversation.</p>', "alt", "Next steps"),
+  ("Join the community and next steps", f'<ol class="steps"><li>' + ('Register your interest with the form on this page.' if EV else f'<a href="{e(REG)}" {LNK}>Complete the registration form</a> (mandatory).') + f'</li><li><a href="{e(S["platform_url"])}" {LNK}>Register on the learning platform</a>.</li><li><a href="{e(S["community_url"])}" {LNK}>Join the WhatsApp community</a>.</li><li>' + ('Dates are shared with registered learners and in the community.' if EV else 'Add the sessions to your calendar.') + '</li></ol><p>Senior leaders can also explore <a href="../academy/programs/executive-architecture-leadership.html">CXO Hive</a>. Delivery partners and systems integrators can use the form below to start a partnership conversation.</p>', "alt", "Next steps"),
   ("Book an enterprise architecture discussion", f'<p>Prefer a conversation first? Send the form below with your company, role, Adobe products in use and main challenge, or message <a href="{WA}" {LNK}>+91 82968 93895</a>.</p><div class="form-card" id="enquire-form">@@LP_FORM@@</div><p class="small muted">Privacy and consent: we use your details only to respond to your enquiry and to send demo information you asked for. We contact you by email, phone or WhatsApp only where you have agreed, and you can opt out at any time. See the <a href="../privacy-policy.html">privacy policy</a>.</p>', "plain", "Contact us"),
  ],
  faqs=[("Who is this demo for?", "Enterprise and mid-market leaders, architects and delivery teams working on Adobe Experience Cloud, customer data or AI-enabled MarTech."),

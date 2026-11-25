@@ -1,6 +1,9 @@
 """3-day paid demo bootcamp landing page. Data-driven from content/demo-bootcamp.json (dates, fee, payment link).
 Payment is taken on the owner's Cashfree form; this site takes no payment."""
 import json, os, datetime, html
+import cohorts
+EV = cohorts.evergreen("martech-demo-bootcamp")  # True once the run has ended: evergreen messaging, no dates, no payment button
+CM = cohorts.M
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = json.load(open(os.path.join(_ROOT, "content", "demo-bootcamp.json"), encoding="utf-8"))
 e = html.escape
@@ -32,6 +35,8 @@ box.textContent=msg}catch(x){}})();</script>"""
 
 def ics():
     """Public calendar file with the three sessions. Joining link is included only when join_url is set in the config."""
+    if EV:
+        return "\r\n".join(["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infiante360//Demo Bootcamp//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "END:VCALENDAR", ""])
     join = D.get("join_url", "").strip()
     desc = "Infiante360 live demo. " + (f"Join: {join}" if join else "Joining details are shared by email or WhatsApp after registration.") + " Questions: +91 82968 93895."
     out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infiante360//Demo Bootcamp//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:Adobe MarTech 3-Day Demo Bootcamp"]
@@ -45,16 +50,29 @@ def ics():
     return "\r\n".join(out + ["END:VCALENDAR", ""])
 
 
+_EV_RESERVE = ("Register your interest", f'''<div class="price-card"><div><div class="price" style="font-size:1.4rem">{e(CM["badge"])}</div>
+<div class="meta" style="margin-top:14px"><span>3 evenings</span><span>{e(D["time_label"])}</span><span>Live online</span></div>
+<p class="small" style="margin-top:12px;font-weight:600">{e(CM["dates_note"])} The fee for the next cohort is confirmed with the schedule.</p>
+<p class="cta-row" style="margin-top:18px"><a class="btn btn-primary" href="#enquire-form">{e(CM["interest_cta"])} &rarr;</a> <a class="btn btn-ghost" href="#enquire-form">{e(CM["schedule_cta"])}</a> <a class="btn btn-ghost" href="#enquire-form">{e(CM["consult_cta"])}</a></p>
+<p class="small muted">No payment is taken on this page. Payment details, if any, are shared with the confirmed schedule.</p></div>
+<ul class="checklist"><li>Three live evening sessions, one hour each</li><li>Hands-on walkthroughs in the Infiante360 practice environment</li><li>Open Q&amp;A with the instructor</li><li>A clear view of where to start in Adobe MarTech</li></ul></div>
+<p class="small muted">A demo shows what the work looks like and how we teach. It is not a certification and guarantees no job, salary or certification outcome. Infiante360 is independent and not affiliated with Adobe.</p>''', "plain", "Interest")
+_EV_AGENDA = ("What the sessions cover", '<p class="small muted">Topics from the previous run. Dates for the next cohort are not confirmed yet.</p><div class="grid-3">' + "".join(
+    f'<div class="card"><span class="tag">Session {x["n"]}</span><h3>{e(x["title"])}</h3><ul class="checklist">' + "".join(f"<li>{e(p)}</li>" for p in x["points"]) + "</ul></div>" for x in D["days"]) + "</div>", "alt", "Agenda")
+
 PAGES_DEMO = [dict(
     path=PATH, nav="3-day MarTech demo bootcamp",
-    title=f"3-Day Adobe MarTech Demo Bootcamp: {span}, 10 PM IST, {FEE}",
-    desc=f"Live 3-day Adobe MarTech demo bootcamp, {span} {last.year}, 10-11 PM IST. See AEP, journeys, CJA and Agentic AI in action. {FEE}.",
-    h1="3-day Adobe MarTech demo bootcamp", kicker=f"Live online · {span} · {D['time_label']}",
+    title=("Adobe MarTech Demo Bootcamp: Upcoming Cohort, Register Interest" if EV else f"3-Day Adobe MarTech Demo Bootcamp: {span}, 10 PM IST, {FEE}"),
+    desc=("Live 3-evening Adobe MarTech demo bootcamp covering AEP, journeys, CJA and Agentic AI. Register your interest for the next batch." if EV else f"Live 3-day Adobe MarTech demo bootcamp, {span} {last.year}, 10-11 PM IST. See AEP, journeys, CJA and Agentic AI in action. {FEE}."),
+    h1="3-day Adobe MarTech demo bootcamp", kicker=(f"Live online · {CM['badge']}" if EV else f"Live online · {span} · {D['time_label']}"),
     keywords=["adobe martech demo", "aep demo class", "martech bootcamp india", "adobe experience platform live demo", "agentic ai martech demo"],
-    answer=(f"The Adobe MarTech demo bootcamp is a live, three-day online session on {span} {last.year}, from 10:00 to 11:00 PM IST each night. "
-            f"You see Adobe Experience Platform, audiences and journeys, Customer Journey Analytics and Agentic AI demonstrated, and learn how to map your background to MarTech roles. The fee is {FEE} for the three days."),
-    schema="WebPage", landing=True, interest="demo", bands=True, hero_cta=(f"Reserve your seat: {FEE}", PAY),
+    answer=(("The Adobe MarTech demo bootcamp is a live, three-evening online session showing Adobe Experience Platform, audiences and journeys, Customer Journey Analytics and Agentic AI in practice, and how to map your background to MarTech roles. "
+             "The next cohort is open for registration of interest; the schedule and fee are confirmed with the dates.") if EV else
+            (f"The Adobe MarTech demo bootcamp is a live, three-day online session on {span} {last.year}, from 10:00 to 11:00 PM IST each night. "
+             f"You see Adobe Experience Platform, audiences and journeys, Customer Journey Analytics and Agentic AI demonstrated, and learn how to map your background to MarTech roles. The fee is {FEE} for the three days.")),
+    schema="WebPage", landing=True, interest="demo", bands=True, hero_cta=((CM["interest_cta"], "#enquire-form") if EV else (f"Reserve your seat: {FEE}", PAY)),
     sections=[
+        _EV_RESERVE if EV else
         ("Reserve your seat", f'''<div class="price-card"><div><div class="price">{FEE}<small>for the 3-day demo</small></div>
 <div class="meta" style="margin-top:14px"><span>3 nights</span><span>{e(D["time_label"])}</span><span>Live online</span></div>
 <p id="demo-status" role="status" aria-live="polite" class="small" style="margin-top:12px;font-weight:600" data-days="{days_json}">Seats are confirmed after payment.</p>
@@ -62,14 +80,17 @@ PAGES_DEMO = [dict(
 <p class="small muted">Payment is made on a secure Cashfree form (opens in a new tab). Joining details are shared after registration.</p></div>
 <ul class="checklist"><li>Three live evening sessions, one hour each</li><li>Hands-on walkthroughs in the Infiante360 practice environment</li><li>Open Q&amp;A with the instructor</li><li>A clear view of where to start in Adobe MarTech</li></ul></div>
 <p class="small muted">A demo shows what the work looks like and how we teach. It is not a certification and guarantees no job, salary or certification outcome. Infiante360 is independent and not affiliated with Adobe.</p>''', "plain", "Fee and seats"),
+        _EV_AGENDA if EV else
         ("What happens each night", '<div class="grid-3">' + "".join(
             f'<div class="card"><span class="tag">Day {x["n"]} · {e(fmt(x))}</span><h3>{e(x["title"])}</h3><ul class="checklist">' + "".join(f"<li>{e(p)}</li>" for p in x["points"]) + "</ul></div>" for x in D["days"]) + "</div>", "alt", "Agenda"),
         ("Who should join", '<div class="grid-3"><div class="card"><h3>Career switchers</h3><p>Developers, data engineers, analysts and marketers curious about MarTech.</p></div><div class="card"><h3>Working practitioners</h3><p>Anyone who wants a clear mental model of AEP, journeys and CJA.</p></div><div class="card"><h3>Team leads</h3><p>Leaders deciding what skills their team needs next.</p></div></div>', "plain", "Audience"),
         ("Next step after the demo", '<p>If the demo fits, continue with the <a href="../training/">Career Accelerator (₹60,000)</a> or the self-paced <a href="../academy/programs/bronze-membership.html">Bronze Membership (₹30,000)</a>. There is no obligation to continue.</p>', "alt", "Continue"),
-        ("Questions", '<div class="form-card" id="enquire-form">@@LP_FORM@@</div>' + SCRIPT, "plain", "Contact us"),
+        ("Questions", '<div class="form-card" id="enquire-form">@@LP_FORM@@</div>' + ("" if EV else SCRIPT), "plain", "Contact us"),
     ],
-    faqs=[("When is the demo?", f"{first.strftime('%A %-d %B')} to {last.strftime('%A %-d %B %Y')}, 10:00 PM to 11:00 PM IST each night, live online."),
-          ("How much does it cost?", f"{FEE} for the three-day demo, paid on the secure Cashfree registration form."),
+    faqs=[(("When is the next demo?", "The next cohort dates are not confirmed yet. Register your interest and we will share the schedule and fee with you.") if EV else
+           ("When is the demo?", f"{first.strftime('%A %-d %B')} to {last.strftime('%A %-d %B %Y')}, 10:00 PM to 11:00 PM IST each night, live online.")),
+          (("How much does it cost?", "The fee for the next cohort is confirmed with the schedule. No payment is taken until you have the dates.") if EV else
+           ("How much does it cost?", f"{FEE} for the three-day demo, paid on the secure Cashfree registration form.")),
           ("Do I need Adobe experience?", "No. It is designed for beginners and curious practitioners."),
           ("How do I get the joining link?", "After registration we share joining details by email or WhatsApp."),
           ("Is there a job or certification guarantee?", "No. The demo shows the work and how we teach; outcomes depend on your own practice.")],

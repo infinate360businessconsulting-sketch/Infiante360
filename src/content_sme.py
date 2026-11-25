@@ -1,5 +1,8 @@
 """MarTech SME Accelerator 6-day demo series + WhatsApp community pages. Data: content/sme-accelerator.json."""
 import json, os, datetime, html
+import cohorts
+EV = cohorts.evergreen("martech-sme-accelerator")  # True once the cohort has ended: show evergreen messaging, no dates
+CM = cohorts.M
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = json.load(open(os.path.join(_ROOT, "content", "sme-accelerator.json"), encoding="utf-8"))
 e = html.escape
@@ -21,6 +24,8 @@ b.textContent=m}catch(x){}})();</script>"""
 
 
 def ics():
+    if EV:  # no confirmed dates: publish an empty, valid calendar rather than past events
+        return "\r\n".join(["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infiante360//SME Accelerator//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "END:VCALENDAR", ""])
     desc = f'Infiante360 MarTech SME Accelerator live demo. Classroom: {D["classroom_url"]} Community: {D["community_url"]} Questions: +91 82968 93895.'
     z = lambda t: t.strftime("%Y%m%dT%H%M%SZ")
     out = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Infiante360//SME Accelerator//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH", "X-WR-CALNAME:MarTech SME Accelerator (Infiante360)"]
@@ -42,24 +47,51 @@ steps = f'''<ol class="steps">
 
 groups_html = '<div class="grid-3">' + "".join(f'<div class="card"><h3>{g[0]} {e(g[1])}</h3><p>{e(g[2])}</p></div>' for g in D["groups"]) + "</div>"
 
+if EV:
+    X = dict(
+        title="MarTech SME Accelerator: Live Demo Series, Register Interest",
+        desc="Live online MarTech SME Accelerator series on AEP, Real-Time CDP, AJO, CJA and Agentic AI. Register your interest for the next batch.",
+        kicker=f"Live online · {CM['badge']}",
+        answer=("The MarTech SME Accelerator is a six-evening live online demo series covering Adobe Experience Platform, XDM, identity resolution, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, enterprise architecture and Agentic AI through practical demonstrations. "
+                "The next cohort is open for registration of interest; dates are shared with registered learners and in the community."),
+        hero=(CM["interest_cta"], "#enquire-form"),
+        reg=("Register your interest", f'<p role="status" class="small" style="font-weight:600">{e(CM["badge"])}. {e(CM["dates_note"])}</p>'
+             '<ol class="steps"><li><strong>Register your interest</strong> with the form at the bottom of this page.</li>'
+             f'<li><strong>Register on the Infiante360 learning platform.</strong> <a href="{e(D["platform_url"])}" {LNK}>techacademy.infinate360.in</a>.</li>'
+             f'<li><strong>Join the community.</strong> <a href="{e(D["community_url"])}" {LNK}>Join on WhatsApp</a> to hear the dates first.</li></ol>'
+             f'<p class="cta-row" style="margin-top:14px"><a class="btn btn-primary" href="#enquire-form">{e(CM["interest_cta"])} &rarr;</a><a class="btn btn-ghost" href="#enquire-form">{e(CM["schedule_cta"])}</a><a class="btn btn-ghost" href="{e(D["community_url"])}" {LNK}>{e(CM["community_cta"])}</a></p>', "plain", "Registration"),
+        cal=("What the series covers", '<p class="small muted">Session topics from the previous run. Dates for the next cohort are not confirmed yet.</p><div class="grid-3">' + "".join(f'<div class="card"><span class="tag">Session {x["n"]}</span><h3>{e(x["title"])}</h3><p class="small muted">{e(D["time_label"])}</p></div>' for x in D["days"]) + f'</div><p class="cta-row" style="margin-top:14px"><a class="btn btn-ghost" href="#enquire-form">{e(CM["consult_cta"])}</a></p>', "alt", "Agenda"),
+        faq0=("When is the next series?", "The next cohort dates are not confirmed yet. Register your interest and we will share the schedule with you and in the community before it opens."),
+    )
+else:
+    X = dict(
+        title=f"MarTech SME Accelerator: 6-Day Live Demo, {SPAN}",
+        desc=f"Six live evenings on AEP, Real-Time CDP, AJO, CJA, architecture and Agentic AI: {SPAN} {last.year}, 10-11 PM IST. Register and join the community.",
+        kicker=f"Live online · {SPAN} {last.year} · {D['time_label']}",
+        answer=(f"The MarTech SME Accelerator is a six-day live online demo series from {SPAN} {last.year}, 10:00 to 11:00 PM IST each night. It covers Adobe Experience Platform, XDM, identity resolution, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, enterprise architecture and Agentic AI through practical demonstrations. Registration is mandatory."),
+        hero=("Register now", D["register_url"]),
+        reg=("Register in four steps", f'<p id="sme-status" role="status" aria-live="polite" class="small" style="font-weight:600" data-days="{days_json}">Complete the registration steps before Day 1.</p>' + steps +
+             f'<p class="cta-row" style="margin-top:14px"><a class="btn btn-primary" href="{e(D["register_url"])}" {LNK}>Register now &rarr;</a><a class="btn btn-ghost" href="{e(D["community_url"])}" {LNK}>Join the community</a><a class="btn btn-ghost" href="{e(D["classroom_url"])}" {LNK}>Live classroom</a></p>', "plain", "Registration"),
+        cal=("Six-day calendar", '<div class="grid-3">' + "".join(f'<div class="card"><span class="tag">Day {x["n"]} · {e(fmt(x))}</span><h3>{e(x["title"])}</h3><p class="small muted">{e(D["time_label"])}</p></div>' for x in D["days"]) + '</div><p class="cta-row" style="margin-top:14px"><a class="btn btn-ghost" href="../assets/sme-accelerator.ics" download>Add all six to calendar (.ics)</a></p>', "alt", "Agenda"),
+        faq0=("When is the series?", f"{first.strftime('%A %-d %B')} to {last.strftime('%A %-d %B %Y')}, 10:00 PM to 11:00 PM IST each night, live online."),
+    )
+
 PAGES_SME = [
  dict(path=PATH, nav="6-day MarTech SME Accelerator",
-  title=f"MarTech SME Accelerator: 6-Day Live Demo, {SPAN} Nov",
-  desc=f"Six live evenings on AEP, Real-Time CDP, AJO, CJA, architecture and Agentic AI: {SPAN} {last.year}, 10-11 PM IST. Register and join the community.",
-  h1="MarTech SME Accelerator: 6-day live demo series", kicker=f"Live online · {SPAN} {last.year} · {D['time_label']}",
+  title=X["title"], desc=X["desc"],
+  h1="MarTech SME Accelerator: 6-day live demo series", kicker=X["kicker"],
   keywords=["martech sme accelerator", "adobe experience platform live demo", "aep demo series india", "martech community whatsapp", "agentic ai martech demo"],
-  answer=(f"The MarTech SME Accelerator is a six-day live online demo series from {SPAN} {last.year}, 10:00 to 11:00 PM IST each night. It covers Adobe Experience Platform, XDM, identity resolution, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, enterprise architecture and Agentic AI through practical demonstrations. Registration is mandatory."),
-  schema="WebPage", landing=True, interest="sme", bands=True, hero_cta=("Register now", D["register_url"]),
+  answer=X["answer"],
+  schema="WebPage", landing=True, interest="sme", bands=True, hero_cta=X["hero"],
   sections=[
-   ("Register in four steps", f'<p id="sme-status" role="status" aria-live="polite" class="small" style="font-weight:600" data-days="{days_json}">Complete the registration steps before Day 1.</p>' + steps +
-    f'<p class="cta-row" style="margin-top:14px"><a class="btn btn-primary" href="{e(D["register_url"])}" {LNK}>Register now &rarr;</a><a class="btn btn-ghost" href="{e(D["community_url"])}" {LNK}>Join the community</a><a class="btn btn-ghost" href="{e(D["classroom_url"])}" {LNK}>Live classroom</a></p>', "plain", "Registration"),
-   ("Six-day calendar", '<div class="grid-3">' + "".join(f'<div class="card"><span class="tag">Day {x["n"]} · {e(fmt(x))}</span><h3>{e(x["title"])}</h3><p class="small muted">{e(D["time_label"])}</p></div>' for x in D["days"]) + '</div><p class="cta-row" style="margin-top:14px"><a class="btn btn-ghost" href="../assets/sme-accelerator.ics" download>Add all six to calendar (.ics)</a></p>', "alt", "Agenda"),
+   X["reg"],
+   X["cal"],
    ("What you will see", '<ul class="checklist"><li>Practical platform demonstrations</li><li>Enterprise architecture discussions</li><li>Real-world implementation scenarios</li><li>AEP, RTCDP, AJO and CJA working together</li><li>Data engineering and identity resolution</li><li>Agentic AI and MCP applications</li><li>SME, architect and consultant career preparation</li></ul>', "plain", "Content"),
    ("Seven specialist WhatsApp groups", '<p>Inside the community you can join the groups that match your interests. See the <a href="../academy/community.html">community page</a> for the full list and house rules.</p>' + groups_html, "alt", "Community"),
    ("Looking for the executive program?", f'<p>Senior leaders have a separate program and community. See <a href="../{CXO_MAIN}">CXO Hive</a>.</p><p class="small muted">Infiante360 is independent and not affiliated with or endorsed by Adobe. A demo is not a certification, and jobs, salaries and certifications are not guaranteed.</p>', "plain", "Executives"),
-   ("Missed my call? Talk to us", '<p>If you missed our call or want to understand the program before registering, send the form below or message <a href="https://wa.me/918296893895" rel="noopener" target="_blank">+91 82968 93895</a> with the word CALL and a convenient time.</p><div class="form-card" id="enquire-form">@@LP_FORM@@</div>' + SCRIPT, "plain", "Contact us"),
+   ("Missed my call? Talk to us", '<p>If you missed our call or want to understand the program before registering, send the form below or message <a href="https://wa.me/918296893895" rel="noopener" target="_blank">+91 82968 93895</a> with the word CALL and a convenient time.</p><div class="form-card" id="enquire-form">@@LP_FORM@@</div>' + ("" if EV else SCRIPT), "plain", "Contact us"),
   ],
-  faqs=[("When is the series?", f"{first.strftime('%A %-d %B')} to {last.strftime('%A %-d %B %Y')}, 10:00 PM to 11:00 PM IST each night, live online."),
+  faqs=[X["faq0"],
         ("Is registration required?", "Yes. Complete the registration form, register on the learning platform and join the WhatsApp community before the first session."),
         ("Does joining WhatsApp count as registration?", "No. The form confirms registration; WhatsApp is for community access."),
         ("Is there a job or certification guarantee?", "No. The sessions show the work and how we teach; outcomes depend on your own practice."),

@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "30 19 * * *"   # 01:00 IST daily: rebuild so expired cohort dates drop off automatically
 permissions:
   contents: read
   pages: write
@@ -24,6 +26,8 @@ jobs:
         env:
           SITE_BASE: https://infiante360techacademy.com/
         run: python3 src/build.py _site
+      - name: Google verification tags are served (served != verified; Search Console confirms ownership)
+        run: python3 scripts/check_head_tags.py _site
       - name: SEO inventory and health checks (read-only, computed from built files)
         run: |
           python3 scripts/seo_inventory.py _site seo-report https://infiante360techacademy.com

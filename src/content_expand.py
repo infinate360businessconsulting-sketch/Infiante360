@@ -21,7 +21,12 @@ def batch_block():
             '<script>(function(){try{var t=new Date();t.setHours(0,0,0,0);var a=((8-t.getDay())%7)||7;var m=new Date(t);m.setDate(t.getDate()+a);var u=new Date(m);u.setDate(m.getDate()+1);'
             'var f=function(d){return d.toLocaleDateString("en-GB",{weekday:"short",day:"numeric",month:"short",year:"numeric"}).replace(",","")};'
             'document.getElementById("nb").textContent=f(m)+" and "+f(u)}catch(e){}})();</script>')
-CXO_BLOCK = '<p><strong>CXO Hive batch:</strong> starts 2 November 2026, live sessions every Saturday and Sunday, with a 100% live, instructor-led approach. Fee ₹1,50,000, C-level and senior leaders.</p>'
+import cohorts
+if cohorts.evergreen("cxo-hive"):
+    CXO_BLOCK = ('<p><strong>CXO Hive: ' + cohorts.M["badge"] + '.</strong> Live sessions on Saturdays and Sundays with an instructor-led approach, for C-level and senior leaders. '
+                 'Fee ₹1,50,000. ' + cohorts.M["dates_note"] + '</p>')
+else:
+    CXO_BLOCK = '<p><strong>CXO Hive batch:</strong> starts 2 November 2026, live sessions every Saturday and Sunday, with a 100% live, instructor-led approach. Fee ₹1,50,000, C-level and senior leaders.</p>'
 EL = "https://experienceleague.adobe.com/en/docs"
 WA = "https://wa.me/918296893895"
 

@@ -1,0 +1,58 @@
+{
+  "_note": "Single source of truth for cohort status. A page shows dates only while its cohort is current (end/expiration date not yet past, IST). Otherwise it shows evergreen registration messaging. Do not enter dates that are not confirmed. When the next cohort is confirmed, set next_cohort and the program dates here AND update the matching day list in the content file named in 'details_file'.",
+  "evergreen_messages": {
+    "badge": "Upcoming Live Cohort — Registrations Open",
+    "interest_cta": "Register Your Interest for the Next Batch",
+    "schedule_cta": "Request the Upcoming Training Schedule",
+    "consult_cta": "Book a Training Consultation",
+    "community_cta": "Join Our Professional Learning Community",
+    "dates_note": "Dates for the next cohort are not confirmed yet. They are shared with people who register their interest and in the learning community."
+  },
+  "programs": [
+    {
+      "program_id": "martech-sme-accelerator",
+      "program_name": "MarTech SME Accelerator: 6-Day Live Demo Series",
+      "details_file": "content/sme-accelerator.json",
+      "registration_status": "ended_interest_open",
+      "start_date": "2026-11-10",
+      "end_date": "2026-11-15",
+      "session_timings": "10:00 PM - 11:00 PM",
+      "time_zone": "Asia/Kolkata",
+      "program_fees": null,
+      "registration_url": "lp/martech-sme-accelerator.html",
+      "promotional_banner": null,
+      "expiration_date": "2026-11-15",
+      "next_cohort": {"status": "dates_to_be_announced", "start_date": null, "end_date": null}
+    },
+    {
+      "program_id": "martech-demo-bootcamp",
+      "program_name": "Adobe MarTech 3-Day Demo Bootcamp",
+      "details_file": "content/demo-bootcamp.json",
+      "registration_status": "ended_interest_open",
+      "start_date": "2026-11-06",
+      "end_date": "2026-11-08",
+      "session_timings": "10:00 PM - 11:00 PM",
+      "time_zone": "Asia/Kolkata",
+      "program_fees": {"currency": "INR", "amount": 500, "applies_to": "the November 2026 run only; next cohort fee to be confirmed"},
+      "registration_url": "lp/martech-demo-bootcamp.html",
+      "promotional_banner": null,
+      "expiration_date": "2026-11-08",
+      "next_cohort": {"status": "dates_to_be_announced", "start_date": null, "end_date": null}
+    },
+    {
+      "program_id": "cxo-hive",
+      "program_name": "CXO Hive: Executive MarTech and AI Leadership",
+      "details_file": "src/content_expand.py",
+      "registration_status": "interest_open",
+      "start_date": "2026-11-02",
+      "end_date": null,
+      "session_timings": "Saturday and Sunday, live",
+      "time_zone": "Asia/Kolkata",
+      "program_fees": {"currency": "INR", "amount": 150000, "applies_to": "as stated on the programme page; confirmed in writing before payment"},
+      "registration_url": "lp/cxo-hive-apply.html",
+      "promotional_banner": null,
+      "expiration_date": "2026-11-02",
+      "next_cohort": {"status": "dates_to_be_announced", "start_date": null, "end_date": null}
+    }
+  ]
+}

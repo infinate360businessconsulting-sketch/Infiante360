@@ -647,7 +647,10 @@ def jsonld(p):
 
 
 # ------------------------------------------------------------------ Analytics (consent-first)
-GSV = re.sub(r"[^A-Za-z0-9_-]", "", str(_load("settings.json").get("google_site_verification", "")))
+_gsv_raw = _load("settings.json").get("google_site_verification", "")
+# one token or a list of tokens (Google accepts several verification tags side by side)
+GSV_LIST = [t for t in (re.sub(r"[^A-Za-z0-9_-]", "", str(x)) for x in (_gsv_raw if isinstance(_gsv_raw, list) else [_gsv_raw])) if t]
+GSV = "".join(f'<meta name="google-site-verification" content="{t}">' for t in GSV_LIST)
 
 
 def analytics_head():
@@ -689,7 +692,7 @@ def head(p, robots="index,follow,max-image-preview:large,max-snippet:-1", canoni
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-{('<meta name="google-site-verification" content="' + GSV + '">') if GSV else ""}
+{GSV}
 <title>{e(p['title'])}</title>
 <meta name="description" content="{e(p['desc'])}">
 {kw}
