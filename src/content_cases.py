@@ -488,7 +488,7 @@ ACADEMY_EXTRA.append(dict(
         ("Hashtags we use", '<ul class="chips chips-light">' + "".join(f"<li>#{h}</li>" for h in ["AdobeConsultant", "MarTechTraining", "AdobeExperiencePlatform", "AEP", "RTCDP", "AdobeJourneyOptimizer", "CustomerJourneyAnalytics", "AgenticAI", "MarTechCareers", "Infiante360TechAcademy"]) + "</ul>"),
         ("Community guidelines", '<ul class="checklist"><li>Ask questions with context: what you tried, what you expected, what happened.</li><li>Never post passwords, API keys or customer data.</li><li>Share answers back so the next learner benefits.</li></ul>'),
     ],
-    faqs=[], related=["academy/testimonials.html", "academy/youtube-playlists.html", "contact-us.html"],
+    faqs=[], related=["academy/community-tracks.html", "academy/event-calendar.html", "academy/testimonials.html", "academy/youtube-playlists.html", "contact-us.html"],
 ))
 
 ACADEMY_EXTRA.append(dict(

@@ -69,3 +69,9 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Updated: src/banners.py (select() matches banner `topics` to page path/title/category/keywords, skips self-link, fallback fill to 3; top_slider()), content/banners.json (topics, fallback), build.py (top_slider first in <main>), assets/site.css, assets/site.js (5s auto-roll, pause button, swipe, arrow keys, pauses off-screen/hidden tab, none under reduced-motion), tests
 - Removed in-body sliders from home, use-case library and extra pages (now one slider per page, at top). No slider on lp/, corporate/, 404, legal pages.
 - Held: new "Explore Courses" banner (Industry Certification + Adobe logo), 5 research banners carrying the registered-trademark symbol (no registration documented), research banner with "RDSEARCH" typo, text-free globe, plus earlier 12 held.
+
+## 2026-11-25 community and events (from 2027 strategy docs)
+- Phone: +91 82968 93895 / wa.me/918296893895 confirmed as the only number in src, lms-site, assets (no change needed).
+- Created: academy/community-tracks.html (10 Adobe/MarTech/AI topic tracks), academy/event-calendar.html (3 proposed weekly slots, 10 event concepts, none scheduled); both in sitemap3.xml, in content_extra.py
+- Updated: content_cases.py (inbound links from academy/community.html), extra_pages_register.json, tests
+- Not published: SkillSurf 500-course catalog, Startup Studio, Explorer, other-brand communities/events, LinkedIn member counts (unverified, overlapping). Needs owner: legal entity/domain per brand.

@@ -8,7 +8,7 @@ import content_extra as X  # noqa: E402
 
 class Extra(unittest.TestCase):
     def test_metadata_and_flag(self):
-        self.assertEqual(len(X.EXTRA_PAGES), 2)
+        self.assertEqual(len(X.EXTRA_PAGES), 4)
         for p in X.EXTRA_PAGES:
             self.assertTrue(p["sitemap3"])
             self.assertLessEqual(len(p["title"]), 65)
@@ -21,6 +21,14 @@ class Extra(unittest.TestCase):
         for p in X.EXTRA_PAGES:
             blob = p["answer"] + " ".join(s[1] for s in p["sections"])
             self.assertIsNone(bad.search(blob), p["path"])
+
+    def test_proposed_pages_make_no_scheduling_claims(self):
+        ev = X.EVENTS2
+        self.assertIn("None is scheduled", ev["answer"])
+        self.assertIn("independent", " ".join(s[1] for s in X.COMMUNITY2["sections"]).lower())
+        for p in (X.COMMUNITY2, X.EVENTS2):
+            self.assertIn("82968 93895", " ".join(s[1] for s in p["sections"]))
+            self.assertNotRegex(" ".join(s[1] for s in p["sections"]), r"\d[\d,]*\+? members")
 
 
 if __name__ == "__main__":

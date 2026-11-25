@@ -1,7 +1,7 @@
 """Extra academy pages built from the owner-supplied Career Accelerator material (2026-11-25).
 Rewritten to the site pattern; flagged sitemap3 so they are listed in sitemap3.xml. No dates, hours, counts, reviews or outcome claims."""
 import html
-from content_cases import pills, REGISTER, WHATSAPP_MSG
+from content_cases import pills, REGISTER, WHATSAPP_MSG, LI_GROUP
 
 e = html.escape
 DATE = "2026-11-25"
@@ -44,7 +44,7 @@ ROADMAP = dict(
     ],
     faqs=[("Is 90 days enough to learn Adobe MarTech?", "It is enough to build a structured foundation and a portfolio. Depth in any one product takes longer and depends on hands-on practice."),
           ("Do I need Adobe licences to follow the roadmap?", "Not to start. Early phases use documentation, simulators and synthetic data; check what any live programme provides before you enrol.")],
-    related=["academy/hands-on-projects.html", "training/index.html", "training/career-transition.html", "academy/index.html"], sources=SRC)
+    related=["academy/hands-on-projects.html", "academy/community-tracks.html", "academy/event-calendar.html", "training/index.html", "academy/index.html"], sources=SRC)
 
 PROJECTS = [("Enterprise Customer 360", "Sources, XDM, identity, profile, audiences, activation"), ("Real-time transaction journey", "Streaming event, profile, AJO trigger, immediate communication"),
             ("RTCDP activation", "Segment strategy, qualification, destinations, activation QA"), ("CJA executive intelligence", "Cross-channel journey analysis and KPI storytelling"),
@@ -74,6 +74,69 @@ PROJ2 = dict(
           ("Can I use these in a portfolio?", "Yes, as your own build and write-up, clearly labelled as practice projects on synthetic data.")],
     related=["academy/career-accelerator-roadmap.html", "academy/hands-on-projects.html", "adobe-experience-platform/interview-questions.html", "training/index.html"], sources=SRC)
 
-for _p in (ROADMAP, PROJ2):
+
+PHONE = "+91 82968 93895"
+TRACKS = [("Adobe Experience Platform and AI", "AEP architecture, XDM, ingestion and AI use", "workshops.html"),
+          ("CDP Knowledge Bytes", "Short weekly CDP technical notes and questions", "../learn/index.html"),
+          ("Real-Time CDP", "Audiences, identity resolution, destinations and activation", "workshops.html"),
+          ("Adobe Journey Optimizer", "Journey design, events, suppression and QA", "workshops.html"),
+          ("Customer Journey Analytics", "Connections, data views and cross-channel analysis", "workshops.html"),
+          ("Adobe Web SDK and data collection", "Datastreams, data layer and event validation", "hands-on-projects.html"),
+          ("MarTech architects", "Reference architectures and integration patterns", "../services/index.html"),
+          ("Customer 360 engineers", "Data modelling, identity and profile design", "hands-on-projects.html"),
+          ("Agentic AI builders", "Agents, tools and governed MarTech automation", "../services/agentic-ai-mcp.html"),
+          ("MCP developers", "Model Context Protocol servers and safe tool access", "../guides/what-is-mcp.html")]
+
+
+def _links(rows):
+    return ('<div class="table-wrap"><table><thead><tr><th>Track</th><th>What members discuss</th><th>Related page</th></tr></thead><tbody>'
+            + "".join(f'<tr><td>{e(a)}</td><td>{e(b)}</td><td><a href="{c}">Open</a></td></tr>' for a, b, c in rows) + "</tbody></table></div>")
+
+
+COMMUNITY2 = dict(
+    path="academy/community-tracks.html", title="Adobe MarTech Community Tracks: Topics You Can Join",
+    desc="Ten Adobe MarTech and Agentic AI community topics, from AEP and Real-Time CDP to MCP, and how to join and ask questions in the Infiante360 community.",
+    h1="Adobe MarTech community tracks", kicker="Academy · Community", nav="Community tracks", schema="WebPage", category="Academy", date=DATE,
+    keywords=["adobe martech community topics", "aep community", "agentic ai mcp community", "cdp knowledge community", "martech architects network"],
+    answer="Ten topic tracks organise the Infiante360 community: AEP and AI, CDP Knowledge Bytes, Real-Time CDP, AJO, CJA, Web SDK, MarTech architects, Customer 360, Agentic AI and MCP. They are discussion topics, not separate member-run groups yet. Join through the LinkedIn group or WhatsApp and say which track you want. The community is independent and is not an official Adobe user group.",
+    sections=[
+        ("Ten topic tracks", _links(TRACKS)),
+        ("How to join", "<p>Use the LinkedIn group for discussion and WhatsApp to tell us which tracks you want. Consent is separate for each channel, and you can leave at any time.</p>"
+         + pills(("LinkedIn group", LI_GROUP), ("Tell us your track on WhatsApp " + PHONE, WHATSAPP_MSG), ("Community guidelines", "community.html"))),
+        ("How the community will grow", '<ul class="checklist"><li>We start with tracks that have active members and add more only when people ask</li><li>No member counts or activity figures are published until they are real</li><li>Never post passwords, keys or customer data</li><li>Administrator-written posts are labelled as such</li></ul>'),
+        ("Independence", '<p class="note">This is an independent learning community. It is not sponsored by, or an official user group of, Adobe or any other vendor named on this page.</p>'),
+    ],
+    faqs=[("Is the community free to join?", "Joining the LinkedIn group is free. Check any programme page for fees before you enrol in training."),
+          ("Can I suggest a new track?", "Yes. Message us on WhatsApp with the topic and why it needs its own space.")],
+    related=["academy/community.html", "academy/event-calendar.html", "academy/career-accelerator-roadmap.html", "academy/index.html"])
+
+SLOTS = [("Tuesday", "Adobe MarTech masterclass", "Adobe and CDP professionals", "8:00 PM IST"),
+         ("Wednesday", "Agentic AI and MCP workshop", "AI engineers and MarTech developers", "8:00 PM IST"),
+         ("Sunday", "Executive and research roundtable", "Senior leaders and architects", "6:00 PM IST")]
+CONCEPTS = [("Enterprise MarTech and Agentic AI live demo", "../lp/martech-sme-accelerator.html"), ("Adobe Experience Platform architecture masterclass", "workshops.html"),
+            ("Real-Time CDP implementation workshop", "workshops.html"), ("Adobe Journey Optimizer live lab", "workshops.html"),
+            ("Customer Journey Analytics masterclass", "workshops.html"), ("Adobe Web SDK implementation challenge", "hands-on-projects.html"),
+            ("Customer 360 architecture summit", "hands-on-projects.html"), ("XDM data modelling bootcamp", "aep-launchpad-bootcamp.html"),
+            ("Identity graph troubleshooting workshop", "workshops.html"), ("MarTech architecture career summit", "career-accelerator-roadmap.html")]
+
+EVENTS2 = dict(
+    path="academy/event-calendar.html", title="Proposed Weekly Event Calendar for Adobe MarTech and AI",
+    desc="Three proposed weekly event slots and ten event concepts for Adobe MarTech and Agentic AI. Nothing is scheduled yet; register interest to be told first.",
+    h1="Proposed weekly events for Adobe MarTech and AI", kicker="Academy · Events", nav="Event calendar", schema="WebPage", category="Academy", date=DATE,
+    keywords=["adobe martech webinar", "aep masterclass event", "agentic ai mcp workshop", "martech architecture summit", "adobe live lab"],
+    answer="This page lists three proposed weekly slots, on Tuesday, Wednesday and Sunday, and ten event concepts from an AEP architecture masterclass to an identity graph troubleshooting workshop. None is scheduled yet: no dates, speakers or registration links are confirmed. Register your interest and we will contact you when a session is confirmed. Existing workshops and the bootcamp are listed separately.",
+    sections=[
+        ("Proposed weekly slots", _table(["Day", "Theme", "Audience", "Proposed time"], SLOTS) + '<p class="note">Proposed only. Slots start when speakers and dates are confirmed.</p>'),
+        ("Ten event concepts", '<div class="table-wrap"><table><thead><tr><th>#</th><th>Concept</th><th>Related learning</th></tr></thead><tbody>'
+         + "".join(f'<tr><td>{i + 1}</td><td>{e(n)}</td><td><a href="{u}">Open</a></td></tr>' for i, (n, u) in enumerate(CONCEPTS)) + "</tbody></table></div>"),
+        ("Already available", "<p>See the <a href=\"workshops.html\">workshops</a> and the <a href=\"aep-launchpad-bootcamp.html\">AEP Launchpad bootcamp</a> for sessions with their own details.</p>"
+         + pills(("Register interest", REGISTER), ("WhatsApp " + PHONE, WHATSAPP_MSG), ("Join the community", "community-tracks.html"))),
+        ("What every confirmed event will show", '<ul class="checklist"><li>Date, start and end time, and time zone</li><li>Confirmed speaker and short biography</li><li>Agenda and delivery format</li><li>Price, or free, stated up front</li><li>Registration with consent kept separate from marketing</li></ul>'),
+    ],
+    faqs=[("Are these events happening?", "Not yet. They are proposals. A session is announced only after the date and speaker are confirmed."),
+          ("Will sessions be recorded?", "Only with the speaker's agreement. Each event page will say whether a recording is offered.")],
+    related=["academy/community-tracks.html", "academy/workshops.html", "academy/aep-launchpad-bootcamp.html", "academy/index.html"])
+
+for _p in (ROADMAP, PROJ2, COMMUNITY2, EVENTS2):
     _p["sitemap3"] = True
-EXTRA_PAGES = [ROADMAP, PROJ2]
+EXTRA_PAGES = [ROADMAP, PROJ2, COMMUNITY2, EVENTS2]
