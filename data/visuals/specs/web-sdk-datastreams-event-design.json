@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-WEBSDKDATASTREAMSEVEN",
+ "slug": "web-sdk-datastreams-event-design",
+ "page": "guides/web-sdk-datastreams-event-design.html",
+ "title": "Web SDK datastreams and events",
+ "subtitle": "From page to platform",
+ "keyword": "web sdk datastreams and events",
+ "kind": "flow",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "Keep one event model across web and app.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: web sdk datastreams and events - page, sdk, datastream, platform.",
+ "caption": "Web SDK datastreams and events: schematic.",
+ "lanes": [
+  {
+   "title": "Page",
+   "items": [
+    "Data layer",
+    "Consent"
+   ]
+  },
+  {
+   "title": "SDK",
+   "items": [
+    "Configure",
+    "Send event"
+   ]
+  },
+  {
+   "title": "Datastream",
+   "items": [
+    "Services chosen",
+    "Per environment"
+   ]
+  },
+  {
+   "title": "Platform",
+   "items": [
+    "Dataset",
+    "Validate"
+   ]
+  }
+ ]
+}

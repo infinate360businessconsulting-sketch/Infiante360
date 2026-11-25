@@ -1,438 +1,13 @@
 [
  {
-  "image_id": "IMG-ART-AEPBATCHINGESTIONFAIL",
-  "page": "guides/aep-batch-ingestion-failure-diagnostic.html",
-  "title": "Batch ingestion diagnostic",
-  "keyword": "batch ingestion diagnostic",
-  "description": "Batch ingestion diagnostic: schematic.",
+  "image_id": "IMG-ART-AEPDATAUSAGELABELSPO",
+  "page": "guides/aep-data-usage-labels-policies.html",
+  "title": "Data usage labels and policies",
+  "keyword": "data usage labels and policies",
+  "description": "Data usage labels and policies: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/aep-batch-ingestion-failure-diagnostic",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 26.5,
-   "hero-800.webp": 10.3,
-   "og.png": 97.3
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: batch ingestion diagnostic - find, read, check, retry.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-AIRLINEDISRUPTIONMESSA",
-  "page": "guides/airline-disruption-messaging-consent.html",
-  "title": "Disruption messages and consent",
-  "keyword": "disruption messages and consent",
-  "description": "Disruption messages and consent: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/airline-disruption-messaging-consent",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 31.9,
-   "hero-800.webp": 12.6,
-   "og.png": 128.3
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: disruption messages and consent - event, checks, send, log.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-AJOREFERENCEARCHITECTU",
-  "page": "guides/ajo-reference-architecture.html",
-  "title": "Journey Optimizer reference architecture",
-  "keyword": "journey optimizer reference architecture",
-  "description": "Journey Optimizer reference architecture: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/ajo-reference-architecture",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 34.7,
-   "hero-800.webp": 13.9,
-   "og.png": 121.3
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: journey optimizer reference architecture - data, orchestration, content, channels, governance.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-BQ-001",
-  "page": "services/bigquery-martech-integration.html",
-  "title": "BigQuery MarTech analytics architecture",
-  "keyword": "bigquery consulting",
-  "description": "Layered BigQuery architecture for marketing analytics.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/bigquery-martech-analytics-architecture",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 42.9,
-   "hero-800.webp": 16.7,
-   "og.png": 141.3
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Layered diagram of a BigQuery analytics architecture from collection through modelling and governance to consumption",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-CJABACKFILLRECONCILIAT",
-  "page": "guides/cja-backfill-reconciliation-workbook.html",
-  "title": "CJA backfill reconciliation",
-  "keyword": "cja backfill reconciliation",
-  "description": "CJA backfill reconciliation: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/cja-backfill-reconciliation-workbook",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 28.5,
-   "hero-800.webp": 11.3,
-   "og.png": 96.8
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: cja backfill reconciliation - scope, compare, explain, sign off.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-CJAREFERENCEARCHITECTU",
-  "page": "guides/cja-reference-architecture.html",
-  "title": "Customer Journey Analytics architecture",
-  "keyword": "customer journey analytics architecture",
-  "description": "Customer Journey Analytics architecture: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/cja-reference-architecture",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 29.8,
-   "hero-800.webp": 12.1,
-   "og.png": 98.8
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: customer journey analytics architecture - datasets, connection, data view, workspace.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-DBX-001",
-  "page": "services/databricks-martech-integration.html",
-  "title": "Databricks lakehouse for customer data",
-  "keyword": "databricks consulting",
-  "description": "Medallion architecture for customer data on Databricks.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/databricks-lakehouse-customer-data-architecture",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 41.1,
-   "hero-800.webp": 15.9,
-   "og.png": 139.9
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Flow diagram from ingestion through bronze, silver and gold lakehouse layers for customer data",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-ENTERPRISEAIAGENTAPPR",
-  "page": "guides/enterprise-ai-agent-approval-gate.html",
-  "title": "AI agent approval gate",
-  "keyword": "ai agent approval gate",
-  "description": "AI agent approval gate: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/enterprise-ai-agent-approval-gate",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 28.5,
-   "hero-800.webp": 11.3,
-   "og.png": 100.5
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: ai agent approval gate - read only, reversible write, customer-facing, destructive or financial.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-EA-001",
-  "page": "services/enterprise-architecture-consulting.html",
-  "title": "Enterprise architecture and digital transformation roadmap",
-  "keyword": "enterprise architecture consulting",
-  "description": "A phased enterprise architecture roadmap.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/enterprise-architecture-digital-transformation-roadmap",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 41.9,
-   "hero-800.webp": 16.7,
-   "og.png": 136.9
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Four-phase roadmap: assess, design, plan and deliver for enterprise architecture and digital transformation",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-HEALTHCAREDATAMINIMIZA",
-  "page": "guides/healthcare-data-minimization-checklist.html",
-  "title": "Healthcare data minimization",
-  "keyword": "healthcare data minimization",
-  "description": "Healthcare data minimization: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/healthcare-data-minimization-checklist",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 28.2,
-   "hero-800.webp": 11.1,
-   "og.png": 116.0
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: healthcare data minimization - purpose, fields, controls, review.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-HOTELLOYALTYIDENTITYR",
-  "page": "guides/hotel-loyalty-identity-reconciliation.html",
-  "title": "Hotel guest identity reconciliation",
-  "keyword": "hotel guest identity reconciliation",
-  "description": "Hotel guest identity reconciliation: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/hotel-loyalty-identity-reconciliation",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 31.2,
-   "hero-800.webp": 12.7,
-   "og.png": 111.6
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: hotel guest identity reconciliation - identifiers, rules, merge, audit.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-IDENTITYGRAPHCOLLAPSE",
-  "page": "guides/identity-graph-collapse-test-lab.html",
-  "title": "Identity graph collapse lab",
-  "keyword": "identity graph collapse lab",
-  "description": "Identity graph collapse lab: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/identity-graph-collapse-test-lab",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 27.1,
-   "hero-800.webp": 10.8,
-   "og.png": 98.0
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: identity graph collapse lab - create, add traps, load, inspect.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-KAFKA-001",
-  "page": "services/kafka-streaming-customer-data.html",
-  "title": "Kafka real-time streaming architecture",
-  "keyword": "kafka consulting",
-  "description": "Event streaming reference architecture.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/kafka-real-time-streaming-architecture",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 44.9,
-   "hero-800.webp": 17.4,
-   "og.png": 141.9
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Flow diagram of event producers, a Kafka platform, stream processing and downstream consumers",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-LOANONBOARDINGEVENTMO",
-  "page": "guides/loan-onboarding-event-model.html",
-  "title": "Loan onboarding event model",
-  "keyword": "loan onboarding event model",
-  "description": "Loan onboarding event model: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/loan-onboarding-event-model",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 32.7,
-   "hero-800.webp": 12.9,
-   "og.png": 126.4
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: loan onboarding event model - enquiry, progress, decision, rules.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-MARTECHCOEOPERATINGMO",
-  "page": "guides/martech-coe-operating-model-raci.html",
-  "title": "MarTech CoE operating model",
-  "keyword": "martech coe operating model",
-  "description": "MarTech CoE operating model: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/martech-coe-operating-model-raci",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 28.7,
-   "hero-800.webp": 11.5,
-   "og.png": 108.5
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: martech coe operating model - intake, standards, architecture, enablement.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-RES-MCPCDP",
-  "page": "research/mcp-customer-data-platforms.html",
-  "title": "MCP and customer data platforms",
-  "keyword": "mcp customer data platform",
-  "description": "MCP server as a policy layer in front of a CDP.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/mcp-customer-data-platforms",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 34.3,
-   "hero-800.webp": 13.5,
-   "og.png": 122.5
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Layered diagram: agent host, MCP server, policy layer and customer data platform APIs",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
-  "page": "guides/renewal-journey-holdout-design.html",
-  "title": "Renewal holdout design",
-  "keyword": "renewal holdout design",
-  "description": "Renewal holdout design: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/renewal-journey-holdout-design",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 29.2,
-   "hero-800.webp": 11.4,
-   "og.png": 114.0
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: renewal holdout design - eligible, randomise, treat, compare.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-RETAILSTORETOWEBVALI",
-  "page": "guides/retail-store-to-web-validation.html",
-  "title": "Store-to-web validation",
-  "keyword": "store-to-web validation",
-  "description": "Store-to-web validation: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/retail-store-to-web-validation",
+  "path": "assets/visuals/aep-data-usage-labels-policies",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
@@ -440,174 +15,149 @@
   },
   "sizes_kb": {
    "hero.webp": 28.1,
-   "hero-800.webp": 11.0,
-   "og.png": 100.9
+   "hero-800.webp": 11.1,
+   "og.png": 110.7
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: store-to-web validation - match rate, false matches, reconcile, report.",
+  "alt_text": "Schematic diagram: data usage labels and policies - label, define, enforce, review.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-ART-SAASPRODUCTUSAGESIGNA",
-  "page": "guides/saas-product-usage-signals.html",
-  "title": "SaaS usage signals taxonomy",
-  "keyword": "saas usage signals taxonomy",
-  "description": "SaaS usage signals taxonomy: schematic.",
+  "image_id": "IMG-ART-AEPSANDBOXESSCHEMASDA",
+  "page": "guides/aep-sandboxes-schemas-datasets.html",
+  "title": "Sandboxes, schemas and datasets",
+  "keyword": "sandboxes, schemas and datasets",
+  "description": "Sandboxes, schemas and datasets: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/saas-product-usage-signals",
+  "path": "assets/visuals/aep-sandboxes-schemas-datasets",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
    "og.png": "1200x630"
   },
   "sizes_kb": {
-   "hero.webp": 28.4,
-   "hero-800.webp": 11.2,
-   "og.png": 112.7
+   "hero.webp": 27.3,
+   "hero-800.webp": 10.9,
+   "og.png": 91.0
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: saas usage signals taxonomy - events, signals, cdp, warehouse.",
+  "alt_text": "Schematic diagram: sandboxes, schemas and datasets - sandbox, schema, dataset, batches.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-SNOW-001",
-  "page": "services/snowflake-martech-integration.html",
-  "title": "Snowflake and Adobe Experience Platform integration architecture",
-  "keyword": "snowflake consulting",
-  "description": "Reference architecture for Snowflake and Adobe Experience Platform.",
+  "image_id": "IMG-ART-AUDIENCEEVALUATIONBATC",
+  "page": "guides/audience-evaluation-batch-streaming-edge.html",
+  "title": "Audience evaluation methods",
+  "keyword": "audience evaluation methods",
+  "description": "Audience evaluation methods: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/snowflake-aep-integration-architecture",
+  "path": "assets/visuals/audience-evaluation-batch-streaming-edge",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
    "og.png": "1200x630"
   },
   "sizes_kb": {
-   "hero.webp": 52.2,
-   "hero-800.webp": 20.5,
-   "og.png": 154.7
+   "hero.webp": 28.6,
+   "hero-800.webp": 11.6,
+   "og.png": 109.9
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Diagram showing data moving from source systems into Snowflake, then into Adobe Experience Platform datasets, profiles and activation channels",
+  "alt_text": "Schematic diagram: audience evaluation methods - batch, streaming, edge, choose.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-ART-SNOWFLAKEINCREMENTALLO",
-  "page": "guides/snowflake-incremental-load-lab.html",
-  "title": "Snowflake incremental load",
-  "keyword": "snowflake incremental load",
-  "description": "Snowflake incremental load: schematic.",
+  "image_id": "IMG-ART-CJAVSADOBEANALYTICSD",
+  "page": "guides/cja-vs-adobe-analytics-decision.html",
+  "title": "Customer Journey Analytics or Adobe Analytics",
+  "keyword": "customer journey analytics or adobe analytics",
+  "description": "Customer Journey Analytics or Adobe Analytics: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/snowflake-incremental-load-lab",
+  "path": "assets/visuals/cja-vs-adobe-analytics-decision",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
    "og.png": "1200x630"
   },
   "sizes_kb": {
-   "hero.webp": 28.8,
-   "hero-800.webp": 11.2,
-   "og.png": 122.3
+   "hero.webp": 33.3,
+   "hero-800.webp": 13.3,
+   "og.png": 117.9
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: snowflake incremental load - stage, merge, watermark, reconcile.",
+  "alt_text": "Schematic diagram: customer journey analytics or adobe analytics - questions, data, identity, plan.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-ART-TELECOMHOUSEHOLDIDENTI",
-  "page": "guides/telecom-household-identity-churn-signals.html",
-  "title": "Household identity and churn signals",
-  "keyword": "household identity and churn signals",
-  "description": "Household identity and churn signals: schematic.",
+  "image_id": "IMG-ART-CUSTOMER360DATAMODEL",
+  "page": "guides/customer-360-data-model-layers.html",
+  "title": "Customer 360 data model",
+  "keyword": "customer 360 data model",
+  "description": "Customer 360 data model: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/telecom-household-identity-churn-signals",
+  "path": "assets/visuals/customer-360-data-model-layers",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
    "og.png": "1200x630"
   },
   "sizes_kb": {
-   "hero.webp": 31.5,
-   "hero-800.webp": 12.7,
-   "og.png": 112.8
+   "hero.webp": 26.7,
+   "hero-800.webp": 10.6,
+   "og.png": 112.0
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: household identity and churn signals - levels, signals, limits, validate.",
+  "alt_text": "Schematic diagram: customer 360 data model - sources, identity, profile, use.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-ART-TESTAGENTICAIIMPLEMEN",
-  "page": "guides/test-agentic-ai-implementation.html",
-  "title": "Testing an agentic AI build",
-  "keyword": "testing an agentic ai build",
-  "description": "Testing an agentic AI build: schematic.",
+  "image_id": "IMG-ART-ENTERPRISEAICOWORKERS",
+  "page": "guides/enterprise-ai-coworker-scope-guardrails.html",
+  "title": "Scoping an AI coworker",
+  "keyword": "scoping an ai coworker",
+  "description": "Scoping an AI coworker: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/test-agentic-ai-implementation",
+  "path": "assets/visuals/enterprise-ai-coworker-scope-guardrails",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
    "og.png": "1200x630"
   },
   "sizes_kb": {
-   "hero.webp": 26.9,
-   "hero-800.webp": 10.8,
-   "og.png": 100.4
+   "hero.webp": 27.3,
+   "hero-800.webp": 10.6,
+   "og.png": 102.5
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: testing an agentic ai build - tool choice, permissions, injection, consistency.",
+  "alt_text": "Schematic diagram: scoping an ai coworker - task, access, guardrails, review.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-ART-TESTCONSENTGOVERNANCE",
-  "page": "guides/test-consent-governance-implementation.html",
-  "title": "Consent and governance tests",
-  "keyword": "consent and governance tests",
-  "description": "Consent and governance tests: schematic.",
+  "image_id": "IMG-ART-MCPVSRESTENTERPRISEA",
+  "page": "guides/mcp-vs-rest-enterprise-agents.html",
+  "title": "MCP or direct REST for agents",
+  "keyword": "mcp or direct rest for agents",
+  "description": "MCP or direct REST for agents: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/test-consent-governance-implementation",
-  "dimensions": {
-   "hero.webp": "1600x900",
-   "hero-800.webp": "800x450",
-   "og.png": "1200x630"
-  },
-  "sizes_kb": {
-   "hero.webp": 28.4,
-   "hero-800.webp": 11.2,
-   "og.png": 114.2
-  },
-  "logo_applied": true,
-  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: consent and governance tests - no consent, labels, withdrawal, requests.",
-  "quality": "pass",
-  "publication_status": "pending_page_integration"
- },
- {
-  "image_id": "IMG-ART-TESTREALTIMEPERSONALI",
-  "page": "guides/test-real-time-personalization.html",
-  "title": "Real-time personalization tests",
-  "keyword": "real-time personalization tests",
-  "description": "Real-time personalization tests: schematic.",
-  "generation_method": "deterministic_svg_pillow",
-  "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/test-real-time-personalization",
+  "path": "assets/visuals/mcp-vs-rest-enterprise-agents",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
@@ -615,37 +165,87 @@
   },
   "sizes_kb": {
    "hero.webp": 28.0,
-   "hero-800.webp": 11.2,
-   "og.png": 116.7
+   "hero-800.webp": 11.3,
+   "og.png": 107.3
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: real-time personalization tests - data, decision, fallback, measure.",
+  "alt_text": "Schematic diagram: mcp or direct rest for agents - agent, mcp server, rest api, platform.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  },
  {
-  "image_id": "IMG-ART-WEBSDKCONSENTREGRESSI",
-  "page": "guides/web-sdk-consent-regression-testing.html",
-  "title": "Web SDK consent regression test",
-  "keyword": "web sdk consent regression test",
-  "description": "Web SDK consent regression test: schematic.",
+  "image_id": "IMG-ART-RTCDPDESTINATIONACTIVA",
+  "page": "guides/rtcdp-destination-activation-checklist.html",
+  "title": "Destination activation checklist",
+  "keyword": "destination activation checklist",
+  "description": "Destination activation checklist: schematic.",
   "generation_method": "deterministic_svg_pillow",
   "provider": "none (local scripts, no generative model)",
-  "path": "assets/visuals/web-sdk-consent-regression-testing",
+  "path": "assets/visuals/rtcdp-destination-activation-checklist",
   "dimensions": {
    "hero.webp": "1600x900",
    "hero-800.webp": "800x450",
    "og.png": "1200x630"
   },
   "sizes_kb": {
-   "hero.webp": 28.3,
-   "hero-800.webp": 11.4,
-   "og.png": 100.7
+   "hero.webp": 31.8,
+   "hero-800.webp": 12.6,
+   "og.png": 117.5
   },
   "logo_applied": true,
   "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
-  "alt_text": "Schematic diagram: web sdk consent regression test - set state, record, compare, evidence.",
+  "alt_text": "Schematic diagram: destination activation checklist - purpose, fields, policy, verify.",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
+  "image_id": "IMG-ART-WEBSDKDATASTREAMSEVEN",
+  "page": "guides/web-sdk-datastreams-event-design.html",
+  "title": "Web SDK datastreams and events",
+  "keyword": "web sdk datastreams and events",
+  "description": "Web SDK datastreams and events: schematic.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/web-sdk-datastreams-event-design",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 27.9,
+   "hero-800.webp": 11.2,
+   "og.png": 104.3
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Schematic diagram: web sdk datastreams and events - page, sdk, datastream, platform.",
+  "quality": "pass",
+  "publication_status": "pending_page_integration"
+ },
+ {
+  "image_id": "IMG-ART-XDMSCHEMADESIGNCHECKL",
+  "page": "guides/xdm-schema-design-checklist.html",
+  "title": "XDM schema design checklist",
+  "keyword": "xdm schema design checklist",
+  "description": "XDM schema design checklist: schematic.",
+  "generation_method": "deterministic_svg_pillow",
+  "provider": "none (local scripts, no generative model)",
+  "path": "assets/visuals/xdm-schema-design-checklist",
+  "dimensions": {
+   "hero.webp": "1600x900",
+   "hero-800.webp": "800x450",
+   "og.png": "1200x630"
+  },
+  "sizes_kb": {
+   "hero.webp": 31.4,
+   "hero-800.webp": 12.4,
+   "og.png": 132.0
+  },
+  "logo_applied": true,
+  "logo_source": "assets/logo-mark.png (approved asset, composited programmatically)",
+  "alt_text": "Schematic diagram: xdm schema design checklist - class, fields, identity, enable.",
   "quality": "pass",
   "publication_status": "pending_page_integration"
  }

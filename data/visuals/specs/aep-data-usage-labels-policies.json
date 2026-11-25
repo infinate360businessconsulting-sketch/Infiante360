@@ -1,0 +1,43 @@
+{
+ "id": "IMG-ART-AEPDATAUSAGELABELSPO",
+ "slug": "aep-data-usage-labels-policies",
+ "page": "guides/aep-data-usage-labels-policies.html",
+ "title": "Data usage labels and policies",
+ "subtitle": "Label the data, then govern the use",
+ "keyword": "data usage labels and policies",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Labels do nothing until a policy uses them.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: data usage labels and policies - label, define, enforce, review.",
+ "caption": "Data usage labels and policies: schematic.",
+ "lanes": [
+  {
+   "title": "Label",
+   "items": [
+    "Fields and datasets"
+   ]
+  },
+  {
+   "title": "Define",
+   "items": [
+    "Marketing actions",
+    "Policies"
+   ]
+  },
+  {
+   "title": "Enforce",
+   "items": [
+    "At activation"
+   ]
+  },
+  {
+   "title": "Review",
+   "items": [
+    "Blocked cases",
+    "Owners"
+   ]
+  }
+ ]
+}

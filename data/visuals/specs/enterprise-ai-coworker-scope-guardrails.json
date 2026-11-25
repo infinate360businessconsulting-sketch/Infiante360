@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-ENTERPRISEAICOWORKERS",
+ "slug": "enterprise-ai-coworker-scope-guardrails",
+ "page": "guides/enterprise-ai-coworker-scope-guardrails.html",
+ "title": "Scoping an AI coworker",
+ "subtitle": "Task, access, review",
+ "keyword": "scoping an ai coworker",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Widen scope only after evidence.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: scoping an ai coworker - task, access, guardrails, review.",
+ "caption": "Scoping an AI coworker: schematic.",
+ "lanes": [
+  {
+   "title": "Task",
+   "items": [
+    "One narrow job",
+    "Written scope"
+   ]
+  },
+  {
+   "title": "Access",
+   "items": [
+    "Least privilege",
+    "Read first"
+   ]
+  },
+  {
+   "title": "Guardrails",
+   "items": [
+    "Blocked actions",
+    "Logging"
+   ]
+  },
+  {
+   "title": "Review",
+   "items": [
+    "Human sign-off",
+    "Weekly sample"
+   ]
+  }
+ ]
+}

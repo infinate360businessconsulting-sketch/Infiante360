@@ -1,0 +1,42 @@
+{
+ "id": "IMG-ART-AEPSANDBOXESSCHEMASDA",
+ "slug": "aep-sandboxes-schemas-datasets",
+ "page": "guides/aep-sandboxes-schemas-datasets.html",
+ "title": "Sandboxes, schemas and datasets",
+ "subtitle": "How the objects nest",
+ "keyword": "sandboxes, schemas and datasets",
+ "kind": "layers",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "Every object belongs to one sandbox.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: sandboxes, schemas and datasets - sandbox, schema, dataset, batches.",
+ "caption": "Sandboxes, schemas and datasets: schematic.",
+ "layers": [
+  {
+   "title": "Sandbox",
+   "items": [
+    "Development",
+    "Production"
+   ]
+  },
+  {
+   "title": "Schema",
+   "items": [
+    "Structure and rules"
+   ]
+  },
+  {
+   "title": "Dataset",
+   "items": [
+    "Stored data"
+   ]
+  },
+  {
+   "title": "Batches",
+   "items": [
+    "Each load"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "id": "IMG-ART-MCPVSRESTENTERPRISEA",
+ "slug": "mcp-vs-rest-enterprise-agents",
+ "page": "guides/mcp-vs-rest-enterprise-agents.html",
+ "title": "MCP or direct REST for agents",
+ "subtitle": "What each gives you and what it leaves to you",
+ "keyword": "mcp or direct rest for agents",
+ "kind": "layers",
+ "accent": "orange",
+ "kicker": "Infiante360 guide",
+ "band": "Policy lives in the server, not in the prompt.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: mcp or direct rest for agents - agent, mcp server, rest api, platform.",
+ "caption": "MCP or direct REST for agents: schematic.",
+ "layers": [
+  {
+   "title": "Agent",
+   "items": [
+    "Chooses a tool"
+   ]
+  },
+  {
+   "title": "MCP server",
+   "items": [
+    "Describes tools",
+    "Applies policy"
+   ]
+  },
+  {
+   "title": "REST API",
+   "items": [
+    "Does the work"
+   ]
+  },
+  {
+   "title": "Platform",
+   "items": [
+    "Your data"
+   ]
+  }
+ ]
+}

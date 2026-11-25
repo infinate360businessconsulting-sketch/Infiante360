@@ -1,7 +1,7 @@
 [
  {
-  "image_id": "IMG-ART-AEPBATCHINGESTIONFAIL",
-  "page": "guides/aep-batch-ingestion-failure-diagnostic.html",
+  "image_id": "IMG-ART-AEPDATAUSAGELABELSPO",
+  "page": "guides/aep-data-usage-labels-policies.html",
   "roles": [
    "hero",
    "og",
@@ -9,8 +9,8 @@
   ]
  },
  {
-  "image_id": "IMG-ART-AIRLINEDISRUPTIONMESSA",
-  "page": "guides/airline-disruption-messaging-consent.html",
+  "image_id": "IMG-ART-AEPSANDBOXESSCHEMASDA",
+  "page": "guides/aep-sandboxes-schemas-datasets.html",
   "roles": [
    "hero",
    "og",
@@ -18,8 +18,8 @@
   ]
  },
  {
-  "image_id": "IMG-ART-AJOREFERENCEARCHITECTU",
-  "page": "guides/ajo-reference-architecture.html",
+  "image_id": "IMG-ART-AUDIENCEEVALUATIONBATC",
+  "page": "guides/audience-evaluation-batch-streaming-edge.html",
   "roles": [
    "hero",
    "og",
@@ -27,8 +27,8 @@
   ]
  },
  {
-  "image_id": "IMG-BQ-001",
-  "page": "services/bigquery-martech-integration.html",
+  "image_id": "IMG-ART-CJAVSADOBEANALYTICSD",
+  "page": "guides/cja-vs-adobe-analytics-decision.html",
   "roles": [
    "hero",
    "og",
@@ -36,8 +36,8 @@
   ]
  },
  {
-  "image_id": "IMG-ART-CJABACKFILLRECONCILIAT",
-  "page": "guides/cja-backfill-reconciliation-workbook.html",
+  "image_id": "IMG-ART-CUSTOMER360DATAMODEL",
+  "page": "guides/customer-360-data-model-layers.html",
   "roles": [
    "hero",
    "og",
@@ -45,8 +45,8 @@
   ]
  },
  {
-  "image_id": "IMG-ART-CJAREFERENCEARCHITECTU",
-  "page": "guides/cja-reference-architecture.html",
+  "image_id": "IMG-ART-ENTERPRISEAICOWORKERS",
+  "page": "guides/enterprise-ai-coworker-scope-guardrails.html",
   "roles": [
    "hero",
    "og",
@@ -54,8 +54,8 @@
   ]
  },
  {
-  "image_id": "IMG-DBX-001",
-  "page": "services/databricks-martech-integration.html",
+  "image_id": "IMG-ART-MCPVSRESTENTERPRISEA",
+  "page": "guides/mcp-vs-rest-enterprise-agents.html",
   "roles": [
    "hero",
    "og",
@@ -63,8 +63,8 @@
   ]
  },
  {
-  "image_id": "IMG-ART-ENTERPRISEAIAGENTAPPR",
-  "page": "guides/enterprise-ai-agent-approval-gate.html",
+  "image_id": "IMG-ART-RTCDPDESTINATIONACTIVA",
+  "page": "guides/rtcdp-destination-activation-checklist.html",
   "roles": [
    "hero",
    "og",
@@ -72,8 +72,8 @@
   ]
  },
  {
-  "image_id": "IMG-EA-001",
-  "page": "services/enterprise-architecture-consulting.html",
+  "image_id": "IMG-ART-WEBSDKDATASTREAMSEVEN",
+  "page": "guides/web-sdk-datastreams-event-design.html",
   "roles": [
    "hero",
    "og",
@@ -81,152 +81,8 @@
   ]
  },
  {
-  "image_id": "IMG-ART-HEALTHCAREDATAMINIMIZA",
-  "page": "guides/healthcare-data-minimization-checklist.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-HOTELLOYALTYIDENTITYR",
-  "page": "guides/hotel-loyalty-identity-reconciliation.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-IDENTITYGRAPHCOLLAPSE",
-  "page": "guides/identity-graph-collapse-test-lab.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-KAFKA-001",
-  "page": "services/kafka-streaming-customer-data.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-LOANONBOARDINGEVENTMO",
-  "page": "guides/loan-onboarding-event-model.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-MARTECHCOEOPERATINGMO",
-  "page": "guides/martech-coe-operating-model-raci.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-RES-MCPCDP",
-  "page": "research/mcp-customer-data-platforms.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
-  "page": "guides/renewal-journey-holdout-design.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-RETAILSTORETOWEBVALI",
-  "page": "guides/retail-store-to-web-validation.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-SAASPRODUCTUSAGESIGNA",
-  "page": "guides/saas-product-usage-signals.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-SNOW-001",
-  "page": "services/snowflake-martech-integration.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-SNOWFLAKEINCREMENTALLO",
-  "page": "guides/snowflake-incremental-load-lab.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-TELECOMHOUSEHOLDIDENTI",
-  "page": "guides/telecom-household-identity-churn-signals.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-TESTAGENTICAIIMPLEMEN",
-  "page": "guides/test-agentic-ai-implementation.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-TESTCONSENTGOVERNANCE",
-  "page": "guides/test-consent-governance-implementation.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-TESTREALTIMEPERSONALI",
-  "page": "guides/test-real-time-personalization.html",
-  "roles": [
-   "hero",
-   "og",
-   "diagram"
-  ]
- },
- {
-  "image_id": "IMG-ART-WEBSDKCONSENTREGRESSI",
-  "page": "guides/web-sdk-consent-regression-testing.html",
+  "image_id": "IMG-ART-XDMSCHEMADESIGNCHECKL",
+  "page": "guides/xdm-schema-design-checklist.html",
   "roles": [
    "hero",
    "og",

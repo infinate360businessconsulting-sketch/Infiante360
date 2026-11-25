@@ -100,3 +100,11 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Created: src/videos.py (video sitemap + VideoObject generator from content/videos.json), content/videos.json (empty), tests/test_videos.py. build.py writes sitemaps/videos.xml only when a video is approved + transcribed.
 - Not registered: infinate360-demo.mp4 / promo.mp4 (10 s, silent, same footage, garbled on-screen text, no transcript): decorative, not educational; fake video watch pages would be thin.
 - Not done: 300 articles/30 pillars/705 images/one-minute videos (backlog), IndexNow key + submissions and Search Console/Bing submission (owner accounts), AI-citation benchmark of 100 questions (needs permitted sampling, owner go-ahead), admin dashboard, feed.json.
+
+## 2026-11-25 approval-to-proceed: batch 1 of the article programme + IndexNow + benchmark
+- Owner approved content/images/videos/IndexNow/benchmark/dashboard. Done this session:
+  - Guide batch 1 (10 distinct guides, XDM, sandboxes, audience evaluation, destinations, governance, CJA vs AA, Web SDK datastreams, MCP vs REST, AI coworker scope, Customer 360 layers): src/content_batch1.py, scripts/make_batch1_specs.py, 10 specs + 40 image files (deterministic SVG -> WebP/PNG via visual_engine + image_pipeline), tests/test_batch1.py. Images auto-listed in image sitemap (og_image).
+  - IndexNow: indexnow/<key>.txt (public token), scripts/indexnow.py (dry run by default), pages.yml copies key to site root and runs a best-effort post-deploy submit of URLs with lastmod in the last 2 days.
+  - AI citation benchmark: 100 questions in data/seo/ai_citation_benchmark.csv (results EMPTY), docs/AI_CITATION_BENCHMARK.md manual workflow.
+- Blocked: voiceover (Piper installs but voice models cannot be downloaded: huggingface/github blocked from this workspace; no TTS engine present) => no narrated videos, no video-sitemap entries; admin dashboard (not started; admin/ is the CMS config); Search Console/Bing need owner accounts.
+- Remaining article programme: 290 articles + 30 pillars + ~695 images, in batches of 25 (this batch: 10).

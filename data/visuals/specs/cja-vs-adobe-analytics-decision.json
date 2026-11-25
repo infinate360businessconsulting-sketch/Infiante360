@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-CJAVSADOBEANALYTICSD",
+ "slug": "cja-vs-adobe-analytics-decision",
+ "page": "guides/cja-vs-adobe-analytics-decision.html",
+ "title": "Customer Journey Analytics or Adobe Analytics",
+ "subtitle": "Choose by question, not by product",
+ "keyword": "customer journey analytics or adobe analytics",
+ "kind": "flow",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "Reconcile before you switch anything off.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: customer journey analytics or adobe analytics - questions, data, identity, plan.",
+ "caption": "Customer Journey Analytics or Adobe Analytics: schematic.",
+ "lanes": [
+  {
+   "title": "Questions",
+   "items": [
+    "Single channel",
+    "Cross-channel"
+   ]
+  },
+  {
+   "title": "Data",
+   "items": [
+    "Report suites",
+    "AEP datasets"
+   ]
+  },
+  {
+   "title": "Identity",
+   "items": [
+    "Visitor",
+    "Person ID"
+   ]
+  },
+  {
+   "title": "Plan",
+   "items": [
+    "Run both",
+    "Migrate in stages"
+   ]
+  }
+ ]
+}

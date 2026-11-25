@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-XDMSCHEMADESIGNCHECKL",
+ "slug": "xdm-schema-design-checklist",
+ "page": "guides/xdm-schema-design-checklist.html",
+ "title": "XDM schema design checklist",
+ "subtitle": "Class, field groups, identity, then Profile",
+ "keyword": "xdm schema design checklist",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Plan the schema before the first dataset exists.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: xdm schema design checklist - class, fields, identity, enable.",
+ "caption": "XDM schema design checklist: schematic.",
+ "lanes": [
+  {
+   "title": "Class",
+   "items": [
+    "Profile or event",
+    "Decide first"
+   ]
+  },
+  {
+   "title": "Fields",
+   "items": [
+    "Field groups",
+    "Custom namespace"
+   ]
+  },
+  {
+   "title": "Identity",
+   "items": [
+    "Primary identity",
+    "Namespace"
+   ]
+  },
+  {
+   "title": "Enable",
+   "items": [
+    "Profile only if needed",
+    "Hard to undo"
+   ]
+  }
+ ]
+}

@@ -316,6 +316,9 @@ from content_articles import A as _ART1  # noqa: E402
 from content_articles2 import B as _ART2  # noqa: E402
 KB_PAGES += _ART1 + _ART2
 
+from content_batch1 import BATCH1 as _B1  # noqa: E402
+KB_PAGES += _B1
+
 from content_research import RESEARCH_PAGES as _RES  # noqa: E402
 KB_PAGES += _RES
 

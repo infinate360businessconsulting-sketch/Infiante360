@@ -1,0 +1,47 @@
+{
+ "id": "IMG-ART-CUSTOMER360DATAMODEL",
+ "slug": "customer-360-data-model-layers",
+ "page": "guides/customer-360-data-model-layers.html",
+ "title": "Customer 360 data model",
+ "subtitle": "Layers, keys and owners",
+ "keyword": "customer 360 data model",
+ "kind": "layers",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "Every layer needs a named owner.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: customer 360 data model - sources, identity, profile, use.",
+ "caption": "Customer 360 data model: schematic.",
+ "layers": [
+  {
+   "title": "Sources",
+   "items": [
+    "CRM",
+    "Web",
+    "Commerce"
+   ]
+  },
+  {
+   "title": "Identity",
+   "items": [
+    "Keys",
+    "Match rules"
+   ]
+  },
+  {
+   "title": "Profile",
+   "items": [
+    "Attributes",
+    "Events"
+   ]
+  },
+  {
+   "title": "Use",
+   "items": [
+    "Audiences",
+    "Analytics",
+    "Service"
+   ]
+  }
+ ]
+}

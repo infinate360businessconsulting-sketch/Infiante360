@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-AUDIENCEEVALUATIONBATC",
+ "slug": "audience-evaluation-batch-streaming-edge",
+ "page": "guides/audience-evaluation-batch-streaming-edge.html",
+ "title": "Audience evaluation methods",
+ "subtitle": "Batch, streaming and edge compared",
+ "keyword": "audience evaluation methods",
+ "kind": "flow",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "Check current eligibility rules in the documentation.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: audience evaluation methods - batch, streaming, edge, choose.",
+ "caption": "Audience evaluation methods: schematic.",
+ "lanes": [
+  {
+   "title": "Batch",
+   "items": [
+    "Scheduled",
+    "Complex rules"
+   ]
+  },
+  {
+   "title": "Streaming",
+   "items": [
+    "Continuous",
+    "Rule limits apply"
+   ]
+  },
+  {
+   "title": "Edge",
+   "items": [
+    "Immediate",
+    "Narrowest rules"
+   ]
+  },
+  {
+   "title": "Choose",
+   "items": [
+    "By how fast it must react"
+   ]
+  }
+ ]
+}

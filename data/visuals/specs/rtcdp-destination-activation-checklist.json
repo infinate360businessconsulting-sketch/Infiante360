@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-RTCDPDESTINATIONACTIVA",
+ "slug": "rtcdp-destination-activation-checklist",
+ "page": "guides/rtcdp-destination-activation-checklist.html",
+ "title": "Destination activation checklist",
+ "subtitle": "Before an audience leaves the platform",
+ "keyword": "destination activation checklist",
+ "kind": "flow",
+ "accent": "orange",
+ "kicker": "Infiante360 guide",
+ "band": "Send the minimum that does the job.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: destination activation checklist - purpose, fields, policy, verify.",
+ "caption": "Destination activation checklist: schematic.",
+ "lanes": [
+  {
+   "title": "Purpose",
+   "items": [
+    "Why send it",
+    "Which marketing action"
+   ]
+  },
+  {
+   "title": "Fields",
+   "items": [
+    "Only what is needed",
+    "Identity to match"
+   ]
+  },
+  {
+   "title": "Policy",
+   "items": [
+    "Labels checked",
+    "Consent applied"
+   ]
+  },
+  {
+   "title": "Verify",
+   "items": [
+    "Sample records",
+    "Count at destination"
+   ]
+  }
+ ]
+}

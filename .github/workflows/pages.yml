@@ -44,6 +44,8 @@ jobs:
           path: seo-report
       - name: Add the separate LMS site (static, built from lms-site/) at /lms-hub/
         run: mkdir -p _site/lms-hub && cp -r lms-site/*.html lms-site/assets _site/lms-hub/
+      - name: IndexNow verification key file (public token, served at the site root)
+        run: cp indexnow/*.txt _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -57,3 +59,16 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+  indexnow:
+    needs: deploy
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Notify IndexNow of pages updated in the last 2 days (best effort; never fails the deploy)
+        run: python3 scripts/indexnow.py --submit
