@@ -2,7 +2,6 @@
 One page per industry (100 distinct patterns each), not one page per row: rows differ by industry word, so per-row pages would be near-duplicates.
 Rows are illustrative design patterns (CSV Status column); no client results are claimed."""
 import csv, html, os, re
-from banners import slider_html
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV = os.path.join(ROOT, "data", "usecases", "martech_use_cases.csv")
@@ -50,9 +49,6 @@ def _industry_page(ind):
     rows = [r for r in _ROWS if r["Industry"] == ind]
     gov = rows[0]["Governance note"]
     secs = []
-    sl = slider_html("../../")
-    if sl:
-        secs.append(("Featured programmes", sl))
     secs.append(("How to read this library", f'<p class="note"><strong>Illustrative designs.</strong> Every row is a planning pattern for {e(ind.lower())}, not evidence of a delivered client project. The KPI column lists what to track, not results achieved. Standing governance note for this industry: <strong>{e(gov)}</strong>.</p>'
                  '<p>Pick a trigger, check the components, then set a baseline and holdout for the KPI before launch. Component names link to the matching service page.</p>'))
     for cat in CATS:
@@ -82,9 +78,6 @@ def _hub():
     cards = "".join(
         f'<a class="card link-card" href="{slug(i)}.html"><span class="tag">100 use cases</span><h3>{e(i)}</h3><p>{e(next(r["Governance note"] for r in _ROWS if r["Industry"] == i))}</p></a>' for i in INDUSTRIES)
     secs = []
-    sl = slider_html("../../")
-    if sl:
-        secs.append(("Featured programmes", sl))
     secs += [("Browse by industry", f'<div class="grid-3">{cards}</div>'),
              ("Ten lifecycle categories", "<ul class=\"checklist cols-2\">" + "".join(f"<li>{e(c)}: 10 per industry, 400 in total</li>" for c in CATS) + "</ul>"),
              ("What this library is", f'<p class="note"><strong>Illustrative designs.</strong> The library holds {len(_ROWS):,} planning patterns across {len(INDUSTRIES)} industries. They are not client engagements and carry no results. Each industry page keeps all 100 of its patterns together so they can be compared, instead of splitting them into thin single-row pages.</p>'

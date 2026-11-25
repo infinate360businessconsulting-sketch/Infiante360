@@ -454,3 +454,13 @@ body.dash{background:#f4f6fb;padding:24px 0}
 .banner-slider button:focus-visible{outline:3px solid #ff2b36;outline-offset:2px}
 .demo-fig{max-width:960px;margin:0 auto}
 .banner-slider .slide img{aspect-ratio:16/9;object-fit:contain;background:#0e1d3b}
+/* top-of-page rolling slider (content-matched per page) */
+.top-slider{padding:18px 0 0}
+.top-slider .banner-slider{max-width:1000px;box-shadow:0 8px 28px rgba(14,29,59,.18)}
+.top-slider .slide img{aspect-ratio:auto;max-height:clamp(200px,40vw,440px);width:100%;object-fit:contain;margin:0 auto}
+.banner-slider .slide{animation:slidefade .6s ease}
+@keyframes slidefade{from{opacity:.25}to{opacity:1}}
+.banner-slider .pause{position:absolute;top:10px;right:10px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(14,29,59,.7);color:#fff;font-size:12px;cursor:pointer}
+.banner-slider .pause[aria-pressed=true]{font-size:14px}
+@media (prefers-reduced-motion:reduce){.banner-slider .slide{animation:none}}
+@media (max-width:600px){.banner-slider .prev,.banner-slider .next{width:36px;height:36px;font-size:22px}}

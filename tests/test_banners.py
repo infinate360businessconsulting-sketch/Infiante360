@@ -23,3 +23,16 @@ class Banners(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TopSliderTests(unittest.TestCase):
+    def test_content_matching_and_exclusions(self):
+        import banners
+        page = lambda path, title, kw=(): dict(path=path, title=title, category="", keywords=list(kw))
+        names = lambda pg: [b["image"] for b in banners.select(pg)]
+        self.assertEqual(names(page("agentic/x.html", "MCP agents"))[0], "agentic-ai-mcp-program.webp")
+        self.assertEqual(names(page("research/a.html", "Market research intelligence"))[0], "research-ai-agent-orchestration.webp")
+        self.assertGreaterEqual(len(names(page("zzz.html", "unrelated"))), 3)
+        self.assertNotIn("training/corporate-training.html", [b["link"] for b in banners.select(page("training/corporate-training.html", "Corporate training"))])
+        self.assertEqual(banners.top_slider(page("lp/x.html", "Landing")), "")
+        self.assertIn("../assets/banners/", banners.top_slider(page("a/b.html", "AEP")))

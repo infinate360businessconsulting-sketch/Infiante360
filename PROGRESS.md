@@ -63,3 +63,9 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Created: src/content_extra.py (2 academy pages, flagged sitemap3), data/seo/extra_pages_register.json (disposition of every supplied file), data/distribution/rss_source_candidates.csv (unvalidated), tests/test_extra_pages.py
 - Updated: build.py (sitemap3.xml + robots), content_kb.py, content_industry.py (inbound links)
 - Not published: duplicate about/contact pages, standalone package site, other company's Trustpilot reviews, 50k keyword files, apps/agents (not run). See register.
+
+## 2026-11-25 top-of-page rolling slider
+- Created: assets/banners/research-ai-agent-orchestration.webp (9th banner, "TM" mark only)
+- Updated: src/banners.py (select() matches banner `topics` to page path/title/category/keywords, skips self-link, fallback fill to 3; top_slider()), content/banners.json (topics, fallback), build.py (top_slider first in <main>), assets/site.css, assets/site.js (5s auto-roll, pause button, swipe, arrow keys, pauses off-screen/hidden tab, none under reduced-motion), tests
+- Removed in-body sliders from home, use-case library and extra pages (now one slider per page, at top). No slider on lp/, corporate/, 404, legal pages.
+- Held: new "Explore Courses" banner (Industry Certification + Adobe logo), 5 research banners carrying the registered-trademark symbol (no registration documented), research banner with "RDSEARCH" typo, text-free globe, plus earlier 12 held.

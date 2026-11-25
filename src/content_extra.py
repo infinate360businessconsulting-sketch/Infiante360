@@ -1,7 +1,6 @@
 """Extra academy pages built from the owner-supplied Career Accelerator material (2026-11-25).
 Rewritten to the site pattern; flagged sitemap3 so they are listed in sitemap3.xml. No dates, hours, counts, reviews or outcome claims."""
 import html
-from banners import slider_html
 from content_cases import pills, REGISTER, WHATSAPP_MSG
 
 e = html.escape
@@ -14,11 +13,6 @@ SRC = [("Adobe Experience Platform documentation", f"{EL}/experience-platform"),
 def _table(head, rows):
     return ('<div class="table-wrap"><table><thead><tr>' + "".join(f"<th>{e(h)}</th>" for h in head) + "</tr></thead><tbody>"
             + "".join("<tr>" + "".join(f"<td>{e(c)}</td>" for c in r) + "</tr>" for r in rows) + "</tbody></table></div>")
-
-
-def _slider():
-    s = slider_html("../")
-    return [("Featured programmes", s)] if s else []
 
 
 PHASES = [("Days 1-15", "AEP core", "XDM, datasets, ingestion, Profile, Identity, governance, segmentation and Query Service.", "A Customer 360 data model"),
@@ -40,7 +34,7 @@ ROADMAP = dict(
     h1="90-day Adobe MarTech and Agentic AI learning roadmap", kicker="Academy · Roadmap", nav="90-day roadmap", schema="Article", category="Academy", date=DATE,
     keywords=["adobe martech learning roadmap", "aep learning path 90 days", "adobe experience platform study plan", "agentic ai martech roadmap", "martech career roadmap"],
     answer="This roadmap splits Adobe MarTech and Agentic AI learning into six 15-day phases: AEP core, Web SDK with CJA and AJO, Real-Time CDP, architect patterns, Agentic AI with MCP, and a capstone. Each phase ends with a piece of evidence you can show. A 14-day starter plan and a focus table help you decide what to learn first. It is a study plan, not a guarantee of any job or certification.",
-    sections=_slider() + [
+    sections=[
         ("Six phases, each with an output", _table(["Days", "Phase", "What you cover", "Evidence you produce"], PHASES)),
         ("14-day starter plan", _table(["Days", "Focus"], PLAN)),
         ("Where to focus first", '<p>The emphasis column is our suggested ordering for architecture-focused roles. Adjust it to the role you are targeting.</p>' + _table(["Capability", "Target", "Suggested emphasis", "Evidence to build"], FOCUS)),
@@ -69,7 +63,7 @@ PROJ2 = dict(
     h1="Adobe MarTech portfolio projects and interview scenarios", kicker="Academy · Portfolio", nav="Projects and scenarios", schema="Article", category="Academy", date=DATE,
     keywords=["adobe martech portfolio projects", "aep interview scenarios", "customer 360 project brief", "ajo interview scenario", "agentic ai portfolio project"],
     answer="This page lists ten enterprise-style project briefs, from Customer 360 to an Agentic AI assistant, and nine interview scenarios such as identity failure, streaming delay and AJO governance. Each is a practice brief to build or explain with synthetic data on sandbox or simulated environments. They create evidence of skill. They do not guarantee a job.",
-    sections=_slider() + [
+    sections=[
         ("Ten project briefs", _table(["#", "Project", "Flow you build"], [(str(i + 1), n, f) for i, (n, f) in enumerate(PROJECTS)])),
         ("Nine interview scenarios", _table(["Scenario", "What you should be able to explain"], SCEN)),
         ("How to use this page", '<ul class="checklist"><li>Pick one project and write a one-page design before building</li><li>Use synthetic data only; never real customer data</li><li>For each scenario, practise a two-minute explanation and a diagram</li><li>Keep the write-ups: they become your architecture stories</li></ul>'),

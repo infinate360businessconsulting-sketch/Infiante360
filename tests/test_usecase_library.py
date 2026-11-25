@@ -26,7 +26,7 @@ class Library(unittest.TestCase):
         import banners
         if banners.load():
             for p in L.LIBRARY_PAGES:
-                self.assertTrue(any("data-slider" in s[1] for s in p["sections"]), p["path"])
+                self.assertIn("data-slider", banners.top_slider(p), p["path"])
 
     def test_internal_links_resolve(self):
         paths = {p["path"] for p in L.LIBRARY_PAGES}

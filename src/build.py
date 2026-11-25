@@ -31,6 +31,7 @@ from content_academy import ACADEMY  # noqa: E402
 from content_events import EVENTS  # noqa: E402
 from content_cases import CASE_PAGES, SIMULATORS, REGISTER, WHATSAPP_MSG, LMS, BROCHURE, LI_GROUP  # noqa: E402
 from content_kb import KB_PAGES  # noqa: E402
+from banners import top_slider  # noqa: E402
 from content_growth import GROWTH_PAGES, LANDINGS, LEGAL  # noqa: E402
 from content_topics import TOPIC_INDEX  # noqa: E402
 from content_insights import INSIGHTS_PAGES  # noqa: E402
@@ -889,6 +890,7 @@ def body(p):
         if faq:
             bands.append(f'<section class="band band-plain"><div class="wrap narrow">{faq}</div></section>')
         main_html = f"""<main id="main">
+{top_slider(p)}
 {hero(p)}
 <div class="wrap answer-wrap"><div class="answer" role="note"><strong>Quick answer</strong><p>{e(p['answer'])}</p></div>{notice}</div>
 {''.join(bands)}
@@ -904,6 +906,7 @@ def body(p):
 </html>
 """
     main_html = f"""<main id="main">
+{top_slider(p)}
 {hero(p)}
 <div class="section"><div class="wrap">
 <div class="answer" role="note"><strong>Quick answer</strong><p>{e(p['answer'])}</p></div>{notice}

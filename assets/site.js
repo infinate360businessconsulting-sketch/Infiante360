@@ -230,20 +230,27 @@
   if ("requestIdleCallback" in window) requestIdleCallback(load, { timeout: 3000 }); else setTimeout(load, 1500);
 })();
 
-/* banner slider: manual controls, auto-advance only without reduced-motion, paused on hover/focus */
+/* banner slider: auto-rolls (5s) unless reduced-motion; pause button, hover/focus pause, swipe, arrow keys, pauses when off-screen or tab hidden */
 (function () {
   document.querySelectorAll("[data-slider]").forEach(function (root) {
-    var s = root.querySelectorAll(".slide"), d = root.querySelectorAll(".dot"), i = 0, t;
+    var s = root.querySelectorAll(".slide"), d = root.querySelectorAll(".dot"), i = 0, t, held = false, seen = true;
     if (s.length < 2) return;
+    var pb = root.querySelector(".pause"), rm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
     function go(n) { i = (n + s.length) % s.length; s.forEach(function (x, k) { x.hidden = k !== i; }); d.forEach(function (x, k) { if (k === i) x.setAttribute("aria-current", "true"); else x.removeAttribute("aria-current"); }); }
+    function stop() { if (t) clearInterval(t); t = null; }
+    function start() { stop(); if (!held && seen && !document.hidden && !rm) t = setInterval(function () { go(i + 1); }, 5000); }
     root.querySelector(".prev").addEventListener("click", function () { go(i - 1); });
     root.querySelector(".next").addEventListener("click", function () { go(i + 1); });
     d.forEach(function (x, k) { x.addEventListener("click", function () { go(k); }); });
-    if (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    function start() { stop(); t = setInterval(function () { go(i + 1); }, 6000); }
-    function stop() { if (t) clearInterval(t); t = null; }
+    if (pb) pb.addEventListener("click", function () { held = !held; pb.setAttribute("aria-pressed", held ? "true" : "false"); pb.setAttribute("aria-label", held ? "Resume banner rotation" : "Pause banner rotation"); pb.innerHTML = held ? "&#9654;" : "&#10074;&#10074;"; held ? stop() : start(); });
+    root.addEventListener("keydown", function (e) { if (e.key === "ArrowLeft") go(i - 1); else if (e.key === "ArrowRight") go(i + 1); });
+    var x0 = null;
+    root.addEventListener("touchstart", function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    root.addEventListener("touchend", function (e) { if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1)); x0 = null; }, { passive: true });
     root.addEventListener("mouseenter", stop); root.addEventListener("mouseleave", start);
     root.addEventListener("focusin", stop); root.addEventListener("focusout", start);
+    document.addEventListener("visibilitychange", function () { document.hidden ? stop() : start(); });
+    if ("IntersectionObserver" in window) new IntersectionObserver(function (en) { seen = en[0].isIntersecting; seen ? start() : stop(); }).observe(root);
     start();
   });
 })();

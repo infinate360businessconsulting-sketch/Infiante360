@@ -1,5 +1,5 @@
 {
-  "_help": "Add one object per banner. Put the image in assets/banners/ and set approved=true only after the owner has checked every claim on it (partner badges, learner counts, placement, salary, 'lifetime', dates). Unapproved or missing banners are never shown. Slider is hidden while the list is empty.",
+  "_help": "Add one object per banner. Put the image in assets/banners/ and set approved=true only after the owner has checked every claim on it (partner badges, learner counts, placement, salary, 'lifetime', dates). Unapproved or missing banners are never shown. Slider is hidden while the list is empty. 'topics' = lowercase substrings matched against each page's path, title, category and keywords; 'fallback' = may fill slider when fewer than 3 banners match.",
   "banners": [
     {
       "image": "martech-sme-live-program.webp",
@@ -8,7 +8,15 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "f1caac50-image.png"
+      "source": "f1caac50-image.png",
+      "topics": [
+        "martech",
+        "sme",
+        "accelerator",
+        "live program",
+        "architecture"
+      ],
+      "fallback": true
     },
     {
       "image": "aep-raw-data-to-experiences.webp",
@@ -17,7 +25,18 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "71f5895e-image.png"
+      "source": "71f5895e-image.png",
+      "topics": [
+        "aep",
+        "experience-platform",
+        "experience platform",
+        "xdm",
+        "schema",
+        "ingestion",
+        "customer 360",
+        "profile"
+      ],
+      "fallback": false
     },
     {
       "image": "real-time-cdp-course.webp",
@@ -26,7 +45,16 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "c544f16a-image.png"
+      "source": "c544f16a-image.png",
+      "topics": [
+        "cdp",
+        "audience",
+        "segment",
+        "destination",
+        "activation",
+        "identity"
+      ],
+      "fallback": false
     },
     {
       "image": "ajo-learn-journey-optimizer.webp",
@@ -35,7 +63,17 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "5844e061-image.png"
+      "source": "5844e061-image.png",
+      "topics": [
+        "ajo",
+        "journey-optimizer",
+        "journey optimizer",
+        "journey",
+        "campaign",
+        "decisioning",
+        "personali"
+      ],
+      "fallback": false
     },
     {
       "image": "agentic-ai-mcp-program.webp",
@@ -44,7 +82,16 @@
       "width": 1600,
       "height": 800,
       "approved": true,
-      "source": "70fdac49-image.png"
+      "source": "70fdac49-image.png",
+      "topics": [
+        "agentic",
+        "mcp",
+        "agent",
+        "genai",
+        "generative",
+        "llm"
+      ],
+      "fallback": false
     },
     {
       "image": "corporate-training-capability.webp",
@@ -53,7 +100,16 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "a1234a06-image.png"
+      "source": "a1234a06-image.png",
+      "topics": [
+        "corporate",
+        "team",
+        "enablement",
+        "capability",
+        "workshop",
+        "upskill"
+      ],
+      "fallback": true
     },
     {
       "image": "cxo-hive-leadership.webp",
@@ -62,7 +118,19 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "424cb5a3-image.png"
+      "source": "424cb5a3-image.png",
+      "topics": [
+        "executive",
+        "cxo",
+        "leadership",
+        "cdo",
+        "cmo",
+        "governance",
+        "strategy",
+        "roi",
+        "transformation"
+      ],
+      "fallback": true
     },
     {
       "image": "business-consulting-architecture.webp",
@@ -71,7 +139,36 @@
       "width": 1600,
       "height": 900,
       "approved": true,
-      "source": "6d8bc4d3-image.png"
+      "source": "6d8bc4d3-image.png",
+      "topics": [
+        "consult",
+        "advisory",
+        "audit",
+        "review",
+        "implementation",
+        "services/",
+        "solution"
+      ],
+      "fallback": false
+    },
+    {
+      "image": "research-ai-agent-orchestration.webp",
+      "alt": "Research and Intelligence: AI agent orchestration across market intelligence, data signals, reporting and decision intelligence",
+      "link": "research/index.html",
+      "width": 1600,
+      "height": 900,
+      "approved": true,
+      "source": "a7fed058-image.png",
+      "topics": [
+        "research",
+        "intelligence",
+        "orchestration",
+        "multi-agent",
+        "signals",
+        "insight",
+        "market"
+      ],
+      "fallback": false
     }
   ]
 }

@@ -1,7 +1,6 @@
 """Homepage (long-form corporate layout) and shared fee constant."""
 from visuals import architecture_svg
 from content_academy import program_cards, course_tiles
-from banners import slider_html
 
 COURSE_FEE_INR = 60000
 COURSE_FEE_LABEL = "₹60,000"
@@ -40,7 +39,7 @@ HOME = dict(
     keywords=["adobe martech consulting", "adobe experience platform training", "aep consultant india", "martech consultant", "agentic ai martech", "adobe experience cloud consultant"],
     answer="Infiante360 is an Adobe MarTech consulting and learning brand. We help enterprises design and implement Adobe Experience Platform, Real-Time CDP, Journey Optimizer and Customer Journey Analytics, and help professionals build practical AEP and Agentic AI skills through hands-on training and free guides.",
     schema="WebPage",
-    sections=([("Featured programmes", slider_html(), "plain", "Now open")] if slider_html() else []) + [
+    sections=[
         ("Watch the demo", '<figure class="demo-fig"><video controls preload="none" playsinline width="1280" height="720" poster="assets/media/infinate360-demo-poster.jpg" style="width:100%;height:auto;border-radius:16px;background:#0e1d3b"><source src="assets/media/infinate360-demo.mp4" type="video/mp4">Your browser cannot play this video. <a href="assets/media/infinate360-demo.mp4">Download the MP4</a>.</video><figcaption>A 10-second animated introduction to connected customer data. It contains no client results or statistics.</figcaption></figure>', "plain", "Demo"),
         ("Technologies we work with", '<div class="logo-band"><span>Adobe Experience Platform</span><span>Real-Time CDP</span><span>Journey Optimizer</span><span>Customer Journey Analytics</span><span>Adobe Analytics</span><span>Web SDK &amp; Tags</span><span>Target</span><span>AEM</span><span>Marketo Engage</span><span>Snowflake</span><span>BigQuery</span><span>Databricks</span><span>Kafka</span><span>Agentic AI &amp; MCP</span></div>', "plain", "Platform expertise"),
         ("Three journeys, one ecosystem", """
