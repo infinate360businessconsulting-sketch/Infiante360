@@ -29,6 +29,11 @@ jobs:
           python3 scripts/seo_inventory.py _site seo-report https://infiante360techacademy.com
           cat seo-report/seo-health.md >> "$GITHUB_STEP_SUMMARY"
           python3 scripts/seo_report_print.py seo-report
+      - name: Run deterministic agent pipeline on the built site (read-only; never deploys)
+        run: |
+          python3 agents/orchestrator.py pipeline --built _site
+          python3 agents/orchestrator.py status
+          for f in content_freshness structured_data security_privacy; do echo "## $f"; head -c 2500 data/agents/out/$f.json; echo; done
       - uses: actions/upload-artifact@v4
         with:
           name: seo-report

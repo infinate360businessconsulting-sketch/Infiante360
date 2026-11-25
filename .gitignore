@@ -1,3 +1,6 @@
 _site/
 __pycache__/
 public/
+
+# agent runtime state (local ledger, locks, outputs)
+data/agents/
