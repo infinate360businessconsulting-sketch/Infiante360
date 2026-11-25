@@ -114,3 +114,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Legal name PAVAN BABU GANDLA; brand "Infiante360 Business Consulting & Tech Academy"; email + phone (+91 82968 93895) shown in footer (mailto/tel links), privacy, about, contact, FAQ, corporate training, services and legal pages; corporate/, lms-site/ and email templates updated.
 - Second number +91 9490164044 only in Organization JSON-LD (not visible). Structured data normally should match visible content - review.
 - Open: payment/billing and refund terms not supplied (no policy invented); no checkout pages exist; SEO section of the brief not received.
+
+## Course catalogue (2026-11-26)
+- `data/catalogue/catalogue.json`: owner's 15 categories / 150 topics from the TrainerCentral brief. All draft except 11 mapped to existing live pages.
+- `src/content_catalogue.py` renders `academy/catalogue.html`: names only published courses (Know more links), counts the rest as "in planning". Linked from links.html.
+- Open: SAP, Guidewire, Microsoft, IBM, cybersecurity, software courses need curriculum, instructor, fee, schedule before any page. Banners for them not made. TrainerCentral email not sent (recipient not given). Not built locally (CI validates).

@@ -1,0 +1,830 @@
+{
+ "note": "Owner-supplied initial catalogue (2026-11-26). All courses are draft until curriculum, instructor, price and schedule are approved. Only status=published entries with a page are shown publicly.",
+ "categories": [
+  {
+   "category": "Adobe Experience Cloud",
+   "courses": [
+    {
+     "title": "Adobe Experience Platform (AEP)",
+     "status": "published",
+     "page": "academy/programs/aep-ajo-cja-foundation-advanced.html"
+    },
+    {
+     "title": "Adobe Real-Time CDP",
+     "status": "published",
+     "page": "academy/courses/rtcdp-training.html"
+    },
+    {
+     "title": "Adobe Journey Optimizer (AJO)",
+     "status": "published",
+     "page": "academy/courses/ajo-training.html"
+    },
+    {
+     "title": "Customer Journey Analytics (CJA)",
+     "status": "published",
+     "page": "academy/courses/cja-training.html"
+    },
+    {
+     "title": "Adobe Analytics",
+     "status": "published",
+     "page": "academy/courses/adobe-analytics-training.html"
+    },
+    {
+     "title": "Adobe Web SDK",
+     "status": "published",
+     "page": "academy/courses/web-sdk-training.html"
+    },
+    {
+     "title": "Adobe Mobile SDK",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Experience Platform Tags / Launch",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Target",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Campaign Classic",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Campaign Standard",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Experience Manager Sites",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Experience Manager Assets",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe Workfront",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Adobe CX Enterprise & Agentic Enablement",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Agentic AI & Generative AI",
+   "courses": [
+    {
+     "title": "Agentic AI Foundations",
+     "status": "published",
+     "page": "academy/courses/agentic-ai-training.html"
+    },
+    {
+     "title": "Advanced Agentic AI Architecture",
+     "status": "published",
+     "page": "academy/programs/agentic-ai-advanced-30-hour.html"
+    },
+    {
+     "title": "Model Context Protocol (MCP)",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Enterprise AI Coworkers",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Multi-Agent Systems",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "OpenAI API Development",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Claude API & Claude Code",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "LangChain Development",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "LangGraph Orchestration",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Retrieval-Augmented Generation (RAG)",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "LLM Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "AI Marketing Automation",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "AI Governance & Security",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Prompt & Context Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Enterprise AI Workflow Automation",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "MarTech & Customer Experience",
+   "courses": [
+    {
+     "title": "MarTech Architecture Masterclass",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Customer 360 Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Customer Data Platform Architecture",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Digital Marketing Technology",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Marketing Automation",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Omnichannel Personalization",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Customer Journey Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Customer Experience Strategy",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Marketing Attribution",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Consent & Data Governance",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Data Engineering",
+   "courses": [
+    {
+     "title": "Data Engineering Foundations",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Advanced SQL",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Python for Data Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Apache Spark",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "PySpark",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Apache Kafka",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Apache Airflow",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Databricks",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "dbt Analytics Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Data Modeling",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "ETL & ELT Architecture",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Data Quality & Observability",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Snowflake & Modern Data Cloud",
+   "courses": [
+    {
+     "title": "Snowflake Fundamentals",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowflake Advanced Architecture",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowpark Development",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowflake Data Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowflake Administration",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowflake Cortex AI",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowflake Performance Optimization",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Snowflake Customer 360 & MDM",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Cloud Computing & DevOps",
+   "courses": [
+    {
+     "title": "AWS Cloud Practitioner Preparation",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "AWS Solutions Architecture",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "AWS Data Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "AWS Bedrock",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Azure Fundamentals",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Azure Data Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Google Cloud Fundamentals",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Google Cloud Data Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Google Vertex AI",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Docker & Kubernetes",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Terraform",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "CI/CD & DevOps Engineering",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "SAP Technologies",
+   "courses": [
+    {
+     "title": "SAP S/4HANA",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP FICO",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP MM",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP SD",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP ABAP",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP Basis",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP SuccessFactors",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP Business Technology Platform",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP Analytics Cloud",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SAP Integration Suite",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Guidewire Insurance Technology",
+   "courses": [
+    {
+     "title": "Guidewire PolicyCenter",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire BillingCenter",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire ClaimCenter",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire InsuranceSuite",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire Integration",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire Configuration",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire Gosu Programming",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire Cloud",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire Business Analyst",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire Testing",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Guidewire DataHub & InfoCenter",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Microsoft Technologies",
+   "courses": [
+    {
+     "title": "Microsoft Power BI",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Power Apps",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Power Automate",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Dynamics 365 CRM",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Dynamics 365 Finance",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Fabric",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft Copilot Studio",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microsoft SQL Server",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "IBM Enterprise Technologies",
+   "courses": [
+    {
+     "title": "IBM watsonx.ai",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM watsonx.data",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM watsonx.governance",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM DataStage",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM API Connect",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM MQ",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM App Connect",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "IBM Cloud Pak for Data",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Cybersecurity & Identity Management",
+   "courses": [
+    {
+     "title": "Cybersecurity Fundamentals",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SailPoint IdentityIQ",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SailPoint Identity Security Cloud",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "SailPoint Identity Governance",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "CyberArk Privileged Access Management",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "CyberArk Identity Security",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "CyberArk Secrets Management",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Zero Trust Architecture",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Cloud Security",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Enterprise Identity & Access Management",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Analytics & Business Intelligence",
+   "courses": [
+    {
+     "title": "Google Analytics 4",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Google Tag Manager",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Looker Studio",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Tableau",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Advanced Microsoft Excel",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Digital Analytics Architecture",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Product Analytics",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Business Intelligence & Reporting",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Software Development & Integration",
+   "courses": [
+    {
+     "title": "Python Programming",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Java Programming",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "JavaScript & TypeScript",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "React Development",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Node.js Development",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "REST API Development",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Postman API Testing",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Microservices Architecture",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Career Accelerator & Executive Programs",
+   "courses": [
+    {
+     "title": "Six-Day MarTech SME Accelerator",
+     "status": "published",
+     "page": "lp/martech-sme-accelerator.html"
+    },
+    {
+     "title": "Adobe MarTech & Agentic AI Career Accelerator",
+     "status": "published",
+     "page": "training/index.html"
+    },
+    {
+     "title": "20-Day AEP Mastery",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Advanced Digital Architect & CDP Master",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Extreme MarTech Battle Lab",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Customer 360 Engineer Program",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "RT-CDP & Journey Engineering",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "CXO Hive Executive Leadership Program",
+     "status": "published",
+     "page": "academy/programs/executive-architecture-leadership.html"
+    },
+    {
+     "title": "Technical Interview Preparation",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Professional Architecture Mentoring",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  },
+  {
+   "category": "Corporate Training & Enterprise Enablement",
+   "courses": [
+    {
+     "title": "Adobe CX Enterprise Agentic Enablement",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Enterprise MarTech Enablement",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Corporate Generative AI Training",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Customer Data Platform Enablement",
+     "status": "draft",
+     "page": null
+    },
+    {
+     "title": "Enterprise Data Engineering Bootcamp",
+     "status": "draft",
+     "page": null
+    }
+   ]
+  }
+ ]
+}
