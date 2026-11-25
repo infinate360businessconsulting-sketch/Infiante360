@@ -615,11 +615,16 @@ def jsonld(p):
         page["mainEntity"] = {"@id": PERSON_ID}
     if p["schema"] == "FAQPage":
         page["mainEntity"] = [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in p["faqs"]]
+    if p["schema"] == "CollectionPage" and p.get("list_items"):
+        page["mainEntity"] = {"@type": "ItemList", "numberOfItems": len(p["list_items"]), "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": n, "url": abs_url(u)} for i, (n, u) in enumerate(p["list_items"])]}
     graph.append(page)
     if p["schema"] in ("Article", "HowTo"):
         art = {"@type": "Article", "@id": url + "#article", "headline": p["h1"][:110], "description": p["desc"], "mainEntityOfPage": {"@id": url + "#webpage"},
                "author": {"@id": ORG_ID}, "publisher": {"@id": ORG_ID}, "dateModified": TODAY, "datePublished": p.get("date", TODAY), "inLanguage": "en",
                "image": BASE + "assets/" + (p.get("og_image") or "og-image.png"), "keywords": ", ".join(p.get("keywords", []))}
+        if p["path"].startswith("research/") and p.get("sources"):
+            art["citation"] = [{"@type": "CreativeWork", "name": n, "url": u} for n, u in p["sources"]]
         graph.append(art)
     if p["schema"] == "HowTo" and p.get("steps"):
         graph.append({"@type": "HowTo", "@id": url + "#howto", "name": p["h1"], "description": p["answer"],

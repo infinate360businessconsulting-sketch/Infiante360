@@ -52,7 +52,8 @@ def _hub():
                 sections=[("Read the research", body),
                           ("How we publish", '<ul class="checklist"><li>Primary sources only: vendor documentation and standards bodies</li><li>Hypothetical examples are labelled and never presented as client results</li><li>No invented statistics, rankings or vendor capabilities</li><li>One page per distinct question; existing pages are updated instead of duplicated</li></ul>'),
                           ("What is planned", f'<p>A topic registry tracks {reg["total"]} research topics: {c["exists"]} are already covered by existing pages, {c["new"]} are candidates for new research, and {c["blocked_data"]} need authorised job-market data before they can be written. Candidates are published only when the research is complete.</p>')],
-                faqs=[], related=["guides/what-is-mcp.html", "insights/index.html", "services/agentic-ai-mcp.html"])
+                faqs=[], related=["guides/what-is-mcp.html", "insights/index.html", "services/agentic-ai-mcp.html"],
+                list_items=[(t, ("research/" + u) if not u.startswith("..") else u[3:]) for t, u in links])
 
 
 RESEARCH_PAGES.insert(0, _hub())
