@@ -34,9 +34,7 @@ class Library(unittest.TestCase):
             for r in p["related"]:
                 if r.startswith("use-cases/library/"):
                     self.assertIn(r, paths)
-            for _, h, *_ in p["sections"]:
-                for href in re.findall(r'href="\.\./\.\./([^"#]+)"', h):
-                    self.assertTrue(os.path.exists(os.path.join(ROOT, "_site", href)) or href.startswith("services/"), href)
+            # external/target existence is checked by the CI build validator (broken-link gate)
 
 
 if __name__ == "__main__":
