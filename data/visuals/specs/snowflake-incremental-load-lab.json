@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-SNOWFLAKEINCREMENTALLO",
+ "slug": "snowflake-incremental-load-lab",
+ "page": "guides/snowflake-incremental-load-lab.html",
+ "title": "Snowflake incremental load",
+ "subtitle": "Staging, merge, watermark, reconcile",
+ "keyword": "snowflake incremental load",
+ "kind": "flow",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "A rerun must change nothing.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: snowflake incremental load - stage, merge, watermark, reconcile.",
+ "caption": "Snowflake incremental load: schematic.",
+ "lanes": [
+  {
+   "title": "Stage",
+   "items": [
+    "Changed rows",
+    "Change timestamp"
+   ]
+  },
+  {
+   "title": "Merge",
+   "items": [
+    "Match on key",
+    "Update or insert"
+   ]
+  },
+  {
+   "title": "Watermark",
+   "items": [
+    "Highest change time"
+   ]
+  },
+  {
+   "title": "Reconcile",
+   "items": [
+    "Counts match",
+    "Rerun is safe"
+   ]
+  }
+ ]
+}

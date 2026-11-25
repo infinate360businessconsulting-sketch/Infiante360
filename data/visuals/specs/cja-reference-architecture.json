@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-CJAREFERENCEARCHITECTU",
+ "slug": "cja-reference-architecture",
+ "page": "guides/cja-reference-architecture.html",
+ "title": "Customer Journey Analytics architecture",
+ "subtitle": "Datasets, connection, data view, workspace",
+ "keyword": "customer journey analytics architecture",
+ "kind": "layers",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "Give every data view an owner.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: customer journey analytics architecture - datasets, connection, data view, workspace.",
+ "caption": "Customer Journey Analytics architecture: schematic.",
+ "layers": [
+  {
+   "title": "Datasets",
+   "items": [
+    "Events",
+    "Lookups"
+   ]
+  },
+  {
+   "title": "Connection",
+   "items": [
+    "Person ID join"
+   ]
+  },
+  {
+   "title": "Data view",
+   "items": [
+    "Metrics",
+    "Dimensions"
+   ]
+  },
+  {
+   "title": "Workspace",
+   "items": [
+    "Reports",
+    "Analysis"
+   ]
+  }
+ ]
+}

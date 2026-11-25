@@ -1,0 +1,506 @@
+{
+ "updated": "2026-11-25",
+ "rule": "Pillars are decisions about existing hubs, not new pages. A new pillar page needs a distinct intent and owner approval.",
+ "pillars": [
+  {
+   "pillar_id": 1,
+   "topic": "Adobe Experience Platform",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/training/",
+   "supporting_page": "/adobe-experience-platform/career-path.html",
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 2,
+   "topic": "Adobe Real-Time CDP",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/rtcdp-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 3,
+   "topic": "Adobe Journey Optimizer",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/ajo-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 4,
+   "topic": "Customer Journey Analytics",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/cja-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 5,
+   "topic": "Adobe Analytics",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/adobe-analytics-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 6,
+   "topic": "Adobe Web SDK and Tags",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/web-sdk-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 7,
+   "topic": "Adobe Experience Cloud",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/stacks/adobe-experience-cloud.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 8,
+   "topic": "Agentic AI for MarTech",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/agentic-ai-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 9,
+   "topic": "Model Context Protocol",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/programs/agentic-ai-mcp-track.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 10,
+   "topic": "AEP certification preparation",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/courses/aep-certification-prep.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 11,
+   "topic": "AEP interview preparation",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/adobe-experience-platform/interview-questions.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 12,
+   "topic": "MarTech architecture",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/adobe-experience-platform/architecture.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 13,
+   "topic": "Adobe MarTech career accelerator",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/training/",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 14,
+   "topic": "AEP foundations",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/aep-foundations-batch.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 15,
+   "topic": "Adobe sandbox labs",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/simulators.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 16,
+   "topic": "Adobe MarTech corporate enablement",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/training/corporate-training.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 17,
+   "topic": "Executive MarTech and AI leadership",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/programs/executive-architecture-leadership.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 18,
+   "topic": "AI engineering",
+   "audience": "Learners / L&D",
+   "canonical_hub": "/academy/programs/ai-engineering-bootcamp.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 19,
+   "topic": "Adobe Experience Platform implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/aep-consulting.html",
+   "supporting_page": "/adobe-experience-platform/implementation-guide.html",
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 20,
+   "topic": "Real-Time CDP implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/real-time-cdp.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 21,
+   "topic": "Adobe Journey Optimizer implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/adobe-journey-optimizer.html",
+   "supporting_page": "/academy/ajo-best-practices-handout.html",
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 22,
+   "topic": "Customer Journey Analytics implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/customer-journey-analytics.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 23,
+   "topic": "Adobe Web SDK implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/web-sdk-adobe-tags.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 24,
+   "topic": "Adobe Analytics implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/adobe-analytics.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 25,
+   "topic": "Adobe Target personalization",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/adobe-target-personalization.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 26,
+   "topic": "Adobe Experience Manager",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/aem-consulting.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 27,
+   "topic": "Adobe Marketo Engage",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/adobe-campaign-marketo.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 28,
+   "topic": "Adobe Campaign",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/adobe-campaign-marketo.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 29,
+   "topic": "Adobe Commerce",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/adobe-experience-cloud.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 30,
+   "topic": "IT strategy and advisory",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/martech-strategy-advisory.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 31,
+   "topic": "Digital transformation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/corporate/services/digital-transformation.html",
+   "supporting_page": "/insights/digital-transformation.html",
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 32,
+   "topic": "Enterprise architecture",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/adobe-experience-platform/architecture.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 33,
+   "topic": "MarTech stack audit",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/lp/aep-architecture-review.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 34,
+   "topic": "Fractional MarTech advisory",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/martech-strategy-advisory.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 35,
+   "topic": "Agentic AI implementation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/agentic-ai-mcp.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 36,
+   "topic": "Enterprise MCP integration",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/agentic-ai-mcp.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 37,
+   "topic": "Customer data engineering",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/data-engineering.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 38,
+   "topic": "Snowflake for MarTech",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/cloud-data-platforms.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 39,
+   "topic": "BigQuery for MarTech",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/cloud-data-platforms.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 40,
+   "topic": "Databricks for MarTech",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/cloud-data-platforms.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 41,
+   "topic": "Kafka streaming for customer data",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/data-engineering.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 42,
+   "topic": "Customer 360 and identity resolution",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/customer-360-identity-resolution.html",
+   "supporting_page": "/adobe-experience-platform/identity-service.html",
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 43,
+   "topic": "Real-time personalization",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/solutions/real-time-personalization.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 44,
+   "topic": "Retention and churn prevention",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/solutions/churn-prevention.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 45,
+   "topic": "B2B lead-to-revenue",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/solutions/b2b-lead-to-revenue.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 46,
+   "topic": "MarTech consent and governance",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/consent-governance-privacy.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 47,
+   "topic": "Adobe MarTech staff augmentation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/staff-augmentation.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 48,
+   "topic": "BFSI customer experience transformation",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/use-cases/industries/banking.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 49,
+   "topic": "Retail omnichannel customer experience",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/use-cases/industries/retail.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  },
+  {
+   "pillar_id": 50,
+   "topic": "AI search visibility GEO and AEO",
+   "audience": "CTO / CMO / CDO / architecture leads",
+   "canonical_hub": "/services/ai-search-visibility-geo-aeo.html",
+   "supporting_page": null,
+   "hub_exists": true,
+   "decision": "Strengthen the existing hub and link supporting guides; no new pillar page",
+   "evidence_requirement": "Expert evidence, diagram, checklist and relevant CTA"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "IMG-ART-TESTREALTIMEPERSONALI",
+ "slug": "test-real-time-personalization",
+ "page": "guides/test-real-time-personalization.html",
+ "title": "Real-time personalization tests",
+ "subtitle": "Data, decision, fallback, measurement",
+ "keyword": "real-time personalization tests",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Launch only when every level passes.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: real-time personalization tests - data, decision, fallback, measure.",
+ "caption": "Real-time personalization tests: schematic.",
+ "lanes": [
+  {
+   "title": "Data",
+   "items": [
+    "Event arrives in time"
+   ]
+  },
+  {
+   "title": "Decision",
+   "items": [
+    "Test profile per audience"
+   ]
+  },
+  {
+   "title": "Fallback",
+   "items": [
+    "Default if data missing"
+   ]
+  },
+  {
+   "title": "Measure",
+   "items": [
+    "Control group"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-LOANONBOARDINGEVENTMO",
+ "slug": "loan-onboarding-event-model",
+ "page": "guides/loan-onboarding-event-model.html",
+ "title": "Loan onboarding event model",
+ "subtitle": "From enquiry to decision, with exits that stop messages",
+ "keyword": "loan onboarding event model",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Define exit events before building any message.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: loan onboarding event model - enquiry, progress, decision, rules.",
+ "caption": "Loan onboarding event model: schematic.",
+ "lanes": [
+  {
+   "title": "Enquiry",
+   "items": [
+    "application_started",
+    "Anonymous ID"
+   ]
+  },
+  {
+   "title": "Progress",
+   "items": [
+    "documents_uploaded",
+    "verification_pending"
+   ]
+  },
+  {
+   "title": "Decision",
+   "items": [
+    "decision_made",
+    "Stops all nudges"
+   ]
+  },
+  {
+   "title": "Rules",
+   "items": [
+    "Consent check",
+    "Suppress while open"
+   ]
+  }
+ ]
+}

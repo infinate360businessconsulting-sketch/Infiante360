@@ -34,3 +34,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - 20 articles (A-001..A-020) from the 365-idea plan (ids 351-365, 21, 22, 235, 246, 243): src/content_articles.py, content_articles2.py, queue in data/seo/article_queue.json (345 still queued, none generated).
 - Child sitemaps (sitemaps/<category>.xml, images.xml) and sitemap-index.xml added; sitemap.xml remains the complete list. robots.txt lists the index. Submission to Search Console is the owner's step.
 - Article hero images not yet generated (pipeline supports it; next batch).
+
+## 2026-11-25 batch 2
+- Article diagrams: 20 specs (scripts/make_article_specs.py) -> SVG/WebP/OG via visual_engine + image_pipeline (25 images total, quality gate 0 failures); each article now has its own og:image and an inline diagram.
+- data/seo/pillar_decisions.json: all 50 pillars map to an existing hub (no new pillar pages; decision per pillar recorded).
+- data/seo/ai_visibility_registry.json/.csv: 100 neutral queries mapped to target URLs, every result "Not tested" (no fabricated results).

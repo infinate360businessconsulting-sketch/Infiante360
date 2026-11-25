@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-WEBSDKCONSENTREGRESSI",
+ "slug": "web-sdk-consent-regression-testing",
+ "page": "guides/web-sdk-consent-regression-testing.html",
+ "title": "Web SDK consent regression test",
+ "subtitle": "Same matrix on every release",
+ "keyword": "web sdk consent regression test",
+ "kind": "flow",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "Technical evidence, not legal proof.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: web sdk consent regression test - set state, record, compare, evidence.",
+ "caption": "Web SDK consent regression test: schematic.",
+ "lanes": [
+  {
+   "title": "Set state",
+   "items": [
+    "Clean browser",
+    "Choose option"
+   ]
+  },
+  {
+   "title": "Record",
+   "items": [
+    "Network calls",
+    "Payloads"
+   ]
+  },
+  {
+   "title": "Compare",
+   "items": [
+    "Expected row"
+   ]
+  },
+  {
+   "title": "Evidence",
+   "items": [
+    "Date and build",
+    "Files kept"
+   ]
+  }
+ ]
+}

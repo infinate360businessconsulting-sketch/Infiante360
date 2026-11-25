@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-HEALTHCAREDATAMINIMIZA",
+ "slug": "healthcare-data-minimization-checklist",
+ "page": "guides/healthcare-data-minimization-checklist.html",
+ "title": "Healthcare data minimization",
+ "subtitle": "Purpose first, fewest fields, clear limits",
+ "keyword": "healthcare data minimization",
+ "kind": "flow",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "General guidance, not legal advice.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: healthcare data minimization - purpose, fields, controls, review.",
+ "caption": "Healthcare data minimization: schematic.",
+ "lanes": [
+  {
+   "title": "Purpose",
+   "items": [
+    "One sentence per journey"
+   ]
+  },
+  {
+   "title": "Fields",
+   "items": [
+    "Remove unused",
+    "Label sensitive"
+   ]
+  },
+  {
+   "title": "Controls",
+   "items": [
+    "Retention",
+    "Role access"
+   ]
+  },
+  {
+   "title": "Review",
+   "items": [
+    "Destinations",
+    "Audit trail"
+   ]
+  }
+ ]
+}

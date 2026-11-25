@@ -1,0 +1,43 @@
+{
+ "id": "IMG-ART-IDENTITYGRAPHCOLLAPSE",
+ "slug": "identity-graph-collapse-test-lab",
+ "page": "guides/identity-graph-collapse-test-lab.html",
+ "title": "Identity graph collapse lab",
+ "subtitle": "Synthetic data with deliberate traps",
+ "keyword": "identity graph collapse lab",
+ "kind": "flow",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "Repeat after any identity rule change.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: identity graph collapse lab - create, add traps, load, inspect.",
+ "caption": "Identity graph collapse lab: schematic.",
+ "lanes": [
+  {
+   "title": "Create",
+   "items": [
+    "Twenty fictional people"
+   ]
+  },
+  {
+   "title": "Add traps",
+   "items": [
+    "Shared tablet",
+    "Family email"
+   ]
+  },
+  {
+   "title": "Load",
+   "items": [
+    "Sandbox",
+    "Production path"
+   ]
+  },
+  {
+   "title": "Inspect",
+   "items": [
+    "Who merged and why"
+   ]
+  }
+ ]
+}

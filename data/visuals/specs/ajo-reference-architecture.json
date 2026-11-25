@@ -1,0 +1,54 @@
+{
+ "id": "IMG-ART-AJOREFERENCEARCHITECTU",
+ "slug": "ajo-reference-architecture",
+ "page": "guides/ajo-reference-architecture.html",
+ "title": "Journey Optimizer reference architecture",
+ "subtitle": "Data, orchestration, content, channels, governance",
+ "keyword": "journey optimizer reference architecture",
+ "kind": "layers",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Verify capabilities against current documentation.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: journey optimizer reference architecture - data, orchestration, content, channels, governance.",
+ "caption": "Journey Optimizer reference architecture: schematic.",
+ "layers": [
+  {
+   "title": "Data",
+   "items": [
+    "Profiles",
+    "Events",
+    "Audiences"
+   ]
+  },
+  {
+   "title": "Orchestration",
+   "items": [
+    "Journeys",
+    "Triggers"
+   ]
+  },
+  {
+   "title": "Content",
+   "items": [
+    "Templates",
+    "Offers"
+   ]
+  },
+  {
+   "title": "Channels",
+   "items": [
+    "Email",
+    "Push",
+    "SMS"
+   ]
+  },
+  {
+   "title": "Governance",
+   "items": [
+    "Consent",
+    "Frequency"
+   ]
+  }
+ ]
+}

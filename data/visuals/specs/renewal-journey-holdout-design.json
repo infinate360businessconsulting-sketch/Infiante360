@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
+ "slug": "renewal-journey-holdout-design",
+ "page": "guides/renewal-journey-holdout-design.html",
+ "title": "Renewal holdout design",
+ "subtitle": "Random holdout to measure what the journey adds",
+ "keyword": "renewal holdout design",
+ "kind": "flow",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "Size the groups from baseline rate and the smallest lift that matters.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: renewal holdout design - eligible, randomise, treat, compare.",
+ "caption": "Renewal holdout design: schematic.",
+ "lanes": [
+  {
+   "title": "Eligible",
+   "items": [
+    "Customers due to renew"
+   ]
+  },
+  {
+   "title": "Randomise",
+   "items": [
+    "Assign once",
+    "Keep fixed"
+   ]
+  },
+  {
+   "title": "Treat",
+   "items": [
+    "Journey group",
+    "Holdout group"
+   ]
+  },
+  {
+   "title": "Compare",
+   "items": [
+    "Renewal rate",
+    "Agreed stop rules"
+   ]
+  }
+ ]
+}

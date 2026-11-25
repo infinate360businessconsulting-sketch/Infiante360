@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-CJABACKFILLRECONCILIAT",
+ "slug": "cja-backfill-reconciliation-workbook",
+ "page": "guides/cja-backfill-reconciliation-workbook.html",
+ "title": "CJA backfill reconciliation",
+ "subtitle": "Prove the data before sign-off",
+ "keyword": "cja backfill reconciliation",
+ "kind": "flow",
+ "accent": "orange",
+ "kicker": "Infiante360 guide",
+ "band": "Agree the tolerance in advance.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: cja backfill reconciliation - scope, compare, explain, sign off.",
+ "caption": "CJA backfill reconciliation: schematic.",
+ "lanes": [
+  {
+   "title": "Scope",
+   "items": [
+    "Dataset",
+    "Date range"
+   ]
+  },
+  {
+   "title": "Compare",
+   "items": [
+    "Daily counts",
+    "Distinct people"
+   ]
+  },
+  {
+   "title": "Explain",
+   "items": [
+    "Each difference",
+    "Cause"
+   ]
+  },
+  {
+   "title": "Sign off",
+   "items": [
+    "Agreed tolerance",
+    "Owner approves"
+   ]
+  }
+ ]
+}

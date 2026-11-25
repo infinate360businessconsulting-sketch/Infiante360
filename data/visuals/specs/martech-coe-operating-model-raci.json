@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-MARTECHCOEOPERATINGMO",
+ "slug": "martech-coe-operating-model-raci",
+ "page": "guides/martech-coe-operating-model-raci.html",
+ "title": "MarTech CoE operating model",
+ "subtitle": "Scope, owners, cadence",
+ "keyword": "martech coe operating model",
+ "kind": "layers",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "A CoE that approves everything becomes a bottleneck.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: martech coe operating model - intake, standards, architecture, enablement.",
+ "caption": "MarTech CoE operating model: schematic.",
+ "layers": [
+  {
+   "title": "Intake",
+   "items": [
+    "Weekly review",
+    "Ranked backlog"
+   ]
+  },
+  {
+   "title": "Standards",
+   "items": [
+    "Data and platform",
+    "Quarterly review"
+   ]
+  },
+  {
+   "title": "Architecture",
+   "items": [
+    "Decision records"
+   ]
+  },
+  {
+   "title": "Enablement",
+   "items": [
+    "Docs",
+    "Training"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-SAASPRODUCTUSAGESIGNA",
+ "slug": "saas-product-usage-signals",
+ "page": "guides/saas-product-usage-signals.html",
+ "title": "SaaS usage signals taxonomy",
+ "subtitle": "Few meaningful events, signals computed",
+ "keyword": "saas usage signals taxonomy",
+ "kind": "flow",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "Do not stream every click.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: saas usage signals taxonomy - events, signals, cdp, warehouse.",
+ "caption": "SaaS usage signals taxonomy: schematic.",
+ "lanes": [
+  {
+   "title": "Events",
+   "items": [
+    "object_action names",
+    "User and account IDs"
+   ]
+  },
+  {
+   "title": "Signals",
+   "items": [
+    "Activated",
+    "Expanding",
+    "At risk"
+   ]
+  },
+  {
+   "title": "CDP",
+   "items": [
+    "Curated signals only"
+   ]
+  },
+  {
+   "title": "Warehouse",
+   "items": [
+    "Detailed history"
+   ]
+  }
+ ]
+}

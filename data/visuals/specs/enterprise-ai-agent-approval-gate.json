@@ -1,0 +1,43 @@
+{
+ "id": "IMG-ART-ENTERPRISEAIAGENTAPPR",
+ "slug": "enterprise-ai-agent-approval-gate",
+ "page": "guides/enterprise-ai-agent-approval-gate.html",
+ "title": "AI agent approval gate",
+ "subtitle": "Tier actions by impact and reversibility",
+ "keyword": "ai agent approval gate",
+ "kind": "layers",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Agents cannot approve their own actions.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: ai agent approval gate - read only, reversible write, customer-facing, destructive or financial.",
+ "caption": "AI agent approval gate: schematic.",
+ "layers": [
+  {
+   "title": "Read only",
+   "items": [
+    "Automatic",
+    "Logged"
+   ]
+  },
+  {
+   "title": "Reversible write",
+   "items": [
+    "Sandbox only"
+   ]
+  },
+  {
+   "title": "Customer-facing",
+   "items": [
+    "Human approval"
+   ]
+  },
+  {
+   "title": "Destructive or financial",
+   "items": [
+    "Blocked",
+    "Two approvers"
+   ]
+  }
+ ]
+}

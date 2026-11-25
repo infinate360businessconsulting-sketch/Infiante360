@@ -24,8 +24,13 @@ def tbl(head, rows):
 
 
 def art(slug, title, desc, h1, kw, answer, sections, faqs, src, related, topic):
+    v = f"../assets/visuals/{slug}/"
+    fig = (f'<figure class="diagram"><picture><img src="{v}hero-800.webp" srcset="{v}hero-800.webp 800w, {v}hero.webp 1600w" sizes="(max-width: 900px) 100vw, 900px" '
+           f'width="1600" height="900" loading="lazy" alt="Schematic diagram for: {h1}"></picture>'
+           f'<figcaption>Schematic of the steps in this guide. <a href="{v}diagram.svg">Open the full diagram (SVG)</a>.</figcaption></figure>')
     return dict(path=f"guides/{slug}.html", title=title, desc=desc, h1=h1, kicker=f"Guide · {topic}", keywords=kw, answer=answer,
-                schema="Article", category="Guides", date="2026-11-25", sections=sections, faqs=faqs, sources=src, related=related)
+                schema="Article", category="Guides", date="2026-11-25", sections=[("At a glance", fig)] + sections, faqs=faqs, sources=src, related=related,
+                og_image=f"visuals/{slug}/og.png", og_alt=f"{h1}: schematic")
 
 
 A = [

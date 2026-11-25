@@ -1,0 +1,45 @@
+{
+ "id": "IMG-ART-HOTELLOYALTYIDENTITYR",
+ "slug": "hotel-loyalty-identity-reconciliation",
+ "page": "guides/hotel-loyalty-identity-reconciliation.html",
+ "title": "Hotel guest identity reconciliation",
+ "subtitle": "Separate namespaces, explainable merges",
+ "keyword": "hotel guest identity reconciliation",
+ "kind": "flow",
+ "accent": "orange",
+ "kicker": "Infiante360 guide",
+ "band": "If you cannot explain a merge, tighten the rule.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: hotel guest identity reconciliation - identifiers, rules, merge, audit.",
+ "caption": "Hotel guest identity reconciliation: schematic.",
+ "lanes": [
+  {
+   "title": "Identifiers",
+   "items": [
+    "Loyalty number",
+    "Email",
+    "Booking reference"
+   ]
+  },
+  {
+   "title": "Rules",
+   "items": [
+    "Person vs stay",
+    "Flag shared emails"
+   ]
+  },
+  {
+   "title": "Merge",
+   "items": [
+    "Explainable links"
+   ]
+  },
+  {
+   "title": "Audit",
+   "items": [
+    "Sample merges",
+    "Each release"
+   ]
+  }
+ ]
+}

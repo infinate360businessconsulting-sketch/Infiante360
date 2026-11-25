@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-AIRLINEDISRUPTIONMESSA",
+ "slug": "airline-disruption-messaging-consent",
+ "page": "guides/airline-disruption-messaging-consent.html",
+ "title": "Disruption messages and consent",
+ "subtitle": "Service notices kept apart from marketing",
+ "keyword": "disruption messages and consent",
+ "kind": "flow",
+ "accent": "cyan",
+ "kicker": "Infiante360 guide",
+ "band": "A marketing opt-out never blocks a necessary service notice.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: disruption messages and consent - event, checks, send, log.",
+ "caption": "Disruption messages and consent: schematic.",
+ "lanes": [
+  {
+   "title": "Event",
+   "items": [
+    "flight_disrupted"
+   ]
+  },
+  {
+   "title": "Checks",
+   "items": [
+    "Booking and channel",
+    "Consent by purpose"
+   ]
+  },
+  {
+   "title": "Send",
+   "items": [
+    "Service notice",
+    "One per change"
+   ]
+  },
+  {
+   "title": "Log",
+   "items": [
+    "Outcome and channel",
+    "Pause promotions"
+   ]
+  }
+ ]
+}

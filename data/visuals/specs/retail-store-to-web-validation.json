@@ -1,0 +1,43 @@
+{
+ "id": "IMG-ART-RETAILSTORETOWEBVALI",
+ "slug": "retail-store-to-web-validation",
+ "page": "guides/retail-store-to-web-validation.html",
+ "title": "Store-to-web validation",
+ "subtitle": "Four checks before trusting matches",
+ "keyword": "store-to-web validation",
+ "kind": "flow",
+ "accent": "orange",
+ "kicker": "Infiante360 guide",
+ "band": "Coverage is not attribution.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: store-to-web validation - match rate, false matches, reconcile, report.",
+ "caption": "Store-to-web validation: schematic.",
+ "lanes": [
+  {
+   "title": "Match rate",
+   "items": [
+    "By store",
+    "By channel"
+   ]
+  },
+  {
+   "title": "False matches",
+   "items": [
+    "Hand-review sample"
+   ]
+  },
+  {
+   "title": "Reconcile",
+   "items": [
+    "Against finance totals"
+   ]
+  },
+  {
+   "title": "Report",
+   "items": [
+    "Matched vs unmatched",
+    "State the rule"
+   ]
+  }
+ ]
+}

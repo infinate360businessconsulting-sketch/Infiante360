@@ -1,0 +1,41 @@
+{
+ "id": "IMG-ART-TESTCONSENTGOVERNANCE",
+ "slug": "test-consent-governance-implementation",
+ "page": "guides/test-consent-governance-implementation.html",
+ "title": "Consent and governance tests",
+ "subtitle": "Try to break the controls",
+ "keyword": "consent and governance tests",
+ "kind": "flow",
+ "accent": "orange",
+ "kicker": "Infiante360 guide",
+ "band": "Keep dated evidence of each test.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: consent and governance tests - no consent, labels, withdrawal, requests.",
+ "caption": "Consent and governance tests: schematic.",
+ "lanes": [
+  {
+   "title": "No consent",
+   "items": [
+    "Excluded from activation"
+   ]
+  },
+  {
+   "title": "Labels",
+   "items": [
+    "Blocked destination"
+   ]
+  },
+  {
+   "title": "Withdrawal",
+   "items": [
+    "Removed from audiences"
+   ]
+  },
+  {
+   "title": "Requests",
+   "items": [
+    "Reach all systems"
+   ]
+  }
+ ]
+}

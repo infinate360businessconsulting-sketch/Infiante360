@@ -1,0 +1,44 @@
+{
+ "id": "IMG-ART-AEPBATCHINGESTIONFAIL",
+ "slug": "aep-batch-ingestion-failure-diagnostic",
+ "page": "guides/aep-batch-ingestion-failure-diagnostic.html",
+ "title": "Batch ingestion diagnostic",
+ "subtitle": "Work from the outside in",
+ "keyword": "batch ingestion diagnostic",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Change one thing at a time.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: batch ingestion diagnostic - find, read, check, retry.",
+ "caption": "Batch ingestion diagnostic: schematic.",
+ "lanes": [
+  {
+   "title": "Find",
+   "items": [
+    "Batch ID",
+    "Status"
+   ]
+  },
+  {
+   "title": "Read",
+   "items": [
+    "Exact error"
+   ]
+  },
+  {
+   "title": "Check",
+   "items": [
+    "Dataset and schema",
+    "Identities"
+   ]
+  },
+  {
+   "title": "Retry",
+   "items": [
+    "Few rows first",
+    "Log each change"
+   ]
+  }
+ ]
+}

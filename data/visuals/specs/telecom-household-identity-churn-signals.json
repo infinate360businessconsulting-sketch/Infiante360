@@ -1,0 +1,46 @@
+{
+ "id": "IMG-ART-TELECOMHOUSEHOLDIDENTI",
+ "slug": "telecom-household-identity-churn-signals",
+ "page": "guides/telecom-household-identity-churn-signals.html",
+ "title": "Household identity and churn signals",
+ "subtitle": "Account, user and household kept distinct",
+ "keyword": "household identity and churn signals",
+ "kind": "flow",
+ "accent": "red",
+ "kicker": "Infiante360 guide",
+ "band": "Start with account and line levels.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: household identity and churn signals - levels, signals, limits, validate.",
+ "caption": "Household identity and churn signals: schematic.",
+ "lanes": [
+  {
+   "title": "Levels",
+   "items": [
+    "Account holder",
+    "Line user",
+    "Household"
+   ]
+  },
+  {
+   "title": "Signals",
+   "items": [
+    "Usage trend",
+    "Service contacts"
+   ]
+  },
+  {
+   "title": "Limits",
+   "items": [
+    "Label inferred links",
+    "Restrict access"
+   ]
+  },
+  {
+   "title": "Validate",
+   "items": [
+    "Back-test",
+    "Control group"
+   ]
+  }
+ ]
+}

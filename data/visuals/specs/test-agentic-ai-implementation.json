@@ -1,0 +1,42 @@
+{
+ "id": "IMG-ART-TESTAGENTICAIIMPLEMEN",
+ "slug": "test-agentic-ai-implementation",
+ "page": "guides/test-agentic-ai-implementation.html",
+ "title": "Testing an agentic AI build",
+ "subtitle": "Four areas, pass criteria set first",
+ "keyword": "testing an agentic ai build",
+ "kind": "flow",
+ "accent": "violet",
+ "kicker": "Infiante360 guide",
+ "band": "Block release if a permission test fails.",
+ "note": "Illustrative teaching schematic, not a client deployment.",
+ "alt": "Schematic diagram: testing an agentic ai build - tool choice, permissions, injection, consistency.",
+ "caption": "Testing an agentic AI build: schematic.",
+ "lanes": [
+  {
+   "title": "Tool choice",
+   "items": [
+    "Right tool",
+    "Right arguments"
+   ]
+  },
+  {
+   "title": "Permissions",
+   "items": [
+    "Refuses delete"
+   ]
+  },
+  {
+   "title": "Injection",
+   "items": [
+    "Hidden instruction ignored"
+   ]
+  },
+  {
+   "title": "Consistency",
+   "items": [
+    "Fixed evaluation set"
+   ]
+  }
+ ]
+}

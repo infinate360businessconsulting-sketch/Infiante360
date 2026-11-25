@@ -1,5 +1,68 @@
 [
  {
+  "image_id": "IMG-ART-AEPBATCHINGESTIONFAIL",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 26.5
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 10.3
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 97.3
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-AIRLINEDISRUPTIONMESSA",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 31.9
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 12.6
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 128.3
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-AJOREFERENCEARCHITECTU",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 34.7
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 13.9
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 121.3
+   }
+  }
+ },
+ {
   "image_id": "IMG-BQ-001",
   "issues": [],
   "files": {
@@ -17,6 +80,48 @@
     "width": 1200,
     "height": 630,
     "kb": 141.3
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-CJABACKFILLRECONCILIAT",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.5
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.3
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 96.8
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-CJAREFERENCEARCHITECTU",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 29.8
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 12.1
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 98.8
    }
   }
  },
@@ -42,6 +147,27 @@
   }
  },
  {
+  "image_id": "IMG-ART-ENTERPRISEAIAGENTAPPR",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.5
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.3
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 100.5
+   }
+  }
+ },
+ {
   "image_id": "IMG-EA-001",
   "issues": [],
   "files": {
@@ -59,6 +185,69 @@
     "width": 1200,
     "height": 630,
     "kb": 136.9
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-HEALTHCAREDATAMINIMIZA",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.2
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.1
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 116.0
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-HOTELLOYALTYIDENTITYR",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 31.2
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 12.7
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 111.6
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-IDENTITYGRAPHCOLLAPSE",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 27.1
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 10.8
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 98.0
    }
   }
  },
@@ -84,6 +273,111 @@
   }
  },
  {
+  "image_id": "IMG-ART-LOANONBOARDINGEVENTMO",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 32.7
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 12.9
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 126.4
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-MARTECHCOEOPERATINGMO",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.7
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.5
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 108.5
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-RENEWALJOURNEYHOLDOUT",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 29.2
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.4
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 114.0
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-RETAILSTORETOWEBVALI",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.1
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.0
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 100.9
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-SAASPRODUCTUSAGESIGNA",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.4
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.2
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 112.7
+   }
+  }
+ },
+ {
   "image_id": "IMG-SNOW-001",
   "issues": [],
   "files": {
@@ -101,6 +395,132 @@
     "width": 1200,
     "height": 630,
     "kb": 154.7
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-SNOWFLAKEINCREMENTALLO",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.8
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.2
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 122.3
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-TELECOMHOUSEHOLDIDENTI",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 31.5
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 12.7
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 112.8
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-TESTAGENTICAIIMPLEMEN",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 26.9
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 10.8
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 100.4
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-TESTCONSENTGOVERNANCE",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.4
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.2
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 114.2
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-TESTREALTIMEPERSONALI",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.0
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.2
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 116.7
+   }
+  }
+ },
+ {
+  "image_id": "IMG-ART-WEBSDKCONSENTREGRESSI",
+  "issues": [],
+  "files": {
+   "hero.webp": {
+    "width": 1600,
+    "height": 900,
+    "kb": 28.3
+   },
+   "hero-800.webp": {
+    "width": 800,
+    "height": 450,
+    "kb": 11.4
+   },
+   "og.png": {
+    "width": 1200,
+    "height": 630,
+    "kb": 100.7
    }
   }
  }
