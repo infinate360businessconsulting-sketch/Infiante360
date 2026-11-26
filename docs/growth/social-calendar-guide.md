@@ -8,11 +8,11 @@ Schedule: 27 Nov 2026 to 24 Jan 2027, weekdays 09:30 and 18:30, weekends 11:00. 
 | Type | Count | Goes to |
 |---|---|---|
 | Guide posts, each with its own real guide page and og image | 36 | LinkedIn, Facebook, Instagram, X |
-| Programs and batches | 9 | mostly all four |
+| Programs and batches | 10 | mostly all four |
 | Course spotlights with banner images | 10 | all four |
 | YouTube references | 8 | LinkedIn, Facebook, X |
 | Services | 10 | all four or text networks |
-| Tips and education | 11 | LinkedIn, Facebook, X |
+| Tips and education | 12 | LinkedIn, Facebook, X |
 | Polls and questions | 6 | LinkedIn, Facebook, X |
 | Brand and community | 8 | mixed |
 62 rows have an image (Instagram needs one, so only those rows include it). Images are the guide `og.png` files and the 20 banners in `assets/social/` (PNG, 1200x675).
@@ -36,3 +36,6 @@ Schedule: 27 Nov 2026 to 24 Jan 2027, weekdays 09:30 and 18:30, weekends 11:00. 
 
 ## Measuring
 Open Analytics, filter `utm_campaign` starting with `cal100-`, compare by post type, and repeat the best-performing types.
+
+## YouTube descriptions
+`data/social/youtube-descriptions-100.csv`: a title (under 100 characters), description, tags and source page for each of the 100 posts, in the same order and date as the calendar. Built by `scripts/build_youtube_descriptions.py`. Each description opens with the post's own text, then the page link, the links block, a disclaimer (independent of Adobe, no guarantees) and hashtags. Chapters are left to add after recording; no video contents are invented. Upload a description only with a video that covers that topic.
