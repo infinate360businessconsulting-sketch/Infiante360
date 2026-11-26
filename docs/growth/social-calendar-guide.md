@@ -39,3 +39,7 @@ Open Analytics, filter `utm_campaign` starting with `cal100-`, compare by post t
 
 ## YouTube descriptions
 `data/social/youtube-descriptions-100.csv`: a title (under 100 characters), description, tags and source page for each of the 100 posts, in the same order and date as the calendar. Built by `scripts/build_youtube_descriptions.py`. Each description opens with the post's own text, then the page link, the links block, a disclaimer (independent of Adobe, no guarantees) and hashtags. Chapters are left to add after recording; no video contents are invented. Upload a description only with a video that covers that topic.
+
+## Combined files
+- `data/social/calendar-100-upload.csv`: exact upload-post template columns, with the YouTube title in `title`.
+- `data/social/calendar-100-combined.csv`: the same rows plus `youtube_description`, `youtube_tags` and `page`. Use it for review; remove the three extra columns if the uploader rejects them.
