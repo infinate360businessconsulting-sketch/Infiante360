@@ -131,3 +131,6 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 ## Practice hub (2026-11-26)
 - Owner shared another company's site (AdsBot) as reference. Not copied. Built an original `academy/practice.html` (src/content_practice.py) that links only existing resources: simulators, lab guides, quiz, handout, interview questions, LMS test series. No sandbox, badge or graded-mission claims. Linked from links.html.
 - Not built: private per-learner sandboxes, auto-checked missions, verifiable credentials, MCP lab access. These need product work; scope and owner decision pending.
+
+## Practice labs (2026-11-26)
+- Owner wants paid labs. Not built. Added waitlist `lp/labs.html` (src/content_labs.py) and `docs/labs/LABS_PRODUCT_SCOPE.md`. No price, no checkout, no feature claims. Open: Phase 1 topic, delivery model, price, refund terms, payment path.
