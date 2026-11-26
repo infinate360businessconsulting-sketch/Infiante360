@@ -119,3 +119,7 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - `data/catalogue/catalogue.json`: owner's 15 categories / 150 topics from the TrainerCentral brief. All draft except 11 mapped to existing live pages.
 - `src/content_catalogue.py` renders `academy/catalogue.html`: names only published courses (Know more links), counts the rest as "in planning". Linked from links.html.
 - Open: SAP, Guidewire, Microsoft, IBM, cybersecurity, software courses need curriculum, instructor, fee, schedule before any page. Banners for them not made. TrainerCentral email not sent (recipient not given). Not built locally (CI validates).
+
+## Batches landing (2026-11-26)
+- `lp/batches.html` from `src/content_batches.py` (reuses `landing()`); linked from links.html. No dates or fees stated (none confirmed).
+- Lead routing doc: `docs/growth/batch-lead-routing.md`. Open: confirm `LEAD_WEBHOOK_URL` is set on Vercel and which CRM; supply next batch dates and fees.
