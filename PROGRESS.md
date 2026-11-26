@@ -139,3 +139,7 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Owner approved defaults: Lab 1 identity and XDM, browser-only simulation, free beta, new simple sign-in, invite emails approved by owner. AdsBot content was reference only and not copied.
 - Built `labs-private/identity-xdm/`, `api/lab-login.js`, `api/lab-app.js`, `api/_labauth.js`, `assets/lab-login.html`, `scripts/make_lab_invites.py`, vercel.json rewrites, tests, `docs/labs/PHASE1_SETUP.md`. Waitlist page text updated.
 - Open: owner sets `LAB_SECRET` in Vercel; generates invites; sends emails after review. Live sign-in not tested until then. Backend (accounts, DB, payments) not built.
+
+## Meetup landing (2026-11-26)
+- `lp/meetup.html` (src/content_meetup.py): interest form (name, email, phone via site form -> CRM webhook). Date, venue, agenda null (not supplied). Linked from links.html.
+- Owner typed a lab secret value in chat: not stored anywhere; advised to set a long random LAB_SECRET in Vercel and treat the typed value as exposed.
