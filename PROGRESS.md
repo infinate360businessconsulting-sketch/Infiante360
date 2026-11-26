@@ -134,3 +134,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 
 ## Practice labs (2026-11-26)
 - Owner wants paid labs. Not built. Added waitlist `lp/labs.html` (src/content_labs.py) and `docs/labs/LABS_PRODUCT_SCOPE.md`. No price, no checkout, no feature claims. Open: Phase 1 topic, delivery model, price, refund terms, payment path.
+
+## Practice Lab Phase 1 (2026-11-26)
+- Owner approved defaults: Lab 1 identity and XDM, browser-only simulation, free beta, new simple sign-in, invite emails approved by owner. AdsBot content was reference only and not copied.
+- Built `labs-private/identity-xdm/`, `api/lab-login.js`, `api/lab-app.js`, `api/_labauth.js`, `assets/lab-login.html`, `scripts/make_lab_invites.py`, vercel.json rewrites, tests, `docs/labs/PHASE1_SETUP.md`. Waitlist page text updated.
+- Open: owner sets `LAB_SECRET` in Vercel; generates invites; sends emails after review. Live sign-in not tested until then. Backend (accounts, DB, payments) not built.

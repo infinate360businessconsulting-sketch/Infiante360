@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Lab 1: Identity and XDM | Infiante360 Practice Lab</title>
+<style>:root{--bg:#F8FAFC;--ink:#0F172A;--mut:#64748B;--pri:#4F46E5;--ok:#10B981;--bad:#B91C1C;--bd:#E2E8F0}*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:#0B1B3A;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}header b{font-size:1.05rem}header span{color:#94A3B8;font-size:.9rem}
+main{max-width:980px;margin:0 auto;padding:20px}.card{background:#fff;border:1px solid var(--bd);border-radius:14px;padding:20px;margin-bottom:18px}h2{margin:0 0 6px;font-size:1.2rem}.mut{color:var(--mut)}
+table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{border:1px solid var(--bd);padding:8px;text-align:left}th{background:#EEF2FF}.scroll{overflow-x:auto}
+button{background:var(--pri);color:#fff;border:0;border-radius:999px;padding:10px 20px;font-weight:700;cursor:pointer;font-size:.95rem}button.ghost{background:#fff;color:var(--pri);border:1px solid var(--pri)}
+select{padding:8px;border:1px solid var(--bd);border-radius:8px;font-size:.92rem}.res{margin-top:12px;padding:12px;border-radius:10px;display:none}.res.ok{display:block;background:#ECFDF5;border:1px solid var(--ok)}.res.no{display:block;background:#FEF2F2;border:1px solid var(--bad)}
+.badge{display:inline-block;border-radius:999px;padding:3px 12px;font-size:.8rem;font-weight:700;background:#E2E8F0}.badge.done{background:var(--ok);color:#fff}label.chk{display:inline-flex;gap:8px;margin:6px 16px 6px 0;align-items:center}
+.pill{background:#EEF2FF;border-radius:6px;padding:1px 7px;font-family:monospace;font-size:.85rem}footer{text-align:center;color:var(--mut);font-size:.85rem;padding:18px}</style></head><body>
+<header><b>Infiante360 Practice Lab · Lab 1: Identity and XDM</b><span>Signed in as {{EMAIL}} · <a href="#" id="reset" style="color:#22D3EE">reset progress</a></span></header>
+<main>
+<div class="card"><h2>The scenario</h2><p>Harbourline is an invented online retailer. Customers show up in three systems: the website (a browser cookie), the CRM and the loyalty programme. Your job is to design identity so that each real person becomes exactly one profile. All data is made up.</p>
+<p><b>Progress:</b> <span id="prog">0 of 3 missions complete</span></p>
+<div class="scroll"><table><tr><th>#</th><th>Source</th><th>cookieId</th><th>emailHash</th><th>crmId</th><th>loyaltyId</th></tr>
+<tr><td>1</td><td>Web</td><td>C-101</td><td>h(a)</td><td></td><td></td></tr><tr><td>2</td><td>Web</td><td>C-101</td><td>h(b)</td><td></td><td></td></tr>
+<tr><td>3</td><td>CRM</td><td></td><td>h(a)</td><td>K-1</td><td></td></tr><tr><td>4</td><td>CRM</td><td></td><td>h(b)</td><td>K-2</td><td></td></tr>
+<tr><td>5</td><td>Loyalty</td><td></td><td>h(a)</td><td></td><td>L-9</td></tr><tr><td>6</td><td>Loyalty</td><td></td><td>h(c)</td><td></td><td>L-7</td></tr>
+<tr><td>7</td><td>CRM</td><td></td><td>h(c)</td><td>K-3</td><td></td></tr><tr><td>8</td><td>Web</td><td>C-205</td><td>h(d)</td><td></td><td></td></tr><tr><td>9</td><td>CRM</td><td></td><td>h(d)</td><td>K-4</td><td></td></tr></table></div>
+<p class="mut">Note: records 1 and 2 come from the same shared family tablet.</p></div>
+
+<div class="card" id="m1"><h2>Mission 1 <span class="badge" id="b1">Not done</span></h2><p><b>Pick the primary identity.</b> Which identifier is the best primary for a person-level profile?</p>
+<select id="p1"><option value="">Choose...</option><option>cookieId</option><option>emailHash</option><option>crmId</option><option>loyaltyId</option></select> <button id="c1">Check</button><div class="res" id="r1"></div></div>
+
+<div class="card" id="m2"><h2>Mission 2 <span class="badge" id="b2">Not done</span></h2><p><b>Design the identity fields.</b> For each field, choose how the schema should treat it.</p>
+<div class="scroll"><table><tr><th>Field</th><th>Treatment</th></tr>
+<tr><td>Raw email address</td><td><select data-f="rawEmail"><option value="">Choose...</option><option value="identity">Use as identity</option><option value="field">Store as plain field</option><option value="skip">Do not store</option></select></td></tr>
+<tr><td>Hashed email</td><td><select data-f="emailHash"><option value="">Choose...</option><option value="identity">Use as identity</option><option value="field">Store as plain field</option><option value="skip">Do not store</option></select></td></tr>
+<tr><td>CRM customer ID</td><td><select data-f="crmId"><option value="">Choose...</option><option value="identity">Use as identity</option><option value="field">Store as plain field</option><option value="skip">Do not store</option></select></td></tr>
+<tr><td>Cookie ID</td><td><select data-f="cookieId"><option value="">Choose...</option><option value="identity">Use as identity</option><option value="field">Store as plain field</option><option value="skip">Do not store</option></select></td></tr>
+<tr><td>Page URL</td><td><select data-f="url"><option value="">Choose...</option><option value="identity">Use as identity</option><option value="field">Store as plain field</option><option value="skip">Do not store</option></select></td></tr></table></div>
+<p><button id="c2">Check</button></p><div class="res" id="r2"></div></div>
+
+<div class="card" id="m3"><h2>Mission 3 <span class="badge" id="b3">Not done</span></h2><p><b>Set the linking rules.</b> Choose which identifiers may link records into one profile, then run the merge. The goal is four profiles, one per real person (a, b, c, d), with nobody merged by mistake.</p>
+<label class="chk"><input type="checkbox" value="cookieId"> cookieId</label><label class="chk"><input type="checkbox" value="emailHash"> emailHash</label><label class="chk"><input type="checkbox" value="crmId"> crmId</label><label class="chk"><input type="checkbox" value="loyaltyId"> loyaltyId</label>
+<p><button id="c3">Run merge</button></p><div class="res" id="r3"></div><div id="out"></div></div>
+</main><footer>A learning simulation built by Infiante360, not the real Adobe product. Use made-up data only. No credential, job or exam result is promised. Progress is saved in this browser.</footer>
+<script>
+var KEY='i360lab1',S={};try{S=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+function show(id,ok,msg){var r=document.getElementById(id);r.className='res '+(ok?'ok':'no');r.innerHTML=msg}
+function mark(n){S['m'+n]=1;save();paint()}
+function paint(){var d=0;[1,2,3].forEach(function(n){var b=document.getElementById('b'+n);if(S['m'+n]){b.textContent='Done';b.className='badge done';d++}else{b.textContent='Not done';b.className='badge'}});document.getElementById('prog').textContent=d+' of 3 missions complete'+(d==3?'. Well done: you have designed identity for one retailer. Next lab coming soon.':'')}
+document.getElementById('c1').onclick=function(){var v=document.getElementById('p1').value;if(!v)return show('r1',false,'Choose an identifier first.');
+if(v==='crmId'||v==='loyaltyId'){mark(1);show('r1',true,'Correct. A '+v+' identifies a person, stays stable over time and is not shared across people.')}
+else if(v==='cookieId')show('r1',false,'Not quite. A cookie identifies a browser, not a person. Records 1 and 2 show two people on one cookie.');
+else show('r1',false,'Close, but an email can change or be shared, and hashing does not fix that. Prefer an ID your own system issues to one person.')};
+document.getElementById('c2').onclick=function(){var sel={};document.querySelectorAll('[data-f]').forEach(function(s){sel[s.dataset.f]=s.value});
+if(Object.keys(sel).some(function(k){return !sel[k]}))return show('r2',false,'Choose a treatment for every field.');
+var tips=[];if(sel.rawEmail!=='skip')tips.push('Raw email is personal data. Do not use or store it here; use the hashed version if you need email matching.');
+if(sel.emailHash!=='identity')tips.push('A hashed email is a reasonable secondary identity: all three sources carry it.');
+if(sel.crmId!=='identity')tips.push('The CRM ID is a person-level ID from your own system, so it should be an identity.');
+if(sel.cookieId==='skip')tips.push('The cookie is how web events reach a profile at all. Keep it, as an identity for stitching, not as the primary.');
+if(sel.url==='identity')tips.push('A page URL describes behaviour. It is never an identity.');
+if(sel.url==='skip')tips.push('A page URL is useful event context. Store it as a plain field.');
+if(!tips.length){mark(2);show('r2',true,'Correct. Hashed email, CRM ID and cookie are identities; raw email is left out; the URL is a plain field.')}else show('r2',false,'Not yet:<ul><li>'+tips.join('</li><li>')+'</li></ul>')};
+var R=[{c:'C-101',e:'a'},{c:'C-101',e:'b'},{e:'a',k:'K-1'},{e:'b',k:'K-2'},{e:'a',l:'L-9'},{e:'c',l:'L-7'},{e:'c',k:'K-3'},{c:'C-205',e:'d'},{e:'d',k:'K-4'}],PER=['a','b','c','d'];
+document.getElementById('c3').onclick=function(){var use=[].slice.call(document.querySelectorAll('#m3 input:checked')).map(function(i){return i.value});if(!use.length)return show('r3',false,'Choose at least one identifier.');
+var key={cookieId:'c',emailHash:'e',crmId:'k',loyaltyId:'l'},p=R.map(function(_,i){return i});function f(x){while(p[x]!==x)x=p[x]=p[p[x]];return x}
+use.forEach(function(u){var f1=key[u],seen={};R.forEach(function(r,i){var v=r[f1];if(v==null)return;if(seen[v]!=null)p[f(i)]=f(seen[v]);else seen[v]=i})});
+var g={};R.forEach(function(r,i){var root=f(i);(g[root]=g[root]||[]).push(i+1)});var groups=Object.keys(g).map(function(k){return g[k]});
+var mixed=groups.filter(function(gr){var s={};gr.forEach(function(n){s[R[n-1].e]=1});return Object.keys(s).length>1}).length;
+var split=PER.filter(function(pp){var rs=[];groups.forEach(function(gr,gi){if(gr.some(function(n){return R[n-1].e===pp}))rs.push(gi)});return rs.length>1}).length;
+document.getElementById('out').innerHTML='<p><b>Result:</b> '+groups.length+' profile(s). Records per profile: '+groups.map(function(gr){return '['+gr.join(',')+']'}).join(' ')+'</p>';
+if(groups.length===4&&!mixed&&!split){mark(3);show('r3',true,'Correct. Four profiles, nobody merged by mistake. You linked on stable person-level identifiers and left the shared cookie out.')}
+else if(mixed)show('r3',false,'Two different people were merged into one profile (a collapse). Look at which identifier connects them. Hint: records 1 and 2.');
+else show('r3',false,'Some people are still split across several profiles ('+groups.length+' profiles, expected 4). Add an identifier that is present in more than one source.')};
+document.getElementById('reset').onclick=function(ev){ev.preventDefault();if(confirm('Reset your progress in this browser?')){S={};save();paint();document.querySelectorAll('.res').forEach(function(r){r.className='res'})}};
+paint();
+</script></body></html>
