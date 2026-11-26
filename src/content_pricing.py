@@ -2,7 +2,7 @@
 No checkout exists: payment details are confirmed in writing before any payment."""
 ROWS = [
     ("AEP Launchpad Bootcamp", "3 hours, Sunday 6 to 9 PM IST: XDM, datasets, identity, profile, segmentation and activation. The Rs 3,500 test series is free.", "₹5,000", "aep-launchpad-bootcamp.html"),
-    ("Bronze Membership", "All recorded courses, the 3,500-question bank and sandbox. Self-paced, no live classes.", "₹2,00,000", "programs/bronze-membership.html"),
+    ("Bronze Membership", "All recorded courses, the 3,500-question bank and sandbox. Self-paced, no live classes.", "₹30,000", "programs/bronze-membership.html"),
     ("Career Accelerator", "Live, hands-on AEP, Real-Time CDP, AJO, CJA, Web SDK and Agentic AI, with projects and interview preparation.", "₹70,000", "../training/index.html"),
     ("Foundation + Advanced Architecture (recorded)", "AEP, AJO and CJA, then enterprise MarTech and CDP architecture.", "₹70,000", "programs/aep-ajo-cja-foundation-advanced.html"),
     ("Leadership and Corporate", "Tailored, project-based training on AEP, Real-Time CDP, AJO, CJA, data engineering and Agentic AI.", "₹1,50,000 or custom quote", "programs/executive-architecture-leadership.html"),
