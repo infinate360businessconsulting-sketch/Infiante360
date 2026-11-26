@@ -84,7 +84,7 @@ PAGES_DEMO = [dict(
         ("What happens each night", '<div class="grid-3">' + "".join(
             f'<div class="card"><span class="tag">Day {x["n"]} · {e(fmt(x))}</span><h3>{e(x["title"])}</h3><ul class="checklist">' + "".join(f"<li>{e(p)}</li>" for p in x["points"]) + "</ul></div>" for x in D["days"]) + "</div>", "alt", "Agenda"),
         ("Who should join", '<div class="grid-3"><div class="card"><h3>Career switchers</h3><p>Developers, data engineers, analysts and marketers curious about MarTech.</p></div><div class="card"><h3>Working practitioners</h3><p>Anyone who wants a clear mental model of AEP, journeys and CJA.</p></div><div class="card"><h3>Team leads</h3><p>Leaders deciding what skills their team needs next.</p></div></div>', "plain", "Audience"),
-        ("Next step after the demo", '<p>If the demo fits, continue with the <a href="../training/">Career Accelerator (₹60,000)</a> or the self-paced <a href="../academy/programs/bronze-membership.html">Bronze Membership (₹30,000)</a>. There is no obligation to continue.</p>', "alt", "Continue"),
+        ("Next step after the demo", '<p>If the demo fits, continue with the <a href="../training/">Career Accelerator (₹70,000)</a> or the self-paced <a href="../academy/programs/bronze-membership.html">Bronze Membership (₹2,00,000)</a>. There is no obligation to continue.</p>', "alt", "Continue"),
         ("Questions", '<div class="form-card" id="enquire-form">@@LP_FORM@@</div>' + ("" if EV else SCRIPT), "plain", "Contact us"),
     ],
     faqs=[(("When is the next demo?", "The next cohort dates are not confirmed yet. Register your interest and we will share the schedule and fee with you.") if EV else

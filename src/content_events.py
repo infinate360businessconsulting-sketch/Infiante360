@@ -8,7 +8,7 @@ REG_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLv
 WHATSAPP = "https://wa.me/918296893895"
 
 BOOTCAMP = dict(name="AEP Launchpad: Foundations Bootcamp", date="Sunday evening (date confirmed on registration)", time="6:00 PM – 9:00 PM IST",
-                start="2026-10-11T18:00:00+05:30", end="2026-10-11T21:00:00+05:30", price=3000, price_label="₹3,000")
+                start="2026-10-11T18:00:00+05:30", end="2026-10-11T21:00:00+05:30", price=3000, price_label="₹5,000")
 BATCH = dict(name="Live AEP Foundations Batch", date="Weekday mornings for two weeks (start confirmed on registration)", time="8:00 AM – 9:30 AM IST",
              start="2026-10-15T08:00:00+05:30", end="2026-10-28T09:30:00+05:30")
 
@@ -35,7 +35,7 @@ WORKSHOPS = [
 
 BONUS = """<div class="bonus">
 <span class="bonus-badge">Free bonus</span>
-<h3>₹3,500 Interview &amp; Certification Test Series &mdash; free with your ₹3,000 bootcamp</h3>
+<h3>₹3,500 Interview &amp; Certification Test Series &mdash; free with your ₹5,000 bootcamp</h3>
 <p>Every bootcamp attendee gets access to the Infiante360 interview preparation and certification practice question series, built to reinforce Adobe Experience Platform concepts and build interview and exam confidence.</p>
 <ul class="checklist cols-2"><li>Scenario-based practice questions</li><li>Interview-style AEP questions</li><li>Covers schemas, identity, profiles and segmentation</li><li>Use alongside Adobe's official exam guide</li></ul>
 <p class="small">Practice materials support preparation; they do not guarantee interview or official certification results.</p>
@@ -80,15 +80,15 @@ EVENTS = [
         nav="AEP Launchpad Bootcamp",
         bands=True, program=True,
         title="AEP Launchpad Bootcamp: Adobe Experience Platform Foundations",
-        desc="Live 3-hour AEP foundations bootcamp, Sunday evening, 6–9 PM IST. ₹3,000 with a free ₹3,500 interview & certification test series.",
+        desc="Live 3-hour AEP foundations bootcamp, Sunday evening, 6–9 PM IST. ₹5,000 with a free ₹3,500 interview & certification test series.",
         h1="Start your Adobe Experience Platform journey here",
         kicker="AEP Launchpad: Foundations Bootcamp",
         lede="Understand customer data, schemas, identity, profiles, segmentation and activation through guided demonstrations and practical exercises. Learn. Practice. Build. Get career-ready.",
         keywords=["aep bootcamp", "adobe experience platform bootcamp", "aep foundations workshop", "aep training online india", "aep certification practice test"],
-        answer="AEP Launchpad: Foundations is a live, three-hour online bootcamp on a Sunday evening from 6:00 to 9:00 PM IST. It covers the Adobe Experience Platform foundations — XDM schemas, datasets, ingestion, identity, Real-Time Customer Profile, segmentation and activation — for ₹3,000, with a ₹3,500 interview and certification test series included free.",
+        answer="AEP Launchpad: Foundations is a live, three-hour online bootcamp on a Sunday evening from 6:00 to 9:00 PM IST. It covers the Adobe Experience Platform foundations — XDM schemas, datasets, ingestion, identity, Real-Time Customer Profile, segmentation and activation — for ₹5,000, with a ₹3,500 interview and certification test series included free.",
         schema="WebPage",
-        hero_visual=ticket(BOOTCAMP, "Next bootcamp", REG_FORM, "Register for ₹3,000", '<p class="ticket-bonus">+ ₹3,500 test series free</p>'),
-        interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch ", "Friday hands-on workshops"],
+        hero_visual=ticket(BOOTCAMP, "Next bootcamp", REG_FORM, "Register for ₹5,000", '<p class="ticket-bonus">+ ₹3,500 test series free</p>'),
+        interest_options=["Sunday bootcamp (₹5,000)", "Live Foundations batch ", "Friday hands-on workshops"],
         sections=[
             ("Your bootcamp package", BONUS + """<div class="grid-3" style="margin-top:22px">
 <div class="card"><h3>Live, instructor-led</h3><p>Three hours of live AEP foundations training taught by a working MarTech architect.</p></div>
@@ -102,7 +102,7 @@ EVENTS = [
 <li>Real-Time Customer Profile and merge policies</li><li>Building and validating your first audience</li>
 <li>How audiences reach destinations</li><li>Where to go next in your AEP learning path</li></ul>""", "plain", "Foundations only"),
             ("Two ways to start", f"""<div class="grid-2">
-{ticket(BOOTCAMP, "Card A · Weekend", REG_FORM, "Register for the bootcamp", '<p class="ticket-bonus">3 hours · ₹3,000 · + ₹3,500 test series free</p>')}
+{ticket(BOOTCAMP, "Card A · Weekend", REG_FORM, "Register for the bootcamp", '<p class="ticket-bonus">3 hours · ₹5,000 · + ₹3,500 test series free</p>')}
 {ticket(BATCH, "Card B · Weekdays", "aep-foundations-batch.html", "Explore the Foundations batch", '<p class="ticket-bonus">Two weeks · Monday–Friday · beginner-friendly</p>')}
 </div><p style="margin-top:16px">Plus <a href="workshops.html">hands-on workshops every Friday</a>.</p>""", "dark", "Schedule (IST)"),
             ("Who should attend", """<div class="grid-3">
@@ -113,7 +113,7 @@ EVENTS = [
         ],
         faqs=[
             ("When is the bootcamp?", "A Sunday evening, 6:00 PM to 9:00 PM Indian Standard Time (the date is confirmed on registration), live online."),
-            ("How much does it cost?", "₹3,000 per participant. The ₹3,500 interview and certification test series is included free."),
+            ("How much does it cost?", "₹5,000 per participant. The ₹3,500 interview and certification test series is included free."),
             ("Do I need Adobe experience?", "No. The bootcamp covers foundations only and is designed for beginners and career switchers."),
             ("Does the test series guarantee certification?", "No. It is practice material to support preparation. Official certification outcomes are not guaranteed."),
             ("How do I register?", "Use the Register button or the form on this page; the team will confirm your seat and share the joining link."),
@@ -129,13 +129,13 @@ EVENTS = [
         kicker="Academy · Hands-on",
         lede="Short, practical sessions that build AEP foundations one skill at a time: a weekend bootcamp, a two-week foundations batch and hands-on workshops every Friday.",
         keywords=["aep workshop", "adobe experience platform workshop", "aep hands-on lab", "martech bootcamp", "aep webinar series"],
-        answer="Infiante360 Tech Academy runs three foundation formats: the AEP Launchpad bootcamp (Sunday evening, 6–9 PM IST, ₹3,000 with a free ₹3,500 test series), a live two-week AEP Foundations batch at 8:00 AM IST, and hands-on workshops every Friday, each focused on one AEP skill.",
+        answer="Infiante360 Tech Academy runs three foundation formats: the AEP Launchpad bootcamp (Sunday evening, 6–9 PM IST, ₹5,000 with a free ₹3,500 test series), a live two-week AEP Foundations batch at 8:00 AM IST, and hands-on workshops every Friday, each focused on one AEP skill.",
         schema="CollectionPage",
         hero_visual=ticket(BOOTCAMP, "Next bootcamp", "aep-launchpad-bootcamp.html", "View the bootcamp", '<p class="ticket-bonus">+ ₹3,500 test series free</p>'),
-        interest_options=["Sunday bootcamp (₹3,000)", "Live Foundations batch ", "Friday hands-on workshops"],
+        interest_options=["Sunday bootcamp (₹5,000)", "Live Foundations batch ", "Friday hands-on workshops"],
         sections=[
             ("Choose your format", f"""<div class="grid-3">
-<a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Bootcamp · ₹3,000</span><h3>AEP Launchpad: Foundations</h3><p>{BOOTCAMP['date']}, {BOOTCAMP['time']}. Three hours, live, with a free ₹3,500 test series.</p><span class="more">View bootcamp &rarr;</span></a>
+<a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Bootcamp · ₹5,000</span><h3>AEP Launchpad: Foundations</h3><p>{BOOTCAMP['date']}, {BOOTCAMP['time']}. Three hours, live, with a free ₹3,500 test series.</p><span class="more">View bootcamp &rarr;</span></a>
 <a class="card link-card" href="aep-foundations-batch.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Batch · 2 weeks</span><h3>Live AEP Foundations batch</h3><p>{BATCH['date']}, {BATCH['time']}, Monday–Friday.</p><span class="more">View batch &rarr;</span></a>
 <a class="card link-card" href="#friday-workshop-series"><span class="tag" style="background:var(--green-50);color:var(--green)">Every Friday</span><h3>Hands-on workshops</h3><p>One AEP skill per session: model, ingest, resolve, unify, segment, activate.</p><span class="more">See the series &rarr;</span></a>
 </div>""", "plain", "Formats"),
@@ -147,7 +147,7 @@ EVENTS = [
 <div class="step"><h3>Review</h3><p>Common mistakes, Q&amp;A and what to practise next.</p></div>
 </div>""", "dark", "Format"),
             ("Keep going after the foundations", """<p class="lead">Foundations are the first step. When you are ready for depth, move into a full program.</p>
-<p class="cta-row"><a class="btn btn-primary" href="../training/">Career Accelerator · ₹60,000</a><a class="btn btn-ghost" href="index.html">All programs</a></p>""", "plain", "Next steps"),
+<p class="cta-row"><a class="btn btn-primary" href="../training/">Career Accelerator · ₹70,000</a><a class="btn btn-ghost" href="index.html">All programs</a></p>""", "plain", "Next steps"),
         ],
         faqs=[
             ("How often are workshops held?", "Hands-on workshops run every Friday. Bootcamps and foundations batches are announced on this page."),
@@ -168,7 +168,7 @@ EVENTS = [
         answer="The Live AEP Foundations batch runs for two weeks, Monday to Friday from 8:00 to 9:30 AM IST, subject to the published batch calendar. It is a beginner-friendly, live online program covering AEP foundations with guided hands-on workshops. The fee is shared on registration.",
         schema="WebPage",
         hero_visual=ticket(BATCH, "Next batch", REG_FORM, "Reserve your seat", '<p class="ticket-bonus">Two weeks · Monday–Friday</p>'),
-        interest_options=["Live Foundations batch ", "Sunday bootcamp (₹3,000)", "Friday hands-on workshops"],
+        interest_options=["Live Foundations batch ", "Sunday bootcamp (₹5,000)", "Friday hands-on workshops"],
         sections=[
             ("Ten-session plan", """<ol class="agenda">
 <li><time>Day 1</time><div><strong>AEP in one picture</strong><span>Platform architecture and the end-to-end data flow.</span></div></li>
@@ -187,7 +187,7 @@ EVENTS = [
 <div class="card"><h3>Early risers</h3><p>A 90-minute morning slot before the working day.</p></div>
 <div class="card"><h3>Future AEP practitioners</h3><p>A foundation for the career accelerator or certification preparation.</p></div>
 </div>""", "alt", "Audience"),
-            ("Try before you commit", f'<p class="lead">Join the Sunday bootcamp first: {BOOTCAMP["date"]}, {BOOTCAMP["time"]}, ₹3,000 with a free ₹3,500 test series.</p><p class="cta-row"><a class="btn btn-light" href="aep-launchpad-bootcamp.html">View the bootcamp</a></p>', "dark", "Weekend option"),
+            ("Try before you commit", f'<p class="lead">Join the Sunday bootcamp first: {BOOTCAMP["date"]}, {BOOTCAMP["time"]}, ₹5,000 with a free ₹3,500 test series.</p><p class="cta-row"><a class="btn btn-light" href="aep-launchpad-bootcamp.html">View the bootcamp</a></p>', "dark", "Weekend option"),
         ],
         faqs=[
             ("What is the fee for the Foundations batch?", "The fee is shared on registration. Contact the team using the form or WhatsApp."),

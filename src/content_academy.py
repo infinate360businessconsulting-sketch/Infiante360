@@ -1,6 +1,6 @@
 """Infiante360 Tech Academy: hub, program catalog, single-tool courses, videos, resources, roles guide.
 
-Prices: ₹60,000 career accelerator (stated by owner). Leadership and customised programs ₹1,00,000
+Prices: ₹70,000 career accelerator (stated by owner). Leadership and customised programs ₹1,00,000
 (from the owner-supplied reference catalog) — flagged for confirmation in the hand-off.
 """
 import html
@@ -24,9 +24,9 @@ BRONZE = _json.load(open(_os.path.join(_os.path.dirname(_os.path.dirname(_os.pat
 
 PROGRAMS = [
     # path (relative to site root), name, category, level, format, price label, price_inr, summary
-    ("training/index.html", "Adobe MarTech + Agentic AI Career Accelerator", "Adobe Experience Cloud", "Beginner to intermediate", "Live online · 90 days", "₹60,000", 60000,
+    ("training/index.html", "Adobe MarTech + Agentic AI Career Accelerator", "Adobe Experience Cloud", "Beginner to intermediate", "Live online · 90 days", "₹70,000", 70000,
      "The flagship live program: AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI through labs, enterprise-style projects and interview preparation."),
-    ("academy/programs/aep-ajo-cja-foundation-advanced.html", "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture", "Adobe Experience Cloud", "Intermediate", "Recorded · self-paced", "₹60,000", 60000,
+    ("academy/programs/aep-ajo-cja-foundation-advanced.html", "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture", "Adobe Experience Cloud", "Intermediate", "Recorded · self-paced", "₹70,000", 70000,
      "Learn AEP, AJO and CJA, then the MarTech and CDP architecture behind enterprise implementations."),
     (BRONZE["path"], BRONZE["name"], "Adobe Experience Cloud", "All levels", "Recorded · self-paced", BRONZE["fee_label"], BRONZE["fee_inr"],
      "All recorded video courses, a 3,500-question practice bank and hands-on sandbox access in one membership."),
@@ -125,7 +125,7 @@ def course_page(path, tool, abbr, title, desc, keywords, answer, modules, projec
         ("Curriculum", "".join(f'<details class="qa"><summary>Module {i+1}: {m}</summary><ul>' + "".join(f"<li>{x}</li>" for x in t) + "</ul></details>" for i, (m, t) in enumerate(modules)), "plain", "What you'll learn"),
         ("Hands-on projects", '<div class="grid-2">' + "".join(f'<div class="card"><h3>{a}</h3><p>{b}</p></div>' for a, b in projects) + "</div>", "alt", "Practice"),
         ("Prerequisites and format", f"""<ul class="checklist">{''.join(f'<li>{x}</li>' for x in prereq)}</ul>
-<p>{tool} training is available as a focused single-tool path, as part of the <a href="{up}training/">career accelerator (₹60,000)</a>, or inside a <a href="{up}academy/programs/live-customised-program.html">customised program</a>. Ask for single-tool pricing using the form below.</p>""", "plain", "Format"),
+<p>{tool} training is available as a focused single-tool path, as part of the <a href="{up}training/">career accelerator (₹70,000)</a>, or inside a <a href="{up}academy/programs/live-customised-program.html">customised program</a>. Ask for single-tool pricing using the form below.</p>""", "plain", "Format"),
         ("Free reading before you start", "<ul>" + "".join(f'<li><a href="{up}{p}">{l}</a></li>' for p, l in guide_links) + "</ul>", "alt", "Guides"),
         ("Other single-tool courses", course_tiles(depth, exclude=path), "plain", "Courses"),
     ]
@@ -145,13 +145,13 @@ ACADEMY = [
         kicker="Learn · Build · Transform · Lead",
         lede="Hands-on Adobe MarTech, customer data and Agentic AI programs taught by a working MarTech architect — built around the platforms enterprises use.",
         keywords=["infiante360 tech academy", "adobe martech courses", "aep course india", "martech training programs", "agentic ai course", "adobe experience cloud training"],
-        answer="Infiante360 Tech Academy offers live and customised programs in Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Programs range from the ₹60,000 live career accelerator and recorded Foundation + Advanced Architecture course to ₹1,00,000 leadership and customised programs, plus single-tool courses, free demo sessions and resources.",
+        answer="Infiante360 Tech Academy offers live and customised programs in Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Web SDK and Agentic AI. Programs range from the ₹70,000 live career accelerator and recorded Foundation + Advanced Architecture course to ₹1,00,000 leadership and customised programs, plus single-tool courses, free demo sessions and resources.",
         schema="CollectionPage",
         hero_cta=("Browse programs", "#programs"),
         sections=[
             ("Programs", program_cards(1), "plain", "Course catalog"),
             ("What learners say", "@@REVIEW_STRIP@@", "alt", "Reviews"),
-            ("Workshops and bootcamps", '<p class="lead">New to AEP? Start with a short, live, hands-on format.</p><div class="grid-3"><a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Bootcamp · ₹3,000</span><h3>AEP Launchpad bootcamp</h3><p>3 hours, 6–9 PM IST, with a free ₹3,500 test series.</p></a><a class="card link-card" href="aep-foundations-batch.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Batch · 8 AM IST</span><h3>Live Foundations batch</h3><p>Two weeks, Monday–Friday, beginner-friendly.</p></a><a class="card link-card" href="martech-bootcamp-webinar.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Prerecorded webinar</span><h3>MarTech bootcamp webinar</h3><p>What is MarTech and how AEP works.</p></a><a class="card link-card" href="workshops.html"><span class="tag" style="background:var(--green-50);color:var(--green)">Every Friday</span><h3>Hands-on workshops</h3><p>One AEP skill per session.</p></a></div>', "dark", "Start here"),
+            ("Workshops and bootcamps", '<p class="lead">New to AEP? Start with a short, live, hands-on format.</p><div class="grid-3"><a class="card link-card" href="aep-launchpad-bootcamp.html"><span class="tag" style="background:var(--red-50);color:var(--red-700)">Bootcamp · ₹5,000</span><h3>AEP Launchpad bootcamp</h3><p>3 hours, 6–9 PM IST, with a free ₹3,500 test series.</p></a><a class="card link-card" href="aep-foundations-batch.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Batch · 8 AM IST</span><h3>Live Foundations batch</h3><p>Two weeks, Monday–Friday, beginner-friendly.</p></a><a class="card link-card" href="martech-bootcamp-webinar.html"><span class="tag" style="background:var(--blue-50);color:var(--blue)">Prerecorded webinar</span><h3>MarTech bootcamp webinar</h3><p>What is MarTech and how AEP works.</p></a><a class="card link-card" href="workshops.html"><span class="tag" style="background:var(--green-50);color:var(--green)">Every Friday</span><h3>Hands-on workshops</h3><p>One AEP skill per session.</p></a></div>', "dark", "Start here"),
             ("Single-tool courses", '<p class="lead">Only need one platform? Each course is a focused path you can take alone or as part of a program.</p>' + course_tiles(1), "alt", "Learn one tool"),
             ("Why learn with Infiante360", """<div class="grid-3">
 <div class="card"><h3>Practical learning</h3><p>Hands-on labs, enterprise-style projects and capstone implementations.</p></div>
@@ -176,7 +176,7 @@ ACADEMY = [
 </div><p><a href="free-resources.html">All free resources &rarr;</a></p>""", "plain", "Start free"),
         ],
         faqs=[
-            ("How much does the career accelerator cost?", "The Adobe MarTech + Agentic AI Career Accelerator fee is ₹60,000. The CXO Hive C-level and senior-leader program is ₹1,50,000 and customised programs are ₹1,00,000 per program; corporate programs are quoted per engagement."),
+            ("How much does the career accelerator cost?", "The Adobe MarTech + Agentic AI Career Accelerator fee is ₹70,000. The CXO Hive C-level and senior-leader program is ₹1,50,000 and customised programs are ₹1,00,000 per program; corporate programs are quoted per engagement."),
             ("Are programs live or recorded?", "The career accelerator, leadership and customised programs are delivered live online. Demo sessions are available free on YouTube."),
             ("Can I learn just one tool?", "Yes. Single-tool courses are available for RTCDP, AJO, CJA, Adobe Analytics, Web SDK, Agentic AI and AEP certification preparation; ask for single-tool pricing."),
             ("Is job placement guaranteed?", "No. Programs include career guidance and interview preparation, but no job, salary or certification outcome is guaranteed."),
@@ -187,17 +187,17 @@ ACADEMY = [
         "academy/programs/aep-ajo-cja-foundation-advanced.html",
         "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture",
         "AEP, AJO & CJA Course: Foundation + Advanced Architecture",
-        "Recorded course: Adobe Experience Platform, Journey Optimizer and CJA, then enterprise MarTech and CDP architecture. ₹60,000 one-time.",
+        "Recorded course: Adobe Experience Platform, Journey Optimizer and CJA, then enterprise MarTech and CDP architecture. ₹70,000 one-time.",
         "Academy · Adobe Experience Cloud",
         ["aep ajo cja course", "adobe experience platform recorded course", "aep architecture course", "cdp architecture training", "adobe journey optimizer course"],
-        "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture is a recorded, self-paced course. It teaches Adobe Experience Platform, Journey Optimizer and Customer Journey Analytics, then the MarTech and customer data platform architecture behind enterprise implementations. The fee is ₹60,000 one-time and includes recorded lessons, a test series, ERD resources and an e-library.",
-        "Intermediate", "Recorded · learn at your own pace", "₹60,000", 60000,
+        "Adobe AEP, Journey Optimizer & CJA: Foundation + Advanced Architecture is a recorded, self-paced course. It teaches Adobe Experience Platform, Journey Optimizer and Customer Journey Analytics, then the MarTech and customer data platform architecture behind enterprise implementations. The fee is ₹70,000 one-time and includes recorded lessons, a test series, ERD resources and an e-library.",
+        "Intermediate", "Recorded · learn at your own pace", "₹70,000", 70000,
         ["Recorded video lessons", "Test series", "ERD resources", "E-library", "Additional learning material"],
         ["Adobe Experience Platform (AEP)", "Adobe Journey Optimizer (AJO)", "Customer Journey Analytics (CJA)", "Digital and MarTech architecture", "Enterprise implementation patterns", "Customer Data Platform architecture", "AI and data-driven customer experience"],
         [("Foundation MarTech Series", ["Adobe Experience Platform (AEP)", "Adobe Journey Optimizer (AJO)", "Customer Journey Analytics (CJA)"]),
          ("Advanced Digital Architecture Program", ["Digital and MarTech architecture", "Enterprise implementation patterns", "Customer Data Platform architecture", "AI and data-driven customer experience"])],
         [("Aspiring Adobe practitioners", "People who want to work on AEP, Journey Optimizer or CJA projects."), ("Marketing ops &amp; MarTech engineers", "Professionals moving into the Adobe stack."), ("Self-paced learners", "Anyone who prefers recorded lessons over live batches.")],
-        [("Prefer live learning?", '<p>The <a href="../../training/">Career Accelerator</a> covers the same platforms live over 90 days with projects and interview preparation, also at ₹60,000.</p>', "alt", "Compare")],
+        [("Prefer live learning?", '<p>The <a href="../../training/">Career Accelerator</a> covers the same platforms live over 90 days with projects and interview preparation, also at ₹70,000.</p>', "alt", "Compare")],
         [("Is this course live or recorded?", "Recorded and self-paced. For live sessions, choose the Career Accelerator or the Live Customised MarTech Program."),
          ("Can I buy a single tool only?", "Yes. Choose 'A single tool at a lower price' in the form and tell us which tool, for example AEP only.")],
         ["training/index.html", "academy/courses/aep-certification-prep.html", "adobe-experience-platform/index.html"],
@@ -364,7 +364,7 @@ ACADEMY = [
         schema="CollectionPage",
         hero_cta=("Visit the YouTube channel", YOUTUBE),
         sections=[("Sessions", video_grid(), "plain", "Watch"),
-                  ("Ready for the next step?", f'<p class="cta-row"><a class="btn btn-light" href="../training/">Career accelerator · ₹60,000</a><a class="btn btn-ghost" style="color:#fff" href="index.html">All programs</a></p>', "dark", "Programs")],
+                  ("Ready for the next step?", f'<p class="cta-row"><a class="btn btn-light" href="../training/">Career accelerator · ₹70,000</a><a class="btn btn-ghost" style="color:#fff" href="index.html">All programs</a></p>', "dark", "Programs")],
         faqs=[],
         related=["academy/index.html", "academy/free-resources.html", "training/index.html"],
     ),
@@ -441,7 +441,7 @@ ACADEMY.append(program_page(
      ("Practice bank", [f"{_Q} practice questions with answers for self-assessment", "Use after each video course to find weak areas", "Revise before interviews or certification attempts"]),
      ("Sandbox practice", ["Hands-on practice in the Infiante360 simulation environment with synthetic data", "Rebuild schemas, audiences, journeys and reports from the lessons", "Safe place to make mistakes before using a client environment"])],
     [("Self-paced learners", "Professionals who prefer recorded lessons and practice at their own time."), ("Career switchers on a budget", "A lower-cost way to start before deciding on a live program."), ("Practitioners revising", "Analysts and engineers who want a large practice bank and a sandbox.")],
-    [("Bronze or live?", '<p>Bronze has no live classes, mentor sessions or enterprise project review. For live teaching, projects and interview preparation choose the <a href="../../training/">Career Accelerator (₹60,000)</a>; for leaders see <a href="executive-architecture-leadership.html">CXO Hive</a>. Ask us how a Bronze purchase can relate to an upgrade; terms are confirmed in writing.</p>', "alt", "Compare"),
+    [("Bronze or live?", '<p>Bronze has no live classes, mentor sessions or enterprise project review. For live teaching, projects and interview preparation choose the <a href="../../training/">Career Accelerator (₹70,000)</a>; for leaders see <a href="executive-architecture-leadership.html">CXO Hive</a>. Ask us how a Bronze purchase can relate to an upgrade; terms are confirmed in writing.</p>', "alt", "Compare"),
      ("Notes", f'<p class="small muted">The sandbox is an Infiante360 simulation environment with synthetic data. It is not an Adobe-provided production or licensed environment. Built around Adobe Experience Cloud technologies and Experience League learning resources; Infiante360 is independent and not affiliated with Adobe. {BRONZE["access_note"]}</p>', "plain", "Good to know")],
     [("Are the courses live?", "No. Bronze is recorded and self-paced. Live options are the Career Accelerator and CXO Hive."),
      ("What is in the question bank?", f"{_Q} practice questions for self-assessment across the video-course topics. Exact topic split is shared at enrolment."),

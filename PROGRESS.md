@@ -147,3 +147,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 
 ## Practices page (2026-11-26)
 - Owner pasted Bhasaka Technologies' site as a format reference. Used the layout idea only (hero, services, practices, insights, next step). Not copied: text, Adobe Silver Partner status, certified-engineer and project counts. New original `practices/index.html` (src/content_practices.py) links existing service and guide pages; linked from links.html.
+
+## Price ladder update (26 Nov 2026, owner decision)
+- Launchpad ₹5,000; Bronze ₹2,00,000 (flagged: was ₹30,000); Career Accelerator ₹70,000; Foundation+Advanced ₹70,000; Leadership/Corporate ₹1,50,000/custom; Agentic AI 30-hour ₹53,000.
+- Terms: exclusive of 18% GST; credit card +2%; UPI no extra charge.
+- New page academy/pricing.html (src/content_pricing.py), linked from links hub. Unchanged: Live Customised ₹1,00,000, meetup ₹250, demo ₹500. No refund terms or checkout built.

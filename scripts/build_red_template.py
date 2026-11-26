@@ -26,7 +26,7 @@ RES = [("The AEP guide", "Schemas to activation, step by step.", S + "learn/inde
        ("What is MCP?", "Safe agentic AI for enterprise MarTech.", S + "guides/what-is-mcp.html", "guide-mcp"),
        ("Marketo Engage and AEP", "Lead lifecycle, scoring and integration.", S + "guides/marketo-engage-aep.html", "guide-marketo"),
        ("Free learning resources", "Guides, roles explained and more.", S + "academy/free-resources.html", "free-resources")]
-PATHS = [("Career accelerator", "Live online, six phases, projects and interview prep. ₹60,000.", S + "lp/career-accelerator-admission.html", "career", "FOR PROFESSIONALS"),
+PATHS = [("Career accelerator", "Live online, six phases, projects and interview prep. ₹70,000.", S + "lp/career-accelerator-admission.html", "career", "FOR PROFESSIONALS"),
          ("CXO Hive", "10-week live program for C-level and senior leaders. ₹1,50,000.", S + "academy/programs/executive-architecture-leadership.html", "cxo", "C-LEVEL + SENIOR"),
          ("Corporate training", "Role-based tracks, labs and assessments for teams.", S + "training/corporate-training.html", "corporate", "FOR TEAMS"),
          ("Architecture review", "Prioritised findings and a 30/60/90-day plan.", S + "lp/aep-architecture-review.html", "review", "FOR ENTERPRISES")]

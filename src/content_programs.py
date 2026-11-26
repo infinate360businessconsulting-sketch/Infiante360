@@ -1,12 +1,12 @@
 """Long-form program pages: weekend CDP+Agentic AI, 30-hour advanced lab series, 4-week Agentic AI + MCP bootcamp,
 MarTech SME batch, AJO live learning, weekday morning batch and career paths by background.
-No calendar dates are shown. The accelerator fee stays at Rs 60,000 (owner decision)."""
+No calendar dates are shown. The accelerator fee is Rs 70,000 (owner decision, 26 Nov 2026)."""
 import html as _h
 from content_academy import program_page, PROGRAMS, REG_FORM, CHALLENGE, DEMO_AEP, DEMO_AI
 e = _h.escape
 EL = "https://experienceleague.adobe.com/en/docs"
 NOTE = '<p class="small muted">Tool and product names (including Adobe AI features and MCP-based integrations) change quickly. We verify them against current Adobe documentation before each cohort, and training does not guarantee jobs, salary or certification.</p>'
-FEE = ('<p>Paid program fees are confirmed in writing before payment. The flagship <a href="../../training/">Career Accelerator is ₹60,000</a> '
+FEE = ('<p>Paid program fees are confirmed in writing before payment. The flagship <a href="../../training/">Career Accelerator is ₹70,000</a> '
        'and, as stated by the founder, includes Adobe sandbox access and mentoring. Pricing for this track is shared on request.</p>')
 
 
@@ -215,7 +215,7 @@ PATHS_PAGE = dict(
   ("One program, several entry points", _tl([("1. Your experience", "Engineering, data, cloud, analytics, IT, consulting or business."), ("2. The MarTech layer", "AEP, XDM, identity, RTCDP, Web SDK, Analytics, AJO, CJA, Agentic AI."), ("3. Project evidence", "Customer 360, ingestion, identity, segmentation, journeys, analytics, personalisation, AI."), ("4. Role preparation", "Resume, LinkedIn, mock interviews and role mapping.")])),
   ("What you will build", '<ul class="checklist cols-2"><li>Customer 360</li><li>AEP data and XDM architecture</li><li>Identity resolution</li><li>Real-Time Customer Profiles</li><li>Audience segmentation</li><li>Web SDK implementation</li><li>Journey Optimizer journeys</li><li>Customer Journey Analytics</li><li>Enterprise APIs and integrations</li><li>Agentic AI and MCP workflows</li></ul><p>These are training projects, not client work.</p>'),
   ("Ways to learn", '<ul class="checklist"><li><strong>Weekend mentorship batch:</strong> live sessions, labs, scenarios and Q&amp;A (<a href="programs/agentic-ai-cdp-weekend-batch.html">weekend batch</a>).</li><li><strong>Intensive batch:</strong> accelerated, project-based training with mentor support (<a href="../training/">Career Accelerator</a>).</li><li><strong>Career support:</strong> resume and LinkedIn guidance, role mapping, interview preparation and ongoing mentorship.</li></ul>'),
-  ("Next steps", '<p class="cta-row"><a class="btn btn-primary" href="../training/">Career Accelerator · ₹60,000</a><a class="btn btn-ghost" href="index.html">All programs</a><a class="btn btn-ghost" href="../training/career-transition.html">Career transition guide</a></p>'),
+  ("Next steps", '<p class="cta-row"><a class="btn btn-primary" href="../training/">Career Accelerator · ₹70,000</a><a class="btn btn-ghost" href="index.html">All programs</a><a class="btn btn-ghost" href="../training/career-transition.html">Career transition guide</a></p>'),
  ],
  faqs=[("Can a fresher join?", "Yes. Freshers start from foundations and work towards junior MarTech engineer, AEP associate or analyst roles. Outcomes are not guaranteed."),
        ("Do I need Adobe experience?", "No. Foundational Adobe concepts are taught from the start.")],

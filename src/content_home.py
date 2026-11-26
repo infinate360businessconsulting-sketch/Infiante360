@@ -2,8 +2,8 @@
 from visuals import architecture_svg
 from content_academy import program_cards, course_tiles
 
-COURSE_FEE_INR = 60000
-COURSE_FEE_LABEL = "₹60,000"
+COURSE_FEE_INR = 70000
+COURSE_FEE_LABEL = "₹70,000"
 REG_FORM = "https://docs.google.com/forms/d/e/1FAIpQLSfKeY_33fgEBKYskgG2shgRcYLvHx50ES_KqrULMKromsE3mg/viewform?usp=header"
 
 TIERS = """
@@ -85,7 +85,7 @@ HOME = dict(
 <p class="cta-row"><a class="btn btn-light" href="academy/index.html">View all programs</a><a class="btn btn-ghost" style="color:#fff" href="{REG_FORM}" rel="noopener" target="_blank">Register</a></p></div>
 <div class="price-card" style="background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);box-shadow:none"><div><div class="price" style="color:#fff">{COURSE_FEE_LABEL}<small style="color:#ffd5d8">Career accelerator program fee</small></div></div><p style="margin:0">Live online sessions, labs, projects and career support. Contact us for corporate pricing.</p></div>
 </div>""", "red", "Learn"),
-        ("Upcoming: AEP Launchpad bootcamp", '<div class="split"><div><p class="lead">Sunday evening · 6:00 – 9:00 PM IST · live online · ₹3,000</p><p><strong>Free bonus:</strong> ₹3,500 Interview &amp; Certification Test Series for every attendee.</p><p class="cta-row"><a class="btn btn-light" href="academy/aep-launchpad-bootcamp.html">View the bootcamp</a><a class="btn btn-ghost" style="color:#fff" href="academy/workshops.html">Friday workshops</a></p></div><div><p>Next live Foundations batch runs <strong>8:00 – 9:30 AM IST</strong>, Monday–Friday for two weeks.</p><p><a href="academy/aep-foundations-batch.html" style="color:#fff">See the batch plan &rarr;</a></p></div></div>', "red", "Workshops &amp; bootcamps"),
+        ("Upcoming: AEP Launchpad bootcamp", '<div class="split"><div><p class="lead">Sunday evening · 6:00 – 9:00 PM IST · live online · ₹5,000</p><p><strong>Free bonus:</strong> ₹3,500 Interview &amp; Certification Test Series for every attendee.</p><p class="cta-row"><a class="btn btn-light" href="academy/aep-launchpad-bootcamp.html">View the bootcamp</a><a class="btn btn-ghost" style="color:#fff" href="academy/workshops.html">Friday workshops</a></p></div><div><p>Next live Foundations batch runs <strong>8:00 – 9:30 AM IST</strong>, Monday–Friday for two weeks.</p><p><a href="academy/aep-foundations-batch.html" style="color:#fff">See the batch plan &rarr;</a></p></div></div>', "red", "Workshops &amp; bootcamps"),
         ("Academy programs and fees", program_cards(0) + '<h3 style="margin-top:32px">Single-tool courses</h3>' + course_tiles(0) + '<p style="margin-top:16px"><a href="academy/index.html">Explore the academy &rarr;</a> &middot; <a href="academy/videos.html">Watch free demo sessions &rarr;</a></p>', "alt", "Course catalog"),
         ("Case studies: what Infiante360 brings", """
 <div class="grid-3">
@@ -116,7 +116,7 @@ HOME = dict(
     ],
     faqs=[
         ("What does Infiante360 do?", "Infiante360 provides Adobe MarTech consulting, corporate training and a Tech Academy career accelerator focused on Adobe Experience Platform, Real-Time CDP, Journey Optimizer, Customer Journey Analytics, data engineering and Agentic AI."),
-        ("How much does the career accelerator cost?", "The career accelerator program fee is ₹60,000. Corporate training is priced per engagement."),
+        ("How much does the career accelerator cost?", "The career accelerator program fee is ₹70,000. Corporate training is priced per engagement."),
         ("How do I contact Infiante360?", "Use the contact form, WhatsApp +91 82968 93895, or book a call from the contact page."),
     ],
     related=["services/index.html", "solutions/index.html", "pavan-babu-gandla.html"],

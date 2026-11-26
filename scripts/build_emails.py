@@ -36,10 +36,10 @@ SEGS = {
    bullets=["AEP, Real-Time CDP, Journey Optimizer, CJA and Web SDK skills", "Contract, contract-to-hire or managed pod", "Scenario-based readiness check and onboarding prepared before day one"],
    cta="Tell us about the gap", utm="capacity", ps="If useful, I can outline the roles we cover and how engagements are structured."),
 
- "career": dict(subject="Move into Adobe MarTech: live career accelerator, six phases", pre="Live online training in AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI, with projects and interview preparation. Fee ₹60,000.",
+ "career": dict(subject="Move into Adobe MarTech: live career accelerator, six phases", pre="Live online training in AEP, RTCDP, AJO, CJA, Web SDK and Agentic AI, with projects and interview preparation. Fee ₹70,000.",
    kicker="CAREER ACCELERATOR", head="Don't restart your career. Redirect it into Adobe MarTech.",
    lead="You asked about, or showed interest in, Adobe MarTech learning, so I am sharing how the Infiante360 Tech Academy career accelerator works. It builds on your current engineering, data, analytics, cloud or consulting experience.",
-   bullets=["Live online classes with recordings, in six phases across AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI", "Simulators, an enterprise-style project, troubleshooting scenarios and interview preparation", "Program fee ₹60,000. Training outcomes depend on your participation; no job, salary or certification is guaranteed"],
+   bullets=["Live online classes with recordings, in six phases across AEP, Real-Time CDP, Journey Optimizer, CJA, Web SDK and Agentic AI", "Simulators, an enterprise-style project, troubleshooting scenarios and interview preparation", "Program fee ₹70,000. Training outcomes depend on your participation; no job, salary or certification is guaranteed"],
    cta="See the program and apply", utm="career", ps="Not ready to commit? Ask about the free guides and demo sessions first.", warm=True),
 }
 INK, MUT, IND, VIO = "#0F172A", "#64748B", "#4F46E5", "#7C3AED"
