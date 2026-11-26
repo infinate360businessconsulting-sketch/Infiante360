@@ -57,6 +57,7 @@ from content_batches import BATCHES_ALL  # noqa: E402
 from content_practice import PRACTICE_ALL  # noqa: E402
 from content_labs import LABS_ALL  # noqa: E402
 from content_meetup import MEETUP_ALL  # noqa: E402
+from content_practices import PRACTICES_ALL  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.join(ROOT, "_site")
@@ -92,7 +93,7 @@ if GTM_ID and not re.fullmatch(r"GTM-[A-Z0-9]{4,10}", GTM_ID):
     sys.exit(f"Invalid GTM container ID: {GTM_ID!r}")
 TESTIMONIALS = [t for t in _load("testimonials.json").get("items", []) if t.get("verified") and t.get("consent")]
 
-PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + PAGES_DEMO + PAGES_SME + PAGES_ENTDEMO + PAGES_LMS + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL + CATALOGUE_ALL + BATCHES_ALL + PRACTICE_ALL + LABS_ALL + MEETUP_ALL
+PAGES = [HOME] + SERVICES + AEP_PAGES + CORE[1:] + MORE + CORP + ACADEMY + EVENTS + CASE_PAGES + KB_PAGES + GROWTH_PAGES + TOPIC_INDEX + INSIGHTS_PAGES + PAGES_CXO + PAGES_CAMPAIGN + PAGES_DEMO + PAGES_SME + PAGES_ENTDEMO + PAGES_LMS + QA_PAGES + PRESS_PAGES + EXPAND_PAGES + STACK_PAGES + INDUSTRY_ALL + PLAN_ALL + QUIZ_ALL + BRO_ALL + PROG_ALL + WEBINAR_ALL + LINKS_ALL + CATALOGUE_ALL + BATCHES_ALL + PRACTICE_ALL + LABS_ALL + MEETUP_ALL + PRACTICES_ALL
 PAGES = [q for q in PAGES if not (q['path'] == CXO_MAIN and q.get('course_name') != 'CXO Hive: Executive MarTech & AI Leadership Program')]
 
 TOPICS = [
