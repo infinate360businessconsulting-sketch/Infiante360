@@ -127,3 +127,7 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 ## Social calendar (2026-11-26)
 - `data/social/calendar-100.csv` (100 posts, 27 Nov 2026 to 24 Jan 2027), `scripts/build_social_calendar.py`, `docs/growth/social-calendar-guide.md`, 20 banner PNGs in `assets/social/` (new, deploy with the site). Nothing posted. Open: confirm upload tool timezone, owner review before upload, specific YouTube video URLs, batch dates.
 - YouTube titles and descriptions for all 100 calendar posts: `data/social/youtube-descriptions-100.csv` (+ script). Chapters to be added after recording.
+
+## Practice hub (2026-11-26)
+- Owner shared another company's site (AdsBot) as reference. Not copied. Built an original `academy/practice.html` (src/content_practice.py) that links only existing resources: simulators, lab guides, quiz, handout, interview questions, LMS test series. No sandbox, badge or graded-mission claims. Linked from links.html.
+- Not built: private per-learner sandboxes, auto-checked missions, verifiable credentials, MCP lab access. These need product work; scope and owner decision pending.
