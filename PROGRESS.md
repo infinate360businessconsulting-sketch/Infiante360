@@ -143,3 +143,4 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 ## Meetup landing (2026-11-26)
 - `lp/meetup.html` (src/content_meetup.py): interest form (name, email, phone via site form -> CRM webhook). Date, venue, agenda null (not supplied). Linked from links.html.
 - Owner typed a lab secret value in chat: not stored anywhere; advised to set a long random LAB_SECRET in Vercel and treat the typed value as exposed.
+- Meetups are online at Rs 250 each (owner). Meetup page updated: fee stated, payment not taken on the form, payment details by email. No checkout, no refund terms yet. Owner also pasted another company's site (MarTech Mastery) asking to make it "mine": not copied; its claims (salaries, certification rates, learner counts) must not be reused.
