@@ -165,3 +165,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Audit (72 pages in content modules): 39 under 300 words, 26 under 600. Thinnest were 14 guides and the events/products/lp pages.
 - Done: 9 thin guides roughly doubled (160-240 -> 370-480 words) via src/content_depth.py, applied at end of content_kb.py. Documentation-level content only; no results or numbers.
 - Not done: events/*, products/*, lp/* pages (dates, prices, outcomes need owner facts); hub pages; pages generated elsewhere. Not expanded to avoid invented detail.
+
+## Content depth batch 2 (27 Nov 2026): "Discovered - currently not indexed"
+- GSC export (1000 of ~2470 URLs): 978 were retired /pages/ URLs (now 301-redirected, see 404 fix); 22 real pages.
+- Expanded 7 thinnest real pages (insights x2, services/adobe-analytics, stacks/crm-marketing-automation, aep/datasets, solutions/customer-360, academy/community) with keyword-specific sections, FAQs and CTAs linking to live batch registration / architecture review / fees (src/content_depth.py DEPTH2).
+- Indexing is Google's decision; sitemap submission and internal links only improve odds. Re-request indexing for the 22 in Search Console after deploy.
