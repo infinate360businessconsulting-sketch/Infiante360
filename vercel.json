@@ -5,6 +5,20 @@
   "buildCommand": "SITE_BASE=https://infiante360techacademy.com/ python3 src/build.py public",
   "outputDirectory": "public",
   "cleanUrls": false,
+  "redirects": [
+    { "source": "/pages/training-:slug*", "destination": "/training/index.html", "permanent": true },
+    { "source": "/pages/career-:slug*", "destination": "/training/career-transition.html", "permanent": true },
+    { "source": "/pages/course-:slug*", "destination": "/academy/catalogue.html", "permanent": true },
+    { "source": "/pages/certification-:slug*", "destination": "/academy/catalogue.html", "permanent": true },
+    { "source": "/pages/tutorial-:slug*", "destination": "/adobe-experience-platform/", "permanent": true },
+    { "source": "/pages/implementation-:slug*", "destination": "/adobe-experience-platform/implementation-guide.html", "permanent": true },
+    { "source": "/pages/architecture-:slug*", "destination": "/adobe-experience-platform/architecture.html", "permanent": true },
+    { "source": "/pages/hands-on-:slug*", "destination": "/academy/practice.html", "permanent": true },
+    { "source": "/pages/consulting-:slug*", "destination": "/services/", "permanent": true },
+    { "source": "/pages/interview-:slug*", "destination": "/adobe-experience-platform/interview-questions.html", "permanent": true },
+    { "source": "/pages/:slug*", "destination": "/academy/", "permanent": true },
+    { "source": "/news", "destination": "/insights/index.html", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",

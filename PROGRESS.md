@@ -155,3 +155,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 
 ## Legal name update (27 Nov 2026, owner request)
 - Legal name now "Infiante360 Business Consulting & Tech Academy" (build.py LEGAL_NAME / LEGAL_NAME_HTML, footer, JSON-LD legalName, "Who operates" sections, outreach email footers). Email infinate360businessconsulting@gmail.com and phone +91 82968 93895 / WhatsApp were already in place.
+
+## Search Console 404 fix (27 Nov 2026)
+- Coverage drilldown "Not found (404)": 485 URLs = 482 retired mass-generated /pages/<intent>-...-<n>.html, /news, 2 wp-content wildcards.
+- Fix: permanent redirects in vercel.json by intent prefix to the closest existing hub (no pages regenerated, per no-near-duplicate rule); /news -> /insights/. wp-content/* left as 404 (no such files exist).
+- After deploy: in Search Console, Validate Fix on the 404 issue.
