@@ -160,3 +160,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Coverage drilldown "Not found (404)": 485 URLs = 482 retired mass-generated /pages/<intent>-...-<n>.html, /news, 2 wp-content wildcards.
 - Fix: permanent redirects in vercel.json by intent prefix to the closest existing hub (no pages regenerated, per no-near-duplicate rule); /news -> /insights/. wp-content/* left as 404 (no such files exist).
 - After deploy: in Search Console, Validate Fix on the 404 issue.
+
+## Content depth batch 1 (27 Nov 2026)
+- Audit (72 pages in content modules): 39 under 300 words, 26 under 600. Thinnest were 14 guides and the events/products/lp pages.
+- Done: 9 thin guides roughly doubled (160-240 -> 370-480 words) via src/content_depth.py, applied at end of content_kb.py. Documentation-level content only; no results or numbers.
+- Not done: events/*, products/*, lp/* pages (dates, prices, outcomes need owner facts); hub pages; pages generated elsewhere. Not expanded to avoid invented detail.

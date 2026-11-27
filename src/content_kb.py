@@ -332,3 +332,11 @@ from content_group import GROUP_PAGES as _GROUP  # noqa: E402
 KB_PAGES += _GROUP
 from content_products import PRODUCT_ALL as _PROD  # noqa: E402
 KB_PAGES += _PROD
+
+# Extra depth for thin guides (27 Nov 2026)
+from content_depth import DEPTH as _DEPTH  # noqa: E402
+for _p in KB_PAGES:
+    _d = _DEPTH.get(_p["path"])
+    if _d:
+        _p["sections"] = list(_p["sections"]) + list(_d[0])
+        _p["faqs"] = list(_p["faqs"]) + list(_d[1])
