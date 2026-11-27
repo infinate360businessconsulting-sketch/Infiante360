@@ -260,4 +260,4 @@ GROWTH_PAGES = [LIBRARY, USE_HUB] + USE_CASES + LANDINGS + LEGAL + UTILITY
 
 
 for _l in LEGAL:
-    _l["sections"] = list(_l["sections"]) + [("Who operates this website", '<p>This website and the programs and services offered on it are operated by <strong>PAVAN BABU GANDLA</strong> (legal name), trading as Infiante360 Business Consulting &amp; Tech Academy. Email: <a href="mailto:infinate360businessconsulting@gmail.com">infinate360businessconsulting@gmail.com</a>. Phone: <a href="tel:+918296893895">+91 82968 93895</a>.</p>')]
+    _l["sections"] = list(_l["sections"]) + [("Who operates this website", '<p>This website and the programs and services offered on it are operated by <strong>Infiante360 Business Consulting &amp; Tech Academy</strong> (legal name). Email: <a href="mailto:infinate360businessconsulting@gmail.com">infinate360businessconsulting@gmail.com</a>. Phone: <a href="tel:+918296893895">+91 82968 93895</a>.</p>')]

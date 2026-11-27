@@ -34,7 +34,7 @@ def wrap(pre, kicker, h1, body):
 <h1 class="h" style="margin:0 0 16px;font:800 32px/37px Arial,Helvetica,sans-serif;color:{INK}">{e(h1)}</h1>{body}
 <tr><td align="center" bgcolor="{NAVY}" style="padding:26px 30px;font:13px/20px Arial,Helvetica,sans-serif;color:#cbd5e1"><strong style="color:#fff;font-size:14px">Infiante360 Tech Academy</strong><br>Practical Adobe MarTech &bull; Customer Data &bull; Analytics &bull; Agentic AI<br>
 WhatsApp <a href="{WA}" style="color:#22d3ee;text-decoration:none">+91 82968 93895</a> | <a href="mailto:{MAIL}" style="color:#22d3ee;text-decoration:none">{MAIL}</a>
-<p style="margin:12px 0 0;font-size:11px;line-height:17px;color:#94a3b8">Training outcomes depend on participation and practice; no job, salary, certification or business outcome is guaranteed. Sent by PAVAN BABU GANDLA, trading as Infiante360 Business Consulting & Tech Academy. Independent and not affiliated with or endorsed by Adobe.<br>
+<p style="margin:12px 0 0;font-size:11px;line-height:17px;color:#94a3b8">Training outcomes depend on participation and practice; no job, salary, certification or business outcome is guaranteed. Sent by Infiante360 Business Consulting & Tech Academy. Independent and not affiliated with or endorsed by Adobe.<br>
 You are receiving this because you enquired about or showed interest in Infiante360 MarTech learning. <a href="{{{{UnsubscribeURL}}}}" style="color:#94a3b8">Unsubscribe</a> or reply STOP.<br>{{{{postal_address}}}}</p></td></tr>
 </table></td></tr></table></body></html>"""
 

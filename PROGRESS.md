@@ -152,3 +152,6 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - Launchpad ₹5,000; Bronze stays ₹30,000 (owner confirmed no change; reverted); Career Accelerator ₹70,000; Foundation+Advanced ₹70,000; Leadership/Corporate ₹1,50,000/custom; Agentic AI 30-hour ₹53,000.
 - Terms: exclusive of 18% GST; credit card +2%; UPI no extra charge.
 - New page academy/pricing.html (src/content_pricing.py), linked from links hub. Unchanged: Live Customised ₹1,00,000, meetup ₹250, demo ₹500. No refund terms or checkout built.
+
+## Legal name update (27 Nov 2026, owner request)
+- Legal name now "Infiante360 Business Consulting & Tech Academy" (build.py LEGAL_NAME / LEGAL_NAME_HTML, footer, JSON-LD legalName, "Who operates" sections, outreach email footers). Email infinate360businessconsulting@gmail.com and phone +91 82968 93895 / WhatsApp were already in place.
