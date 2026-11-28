@@ -1156,6 +1156,12 @@ def write_child_sitemaps():
         body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in g4)
         write("sitemap4.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
         index.append("sitemap4.xml")
+    from newpages import NEW_PATHS
+    nw = [p for p in PAGES if p["path"] in NEW_PATHS and not str(p.get("robots", "")).startswith("noindex")]
+    if nw:
+        body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in nw)
+        write("sitemap-new.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
+        index.append("sitemap-new.xml")
     from videos import video_sitemap  # writes nothing until an approved, transcribed video is registered
     _vx = video_sitemap(BASE)
     if _vx:

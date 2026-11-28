@@ -174,3 +174,6 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 ## Enterprise demo campaign kit (28 Nov 2026)
 - lp/enterprise-martech-demo.html already live; reused, not rebuilt. Kit page not published (front-end-only form, no date).
 - Hosted 7 of 10 ad creatives at /assets/campaign/enterprise-demo/; held 02, 04 (Adobe logo) and 09 (partner wording). See docs/growth/enterprise-demo-ads.md.
+
+## sitemap-new.xml (28 Nov 2026)
+- build.py writes /sitemap-new.xml (listed in sitemap-index.xml) from src/newpages.py (24 new or expanded pages). sitemap.xml remains the complete list. Pitch doc pushed per owner.
