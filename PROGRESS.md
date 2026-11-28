@@ -170,3 +170,7 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 - GSC export (1000 of ~2470 URLs): 978 were retired /pages/ URLs (now 301-redirected, see 404 fix); 22 real pages.
 - Expanded 7 thinnest real pages (insights x2, services/adobe-analytics, stacks/crm-marketing-automation, aep/datasets, solutions/customer-360, academy/community) with keyword-specific sections, FAQs and CTAs linking to live batch registration / architecture review / fees (src/content_depth.py DEPTH2).
 - Indexing is Google's decision; sitemap submission and internal links only improve odds. Re-request indexing for the 22 in Search Console after deploy.
+
+## Enterprise demo campaign kit (28 Nov 2026)
+- lp/enterprise-martech-demo.html already live; reused, not rebuilt. Kit page not published (front-end-only form, no date).
+- Hosted 7 of 10 ad creatives at /assets/campaign/enterprise-demo/; held 02, 04 (Adobe logo) and 09 (partner wording). See docs/growth/enterprise-demo-ads.md.
