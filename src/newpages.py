@@ -4,6 +4,7 @@ NEW_PATHS = [
     # new pages
     "academy/catalogue.html", "academy/pricing.html", "lp/batches.html", "academy/practice.html", "lp/labs.html",
     "lp/meetup.html", "practices/index.html", "lp/enterprise-martech-demo.html",
+    "capabilities.html", "services/delivery-approach.html", "academy/courses/aep-training.html",
     # expanded 27 Nov 2026
     "guides/ecid-data-element-adobe-tags.html", "guides/evars-vs-props-adobe-analytics.html", "guides/backfill-months-aep-cja.html",
     "guides/aep-ingestion-methods-batch-streaming.html", "guides/adobe-analytics-source-connector-aep.html",

@@ -177,3 +177,8 @@ New guide pages (5 queued service pages await approval; Adobe Commerce blocked o
 
 ## sitemap-new.xml (28 Nov 2026)
 - build.py writes /sitemap-new.xml (listed in sitemap-index.xml) from src/newpages.py (24 new or expanded pages). sitemap.xml remains the complete list. Pitch doc pushed per owner.
+
+## Brochure pages (28 Nov 2026)
+- Source: Infiante360_Company_Brochure.pptx (15 slides, 11 are image banners). New pages: capabilities.html, services/delivery-approach.html, academy/courses/aep-training.html (src/content_brochure_pages.py). Linked from links hub; added to sitemap-new.xml.
+- Existing pages reused for RTCDP, AJO, CJA, Agentic AI/MCP, Career Accelerator, corporate training, research. Brochure PDF not hosted: slides carry the Adobe logo (no documented authorisation) and show "Infiante360 / Infinate360" spelling variants.
+- Also fixed academy index text: leadership programs up to Rs 1,50,000 (was 1,00,000).
