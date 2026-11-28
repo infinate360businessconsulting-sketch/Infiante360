@@ -1157,7 +1157,11 @@ def write_child_sitemaps():
         write("sitemap4.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
         index.append("sitemap4.xml")
     from newpages import NEW_PATHS
-    nw = [p for p in PAGES if p["path"] in NEW_PATHS and not str(p.get("robots", "")).startswith("noindex")]
+    nw, _seen_nw = [], set()
+    for p in PAGES:
+        if p["path"] in NEW_PATHS and p["path"] not in _seen_nw and not str(p.get("robots", "")).startswith("noindex"):
+            _seen_nw.add(p["path"])
+            nw.append(p)
     if nw:
         body = "\n".join(f"  <url><loc>{e(abs_url(p['path']))}</loc>{('<lastmod>' + str(p['date']) + '</lastmod>') if p.get('date') else ''}</url>" for p in nw)
         write("sitemap-new.xml", f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {ns}>\n{body}\n</urlset>\n')
